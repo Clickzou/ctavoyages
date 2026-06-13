@@ -30,6 +30,33 @@ export const metadata: Metadata = {
   icons: {
     icon: "/assets/images/Logo CTA Voyages.png",
   },
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    siteName: "CTA Voyages",
+    locale: "fr_FR",
+    url: "/",
+    title: "CTA Voyages - 30 ans d'expertise en voyages sur mesure",
+    description:
+      "Agence de voyages sur mesure à Toulouse. Séjours, circuits, croisières, glamping, catalogue sportif et voyages à la carte.",
+    images: [
+      {
+        url: "/assets/images/iStock-2207441086.jpg",
+        width: 1200,
+        height: 630,
+        alt: "CTA Voyages — Agence de voyages sur mesure à Toulouse",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CTA Voyages - 30 ans d'expertise en voyages sur mesure",
+    description:
+      "Agence de voyages sur mesure à Toulouse. Séjours, circuits, croisières, glamping, catalogue sportif et voyages à la carte.",
+    images: ["/assets/images/iStock-2207441086.jpg"],
+  },
 };
 
 export default function RootLayout({

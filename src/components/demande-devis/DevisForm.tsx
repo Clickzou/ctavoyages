@@ -3,6 +3,7 @@
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { submitDataToFormsubmit } from "@/lib/submitForm";
 
 type DestOption = {
   text: string;
@@ -129,6 +130,8 @@ export default function DevisForm() {
   const [newsletter, setNewsletter] = useState(false);
 
   const [errors, setErrors] = useState<Record<string, boolean>>({});
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const showSport = type === "sportif";
 
@@ -347,11 +350,39 @@ export default function DevisForm() {
     if (targetStep !== currentStep) goToStep(targetStep);
   }
 
-  function submitForm(e: React.MouseEvent) {
+  async function submitForm(e: React.MouseEvent) {
     e.preventDefault();
     if (!validateStep(3)) return;
-    // Pas de backend : redirection vers la page de remerciement (origine : _next = merci.html)
-    router.push("/merci");
+    setSubmitting(true);
+    setSubmitError(null);
+    try {
+      await submitDataToFormsubmit(
+        {
+          type_voyage: type,
+          destination,
+          sport,
+          date_arrivee: dateArrivee,
+          date_depart: dateDepart,
+          flexibilite_arrivee: flexArrivee,
+          flexibilite_depart: flexDepart,
+          nombre_voyageurs: voyageurs,
+          budget,
+          nom,
+          telephone: tel,
+          email,
+          message,
+          consentement_rgpd: consent ? "Oui" : "Non",
+          newsletter: newsletter ? "Oui" : "Non",
+        },
+        { subject: "Nouvelle demande de devis — CTA Voyages" }
+      );
+      router.push("/merci");
+    } catch {
+      setSubmitError(
+        "Une erreur est survenue lors de l'envoi. Merci de réessayer, ou de nous contacter au +33 (0)5 34 391 391."
+      );
+      setSubmitting(false);
+    }
   }
 
   function handleSubmit(e: React.FormEvent) {
@@ -790,11 +821,20 @@ export default function DevisForm() {
                 <button
                   type="button"
                   onClick={submitForm}
-                  className="bg-[#FBBF12] text-[#1A1A1A] px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-label text-[14px] font-bold hover:brightness-110 active:scale-95 shadow-lg transition-all flex items-center gap-2"
+                  disabled={submitting}
+                  className="bg-[#FBBF12] text-[#1A1A1A] px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-label text-[14px] font-bold hover:brightness-110 active:scale-95 shadow-lg transition-all flex items-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Envoyer ma demande <span className="material-symbols-outlined text-[18px]">send</span>
+                  {submitting ? "Envoi en cours…" : "Envoyer ma demande"}{" "}
+                  <span className="material-symbols-outlined text-[18px]">
+                    {submitting ? "progress_activity" : "send"}
+                  </span>
                 </button>
               </div>
+              {submitError && (
+                <p className="text-[13px] text-error font-medium mt-4">
+                  {submitError}
+                </p>
+              )}
               <p className="text-[12px] text-on-surface-variant flex items-center gap-1.5 mt-4">
                 <span className="material-symbols-outlined text-[14px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                   lock

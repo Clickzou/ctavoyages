@@ -13,7 +13,7 @@ type Dest = {
   desc: string;
 };
 
-// Seule la page Japon existe ; les autres pointent vers /destinations.
+// Le Japon a sa fiche bespoke ; les autres pointent vers leur fiche /destination/<slug>.
 const DESTS: Dest[] = [
   {
     href: "/destination-japon",
@@ -24,7 +24,7 @@ const DESTS: Dest[] = [
     desc: "Entre traditions séculaires et modernité fulgurante.",
   },
   {
-    href: "/destinations",
+    href: "/destination/thailande",
     img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop&auto=format",
     alt: "Voyage en Thaïlande",
     badge: "ASIE",
@@ -32,7 +32,7 @@ const DESTS: Dest[] = [
     desc: "Temples dorés, îles turquoise et cuisine légendaire.",
   },
   {
-    href: "/destinations",
+    href: "/destination/maroc",
     img: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop&auto=format",
     alt: "Voyage au Maroc",
     badge: "AFRIQUE",
@@ -40,7 +40,7 @@ const DESTS: Dest[] = [
     desc: "Marrakech, désert du Sahara et médinas millénaires.",
   },
   {
-    href: "/destinations",
+    href: "/destination/ile-maurice",
     img: "https://images.unsplash.com/photo-1540202404-a2f29016b523?w=600&h=400&fit=crop&auto=format",
     alt: "Voyage à l'Île Maurice",
     badge: "OCÉAN INDIEN",
@@ -48,7 +48,7 @@ const DESTS: Dest[] = [
     desc: "Lagons turquoise, resorts de charme et douceur tropicale.",
   },
   {
-    href: "/destinations",
+    href: "/destination/seychelles",
     img: "https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?w=600&h=400&fit=crop&auto=format",
     alt: "Voyage aux Seychelles",
     badge: "OCÉAN INDIEN",
@@ -56,7 +56,7 @@ const DESTS: Dest[] = [
     desc: "Rochers de granit, eaux cristallines et nature préservée.",
   },
   {
-    href: "/destinations",
+    href: "/destination/laponie",
     img: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop&auto=format",
     alt: "Voyage en Laponie",
     badge: "EUROPE",
@@ -64,7 +64,7 @@ const DESTS: Dest[] = [
     desc: "Aurores boréales, rennes et cabanes sous les étoiles.",
   },
   {
-    href: "/destinations",
+    href: "/destination/londres",
     img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=400&fit=crop&auto=format",
     alt: "Escapade à Londres",
     badge: "EUROPE",
@@ -72,7 +72,7 @@ const DESTS: Dest[] = [
     desc: "Big Ben, musées world-class, marchés vintage et scène culinaire.",
   },
   {
-    href: "/destinations",
+    href: "/destination/amsterdam",
     img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&h=400&fit=crop&auto=format",
     alt: "Escapade à Amsterdam",
     badge: "EUROPE",
@@ -80,7 +80,7 @@ const DESTS: Dest[] = [
     desc: "Canaux romantiques, musées incontournables et vélos à l'infini.",
   },
   {
-    href: "/destinations",
+    href: "/destination/porto",
     img: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&h=400&fit=crop&auto=format",
     alt: "Escapade à Porto",
     badge: "EUROPE",
@@ -88,7 +88,7 @@ const DESTS: Dest[] = [
     desc: "Azulejos, caves à vin du Douro et fado dans les ruelles dorées.",
   },
   {
-    href: "/destinations",
+    href: "/destination/rome",
     img: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&h=400&fit=crop&auto=format",
     alt: "Escapade à Rome",
     badge: "EUROPE",

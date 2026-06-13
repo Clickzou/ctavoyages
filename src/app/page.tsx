@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import WorldMap from "@/components/home/WorldMap";
 import OfferCarousel from "@/components/home/OfferCarousel";
 import DestCarousel from "@/components/home/DestCarousel";
@@ -12,11 +13,13 @@ export default function Home() {
         {/* HERO */}
         <section className="relative h-[100vh] min-h-[500px] max-h-[900px] w-full flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               alt="Paysage de voyage immersif — CTA Voyages"
-              className="w-full h-full object-cover"
               src="/assets/images/iStock-2207441086.jpg"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
             />
             <div className="absolute inset-0 hero-overlay" />
           </div>

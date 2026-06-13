@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { submitToFormsubmit } from "@/lib/submitForm";
 
 type DestOption = {
   text: string;
@@ -128,6 +129,8 @@ export default function RenseignementForm() {
   const [destination, setDestination] = useState("");
   const [sportsStr, setSportsStr] = useState(""); // chaîne de sports disponibles
   const [sport, setSport] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const showSportField = offerType === "catalogue-sportif";
   const messageRequired = showSportField;
@@ -211,10 +214,22 @@ export default function RenseignementForm() {
     else if (!list.includes(sport)) setSport("");
   }
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Dans l'original : redirection vers merci.html après envoi
-    router.push("/merci");
+    const form = e.currentTarget;
+    setSubmitting(true);
+    setError(null);
+    try {
+      await submitToFormsubmit(form, {
+        subject: "Nouvelle demande de renseignement — CTA Voyages",
+      });
+      router.push("/merci");
+    } catch {
+      setError(
+        "Une erreur est survenue lors de l'envoi. Merci de réessayer, ou de nous contacter au +33 (0)5 34 391 391."
+      );
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -490,13 +505,19 @@ export default function RenseignementForm() {
 
         {/* Bouton */}
         <div className="pt-2">
+          {error && (
+            <p className="mb-3 text-[13px] sm:text-[14px] text-error font-medium text-center">
+              {error}
+            </p>
+          )}
           <button
-            className="w-full h-[50px] sm:h-[56px] bg-[#FBBF12] text-[#1A1A1A] font-h3 text-[14px] sm:text-[15px] font-bold rounded-lg hover:brightness-95 transition-all flex items-center justify-center gap-2"
+            className="w-full h-[50px] sm:h-[56px] bg-[#FBBF12] text-[#1A1A1A] font-h3 text-[14px] sm:text-[15px] font-bold rounded-lg hover:brightness-95 transition-all flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
             type="submit"
+            disabled={submitting}
           >
-            Envoyer ma demande{" "}
+            {submitting ? "Envoi en cours…" : "Envoyer ma demande"}{" "}
             <span className="material-symbols-outlined font-bold text-[18px]">
-              arrow_forward
+              {submitting ? "progress_activity" : "arrow_forward"}
             </span>
           </button>
         </div>
