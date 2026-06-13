@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { Nunito_Sans, Roboto_Flex } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FlightCursor from "@/components/FlightCursor";
 import BackToTop from "@/components/BackToTop";
 
-const nunito = Nunito_Sans({
-  variable: "--font-nunito",
+const heading = Plus_Jakarta_Sans({
+  variable: "--font-heading",
   subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["500", "600", "700", "800"],
   display: "swap",
 });
 
-const roboto = Roboto_Flex({
-  variable: "--font-roboto",
+const body = Inter({
+  variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
@@ -68,7 +68,7 @@ export default function RootLayout({
     <html
       lang="fr"
       data-scroll-behavior="smooth"
-      className={`${nunito.variable} ${roboto.variable}`}
+      className={`${heading.variable} ${body.variable}`}
     >
       <head>
         {/* Material Symbols (police d'icônes) — chargée comme dans l'original */}

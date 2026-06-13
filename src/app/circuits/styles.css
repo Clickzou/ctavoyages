@@ -136,7 +136,7 @@
   hyphens: none !important;
 }
 .faq-answer p {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-size: 14px;
   line-height: 1.65;
   color: #414751;
@@ -146,7 +146,7 @@
 .faq-answer strong { font-weight: 700; }
 .faq-answer ul { margin: 8px 0; padding: 0; list-style: none; }
 .faq-answer li {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-size: 14px;
   line-height: 1.65;
   color: #414751;

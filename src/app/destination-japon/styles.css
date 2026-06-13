@@ -20,7 +20,7 @@
 }
 .info-zone .info-text p { color: #fff; }
 .info-zone .info-label {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: var(--font-heading), sans-serif;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
   color: rgba(255, 255, 255, 0.75);
 }
 .info-zone .info-value {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: var(--font-heading), sans-serif;
   font-size: 22px;
   font-weight: 800;
   color: #fff;
@@ -138,7 +138,7 @@
 }
 .pack-card:hover .pack-icon { color: #fbbf12; }
 .pack-card h4 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: var(--font-heading), sans-serif;
   font-size: 17px;
   font-weight: 800;
   margin-bottom: 8px;
@@ -356,7 +356,7 @@
   hyphens: none !important;
 }
 .faq-answer p {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-size: 14px;
   line-height: 1.65;
   color: #414751;
@@ -366,7 +366,7 @@
 .faq-answer strong { font-weight: 700; }
 .faq-answer ul { margin: 8px 0; padding: 0; list-style: none; }
 .faq-answer li {
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-size: 14px;
   line-height: 1.65;
   color: #414751;
