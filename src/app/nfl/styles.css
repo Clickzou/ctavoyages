@@ -1,0 +1,148 @@
+/* ===== CSS spécifique à la page NFL Madrid Game ===== */
+
+#event-details { scroll-margin-top: 90px; }
+
+/* ACCOMPAGNEMENT — hover bleu des cartes */
+.human-support-section .unified-card {
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.human-support-section .unified-card:hover {
+  background-color: #3179c4;
+  box-shadow: 0 12px 32px rgba(49, 121, 196, 0.18);
+}
+.human-support-section .unified-card:hover .card-content h4,
+.human-support-section .unified-card:hover .card-content p {
+  color: #fff !important;
+}
+.human-support-section .unified-card:hover .icon-circle {
+  background-color: #fbbf12 !important;
+}
+
+/* FAQ */
+.faq-item { transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; }
+.faq-toggle.faq-open .faq-icon { transform: rotate(180deg); }
+.faq-answer { transition: max-height 0.4s; overflow: hidden; }
+.faq-answer * {
+  text-align: left !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
+  font-kerning: normal !important;
+  text-rendering: optimizeLegibility !important;
+  hyphens: none !important;
+}
+.faq-answer p {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin: 0 0 10px 0;
+}
+.faq-answer p:last-child { margin-bottom: 0; }
+.faq-answer strong { font-weight: 700; }
+.faq-answer ul { margin: 8px 0; padding: 0; list-style: none; }
+.faq-answer li {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin-bottom: 5px;
+  padding-left: 24px;
+  position: relative;
+}
+.faq-answer li:last-child { margin-bottom: 0; }
+.faq-answer li .material-symbols-outlined {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 15px;
+  color: #0060a9;
+}
+.faq-answer a { color: #0060a9; text-decoration: underline; }
+.faq-item:hover {
+  background-color: #2974be !important;
+  border-color: #2974be !important;
+  box-shadow: 0 4px 16px rgba(49, 121, 196, 0.2);
+}
+.faq-item:hover .faq-toggle .faq-question-text { color: #fff !important; }
+.faq-item:hover .faq-toggle .faq-icon { color: #fff !important; }
+.faq-item:hover .faq-answer * { color: #fff !important; }
+
+/* COUNTDOWN */
+.countdown-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 16px 20px;
+  text-align: center;
+  min-width: 80px;
+}
+@media (max-width: 480px) {
+  .countdown-box { padding: 12px 14px; min-width: 60px; }
+}
+
+/* ÉQUIPES */
+.team-card {
+  background: #fff;
+  border-radius: 16px;
+  transition: all 0.4s;
+  border: 1.5px solid transparent;
+  cursor: default;
+}
+.team-card .team-logo {
+  position: relative;
+  transition: all 0.4s;
+}
+.team-card .team-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+.team-card .team-letter {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+/* Falcons */
+.team-card[data-team="falcons"]:hover {
+  background: linear-gradient(135deg, #a71930, #000000);
+  border-color: transparent;
+  box-shadow: 0 0 20px rgba(167, 25, 48, 0.4);
+}
+.team-card[data-team="falcons"]:hover .team-logo { background: #fff !important; }
+.team-card[data-team="falcons"]:hover .team-icon {
+  opacity: 0;
+  transform: scale(0.7);
+}
+.team-card[data-team="falcons"]:hover .team-letter {
+  opacity: 1;
+  transform: scale(1);
+  color: #a71930;
+}
+
+/* Bengals */
+.team-card[data-team="bengals"]:hover {
+  background: linear-gradient(135deg, #fb4f14, #000000);
+  border-color: transparent;
+  box-shadow: 0 0 20px rgba(251, 79, 20, 0.4);
+}
+.team-card[data-team="bengals"]:hover .team-logo { background: #fff !important; }
+.team-card[data-team="bengals"]:hover .team-icon {
+  opacity: 0;
+  transform: scale(0.7);
+}
+.team-card[data-team="bengals"]:hover .team-letter {
+  opacity: 1;
+  transform: scale(1);
+  color: #fb4f14;
+}
+
+.team-card:hover h3,
+.team-card:hover p { color: #fff !important; }
+
+.team-letter {
+  font-family: 'MedievalSharp', cursive;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+/* PACK CARDS */
+.pack-card .material-symbols-outlined { transition: color 0.3s; }

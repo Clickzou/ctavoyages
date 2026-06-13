@@ -1,0 +1,213 @@
+/* ===== CSS spécifique à la page Catalogue sportif ===== */
+
+#cta-final { scroll-margin-top: 90px; }
+#packs-sportifs { scroll-margin-top: 90px; }
+
+/* CARTES — révélation au survol (Pourquoi CTA Voyages) */
+.card-reveal-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s;
+}
+.card-reveal-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: rgba(0, 65, 145, 0.78);
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s;
+}
+.unified-card:hover .card-reveal-bg,
+.unified-card:hover .card-reveal-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+.unified-card .card-content {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s;
+}
+.unified-card:hover .card-content h3,
+.unified-card:hover .card-content h4,
+.unified-card:hover .card-content p {
+  color: #fff !important;
+}
+
+/* CARTES PACKS SPORTIFS */
+.sport-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+}
+.sport-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.13);
+  border-color: #e74c3c;
+}
+@media (max-width: 768px) {
+  .sport-card:hover { transform: translateY(-2px); }
+}
+.sport-card .sport-badge {
+  transition: all 0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff !important;
+  backdrop-filter: none;
+  color: #e74c3c;
+}
+.sport-card .badge-star {
+  display: none;
+  font-size: 12px;
+  font-variation-settings: 'FILL' 1;
+}
+.sport-card:hover .sport-badge {
+  background: #e74c3c !important;
+  color: #fff !important;
+}
+.sport-card:hover .badge-star { display: inline-flex !important; }
+.sport-card .discover-link {
+  color: #e74c3c;
+  transition: color 0.2s, gap 0.2s;
+}
+.sport-card .discover-link .material-symbols-outlined { color: #e74c3c; }
+.sport-card:hover .discover-link,
+.sport-card:hover .discover-link .material-symbols-outlined { color: #c0392b !important; }
+
+/* CARROUSEL PACKS SPORTIFS */
+.sport-carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+.sport-carousel-track::-webkit-scrollbar { display: none; }
+.sport-carousel-track .sport-card {
+  flex: 0 0 360px;
+  scroll-snap-align: start;
+}
+@media (max-width: 480px) {
+  .sport-carousel-track .sport-card { flex: 0 0 calc(100vw - 48px); }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .sport-carousel-track .sport-card { flex: 0 0 300px; }
+}
+
+/* CARROUSEL "VOUS AIMEREZ AUSSI" */
+.also-carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+.also-carousel-track::-webkit-scrollbar { display: none; }
+.also-carousel-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  background: #fff;
+}
+@media (max-width: 480px) {
+  .also-carousel-card { flex: 0 0 calc(100vw - 48px); }
+}
+.also-carousel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(49, 121, 196, 0.15);
+  border-color: #fbbf12;
+}
+.also-carousel-card.also-sport-card:hover { border-color: #e74c3c; }
+.also-carousel-card img { transition: transform 0.5s ease; }
+.also-carousel-card:hover img { transform: scale(1.08); }
+.also-carousel-card .discover-link { transition: color 0.2s, gap 0.2s; }
+.also-carousel-card:hover .discover-link,
+.also-carousel-card:hover .discover-link .material-symbols-outlined { color: #fbbf12 !important; }
+.also-carousel-card.also-sport-card:hover .discover-link,
+.also-carousel-card.also-sport-card:hover .discover-link .material-symbols-outlined { color: #e74c3c !important; }
+
+/* FAQ */
+.faq-item { transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; }
+.faq-toggle.faq-open .faq-icon { transform: rotate(180deg); }
+.faq-answer { transition: max-height 0.4s; overflow: hidden; }
+.faq-answer * {
+  text-align: left !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
+  font-kerning: normal !important;
+  text-rendering: optimizeLegibility !important;
+  hyphens: none !important;
+}
+.faq-answer p {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin: 0 0 10px 0;
+}
+.faq-answer p:last-child { margin-bottom: 0; }
+.faq-answer strong { font-weight: 700; }
+.faq-answer ul { margin: 8px 0; padding: 0; list-style: none; }
+.faq-answer li {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin-bottom: 5px;
+  padding-left: 24px;
+  position: relative;
+}
+.faq-answer li:last-child { margin-bottom: 0; }
+.faq-answer li .material-symbols-outlined {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 15px;
+  color: #0060a9;
+}
+.faq-answer a { color: #0060a9; text-decoration: underline; }
+.faq-item:hover {
+  background-color: #2974be !important;
+  border-color: #2974be !important;
+  box-shadow: 0 4px 16px rgba(49, 121, 196, 0.2);
+}
+.faq-item:hover .faq-toggle .faq-question-text { color: #fff !important; }
+.faq-item:hover .faq-toggle .faq-icon { color: #fff !important; }
+.faq-item:hover .faq-answer * { color: #fff !important; }
+
+/* ACCOMPAGNEMENT HUMAIN */
+.human-support-section .unified-card {
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.human-support-section .unified-card:hover {
+  background-color: #3179c4;
+  box-shadow: 0 12px 32px rgba(49, 121, 196, 0.18);
+}
+.human-support-section .unified-card:hover .card-content h4,
+.human-support-section .unified-card:hover .card-content p {
+  color: #fff !important;
+}
+.human-support-section .unified-card:hover .icon-circle {
+  background-color: #fbbf12 !important;
+}

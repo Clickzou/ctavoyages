@@ -1,0 +1,43 @@
+/* ===== CSS spécifique à la page Formule 1 ===== */
+
+#cta-final { scroll-margin-top: 90px; }
+#circuits-f1 { scroll-margin-top: 90px; }
+
+/* CARTES CIRCUITS F1 */
+.f1-card {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  background: #f2f3fa;
+  color: #191c21;
+  border-radius: 16px;
+  border: none;
+  box-shadow: inset 0 0 0 1.5px rgba(113, 119, 130, 0.35);
+  transition: all 0.5s;
+}
+.f1-card h3,
+.f1-card p {
+  transition: color 0.4s;
+}
+.f1-card:hover {
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.08);
+}
+.f1-card:hover h3,
+.f1-card:hover p {
+  color: #fff !important;
+}
+.f1-card:hover .badge-new {
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.85) !important;
+  background: transparent !important;
+}
+.f1-card[data-color="monaco"]:hover { background: linear-gradient(135deg, #CE1126, #FFFFFF20); box-shadow: 0 0 20px rgba(206, 17, 38, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05); }
+.f1-card[data-color="barcelone"]:hover { background: linear-gradient(135deg, #AD1519, #FABD00); box-shadow: 0 0 20px rgba(173, 21, 25, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05); }
+.f1-card[data-color="monza"]:hover { background: linear-gradient(135deg, #008C45, #CE2B37); box-shadow: 0 0 20px rgba(0, 140, 69, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05); }
+.f1-card[data-color="spa"]:hover { background: linear-gradient(135deg, #2D2926, #FDDA24, #EF3340); box-shadow: 0 0 20px rgba(239, 51, 64, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05); }
+.f1-card[data-color="montreal"]:hover { background: linear-gradient(135deg, #FF0000, #FFFFFF20); box-shadow: 0 0 20px rgba(255, 0, 0, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05); }
+.f1-card[data-color="abudhabi"]:hover { background: linear-gradient(135deg, #00732F, #CE1126, #000000); box-shadow: 0 0 20px rgba(0, 115, 47, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05); }
+.f1-card[data-color="lusail"]:hover { background: linear-gradient(135deg, #8A1538, #FFFFFF20); box-shadow: 0 0 20px rgba(138, 21, 56, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05); }
+.f1-card[data-color="madrid"]:hover { background: linear-gradient(135deg, #AD1519, #FABD00); box-shadow: 0 0 20px rgba(173, 21, 25, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05); }

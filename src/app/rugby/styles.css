@@ -1,0 +1,102 @@
+/* ===== CSS spécifique à la page Rugby ===== */
+
+#cta-final { scroll-margin-top: 90px; }
+#competitions-rugby { scroll-margin-top: 90px; }
+
+/* PACK CARDS */
+.pack-card .material-symbols-outlined { transition: color 0.3s; }
+
+/* ACCOMPAGNEMENT — HOVER BLEU */
+.human-support-section .unified-card {
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.human-support-section .unified-card:hover {
+  background-color: #3179c4;
+  box-shadow: 0 12px 32px rgba(49, 121, 196, 0.18);
+}
+.human-support-section .unified-card:hover .card-content h4,
+.human-support-section .unified-card:hover .card-content p {
+  color: #fff !important;
+}
+.human-support-section .unified-card:hover .icon-circle {
+  background-color: #fbbf12 !important;
+}
+
+/* FAQ */
+.faq-item { transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; }
+.faq-toggle.faq-open .faq-icon { transform: rotate(180deg); }
+.faq-answer { transition: max-height 0.4s; overflow: hidden; }
+.faq-answer * {
+  text-align: left !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
+  font-kerning: normal !important;
+  text-rendering: optimizeLegibility !important;
+  hyphens: none !important;
+}
+.faq-answer p {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin: 0 0 10px 0;
+}
+.faq-answer p:last-child { margin-bottom: 0; }
+.faq-answer strong { font-weight: 700; }
+.faq-answer ul { margin: 8px 0; padding: 0; list-style: none; }
+.faq-answer li {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin-bottom: 5px;
+  padding-left: 24px;
+  position: relative;
+}
+.faq-answer li:last-child { margin-bottom: 0; }
+.faq-answer li .material-symbols-outlined {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 15px;
+  color: #0060a9;
+}
+.faq-answer a { color: #0060a9; text-decoration: underline; }
+.faq-item:hover {
+  background-color: #2974be !important;
+  border-color: #2974be !important;
+  box-shadow: 0 4px 16px rgba(49, 121, 196, 0.2);
+}
+.faq-item:hover .faq-toggle .faq-question-text { color: #fff !important; }
+.faq-item:hover .faq-toggle .faq-icon { color: #fff !important; }
+.faq-item:hover .faq-answer * { color: #fff !important; }
+
+/* CARTES COMPÉTITIONS RUGBY */
+.comp-card { background: #f2f3fa; color: #191c21; }
+.comp-card h3, .comp-card p { transition: color 0.4s; }
+.comp-card:hover { border-color: transparent !important; }
+.comp-card:hover h3, .comp-card:hover p { color: #fff !important; }
+
+/* Champions Cup — dégradé bleu nuit */
+.comp-card[data-color="champions"]:hover {
+  background: linear-gradient(135deg, #000038, #0a145a);
+  box-shadow: 0 0 20px rgba(10, 20, 90, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* 6 Nations — dégradé jaune → rouge */
+.comp-card[data-color="sixnations"]:hover {
+  background: linear-gradient(135deg, #fdc400, #ff3f00, #fd0a00);
+  box-shadow: 0 0 20px rgba(253, 196, 0, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Quilter — dégradé corail → rose → violet */
+.comp-card[data-color="quilter"]:hover {
+  background: linear-gradient(135deg, #ff7e6c, #ff2fa7, #847af1);
+  box-shadow: 0 0 20px rgba(255, 47, 167, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Matchs amicaux — vert */
+.comp-card[data-color="amicaux"]:hover {
+  background: #257748;
+  box-shadow: 0 0 20px rgba(37, 119, 72, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05);
+}

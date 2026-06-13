@@ -1,0 +1,7 @@
+/* ===== CSS spécifique à la page Croisières ===== */
+/* Les styles partagés (unified-card, card-reveal-*, type-carousel-*,
+   carousel-*, faq-*, human-support-section, etc.) sont déjà dans globals.css. */
+
+#inspirations-croisieres {
+  scroll-margin-top: 90px;
+}

@@ -1,0 +1,48 @@
+/* ===== CSS spécifique à la page Destinations ===== */
+
+#cta-final { scroll-margin-top: 90px; }
+#dest-section { scroll-margin-top: 90px; }
+
+/* DEST CARDS */
+.dest-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+}
+.dest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(49, 121, 196, 0.15);
+  border-color: #fbbf12;
+}
+@media (max-width: 768px) {
+  .dest-card:hover { transform: translateY(-2px); }
+}
+.dest-card .discover-link { transition: color 0.2s, gap 0.2s; }
+.dest-card:hover .discover-link,
+.dest-card:hover .discover-link .material-symbols-outlined { color: #fbbf12 !important; }
+
+/* DEST CARD : flèche jaune dès l'état initial */
+.dest-card:not(.sport-card) .discover-link .material-symbols-outlined { color: #fbbf12; }
+.dest-card:not(.sport-card):hover .discover-link,
+.dest-card:not(.sport-card):hover .discover-link .material-symbols-outlined { color: #fbbf12 !important; }
+
+/* SPORT CARD border */
+.dest-card.sport-card:hover { border-color: #e74c3c; }
+.dest-card.sport-card .discover-link .material-symbols-outlined { color: #e74c3c; }
+.dest-card.sport-card:hover .discover-link,
+.dest-card.sport-card:hover .discover-link .material-symbols-outlined { color: #c0392b !important; }
+
+/* BADGE HOVER */
+.dest-badge { transition: all 0.25s; }
+.dest-badge .badge-star { display: none; font-size: 12px; font-variation-settings: 'FILL' 1; }
+.dest-card:hover .dest-badge { background: #fbbf12 !important; color: #1a1a1a !important; }
+.dest-card:hover .dest-badge .badge-star { display: inline-flex !important; }
+.dest-card.sport-card:hover .dest-badge { background: #e74c3c !important; color: #fff !important; }
+
+/* SPORT BADGE default */
+.dest-badge { background: #fff !important; backdrop-filter: none; }
+.dest-badge.badge-sport { background: #fff !important; color: #e74c3c; }

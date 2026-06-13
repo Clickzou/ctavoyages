@@ -1,0 +1,14 @@
+/* ===== CSS spécifique à la page Demande de renseignement ===== */
+
+#sport-field-wrap {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s, opacity 0.3s, margin 0.3s;
+  margin-top: 0;
+}
+#sport-field-wrap.sport-visible {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 20px;
+}

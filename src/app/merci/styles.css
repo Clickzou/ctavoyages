@@ -1,0 +1,53 @@
+/* Animations spécifiques à la page Merci */
+@keyframes checkPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.anim-check {
+  animation: checkPop 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.anim-fade-1 {
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards 0.4s;
+}
+
+.anim-fade-2 {
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards 0.6s;
+}
+
+.anim-fade-3 {
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards 0.8s;
+}
+
+.anim-fade-4 {
+  opacity: 0;
+  animation: fadeUp 0.5s ease forwards 1s;
+}

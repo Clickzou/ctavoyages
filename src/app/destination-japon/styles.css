@@ -1,0 +1,401 @@
+/* ===== CSS spécifique à la page Destination Japon ===== */
+
+#cta-final { scroll-margin-top: 90px; }
+#itineraire { scroll-margin-top: 90px; }
+
+/* INFOS ESSENTIELLES */
+.info-band { background: #3179c4; }
+.info-zone {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 22px;
+  border-radius: 12px;
+  cursor: default;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.info-zone:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(0, 0, 40, 0.35);
+}
+.info-zone .info-text p { color: #fff; }
+.info-zone .info-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.info-zone .info-value {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+}
+@media (max-width: 640px) {
+  .info-zone .info-value { font-size: 18px; }
+}
+
+/* Horloge SVG */
+.clock-wrap {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clock-svg { width: 42px; height: 42px; overflow: visible; }
+.clock-svg .clock-face { fill: none; stroke: #fff; stroke-width: 2.2; opacity: 0.9; }
+.clock-svg .clock-center { fill: #fff; }
+.clock-svg .clock-hour,
+.clock-svg .clock-minute {
+  stroke: #fff;
+  stroke-linecap: round;
+  transform-origin: 24px 24px;
+  transition: transform 0.2s ease;
+}
+.clock-svg .clock-hour { stroke-width: 2.8; }
+.clock-svg .clock-minute { stroke-width: 2.2; }
+
+@keyframes minuteFastJapan {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(var(--minute-rotation, 2880deg)); }
+}
+@keyframes hourFastJapan {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(var(--hour-rotation, 240deg)); }
+}
+.zone-clock:hover .clock-minute {
+  animation: minuteFastJapan 1.5s cubic-bezier(0.35, 0.01, 0.2, 1) forwards;
+}
+.zone-clock:hover .clock-hour {
+  animation: hourFastJapan 1.5s cubic-bezier(0.35, 0.01, 0.2, 1) forwards;
+}
+
+/* Avion info zone */
+.info-plane-icon {
+  color: #fff;
+  font-size: 38px;
+  flex-shrink: 0;
+  transition: transform 0.25s;
+}
+@keyframes planeInFlight {
+  0% { transform: translateX(0) translateY(0) rotate(0deg); }
+  20% { transform: translateX(4px) translateY(-3px) rotate(-8deg); }
+  45% { transform: translateX(10px) translateY(-6px) rotate(-12deg); }
+  70% { transform: translateX(6px) translateY(-3px) rotate(-6deg); }
+  100% { transform: translateX(0) translateY(0) rotate(0deg); }
+}
+.zone-plane:hover .info-plane-icon {
+  animation: planeInFlight 0.9s ease-in-out forwards;
+}
+
+/* PACK CARDS */
+.pack-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 280px;
+  cursor: pointer;
+}
+@media (min-width: 640px) {
+  .pack-card { height: 300px; }
+}
+.pack-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.pack-card:hover img { transform: scale(1.1); }
+.pack-card .pack-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.3s;
+}
+.pack-card:hover .pack-overlay { background: rgba(0, 0, 0, 0.65); }
+.pack-card .pack-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+  color: #fff;
+}
+.pack-card .pack-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+  transition: color 0.3s;
+}
+.pack-card:hover .pack-icon { color: #fbbf12; }
+.pack-card h4 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+@media (min-width: 640px) {
+  .pack-card h4 { font-size: 19px; }
+}
+.pack-card p { font-size: 13px; line-height: 1.5; color: #fff; }
+@media (min-width: 640px) {
+  .pack-card p { font-size: 14px; }
+}
+
+/* ITINÉRAIRE GAUCHE + CARTE AU TRÉSOR DROITE */
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+@media (min-width: 1024px) {
+  .itinerary-grid {
+    grid-template-columns: minmax(0, 1fr) 400px;
+    gap: 48px;
+  }
+}
+
+.itinerary-list { position: relative; }
+.itinerary-step {
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 32px;
+  cursor: pointer;
+}
+@media (min-width: 640px) {
+  .itinerary-step { padding-left: 48px; }
+}
+.itinerary-step::before {
+  content: '';
+  position: absolute;
+  left: 11px;
+  top: 24px;
+  bottom: 0;
+  width: 2px;
+  background: #d3e4ff;
+}
+.itinerary-step:last-child::before { display: none; }
+.itinerary-step:last-child { padding-bottom: 0; }
+
+.step-dot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background-color 0.25s, border-color 0.25s, transform 0.25s;
+  background: #a2c9ff;
+  border: 2px solid #0060a9;
+}
+.step-dot-inner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background-color 0.25s;
+}
+
+/* Hover sur le texte OU sur l'image : dot jaune, textes bleu foncé */
+.itinerary-step:hover .step-dot,
+.itinerary-step.image-hovered .step-dot {
+  background: #fbbf12 !important;
+  border-color: #fbbf12 !important;
+  transform: scale(1.1);
+}
+.itinerary-step:hover .step-dot .step-dot-inner,
+.itinerary-step.image-hovered .step-dot .step-dot-inner { background: #fff !important; }
+.itinerary-step:hover .step-label,
+.itinerary-step.image-hovered .step-label { color: #0060a9 !important; }
+.itinerary-step:hover .step-title,
+.itinerary-step.image-hovered .step-title { color: #0060a9 !important; }
+
+/* Actif : dot rempli */
+.itinerary-step.is-active:not(.image-hovered) .step-dot {
+  background: #0060a9;
+  border-color: #0060a9;
+}
+.itinerary-step.is-active:not(.image-hovered) .step-dot .step-dot-inner { background: #fff; }
+
+/* CARTE AU TRÉSOR — colonne droite */
+.treasure-column {
+  display: none;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .treasure-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+  }
+}
+
+/* Chemin zigzag SVG — sans croix ni point de départ */
+.treasure-path-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+.treasure-path-wrap svg { width: 100%; height: 100%; }
+.treasure-path-line {
+  fill: none;
+  stroke: #3179c4;
+  stroke-width: 2.5;
+  stroke-dasharray: 6 5;
+  opacity: 0.7;
+}
+
+.treasure-cell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+/* Paires (0,2,4) = gauche, impaires (1,3) = droite */
+.treasure-cell.align-left { justify-content: flex-start; }
+.treasure-cell.align-right { justify-content: flex-end; }
+
+.treasure-stop {
+  width: 180px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border: 4px solid #fff;
+}
+.treasure-stop:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 30, 0.25);
+}
+.treasure-stop img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.treasure-stop:hover img { transform: scale(1.06); }
+
+/* Highlight image quand step actif/hovered */
+.treasure-stop.stop-highlighted {
+  border-color: #fbbf12;
+  box-shadow: 0 8px 24px rgba(251, 191, 18, 0.35);
+  transform: scale(1.05);
+}
+
+/* CARROUSEL DESTINATIONS */
+.dest-carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+}
+.dest-carousel-track::-webkit-scrollbar { display: none; }
+.dest-carousel-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  background: #fff;
+}
+@media (max-width: 480px) {
+  .dest-carousel-card { flex: 0 0 calc(100vw - 48px); }
+}
+.dest-carousel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(49, 121, 196, 0.15);
+  border-color: #fbbf12;
+}
+.dest-carousel-card.sport-carousel-card:hover { border-color: #e74c3c; }
+.dest-carousel-card .discover-link { transition: color 0.2s, gap 0.2s; }
+.dest-carousel-card:hover .discover-link,
+.dest-carousel-card:hover .discover-link .material-symbols-outlined { color: #fbbf12 !important; }
+.dest-carousel-card.sport-carousel-card:hover .discover-link,
+.dest-carousel-card.sport-carousel-card:hover .discover-link .material-symbols-outlined { color: #e74c3c !important; }
+
+/* FAQ */
+.faq-item { transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; }
+.faq-toggle.faq-open .faq-icon { transform: rotate(180deg); }
+.faq-answer { transition: max-height 0.4s; overflow: hidden; }
+.faq-answer * {
+  text-align: left !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
+  font-kerning: normal !important;
+  text-rendering: optimizeLegibility !important;
+  hyphens: none !important;
+}
+.faq-answer p {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin: 0 0 10px 0;
+}
+.faq-answer p:last-child { margin-bottom: 0; }
+.faq-answer strong { font-weight: 700; }
+.faq-answer ul { margin: 8px 0; padding: 0; list-style: none; }
+.faq-answer li {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin-bottom: 5px;
+  padding-left: 24px;
+  position: relative;
+}
+.faq-answer li:last-child { margin-bottom: 0; }
+.faq-answer li .material-symbols-outlined {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 15px;
+  color: #0060a9;
+}
+.faq-answer a { color: #0060a9; text-decoration: underline; }
+.faq-item:hover {
+  background-color: #2974be !important;
+  border-color: #2974be !important;
+  box-shadow: 0 4px 16px rgba(49, 121, 196, 0.2);
+}
+.faq-item:hover .faq-toggle .faq-question-text { color: #fff !important; }
+.faq-item:hover .faq-toggle .faq-icon { color: #fff !important; }
+.faq-item:hover .faq-answer * { color: #fff !important; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .py-section_padding_v { padding-top: 48px !important; padding-bottom: 48px !important; }
+}
+@media (max-width: 480px) {
+  .py-section_padding_v { padding-top: 32px !important; padding-bottom: 32px !important; }
+}

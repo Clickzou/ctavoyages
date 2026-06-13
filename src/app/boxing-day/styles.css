@@ -1,0 +1,71 @@
+/* ===== CSS spécifique à la page Boxing Day ===== */
+
+#cta-final { scroll-margin-top: 90px; }
+
+/* PACK CARDS */
+.pack-card .material-symbols-outlined { transition: color 0.3s; }
+
+/* MOMENTS FORTS BOXING DAY — HOVER BLEU */
+.boxing-day-features .unified-card {
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+.boxing-day-features .unified-card:hover {
+  background-color: #3179c4;
+  box-shadow: 0 12px 32px rgba(49, 121, 196, 0.18);
+}
+.boxing-day-features .unified-card:hover .card-content h4,
+.boxing-day-features .unified-card:hover .card-content p {
+  color: #fff !important;
+}
+.boxing-day-features .unified-card:hover .icon-circle {
+  background-color: #fbbf12 !important;
+}
+
+/* FAQ */
+.faq-item { transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; }
+.faq-toggle.faq-open .faq-icon { transform: rotate(180deg); }
+.faq-answer { transition: max-height 0.4s; overflow: hidden; }
+.faq-answer * {
+  text-align: left !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
+  font-kerning: normal !important;
+  text-rendering: optimizeLegibility !important;
+  hyphens: none !important;
+}
+.faq-answer p {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin: 0 0 10px 0;
+}
+.faq-answer p:last-child { margin-bottom: 0; }
+.faq-answer strong { font-weight: 700; }
+.faq-answer ul { margin: 8px 0; padding: 0; list-style: none; }
+.faq-answer li {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #414751;
+  margin-bottom: 5px;
+  padding-left: 24px;
+  position: relative;
+}
+.faq-answer li:last-child { margin-bottom: 0; }
+.faq-answer li .material-symbols-outlined {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  font-size: 15px;
+  color: #0060a9;
+}
+.faq-answer a { color: #0060a9; text-decoration: underline; }
+.faq-item:hover {
+  background-color: #2974be !important;
+  border-color: #2974be !important;
+  box-shadow: 0 4px 16px rgba(49, 121, 196, 0.2);
+}
+.faq-item:hover .faq-toggle .faq-question-text { color: #fff !important; }
+.faq-item:hover .faq-toggle .faq-icon { color: #fff !important; }
+.faq-item:hover .faq-answer * { color: #fff !important; }

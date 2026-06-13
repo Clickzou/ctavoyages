@@ -1,0 +1,57 @@
+/* ===== CSS spécifique à la page Demande de devis ===== */
+
+.step-item { transition: opacity 0.3s; }
+.step-item.step-active { opacity: 1; }
+.step-item.step-inactive { opacity: 0.4; }
+.step-item.step-done { opacity: 0.7; }
+
+.step-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+.step-done .step-dot { background: white; color: #004191; }
+
+.form-step { display: none; }
+.form-step.step-visible { display: block; animation: fadeIn 0.4s ease; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.field-error { border-color: #ba1a1a !important; }
+
+.error-msg {
+  color: #ba1a1a;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+.error-msg.visible { display: block; }
+
+.flex-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1.5px solid #c1c7d3;
+  background: white;
+  color: #414751;
+  transition: all 0.2s;
+  user-select: none;
+}
+.flex-chip:hover { border-color: #3179c4; color: #3179c4; }
+.flex-chip.chip-active { background: #3179c4; color: white; border-color: #3179c4; }
