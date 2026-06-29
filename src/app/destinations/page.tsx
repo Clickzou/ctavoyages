@@ -2,6 +2,7 @@ import "./styles.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import DestinationsGrid from "@/components/destinations/DestinationsGrid";
+import WorldMap from "@/components/home/WorldMap";
 import FaqList from "@/components/destinations/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
@@ -103,6 +104,9 @@ export default function DestinationsPage() {
             </div>
           </div>
         </section>
+
+        {/* CARTE INTERACTIVE (mêmes destinations que la home) */}
+        <WorldMap />
 
         {/* GRILLE DESTINATIONS */}
         <section className="bg-white py-section_padding_v" id="dest-section">

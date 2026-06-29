@@ -5,6 +5,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FlightCursor from "@/components/FlightCursor";
 import BackToTop from "@/components/BackToTop";
+import ScrollReveal from "@/components/ScrollReveal";
+import IconFontReady from "@/components/IconFontReady";
 
 const heading = Plus_Jakarta_Sans({
   variable: "--font-heading",
@@ -71,9 +73,16 @@ export default function RootLayout({
       className={`${heading.variable} ${body.variable}`}
     >
       <head>
-        {/* Material Symbols (police d'icônes) — chargée comme dans l'original */}
+        {/* Material Symbols (police d'icônes) — display=block pour éviter le flash
+            du texte des ligatures pendant le chargement. */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
           rel="stylesheet"
         />
       </head>
@@ -81,6 +90,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ScrollReveal />
+        <IconFontReady />
         <FlightCursor />
         <BackToTop />
       </body>

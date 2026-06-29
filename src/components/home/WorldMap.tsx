@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import "leaflet/dist/leaflet.css";
+import { MAP_DESTINATIONS } from "@/lib/map-destinations";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -19,6 +20,32 @@ type Dest = {
   flagUrl?: string;
   sport: boolean;
 };
+
+const CONT_MAP: Record<string, string> = {
+  asie: "asia",
+  afrique: "africa",
+  ameriques: "americas",
+  europe: "europe",
+};
+/** Ids déjà présents ci-dessous (on ne les reduplique pas depuis MAP_DESTINATIONS). */
+const EXISTING_MAP_IDS = new Set([
+  "japon", "thailande", "maroc", "ile-maurice", "seychelles", "zanzibar",
+  "canada", "costa-rica", "laponie", "londres", "amsterdam", "porto", "rome",
+]);
+const EXTRA_MAP_DEST: Dest[] = MAP_DESTINATIONS.filter(
+  (m) => !EXISTING_MAP_IDS.has(m.id),
+).map((m) => ({
+  id: m.id,
+  name: m.name,
+  c: CONT_MAP[m.continent],
+  ll: m.ll,
+  badge: m.badge,
+  desc: m.desc,
+  img: m.img,
+  alt: `Voyage ${m.name}`,
+  href: m.href,
+  sport: false,
+}));
 
 const DEST: Dest[] = [
   { id: "japon", name: "Japon", c: "asia", ll: [36.2, 138.2], badge: "Asie", desc: "Vivez une immersion raffinée entre temples ancestraux, quartiers effervescents et nuits en ryokan traditionnel.", img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&h=200&fit=crop&auto=format", alt: "Temple traditionnel et cerisiers en fleurs au Japon", href: "/destination-japon", flagCode: "jp", sport: false },
@@ -49,6 +76,7 @@ const DEST: Dest[] = [
   { id: "canada-sport", name: "Montréal", c: "americas", ll: [45.5, -73.6], badge: "Sport", desc: "Formule 1 : Grand Prix du Canada sur le circuit Gilles-Villeneuve à Montréal.", img: "/assets/images/canada.jpg", alt: "Circuit automobile et ambiance Formule 1 au Canada", href: "/catalogue-sportif", flagCode: "ca", sport: true },
   { id: "qatar-sport", name: "Qatar", c: "asia", ll: [25.5, 51.2], badge: "Sport", desc: "Formule 1 : Grand Prix du Qatar sur le circuit international de Lusail.", img: "/assets/images/qatar.jpg", alt: "Circuit de course et ambiance Formule 1 au Qatar", href: "/catalogue-sportif", flagCode: "qa", sport: true },
   { id: "emirats-sport", name: "Émirats arabes unis", c: "asia", ll: [24.5, 54.6], badge: "Sport", desc: "Formule 1 : Grand Prix d'Abu Dhabi sur le circuit de Yas Marina.", img: "/assets/images/emirats_arabes_unis.jpg", alt: "Circuit Yas Marina et ambiance Formule 1 à Abu Dhabi", href: "/catalogue-sportif", flagCode: "ae", sport: true },
+  ...EXTRA_MAP_DEST,
 ];
 
 const CONTINENT_NAMES: Record<string, string> = { asia: "Asie", africa: "Afrique", americas: "Amériques", europe: "Europe" };
@@ -86,7 +114,8 @@ export default function WorldMap() {
 
       const container = document.getElementById("leaflet-map");
       if (!container) return;
-      map = L.map(container, { center: VIEWS.all.center, zoom: VIEWS.all.zoom, zoomControl: false, scrollWheelZoom: false, doubleClickZoom: false, dragging: true, minZoom: 1.0, maxZoom: 14, worldCopyJump: true });
+      map = L.map(container, { center: VIEWS.all.center, zoom: VIEWS.all.zoom, zoomControl: true, scrollWheelZoom: false, doubleClickZoom: true, dragging: true, minZoom: 1.0, maxZoom: 14, worldCopyJump: true });
+      map.zoomControl.setPosition("topright");
       L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", { maxZoom: 19, subdomains: "abcd" }).addTo(map);
 
       const tooltip = document.getElementById("cta-tooltip")!;
@@ -126,16 +155,35 @@ export default function WorldMap() {
       }
 
       function positionTip(el: HTMLElement) {
-        const eR = el.getBoundingClientRect(), TW = 258, TH = 265, GAP = 14, MARGIN = 12;
-        const cx = eR.left + eR.width / 2, mt = eR.top, mb = eR.bottom;
-        let left = cx - TW / 2, top = mt - TH - GAP, below = false;
-        if (left < MARGIN) left = MARGIN; if (left + TW > window.innerWidth - MARGIN) left = window.innerWidth - TW - MARGIN;
-        if (top < MARGIN) { top = mb + GAP; below = true; }
-        if (top + TH > window.innerHeight - MARGIN) { top = Math.max(MARGIN, mt - TH - GAP); below = false; }
-        tooltip.style.left = left + "px"; tooltip.style.top = top + "px";
-        const ax = Math.max(16, Math.min(TW - 16, cx - left)) - 6; tipArrow.style.left = ax + "px";
-        if (!below) { tipArrow.style.bottom = "-6px"; tipArrow.style.top = "auto"; tipArrow.style.boxShadow = "2px 2px 5px rgba(0,0,0,0.07)"; }
-        else { tipArrow.style.top = "-6px"; tipArrow.style.bottom = "auto"; tipArrow.style.boxShadow = "-1px -1px 5px rgba(0,0,0,0.06)"; }
+        // La vignette s'ancre sur le côté de la carte correspondant à la moitié
+        // (gauche/droite) où se trouve le marqueur, centrée verticalement.
+        const mapEl = document.getElementById("map-wrap");
+        if (!mapEl) return;
+        const mR = mapEl.getBoundingClientRect();
+        const eR = el.getBoundingClientRect();
+        const TW = tooltip.offsetWidth || 258;
+        const TH = tooltip.offsetHeight || 280;
+        const MARGIN = 14;
+
+        // Centrage vertical par rapport à la carte (borné au viewport).
+        let top = mR.top + mR.height / 2 - TH / 2;
+        top = Math.max(MARGIN, Math.min(top, window.innerHeight - TH - MARGIN));
+
+        let left: number;
+        if (window.innerWidth < 768) {
+          // Mobile : centré horizontalement.
+          left = (window.innerWidth - TW) / 2;
+        } else {
+          const markerCx = eR.left + eR.width / 2;
+          const onRight = markerCx >= mR.left + mR.width / 2;
+          left = onRight ? mR.right - TW - MARGIN : mR.left + MARGIN;
+        }
+        left = Math.max(MARGIN, Math.min(left, window.innerWidth - TW - MARGIN));
+
+        tooltip.style.left = left + "px";
+        tooltip.style.top = top + "px";
+        // Plus de flèche : la vignette est un panneau latéral fixe.
+        tipArrow.style.display = "none";
       }
 
       const onDocClick = (e: any) => {
@@ -289,16 +337,18 @@ export default function WorldMap() {
     <section id="map-section">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
         <div className="text-center mb-8 sm:mb-10">
-          <h2 className="font-h2 text-[28px] sm:text-[32px] md:text-h2 text-on-surface mb-3">
+          <h2 data-reveal="fade-up" className="font-h2 text-[28px] sm:text-[32px] md:text-h2 text-on-surface mb-3">
             Des expériences uniques aux quatre coins du monde
           </h2>
-          <p className="font-body-md text-[14px] sm:text-[16px] text-[#555] max-w-[560px] mx-auto leading-relaxed">
+          <p data-reveal="fade-up" data-reveal-delay={120} className="font-body-md text-[14px] sm:text-[16px] text-[#555] max-w-[560px] mx-auto leading-relaxed">
             Parcourez la carte de nos destinations et laissez-vous guider vers votre prochain voyage.
           </p>
         </div>
 
+        {/* PANNEAU DE FILTRES (fond animé voyage) */}
+        <div className="map-controls" data-reveal="fade-up">
         {/* ÉTAPE 1 : TYPE */}
-        <div className="map-filter-row mb-4">
+        <div className="map-filter-row mb-10 sm:mb-12">
           <span className="filter-label">Votre événement</span>
           <div className="filter-buttons">
             <button className="type-filter-btn tf-active" data-type="all">
@@ -346,8 +396,10 @@ export default function WorldMap() {
           <span className="text-outline-sep hidden sm:inline">|</span>
           <div id="country-buttons" className="flex flex-wrap justify-center gap-2 sm:gap-[10px]" />
         </div>
+        </div>
+        {/* /map-controls */}
 
-        <div id="map-wrap">
+        <div id="map-wrap" data-reveal="zoom">
           <div id="leaflet-map" />
           <div id="continent-labels">
             <span className="continent-label" data-c="north-america">Amérique du Nord</span>

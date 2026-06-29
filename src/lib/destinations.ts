@@ -1,3 +1,10 @@
+import { BATCH1 } from "./destinations-extra/batch1";
+import { BATCH2 } from "./destinations-extra/batch2";
+import { BATCH3 } from "./destinations-extra/batch3";
+import { BATCH4 } from "./destinations-extra/batch4";
+import { BATCH5 } from "./destinations-extra/batch5";
+import { BATCH6 } from "./destinations-extra/batch6";
+
 export type Experience = {
   title: string;
   description: string;
@@ -440,10 +447,67 @@ export const DESTINATIONS: Destination[] = [
   },
 ];
 
+/** Toutes les fiches destination « légères » (base initiale + lots étendus). */
+export const ALL_DESTINATIONS: Destination[] = [
+  ...DESTINATIONS,
+  ...BATCH1,
+  ...BATCH2,
+  ...BATCH3,
+  ...BATCH4,
+  ...BATCH5,
+  ...BATCH6,
+];
+
 export function getDestination(slug: string): Destination | undefined {
-  return DESTINATIONS.find((d) => d.slug === slug);
+  return ALL_DESTINATIONS.find((d) => d.slug === slug);
 }
 
 export function getAllSlugs(): string[] {
-  return DESTINATIONS.map((d) => d.slug);
+  return ALL_DESTINATIONS.map((d) => d.slug);
+}
+
+/**
+ * Variantes de noms (tels qu'affichés dans les cartes des pages thème) →
+ * slug de destination. Permet aux carrousels de pointer vers /destination/<slug>.
+ */
+const NAME_ALIASES: Record<string, string> = {
+  Maurice: "ile-maurice",
+  "Île Maurice": "ile-maurice",
+  "Rép. dominicaine": "republique-dominicaine",
+  "République dominicaine": "republique-dominicaine",
+  Polynésie: "polynesie",
+  "Polynésie française": "polynesie",
+  Dubai: "dubai",
+  Dubaï: "dubai",
+  "Fjords de Norvège": "norvege",
+};
+
+/** Renvoie le slug d'une destination à partir du nom affiché (insensible à la casse), ou undefined. */
+export function slugForDestinationName(name: string): string | undefined {
+  if (!name) return undefined;
+  if (NAME_ALIASES[name]) return NAME_ALIASES[name];
+  const lower = name.toLowerCase();
+  for (const key in NAME_ALIASES) {
+    if (key.toLowerCase() === lower) return NAME_ALIASES[key];
+  }
+  return ALL_DESTINATIONS.find((d) => d.name.toLowerCase() === lower)?.slug;
+}
+
+/**
+ * Image générée unique d'une destination (anti-doublons), à partir du nom
+ * affiché. Toutes les destinations connues disposent d'un visuel /generated/<slug>.jpg.
+ */
+export function destinationImg(name: string): string | undefined {
+  const slug = slugForDestinationName(name);
+  return slug ? `/generated/${slug}.jpg` : undefined;
+}
+
+/**
+ * Lien d'une carte destination : conserve un href déjà spécifique (≠ /destinations),
+ * sinon résout vers /destination/<slug> si la fiche existe, sinon /destinations.
+ */
+export function destinationHref(name: string, fallbackHref?: string): string {
+  if (fallbackHref && fallbackHref !== "/destinations") return fallbackHref;
+  const slug = slugForDestinationName(name);
+  return slug ? `/destination/${slug}` : fallbackHref || "/destinations";
 }

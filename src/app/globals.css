@@ -135,6 +135,16 @@ body {
   -webkit-font-smoothing: antialiased;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
+/* Anti-FOUT : tant que la police d'icônes n'est pas chargée (classe posée par
+   IconFontReady), on masque les glyphes en bornant la boîte à 1em et en coupant
+   le débordement — sinon le texte des ligatures (« keyboard_arrow_down »…)
+   s'affiche en clair et déforme la mise en page. */
+html:not(.icons-ready) .material-symbols-outlined {
+  visibility: hidden;
+  width: 1em;
+  max-width: 1em;
+  overflow: hidden;
+}
 
 .hero-overlay {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
@@ -296,7 +306,9 @@ body {
   justify-content: center;
   gap: 8px;
   max-width: 720px;
-  margin: 0 auto;
+  /* Centrage horizontal seulement : `margin: 0 auto` remettait aussi la marge
+     basse à 0 et neutralisait les utilitaires mb-* (d'où les lignes collées). */
+  margin-inline: auto;
 }
 .map-filter-row .filter-label {
   font-family: var(--font-heading), sans-serif;
@@ -521,7 +533,31 @@ body {
 @media (max-width: 480px) { #map-wrap { height: 280px; } }
 #leaflet-map { width: 100%; height: 100%; z-index: 1; border-radius: 16px; overflow: hidden; }
 .leaflet-control-attribution { display: none !important; }
-.leaflet-control-zoom { display: none !important; }
+/* Boutons zoom +/- modernisés (verre dépoli, coins arrondis) */
+.leaflet-control-zoom {
+  border: none !important;
+  margin: 14px !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  box-shadow: 0 6px 20px -6px rgba(0, 65, 145, 0.45) !important;
+}
+.leaflet-control-zoom a {
+  width: 38px !important;
+  height: 38px !important;
+  line-height: 38px !important;
+  font-size: 20px !important;
+  color: #004191 !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(6px);
+  border: none !important;
+  border-bottom: 1px solid rgba(49, 121, 196, 0.18) !important;
+  transition: background 0.2s, color 0.2s;
+}
+.leaflet-control-zoom a:last-child { border-bottom: none !important; }
+.leaflet-control-zoom a:hover {
+  background: #3179c4 !important;
+  color: #fff !important;
+}
 .cta-marker-wrap { position: relative; width: 32px; height: 32px; cursor: pointer; }
 .cta-marker-wrap:hover .cta-flag { transform: translateX(-50%) scale(1); opacity: 1; }
 .cta-marker-wrap:hover .cta-dot { background: #1a5fa8; transform: translate(-50%, -50%) scale(1.25); }
@@ -700,4 +736,374 @@ body {
 #flight-cursor { position: fixed; pointer-events: none; z-index: 9999; transform: translate(-50%, -50%); }
 @media (max-width: 768px) {
   #flight-trail, #flight-cursor { display: none !important; }
+}
+
+/* ===== SCROLL REVEAL (animations d'entrée) ===== */
+[data-reveal] {
+  opacity: 0;
+  transition: opacity 0.7s cubic-bezier(0.16, 0.84, 0.44, 1),
+    transform 0.7s cubic-bezier(0.16, 0.84, 0.44, 1), filter 0.7s ease;
+  will-change: opacity, transform;
+}
+[data-reveal="fade-up"] { transform: translateY(40px); }
+[data-reveal="fade-down"] { transform: translateY(-28px); }
+[data-reveal="fade-left"] { transform: translateX(44px); }
+[data-reveal="fade-right"] { transform: translateX(-44px); }
+[data-reveal="zoom"] { transform: scale(0.92); }
+[data-reveal="blur"] { filter: blur(14px); }
+[data-reveal].reveal-in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    transition: none !important;
+  }
+}
+
+/* ===== HERO : indicateur de scroll (souris) ===== */
+.hero-scroll {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 58px;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  pointer-events: none;
+  animation: heroScrollBob 2.4s ease-in-out infinite;
+}
+@media (max-width: 640px) {
+  .hero-scroll { bottom: 50px; }
+}
+.hero-mouse {
+  width: 26px;
+  height: 42px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+}
+.hero-mouse-wheel {
+  width: 4px;
+  height: 8px;
+  border-radius: 2px;
+  background: #fff;
+  animation: heroWheel 1.6s ease-in-out infinite;
+}
+.hero-scroll-chevron {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 18px;
+  line-height: 1;
+  margin-top: -2px;
+}
+@keyframes heroWheel {
+  0% { opacity: 0; transform: translateY(-5px); }
+  35% { opacity: 1; }
+  70% { opacity: 0; transform: translateY(9px); }
+  100% { opacity: 0; transform: translateY(9px); }
+}
+@keyframes heroScrollBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll, .hero-mouse-wheel { animation: none; }
+}
+
+/* ===== CARTE : panneau de filtres moderne + fond animé voyage ===== */
+.map-controls {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 22px 18px;
+  margin-bottom: 28px;
+  background: linear-gradient(120deg, #eef5ff 0%, #f8fbff 50%, #eaf2ff 100%);
+  border: 1px solid rgba(49, 121, 196, 0.12);
+  box-shadow: 0 12px 32px -18px rgba(49, 121, 196, 0.4);
+}
+.map-controls > * { position: relative; z-index: 1; }
+/* Aurores animées en arrière-plan (rappel voyage) */
+.map-controls::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background:
+    radial-gradient(150px 150px at 12% 25%, rgba(251, 191, 18, 0.16), transparent 70%),
+    radial-gradient(190px 190px at 88% 80%, rgba(49, 121, 196, 0.18), transparent 70%),
+    radial-gradient(160px 160px at 60% 10%, rgba(115, 166, 216, 0.14), transparent 70%);
+  animation: mapAurora 12s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+/* Ligne pointillée façon trajet d'avion */
+.map-controls::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  top: 50%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, rgba(49, 121, 196, 0.22) 0 7px, transparent 7px 15px);
+  opacity: 0.45;
+  animation: mapDash 14s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes mapAurora {
+  0% { transform: translate3d(0, 0, 0) scale(1); }
+  100% { transform: translate3d(0, -10px, 0) scale(1.06); }
+}
+@keyframes mapDash {
+  to { background-position: 220px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .map-controls::before, .map-controls::after { animation: none; }
+}
+
+/* Boutons de filtres modernisés (surclasse les styles de base) */
+.type-filter-btn,
+.map-filter-btn {
+  background: #fff;
+  border-width: 1.5px;
+  border-color: rgba(49, 121, 196, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+.type-filter-btn:hover:not(.tf-active),
+.map-filter-btn:hover:not(.f-active) {
+  opacity: 1;
+  background: #fff;
+  border-color: #3179c4;
+  box-shadow: 0 5px 14px rgba(49, 121, 196, 0.16);
+  transform: translateY(-1px);
+}
+.type-filter-btn.tf-active,
+.map-filter-btn.f-active {
+  background: linear-gradient(135deg, #3179c4, #004191);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 7px 18px rgba(49, 121, 196, 0.35);
+}
+.type-filter-btn.tf-sport {
+  border-color: rgba(231, 76, 60, 0.4);
+}
+.type-filter-btn.tf-sport.tf-active {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  border-color: transparent;
+  box-shadow: 0 7px 18px rgba(231, 76, 60, 0.35);
+}
+.map-controls .filter-label {
+  color: #1f3a5f;
+}
+
+/* Carrousels « Quel type de… » — base commune (certaines pages d'offres ne
+   définissent pas ces règles dans leur styles.css local : sans display:flex,
+   les cartes s'empilaient en pleine largeur). */
+.type-carousel-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+  padding-top: 4px;
+  scrollbar-width: none;
+}
+.type-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+.type-carousel-card {
+  flex: 0 0 340px;
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.type-carousel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(49, 121, 196, 0.15);
+  border-color: #3179c4;
+}
+@media (max-width: 480px) {
+  .type-carousel-card {
+    flex: 0 0 calc(100vw - 48px);
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .type-carousel-card {
+    flex: 0 0 300px;
+  }
+}
+
+/* Carrousel destinations (home) : 5 cartes en pleine largeur sur desktop */
+@media (min-width: 1024px) {
+  .dest-fullwidth .carousel-card {
+    flex: 0 0 calc((100% - 96px) / 5);
+  }
+  /* Carrousels « Quel type de… » (pages offres) : 6 cartes en pleine largeur.
+     Sélecteur à 2 classes pour surclasser la règle de base des styles.css locaux. */
+  .type-carousel-track > .type-carousel-card {
+    flex: 0 0 calc((100% - 120px) / 6);
+  }
+  /* Carrousels destinations des pages offres (sejours, voyage sur mesure) :
+     exactement 4 cartes visibles sur desktop. Sélecteur à 2 classes pour
+     surclasser la base .carousel-card (360px) des styles.css locaux/globaux. */
+  .dest-4up .carousel-card {
+    flex: 0 0 calc((100% - 72px) / 4);
+  }
+}
+
+/* ===== Corps d'article de blog : listes & emphases ===== */
+.article-body strong {
+  color: #1a1a1a;
+  font-weight: 700;
+}
+.article-body ul {
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+.article-body li:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Boutons hero — style moderne unifié (identique à la home) ===== */
+.hero-cta-primary,
+.hero-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 9999px;
+  padding: 14px 36px;
+  font-family: var(--font-body), sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (max-width: 640px) {
+  .hero-cta-primary,
+  .hero-cta-ghost {
+    padding: 12px 28px;
+    font-size: 13px;
+  }
+}
+.hero-cta-primary {
+  background: linear-gradient(to right, #fbbf12, #f5a623);
+  color: #1a1a1a;
+  box-shadow: 0 8px 24px -6px rgba(251, 191, 18, 0.65);
+}
+.hero-cta-primary:hover {
+  box-shadow: 0 12px 30px -6px rgba(251, 191, 18, 0.8);
+  transform: translateY(-2px);
+}
+.hero-cta-ghost {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+.hero-cta-ghost:hover {
+  background: #fff;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+}
+.hero-cta-primary:active,
+.hero-cta-ghost:active {
+  transform: scale(0.96);
+}
+.hero-cta-arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+.hero-cta-primary:hover .hero-cta-arrow {
+  transform: translateX(4px);
+}
+
+/* ===== HERO : mentions de réassurance (texte + coche, pas des boutons) ===== */
+.hero-trust {
+  gap: 8px 22px !important;
+}
+.hero-trust > div {
+  position: relative;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+}
+/* Fin séparateur vertical entre les mentions (uniquement en disposition ligne) */
+@media (min-width: 480px) {
+  .hero-trust > div + div::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.32);
+  }
+}
+.hero-trust > div .material-symbols-outlined {
+  color: #fbbf12 !important;
+  font-variation-settings: "FILL" 1;
+}
+
+/* Bulles d'icônes : icône parfaitement centrée (H+V) dans la bulle */
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-circle .material-symbols-outlined {
+  line-height: 1;
+}
+/* Bulles centrées horizontalement dans les cartes */
+.unified-card .icon-circle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== HERO pages offres : animation d'entrée des éléments (au chargement) ===== */
+.hero-anim > * {
+  opacity: 0;
+  transform: translateY(28px);
+  animation: heroChildIn 0.7s cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+}
+.hero-anim > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-anim > *:nth-child(2) { animation-delay: 0.16s; }
+.hero-anim > *:nth-child(3) { animation-delay: 0.27s; }
+.hero-anim > *:nth-child(4) { animation-delay: 0.38s; }
+.hero-anim > *:nth-child(5) { animation-delay: 0.49s; }
+.hero-anim > *:nth-child(6) { animation-delay: 0.6s; }
+@keyframes heroChildIn {
+  to { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim > * { animation: none; opacity: 1; transform: none; }
 }

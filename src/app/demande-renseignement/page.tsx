@@ -35,8 +35,8 @@ export default function DemandeRenseignementPage() {
               <img
                 className="absolute inset-0 w-full h-full object-cover"
                 style={{ objectPosition: "center 25%" }}
-                alt="L'équipe CTA Voyages"
-                src="/assets/images/Photo de l'équipe CTA Voyages.png"
+                alt="Conseillère CTA Voyages préparant un devis de voyage personnalisé"
+                src="/devis-voyage.jpg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-5 sm:p-8 w-full">

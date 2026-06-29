@@ -6,6 +6,7 @@ import TypeCarousel from "@/components/glamping/TypeCarousel";
 import InspirationsCarousel from "@/components/glamping/InspirationsCarousel";
 import FaqList from "@/components/glamping/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
   title: "Glamping & hébergements insolites - CTA Voyages",
@@ -68,11 +69,11 @@ export default function GlampingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <main className="pt-[72px]">
+      <main>
         {/* HERO */}
         <section
           className="relative w-full flex items-end sm:items-center overflow-hidden"
-          style={{ minHeight: "520px", height: "68vh", maxHeight: "760px" }}
+          style={{ minHeight: "600px", height: "100svh" }}
         >
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -83,8 +84,9 @@ export default function GlampingPage() {
             />
             <div className="absolute inset-0 hero-overlay" />
           </div>
+          <HeroScrollIndicator />
           <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-gutter w-full py-10 sm:py-14 md:py-20">
-            <div className="max-w-3xl">
+            <div className="hero-anim max-w-3xl">
               <p className="font-label text-label text-white/70 mb-2 sm:mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
                 Glamping &amp; Nature
               </p>
@@ -97,20 +99,17 @@ export default function GlampingPage() {
                 nature avec tout le raffinement d&apos;un hébergement haut de gamme.
               </p>
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-5">
-                <a
-                  href="#cta-final"
-                  className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 active:scale-95 transition-all shadow-lg text-center"
-                >
+                <a href="#cta-final" className="hero-cta-primary group">
                   Trouver mon hébergement idéal
+                  <span className="material-symbols-outlined hero-cta-arrow">
+                    arrow_forward
+                  </span>
                 </a>
-                <a
-                  href="#inspirations-glamping"
-                  className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#1A1A1A] active:scale-95 transition-all text-center"
-                >
+                <a href="#inspirations-glamping" className="hero-cta-ghost">
                   Voir nos inspirations
                 </a>
               </div>
-              <div className="flex flex-col xs:flex-row flex-wrap items-start xs:items-center gap-y-2 gap-x-5 sm:gap-x-7">
+              <div className="hero-trust flex flex-col xs:flex-row flex-wrap items-start xs:items-center gap-y-2 gap-x-5 sm:gap-x-7">
                 <div className="flex items-center gap-1.5 text-white/70 text-[11px] sm:text-[13px]">
                   <span className="material-symbols-outlined text-[15px] sm:text-[17px]">
                     check_circle
@@ -164,8 +163,28 @@ export default function GlampingPage() {
           </div>
         </section>
 
+        {/* TYPES D'HÉBERGEMENTS */}
+        <section className="section-bg-blue py-section_padding_v overflow-hidden">
+          <div className="w-full px-6 lg:px-[50px]">
+            <div className="text-center mb-8 sm:mb-12">
+              <p className="text-primary font-label text-label mb-2 tracking-wider">
+                VOS ENVIES
+              </p>
+              <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-on-surface">
+                Quel hébergement insolite vous fait rêver&nbsp;?
+              </h2>
+              <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
+                Cabane dans les arbres, igloo, tente lodge, bulle transparente ou
+                lodge safari — chaque hébergement est une expérience à part
+                entière.
+              </p>
+            </div>
+            <TypeCarousel />
+          </div>
+        </section>
+
         {/* POURQUOI CTA */}
-        <section className="section-bg-blue py-section_padding_v">
+        <section className="bg-white py-section_padding_v">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
             <div className="text-center mb-10 sm:mb-14">
               <p className="text-primary font-label text-label mb-2 tracking-wider">
@@ -278,26 +297,6 @@ export default function GlampingPage() {
               </div>
             </div>
             <StatsCounters />
-          </div>
-        </section>
-
-        {/* TYPES D'HÉBERGEMENTS */}
-        <section className="bg-white py-section_padding_v overflow-hidden">
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="text-center mb-8 sm:mb-12">
-              <p className="text-primary font-label text-label mb-2 tracking-wider">
-                VOS ENVIES
-              </p>
-              <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-on-surface">
-                Quel hébergement insolite vous fait rêver&nbsp;?
-              </h2>
-              <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
-                Cabane dans les arbres, igloo, tente lodge, bulle transparente ou
-                lodge safari — chaque hébergement est une expérience à part
-                entière.
-              </p>
-            </div>
-            <TypeCarousel />
           </div>
         </section>
 

@@ -1,102 +1,109 @@
 import Link from "next/link";
-import Image from "next/image";
+import HeroSlideshow from "@/components/home/HeroSlideshow";
 import WorldMap from "@/components/home/WorldMap";
 import OfferCarousel from "@/components/home/OfferCarousel";
 import DestCarousel from "@/components/home/DestCarousel";
 import StatsCounters from "@/components/home/StatsCounters";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
+const ATOUTS = [
+  {
+    icon: "headset_mic",
+    title: "Un interlocuteur unique",
+    text: "Du premier échange à votre retour, un seul conseiller connaît votre dossier dans son intégralité.",
+  },
+  {
+    icon: "assignment_turned_in",
+    title: "Organisation complète",
+    text: "Vols, hébergements, transferts, excursions : nous gérons tout pour que vous profitiez pleinement.",
+  },
+  {
+    icon: "support_agent",
+    title: "Assistance complète",
+    text: "Avant, pendant et après votre voyage, nous assurons une assistance personnalisée.",
+  },
+];
+
 export default function Home() {
   return (
     <>
-      <main className="pt-[72px]">
+      <main>
         {/* HERO */}
-        <section className="relative h-[100vh] min-h-[500px] max-h-[900px] w-full flex items-center overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <Image
-              alt="Paysage de voyage immersif — CTA Voyages"
-              src="/assets/images/iStock-2207441086.jpg"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 hero-overlay" />
-          </div>
-          <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-gutter w-full">
-            <div className="max-w-3xl">
-              <h1 className="font-h1 text-[32px] sm:text-[40px] md:text-h1 text-white mb-4 sm:mb-6 leading-[1.1]">
-                Faire de vos rêves une réalité
-              </h1>
-              <p className="font-body-lg text-[16px] sm:text-[18px] md:text-[20px] text-white/90 mb-6 sm:mb-10 max-w-2xl">
-                Séjours, circuits, croisières, glamping, catalogue sportif et voyages sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.
-              </p>
-              <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 mb-6 sm:mb-8">
-                <a href="#cta-final" className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 active:scale-95 transition-all shadow-lg text-center">
-                  Demander un devis gratuit
-                </a>
-                <a href="#map-section" className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#1A1A1A] hover:border-white active:scale-95 transition-all text-center">
-                  Voir nos destinations
-                </a>
-              </div>
-              <div className="flex flex-col xs:flex-row flex-wrap items-start xs:items-center gap-y-2 gap-x-6 sm:gap-x-8">
-                <div className="flex items-center gap-2 text-white/70 text-[12px] sm:text-[13px]">
-                  <span className="material-symbols-outlined text-[16px] sm:text-[18px]">check_circle</span>
-                  <span>Devis gratuit</span>
-                </div>
-                <div className="flex items-center gap-2 text-white/70 text-[12px] sm:text-[13px]">
-                  <span className="material-symbols-outlined text-[16px] sm:text-[18px]">check_circle</span>
-                  <span>Sans engagement</span>
-                </div>
-                <div className="flex items-center gap-2 text-white/70 text-[12px] sm:text-[13px]">
-                  <span className="material-symbols-outlined text-[16px] sm:text-[18px]">check_circle</span>
-                  <span>Contact sous 48h</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <section className="relative h-[100svh] min-h-[600px] w-full overflow-hidden">
+          <HeroSlideshow />
         </section>
 
-        {/* PRÉSENTATION */}
-        <section className="bg-white py-12 sm:py-16">
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter text-center">
-            <div className="max-w-3xl mx-auto">
-              <p className="text-primary font-label text-label mb-3 sm:mb-4 tracking-wider">QUI SOMMES-NOUS</p>
-              <h2 className="font-h2 text-[28px] sm:text-[32px] md:text-h2 text-on-surface mb-4 sm:mb-6">
+        {/* QUI SOMMES-NOUS */}
+        <section className="bg-white py-16 sm:py-24">
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+            {/* Intro */}
+            <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+              <span
+                data-reveal="fade-down"
+                className="inline-flex items-center gap-3 text-primary font-label tracking-wider uppercase text-[12px] sm:text-[13px] mb-4"
+              >
+                <span className="h-px w-8 bg-[#FBBF12]" />
+                Qui sommes-nous
+                <span className="h-px w-8 bg-[#FBBF12]" />
+              </span>
+              <h2
+                data-reveal="fade-up"
+                className="font-h2 text-[28px] sm:text-[34px] md:text-h2 text-on-surface mb-5"
+              >
                 CTA Voyages, votre partenaire d&apos;évasion
               </h2>
-              <p className="font-body-lg text-[16px] sm:text-body-lg text-on-surface-variant leading-relaxed">
-                CTA Voyages propose une large gamme de prestations pour les voyageurs individuels : séjours, circuits, croisières, glamping, catalogue sportif et voyages sur mesure. Quel que soit votre style de voyage, nous concevons des expériences personnalisées pour répondre à toutes vos envies d&apos;évasion.
+              <p
+                data-reveal="fade-up"
+                data-reveal-delay={120}
+                className="font-body-lg text-[16px] sm:text-body-lg text-on-surface-variant leading-relaxed"
+              >
+                CTA Voyages propose une large gamme de prestations pour les
+                voyageurs individuels : séjours, circuits, croisières, glamping,
+                catalogue sportif et voyages sur mesure. Quel que soit votre style
+                de voyage, nous concevons des expériences personnalisées pour
+                répondre à toutes vos envies d&apos;évasion.
               </p>
+            </div>
+
+            {/* 3 atouts */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+              {ATOUTS.map((a, i) => (
+                <div
+                  key={a.title}
+                  data-reveal="fade-up"
+                  data-reveal-delay={i * 140}
+                  className="group relative bg-white rounded-2xl p-7 sm:p-8 border border-outline-variant/40 shadow-[0_2px_24px_rgba(0,0,0,0.05)] hover:-translate-y-1.5 hover:shadow-[0_18px_44px_rgba(49,121,196,0.16)] transition-all duration-300 overflow-hidden"
+                >
+                  <span className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-[#3179C4] to-[#FBBF12] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  <div className="w-14 h-14 rounded-2xl bg-[#3179C4]/10 flex items-center justify-center mb-6 group-hover:bg-[#3179C4] group-hover:scale-105 transition-all duration-300">
+                    <span className="material-symbols-outlined text-[28px] text-[#3179C4] group-hover:text-white transition-colors duration-300">
+                      {a.icon}
+                    </span>
+                  </div>
+                  <h3 className="font-h3 text-[19px] sm:text-[21px] font-bold mb-3 text-on-surface">
+                    {a.title}
+                  </h3>
+                  <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant leading-relaxed">
+                    {a.text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* VALUE PROPOSITION */}
-        <section className="section-bg-blue py-12 sm:py-16">
+        {/* NOS OFFRES — CARROUSEL */}
+        <section className="py-section_padding_v section-bg-blue overflow-hidden">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-              <div className="unified-card">
-                <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
-                  <span className="material-symbols-outlined text-xl sm:text-2xl">headset_mic</span>
-                </div>
-                <h3 className="font-h3 text-[18px] sm:text-[20px] font-semibold mb-3 text-on-surface">Un interlocuteur unique</h3>
-                <p className="font-body-md text-[14px] sm:text-[15px] text-[#555555]">Du premier échange à votre retour, un seul conseiller connaît votre dossier dans son intégralité.</p>
-              </div>
-              <div className="unified-card">
-                <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
-                  <span className="material-symbols-outlined text-xl sm:text-2xl">assignment_turned_in</span>
-                </div>
-                <h3 className="font-h3 text-[18px] sm:text-[20px] font-semibold mb-3 text-on-surface">Organisation complète</h3>
-                <p className="font-body-md text-[14px] sm:text-[15px] text-[#555555]">Vols, hébergements, transferts, excursions : nous gérons tout pour que vous profitiez pleinement.</p>
-              </div>
-              <div className="unified-card sm:col-span-2 md:col-span-1">
-                <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
-                  <span className="material-symbols-outlined text-xl sm:text-2xl">support_agent</span>
-                </div>
-                <h3 className="font-h3 text-[18px] sm:text-[20px] font-semibold mb-3 text-on-surface">Assistance complète</h3>
-                <p className="font-body-md text-[14px] sm:text-[15px] text-[#555555]">Avant, pendant et après votre voyage, nous assurons une assistance personnalisée.</p>
-              </div>
+            <div data-reveal="fade-up" className="text-center mb-10 sm:mb-16">
+              <p className="text-primary font-label text-label mb-3 tracking-wider">NOS PRESTATIONS</p>
+              <h2 className="font-h2 text-[28px] sm:text-[32px] md:text-h2 text-on-surface">Tous les types de voyages, une seule agence</h2>
+              <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
+                Séjour balnéaire, circuit culturel, croisière, glamping, catalogue sportif ou voyage sur mesure : nous créons l&apos;expérience qui vous correspond.
+              </p>
+            </div>
+            <div data-reveal="fade-up" data-reveal-delay={120}>
+              <OfferCarousel />
             </div>
           </div>
         </section>
@@ -120,29 +127,17 @@ export default function Home() {
         {/* MAP (client) */}
         <WorldMap />
 
-        {/* NOS OFFRES — CARROUSEL */}
-        <section className="py-section_padding_v section-bg-blue overflow-hidden">
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="text-center mb-10 sm:mb-16">
-              <p className="text-primary font-label text-label mb-3 tracking-wider">NOS PRESTATIONS</p>
-              <h2 className="font-h2 text-[28px] sm:text-[32px] md:text-h2 text-on-surface">Tous les types de voyages, une seule agence</h2>
-              <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
-                Séjour balnéaire, circuit culturel, croisière, glamping, catalogue sportif ou voyage sur mesure : nous créons l&apos;expérience qui vous correspond.
-              </p>
-            </div>
-            <OfferCarousel />
-          </div>
-        </section>
-
-        {/* DESTINATIONS CARROUSEL */}
+        {/* DESTINATIONS CARROUSEL — pleine largeur, marges 50px, 5 cartes */}
         <section className="py-section_padding_v bg-white overflow-hidden">
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="mb-8 sm:mb-12">
+          <div className="dest-fullwidth w-full px-6 lg:px-[50px]">
+            <div data-reveal="fade-right" className="mb-8 sm:mb-12">
               <p className="text-primary font-label text-label mb-2">DESTINATIONS PHARES</p>
               <h3 className="font-h3 text-[24px] sm:text-h3 text-on-surface">Nos destinations d&apos;exception</h3>
             </div>
-            <DestCarousel />
-            <div className="text-center mt-8 sm:mt-10">
+            <div data-reveal="fade-up">
+              <DestCarousel />
+            </div>
+            <div data-reveal="fade-up" className="text-center mt-8 sm:mt-10">
               <Link href="/destinations" className="inline-flex items-center gap-2 border-[1.5px] border-[#3179C4] text-[#3179C4] px-6 py-3 rounded-lg font-label text-[13px] sm:text-[14px] hover:bg-[#3179C4] hover:text-white transition-all">
                 Voir toutes nos destinations <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
               </Link>
@@ -153,26 +148,26 @@ export default function Home() {
         {/* EXPERTISE */}
         <section className="section-bg-blue py-section_padding_v">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter text-center">
-            <div className="mb-10 sm:mb-16">
+            <div data-reveal="fade-up" className="mb-10 sm:mb-16">
               <p className="text-primary font-label text-label mb-2">NOTRE SAVOIR-FAIRE</p>
               <h2 className="font-h2 text-[28px] sm:text-[32px] md:text-h2 text-on-surface">Une expertise sur-mesure</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-              <div className="unified-card expertise-card">
+              <div data-reveal="fade-up" className="unified-card expertise-card">
                 <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
                   <span className="material-symbols-outlined text-xl sm:text-2xl">forum</span>
                 </div>
                 <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">Écoute &amp; dialogue</h4>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">Nous prenons le temps de comprendre vos envies, vos passions et vos impératifs pour créer un voyage qui vous ressemble vraiment.</p>
               </div>
-              <div className="unified-card expertise-card">
+              <div data-reveal="fade-up" data-reveal-delay={140} className="unified-card expertise-card">
                 <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
                   <span className="material-symbols-outlined text-xl sm:text-2xl">map</span>
                 </div>
                 <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">Conception unique</h4>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">Chaque détail est minutieusement étudié par nos conseillers experts pour garantir une fluidité parfaite et des moments d&apos;exception.</p>
               </div>
-              <div className="unified-card expertise-card sm:col-span-2 md:col-span-1">
+              <div data-reveal="fade-up" data-reveal-delay={280} className="unified-card expertise-card sm:col-span-2 md:col-span-1">
                 <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
                   <span className="material-symbols-outlined text-xl sm:text-2xl">verified_user</span>
                 </div>
@@ -192,7 +187,7 @@ export default function Home() {
           <img className="rse-bg-img" src="/assets/images/iStock-1372488167.jpg" alt="Paysage naturel RSE" />
           <div className="rse-overlay" />
           <div className="rse-content max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="flex flex-col items-center text-center">
+            <div data-reveal="fade-up" className="flex flex-col items-center text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img alt="Logo EcoVadis" className="h-[56px] sm:h-[72px] w-auto mb-6 sm:mb-8 ecovadis-glow" src="/assets/images/logo-ecovadis.png" />
               <p className="font-label text-label text-white/70 mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">Notre engagement</p>
@@ -208,7 +203,7 @@ export default function Home() {
         {/* CTA BANDEAU */}
         <section id="cta-final" className="section-bg-blue py-section_padding_v">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="bg-gradient-to-br from-[#004191] to-[#3179C4] rounded-2xl p-8 sm:p-12 md:p-16 text-center relative overflow-hidden">
+            <div data-reveal="zoom" className="bg-gradient-to-br from-[#004191] to-[#3179C4] rounded-2xl p-8 sm:p-12 md:p-16 text-center relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2" />
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
               <div className="relative z-10">

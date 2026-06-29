@@ -1,6 +1,16 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
+
+const HREFS = [
+  "/glamping/tente-lodge",
+  "/glamping/cabane-arbres",
+  "/glamping/igloo-arctique",
+  "/glamping/bulle",
+  "/glamping/lodge-safari",
+  "/glamping/campement-desert",
+];
 
 type TypeHebergement = {
   img: string;
@@ -117,10 +127,10 @@ export default function TypeCarousel() {
         <span className="material-symbols-outlined text-[22px]">chevron_right</span>
       </button>
       <div className="type-carousel-track" ref={trackRef}>
-        {TYPES.map((t) => (
-          <a
+        {TYPES.map((t, i) => (
+          <Link
             key={t.title}
-            href="#cta-final"
+            href={HREFS[i]}
             className="type-carousel-card flex flex-col"
           >
             <div className="h-44 sm:h-52 overflow-hidden">
@@ -139,13 +149,13 @@ export default function TypeCarousel() {
                 {t.desc}
               </p>
               <span className="mt-auto text-[#3179C4] font-label text-[13px] font-bold flex items-center gap-1">
-                Nous contacter{" "}
+                Découvrir{" "}
                 <span className="material-symbols-outlined text-[16px]">
                   arrow_forward
                 </span>
               </span>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>

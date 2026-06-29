@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { MAP_DESTINATIONS } from "@/lib/map-destinations";
 
 type CardType = "destination" | "sport";
 type Continent = "asie" | "afrique" | "ameriques" | "europe";
@@ -24,6 +25,26 @@ const CONTINENT_NAMES: Record<Continent, string> = {
   europe: "Europe",
 };
 
+/** Destinations déjà listées en dur ci-dessous (évite les doublons). */
+const EXISTING_GRID_IDS = new Set([
+  "japon", "thailande", "maroc", "ile-maurice", "seychelles", "zanzibar",
+  "canada", "costa-rica", "laponie", "londres", "amsterdam", "porto", "rome",
+]);
+/** Toutes les autres destinations (fiches riches) ajoutées automatiquement. */
+const EXTRA_DEST_CARDS: DestCard[] = MAP_DESTINATIONS.filter(
+  (m) => !EXISTING_GRID_IDS.has(m.id),
+).map((m) => ({
+  badge: m.name.toUpperCase(),
+  continent: m.continent,
+  type: "destination" as const,
+  href: m.href,
+  img: m.img,
+  alt: `Voyage ${m.name}`,
+  title: m.name,
+  desc: m.desc,
+  cta: "DÉCOUVRIR",
+}));
+
 const CARDS: DestCard[] = [
   // ── DESTINATIONS VOYAGE ──
   {
@@ -41,7 +62,7 @@ const CARDS: DestCard[] = [
     badge: "THAÏLANDE",
     continent: "asie",
     type: "destination",
-    href: "/destination/thailande",
+    href: "/destination-thailande",
     img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop&auto=format",
     alt: "Voyage en Thaïlande",
     title: "Thaïlande : temples dorés et îles turquoise",
@@ -169,6 +190,7 @@ const CARDS: DestCard[] = [
     desc: "Plongez dans l'histoire éternelle entre vestiges antiques, places emblématiques et douceur de vivre italienne.",
     cta: "DÉCOUVRIR",
   },
+  ...EXTRA_DEST_CARDS,
   // ── ÉVÉNEMENTS SPORTIFS ──
   {
     badge: "ANGLETERRE",
@@ -360,11 +382,19 @@ const COUNTRY_DATA: Record<Continent, { destination: string[]; sport: string[] }
 const PER_PAGE = 6;
 const CONTINENTS: Continent[] = ["asie", "afrique", "ameriques", "europe"];
 
+/** Normalise (minuscules + sans accents) pour la recherche. */
+const norm = (s: string) =>
+  s
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "");
+
 export default function DestinationsGrid() {
   const [activeType, setActiveType] = useState<"all" | CardType>("all");
   const [activeContinent, setActiveContinent] = useState<"all" | Continent>("all");
   const [activeCountry, setActiveCountry] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [query, setQuery] = useState("");
 
   // Continents disponibles selon le type actif (masque les boutons vides)
   const continentsWithData = useMemo(() => {
@@ -377,15 +407,18 @@ export default function DestinationsGrid() {
   }, [activeType]);
 
   const filtered = useMemo(() => {
+    const q = norm(query.trim());
     return CARDS.filter((card) => {
       const matchType = activeType === "all" || activeType === card.type;
       const matchContinent =
         activeContinent === "all" || card.continent === activeContinent;
       const matchCountry =
         !activeCountry || card.badge.toUpperCase() === activeCountry.toUpperCase();
-      return matchType && matchContinent && matchCountry;
+      const matchQuery =
+        !q || norm(`${card.title} ${card.badge} ${card.desc}`).includes(q);
+      return matchType && matchContinent && matchCountry && matchQuery;
     });
-  }, [activeType, activeContinent, activeCountry]);
+  }, [activeType, activeContinent, activeCountry, query]);
 
   const total = filtered.length;
   const visibleCount = currentPage * PER_PAGE;
@@ -452,7 +485,7 @@ export default function DestinationsGrid() {
     <>
       {/* ÉTAPE 1 : CONTINENTS */}
       {activeContinent === "all" && (
-        <div className="map-filter-row mb-6">
+        <div className="map-filter-row mb-10 sm:mb-12">
           <span className="filter-label">Continent</span>
           <div className="filter-buttons">
             <button
@@ -575,10 +608,41 @@ export default function DestinationsGrid() {
         </div>
       </div>
 
-      {/* COMPTEUR */}
-      <p className="font-h3 text-[18px] sm:text-[20px] font-bold text-on-surface mb-6 sm:mb-8">
-        {total} résultat{total > 1 ? "s" : ""}
-      </p>
+      {/* COMPTEUR + RECHERCHE */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8">
+        <p className="font-h3 text-[18px] sm:text-[20px] font-bold text-on-surface">
+          {total} résultat{total > 1 ? "s" : ""}
+        </p>
+        <div className="relative w-full sm:w-[320px]">
+          <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">
+            search
+          </span>
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setCurrentPage(1);
+            }}
+            placeholder="Rechercher une destination…"
+            aria-label="Rechercher une destination"
+            className="w-full pl-11 pr-10 py-2.5 rounded-full border-[1.5px] border-outline-variant/60 bg-white text-[14px] text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-[#3179C4] focus:ring-2 focus:ring-[#3179C4]/15 transition-all"
+          />
+          {query && (
+            <button
+              type="button"
+              onClick={() => {
+                setQuery("");
+                setCurrentPage(1);
+              }}
+              aria-label="Effacer la recherche"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-[#3179C4] flex items-center"
+            >
+              <span className="material-symbols-outlined text-[20px]">close</span>
+            </button>
+          )}
+        </div>
+      </div>
 
       {/* GRILLE */}
       <div

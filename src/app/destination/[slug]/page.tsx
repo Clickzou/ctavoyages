@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import NewsletterForm from "@/components/home/NewsletterForm";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import DestCarousel from "@/components/destination/DestCarousel";
+import DestinationTemplate from "@/components/destination/DestinationTemplate";
 import { getDestination, getAllSlugs } from "@/lib/destinations";
+import { getDestinationContent } from "@/lib/destination-content";
+
+/** Slugs disposant d'une fiche riche servie en page statique dédiée (/destination-<slug>). */
+const STATIC_RICH_SLUGS = ["japon", "thailande"];
 
 export function generateStaticParams() {
-  return getAllSlugs().map((slug) => ({ slug }));
+  // On exclut japon/thailande (servis sur /destination-<slug>).
+  return getAllSlugs()
+    .filter((slug) => !STATIC_RICH_SLUGS.includes(slug))
+    .map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -14,6 +24,10 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const rich = getDestinationContent(slug);
+  if (rich) {
+    return { title: rich.meta.title, description: rich.meta.description };
+  }
   const dest = getDestination(slug);
   if (!dest) {
     return { title: "Destination introuvable | CTA Voyages" };
@@ -30,17 +44,29 @@ export default async function DestinationPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const dest = getDestination(slug);
 
+  // japon/thailande : fiche riche servie sur /destination-<slug>.
+  if (STATIC_RICH_SLUGS.includes(slug)) {
+    redirect(`/destination-${slug}`);
+  }
+
+  // Fiche riche (template complet avec itinéraire) si disponible.
+  const rich = getDestinationContent(slug);
+  if (rich) {
+    return <DestinationTemplate content={rich} />;
+  }
+
+  // Sinon, fiche générique (repli).
+  const dest = getDestination(slug);
   if (!dest) {
     notFound();
   }
 
   return (
     <>
-      <main className="pt-[72px]">
-        {/* HERO */}
-        <section className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
+      <main>
+        {/* HERO plein écran */}
+        <section className="relative h-[100svh] min-h-[600px] w-full overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             alt={`Voyage ${dest.name} avec CTA Voyages`}
@@ -48,11 +74,15 @@ export default async function DestinationPage({
             src={dest.heroImg}
           />
           <div className="absolute inset-0 hero-overlay"></div>
-          <div className="absolute inset-0 flex flex-col justify-end pb-10 sm:pb-16">
-            <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter w-full">
-              <span className="inline-block bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label font-label text-primary text-[12px] sm:text-[13px] mb-3 sm:mb-4 tracking-wider uppercase">
-                {dest.continent}
-              </span>
+          <HeroScrollIndicator />
+          <div className="absolute inset-0 flex flex-col justify-center">
+            <div className="hero-anim max-w-[1200px] mx-auto px-4 sm:px-gutter w-full">
+              <p className="font-label text-label text-white/70 mb-2 sm:mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
+                <Link href="/destinations" className="hover:text-white transition-colors">
+                  Destinations
+                </Link>{" "}
+                <span className="text-white/40">/</span> {dest.continent}
+              </p>
               <h1 className="font-h1 text-[30px] sm:text-[42px] md:text-h1 text-white mb-3 sm:mb-4 leading-[1.1] max-w-3xl">
                 Voyage {dest.name}
               </h1>
@@ -60,28 +90,25 @@ export default async function DestinationPage({
                 {dest.intro}
               </p>
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4">
-                <Link
-                  href="/demande-devis"
-                  className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 active:scale-95 transition-all shadow-lg text-center"
-                >
-                  Demander un devis
+                <Link href="/demande-devis" className="hero-cta-primary group">
+                  Demander mon devis gratuit
+                  <span className="material-symbols-outlined hero-cta-arrow">
+                    arrow_forward
+                  </span>
                 </Link>
-                <Link
-                  href="/demande-renseignement"
-                  className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#1A1A1A] active:scale-95 transition-all text-center"
-                >
-                  Nous contacter
-                </Link>
+                <a href="#presentation" className="hero-cta-ghost">
+                  Découvrir la destination
+                </a>
               </div>
             </div>
           </div>
         </section>
 
         {/* PRÉSENTATION + POINTS FORTS */}
-        <section className="section-bg-blue py-section_padding_v">
+        <section id="presentation" className="section-bg-blue py-section_padding_v">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-              <div>
+              <div data-reveal="fade-up">
                 <p className="text-primary font-label text-label mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
                   Présentation
                 </p>
@@ -93,12 +120,17 @@ export default async function DestinationPage({
                 </p>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-5">
                   Votre conseiller CTA Voyages conçoit avec vous l&apos;itinéraire qui
-                  vous ressemble, à votre rythme, selon vos envies et votre budget.
+                  vous ressemble, à votre rythme, selon vos envies et votre budget —
+                  en séjour, en circuit ou en voyage entièrement sur mesure.
                 </p>
               </div>
-              <div className="bg-white rounded-2xl p-6 sm:p-8 luxury-shadow border border-outline-variant/30">
+              <div
+                data-reveal="fade-up"
+                data-reveal-delay={120}
+                className="bg-white rounded-2xl p-6 sm:p-8 luxury-shadow border border-outline-variant/30"
+              >
                 <p className="text-primary font-label text-label mb-4 tracking-wider uppercase text-[12px] sm:text-[14px]">
-                  Les points forts
+                  Les incontournables
                 </p>
                 <ul className="space-y-3 sm:space-y-4">
                   {dest.highlights.map((point) => (
@@ -123,22 +155,25 @@ export default async function DestinationPage({
         {/* NOS EXPÉRIENCES */}
         <section className="bg-white py-section_padding_v">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="text-center mb-10 sm:mb-14">
+            <div className="text-center mb-10 sm:mb-14" data-reveal="fade-up">
               <p className="text-primary font-label text-label mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
                 Inspirations
               </p>
               <h2 className="font-h2 text-[26px] sm:text-[32px] md:text-h2 text-on-surface">
-                Nos expériences {dest.name}
+                Nos idées de voyage {dest.name}
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
               {dest.experiences.map((exp, i) => (
                 <div
                   key={exp.title}
-                  className="unified-card bg-surface-container-lowest rounded-xl luxury-shadow border border-outline-variant/30 p-6 sm:p-8 flex flex-col"
+                  data-reveal="fade-up"
+                  data-reveal-delay={i * 120}
+                  className="group relative bg-white rounded-2xl p-7 sm:p-8 border border-outline-variant/40 shadow-[0_2px_24px_rgba(0,0,0,0.05)] hover:-translate-y-1.5 hover:shadow-[0_18px_44px_rgba(49,121,196,0.16)] transition-all duration-300 overflow-hidden flex flex-col"
                 >
-                  <div className="w-12 h-12 rounded-full bg-[#3179C4]/10 flex items-center justify-center mb-5">
-                    <span className="font-h3 text-[18px] font-bold text-[#3179C4]">
+                  <span className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-[#3179C4] to-[#FBBF12] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                  <div className="w-12 h-12 rounded-full bg-[#3179C4]/10 flex items-center justify-center mb-5 group-hover:bg-[#3179C4] transition-colors duration-300">
+                    <span className="font-h3 text-[18px] font-bold text-[#3179C4] group-hover:text-white transition-colors duration-300">
                       {i + 1}
                     </span>
                   </div>
@@ -157,7 +192,10 @@ export default async function DestinationPage({
         {/* MEILLEURE SAISON */}
         <section className="section-bg-blue py-section_padding_v">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="max-w-3xl mx-auto bg-white rounded-2xl p-6 sm:p-10 luxury-shadow border border-outline-variant/30 text-center">
+            <div
+              data-reveal="zoom"
+              className="max-w-3xl mx-auto bg-white rounded-2xl p-6 sm:p-10 luxury-shadow border border-outline-variant/30 text-center"
+            >
               <span
                 className="material-symbols-outlined text-[#FBBF12] text-[40px] sm:text-[48px] mb-4 inline-block"
                 style={{ fontVariationSettings: "'FILL' 1" }}
@@ -193,42 +231,63 @@ export default async function DestinationPage({
                   ressemble, gratuitement et sans engagement.
                 </p>
                 <div className="flex flex-col xs:flex-row flex-wrap justify-center gap-3 sm:gap-4">
-                  <Link
-                    href="/demande-devis"
-                    className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 hover:scale-105 active:scale-95 transition-all shadow-lg text-center"
-                  >
+                  <Link href="/demande-devis" className="hero-cta-primary group">
                     Demander mon devis gratuit
+                    <span className="material-symbols-outlined hero-cta-arrow">
+                      arrow_forward
+                    </span>
                   </Link>
                   <a
                     href="tel:+33534391391"
-                    className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#004191] active:scale-95 transition-all text-center flex items-center justify-center gap-2"
+                    className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#004191] active:scale-95 transition-all text-center inline-flex items-center justify-center gap-2"
                   >
                     <span className="material-symbols-outlined text-[18px]">call</span>{" "}
                     +33 (0)5 34 391 391
                   </a>
                 </div>
                 <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
-                  <span className="text-white/60 text-[12px] sm:text-[13px] flex items-center gap-1">
-                    <span className="material-symbols-outlined text-[15px]">
-                      check_circle
-                    </span>{" "}
-                    Devis gratuit
-                  </span>
-                  <span className="text-white/60 text-[12px] sm:text-[13px] flex items-center gap-1">
-                    <span className="material-symbols-outlined text-[15px]">
-                      check_circle
-                    </span>{" "}
-                    Sans engagement
-                  </span>
-                  <span className="text-white/60 text-[12px] sm:text-[13px] flex items-center gap-1">
-                    <span className="material-symbols-outlined text-[15px]">
-                      check_circle
-                    </span>{" "}
-                    Contact sous 48h
-                  </span>
+                  {["Devis gratuit", "Sans engagement", "Contact sous 48h"].map(
+                    (m) => (
+                      <span
+                        key={m}
+                        className="text-white/60 text-[12px] sm:text-[13px] flex items-center gap-1"
+                      >
+                        <span className="material-symbols-outlined text-[15px]">
+                          check_circle
+                        </span>{" "}
+                        {m}
+                      </span>
+                    ),
+                  )}
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* AUTRES DESTINATIONS */}
+        <section className="section-bg-blue py-section_padding_v overflow-hidden">
+          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+            <div className="flex justify-between items-end mb-8 sm:mb-10">
+              <div>
+                <p className="text-primary font-label text-label mb-2 tracking-wider uppercase text-[12px] sm:text-[14px]">
+                  Inspirations
+                </p>
+                <h2 className="font-h2 text-[24px] sm:text-[28px] md:text-h2 text-on-surface">
+                  Vous aimerez aussi
+                </h2>
+              </div>
+              <Link
+                className="text-primary font-label text-[13px] sm:text-[14px] flex items-center gap-2 hover:underline flex-shrink-0"
+                href="/destinations"
+              >
+                Voir tout{" "}
+                <span className="material-symbols-outlined text-[18px]">
+                  arrow_forward
+                </span>
+              </Link>
+            </div>
+            <DestCarousel excludeName={dest.name} />
           </div>
         </section>
       </main>

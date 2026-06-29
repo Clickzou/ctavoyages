@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FooterCredit from "./FooterCredit";
 
 export default function Footer() {
   return (
@@ -109,6 +110,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <FooterCredit />
     </footer>
   );
 }

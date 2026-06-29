@@ -1,0 +1,256 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import NewsletterForm from "@/components/home/NewsletterForm";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import { getArticle, BLOG_SLUGS } from "@/lib/blog-content";
+
+export function generateStaticParams() {
+  return BLOG_SLUGS.map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const article = getArticle(slug);
+  if (!article) return { title: "Article introuvable | CTA Voyages" };
+  return { title: article.meta.title, description: article.meta.description };
+}
+
+export default async function BlogArticlePage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const article = getArticle(slug);
+  if (!article) notFound();
+
+  // Première (et unique) section illustrée : photo à gauche, intro + texte à droite.
+  const firstImgIndex = article.sections.findIndex((s) => Boolean(s.img));
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.meta.description,
+    image: article.heroImg,
+    datePublished: article.date,
+    author: { "@type": "Organization", name: "CTA Voyages" },
+    publisher: { "@type": "Organization", name: "CTA Voyages" },
+  };
+
+  // Balisage FAQPage (rich results Google) si l'article comporte une FAQ.
+  const faqJsonLd =
+    article.faq && article.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: article.faq.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }
+      : null;
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
+
+      <main>
+        {/* HERO */}
+        <section className="relative h-[68vh] min-h-[420px] w-full overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            alt={article.heroAlt}
+            className="w-full h-full object-cover"
+            src={article.heroImg}
+          />
+          <div className="absolute inset-0 hero-overlay"></div>
+          <HeroScrollIndicator />
+          <div className="absolute inset-0 flex flex-col justify-end pb-12 sm:pb-16">
+            <div className="hero-anim max-w-[860px] mx-auto px-4 sm:px-gutter w-full">
+              <p className="font-label text-label text-white/70 mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  Blog
+                </Link>{" "}
+                <span className="text-white/40">/</span> {article.category}
+              </p>
+              <h1 className="font-h1 text-[28px] sm:text-[40px] md:text-h1 text-white mb-4 leading-[1.12] max-w-3xl">
+                {article.title}
+              </h1>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-white/80 text-[13px] sm:text-[14px]">
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="material-symbols-outlined text-[16px]">
+                    calendar_month
+                  </span>
+                  {article.date}
+                </span>
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="material-symbols-outlined text-[16px]">
+                    schedule
+                  </span>
+                  {article.readingTime} de lecture
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CORPS DE L'ARTICLE */}
+        <article className="bg-white py-section_padding_v">
+          {/* Chapô (uniquement si aucune section illustrée pour l'accueillir) */}
+          {firstImgIndex === -1 && (
+            <div className="max-w-[760px] mx-auto px-4 sm:px-gutter">
+              <p className="font-body-lg text-[17px] sm:text-[19px] text-on-surface leading-relaxed">
+                {article.intro}
+              </p>
+            </div>
+          )}
+
+          {article.sections.map((section, i) =>
+            i === firstImgIndex ? (
+              /* Section illustrée : pleine largeur, photo à gauche / (intro + texte) à droite, marges 100px */
+              <section key={i} className="w-full px-4 sm:px-8 lg:px-[100px] my-10 sm:my-14">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+                  <figure className="m-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      alt={section.imgAlt || section.h2}
+                      src={section.img}
+                      className="w-full h-full max-h-[520px] object-cover rounded-2xl luxury-shadow"
+                    />
+                  </figure>
+                  <div>
+                    <p className="font-body-lg text-[16px] sm:text-[18px] text-on-surface leading-relaxed mb-6">
+                      {article.intro}
+                    </p>
+                    <h2 className="font-h2 text-[24px] sm:text-[30px] text-on-surface mb-4 sm:mb-5">
+                      {section.h2}
+                    </h2>
+                    <div className="article-body font-body-md text-[15px] sm:text-[17px] text-on-surface-variant leading-relaxed space-y-4">
+                      {section.body}
+                    </div>
+                  </div>
+                </div>
+              </section>
+            ) : (
+              /* Toutes les autres sections : une seule colonne lisible, sans photo */
+              <div
+                key={i}
+                className="max-w-[760px] mx-auto px-4 sm:px-gutter my-9 sm:my-11"
+              >
+                <h2 className="font-h2 text-[22px] sm:text-[28px] text-on-surface mb-4 sm:mb-5">
+                  {section.h2}
+                </h2>
+                <div className="article-body font-body-md text-[15px] sm:text-[17px] text-on-surface-variant leading-relaxed space-y-4">
+                  {section.body}
+                </div>
+              </div>
+            ),
+          )}
+
+          <div className="max-w-[760px] mx-auto px-4 sm:px-gutter">
+            <div className="border-l-4 border-[#FBBF12] bg-surface-container-low/60 rounded-r-xl pl-5 pr-4 py-4 sm:py-5 mb-12 mt-4">
+              <p className="font-body-md text-[15px] sm:text-[17px] text-on-surface leading-relaxed">
+                {article.conclusion}
+              </p>
+            </div>
+
+            {/* FAQ (SEO) */}
+            {article.faq && article.faq.length > 0 && (
+              <div className="mb-12">
+                <h2 className="font-h2 text-[22px] sm:text-[28px] text-on-surface mb-5 sm:mb-6">
+                  Questions fréquentes
+                </h2>
+                <div className="space-y-3">
+                  {article.faq.map((item, i) => (
+                    <details
+                      key={i}
+                      className="group rounded-xl border border-outline-variant/40 bg-white px-5 py-4 [&_summary::-webkit-details-marker]:hidden"
+                    >
+                      <summary className="flex cursor-pointer items-center justify-between gap-4 font-h3 text-[16px] sm:text-[18px] font-bold text-on-surface">
+                        {item.q}
+                        <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                          expand_more
+                        </span>
+                      </summary>
+                      <p className="mt-3 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed">
+                        {item.a}
+                      </p>
+                    </details>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* CTA */}
+            <div className="bg-gradient-to-br from-[#004191] to-[#3179C4] rounded-2xl p-7 sm:p-10 text-center">
+              <h2 className="font-h2 text-[22px] sm:text-[28px] text-white mb-3">
+                Envie de partir ?
+              </h2>
+              <p className="font-body-md text-[15px] sm:text-[16px] text-white/85 mb-6 max-w-xl mx-auto">
+                Votre conseiller dédié construit avec vous le voyage qui vous
+                ressemble, gratuitement et sans engagement.
+              </p>
+              <Link href="/demande-devis" className="hero-cta-primary group">
+                Demander mon devis gratuit
+                <span className="material-symbols-outlined hero-cta-arrow">
+                  arrow_forward
+                </span>
+              </Link>
+            </div>
+
+            <div className="mt-10 text-center">
+              <Link
+                href="/blog"
+                className="inline-flex items-center gap-2 text-primary font-label text-[14px] hover:underline"
+              >
+                <span className="material-symbols-outlined text-[18px]">
+                  arrow_back
+                </span>
+                Retour au blog
+              </Link>
+            </div>
+          </div>
+        </article>
+      </main>
+
+      {/* NEWSLETTER */}
+      <section
+        className="w-full py-12 sm:py-16"
+        style={{ backgroundColor: "#004191" }}
+      >
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            <div className="text-center lg:text-left max-w-xl">
+              <h2 className="font-h2 text-[24px] sm:text-[28px] md:text-[32px] font-bold text-white mb-3">
+                Ne manquez aucun de nos articles
+              </h2>
+              <p className="font-body-md text-[14px] sm:text-[16px] text-white/80 leading-relaxed">
+                Recevez nos conseils de voyage, idées de destinations et bons plans
+                directement dans votre boîte mail.
+              </p>
+            </div>
+            <div className="w-full lg:w-auto lg:min-w-[420px]">
+              <NewsletterForm />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

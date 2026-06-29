@@ -1,12 +1,15 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 
 type TypeSejour = {
   img: string;
   alt: string;
   title: string;
   desc: string;
+  /** Page thème dédiée. Si absent, la carte renvoie vers le bloc contact. */
+  href?: string;
 };
 
 const TYPES: TypeSejour[] = [
@@ -15,36 +18,42 @@ const TYPES: TypeSejour[] = [
     alt: "Séjour balnéaire en resort avec piscine et vue sur mer",
     title: "Séjour balnéaire",
     desc: "Resort, plage et farniente — le grand classique des vacances en bord de mer.",
+    href: "/sejours/balneaire",
   },
   {
     img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=400&fit=crop&auto=format",
     alt: "Court séjour escapade en ville",
     title: "Escapade urbaine",
     desc: "2 à 5 nuits dans une grande ville européenne — Londres, Amsterdam, Porto ou Rome.",
+    href: "/sejours/escapade-urbaine",
   },
   {
     img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&auto=format",
     alt: "Séjour nature et randonnée",
     title: "Séjour nature",
     desc: "Forêts, volcans, savanes — au plus proche des grands espaces naturels.",
+    href: "/sejours/nature",
   },
   {
     img: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=400&fit=crop&auto=format",
     alt: "Séjour romantique en couple",
     title: "Séjour romantique",
     desc: "Boutique-hôtels, riads intimistes, resorts face à l'océan pour une parenthèse en amoureux.",
+    href: "/sejours/romantique",
   },
   {
     img: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&h=400&fit=crop&auto=format",
     alt: "Séjour en famille avec enfants",
     title: "Séjour en famille",
     desc: "Clubs, resorts familiaux, hébergements adaptés aux enfants pour des vacances sans prise de tête.",
+    href: "/sejours/famille",
   },
   {
     img: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop&auto=format",
     alt: "Séjour culturel découverte",
     title: "Séjour culturel",
     desc: "Médinas, temples, vieilles villes — pour les voyageurs avides de découverte et d'histoire.",
+    href: "/sejours/culturel",
   },
 ];
 
@@ -118,9 +127,9 @@ export default function TypeCarousel() {
       </button>
       <div className="type-carousel-track" ref={trackRef}>
         {TYPES.map((t) => (
-          <a
+          <Link
             key={t.title}
-            href="#cta-final"
+            href={t.href ?? "#cta-final"}
             className="type-carousel-card flex flex-col"
           >
             <div className="h-44 sm:h-52 overflow-hidden">
@@ -139,13 +148,13 @@ export default function TypeCarousel() {
                 {t.desc}
               </p>
               <span className="mt-auto text-[#3179C4] font-label text-[13px] font-bold flex items-center gap-1">
-                Nous contacter{" "}
+                {t.href ? "Découvrir" : "Nous contacter"}{" "}
                 <span className="material-symbols-outlined text-[16px]">
                   arrow_forward
                 </span>
               </span>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </div>

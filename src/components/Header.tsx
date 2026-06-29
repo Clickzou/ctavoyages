@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 /** Liens de navigation partagés (Header + Footer). */
 export const OFFERS = [
@@ -19,9 +20,44 @@ const ABOUT = [
   { label: "L'équipe CTA Voyages", href: "/equipe" },
 ];
 
+/** Routes avec un hero plein écran sombre : header transparent autorisé en haut de page. */
+const TRANSPARENT_ROUTES = new Set([
+  "/",
+  "/sejours",
+  "/circuits",
+  "/croisieres",
+  "/glamping",
+  "/catalogue-sportif",
+  "/voyage-sur-mesure",
+]);
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSub, setOpenSub] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  // Header transparent en haut d'une page à hero plein écran (offres + fiches
+  // destination /destination-*), menu mobile fermé.
+  const overHero =
+    (TRANSPARENT_ROUTES.has(pathname) ||
+      pathname.startsWith("/destination-") ||
+      pathname.startsWith("/destination/") ||
+      // Pages thème (ex. /sejours/balneaire) : hero plein écran sombre.
+      pathname.startsWith("/sejours/") ||
+      pathname.startsWith("/circuits/") ||
+      pathname.startsWith("/croisieres/") ||
+      pathname.startsWith("/glamping/") ||
+      pathname.startsWith("/voyage-sur-mesure/")) &&
+    !scrolled &&
+    !menuOpen;
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -31,28 +67,43 @@ export default function Header() {
   const toggleSub = (key: string) =>
     setOpenSub((prev) => (prev === key ? null : key));
 
+  const navLink = `font-h2 text-[13px] font-semibold uppercase tracking-wide transition-colors py-1 border-b-2 border-transparent ${
+    overHero
+      ? "text-white hover:text-[#FBBF12] hover:border-[#FBBF12]"
+      : "text-[#1A1A1A] hover:text-[#3179C4] hover:border-[#3179C4]"
+  }`;
+  const navTrigger = `flex items-center gap-1 font-h2 text-[13px] font-semibold uppercase tracking-wide transition-colors py-1 border-b-2 border-transparent ${
+    overHero
+      ? "text-white group-hover:text-[#FBBF12] group-hover:border-[#FBBF12]"
+      : "text-[#1A1A1A] group-hover:text-[#3179C4] group-hover:border-[#3179C4]"
+  }`;
+
   return (
     <>
-      <header className="fixed top-0 w-full z-50 shadow-sm h-[72px] bg-white">
+      <header
+        className={`fixed top-0 w-full z-50 h-[72px] transition-all duration-300 ${
+          overHero ? "bg-transparent" : "bg-white shadow-sm"
+        }`}
+      >
         <div className="max-w-[1200px] mx-auto flex justify-between items-center px-4 sm:px-gutter h-full">
-          <div className="flex items-center gap-6 lg:gap-12">
-            <Link className="flex-shrink-0" href="/">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                alt="CTA Voyages — Agence de voyages sur mesure à Toulouse"
-                className="h-[36px] sm:h-[40px] w-auto"
-                src="/assets/images/Logo CTA Voyages.png"
+          <Link className="flex-shrink-0" href="/">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              alt="CTA Voyages — Agence de voyages sur mesure à Toulouse"
+              className="h-[48px] sm:h-[56px] w-auto transition-opacity duration-300"
+                src={
+                  overHero
+                    ? "/assets/images/Logo CTA Voyages blanc.png"
+                    : "/assets/images/Logo CTA Voyages.png"
+                }
               />
             </Link>
-            <nav className="hidden lg:flex items-center gap-8">
-              <Link
-                className="font-h2 text-[15px] font-medium text-[#1A1A1A] hover:text-[#3179C4] transition-colors pb-1 border-b-2 border-transparent hover:border-[#3179C4]"
-                href="/"
-              >
+            <nav className="hidden lg:flex items-center gap-10 flex-1 justify-center">
+              <Link className={navLink} href="/">
                 Accueil
               </Link>
               <div className="relative group">
-                <button className="flex items-center gap-1 font-h2 text-[15px] font-medium text-[#1A1A1A] hover:text-[#3179C4] transition-colors pb-1 border-b-2 border-transparent group-hover:border-[#3179C4]">
+                <button className={navTrigger}>
                   Nos offres{" "}
                   <span className="material-symbols-outlined text-sm">
                     keyboard_arrow_down
@@ -70,14 +121,14 @@ export default function Header() {
                   ))}
                 </div>
               </div>
-              <Link
-                className="font-h2 text-[15px] font-medium text-[#1A1A1A] hover:text-[#3179C4] transition-colors pb-1 border-b-2 border-transparent hover:border-[#3179C4]"
-                href="/destinations"
-              >
+              <Link className={navLink} href="/destinations">
                 Destinations
               </Link>
+              <Link className={navLink} href="/blog">
+                Blog
+              </Link>
               <div className="relative group">
-                <button className="flex items-center gap-1 font-h2 text-[15px] font-medium text-[#1A1A1A] hover:text-[#3179C4] transition-colors pb-1 border-b-2 border-transparent group-hover:border-[#3179C4]">
+                <button className={navTrigger}>
                   En savoir plus{" "}
                   <span className="material-symbols-outlined text-sm">
                     keyboard_arrow_down
@@ -96,20 +147,29 @@ export default function Header() {
                 </div>
               </div>
             </nav>
-          </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-shrink-0">
             <Link
               href="/demande-renseignement"
-              className="hidden sm:inline-flex bg-white text-[#3179C4] border-[1.5px] border-[#3179C4] px-4 lg:px-6 py-2.5 rounded-lg font-label text-label hover:bg-[#3179C4] hover:text-white active:scale-95 transition-all shadow-sm text-[13px] lg:text-[14px]"
+              className={`hidden sm:inline-flex px-4 lg:px-6 py-2.5 rounded-lg font-label text-label uppercase tracking-wide active:scale-95 transition-all text-[13px] lg:text-[14px] ${
+                overHero
+                  ? "bg-white/10 backdrop-blur-sm text-white border-[1.5px] border-white hover:bg-white hover:text-[#3179C4]"
+                  : "bg-white text-[#3179C4] border-[1.5px] border-[#3179C4] hover:bg-[#3179C4] hover:text-white shadow-sm"
+              }`}
             >
               Un renseignement ?
             </Link>
             <button
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-surface-container transition-colors"
+              className={`lg:hidden flex items-center justify-center w-10 h-10 rounded-lg transition-colors ${
+                overHero ? "hover:bg-white/15" : "hover:bg-surface-container"
+              }`}
               onClick={() => setMenuOpen(true)}
               aria-label="Ouvrir le menu"
             >
-              <span className="material-symbols-outlined text-[28px] text-on-surface">
+              <span
+                className={`material-symbols-outlined text-[28px] ${
+                  overHero ? "text-white" : "text-on-surface"
+                }`}
+              >
                 menu
               </span>
             </button>
@@ -140,7 +200,7 @@ export default function Header() {
         </div>
         <div className="p-4 flex flex-col gap-1">
           <Link
-            className="block py-3 px-4 font-h2 text-[15px] font-medium text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
+            className="block py-3 px-4 font-h2 text-[14px] font-semibold uppercase tracking-wide text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
             href="/"
             onClick={closeMenu}
           >
@@ -148,7 +208,7 @@ export default function Header() {
           </Link>
           <div>
             <button
-              className="w-full flex items-center justify-between py-3 px-4 font-h2 text-[15px] font-medium text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
+              className="w-full flex items-center justify-between py-3 px-4 font-h2 text-[14px] font-semibold uppercase tracking-wide text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
               onClick={() => toggleSub("offers")}
             >
               Nos offres{" "}
@@ -180,15 +240,22 @@ export default function Header() {
             </div>
           </div>
           <Link
-            className="block py-3 px-4 font-h2 text-[15px] font-medium text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
+            className="block py-3 px-4 font-h2 text-[14px] font-semibold uppercase tracking-wide text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
             href="/destinations"
             onClick={closeMenu}
           >
             Destinations
           </Link>
+          <Link
+            className="block py-3 px-4 font-h2 text-[14px] font-semibold uppercase tracking-wide text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
+            href="/blog"
+            onClick={closeMenu}
+          >
+            Blog
+          </Link>
           <div>
             <button
-              className="w-full flex items-center justify-between py-3 px-4 font-h2 text-[15px] font-medium text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
+              className="w-full flex items-center justify-between py-3 px-4 font-h2 text-[14px] font-semibold uppercase tracking-wide text-[#1A1A1A] hover:text-[#3179C4] hover:bg-surface-container-low rounded-lg"
               onClick={() => toggleSub("about")}
             >
               En savoir plus{" "}
@@ -223,7 +290,7 @@ export default function Header() {
         <div className="p-4 border-t border-outline-variant mt-2">
           <Link
             href="/demande-renseignement"
-            className="block w-full bg-white text-[#3179C4] border-[1.5px] border-[#3179C4] py-3 rounded-lg font-label text-label hover:bg-[#3179C4] hover:text-white transition-all shadow-sm text-center"
+            className="block w-full bg-white text-[#3179C4] border-[1.5px] border-[#3179C4] py-3 rounded-lg font-label text-label uppercase tracking-wide hover:bg-[#3179C4] hover:text-white transition-all shadow-sm text-center"
             onClick={closeMenu}
           >
             Un renseignement ?

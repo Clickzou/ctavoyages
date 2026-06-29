@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { destinationHref, destinationImg } from "@/lib/destinations";
 
 type Dest = {
   href: string;
@@ -195,14 +196,14 @@ export default function DestCarousel() {
           <div
             key={`${d.badge}-${i}`}
             className="carousel-card bg-surface-container-lowest rounded-xl luxury-shadow overflow-hidden group cursor-pointer border border-outline-variant/30"
-            onClick={() => router.push(d.href)}
+            onClick={() => router.push(destinationHref(d.badge, d.href))}
           >
             <div className="h-52 sm:h-64 overflow-hidden relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 alt={d.alt}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                src={d.img}
+                src={destinationImg(d.badge) ?? d.img}
               />
               <div className="absolute top-4 left-4 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded-full text-label font-label text-primary text-[12px]">
                 {d.badge}
@@ -217,7 +218,7 @@ export default function DestCarousel() {
               </p>
               <Link
                 className="discover-link text-primary font-label text-label text-[13px] sm:text-[14px] flex items-center hover:gap-2 transition-all"
-                href={d.href}
+                href={destinationHref(d.badge, d.href)}
                 onClick={(e) => e.stopPropagation()}
               >
                 DÉCOUVRIR{" "}

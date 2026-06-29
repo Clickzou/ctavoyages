@@ -6,6 +6,7 @@ import SportCarousel from "@/components/catalogue-sportif/SportCarousel";
 import FaqList from "@/components/catalogue-sportif/FaqList";
 import AlsoCarousel from "@/components/catalogue-sportif/AlsoCarousel";
 import NewsletterForm from "@/components/home/NewsletterForm";
+import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
   title: "Catalogue sportif - CTA Voyages",
@@ -68,11 +69,11 @@ export default function CatalogueSportifPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <main className="pt-[72px]">
+      <main>
         {/* HERO */}
         <section
           className="relative w-full flex items-end sm:items-center overflow-hidden"
-          style={{ minHeight: "520px", height: "68vh", maxHeight: "760px" }}
+          style={{ minHeight: "600px", height: "100svh" }}
         >
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -84,8 +85,9 @@ export default function CatalogueSportifPage() {
             />
             <div className="absolute inset-0 hero-overlay" />
           </div>
+          <HeroScrollIndicator />
           <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-gutter w-full py-10 sm:py-14 md:py-20">
-            <div className="max-w-3xl">
+            <div className="hero-anim max-w-3xl">
               <p className="font-label text-label text-white/70 mb-2 sm:mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
                 Catalogue sportif
               </p>
@@ -98,20 +100,17 @@ export default function CatalogueSportifPage() {
                 en un moment exceptionnel, original et mémorable.
               </p>
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-5">
-                <a
-                  href="#cta-final"
-                  className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 active:scale-95 transition-all shadow-lg text-center"
-                >
+                <a href="#cta-final" className="hero-cta-primary group">
                   Demander un devis gratuit
+                  <span className="material-symbols-outlined hero-cta-arrow">
+                    arrow_forward
+                  </span>
                 </a>
-                <a
-                  href="#packs-sportifs"
-                  className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#1A1A1A] active:scale-95 transition-all text-center"
-                >
+                <a href="#packs-sportifs" className="hero-cta-ghost">
                   Voir nos packs sportifs
                 </a>
               </div>
-              <div className="flex flex-col xs:flex-row flex-wrap items-start xs:items-center gap-y-2 gap-x-5 sm:gap-x-7">
+              <div className="hero-trust flex flex-col xs:flex-row flex-wrap items-start xs:items-center gap-y-2 gap-x-5 sm:gap-x-7">
                 <div className="flex items-center gap-1.5 text-white/70 text-[11px] sm:text-[13px]">
                   <span className="material-symbols-outlined text-[15px] sm:text-[17px]">
                     check_circle
@@ -162,6 +161,29 @@ export default function CatalogueSportifPage() {
                 mêlant passion, découverte et émotions fortes.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* PACKS SPORTIFS — CARROUSEL */}
+        <section
+          className="section-bg-blue py-section_padding_v overflow-hidden"
+          id="packs-sportifs"
+        >
+          <div className="w-full px-6 lg:px-[50px]">
+            <div className="text-center mb-10 sm:mb-14">
+              <p className="text-primary font-label text-label mb-2 tracking-wider">
+                NOS PACKS SPORTIFS
+              </p>
+              <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-on-surface">
+                Choisissez votre aventure sportive
+              </h2>
+              <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
+                Football, Rugby, NBA, NFL, Formule 1, Moto GP ou Boxing Day —
+                chaque pack est conçu pour vous offrir une immersion totale dans
+                votre passion.
+              </p>
+            </div>
+            <SportCarousel />
           </div>
         </section>
 
@@ -283,28 +305,6 @@ export default function CatalogueSportifPage() {
           </div>
         </section>
 
-        {/* PACKS SPORTIFS — CARROUSEL */}
-        <section
-          className="bg-white py-section_padding_v overflow-hidden"
-          id="packs-sportifs"
-        >
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="text-center mb-10 sm:mb-14">
-              <p className="text-primary font-label text-label mb-2 tracking-wider">
-                NOS PACKS SPORTIFS
-              </p>
-              <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-on-surface">
-                Choisissez votre aventure sportive
-              </h2>
-              <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
-                Football, Rugby, NBA, NFL, Formule 1, Moto GP ou Boxing Day —
-                chaque pack est conçu pour vous offrir une immersion totale dans
-                votre passion.
-              </p>
-            </div>
-            <SportCarousel />
-          </div>
-        </section>
 
         {/* ACCOMPAGNEMENT */}
         <section className="section-bg-blue py-section_padding_v human-support-section">
