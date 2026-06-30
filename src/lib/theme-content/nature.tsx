@@ -208,8 +208,8 @@ const nature: ThemeContent = {
         text: "Des îles volcaniques tapissées d'hortensias, lacs de cratère et baleines au large — la nature à l'état pur, au milieu de l'Atlantique.",
       },
       {
-        img: "https://images.unsplash.com/photo-1583524505974-6facd53f4597?w=600&h=400&fit=crop&auto=format",
-        alt: "Lac de montagne et forêts alpines de Slovénie",
+        img: "/generated/slovenie.jpg",
+        alt: "Lac de Bled et Alpes juliennes en Slovénie",
         tag: "Europe",
         name: "Slovénie",
         text: "Lacs alpins, gorges émeraude et forêts des Alpes juliennes : une pépite verte et préservée au cœur de l'Europe.",

@@ -32,6 +32,18 @@ const EXISTING_MAP_IDS = new Set([
   "japon", "thailande", "maroc", "ile-maurice", "seychelles", "zanzibar",
   "canada", "costa-rica", "laponie", "londres", "amsterdam", "porto", "rome",
 ]);
+/** Drapeau (code ISO 3166-1 alpha-2, ou subdivision flagcdn) par slug de destination. */
+const FLAG_BY_SLUG: Record<string, string> = {
+  islande: "is", france: "fr", grece: "gr", santorin: "gr", crete: "gr",
+  italie: "it", venise: "it", espagne: "es", portugal: "pt", croatie: "hr",
+  ecosse: "gb-sct", norvege: "no", suede: "se", slovenie: "si", acores: "pt",
+  egypte: "eg", kenya: "ke", tanzanie: "tz", "afrique-du-sud": "za",
+  namibie: "na", botswana: "bw", maldives: "mv", madagascar: "mg",
+  "la-reunion": "re", vietnam: "vn", inde: "in", "sri-lanka": "lk", bali: "id",
+  ouzbekistan: "uz", mongolie: "mn", jordanie: "jo", dubai: "ae", oman: "om",
+  polynesie: "pf", "nouvelle-zelande": "nz", australie: "au", perou: "pe",
+  patagonie: "ar", floride: "us", "republique-dominicaine": "do",
+};
 const EXTRA_MAP_DEST: Dest[] = MAP_DESTINATIONS.filter(
   (m) => !EXISTING_MAP_IDS.has(m.id),
 ).map((m) => ({
@@ -44,6 +56,7 @@ const EXTRA_MAP_DEST: Dest[] = MAP_DESTINATIONS.filter(
   img: m.img,
   alt: `Voyage ${m.name}`,
   href: m.href,
+  flagCode: FLAG_BY_SLUG[m.id] || "un",
   sport: false,
 }));
 
@@ -154,16 +167,16 @@ export default function WorldMap() {
         document.querySelectorAll(".country-filter-btn").forEach((b) => b.classList.toggle("f-active", (b as HTMLElement).dataset.id === d.id));
       }
 
-      function positionTip(el: HTMLElement) {
-        // La vignette s'ancre sur le côté de la carte correspondant à la moitié
-        // (gauche/droite) où se trouve le marqueur, centrée verticalement.
+      function positionTip(_el: HTMLElement) {
+        // La vignette apparaît TOUJOURS au même endroit : un panneau fixe ancré
+        // juste à droite de la carte, centré verticalement (quel que soit le marqueur).
         const mapEl = document.getElementById("map-wrap");
         if (!mapEl) return;
         const mR = mapEl.getBoundingClientRect();
-        const eR = el.getBoundingClientRect();
         const TW = tooltip.offsetWidth || 258;
         const TH = tooltip.offsetHeight || 280;
         const MARGIN = 14;
+        const GAP = 24; // espace entre le bord droit de la carte et la vignette
 
         // Centrage vertical par rapport à la carte (borné au viewport).
         let top = mR.top + mR.height / 2 - TH / 2;
@@ -174,9 +187,8 @@ export default function WorldMap() {
           // Mobile : centré horizontalement.
           left = (window.innerWidth - TW) / 2;
         } else {
-          const markerCx = eR.left + eR.width / 2;
-          const onRight = markerCx >= mR.left + mR.width / 2;
-          left = onRight ? mR.right - TW - MARGIN : mR.left + MARGIN;
+          // Toujours dans la marge, à droite de la carte (borné au viewport).
+          left = mR.right + GAP;
         }
         left = Math.max(MARGIN, Math.min(left, window.innerWidth - TW - MARGIN));
 
@@ -408,24 +420,6 @@ export default function WorldMap() {
             <span className="continent-label" data-c="africa">Afrique</span>
             <span className="continent-label" data-c="asia">Asie</span>
           </div>
-          <div id="cta-tooltip">
-            <div className="tip-img-box">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img id="tip-img" src="" alt="" />
-              <span id="tip-badge" className="tip-continent-badge" />
-            </div>
-            <div className="tip-body">
-              <p className="tip-name" id="tip-name" />
-              <p className="tip-desc" id="tip-desc" />
-              <a className="tip-cta" id="tip-link" href="#">
-                En savoir plus{" "}
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3179C4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14M12 5l7 7-7 7" />
-                </svg>
-              </a>
-            </div>
-            <div id="tip-arrow" />
-          </div>
         </div>
 
         {/* Légende + lien */}
@@ -447,6 +441,30 @@ export default function WorldMap() {
             </svg>
           </a>
         </div>
+      </div>
+
+      {/* Vignette destination — hors du conteneur animé (will-change) pour un position:fixed correct */}
+      <div id="cta-tooltip">
+        <div className="tip-img-box">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            id="tip-img"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            alt=""
+          />
+          <span id="tip-badge" className="tip-continent-badge" />
+        </div>
+        <div className="tip-body">
+          <p className="tip-name" id="tip-name" />
+          <p className="tip-desc" id="tip-desc" />
+          <a className="tip-cta" id="tip-link" href="#">
+            En savoir plus{" "}
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3179C4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div id="tip-arrow" />
       </div>
     </section>
   );

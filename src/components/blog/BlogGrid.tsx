@@ -148,10 +148,13 @@ export default function BlogGrid({ articles }: { articles: BlogCard[] }) {
         <div className="mt-10 sm:mt-12 text-center">
           <button
             onClick={() => setVisible((v) => v + PER_PAGE)}
-            className="hero-cta-ghost group"
+            className="group inline-flex items-center gap-2 rounded-full border-[1.5px] border-primary bg-white px-8 py-3 font-label text-[14px] font-semibold text-primary transition-all hover:bg-primary hover:text-white hover:-translate-y-0.5"
           >
             Charger plus d&apos;articles
-            <span className="material-symbols-outlined hero-cta-arrow group-open:rotate-180">
+            <span className="text-[13px] text-on-surface-variant group-hover:text-white/80">
+              ({filtered.length - visible})
+            </span>
+            <span className="material-symbols-outlined text-[20px] transition-transform duration-300 group-hover:translate-y-0.5">
               expand_more
             </span>
           </button>

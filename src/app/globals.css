@@ -244,7 +244,8 @@ html:not(.icons-ready) .material-symbols-outlined {
 }
 .offer-carousel-track::-webkit-scrollbar { display: none; }
 .offer-carousel-card {
-  flex: 0 0 360px;
+  /* Desktop : 5 cartes visibles en pleine largeur (gap 24px). */
+  flex: 0 0 calc((100% - 96px) / 5);
   scroll-snap-align: start;
   background: #fff;
   border-radius: 16px;

@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* NOS OFFRES — CARROUSEL */}
+        {/* NOS OFFRES — CARROUSEL (pleine largeur, 5 cartes, marges 50px) */}
         <section className="py-section_padding_v section-bg-blue overflow-hidden">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
             <div data-reveal="fade-up" className="text-center mb-10 sm:mb-16">
@@ -102,9 +102,13 @@ export default function Home() {
                 Séjour balnéaire, circuit culturel, croisière, glamping, catalogue sportif ou voyage sur mesure : nous créons l&apos;expérience qui vous correspond.
               </p>
             </div>
-            <div data-reveal="fade-up" data-reveal-delay={120}>
-              <OfferCarousel />
-            </div>
+          </div>
+          <div
+            data-reveal="fade-up"
+            data-reveal-delay={120}
+            className="px-4 sm:px-[50px]"
+          >
+            <OfferCarousel />
           </div>
         </section>
 
