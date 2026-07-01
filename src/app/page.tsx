@@ -216,7 +216,7 @@ export default function Home() {
                   Parlez-nous de votre projet. Votre conseiller dédié vous envoie une proposition personnalisée, gratuite et sans engagement.
                 </p>
                 <div className="flex flex-col xs:flex-row flex-wrap justify-center gap-3 sm:gap-4">
-                  <Link href="/demande-devis" className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 hover:scale-105 active:scale-95 transition-all shadow-lg text-center">
+                  <Link href="/demande-devis" className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 hover:scale-105 active:scale-95 transition-all shadow-lg text-center flex items-center justify-center">
                     Demander mon devis gratuit
                   </Link>
                   <a href="tel:+33534391391" className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#004191] active:scale-95 transition-all text-center flex items-center justify-center gap-2">

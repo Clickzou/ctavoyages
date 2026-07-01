@@ -350,12 +350,16 @@
 
 .commitment-card .material-symbols-outlined {
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 42px;
   height: 42px;
   border-radius: 12px;
   background: #EDF3FA;
   color: #43A047;
   font-size: 22px;
+  line-height: 1;
 }
 
 /* SOLIDARITE / CHARTE CANCER */

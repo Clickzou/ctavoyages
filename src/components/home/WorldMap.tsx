@@ -94,6 +94,15 @@ const DEST: Dest[] = [
 
 const CONTINENT_NAMES: Record<string, string> = { asia: "Asie", africa: "Afrique", americas: "Amériques", europe: "Europe" };
 
+/** Coordonnées géographiques d'ancrage des labels de continents (pour qu'ils suivent la carte). */
+const CONTINENT_LABEL_LL: Record<string, [number, number]> = {
+  "north-america": [46, -100],
+  "south-america": [-15, -60],
+  europe: [52, 15],
+  africa: [3, 22],
+  asia: [46, 100],
+};
+
 export default function WorldMap() {
   useEffect(() => {
     let cancelled = false;
@@ -330,8 +339,25 @@ export default function WorldMap() {
       const resetBtn = document.querySelector<HTMLElement>(".map-reset-btn");
       if (resetBtn) resetBtn.addEventListener("click", () => ctaReset());
 
-      // Repositionne la vignette quand la carte bouge
-      map.on("move", () => { if (activeEl) positionTip(activeEl); });
+      // Ancre les labels de continents à la carte : ils suivent le pan/zoom.
+      const continentLabelEls = Array.from(
+        document.querySelectorAll<HTMLElement>(".continent-label"),
+      );
+      function updateContinentLabels() {
+        continentLabelEls.forEach((lbl) => {
+          const ll = CONTINENT_LABEL_LL[lbl.dataset.c || ""];
+          if (!ll) return;
+          const pt = map.latLngToContainerPoint(L.latLng(ll[0], ll[1]));
+          lbl.style.left = pt.x + "px";
+          lbl.style.top = pt.y + "px";
+        });
+      }
+      updateContinentLabels();
+
+      // Repositionne la vignette + les labels de continents quand la carte bouge
+      map.on("move", () => { if (activeEl) positionTip(activeEl); updateContinentLabels(); });
+      map.on("zoom", updateContinentLabels);
+      map.on("resize", updateContinentLabels);
 
       (map as any)._ctaCleanup = () => { document.removeEventListener("click", onDocClick); };
     })();
