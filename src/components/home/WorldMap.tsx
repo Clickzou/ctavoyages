@@ -136,9 +136,23 @@ export default function WorldMap() {
 
       const container = document.getElementById("leaflet-map");
       if (!container) return;
-      map = L.map(container, { center: VIEWS.all.center, zoom: VIEWS.all.zoom, zoomControl: true, scrollWheelZoom: false, doubleClickZoom: true, dragging: true, minZoom: 1.0, maxZoom: 14, worldCopyJump: true });
+      map = L.map(container, { center: VIEWS.all.center, zoom: VIEWS.all.zoom, zoomControl: true, scrollWheelZoom: false, doubleClickZoom: true, dragging: true, zoomSnap: 0, minZoom: 0.2, maxZoom: 14, worldCopyJump: true });
       map.zoomControl.setPosition("topright");
       L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", { maxZoom: 19, subdomains: "abcd" }).addTo(map);
+
+      // Zoom "monde entier" qui REMPLIT toujours le conteneur (aucun fond gris) tout en
+      // montrant le maximum du monde. On prend le zoom qui couvre la plus grande dimension
+      // du conteneur (largeur en paysage → monde complet en longitude ; hauteur en portrait).
+      // Basé sur la taille réelle connue de Leaflet (fiable, contrairement à clientWidth).
+      function applyWorldView(animate = false) {
+        map.invalidateSize(false);
+        const size = map.getSize();
+        const side = Math.max(size.x, size.y) || 600;
+        const z = Math.log2(side / 256); // 256px = 360° de monde au zoom 0
+        VIEWS.all.zoom = z;
+        map.setMinZoom(z); // on ne peut pas dézoomer au-delà du monde entier
+        if (currentContinent === "all") map.setView(VIEWS.all.center, z, { animate });
+      }
 
       const tooltip = document.getElementById("cta-tooltip")!;
       const tipImg = document.getElementById("tip-img") as HTMLImageElement;
@@ -344,20 +358,28 @@ export default function WorldMap() {
         document.querySelectorAll<HTMLElement>(".continent-label"),
       );
       function updateContinentLabels() {
+        const size = map.getSize();
         continentLabelEls.forEach((lbl) => {
           const ll = CONTINENT_LABEL_LL[lbl.dataset.c || ""];
           if (!ll) return;
           const pt = map.latLngToContainerPoint(L.latLng(ll[0], ll[1]));
+          // On masque les labels qui tombent hors de la carte : évite tout débordement
+          // horizontal (bande blanche) et les labels flottant à côté de la carte.
+          const outside = pt.x < 0 || pt.y < 0 || pt.x > size.x || pt.y > size.y;
+          lbl.style.visibility = outside ? "hidden" : "visible";
           lbl.style.left = pt.x + "px";
           lbl.style.top = pt.y + "px";
         });
       }
+      // Ajuste la vue "monde entier" à la largeur réelle puis positionne les labels.
+      applyWorldView(false);
       updateContinentLabels();
 
       // Repositionne la vignette + les labels de continents quand la carte bouge
       map.on("move", () => { if (activeEl) positionTip(activeEl); updateContinentLabels(); });
       map.on("zoom", updateContinentLabels);
-      map.on("resize", updateContinentLabels);
+      // Au redimensionnement (rotation mobile, changement de fenêtre) : refit du monde + labels.
+      map.on("resize", () => { applyWorldView(false); updateContinentLabels(); });
 
       (map as any)._ctaCleanup = () => { document.removeEventListener("click", onDocClick); };
     })();

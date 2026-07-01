@@ -113,7 +113,7 @@ export default function DestinationTemplate({
         {/* INFOS ESSENTIELLES */}
         <section className="info-band py-4 sm:py-5">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
+            <div className="info-grid">
               {content.infos.map((zone, i) => (
                 <InfoZoneView key={i} zone={zone} />
               ))}

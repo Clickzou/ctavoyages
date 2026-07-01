@@ -608,8 +608,8 @@ export default function DestinationsGrid() {
         </div>
       </div>
 
-      {/* COMPTEUR + RECHERCHE */}
-      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8">
+      {/* RECHERCHE + COMPTEUR (recherche à gauche, compteur à droite) */}
+      <div className="flex flex-col sm:flex-row-reverse sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8">
         <p className="font-h3 text-[18px] sm:text-[20px] font-bold text-on-surface">
           {total} résultat{total > 1 ? "s" : ""}
         </p>

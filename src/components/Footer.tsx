@@ -104,6 +104,7 @@ export default function Footer() {
             © 2026 CTA Voyages — Groupe CTA
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            <Link className="font-body-md text-[12px] sm:text-[13px] text-white/60 hover:text-[#FBBF12] transition-colors" href="/plan-du-site">Plan du site</Link>
             <Link className="font-body-md text-[12px] sm:text-[13px] text-white/60 hover:text-[#FBBF12] transition-colors" href="/mentions-legales">Mentions légales</Link>
             <Link className="font-body-md text-[12px] sm:text-[13px] text-white/60 hover:text-[#FBBF12] transition-colors" href="/confidentialite">Politique de confidentialité</Link>
             <Link className="font-body-md text-[12px] sm:text-[13px] text-white/60 hover:text-[#FBBF12] transition-colors" href="/cookies">Politique de cookies</Link>

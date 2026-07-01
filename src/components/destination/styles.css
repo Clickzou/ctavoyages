@@ -5,9 +5,25 @@
 
 /* INFOS ESSENTIELLES */
 .info-band { background: #3179c4; }
+/* Cartes réparties sur toute la largeur, responsive (auto-fit). */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 640px) {
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+@media (max-width: 400px) {
+  .info-grid { grid-template-columns: 1fr; }
+}
 .info-zone {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   padding: 14px 22px;
   border-radius: 12px;
