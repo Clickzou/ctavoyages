@@ -1,2 +1,3 @@
-# Artefacts régénérables produits par unsplash-fetch.mjs
+# Artefacts régénérables du pipeline photos
 *.result.json
+articles-list.json

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { getArticle, BLOG_SLUGS } from "@/lib/blog-content";
+import { SECTION_IMAGES } from "@/lib/blog-content/section-images.generated";
 
 export function generateStaticParams() {
   return BLOG_SLUGS.map((slug) => ({ slug }));
@@ -29,13 +30,31 @@ export default async function BlogArticlePage({
   const article = getArticle(slug);
   if (!article) notFound();
 
+  // Images de section : superposition Unsplash (par index) sauf si l'article
+  // définit déjà son image en dur (ex. Maldives). La section 0 garde son visuel.
+  const overlay = SECTION_IMAGES[slug] || {};
+  const imgFor = (i: number) => article.sections[i].img ?? overlay[i]?.src;
+  const altFor = (i: number) =>
+    article.sections[i].imgAlt ?? overlay[i]?.alt ?? article.sections[i].h2;
+
   // Le chapô (intro) est intégré à la 1re section si elle porte une image.
   const introInFirst =
-    article.sections.length > 0 && Boolean(article.sections[0].img);
-  // Crédits photos (attribution Unsplash) regroupés en bas d'article.
-  const credits = article.sections
-    .filter((s) => s.imgCredit)
-    .map((s) => s.imgCredit!);
+    article.sections.length > 0 && Boolean(imgFor(0));
+
+  // Crédits photos (attribution Unsplash) regroupés en bas d'article, dédupliqués.
+  const credits = (() => {
+    const seen = new Set<string>();
+    const list: { name: string; link: string }[] = [];
+    article.sections.forEach((s, i) => {
+      const c = s.imgCredit ?? overlay[i]?.credit;
+      if (c && !seen.has(c.link)) {
+        seen.add(c.link);
+        list.push(c);
+      }
+    });
+    return list;
+  })();
+
   // Fond de la bande finale (conclusion + FAQ) : inverse de la dernière section.
   const trailingGray = article.sections.length % 2 === 1;
 
@@ -135,8 +154,9 @@ export default async function BlogArticlePage({
             const gray = i % 2 === 1;
             const photoRight = i % 2 === 1;
             const bg = gray ? "bg-[#F4F6F9]" : "bg-white";
+            const imgSrc = imgFor(i);
 
-            if (!section.img) {
+            if (!imgSrc) {
               // Section sans image : texte centré lisible sur la bande colorée.
               return (
                 <section key={i} className={`${bg} w-full py-12 sm:py-16`}>
@@ -161,8 +181,8 @@ export default async function BlogArticlePage({
                   <figure className={`m-0 ${photoRight ? "lg:order-2" : ""}`}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      alt={section.imgAlt || section.h2}
-                      src={section.img}
+                      alt={altFor(i)}
+                      src={imgSrc}
                       className="w-full aspect-[4/3] object-cover rounded-2xl luxury-shadow"
                     />
                   </figure>
