@@ -1,11 +1,16 @@
 import type { ReactNode } from "react";
 
+/** Crédit photo (attribution Unsplash) : nom du photographe + lien profil. */
+export type ImageCredit = { name: string; link: string };
+
 /** Section d'un article : sous-titre + corps (JSX) + image optionnelle. */
 export type ArticleSection = {
   h2: string;
   body: ReactNode;
   img?: string;
   imgAlt?: string;
+  /** Attribution (photos Unsplash). Absent pour les images générées maison. */
+  imgCredit?: ImageCredit;
 };
 
 /**

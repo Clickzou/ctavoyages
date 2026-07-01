@@ -72,6 +72,12 @@ const quandPartirMaldives: BlogArticle = {
           </p>
         </>
       ),
+      img: "/generated/blog-quand-partir-maldives-2.jpg",
+      imgAlt: "Plage tropicale et eaux turquoise limpides aux Maldives",
+      imgCredit: {
+        name: "Adam Juman",
+        link: "https://unsplash.com/@jumanjiphotos?utm_source=cta_voyages&utm_medium=referral",
+      },
     },
     {
       h2: "Mai à octobre : pluie, mais bons plans et raies manta",
@@ -92,6 +98,12 @@ const quandPartirMaldives: BlogArticle = {
           </p>
         </>
       ),
+      img: "/generated/blog-quand-partir-maldives-3.jpg",
+      imgAlt: "Raie manta évoluant sous l'eau dans l'océan Indien",
+      imgCredit: {
+        name: "Ishan @seefromthesky",
+        link: "https://unsplash.com/@seefromthesky?utm_source=cta_voyages&utm_medium=referral",
+      },
     },
     {
       h2: "Les meilleurs spots des Maldives",
@@ -122,6 +134,12 @@ const quandPartirMaldives: BlogArticle = {
           </ul>
         </>
       ),
+      img: "/generated/blog-quand-partir-maldives-4.jpg",
+      imgAlt: "Vue aérienne d'un atoll et de ses îles aux Maldives",
+      imgCredit: {
+        name: "Jailam Rashad",
+        link: "https://unsplash.com/@jailam_r?utm_source=cta_voyages&utm_medium=referral",
+      },
     },
     {
       h2: "Le saviez-vous ?",
@@ -141,6 +159,12 @@ const quandPartirMaldives: BlogArticle = {
           </p>
         </>
       ),
+      img: "/generated/blog-quand-partir-maldives-5.jpg",
+      imgAlt: "Villas sur pilotis et récif d'un resort aux Maldives",
+      imgCredit: {
+        name: "Muhammadh Saamy",
+        link: "https://unsplash.com/@piiiiine?utm_source=cta_voyages&utm_medium=referral",
+      },
     },
     {
       h2: "Combien de temps rester ?",
@@ -156,6 +180,12 @@ const quandPartirMaldives: BlogArticle = {
           </p>
         </>
       ),
+      img: "/generated/blog-quand-partir-maldives-6.jpg",
+      imgAlt: "Hamac entre deux palmiers au bord d'un lagon des Maldives",
+      imgCredit: {
+        name: "Serey Kim",
+        link: "https://unsplash.com/@shuttergenic?utm_source=cta_voyages&utm_medium=referral",
+      },
     },
   ],
   conclusion: (

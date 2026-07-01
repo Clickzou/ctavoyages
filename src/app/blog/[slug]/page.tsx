@@ -29,8 +29,15 @@ export default async function BlogArticlePage({
   const article = getArticle(slug);
   if (!article) notFound();
 
-  // Première (et unique) section illustrée : photo à gauche, intro + texte à droite.
-  const firstImgIndex = article.sections.findIndex((s) => Boolean(s.img));
+  // Le chapô (intro) est intégré à la 1re section si elle porte une image.
+  const introInFirst =
+    article.sections.length > 0 && Boolean(article.sections[0].img);
+  // Crédits photos (attribution Unsplash) regroupés en bas d'article.
+  const credits = article.sections
+    .filter((s) => s.imgCredit)
+    .map((s) => s.imgCredit!);
+  // Fond de la bande finale (conclusion + FAQ) : inverse de la dernière section.
+  const trailingGray = article.sections.length % 2 === 1;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -111,33 +118,60 @@ export default async function BlogArticlePage({
         </section>
 
         {/* CORPS DE L'ARTICLE */}
-        <article className="bg-white py-section_padding_v">
-          {/* Chapô (uniquement si aucune section illustrée pour l'accueillir) */}
-          {firstImgIndex === -1 && (
-            <div className="max-w-[760px] mx-auto px-4 sm:px-gutter">
-              <p className="font-body-lg text-[17px] sm:text-[19px] text-on-surface leading-relaxed">
-                {article.intro}
-              </p>
+        <article>
+          {/* Chapô (uniquement si la 1re section ne porte pas d'image) */}
+          {!introInFirst && (
+            <div className="bg-white pt-10 sm:pt-14">
+              <div className="max-w-[760px] mx-auto px-4 sm:px-gutter">
+                <p className="font-body-lg text-[17px] sm:text-[19px] text-on-surface leading-relaxed">
+                  {article.intro}
+                </p>
+              </div>
             </div>
           )}
 
-          {article.sections.map((section, i) =>
-            i === firstImgIndex ? (
-              /* Section illustrée : pleine largeur, photo à gauche / (intro + texte) à droite, marges 100px */
-              <section key={i} className="w-full px-4 sm:px-8 lg:px-[100px] my-10 sm:my-14">
+          {/* Sections : bandes pleine largeur alternées (blanc/gris, photo gauche/droite) */}
+          {article.sections.map((section, i) => {
+            const gray = i % 2 === 1;
+            const photoRight = i % 2 === 1;
+            const bg = gray ? "bg-[#F4F6F9]" : "bg-white";
+
+            if (!section.img) {
+              // Section sans image : texte centré lisible sur la bande colorée.
+              return (
+                <section key={i} className={`${bg} w-full py-12 sm:py-16`}>
+                  <div className="max-w-[760px] mx-auto px-4 sm:px-gutter">
+                    <h2 className="font-h2 text-[22px] sm:text-[28px] text-on-surface mb-4 sm:mb-5">
+                      {section.h2}
+                    </h2>
+                    <div className="article-body font-body-md text-[15px] sm:text-[17px] text-on-surface-variant leading-relaxed space-y-4">
+                      {section.body}
+                    </div>
+                  </div>
+                </section>
+              );
+            }
+
+            return (
+              <section
+                key={i}
+                className={`${bg} w-full px-4 sm:px-8 lg:px-[100px] py-12 sm:py-16`}
+              >
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
-                  <figure className="m-0">
+                  <figure className={`m-0 ${photoRight ? "lg:order-2" : ""}`}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       alt={section.imgAlt || section.h2}
                       src={section.img}
-                      className="w-full h-full max-h-[520px] object-cover rounded-2xl luxury-shadow"
+                      className="w-full aspect-[4/3] object-cover rounded-2xl luxury-shadow"
                     />
                   </figure>
-                  <div>
-                    <p className="font-body-lg text-[16px] sm:text-[18px] text-on-surface leading-relaxed mb-6">
-                      {article.intro}
-                    </p>
+                  <div className={photoRight ? "lg:order-1" : ""}>
+                    {i === 0 && introInFirst && (
+                      <p className="font-body-lg text-[16px] sm:text-[18px] text-on-surface leading-relaxed mb-6">
+                        {article.intro}
+                      </p>
+                    )}
                     <h2 className="font-h2 text-[24px] sm:text-[30px] text-on-surface mb-4 sm:mb-5">
                       {section.h2}
                     </h2>
@@ -147,85 +181,107 @@ export default async function BlogArticlePage({
                   </div>
                 </div>
               </section>
-            ) : (
-              /* Toutes les autres sections : une seule colonne lisible, sans photo */
-              <div
-                key={i}
-                className="max-w-[760px] mx-auto px-4 sm:px-gutter my-9 sm:my-11"
-              >
-                <h2 className="font-h2 text-[22px] sm:text-[28px] text-on-surface mb-4 sm:mb-5">
-                  {section.h2}
-                </h2>
-                <div className="article-body font-body-md text-[15px] sm:text-[17px] text-on-surface-variant leading-relaxed space-y-4">
-                  {section.body}
-                </div>
+            );
+          })}
+
+          {/* Bande finale (conclusion + FAQ + CTA) : fond inverse de la dernière section */}
+          <section
+            className={`${trailingGray ? "bg-[#F4F6F9]" : "bg-white"} w-full py-12 sm:py-16`}
+          >
+            <div className="max-w-[760px] mx-auto px-4 sm:px-gutter">
+              <div className="border-l-4 border-[#FBBF12] bg-white shadow-sm rounded-r-xl pl-5 pr-4 py-4 sm:py-5 mb-12">
+                <p className="font-body-md text-[15px] sm:text-[17px] text-on-surface leading-relaxed">
+                  {article.conclusion}
+                </p>
               </div>
-            ),
-          )}
 
-          <div className="max-w-[760px] mx-auto px-4 sm:px-gutter">
-            <div className="border-l-4 border-[#FBBF12] bg-surface-container-low/60 rounded-r-xl pl-5 pr-4 py-4 sm:py-5 mb-12 mt-4">
-              <p className="font-body-md text-[15px] sm:text-[17px] text-on-surface leading-relaxed">
-                {article.conclusion}
-              </p>
-            </div>
-
-            {/* FAQ (SEO) */}
-            {article.faq && article.faq.length > 0 && (
-              <div className="mb-12">
-                <h2 className="font-h2 text-[22px] sm:text-[28px] text-on-surface mb-5 sm:mb-6">
-                  Questions fréquentes
-                </h2>
-                <div className="space-y-3">
-                  {article.faq.map((item, i) => (
-                    <details
-                      key={i}
-                      className="group rounded-xl border border-outline-variant/40 bg-white px-5 py-4 [&_summary::-webkit-details-marker]:hidden"
-                    >
-                      <summary className="flex cursor-pointer items-center justify-between gap-4 font-h3 text-[16px] sm:text-[18px] font-bold text-on-surface">
-                        {item.q}
-                        <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
-                          expand_more
-                        </span>
-                      </summary>
-                      <p className="mt-3 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed">
-                        {item.a}
-                      </p>
-                    </details>
-                  ))}
+              {/* FAQ (SEO) */}
+              {article.faq && article.faq.length > 0 && (
+                <div className="mb-12">
+                  <h2 className="font-h2 text-[22px] sm:text-[28px] text-on-surface mb-5 sm:mb-6">
+                    Questions fréquentes
+                  </h2>
+                  <div className="space-y-3">
+                    {article.faq.map((item, i) => (
+                      <details
+                        key={i}
+                        className="group rounded-xl border border-outline-variant/40 bg-white px-5 py-4 [&_summary::-webkit-details-marker]:hidden"
+                      >
+                        <summary className="flex cursor-pointer items-center justify-between gap-4 font-h3 text-[16px] sm:text-[18px] font-bold text-on-surface">
+                          {item.q}
+                          <span className="material-symbols-outlined text-primary transition-transform duration-300 group-open:rotate-180">
+                            expand_more
+                          </span>
+                        </summary>
+                        <p className="mt-3 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed">
+                          {item.a}
+                        </p>
+                      </details>
+                    ))}
+                  </div>
                 </div>
+              )}
+
+              {/* CTA */}
+              <div className="bg-gradient-to-br from-[#004191] to-[#3179C4] rounded-2xl p-7 sm:p-10 text-center">
+                <h2 className="font-h2 text-[22px] sm:text-[28px] text-white mb-3">
+                  Envie de partir ?
+                </h2>
+                <p className="font-body-md text-[15px] sm:text-[16px] text-white/85 mb-6 max-w-xl mx-auto">
+                  Votre conseiller dédié construit avec vous le voyage qui vous
+                  ressemble, gratuitement et sans engagement.
+                </p>
+                <Link href="/demande-devis" className="hero-cta-primary group">
+                  Demander mon devis gratuit
+                  <span className="material-symbols-outlined hero-cta-arrow">
+                    arrow_forward
+                  </span>
+                </Link>
               </div>
-            )}
 
-            {/* CTA */}
-            <div className="bg-gradient-to-br from-[#004191] to-[#3179C4] rounded-2xl p-7 sm:p-10 text-center">
-              <h2 className="font-h2 text-[22px] sm:text-[28px] text-white mb-3">
-                Envie de partir ?
-              </h2>
-              <p className="font-body-md text-[15px] sm:text-[16px] text-white/85 mb-6 max-w-xl mx-auto">
-                Votre conseiller dédié construit avec vous le voyage qui vous
-                ressemble, gratuitement et sans engagement.
-              </p>
-              <Link href="/demande-devis" className="hero-cta-primary group">
-                Demander mon devis gratuit
-                <span className="material-symbols-outlined hero-cta-arrow">
-                  arrow_forward
-                </span>
-              </Link>
-            </div>
+              {/* Crédits photos (attribution Unsplash) */}
+              {credits.length > 0 && (
+                <p className="mt-8 text-[12px] text-on-surface-variant/70 leading-relaxed">
+                  Crédits photos&nbsp;:{" "}
+                  {credits.map((c, idx) => (
+                    <span key={idx}>
+                      {idx > 0 && ", "}
+                      <a
+                        href={c.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        {c.name}
+                      </a>
+                    </span>
+                  ))}{" "}
+                  — via{" "}
+                  <a
+                    href="https://unsplash.com/?utm_source=cta_voyages&utm_medium=referral"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:underline"
+                  >
+                    Unsplash
+                  </a>
+                  .
+                </p>
+              )}
 
-            <div className="mt-10 text-center">
-              <Link
-                href="/blog"
-                className="inline-flex items-center gap-2 text-primary font-label text-[14px] hover:underline"
-              >
-                <span className="material-symbols-outlined text-[18px]">
-                  arrow_back
-                </span>
-                Retour au blog
-              </Link>
+              <div className="mt-10 text-center">
+                <Link
+                  href="/blog"
+                  className="inline-flex items-center gap-2 text-primary font-label text-[14px] hover:underline"
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    arrow_back
+                  </span>
+                  Retour au blog
+                </Link>
+              </div>
             </div>
-          </div>
+          </section>
         </article>
       </main>
 
