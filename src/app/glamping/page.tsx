@@ -322,7 +322,7 @@ export default function GlampingPage() {
             <div className="text-center mt-8 sm:mt-10">
               <Link
                 href="/destinations"
-                className="inline-flex items-center gap-2 bg-white border-[1.5px] border-[#3179C4] text-[#3179C4] px-6 py-3 rounded-lg font-label text-[13px] sm:text-[14px] hover:bg-[#3179C4] hover:text-white hover:border-[#3179C4] hover:scale-105 active:scale-95 transition-all shadow-lg text-center"
+                className="inline-flex items-center gap-2 bg-white border-[1.5px] border-[#3179C4] text-[#3179C4] px-6 py-3 rounded-lg font-label text-[13px] sm:text-[14px] hover:bg-[#3179C4] hover:text-white hover:border-[#3179C4] hover:scale-105 active:scale-95 transition-all shadow-lg text-center flex items-center justify-center"
               >
                 Voir toutes nos destinations{" "}
                 <span className="material-symbols-outlined text-[18px]">
@@ -473,7 +473,7 @@ export default function GlampingPage() {
                 <div className="flex flex-col xs:flex-row flex-wrap justify-center gap-3 sm:gap-4">
                   <Link
                     href="/demande-renseignement"
-                    className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 hover:scale-105 active:scale-95 transition-all shadow-lg text-center"
+                    className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 hover:scale-105 active:scale-95 transition-all shadow-lg text-center flex items-center justify-center"
                   >
                     Nous contacter
                   </Link>

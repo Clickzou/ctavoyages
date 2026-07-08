@@ -10,7 +10,6 @@ type Stat = {
 };
 
 const STATS: Stat[] = [
-  { target: 13, suffix: "+", label: "Destinations" },
   { target: 1200, separator: " ", label: "Agences partenaires TourCom" },
   { target: 6000, separator: " ", label: "Points de vente en Europe" },
 ];
@@ -72,7 +71,7 @@ export default function StatsCounters() {
               src="/assets/images/logo-tourcom-2020.png"
             />
           </div>
-          <div className="grid grid-cols-1 xs:grid-cols-3 gap-6 sm:gap-8 text-center">
+          <div className="grid grid-cols-1 xs:grid-cols-2 gap-6 sm:gap-8 text-center max-w-2xl mx-auto">
             {STATS.map((s) => (
               <div className="flex flex-col" key={s.label}>
                 <span className="font-h1 text-[32px] sm:text-[42px] font-bold text-[#004191] leading-none mb-2">

@@ -936,6 +936,11 @@ html:not(.icons-ready) .material-symbols-outlined {
 .type-filter-btn.tf-sport {
   border-color: rgba(231, 76, 60, 0.4);
 }
+/* Survol du bouton sport : le contour reste rouge/orange (et non bleu). */
+.type-filter-btn.tf-sport:hover:not(.tf-active) {
+  border-color: #e74c3c;
+  box-shadow: 0 5px 14px rgba(231, 76, 60, 0.18);
+}
 .type-filter-btn.tf-sport.tf-active {
   background: linear-gradient(135deg, #e74c3c, #c0392b);
   border-color: transparent;

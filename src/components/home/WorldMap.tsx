@@ -92,7 +92,7 @@ const DEST: Dest[] = [
   ...EXTRA_MAP_DEST,
 ];
 
-const CONTINENT_NAMES: Record<string, string> = { asia: "Asie", africa: "Afrique", americas: "Amériques", europe: "Europe" };
+const CONTINENT_NAMES: Record<string, string> = { asia: "Asie / Moyen-Orient", africa: "Afrique", americas: "Amériques", europe: "Europe" };
 
 /** Villes/régions rattachées à un pays (drill-down dans la fiche). Clés = id du pays. */
 const COUNTRY_CITIES: Record<string, string[]> = {
@@ -498,10 +498,10 @@ export default function WorldMap() {
           <span className="filter-label">Continent</span>
           <div className="filter-buttons">
             <button className="map-filter-btn f-active" data-c="all">Tous</button>
-            <button className="map-filter-btn" data-c="asia">Asie</button>
+            <button className="map-filter-btn" data-c="europe">Europe</button>
+            <button className="map-filter-btn" data-c="asia">Asie / Moyen-Orient</button>
             <button className="map-filter-btn" data-c="africa">Afrique</button>
             <button className="map-filter-btn" data-c="americas">Amériques</button>
-            <button className="map-filter-btn" data-c="europe">Europe</button>
           </div>
         </div>
 
