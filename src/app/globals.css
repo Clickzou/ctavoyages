@@ -804,6 +804,15 @@ html:not(.icons-ready) .material-symbols-outlined {
   }
 }
 
+/* FAQ : l'icône de puce était collée au texte (espace JSX supprimé au rendu).
+   On garantit un espace + un alignement propres, quel que soit le rendu. */
+.faq-answer li .material-symbols-outlined {
+  margin-right: 7px;
+  font-size: 18px;
+  vertical-align: -3px;
+  color: #3179c4;
+}
+
 /* ===== HERO : indicateur de scroll (souris) ===== */
 .hero-scroll {
   position: absolute;
@@ -1000,14 +1009,16 @@ html:not(.icons-ready) .material-symbols-outlined {
   .dest-fullwidth .carousel-card {
     flex: 0 0 calc((100% - 96px) / 5);
   }
-  /* Carrousels « Quel type de… » (pages offres) : 6 cartes en pleine largeur.
+  /* Carrousels « Quel type de… » (pages offres) : 4 cartes en pleine largeur.
      Sélecteur à 2 classes pour surclasser la règle de base des styles.css locaux. */
   .type-carousel-track > .type-carousel-card {
-    flex: 0 0 calc((100% - 120px) / 6);
+    flex: 0 0 calc((100% - 72px) / 4);
   }
-  /* Carrousels destinations des pages offres (sejours, voyage sur mesure) :
-     exactement 4 cartes visibles sur desktop. Sélecteur à 2 classes pour
-     surclasser la base .carousel-card (360px) des styles.css locaux/globaux. */
+  /* Carrousels destinations/inspiration des pages offres : exactement 4 cartes
+     visibles sur desktop. La base .carousel-card (360px, sans wrapper) donnait
+     3 cartes sur certaines pages (circuits, croisières) : on uniformise à 4.
+     Les wrappers plus spécifiques gardent leur valeur (.dest-fullwidth = 5). */
+  .carousel-card,
   .dest-4up .carousel-card {
     flex: 0 0 calc((100% - 72px) / 4);
   }
