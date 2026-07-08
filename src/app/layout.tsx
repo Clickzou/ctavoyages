@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         url: "/assets/images/iStock-2207441086.jpg",
         width: 1200,
         height: 630,
-        alt: "CTA Voyages — Agence de voyages sur mesure à Toulouse",
+        alt: "CTA Voyages : Agence de voyages sur mesure à Toulouse",
       },
     ],
   },
@@ -73,7 +73,7 @@ export default function RootLayout({
       className={`${heading.variable} ${body.variable}`}
     >
       <head>
-        {/* Material Symbols (police d'icônes) — display=block pour éviter le flash
+        {/* Material Symbols (police d'icônes) : display=block pour éviter le flash
             du texte des ligatures pendant le chargement. */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

@@ -7,7 +7,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 export const metadata: Metadata = {
   title: "Séjour Formule 1 - CTA Voyages",
   description:
-    "Vivez les Grands Prix de Formule 1 avec CTA Voyages. Monaco, Barcelone, Monza, Spa, Abu Dhabi, Madrid — billets officiels, hôtel et transport inclus. Devis gratuit.",
+    "Vivez les Grands Prix de Formule 1 avec CTA Voyages. Monaco, Barcelone, Monza, Spa, Abu Dhabi, Madrid : billets officiels, hôtel et transport inclus. Devis gratuit.",
 };
 
 const faqJsonLd = {
@@ -65,7 +65,7 @@ export default function F1Page() {
         <div className="absolute inset-0 z-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            alt="Formule 1 — CTA Voyages"
+            alt="Formule 1 : CTA Voyages"
             className="w-full h-full object-cover"
             style={{ objectPosition: "center 40%" }}
             src="/assets/images/iStock-166272826.jpg"
@@ -82,7 +82,7 @@ export default function F1Page() {
             </h1>
             <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
               De Barcelone à Abu Dhabi, en passant par Monaco, Spa-Francorchamps
-              et Monza — des séjours clés en main pour combiner adrénaline,
+              et Monza : des séjours clés en main pour combiner adrénaline,
               passion et découverte culturelle.
             </p>
             <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-5">
@@ -179,7 +179,7 @@ export default function F1Page() {
                   Billets officiels
                 </h3>
                 <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                  Admission générale, tribunes ou hospitalité VIP — essais,
+                  Admission générale, tribunes ou hospitalité VIP : essais,
                   qualifications et course.
                 </p>
               </div>
@@ -291,7 +291,7 @@ export default function F1Page() {
                 </h3>
               </div>
               <p className="text-[13px] leading-relaxed transition-colors duration-300">
-                GP de Catalogne — ambiance vibrante dans la capitale catalane.
+                GP de Catalogne : ambiance vibrante dans la capitale catalane.
               </p>
             </a>
 
@@ -479,7 +479,7 @@ export default function F1Page() {
                 </h3>
               </div>
               <p className="text-[13px] leading-relaxed transition-colors duration-300">
-                Le nouveau tracé en ville de Madrid — un week-end d&apos;exception.
+                Le nouveau tracé en ville de Madrid : un week-end d&apos;exception.
               </p>
             </a>
           </div>
@@ -527,7 +527,7 @@ export default function F1Page() {
                 </h4>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                   Billets officiels, hôtel, transferts et options VIP ou
-                  excursions culturelles — tout est organisé.
+                  excursions culturelles : tout est organisé.
                 </p>
               </div>
             </div>

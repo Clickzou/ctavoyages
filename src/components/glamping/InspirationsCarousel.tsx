@@ -13,7 +13,7 @@ type Inspiration = {
 const INSPIRATIONS: Inspiration[] = [
   {
     img: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop&auto=format",
-    alt: "Glamping Laponie — cabane sous les aurores boréales",
+    alt: "Glamping Laponie : cabane sous les aurores boréales",
     badge: "LAPONIE",
     title: "Igloo de verre sous les aurores boréales",
     desc: "Dormir dans un igloo panoramique en Finlande et observer les aurores boréales depuis son lit.",

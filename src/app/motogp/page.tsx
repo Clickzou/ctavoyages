@@ -7,7 +7,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 export const metadata: Metadata = {
   title: "Séjour Moto GP - CTA Voyages",
   description:
-    "Vivez les plus grands Grands Prix Moto GP avec CTA Voyages. Catalogne, Mugello, Valence — billets officiels, hôtel, options VIP et expériences sur mesure. Devis gratuit.",
+    "Vivez les plus grands Grands Prix Moto GP avec CTA Voyages. Catalogne, Mugello, Valence : billets officiels, hôtel, options VIP et expériences sur mesure. Devis gratuit.",
 };
 
 const faqJsonLd = {
@@ -19,7 +19,7 @@ const faqJsonLd = {
       name: "Quels Grands Prix MotoGP proposez-vous ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nous proposons la Catalogne (Barcelone), Valence et le Mugello — les meilleurs grands prix sont à votre disposition.",
+        text: "Nous proposons la Catalogne (Barcelone), Valence et le Mugello : les meilleurs grands prix sont à votre disposition.",
       },
     },
     {
@@ -66,7 +66,7 @@ export default function MotoGpPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Moto GP — CTA Voyages"
+              alt="Moto GP : CTA Voyages"
               className="w-full h-full object-cover"
               style={{ objectPosition: "center 35%" }}
               src="/assets/images/iStock-526134650.jpg"
@@ -82,7 +82,7 @@ export default function MotoGpPage() {
                 Vivez la vitesse et l&apos;adrénaline sur les plus grands circuits
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
-                Catalogne, Mugello, Valence — des séjours Moto GP avec billets
+                Catalogne, Mugello, Valence : des séjours Moto GP avec billets
                 officiels, hôtel, options VIP et expériences sur mesure pour
                 profiter pleinement de votre week-end sportif.
               </p>
@@ -293,7 +293,7 @@ export default function MotoGpPage() {
                   </h3>
                 </div>
                 <p className="text-[13px] leading-relaxed transition-colors duration-300">
-                  Circuit Barcelona-Catalunya — ambiance méditerranéenne et
+                  Circuit Barcelona-Catalunya : ambiance méditerranéenne et
                   émotions fortes garanties.
                 </p>
               </a>

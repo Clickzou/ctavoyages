@@ -4,7 +4,7 @@ import BlogGrid, { type BlogCard } from "@/components/blog/BlogGrid";
 import { BLOG_LIST } from "@/lib/blog-content";
 
 export const metadata: Metadata = {
-  title: "Blog voyage — Conseils, inspirations & guides | CTA Voyages",
+  title: "Blog voyage : Conseils, inspirations & guides | CTA Voyages",
   description:
     "Le blog de CTA Voyages : conseils d'experts, idées de destinations, guides pratiques et inspirations pour préparer votre prochain voyage sur mesure.",
 };
@@ -35,7 +35,7 @@ export default function BlogPage() {
             </h1>
             <p className="font-body-lg text-[15px] sm:text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
               Les idées et l&apos;expertise de nos conseillers pour préparer votre
-              prochain voyage — destinations, bons plans et carnets de route.
+              prochain voyage : destinations, bons plans et carnets de route.
             </p>
           </div>
         </section>

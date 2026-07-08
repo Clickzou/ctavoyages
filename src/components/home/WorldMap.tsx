@@ -346,7 +346,7 @@ export default function WorldMap() {
           btn.innerHTML = '<span style="display:flex;align-items:center;gap:6px;"><img src="' + flagUrl + '" alt="" style="width:18px;height:13px;border-radius:2px;object-fit:cover;"/> ' + d.name + "</span>";
           btn.addEventListener("click", (e) => {
             e.stopPropagation();
-            // Mobile : trouver le point sur la carte n'est pas pratique — on
+            // Mobile : trouver le point sur la carte n'est pas pratique : on
             // redirige directement vers la page de présentation de la destination.
             if (window.innerWidth < 768) { window.location.href = d.href; return; }
             const el = markerElements[d.id];
@@ -555,7 +555,7 @@ export default function WorldMap() {
         </div>
       </div>
 
-      {/* Vignette destination — hors du conteneur animé (will-change) pour un position:fixed correct */}
+      {/* Vignette destination : hors du conteneur animé (will-change) pour un position:fixed correct */}
       <div id="cta-tooltip">
         <div className="tip-img-box">
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -575,7 +575,7 @@ export default function WorldMap() {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
-          {/* Villes/régions rattachées au pays (drill-down) — rempli dynamiquement */}
+          {/* Villes/régions rattachées au pays (drill-down) : rempli dynamiquement */}
           <div id="tip-cities" style={{ display: "none" }} />
         </div>
         <div id="tip-arrow" />

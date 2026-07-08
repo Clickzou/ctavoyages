@@ -37,14 +37,14 @@ const TYPES: TypeCircuit[] = [
     img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&h=400&fit=crop&auto=format",
     alt: "Road trip organisé",
     title: "Road trip organisé",
-    desc: "Voiture, étapes optimisées, hébergements réservés — l'aventure en toute fluidité.",
+    desc: "Voiture, étapes optimisées, hébergements réservés : l'aventure en toute fluidité.",
     href: "/circuits/road-trip",
   },
   {
     img: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop&auto=format",
     alt: "Circuit culturel",
     title: "Circuit culturel",
-    desc: "Temples, médinas, villages, grands sites historiques — pour aller au cœur d'une destination.",
+    desc: "Temples, médinas, villages, grands sites historiques : pour aller au cœur d'une destination.",
     href: "/circuits/culturel",
   },
   {

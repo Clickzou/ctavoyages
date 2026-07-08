@@ -8,7 +8,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 export const metadata: Metadata = {
   title: "Séjour NFL Madrid Game - CTA Voyages",
   description:
-    "Vivez le NFL Madrid Game 2026 avec CTA Voyages. Atlanta Falcons vs Cincinnati Bengals au Santiago Bernabéu le 8 novembre 2026 — billets officiels, hôtel et options inclus. Devis gratuit.",
+    "Vivez le NFL Madrid Game 2026 avec CTA Voyages. Atlanta Falcons vs Cincinnati Bengals au Santiago Bernabéu le 8 novembre 2026 : billets officiels, hôtel et options inclus. Devis gratuit.",
 };
 
 const faqJsonLd = {
@@ -71,7 +71,7 @@ export default function NflPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="NFL Madrid Game — CTA Voyages"
+              alt="NFL Madrid Game : CTA Voyages"
               className="w-full h-full object-cover"
               style={{ objectPosition: "center 40%" }}
               src="/assets/images/iStock-1838780282.jpg"
@@ -84,7 +84,7 @@ export default function NflPage() {
                 Catalogue sportif · NFL
               </p>
               <h1 className="font-h1 text-[26px] sm:text-[34px] md:text-[42px] text-white mb-3 sm:mb-4 leading-[1.1]">
-                NFL Madrid Game — vivez un match historique au Santiago Bernabéu
+                NFL Madrid Game : vivez un match historique au Santiago Bernabéu
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
                 Le <strong>8 novembre 2026</strong>, les Atlanta Falcons
@@ -140,7 +140,7 @@ export default function NflPage() {
         <section className="bg-gradient-to-r from-[#004191] to-[#3179C4] py-8 sm:py-10">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter text-center">
             <p className="font-label text-label text-white/80 mb-4 tracking-wider uppercase text-[12px] sm:text-[14px]">
-              Le match approche — réservez dès maintenant
+              Le match approche : réservez dès maintenant
             </p>
             <Countdown />
           </div>
@@ -428,7 +428,7 @@ export default function NflPage() {
                   </h4>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel, vol, transferts et options
-                    culturelles — nous orchestrons chaque détail pour un week-end
+                    culturelles : nous orchestrons chaque détail pour un week-end
                     sans souci.
                   </p>
                 </div>

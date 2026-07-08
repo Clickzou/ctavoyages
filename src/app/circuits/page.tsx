@@ -78,7 +78,7 @@ export default function CircuitsPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Circuit organisé à travers des paysages d'exception — CTA Voyages"
+              alt="Circuit organisé à travers des paysages d'exception : CTA Voyages"
               className="w-full h-full object-cover"
               src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&h=900&fit=crop&auto=format"
             />
@@ -175,7 +175,7 @@ export default function CircuitsPage() {
               </h2>
               <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
                 Itinéraire autonome, guide expert, road trip, immersion culturelle
-                ou nature grand format — nous adaptons chaque circuit à votre
+                ou nature grand format : nous adaptons chaque circuit à votre
                 manière de voyager.
               </p>
             </div>
@@ -358,7 +358,7 @@ export default function CircuitsPage() {
                     Nous construisons l&apos;itinéraire
                   </h4>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
-                    Étapes, transferts, visites, hébergements, temps libres — nous
+                    Étapes, transferts, visites, hébergements, temps libres : nous
                     orchestrons chaque séquence pour un voyage fluide.
                   </p>
                 </div>

@@ -6,7 +6,7 @@ import FaqList from "@/components/boxing-day/FaqList";
 export const metadata: Metadata = {
   title: "Séjour Boxing Day - CTA Voyages",
   description:
-    "Vivez la magie du Football Boxing Day en Angleterre avec CTA Voyages. Chelsea, Liverpool, Manchester United — billets officiels et séjour féerique inclus. Devis gratuit.",
+    "Vivez la magie du Football Boxing Day en Angleterre avec CTA Voyages. Chelsea, Liverpool, Manchester United : billets officiels et séjour féerique inclus. Devis gratuit.",
 };
 
 export default function BoxingDayPage() {
@@ -20,7 +20,7 @@ export default function BoxingDayPage() {
         <div className="absolute inset-0 z-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            alt="Stade anglais — Boxing Day CTA Voyages"
+            alt="Stade anglais : Boxing Day CTA Voyages"
             className="w-full h-full object-cover"
             style={{ objectPosition: "center 30%" }}
             src="/assets/images/iStock-1479691232-2.jpg"

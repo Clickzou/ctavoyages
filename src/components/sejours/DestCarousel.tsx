@@ -19,7 +19,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour au Maroc — riad et médina",
+    alt: "Séjour au Maroc : riad et médina",
     badge: "AFRIQUE",
     name: "Maroc",
     desc: "Riads de charme, désert du Sahara et médinas millénaires.",
@@ -27,7 +27,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1540202404-a2f29016b523?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour à l'Île Maurice — resort et lagon",
+    alt: "Séjour à l'Île Maurice : resort et lagon",
     badge: "OCÉAN INDIEN",
     name: "Île Maurice",
     desc: "Resorts de charme, lagons turquoise et douceur tropicale.",
@@ -35,7 +35,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour aux Seychelles — plages et nature",
+    alt: "Séjour aux Seychelles : plages et nature",
     badge: "OCÉAN INDIEN",
     name: "Seychelles",
     desc: "Rochers de granit, eaux cristallines et nature préservée.",
@@ -43,7 +43,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1609198092458-38a293c7ac4b?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour à Zanzibar — plages et épices",
+    alt: "Séjour à Zanzibar : plages et épices",
     badge: "AFRIQUE",
     name: "Zanzibar",
     desc: "Plages de sable blanc, épices et Stone Town historique.",
@@ -51,7 +51,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour en Thaïlande — temples et plages",
+    alt: "Séjour en Thaïlande : temples et plages",
     badge: "ASIE",
     name: "Thaïlande",
     desc: "Temples dorés, îles turquoise et cuisine légendaire.",
@@ -59,7 +59,7 @@ const DESTS: Dest[] = [
   {
     href: "/destination-japon",
     img: "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour au Japon — ryokans et temples",
+    alt: "Séjour au Japon : ryokans et temples",
     badge: "ASIE",
     name: "Japon",
     desc: "Ryokans traditionnels, temples millénaires et gastronomie d'exception.",
@@ -67,7 +67,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour en Laponie — aurores boréales et cabanes",
+    alt: "Séjour en Laponie : aurores boréales et cabanes",
     badge: "EUROPE",
     name: "Laponie",
     desc: "Aurores boréales, rennes et cabanes sous les étoiles arctiques.",
@@ -75,7 +75,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=400&fit=crop&auto=format",
-    alt: "Escapade à Londres — Big Ben",
+    alt: "Escapade à Londres : Big Ben",
     badge: "EUROPE",
     name: "Londres",
     desc: "Big Ben, musées world-class et scène culinaire vibrante.",
@@ -83,7 +83,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&h=400&fit=crop&auto=format",
-    alt: "Escapade à Amsterdam — canaux",
+    alt: "Escapade à Amsterdam : canaux",
     badge: "EUROPE",
     name: "Amsterdam",
     desc: "Canaux romantiques, musées incontournables et vélos à l'infini.",
@@ -91,7 +91,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&h=400&fit=crop&auto=format",
-    alt: "Escapade à Porto — azulejos et Douro",
+    alt: "Escapade à Porto : azulejos et Douro",
     badge: "EUROPE",
     name: "Porto",
     desc: "Azulejos, caves à vin du Douro et fado dans les ruelles dorées.",
@@ -99,7 +99,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&h=400&fit=crop&auto=format",
-    alt: "Escapade à Rome — Colisée",
+    alt: "Escapade à Rome : Colisée",
     badge: "EUROPE",
     name: "Rome",
     desc: "Colisée, Vatican, piazzas baroques et dolce vita à l'italienne.",
@@ -107,7 +107,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour au Canada — Rocheuses",
+    alt: "Séjour au Canada : Rocheuses",
     badge: "AMÉRIQUES",
     name: "Canada",
     desc: "Rocheuses, Banff, Québec et immensités sauvages du Grand Nord.",
@@ -115,7 +115,7 @@ const DESTS: Dest[] = [
   {
     href: "/destinations",
     img: "https://images.unsplash.com/photo-1500049242364-5f500807cdd7?w=600&h=400&fit=crop&auto=format",
-    alt: "Séjour au Costa Rica — forêt tropicale",
+    alt: "Séjour au Costa Rica : forêt tropicale",
     badge: "AMÉRIQUES",
     name: "Costa Rica",
     desc: "Volcans actifs, forêts tropicales et biodiversité exceptionnelle.",

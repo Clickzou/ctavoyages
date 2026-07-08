@@ -73,21 +73,21 @@ const LEFT: FaqEntry[] = [
           <li>
             <Check />
             <span>
-              <strong>Hôtel</strong> — hébergement classique, prestation variable
+              <strong>Hôtel</strong> : hébergement classique, prestation variable
               selon les étoiles.
             </span>
           </li>
           <li>
             <Check />
             <span>
-              <strong>Club</strong> — formule tout compris avec animations,
+              <strong>Club</strong> : formule tout compris avec animations,
               activités et ambiance conviviale.
             </span>
           </li>
           <li>
             <Check />
             <span>
-              <strong>Resort</strong> — établissement haut de gamme avec
+              <strong>Resort</strong> : établissement haut de gamme avec
               piscines, spa, restaurants et services premium.
             </span>
           </li>
@@ -109,7 +109,7 @@ const LEFT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Check />
-            <strong>Londres, Amsterdam, Porto, Rome</strong> — city breaks
+            <strong>Londres, Amsterdam, Porto, Rome</strong> : city breaks
             culturels et gastronomiques
           </li>
         </ul>
@@ -153,27 +153,27 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Maroc</strong> — riads de Marrakech, désert du Sahara
+          <strong>Maroc</strong> : riads de Marrakech, désert du Sahara
         </li>
         <li>
           <Check />
-          <strong>Île Maurice</strong> — resorts et lagons
+          <strong>Île Maurice</strong> : resorts et lagons
         </li>
         <li>
           <Check />
-          <strong>Seychelles</strong> — nature préservée et plages
+          <strong>Seychelles</strong> : nature préservée et plages
         </li>
         <li>
           <Check />
-          <strong>Thaïlande</strong> — temples et plages du sud
+          <strong>Thaïlande</strong> : temples et plages du sud
         </li>
         <li>
           <Check />
-          <strong>Laponie</strong> — aurores boréales et cabanes
+          <strong>Laponie</strong> : aurores boréales et cabanes
         </li>
         <li>
           <Check />
-          <strong>Londres, Amsterdam, Porto, Rome</strong> — escapades urbaines
+          <strong>Londres, Amsterdam, Porto, Rome</strong> : escapades urbaines
         </li>
       </ul>
     ),

@@ -5,7 +5,7 @@ import RenseignementForm from "@/components/demande-renseignement/RenseignementF
 export const metadata: Metadata = {
   title: "Demande de devis - CTA Voyages",
   description:
-    "Demandez un devis gratuit pour votre prochain voyage avec CTA Voyages. Séjours, circuits, croisières, glamping ou voyages sur mesure — nos attachées clientèle vous recontactent sous 48h.",
+    "Demandez un devis gratuit pour votre prochain voyage avec CTA Voyages. Séjours, circuits, croisières, glamping ou voyages sur mesure : nos attachées clientèle vous recontactent sous 48h.",
 };
 
 export default function DemandeRenseignementPage() {

@@ -24,13 +24,13 @@ const TYPES: TypeHebergement[] = [
     img: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&h=400&fit=crop&auto=format",
     alt: "Tente lodge glamping",
     title: "Tente lodge",
-    desc: "Grand espace, literie haut de gamme et terrasse privée — l'élégance du safari dans un décor naturel préservé.",
+    desc: "Grand espace, literie haut de gamme et terrasse privée : l'élégance du safari dans un décor naturel préservé.",
   },
   {
     img: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&h=400&fit=crop&auto=format",
     alt: "Cabane dans les arbres",
     title: "Cabane dans les arbres",
-    desc: "Perchée dans la canopée, avec vue panoramique sur la forêt — une expérience suspendue entre ciel et terre.",
+    desc: "Perchée dans la canopée, avec vue panoramique sur la forêt : une expérience suspendue entre ciel et terre.",
   },
   {
     img: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop&auto=format",
@@ -42,7 +42,7 @@ const TYPES: TypeHebergement[] = [
     img: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop&auto=format",
     alt: "Bulle transparente nuit étoilée",
     title: "Bulle transparente",
-    desc: "Dormir à la belle étoile dans une bulle de verre panoramique — une nuit magique entre ciel et nature.",
+    desc: "Dormir à la belle étoile dans une bulle de verre panoramique : une nuit magique entre ciel et nature.",
   },
   {
     img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop&auto=format",

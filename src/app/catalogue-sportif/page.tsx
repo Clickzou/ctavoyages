@@ -11,7 +11,7 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 export const metadata: Metadata = {
   title: "Catalogue sportif - CTA Voyages",
   description:
-    "Vivez les plus grands événements sportifs du monde avec CTA Voyages. Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day — des séjours clés en main pour vivre le sport autrement.",
+    "Vivez les plus grands événements sportifs du monde avec CTA Voyages. Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : des séjours clés en main pour vivre le sport autrement.",
 };
 
 const faqJsonLd = {
@@ -78,7 +78,7 @@ export default function CatalogueSportifPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Stade de football — Catalogue sportif CTA Voyages"
+              alt="Stade de football : Catalogue sportif CTA Voyages"
               className="w-full h-full object-cover"
               style={{ objectPosition: "center 30%" }}
               src="/assets/images/iStock-1254996096.jpg"
@@ -95,7 +95,7 @@ export default function CatalogueSportifPage() {
                 Le meilleur du sport vous attend !
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
-                Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day — des
+                Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : des
                 séjours clés en main pour transformer chaque déplacement sportif
                 en un moment exceptionnel, original et mémorable.
               </p>
@@ -164,7 +164,7 @@ export default function CatalogueSportifPage() {
           </div>
         </section>
 
-        {/* PACKS SPORTIFS — CARROUSEL */}
+        {/* PACKS SPORTIFS : CARROUSEL */}
         <section
           className="section-bg-blue py-section_padding_v overflow-hidden"
           id="packs-sportifs"
@@ -329,7 +329,7 @@ export default function CatalogueSportifPage() {
                     Vous nous parlez de votre projet
                   </h4>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
-                    Votre sport, votre destination, vos dates, votre budget — nos
+                    Votre sport, votre destination, vos dates, votre budget : nos
                     conseillers spécialisés prennent le temps d&apos;écouter vos
                     envies.
                   </p>
@@ -347,7 +347,7 @@ export default function CatalogueSportifPage() {
                   </h4>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel, transports, transferts et options
-                    exclusives — nous orchestrons chaque détail pour un séjour sans
+                    exclusives : nous orchestrons chaque détail pour un séjour sans
                     souci.
                   </p>
                 </div>

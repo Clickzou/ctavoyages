@@ -17,21 +17,21 @@ const TYPES: TypeSejour[] = [
     img: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop&auto=format",
     alt: "Séjour balnéaire en resort avec piscine et vue sur mer",
     title: "Séjour balnéaire",
-    desc: "Resort, plage et farniente — le grand classique des vacances en bord de mer.",
+    desc: "Resort, plage et farniente : le grand classique des vacances en bord de mer.",
     href: "/sejours/balneaire",
   },
   {
     img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=400&fit=crop&auto=format",
     alt: "Court séjour escapade en ville",
     title: "Escapade urbaine",
-    desc: "2 à 5 nuits dans une grande ville européenne — Londres, Amsterdam, Porto ou Rome.",
+    desc: "2 à 5 nuits dans une grande ville européenne : Londres, Amsterdam, Porto ou Rome.",
     href: "/sejours/escapade-urbaine",
   },
   {
     img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&auto=format",
     alt: "Séjour nature et randonnée",
     title: "Séjour nature",
-    desc: "Forêts, volcans, savanes — au plus proche des grands espaces naturels.",
+    desc: "Forêts, volcans, savanes : au plus proche des grands espaces naturels.",
     href: "/sejours/nature",
   },
   {
@@ -52,7 +52,7 @@ const TYPES: TypeSejour[] = [
     img: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop&auto=format",
     alt: "Séjour culturel découverte",
     title: "Séjour culturel",
-    desc: "Médinas, temples, vieilles villes — pour les voyageurs avides de découverte et d'histoire.",
+    desc: "Médinas, temples, vieilles villes : pour les voyageurs avides de découverte et d'histoire.",
     href: "/sejours/culturel",
   },
 ];

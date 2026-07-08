@@ -54,7 +54,7 @@ const TYPES: TypeVoyage[] = [
     alt: "Voyage aventure sur mesure",
     badge: "Aventure",
     title: "Voyage aventure",
-    desc: "Trek, safari, plongée, road trip — pour les voyageurs en quête d'adrénaline et de grand air.",
+    desc: "Trek, safari, plongée, road trip : pour les voyageurs en quête d'adrénaline et de grand air.",
   },
   {
     img: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&auto=format",

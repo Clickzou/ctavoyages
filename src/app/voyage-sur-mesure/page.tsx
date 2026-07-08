@@ -78,7 +78,7 @@ export default function VoyageSurMesurePage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Voyage sur mesure — paysage immersif"
+              alt="Voyage sur mesure : paysage immersif"
               className="w-full h-full object-cover"
               src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&h=900&fit=crop&auto=format"
             />
@@ -95,7 +95,7 @@ export default function VoyageSurMesurePage() {
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-3 max-w-2xl">
                 De l&apos;aventure au voyage de luxe, du voyage en famille au
-                voyage solo, chaque itinéraire est conçu pour vous — selon vos
+                voyage solo, chaque itinéraire est conçu pour vous : selon vos
                 envies, votre budget et votre style de voyage.
               </p>
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-5">
@@ -150,11 +150,11 @@ export default function VoyageSurMesurePage() {
                 Un voyage sur mesure est un voyage qui se construit pas à pas en
                 fonction de vos envies. Nous identifions vos besoins, votre budget
                 et vos attentes pour élaborer un voyage unique : transport,
-                hébergement, activités, durée, niveau de confort — tout est
+                hébergement, activités, durée, niveau de confort : tout est
                 personnalisable. Contrairement aux plateformes standardisées, vous
                 bénéficiez d&apos;un interlocuteur unique qui planifie chaque
                 détail de votre voyage. Que vous partiez en solo, en famille, en
-                couple ou entre amis, nous créons le voyage qui vous ressemble — du
+                couple ou entre amis, nous créons le voyage qui vous ressemble : du
                 premier échange jusqu&apos;à votre retour.
               </p>
             </div>
@@ -172,7 +172,7 @@ export default function VoyageSurMesurePage() {
                 Un voyage personnalisé quel que soit votre style
               </h2>
               <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
-                Famille, couple, solo, amis ou aventure — chaque profil de
+                Famille, couple, solo, amis ou aventure : chaque profil de
                 voyageur mérite un itinéraire pensé pour lui.
               </p>
             </div>
@@ -331,7 +331,7 @@ export default function VoyageSurMesurePage() {
           </div>
         </section>
 
-        {/* TIMELINE — COMMENT ÇA MARCHE */}
+        {/* TIMELINE : COMMENT ÇA MARCHE */}
         <section className="bg-white py-section_padding_v">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
             <div className="text-center mb-10 sm:mb-14">

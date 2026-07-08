@@ -374,7 +374,7 @@ export default function DevisForm() {
           consentement_rgpd: consent ? "Oui" : "Non",
           newsletter: newsletter ? "Oui" : "Non",
         },
-        { subject: "Nouvelle demande de devis — CTA Voyages" }
+        { subject: "Nouvelle demande de devis : CTA Voyages" }
       );
       router.push("/merci");
     } catch {

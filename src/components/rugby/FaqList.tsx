@@ -101,23 +101,23 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <span className="material-symbols-outlined">location_on</span>
-          <strong>Paris</strong> — Stade de France
+          <strong>Paris</strong> : Stade de France
         </li>
         <li>
           <span className="material-symbols-outlined">location_on</span>
-          <strong>Dublin</strong> — Aviva Stadium
+          <strong>Dublin</strong> : Aviva Stadium
         </li>
         <li>
           <span className="material-symbols-outlined">location_on</span>
-          <strong>Cardiff</strong> — Principality Stadium
+          <strong>Cardiff</strong> : Principality Stadium
         </li>
         <li>
           <span className="material-symbols-outlined">location_on</span>
-          <strong>Édimbourg</strong> — Murrayfield
+          <strong>Édimbourg</strong> : Murrayfield
         </li>
         <li>
           <span className="material-symbols-outlined">location_on</span>
-          <strong>Bilbao</strong> — San Mamés (finales 2026)
+          <strong>Bilbao</strong> : San Mamés (finales 2026)
         </li>
       </ul>
     ),
@@ -167,7 +167,7 @@ const RIGHT: FaqEntry[] = [
     answer: (
       <p>
         Oui. Selon l&apos;événement, nous proposons plusieurs catégories de billets afin
-        d&apos;adapter l&apos;expérience à vos envies et à votre budget — des places en
+        d&apos;adapter l&apos;expérience à vos envies et à votre budget : des places en
         tribune aux options hospitalité et VIP.
       </p>
     ),
@@ -180,7 +180,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Oui. Nous créons des formules sur mesure pour les voyages clients, les
         incentives, les team buildings ou les groupes d&apos;amis. Billets groupes,
-        animations, repas d&apos;avant-match — nous gérons tout.
+        animations, repas d&apos;avant-match : nous gérons tout.
       </p>
     ),
   },

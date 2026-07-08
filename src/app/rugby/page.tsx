@@ -7,7 +7,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 export const metadata: Metadata = {
   title: "Séjour Rugby - CTA Voyages",
   description:
-    "Vivez les plus grands événements rugby avec CTA Voyages. Champions Cup, 6 Nations, Quilter Nations Series — billets officiels, hôtel et transport inclus. Devis gratuit.",
+    "Vivez les plus grands événements rugby avec CTA Voyages. Champions Cup, 6 Nations, Quilter Nations Series : billets officiels, hôtel et transport inclus. Devis gratuit.",
 };
 
 const faqJsonLd = {
@@ -66,7 +66,7 @@ export default function RugbyPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Match de rugby — CTA Voyages"
+              alt="Match de rugby : CTA Voyages"
               className="w-full h-full object-cover"
               style={{ objectPosition: "center 40%" }}
               src="/assets/images/iStock-1417770031.jpg"
@@ -82,7 +82,7 @@ export default function RugbyPage() {
                 Vivez les plus grands matchs et tournois de rugby européen
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
-                Champions Cup, 6 Nations, Quilter Nations Series — des séjours clés en
+                Champions Cup, 6 Nations, Quilter Nations Series : des séjours clés en
                 main avec billets officiels, hôtel et options sur mesure pour plonger
                 dans l&apos;univers de l&apos;ovalie.
               </p>
@@ -286,7 +286,7 @@ export default function RugbyPage() {
                   Champions Cup &amp; Challenge Cup
                 </h3>
                 <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  En 2026 à Bilbao, au San Mamés — deux journées spectaculaires dans un
+                  En 2026 à Bilbao, au San Mamés : deux journées spectaculaires dans un
                   stade légendaire, entre gastronomie basque et ferveur sportive.
                 </p>
               </a>
@@ -311,7 +311,7 @@ export default function RugbyPage() {
                   Tournoi des 6 Nations
                 </h3>
                 <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  Soutenez le XV de France à Paris, Édimbourg, Cardiff ou Dublin — des
+                  Soutenez le XV de France à Paris, Édimbourg, Cardiff ou Dublin : des
                   stades mythiques et des ambiances hors du commun.
                 </p>
               </a>
@@ -359,7 +359,7 @@ export default function RugbyPage() {
                   Matchs amicaux &amp; événements
                 </h3>
                 <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  Des rencontres de prestige tout au long de la saison — vivez la passion
+                  Des rencontres de prestige tout au long de la saison : vivez la passion
                   du rugby toute l&apos;année dans les plus grands stades européens.
                 </p>
               </a>
@@ -405,7 +405,7 @@ export default function RugbyPage() {
                     Nous composons votre pack
                   </h4>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
-                    Billets officiels, hôtel, transferts et options festives — tout est
+                    Billets officiels, hôtel, transferts et options festives : tout est
                     organisé pour un week-end rugby sans souci.
                   </p>
                 </div>

@@ -101,7 +101,7 @@ export default function Footer() {
       <div className="border-t border-white/15">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter py-4 sm:py-6 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
           <p className="font-body-md text-[12px] sm:text-[13px] text-white/60">
-            © 2026 CTA Voyages — Groupe CTA
+            © 2026 CTA Voyages : Groupe CTA
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <Link className="font-body-md text-[12px] sm:text-[13px] text-white/60 hover:text-[#FBBF12] transition-colors" href="/plan-du-site">Plan du site</Link>

@@ -30,31 +30,31 @@ const TYPES: TypeCroisiere[] = [
     img: "https://images.unsplash.com/photo-1601439678777-b2b3c56fa627?w=600&h=400&fit=crop&auto=format",
     alt: "Croisière fjords norvégiens",
     title: "Fjords & Europe du Nord",
-    desc: "Fjords spectaculaires, aurores boréales et capitales nordiques — un voyage grandiose dans les terres du Grand Nord.",
+    desc: "Fjords spectaculaires, aurores boréales et capitales nordiques : un voyage grandiose dans les terres du Grand Nord.",
   },
   {
     img: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop&auto=format",
     alt: "Croisière Caraïbes",
     title: "Croisière Caraïbes",
-    desc: "Eaux turquoise, plages de rêve et îles paradisiaques — la croisière idéale pour se ressourcer au soleil.",
+    desc: "Eaux turquoise, plages de rêve et îles paradisiaques : la croisière idéale pour se ressourcer au soleil.",
   },
   {
     img: "https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=600&h=400&fit=crop&auto=format",
     alt: "Croisière îles grecques",
     title: "Îles grecques & Égée",
-    desc: "Santorin, Mykonos, Rhodes — un itinéraire mythique entre mer azur, villages blancs et sites antiques.",
+    desc: "Santorin, Mykonos, Rhodes : un itinéraire mythique entre mer azur, villages blancs et sites antiques.",
   },
   {
     img: "https://images.unsplash.com/photo-1602002418816-5c0aeef426aa?w=600&h=400&fit=crop&auto=format",
     alt: "Croisière Océan Indien",
     title: "Croisière Océan Indien",
-    desc: "Île Maurice, Seychelles, Zanzibar — cap sur les îles tropicales de l'Océan Indien à bord d'un navire de luxe.",
+    desc: "Île Maurice, Seychelles, Zanzibar : cap sur les îles tropicales de l'Océan Indien à bord d'un navire de luxe.",
   },
   {
     img: "https://images.unsplash.com/photo-1573455494060-c5595004fb6c?w=600&h=400&fit=crop&auto=format",
     alt: "Croisière fluviale",
     title: "Croisière fluviale",
-    desc: "Rhin, Danube, Seine ou Douro — naviguer en douceur à travers les plus beaux paysages et villages d'Europe.",
+    desc: "Rhin, Danube, Seine ou Douro : naviguer en douceur à travers les plus beaux paysages et villages d'Europe.",
   },
 ];
 

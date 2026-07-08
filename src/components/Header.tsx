@@ -89,7 +89,7 @@ export default function Header() {
           <Link className="flex-shrink-0" href="/">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="CTA Voyages — Agence de voyages sur mesure à Toulouse"
+              alt="CTA Voyages : Agence de voyages sur mesure à Toulouse"
               className="h-[48px] sm:h-[56px] w-auto transition-opacity duration-300"
                 src={
                   overHero

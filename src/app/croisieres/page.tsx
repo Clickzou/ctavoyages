@@ -11,7 +11,7 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 export const metadata: Metadata = {
   title: "Croisières - CTA Voyages",
   description:
-    "Découvrez nos croisières en mer avec CTA Voyages. Transport, hébergement, restauration et animations à bord — une expérience complète sur les mers du monde. Devis gratuit, conseiller dédié.",
+    "Découvrez nos croisières en mer avec CTA Voyages. Transport, hébergement, restauration et animations à bord : une expérience complète sur les mers du monde. Devis gratuit, conseiller dédié.",
 };
 
 const faqJsonLd = {
@@ -78,7 +78,7 @@ export default function CroisieresPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Croisière en mer — CTA Voyages"
+              alt="Croisière en mer : CTA Voyages"
               className="w-full h-full object-cover"
               src="https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=1600&h=900&fit=crop&auto=format"
             />
@@ -94,7 +94,7 @@ export default function CroisieresPage() {
                 Croisières en mer : une expérience de voyage à part entière
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
-                Transport, hébergement, restauration et animations à bord — vivez
+                Transport, hébergement, restauration et animations à bord : vivez
                 une expérience complète sur les mers du monde, avec le confort
                 d&apos;un hôtel flottant et la magie de chaque escale.
               </p>
@@ -153,7 +153,7 @@ export default function CroisieresPage() {
                 tout en vous emmenant de port en port à travers des destinations
                 d&apos;exception. Chez CTA Voyages, nous sélectionnons avec soin les
                 meilleures compagnies de croisières et les itinéraires les plus
-                inspirants — Méditerranée, fjords norvégiens, Caraïbes, îles
+                inspirants : Méditerranée, fjords norvégiens, Caraïbes, îles
                 grecques ou encore Europe du Nord. Votre conseiller dédié vous aide
                 à choisir la croisière adaptée à votre profil, à votre budget et à
                 vos envies d&apos;évasion, et peut enrichir votre voyage
@@ -175,7 +175,7 @@ export default function CroisieresPage() {
               </h2>
               <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
                 Méditerranée ensoleillée, fjords majestueux, îles exotiques ou
-                grande traversée — nous trouvons la croisière qui correspond à
+                grande traversée : nous trouvons la croisière qui correspond à
                 votre rythme et vos envies.
               </p>
             </div>
@@ -238,7 +238,7 @@ export default function CroisieresPage() {
                     Tout compris à bord
                   </h3>
                   <p className="font-body-md text-[13px] sm:text-[14px] text-[#555]">
-                    Hébergement, repas, animations et loisirs — profitez de chaque
+                    Hébergement, repas, animations et loisirs : profitez de chaque
                     instant sans vous soucier des dépenses.
                   </p>
                 </div>
@@ -370,7 +370,7 @@ export default function CroisieresPage() {
                   </h4>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Compagnie, itinéraire, catégorie de cabine, excursions et
-                    extensions terrestres — nous organisons tout pour vous.
+                    extensions terrestres : nous organisons tout pour vous.
                   </p>
                 </div>
               </div>

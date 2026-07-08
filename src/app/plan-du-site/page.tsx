@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Plan du site",
   description:
-    "Plan du site CTA Voyages : retrouvez l'ensemble de nos pages — offres, destinations, blog, événements sportifs et informations pratiques.",
+    "Plan du site CTA Voyages : retrouvez l'ensemble de nos pages : offres, destinations, blog, événements sportifs et informations pratiques.",
 };
 
 type SiteLink = { label: string; href: string; external?: boolean };

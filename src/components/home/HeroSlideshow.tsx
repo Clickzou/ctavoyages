@@ -26,7 +26,7 @@ const SLIDES: Slide[] = [
     alt: "Chapelle pittoresque au bord de l'eau, Île Maurice",
     title: "La déconnexion, version paradis",
     subtitle:
-      "Lagons scintillants, adresses de charme et douceur de vivre insulaire — un séjour taillé à vos envies, loin du tumulte du quotidien.",
+      "Lagons scintillants, adresses de charme et douceur de vivre insulaire : un séjour taillé à vos envies, loin du tumulte du quotidien.",
   },
   {
     src: "/vacances-agence-de-voyage.jpg",
@@ -40,14 +40,14 @@ const SLIDES: Slide[] = [
     alt: "Plage paradisiaque aux eaux turquoise en Thaïlande",
     title: "Le dépaysement, les pieds dans l'eau",
     subtitle:
-      "Eaux turquoise, plages de sable fin et farniente sous les tropiques — l'évasion balnéaire pensée pour vous, sans la moindre contrainte.",
+      "Eaux turquoise, plages de sable fin et farniente sous les tropiques : l'évasion balnéaire pensée pour vous, sans la moindre contrainte.",
   },
   {
     src: "/maroc-ruelle.jpg",
     alt: "Ruelle traditionnelle colorée d'une médina au Maroc",
     title: "Plongez au cœur d'une autre culture",
     subtitle:
-      "Médinas envoûtantes, ruelles colorées et traditions vivantes — un voyage immersif et dépaysant, bâti avec un expert qui connaît le terrain.",
+      "Médinas envoûtantes, ruelles colorées et traditions vivantes : un voyage immersif et dépaysant, bâti avec un expert qui connaît le terrain.",
   },
   {
     src: "/tanzanie.jpg",

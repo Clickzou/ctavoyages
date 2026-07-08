@@ -33,7 +33,7 @@ export default function Page() {
             Le responsable du traitement des données est&nbsp;:
           </p>
           <ul className="list-disc pl-6 space-y-2 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
-            <li>CTA Voyages — Groupe CTA</li>
+            <li>CTA Voyages : Groupe CTA</li>
             <li>99 rue de Fenouillet, 31200 Toulouse, France</li>
             <li>
               Email&nbsp;:{" "}
@@ -110,7 +110,7 @@ export default function Page() {
             </li>
             <li>
               <strong>Gérer la relation commerciale</strong> et le suivi de
-              votre dossier — base légale&nbsp;: exécution du contrat ou de
+              votre dossier : base légale&nbsp;: exécution du contrat ou de
               mesures précontractuelles.
             </li>
             <li>
@@ -120,13 +120,13 @@ export default function Page() {
             </li>
             <li>
               <strong>Assurer la sécurité et le bon fonctionnement du
-              site</strong> et réaliser des mesures d&apos;audience — base
+              site</strong> et réaliser des mesures d&apos;audience : base
               légale&nbsp;: intérêt légitime et/ou consentement selon le type de
               cookie.
             </li>
             <li>
               <strong>Respecter nos obligations légales et
-              réglementaires</strong> — base légale&nbsp;: obligation légale.
+              réglementaires</strong> : base légale&nbsp;: obligation légale.
             </li>
           </ul>
 
@@ -262,7 +262,7 @@ export default function Page() {
             Pour toute question relative à la protection de vos données, vous
             pouvez contacter notre référent en la matière&nbsp;:{" "}
             [À COMPLÉTER : nom et coordonnées du DPO ou du référent données, si
-            désigné] — à défaut, par email à{" "}
+            désigné] : à défaut, par email à{" "}
             <a
               href="mailto:voyages@cta-events.com"
               className="text-primary font-medium hover:underline"

@@ -75,14 +75,14 @@ const LEFT: FaqEntry[] = [
         <li>
           <Check />
           <span>
-            <strong>Croisière en mer</strong> — grands paquebots, espaces de
+            <strong>Croisière en mer</strong> : grands paquebots, espaces de
             loisirs nombreux, escales dans des villes portuaires ou des îles.
           </span>
         </li>
         <li>
           <Check />
           <span>
-            <strong>Croisière fluviale</strong> — bateaux plus intimes,
+            <strong>Croisière fluviale</strong> : bateaux plus intimes,
             navigation au cœur des villes, ambiance culturelle et conviviale.
           </span>
         </li>
@@ -122,7 +122,7 @@ const LEFT: FaqEntry[] = [
     answer: (
       <p>
         Oui. Nous pouvons organiser une <strong>extension terrestre</strong>{" "}
-        avant ou après votre croisière — séjour dans la ville d&apos;embarquement,
+        avant ou après votre croisière : séjour dans la ville d&apos;embarquement,
         visite d&apos;une destination en escale ou prolongation dans un hôtel.
         Votre conseiller vous propose les combinaisons les plus intéressantes.
       </p>
@@ -139,7 +139,7 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Méditerranée</strong> — Italie, Espagne, France, Grèce
+          <strong>Méditerranée</strong> : Italie, Espagne, France, Grèce
         </li>
         <li>
           <Check />
@@ -155,7 +155,7 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          <strong>Océan Indien</strong> — Maurice, Seychelles, Zanzibar
+          <strong>Océan Indien</strong> : Maurice, Seychelles, Zanzibar
         </li>
       </ul>
     ),
@@ -167,21 +167,21 @@ const RIGHT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Check />
-            <strong>Cabine intérieure</strong> — sans hublot, option la plus
+            <strong>Cabine intérieure</strong> : sans hublot, option la plus
             économique
           </li>
           <li>
             <Check />
-            <strong>Cabine extérieure</strong> — avec hublot, lumière naturelle
+            <strong>Cabine extérieure</strong> : avec hublot, lumière naturelle
           </li>
           <li>
             <Check />
-            <strong>Cabine avec balcon</strong> — vue mer et espace extérieur
+            <strong>Cabine avec balcon</strong> : vue mer et espace extérieur
             privé
           </li>
           <li>
             <Check />
-            <strong>Suite</strong> — grand espace, services premium et avantages
+            <strong>Suite</strong> : grand espace, services premium et avantages
             exclusifs
           </li>
         </ul>

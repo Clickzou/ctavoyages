@@ -73,14 +73,14 @@ const LEFT: FaqEntry[] = [
         <li>
           <Check />
           <span>
-            <strong>Circuit individuel</strong> — plus de souplesse dans le
+            <strong>Circuit individuel</strong> : plus de souplesse dans le
             rythme, tout en conservant une organisation structurée.
           </span>
         </li>
         <li>
           <Check />
           <span>
-            <strong>Circuit accompagné</strong> — un guide ou accompagnateur vous
+            <strong>Circuit accompagné</strong> : un guide ou accompagnateur vous
             suit sur tout ou partie du parcours.
           </span>
         </li>
@@ -118,23 +118,23 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Japon</strong> — entre Tokyo, Kyoto et les Alpes japonaises
+          <strong>Japon</strong> : entre Tokyo, Kyoto et les Alpes japonaises
         </li>
         <li>
           <Check />
-          <strong>Canada</strong> — Rocheuses, lacs et grands espaces
+          <strong>Canada</strong> : Rocheuses, lacs et grands espaces
         </li>
         <li>
           <Check />
-          <strong>Costa Rica</strong> — volcans, jungle et biodiversité
+          <strong>Costa Rica</strong> : volcans, jungle et biodiversité
         </li>
         <li>
           <Check />
-          <strong>Thaïlande</strong> — temples, villes et littoral tropical
+          <strong>Thaïlande</strong> : temples, villes et littoral tropical
         </li>
         <li>
           <Check />
-          <strong>Maroc</strong>{" "}et <strong>Laponie</strong> — deux univers
+          <strong>Maroc</strong>{" "}et <strong>Laponie</strong> : deux univers
           forts, culturels ou nature
         </li>
       </ul>

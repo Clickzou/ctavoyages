@@ -27,7 +27,7 @@ function resolveHref(card: Card): string {
 
 /**
  * Carrousel de destinations propre à une page thème : reçoit ses cartes en
- * props (cohérence garantie avec le sujet — pas de liste générique partagée).
+ * props (cohérence garantie avec le sujet : pas de liste générique partagée).
  * Réutilise les styles .dest-carousel-* du gabarit destination.
  */
 export default function ThemeDestCarousel({ cards }: { cards: Card[] }) {

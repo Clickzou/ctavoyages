@@ -68,28 +68,28 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Tentes lodges</strong> — élégantes, spacieuses et bien équipées
+          <strong>Tentes lodges</strong> : élégantes, spacieuses et bien équipées
         </li>
         <li>
           <Check />
-          <strong>Cabanes dans les arbres</strong> — perchées dans la canopée
+          <strong>Cabanes dans les arbres</strong> : perchées dans la canopée
         </li>
         <li>
           <Check />
-          <strong>Igloos &amp; cabanes arctiques</strong> — en Laponie et dans les
+          <strong>Igloos &amp; cabanes arctiques</strong> : en Laponie et dans les
           régions nordiques
         </li>
         <li>
           <Check />
-          <strong>Bulles transparentes</strong> — pour dormir sous les étoiles
+          <strong>Bulles transparentes</strong> : pour dormir sous les étoiles
         </li>
         <li>
           <Check />
-          <strong>Lodges safari</strong> — en Afrique, face à la savane
+          <strong>Lodges safari</strong> : en Afrique, face à la savane
         </li>
         <li>
           <Check />
-          <strong>Campements désert</strong> — au Maroc ou en Jordanie
+          <strong>Campements désert</strong> : au Maroc ou en Jordanie
         </li>
       </ul>
     ),
@@ -142,27 +142,27 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Laponie</strong> — igloos et cabanes sous les aurores boréales
+          <strong>Laponie</strong> : igloos et cabanes sous les aurores boréales
         </li>
         <li>
           <Check />
-          <strong>Kenya</strong> — lodges safari dans la savane
+          <strong>Kenya</strong> : lodges safari dans la savane
         </li>
         <li>
           <Check />
-          <strong>Canada</strong> — cabanes en forêt boréale
+          <strong>Canada</strong> : cabanes en forêt boréale
         </li>
         <li>
           <Check />
-          <strong>Maroc</strong> — campements dans les dunes du Sahara
+          <strong>Maroc</strong> : campements dans les dunes du Sahara
         </li>
         <li>
           <Check />
-          <strong>Costa Rica</strong> — éco-lodges dans la forêt tropicale
+          <strong>Costa Rica</strong> : éco-lodges dans la forêt tropicale
         </li>
         <li>
           <Check />
-          <strong>Japon</strong> — ryokans traditionnels avec bains onsen
+          <strong>Japon</strong> : ryokans traditionnels avec bains onsen
         </li>
       </ul>
     ),
@@ -189,16 +189,16 @@ const RIGHT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Check />
-            <strong>Entrée de gamme</strong> — tentes lodges et cabanes en Europe
+            <strong>Entrée de gamme</strong> : tentes lodges et cabanes en Europe
           </li>
           <li>
             <Check />
-            <strong>Milieu de gamme</strong> — igloos en Laponie, éco-lodges au
+            <strong>Milieu de gamme</strong> : igloos en Laponie, éco-lodges au
             Costa Rica
           </li>
           <li>
             <Check />
-            <strong>Haut de gamme</strong> — lodges safari en Afrique, ryokans au
+            <strong>Haut de gamme</strong> : lodges safari en Afrique, ryokans au
             Japon
           </li>
         </ul>

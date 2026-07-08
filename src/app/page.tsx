@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* NOS OFFRES — CARROUSEL (pleine largeur, 5 cartes, marges 50px) */}
+        {/* NOS OFFRES : CARROUSEL (pleine largeur, 5 cartes, marges 50px) */}
         <section className="py-section_padding_v section-bg-blue overflow-hidden">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
             <div data-reveal="fade-up" className="text-center mb-10 sm:mb-16">
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="trust-ticker">
             <div className="trust-ticker-item">
               <p className="text-white font-body-md text-[12px] xs:text-[14px] md:text-[16px] text-center">
-                Membre du réseau <span className="font-bold">TourCom</span> — Premier réseau européen · 1 200 agences · 6 000 points de vente
+                Membre du réseau <span className="font-bold">TourCom</span> : Premier réseau européen · 1 200 agences · 6 000 points de vente
               </p>
             </div>
             <div className="trust-ticker-item">
@@ -131,7 +131,7 @@ export default function Home() {
         {/* MAP (client) */}
         <WorldMap />
 
-        {/* DESTINATIONS CARROUSEL — pleine largeur, marges 50px, 5 cartes */}
+        {/* DESTINATIONS CARROUSEL : pleine largeur, marges 50px, 5 cartes */}
         <section className="py-section_padding_v bg-white overflow-hidden">
           <div className="dest-fullwidth w-full px-6 lg:px-[50px]">
             <div data-reveal="fade-right" className="mb-8 sm:mb-12">

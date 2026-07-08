@@ -93,7 +93,7 @@ const LEFT: FaqEntry[] = [
         Au <strong>stade Santiago Bernabéu</strong>{" "}de Madrid, récemment rénové
         et équipé pour accueillir les plus grands événements sportifs mondiaux.
         Avec plus de 80 000 places, c&apos;est l&apos;un des stades les plus
-        emblématiques d&apos;Europe — un cadre exceptionnel pour vivre la NFL.
+        emblématiques d&apos;Europe : un cadre exceptionnel pour vivre la NFL.
       </p>
     ),
   },
@@ -103,7 +103,7 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <span className="material-symbols-outlined">check</span>Un match de{" "}
-          <strong>saison régulière officielle</strong> — pas un match
+          <strong>saison régulière officielle</strong> : pas un match
           d&apos;exhibition
         </li>
         <li>
@@ -136,7 +136,7 @@ const RIGHT: FaqEntry[] = [
         Oui. Nos équipes créent des formules sur mesure pour les{" "}
         <strong>groupes</strong>, les <strong>incentives</strong>{" "}ou les{" "}
         <strong>voyages clients</strong>{" "}autour du NFL Madrid Game. Billets
-        groupes, hébergement privatisé, animations et logistique complète — nous
+        groupes, hébergement privatisé, animations et logistique complète : nous
         gérons tout.
       </p>
     ),

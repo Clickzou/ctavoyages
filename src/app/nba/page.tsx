@@ -7,7 +7,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 export const metadata: Metadata = {
   title: "Séjour NBA - CTA Voyages",
   description:
-    "Vivez un match NBA à New York ou Los Angeles avec CTA Voyages. Knicks, Nets, Lakers, Clippers — billets officiels, hôtel, vols et expériences inclus. Devis gratuit.",
+    "Vivez un match NBA à New York ou Los Angeles avec CTA Voyages. Knicks, Nets, Lakers, Clippers : billets officiels, hôtel, vols et expériences inclus. Devis gratuit.",
 };
 
 const faqJsonLd = {
@@ -66,7 +66,7 @@ export default function NbaPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Match NBA — CTA Voyages"
+              alt="Match NBA : CTA Voyages"
               className="w-full h-full object-cover"
               style={{ objectPosition: "center 30%" }}
               src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1600&h=900&fit=crop&auto=format"
@@ -82,7 +82,7 @@ export default function NbaPage() {
                 Voyagez et vibrez pour le basket américain
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
-                LeBron James, Victor Wembanyama, Luka Dončić, Steph Curry — des
+                LeBron James, Victor Wembanyama, Luka Dončić, Steph Curry : des
                 séjours clés en main à New York et Los Angeles avec billets
                 officiels, hôtel, vols et expériences exclusives.
               </p>
@@ -180,7 +180,7 @@ export default function NbaPage() {
                     Billets officiels
                   </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                    Knicks, Nets, Lakers, Clippers — accès garanti aux arènes les
+                    Knicks, Nets, Lakers, Clippers : accès garanti aux arènes les
                     plus mythiques de la NBA.
                   </p>
                 </div>
@@ -226,7 +226,7 @@ export default function NbaPage() {
                     Vols A/R
                   </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                    Vols aller-retour Paris — États-Unis et transferts
+                    Vols aller-retour Paris : États-Unis et transferts
                     aéroport-hôtel inclus.
                   </p>
                 </div>
@@ -249,7 +249,7 @@ export default function NbaPage() {
                     Expériences
                   </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                    Times Square, Empire State Building, Venice Beach — option
+                    Times Square, Empire State Building, Venice Beach : option
                     deuxième match NBA disponible.
                   </p>
                 </div>
@@ -387,7 +387,7 @@ export default function NbaPage() {
                   </h4>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel 4 étoiles, vols, transferts et
-                    options multi-matchs — tout est organisé.
+                    options multi-matchs : tout est organisé.
                   </p>
                 </div>
               </div>

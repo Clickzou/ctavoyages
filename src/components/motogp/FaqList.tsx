@@ -60,15 +60,15 @@ const LEFT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Icon name="two_wheeler" />
-            <strong>Catalogne (Barcelone)</strong> — ambiance méditerranéenne
+            <strong>Catalogne (Barcelone)</strong> : ambiance méditerranéenne
           </li>
           <li>
             <Icon name="two_wheeler" />
-            <strong>Mugello (Italie)</strong> — tracé mythique en Toscane
+            <strong>Mugello (Italie)</strong> : tracé mythique en Toscane
           </li>
           <li>
             <Icon name="two_wheeler" />
-            <strong>Valence (Espagne)</strong> — la grande finale de la saison
+            <strong>Valence (Espagne)</strong> : la grande finale de la saison
           </li>
         </ul>
       </>

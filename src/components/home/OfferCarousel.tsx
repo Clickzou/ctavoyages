@@ -18,7 +18,7 @@ const OFFERS: Offer[] = [
   {
     href: "/sejours",
     img: "/assets/images/iStock-2236715619 (1).jpg",
-    alt: "Séjours hôtels clubs et resorts — CTA Voyages",
+    alt: "Séjours hôtels clubs et resorts : CTA Voyages",
     tag: "Séjours",
     title: "Hôtels, clubs & resorts",
     desc: "Des séjours tout compris adaptés à votre budget et vos envies, en France et à l'international.",
@@ -27,7 +27,7 @@ const OFFERS: Offer[] = [
   {
     href: "/circuits",
     img: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&h=400&fit=crop&auto=format",
-    alt: "Circuits culturels et découverte — CTA Voyages",
+    alt: "Circuits culturels et découverte : CTA Voyages",
     tag: "Circuits",
     title: "Circuits & itinéraires",
     desc: "Voyagez à votre rythme ou avec un guide expert. Circuits individuels, accompagnés ou en groupe.",
@@ -36,7 +36,7 @@ const OFFERS: Offer[] = [
   {
     href: "/croisieres",
     img: "https://images.unsplash.com/photo-1599640842225-85d111c60e6b?w=600&h=400&fit=crop&auto=format",
-    alt: "Croisières en mer — CTA Voyages",
+    alt: "Croisières en mer : CTA Voyages",
     tag: "Croisières",
     title: "Croisières & voyages en mer",
     desc: "Transport, hébergement, restauration et animations à bord. Une expérience complète sur les mers du monde.",
@@ -45,7 +45,7 @@ const OFFERS: Offer[] = [
   {
     href: "/glamping",
     img: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&h=400&fit=crop&auto=format",
-    alt: "Glamping hébergement insolite nature — CTA Voyages",
+    alt: "Glamping hébergement insolite nature : CTA Voyages",
     tag: "Nature",
     title: "Glamping & hébergements insolites",
     desc: "Le meilleur de la nature avec le confort du haut de gamme. Tentes lodges, cabanes, igloo hôtels et bien plus.",
@@ -54,7 +54,7 @@ const OFFERS: Offer[] = [
   {
     href: "/catalogue-sportif",
     img: "https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&h=400&fit=crop&auto=format",
-    alt: "Catalogue sportif — CTA Voyages",
+    alt: "Catalogue sportif : CTA Voyages",
     tag: "Sport",
     title: "Catalogue sportif",
     desc: "Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : vivez les plus grands événements sportifs du monde.",
@@ -63,7 +63,7 @@ const OFFERS: Offer[] = [
   {
     href: "/voyage-sur-mesure",
     img: "/assets/images/iStock-891573112.jpg",
-    alt: "Voyages sur mesure personnalisés — CTA Voyages",
+    alt: "Voyages sur mesure personnalisés : CTA Voyages",
     tag: "Voyages sur mesure",
     title: "Voyages sur mesure",
     desc: "Votre itinéraire, vos dates, votre rythme. Nous construisons pas à pas le voyage qui vous ressemble, de A à Z.",

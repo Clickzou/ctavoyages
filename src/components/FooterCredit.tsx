@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 
 /**
- * Crédit de création du site — affiché uniquement sur la page d'accueil.
+ * Crédit de création du site : affiché uniquement sur la page d'accueil.
  */
 export default function FooterCredit() {
   const pathname = usePathname();

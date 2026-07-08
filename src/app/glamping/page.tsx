@@ -11,7 +11,7 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 export const metadata: Metadata = {
   title: "Glamping & hébergements insolites - CTA Voyages",
   description:
-    "Découvrez nos séjours glamping et hébergements insolites avec CTA Voyages. Tentes lodges, cabanes, igloos, tree houses — vivez la nature sans sacrifier le confort. Devis gratuit, conseiller dédié.",
+    "Découvrez nos séjours glamping et hébergements insolites avec CTA Voyages. Tentes lodges, cabanes, igloos, tree houses : vivez la nature sans sacrifier le confort. Devis gratuit, conseiller dédié.",
 };
 
 const faqJsonLd = {
@@ -78,7 +78,7 @@ export default function GlampingPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Glamping — tente lodge dans la nature — CTA Voyages"
+              alt="Glamping : tente lodge dans la nature : CTA Voyages"
               className="w-full h-full object-cover"
               src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1600&h=900&fit=crop&auto=format"
             />
@@ -95,7 +95,7 @@ export default function GlampingPage() {
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
                 Tentes lodges, cabanes dans les arbres, igloos, bulles
-                transparentes ou lodges safari — vivez une immersion totale dans la
+                transparentes ou lodges safari : vivez une immersion totale dans la
                 nature avec tout le raffinement d&apos;un hébergement haut de gamme.
               </p>
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-5">
@@ -151,7 +151,7 @@ export default function GlampingPage() {
                 forme d&apos;hébergement touristique qui associe le contact avec la
                 nature du camping et le confort d&apos;un hébergement haut de gamme.
                 Chez CTA Voyages, nous sélectionnons des hébergements insolites et
-                d&apos;exception partout dans le monde — des cabanes dans les arbres
+                d&apos;exception partout dans le monde : des cabanes dans les arbres
                 au Canada aux igloos de Laponie, en passant par les lodges safari au
                 Kenya ou les campements du désert marocain. Que vous rêviez d&apos;une
                 nuit sous les étoiles, d&apos;une escapade romantique au cœur de la
@@ -175,7 +175,7 @@ export default function GlampingPage() {
               </h2>
               <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
                 Cabane dans les arbres, igloo, tente lodge, bulle transparente ou
-                lodge safari — chaque hébergement est une expérience à part
+                lodge safari : chaque hébergement est une expérience à part
                 entière.
               </p>
             </div>

@@ -21,8 +21,8 @@ const CAL_LABELS: Record<string, string> = {
 
 /**
  * Gabarit d'une page « thème » (ex. Séjour balnéaire). Reprend le layout riche
- * des fiches destination — hero plein écran, présentation, « pourquoi » en
- * cartes image-haut, carrousel destinations, FAQ, RSE, CTA, newsletter — sans
+ * des fiches destination : hero plein écran, présentation, « pourquoi » en
+ * cartes image-haut, carrousel destinations, FAQ, RSE, CTA, newsletter : sans
  * le bandeau infos ni l'itinéraire « carte au trésor » propres aux pays.
  */
 export default function ThemeTemplate({ content }: { content: ThemeContent }) {
@@ -126,7 +126,7 @@ export default function ThemeTemplate({ content }: { content: ThemeContent }) {
           </div>
         </section>
 
-        {/* ITINÉRAIRE — EXEMPLE DE PROGRAMME */}
+        {/* ITINÉRAIRE : EXEMPLE DE PROGRAMME */}
         {content.itinerary && (
           <section className="section-bg-blue py-section_padding_v" id="itineraire">
             <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
@@ -253,7 +253,7 @@ export default function ThemeTemplate({ content }: { content: ThemeContent }) {
                           <div
                             className="h-6 rounded-md"
                             style={{ backgroundColor: CAL_COLORS[m] }}
-                            title={`${MONTHS[i]} — ${CAL_LABELS[m]}`}
+                            title={`${MONTHS[i]} : ${CAL_LABELS[m]}`}
                           />
                         </div>
                       ))}
@@ -339,7 +339,7 @@ export default function ThemeTemplate({ content }: { content: ThemeContent }) {
             <div className="flex flex-col items-center text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt="Logo EcoVadis — Certification RSE de CTA Voyages"
+                alt="Logo EcoVadis : Certification RSE de CTA Voyages"
                 className="h-[56px] sm:h-[72px] w-auto mb-6 sm:mb-8 ecovadis-glow"
                 src="/assets/images/logo-ecovadis.png"
               />

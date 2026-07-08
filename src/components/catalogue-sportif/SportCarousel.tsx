@@ -20,7 +20,7 @@ const PACKS: SportPack[] = [
     alt: "Séjour Football Européen",
     badge: "FOOTBALL",
     title: "Football Européen",
-    desc: "Premier League, Liga, Serie A, Bundesliga — vivez les plus grands matchs dans les stades mythiques d'Europe.",
+    desc: "Premier League, Liga, Serie A, Bundesliga : vivez les plus grands matchs dans les stades mythiques d'Europe.",
     tags: [
       { label: "Londres" },
       { label: "Madrid" },
@@ -34,7 +34,7 @@ const PACKS: SportPack[] = [
     alt: "Séjour Rugby",
     badge: "RUGBY",
     title: "Rugby",
-    desc: "Champions Cup, 6 Nations, Quilter Nations Series — plongez dans l'atmosphère unique de l'ovalie.",
+    desc: "Champions Cup, 6 Nations, Quilter Nations Series : plongez dans l'atmosphère unique de l'ovalie.",
     tags: [
       { label: "Paris" },
       { label: "Dublin" },
@@ -48,7 +48,7 @@ const PACKS: SportPack[] = [
     alt: "Séjour NBA",
     badge: "NBA",
     title: "NBA",
-    desc: "LeBron James, Wembanyama, Luka Dončić — vibrez dans les arènes les plus mythiques du basket américain.",
+    desc: "LeBron James, Wembanyama, Luka Dončić : vibrez dans les arènes les plus mythiques du basket américain.",
     tags: [{ label: "New York" }, { label: "Los Angeles" }],
   },
   {
@@ -56,8 +56,8 @@ const PACKS: SportPack[] = [
     img: "/assets/images/iStock-1838780282.jpg",
     alt: "Séjour NFL Madrid Game",
     badge: "NFL",
-    title: "NFL — Madrid Game",
-    desc: "8 novembre 2026 — Atlanta Falcons vs Cincinnati Bengals au Santiago Bernabéu.",
+    title: "NFL : Madrid Game",
+    desc: "8 novembre 2026 : Atlanta Falcons vs Cincinnati Bengals au Santiago Bernabéu.",
     tags: [{ label: "Madrid" }, { label: "8 nov. 2026", highlight: true }],
   },
   {
@@ -66,7 +66,7 @@ const PACKS: SportPack[] = [
     alt: "Séjour Formule 1",
     badge: "FORMULE 1",
     title: "Formule 1",
-    desc: "Monaco, Barcelone, Monza, Spa, Abu Dhabi — vivez les Grands Prix dans les plus belles destinations du monde.",
+    desc: "Monaco, Barcelone, Monza, Spa, Abu Dhabi : vivez les Grands Prix dans les plus belles destinations du monde.",
     tags: [
       { label: "Monaco" },
       { label: "Barcelone" },
@@ -79,7 +79,7 @@ const PACKS: SportPack[] = [
     alt: "Séjour Moto GP",
     badge: "MOTO GP",
     title: "Moto GP",
-    desc: "Catalogne, Mugello, Valence — ressentez l'adrénaline des plus grands circuits du championnat du monde moto.",
+    desc: "Catalogne, Mugello, Valence : ressentez l'adrénaline des plus grands circuits du championnat du monde moto.",
     tags: [
       { label: "Barcelone" },
       { label: "Mugello" },
@@ -92,7 +92,7 @@ const PACKS: SportPack[] = [
     alt: "Séjour Boxing Day",
     badge: "BOXING DAY",
     title: "Boxing Day",
-    desc: "La magie du football anglais pendant les fêtes — Chelsea, Liverpool, Manchester United le 26 décembre.",
+    desc: "La magie du football anglais pendant les fêtes : Chelsea, Liverpool, Manchester United le 26 décembre.",
     tags: [
       { label: "Londres" },
       { label: "Manchester" },

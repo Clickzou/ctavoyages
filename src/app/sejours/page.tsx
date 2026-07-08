@@ -79,7 +79,7 @@ const faqJsonLd = {
       name: "Proposez-vous des séjours en amoureux ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oui. Boutique-hôtels, resorts élégants, riads intimistes ou lodges isolés — nous sélectionnons les adresses les plus romantiques.",
+        text: "Oui. Boutique-hôtels, resorts élégants, riads intimistes ou lodges isolés : nous sélectionnons les adresses les plus romantiques.",
       },
     },
   ],
@@ -102,7 +102,7 @@ export default function SejoursPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Séjour tout compris dans un resort bord de mer — CTA Voyages"
+              alt="Séjour tout compris dans un resort bord de mer : CTA Voyages"
               className="w-full h-full object-cover"
               src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&h=900&fit=crop&auto=format"
             />
@@ -119,7 +119,7 @@ export default function SejoursPage() {
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
                 De l&apos;hôtel de charme au resort bord de mer, du riad marocain
-                au ryokan japonais — nous créons des séjours qui vous ressemblent,
+                au ryokan japonais : nous créons des séjours qui vous ressemblent,
                 en France et à l&apos;international.
               </p>
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-5">
@@ -178,7 +178,7 @@ export default function SejoursPage() {
                 séjours personnalisés selon vos envies, vos dates et votre budget.
                 Grâce à notre accompagnement humain et à la force du réseau
                 TourCom, nous vous aidons à trouver le bon hébergement et la bonne
-                formule — du séjour accessible au séjour haut de gamme. Un
+                formule : du séjour accessible au séjour haut de gamme. Un
                 interlocuteur unique vous guide à chaque étape, avant, pendant et
                 après votre voyage.
               </p>
@@ -186,7 +186,7 @@ export default function SejoursPage() {
           </div>
         </section>
 
-        {/* TYPES DE SÉJOURS — CARROUSEL */}
+        {/* TYPES DE SÉJOURS : CARROUSEL */}
         <section className="section-bg-blue py-section_padding_v overflow-hidden">
           <div className="w-full px-6 lg:px-[50px]">
             <div className="text-center mb-8 sm:mb-12">
@@ -197,7 +197,7 @@ export default function SejoursPage() {
                 Quel type de séjour recherchez-vous&nbsp;?
               </h2>
               <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
-                Balnéaire, culturel, nature, romantique ou en famille — nous
+                Balnéaire, culturel, nature, romantique ou en famille : nous
                 adaptons chaque séjour à votre profil.
               </p>
             </div>
@@ -261,7 +261,7 @@ export default function SejoursPage() {
                     Sélection qualitative
                   </h3>
                   <p className="font-body-md text-[13px] sm:text-[14px] text-[#555]">
-                    Hôtels, clubs, resorts, riads, ryokans — chaque hébergement
+                    Hôtels, clubs, resorts, riads, ryokans : chaque hébergement
                     est sélectionné avec soin via nos partenaires et notre
                     expertise terrain.
                   </p>
@@ -336,7 +336,7 @@ export default function SejoursPage() {
               </h3>
               <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl">
                 Du riad marocain au resort mauricien, du ryokan japonais à la
-                cabane lapone — découvrez nos destinations.
+                cabane lapone : découvrez nos destinations.
               </p>
             </div>
             <DestCarousel />
@@ -432,7 +432,7 @@ export default function SejoursPage() {
             <div className="flex flex-col items-center text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt="Logo certification EcoVadis — engagement RSE du Groupe CTA"
+                alt="Logo certification EcoVadis : engagement RSE du Groupe CTA"
                 className="h-[56px] sm:h-[72px] w-auto mb-6 sm:mb-8 ecovadis-glow"
                 src="/assets/images/logo-ecovadis.png"
               />

@@ -7,7 +7,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 export const metadata: Metadata = {
   title: "Séjour Football Européen - CTA Voyages",
   description:
-    "Vivez les plus grands matchs de football européen avec CTA Voyages. Premier League, Liga, Serie A, Bundesliga — billets officiels, hôtel et transport inclus. Devis gratuit.",
+    "Vivez les plus grands matchs de football européen avec CTA Voyages. Premier League, Liga, Serie A, Bundesliga : billets officiels, hôtel et transport inclus. Devis gratuit.",
 };
 
 const faqJsonLd = {
@@ -66,7 +66,7 @@ export default function FootEuropeenPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Stade de football européen — CTA Voyages"
+              alt="Stade de football européen : CTA Voyages"
               className="w-full h-full object-cover"
               style={{ objectPosition: "center 30%" }}
               src="/assets/images/iStock-1479681277.jpg"
@@ -82,7 +82,7 @@ export default function FootEuropeenPage() {
                 Vivez les plus grands matchs de football en Europe
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
-                Premier League, Liga, Serie A, Bundesliga — des séjours clés en
+                Premier League, Liga, Serie A, Bundesliga : des séjours clés en
                 main avec billets officiels, hôtel et transport pour vivre
                 l&apos;émotion du football au plus près des stades mythiques.
               </p>
@@ -180,7 +180,7 @@ export default function FootEuropeenPage() {
                     Billets officiels
                   </h4>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                    Premier League, Liga, Serie A, Bundesliga — accès aux stades
+                    Premier League, Liga, Serie A, Bundesliga : accès aux stades
                     mythiques d&apos;Europe.
                   </p>
                 </div>
@@ -288,7 +288,7 @@ export default function FootEuropeenPage() {
                 </h3>
                 <p className="text-[14px] leading-relaxed transition-colors duration-300">
                   Arsenal, Chelsea, Manchester United, Manchester City, Tottenham
-                  à Londres ou Manchester — l&apos;atmosphère unique des stades
+                  à Londres ou Manchester : l&apos;atmosphère unique des stades
                   anglais.
                 </p>
               </a>
@@ -313,7 +313,7 @@ export default function FootEuropeenPage() {
                   Liga espagnole
                 </h3>
                 <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  Real Madrid et Atlético Madrid au Santiago Bernabéu — matchs
+                  Real Madrid et Atlético Madrid au Santiago Bernabéu : matchs
                   sous haute tension et ambiance caliente.
                 </p>
               </a>
@@ -364,7 +364,7 @@ export default function FootEuropeenPage() {
                 </h3>
                 <p className="text-[14px] leading-relaxed transition-colors duration-300">
                   Borussia Dortmund au Signal Iduna Park ou Bayern Munich à
-                  l&apos;Allianz Arena — les ambiances les plus électriques
+                  l&apos;Allianz Arena : les ambiances les plus électriques
                   d&apos;Europe.
                 </p>
               </a>
@@ -429,7 +429,7 @@ export default function FootEuropeenPage() {
                 Compétitions européennes
               </h3>
               <p className="text-[14px] text-white/85 leading-relaxed relative z-10">
-                Europa League et Ligue des Champions — vivez les soirées les plus
+                Europa League et Ligue des Champions : vivez les soirées les plus
                 intenses de la saison avec des offres sur mesure.
               </p>
             </a>
@@ -477,7 +477,7 @@ export default function FootEuropeenPage() {
                   </h4>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel, transport et activités culturelles
-                    — tout est organisé pour un week-end foot sans souci.
+                    : tout est organisé pour un week-end foot sans souci.
                   </p>
                 </div>
               </div>

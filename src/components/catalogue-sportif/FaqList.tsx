@@ -69,33 +69,33 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Icon name="sports_soccer" />
-          <strong>Football européen</strong> — Premier League, Liga, Serie A,
+          <strong>Football européen</strong> : Premier League, Liga, Serie A,
           Bundesliga
         </li>
         <li>
           <Icon name="sports_rugby" />
-          <strong>Rugby</strong> — Champions Cup, 6 Nations, Quilter Nations
+          <strong>Rugby</strong> : Champions Cup, 6 Nations, Quilter Nations
           Series
         </li>
         <li>
           <Icon name="sports_basketball" />
-          <strong>NBA</strong> — New York, Los Angeles
+          <strong>NBA</strong> : New York, Los Angeles
         </li>
         <li>
           <Icon name="sports_football" />
-          <strong>NFL</strong> — Madrid Game 2026
+          <strong>NFL</strong> : Madrid Game 2026
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Formule 1</strong> — Monaco, Barcelone, Monza, Abu Dhabi…
+          <strong>Formule 1</strong> : Monaco, Barcelone, Monza, Abu Dhabi…
         </li>
         <li>
           <Icon name="two_wheeler" />
-          <strong>Moto GP</strong> — Catalogne, Mugello, Valence
+          <strong>Moto GP</strong> : Catalogne, Mugello, Valence
         </li>
         <li>
           <Icon name="sports_soccer" />
-          <strong>Boxing Day</strong> — Premier League pendant les fêtes
+          <strong>Boxing Day</strong> : Premier League pendant les fêtes
         </li>
       </ul>
     ),
@@ -136,32 +136,32 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Icon name="sports_soccer" />
-          <strong>Football</strong> — Londres, Manchester, Madrid, Milan, Munich
+          <strong>Football</strong> : Londres, Manchester, Madrid, Milan, Munich
         </li>
         <li>
           <Icon name="sports_rugby" />
-          <strong>Rugby</strong> — Paris, Dublin, Cardiff, Édimbourg, Bilbao
+          <strong>Rugby</strong> : Paris, Dublin, Cardiff, Édimbourg, Bilbao
         </li>
         <li>
           <Icon name="sports_basketball" />
-          <strong>NBA</strong> — New York, Los Angeles
+          <strong>NBA</strong> : New York, Los Angeles
         </li>
         <li>
           <Icon name="sports_football" />
-          <strong>NFL</strong> — Madrid (Santiago Bernabéu)
+          <strong>NFL</strong> : Madrid (Santiago Bernabéu)
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Formule 1</strong> — Monaco, Barcelone, Monza, Spa, Montréal,
+          <strong>Formule 1</strong> : Monaco, Barcelone, Monza, Spa, Montréal,
           Abu Dhabi, Madrid
         </li>
         <li>
           <Icon name="two_wheeler" />
-          <strong>Moto GP</strong> — Barcelone, Mugello, Valence
+          <strong>Moto GP</strong> : Barcelone, Mugello, Valence
         </li>
         <li>
           <Icon name="sports_soccer" />
-          <strong>Boxing Day</strong> — Londres, Manchester, Liverpool,
+          <strong>Boxing Day</strong> : Londres, Manchester, Liverpool,
           Newcastle
         </li>
       </ul>
@@ -190,7 +190,7 @@ const RIGHT: FaqEntry[] = [
         Absolument. Nous créons des formules sur mesure pour les{" "}
         <strong>voyages clients</strong>, les <strong>incentives</strong>, les{" "}
         <strong>team buildings</strong>{" "}ou les groupes d&apos;amis. Billets
-        groupes, animations, logistique complète — nous gérons tout.
+        groupes, animations, logistique complète : nous gérons tout.
       </p>
     ),
   },

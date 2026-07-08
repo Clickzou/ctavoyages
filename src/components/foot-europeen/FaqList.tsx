@@ -62,20 +62,20 @@ const LEFT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Icon name="check" />
-            <strong>Angleterre</strong> — Arsenal, Chelsea, Manchester United,
+            <strong>Angleterre</strong> : Arsenal, Chelsea, Manchester United,
             Manchester City, Tottenham, Liverpool
           </li>
           <li>
             <Icon name="check" />
-            <strong>Espagne</strong> — Real Madrid, Atlético Madrid, FC Barcelone
+            <strong>Espagne</strong> : Real Madrid, Atlético Madrid, FC Barcelone
           </li>
           <li>
             <Icon name="check" />
-            <strong>Italie</strong> — Inter Milan, AC Milan, Juventus, Naples
+            <strong>Italie</strong> : Inter Milan, AC Milan, Juventus, Naples
           </li>
           <li>
             <Icon name="check" />
-            <strong>Allemagne</strong> — Bayern Munich, Borussia Dortmund
+            <strong>Allemagne</strong> : Bayern Munich, Borussia Dortmund
           </li>
         </ul>
       </>
@@ -97,12 +97,12 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Icon name="check" />
-          <strong>Options de transport</strong> — vol + hôtel, transferts selon la
+          <strong>Options de transport</strong> : vol + hôtel, transferts selon la
           destination
         </li>
         <li>
           <Icon name="check" />
-          <strong>Expériences culturelles</strong> — visites guidées, musées,
+          <strong>Expériences culturelles</strong> : visites guidées, musées,
           gastronomie locale
         </li>
       </ul>
@@ -116,24 +116,24 @@ const LEFT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Icon name="location_on" />
-            <strong>Londres</strong> — Emirates Stadium, Stamford Bridge,
+            <strong>Londres</strong> : Emirates Stadium, Stamford Bridge,
             Tottenham Hotspur Stadium
           </li>
           <li>
             <Icon name="location_on" />
-            <strong>Manchester</strong> — Old Trafford, Etihad Stadium
+            <strong>Manchester</strong> : Old Trafford, Etihad Stadium
           </li>
           <li>
             <Icon name="location_on" />
-            <strong>Madrid</strong> — Santiago Bernabéu, Wanda Metropolitano
+            <strong>Madrid</strong> : Santiago Bernabéu, Wanda Metropolitano
           </li>
           <li>
             <Icon name="location_on" />
-            <strong>Milan</strong> — San Siro (Giuseppe Meazza)
+            <strong>Milan</strong> : San Siro (Giuseppe Meazza)
           </li>
           <li>
             <Icon name="location_on" />
-            <strong>Munich</strong> — Allianz Arena
+            <strong>Munich</strong> : Allianz Arena
           </li>
         </ul>
       </>
@@ -178,7 +178,7 @@ const RIGHT: FaqEntry[] = [
         Oui. Nous créons des offres sur mesure pour les matchs de{" "}
         <strong>Ligue des Champions</strong>, <strong>Europa League</strong>{" "}et{" "}
         <strong>Conference League</strong>. Ces soirées européennes sont parmi
-        les plus intenses de la saison — contactez-nous le plus tôt possible car
+        les plus intenses de la saison : contactez-nous le plus tôt possible car
         les billets partent très vite.
       </p>
     ),
@@ -222,7 +222,7 @@ const RIGHT: FaqEntry[] = [
         Oui. Nous créons des formules sur mesure pour les{" "}
         <strong>voyages clients</strong>, les <strong>incentives</strong>, les{" "}
         <strong>team buildings</strong>{" "}ou les groupes d&apos;amis. Billets
-        groupes, animations, logistique complète — nous gérons tout pour vous.
+        groupes, animations, logistique complète : nous gérons tout pour vous.
       </p>
     ),
   },

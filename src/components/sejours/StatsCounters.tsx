@@ -92,7 +92,7 @@ export default function StatsCounters() {
             </span>
           </span>
           <span className="font-body-md text-[12px] sm:text-[13px] text-on-surface-variant">
-            Labellisé Entreprise Engagée — EcoVadis
+            Labellisé Entreprise Engagée : EcoVadis
           </span>
         </div>
       </div>

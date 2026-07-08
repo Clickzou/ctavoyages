@@ -58,38 +58,38 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Icon name="speed" />
-          <strong>Barcelone</strong> — Grand Prix de Catalogne
+          <strong>Barcelone</strong> : Grand Prix de Catalogne
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Monaco</strong> — Grand Prix mythique dans les rues de
+          <strong>Monaco</strong> : Grand Prix mythique dans les rues de
           Monte-Carlo
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Monza</strong> — temple de la vitesse en Italie
+          <strong>Monza</strong> : temple de la vitesse en Italie
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Spa-Francorchamps</strong> — l&apos;un des circuits préférés
+          <strong>Spa-Francorchamps</strong> : l&apos;un des circuits préférés
           des pilotes
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Montréal</strong> — Grand Prix du Canada
+          <strong>Montréal</strong> : Grand Prix du Canada
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Lusail</strong> — Grand Prix du Qatar
+          <strong>Lusail</strong> : Grand Prix du Qatar
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Abu Dhabi</strong> — finale spectaculaire de saison à Yas
+          <strong>Abu Dhabi</strong> : finale spectaculaire de saison à Yas
           Marina
         </li>
         <li>
           <Icon name="speed" />
-          <strong>Madrid</strong> — nouveau Grand Prix en ville dès 2026
+          <strong>Madrid</strong> : nouveau Grand Prix en ville dès 2026
         </li>
       </ul>
     ),
@@ -100,7 +100,7 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Icon name="check" />
-          <strong>Billets officiels</strong> — admission générale, tribunes ou
+          <strong>Billets officiels</strong> : admission générale, tribunes ou
           hospitalité VIP
         </li>
         <li>
@@ -113,7 +113,7 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Icon name="check" />
-          <strong>Expériences exclusives</strong> — visites guidées, excursions
+          <strong>Expériences exclusives</strong> : visites guidées, excursions
           culturelles, croisières, dîners thématiques
         </li>
       </ul>
@@ -210,7 +210,7 @@ const RIGHT: FaqEntry[] = [
         Oui. Nous organisons des formules sur mesure pour les{" "}
         <strong>voyages clients</strong>, les <strong>incentives</strong>, les{" "}
         <strong>team buildings</strong>{" "}ou les groupes d&apos;amis. Billets
-        groupes, hospitalités, logistique complète — nous gérons tout.
+        groupes, hospitalités, logistique complète : nous gérons tout.
       </p>
     ),
   },

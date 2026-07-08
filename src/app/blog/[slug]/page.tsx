@@ -276,7 +276,7 @@ export default async function BlogArticlePage({
                       </a>
                     </span>
                   ))}{" "}
-                  — via{" "}
+                  : via{" "}
                   <a
                     href="https://unsplash.com/?utm_source=cta_voyages&utm_medium=referral"
                     target="_blank"

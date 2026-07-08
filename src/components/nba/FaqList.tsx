@@ -56,12 +56,12 @@ const LEFT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <span className="material-symbols-outlined">sports_basketball</span>
-            <strong>New York</strong> — Knicks (Madison Square Garden), Nets
+            <strong>New York</strong> : Knicks (Madison Square Garden), Nets
             (Barclays Center)
           </li>
           <li>
             <span className="material-symbols-outlined">sports_basketball</span>
-            <strong>Los Angeles</strong> — Lakers, Clippers (Intuit Dome)
+            <strong>Los Angeles</strong> : Lakers, Clippers (Intuit Dome)
           </li>
           <li>
             <span className="material-symbols-outlined">check</span>
@@ -164,7 +164,7 @@ const RIGHT: FaqEntry[] = [
         Oui. Nous créons des formules sur mesure pour les{" "}
         <strong>voyages clients</strong>, les <strong>incentives</strong>, les{" "}
         <strong>team buildings</strong>{" "}ou les groupes d&apos;amis. Billets
-        groupes, suites VIP, logistique complète — nous gérons tout pour une
+        groupes, suites VIP, logistique complète : nous gérons tout pour une
         expérience NBA inoubliable.
       </p>
     ),
@@ -177,12 +177,12 @@ const RIGHT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <span className="material-symbols-outlined">location_on</span>
-            <strong>New York</strong> — Times Square, Central Park, Empire State
+            <strong>New York</strong> : Times Square, Central Park, Empire State
             Building, Brooklyn Bridge
           </li>
           <li>
             <span className="material-symbols-outlined">location_on</span>
-            <strong>Los Angeles</strong> — Venice Beach, Hollywood, Griffith
+            <strong>Los Angeles</strong> : Venice Beach, Hollywood, Griffith
             Observatory, Santa Monica
           </li>
         </ul>

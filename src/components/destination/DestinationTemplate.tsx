@@ -232,7 +232,7 @@ export default function DestinationTemplate({
             <div className="flex flex-col items-center text-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                alt="Logo EcoVadis — Certification RSE de CTA Voyages"
+                alt="Logo EcoVadis : Certification RSE de CTA Voyages"
                 className="h-[56px] sm:h-[72px] w-auto mb-6 sm:mb-8 ecovadis-glow"
                 src="/assets/images/logo-ecovadis.png"
               />

@@ -41,10 +41,10 @@ const DESTINATION_GROUPS: DestGroup[] = CONTINENT_GROUP_ORDER.map((cont) => ({
   })),
 })).filter((g) => g.options.length > 0);
 
-// Groupes « Sport » — maintenus à la main (offres du catalogue sportif).
+// Groupes « Sport » : maintenus à la main (offres du catalogue sportif).
 const SPORT_GROUPS: DestGroup[] = [
   {
-    label: "Sport — Europe",
+    label: "Sport : Europe",
     options: [
       { text: "Angleterre", value: "Angleterre", types: "catalogue-sportif", sports: "Football / Boxing Day,Rugby" },
       { text: "Espagne", value: "Espagne", types: "catalogue-sportif", sports: "Football,NFL,Formule 1,Moto GP" },
@@ -59,14 +59,14 @@ const SPORT_GROUPS: DestGroup[] = [
     ],
   },
   {
-    label: "Sport — Amériques",
+    label: "Sport : Amériques",
     options: [
       { text: "États-Unis", value: "États-Unis", types: "catalogue-sportif", sports: "NBA" },
-      { text: "Canada — F1 Montréal", value: "Canada — F1 Montréal", types: "catalogue-sportif", sports: "Formule 1" },
+      { text: "Canada : F1 Montréal", value: "Canada : F1 Montréal", types: "catalogue-sportif", sports: "Formule 1" },
     ],
   },
   {
-    label: "Sport — Asie",
+    label: "Sport : Asie",
     options: [
       { text: "Qatar", value: "Qatar", types: "catalogue-sportif", sports: "Formule 1" },
       { text: "Émirats arabes unis", value: "Émirats arabes unis", types: "catalogue-sportif", sports: "Formule 1" },
@@ -74,7 +74,7 @@ const SPORT_GROUPS: DestGroup[] = [
   },
 ];
 
-// Groupe « Autre destination » — toujours proposé en dernier, tous types confondus.
+// Groupe « Autre destination » : toujours proposé en dernier, tous types confondus.
 const OTHER_GROUP: DestGroup = {
   label: null,
   options: [
@@ -221,7 +221,7 @@ export default function RenseignementForm() {
     setError(null);
     try {
       await submitToFormsubmit(form, {
-        subject: "Nouvelle demande de renseignement — CTA Voyages",
+        subject: "Nouvelle demande de renseignement : CTA Voyages",
       });
       router.push("/merci");
     } catch {

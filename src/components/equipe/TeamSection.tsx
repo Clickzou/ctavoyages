@@ -20,7 +20,7 @@ const PROFILES: Profile[] = [
     name: "Caroline Guiraud",
     role: "Attachée clientèle voyage",
     image: "/caroline.JPEG",
-    alt: "Caroline Guiraud — Attachée clientèle voyage",
+    alt: "Caroline Guiraud : Attachée clientèle voyage",
     badgeDefault: "Voyages sur mesure",
     badgeHover: "Conseil voyage",
     teaser:
@@ -32,7 +32,7 @@ const PROFILES: Profile[] = [
     name: "Stéphanie Belbes",
     role: "Attachée clientèle voyage et sport",
     image: "/stephanie.JPEG",
-    alt: "Stéphanie Belbes — Attachée clientèle voyage et sport",
+    alt: "Stéphanie Belbes : Attachée clientèle voyage et sport",
     badgeDefault: "Conseil voyage",
     badgeHover: "Voyages sur mesure",
     teaser:

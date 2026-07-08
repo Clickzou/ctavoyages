@@ -489,7 +489,7 @@ export default function GroupeCtaPage() {
           <div className="flex flex-col items-center text-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Logo EcoVadis — Certification RSE du Groupe CTA"
+              alt="Logo EcoVadis : Certification RSE du Groupe CTA"
               className="h-[56px] sm:h-[72px] w-auto mb-6 sm:mb-8 ecovadis-glow"
               src="/assets/images/logo-ecovadis.png"
             />
