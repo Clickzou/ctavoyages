@@ -1,0 +1,342 @@
+/* Styles spécifiques à la page Équipe CTA Voyages */
+
+#equipe,
+#contact-equipe {
+  scroll-margin-top: 92px;
+}
+
+/* HERO */
+.hero-team {
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: #001c38;
+}
+.hero-team::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/assets/images/iStock-2207441086.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero-team::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%);
+}
+@media (max-width: 768px) {
+  .hero-team::after {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0.1) 100%);
+  }
+}
+
+/* CARTES ÉQUIPE */
+.team-card {
+  position: relative;
+  min-height: 540px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: #001c38;
+  border: 1px solid rgba(193, 199, 211, 0.55);
+  box-shadow: 0 14px 34px rgba(49, 121, 196, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.team-card:hover,
+.team-card:focus-within {
+  transform: translateY(-6px);
+  border-color: rgba(251, 191, 18, 0.85);
+  box-shadow: 0 24px 54px rgba(49, 121, 196, 0.18);
+}
+.team-photo-wrap {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: #d3e4ff;
+}
+.team-photo-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 28, 56, 0.9) 0%,
+    rgba(0, 28, 56, 0.48) 45%,
+    rgba(0, 0, 0, 0.04) 100%
+  );
+  transition: background 0.35s ease;
+}
+.team-card:hover .team-photo-wrap::after,
+.team-card:focus-within .team-photo-wrap::after {
+  background: linear-gradient(
+    to top,
+    rgba(0, 28, 56, 0.95) 0%,
+    rgba(0, 65, 145, 0.62) 54%,
+    rgba(0, 0, 0, 0.12) 100%
+  );
+}
+.team-photo {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.55s ease;
+}
+.team-card:hover .team-photo,
+.team-card:focus-within .team-photo {
+  transform: scale(1.06);
+}
+.team-badge {
+  position: absolute;
+  left: 22px;
+  top: 22px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 8px 13px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #3179c4;
+  font-family: var(--font-body), sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  backdrop-filter: blur(10px);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.team-badge .badge-hover {
+  display: none;
+}
+.team-card:hover .team-badge,
+.team-card:focus-within .team-badge {
+  background: #fbbf12;
+  color: #1a1a1a;
+}
+.team-card:hover .team-badge .badge-default,
+.team-card:focus-within .team-badge .badge-default {
+  display: none;
+}
+.team-card:hover .team-badge .badge-hover,
+.team-card:focus-within .team-badge .badge-hover {
+  display: inline;
+}
+.team-card-body {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 28px;
+  color: #fff;
+}
+.team-name {
+  margin: 0 0 4px;
+  font-family: var(--font-heading), sans-serif;
+  font-size: 26px;
+  line-height: 1.3;
+  font-weight: 800;
+  color: #fff;
+}
+.team-role {
+  margin: 0;
+  font-family: var(--font-body), sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  transition: color 0.25s ease;
+}
+.team-card:hover .team-role,
+.team-card:focus-within .team-role {
+  color: #fbbf12;
+}
+.team-description {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.86);
+  transition: max-height 0.35s ease, opacity 0.25s ease, margin 0.25s ease;
+}
+.team-card:hover .team-description,
+.team-card:focus-within .team-description {
+  max-height: 150px;
+  opacity: 1;
+  margin-top: 14px;
+}
+.team-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.team-card:hover .team-actions,
+.team-card:focus-within .team-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+.team-more-link {
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #fff;
+  color: #004191;
+  font-family: var(--font-body), sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+}
+.team-more-link:hover,
+.team-more-link:focus-visible {
+  background: #fbbf12;
+  color: #1a1a1a;
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* MODALE PROFIL */
+.team-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.58);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.team-modal-overlay.modal-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.team-modal {
+  width: min(920px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow: auto;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.28);
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.25s ease;
+}
+.team-modal-overlay.modal-open .team-modal {
+  transform: translateY(0) scale(1);
+}
+.team-modal-grid {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
+}
+.team-modal-photo {
+  min-height: 420px;
+  background: #d3e4ff;
+}
+.team-modal-photo img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  display: block;
+  object-fit: cover;
+}
+.team-modal-content {
+  position: relative;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.team-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 9999px;
+  background: #edf3fa;
+  color: #004191;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.team-modal-close:hover,
+.team-modal-close:focus-visible {
+  background: #004191;
+  color: #fff;
+  transform: scale(1.04);
+  outline: none;
+}
+.team-modal-title {
+  margin: 0 0 6px 0;
+  font-family: var(--font-heading), sans-serif;
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: #191c21;
+}
+.team-modal-role {
+  margin: 0 0 20px;
+  font-family: var(--font-body), sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #3179c4;
+}
+.team-modal-text {
+  max-width: 460px;
+  margin: 0 auto 24px;
+  color: #414751;
+  font-size: 15px;
+  line-height: 1.75;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .team-modal-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-modal-photo,
+  .team-modal-photo img {
+    min-height: 300px;
+    max-height: 360px;
+  }
+  .team-modal-content {
+    padding: 28px 22px;
+  }
+}
+@media (max-width: 480px) {
+  .team-card {
+    min-height: 500px;
+  }
+  .team-card-body {
+    padding: 22px;
+  }
+}
