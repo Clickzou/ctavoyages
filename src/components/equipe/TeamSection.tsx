@@ -12,7 +12,6 @@ type Profile = {
   badgeHover: string;
   teaser: string;
   text: string;
-  mail: string;
 };
 
 const PROFILES: Profile[] = [
@@ -27,7 +26,6 @@ const PROFILES: Profile[] = [
     teaser:
       "Plus de 30 années d’expérience au service de vos projets de voyages en France, en Europe et à l’international.",
     text: "Plus de 30 années d’expérience au service de vos projets de voyages en France, en Europe et à l’international. Caroline vous accompagne dans la construction d’un séjour fluide, personnalisé et adapté à vos envies.",
-    mail: "mailto:caroline.guiraud@cta-events.com",
   },
   {
     key: "stephanie",
@@ -40,7 +38,6 @@ const PROFILES: Profile[] = [
     teaser:
       "Plus de 30 années d’expérience pour vous guider dans vos séjours loisirs, voyages sur mesure et expériences sportives.",
     text: "Plus de 30 années d’expérience pour vous guider dans vos séjours loisirs, voyages sur mesure et expériences sportives. Stéphanie vous conseille à chaque étape pour créer un séjour qui vous ressemble.",
-    mail: "mailto:stephanie.belbes@cta-events.com",
   },
 ];
 
@@ -134,15 +131,6 @@ export default function TeamSection() {
               <p id="team-modal-text" className="team-modal-text">
                 {active?.text}
               </p>
-              <a
-                href={active?.mail ?? "mailto:voyages@cta-events.com"}
-                className="inline-flex items-center gap-2 bg-[#3179C4] text-white font-label text-[13px] px-5 py-3 rounded-lg hover:bg-[#004191] transition-all"
-              >
-                <span className="material-symbols-outlined text-[18px]">
-                  mail
-                </span>
-                Contacter
-              </a>
             </div>
           </div>
         </div>
