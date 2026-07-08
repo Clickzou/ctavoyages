@@ -306,7 +306,7 @@ html:not(.icons-ready) .material-symbols-outlined {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  max-width: 720px;
+  max-width: 960px;
   /* Centrage horizontal seulement : `margin: 0 auto` remettait aussi la marge
      basse à 0 et neutralisait les utilitaires mb-* (d'où les lignes collées). */
   margin-inline: auto;
@@ -794,6 +794,11 @@ html:not(.icons-ready) .material-symbols-outlined {
   opacity: 1;
   transform: none;
   filter: none;
+  /* Une fois l'entrée jouée, on retire l'indice de compositing : un
+     `will-change` résiduel promeut une couche GPU figée qui, sur certaines
+     cartes, empêchait le repaint de l'animation photo au survol après un
+     rechargement de page. */
+  will-change: auto;
 }
 @media (prefers-reduced-motion: reduce) {
   [data-reveal] {
