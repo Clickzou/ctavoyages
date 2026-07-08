@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { submitToFormsubmit } from "@/lib/submitForm";
+import { MAP_DESTINATIONS } from "@/lib/map-destinations";
 
 type DestOption = {
   text: string;
@@ -18,41 +19,30 @@ type DestGroup = {
   options: DestOption[];
 };
 
-// Reproduction fidèle des optgroups d'origine
-const ALL_DEST_GROUPS: DestGroup[] = [
-  {
-    label: "Asie",
-    options: [
-      { text: "Japon", value: "Japon", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Thaïlande", value: "Thaïlande", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-    ],
-  },
-  {
-    label: "Afrique et Océan Indien",
-    options: [
-      { text: "Maroc", value: "Maroc", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Île Maurice", value: "Île Maurice", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Seychelles", value: "Seychelles", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Zanzibar", value: "Zanzibar", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-    ],
-  },
-  {
-    label: "Amériques",
-    options: [
-      { text: "Canada", value: "Canada", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Costa Rica", value: "Costa Rica", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-    ],
-  },
-  {
-    label: "Europe",
-    options: [
-      { text: "Laponie", value: "Laponie", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Londres", value: "Londres", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Amsterdam", value: "Amsterdam", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Porto", value: "Porto", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-      { text: "Rome", value: "Rome", types: "sejour,circuit,croisiere,glamping,sur-mesure", sports: "" },
-    ],
-  },
+// Destinations « voyage » (non sport) : générées depuis la source unique du site
+// (MAP_DESTINATIONS, cf. carte + /destinations) pour rester automatiquement à jour.
+const NON_SPORT_TYPES = "sejour,circuit,croisiere,glamping,sur-mesure";
+const CONTINENT_GROUP_LABELS: Record<string, string> = {
+  asie: "Asie",
+  afrique: "Afrique et Océan Indien",
+  ameriques: "Amériques",
+  europe: "Europe",
+};
+// Ordre d'affichage des groupes continent dans le menu déroulant.
+const CONTINENT_GROUP_ORDER = ["asie", "afrique", "ameriques", "europe"];
+
+const DESTINATION_GROUPS: DestGroup[] = CONTINENT_GROUP_ORDER.map((cont) => ({
+  label: CONTINENT_GROUP_LABELS[cont],
+  options: MAP_DESTINATIONS.filter((d) => d.continent === cont).map((d) => ({
+    text: d.name,
+    value: d.name,
+    types: NON_SPORT_TYPES,
+    sports: "",
+  })),
+})).filter((g) => g.options.length > 0);
+
+// Groupes « Sport » — maintenus à la main (offres du catalogue sportif).
+const SPORT_GROUPS: DestGroup[] = [
   {
     label: "Sport — Europe",
     options: [
@@ -82,18 +72,28 @@ const ALL_DEST_GROUPS: DestGroup[] = [
       { text: "Émirats arabes unis", value: "Émirats arabes unis", types: "catalogue-sportif", sports: "Formule 1" },
     ],
   },
-  {
-    label: null,
-    options: [
-      {
-        text: "Autre destination",
-        value: "Autre destination",
-        types: "sejour,circuit,croisiere,glamping,sur-mesure,catalogue-sportif",
-        sports: "Football,Rugby,NBA,NFL,Formule 1,Moto GP,Boxing Day",
-        bold: true,
-      },
-    ],
-  },
+];
+
+// Groupe « Autre destination » — toujours proposé en dernier, tous types confondus.
+const OTHER_GROUP: DestGroup = {
+  label: null,
+  options: [
+    {
+      text: "Autre destination",
+      value: "Autre destination",
+      types: "sejour,circuit,croisiere,glamping,sur-mesure,catalogue-sportif",
+      sports: "Football,Rugby,NBA,NFL,Formule 1,Moto GP,Boxing Day",
+      bold: true,
+    },
+  ],
+};
+
+// Liste complète consommée par le formulaire : destinations voyage (dynamiques)
+// + groupes sport + « Autre destination ».
+const ALL_DEST_GROUPS: DestGroup[] = [
+  ...DESTINATION_GROUPS,
+  ...SPORT_GROUPS,
+  OTHER_GROUP,
 ];
 
 // Filtre les destinations selon le type d'offre sélectionné

@@ -35,31 +35,30 @@ export default function Page() {
               Groupe CTA
             </li>
             <li>
-              <strong>Forme juridique&nbsp;:</strong>{" "}
-              [À COMPLÉTER : forme juridique, ex. SAS / SARL]
+              <strong>Forme juridique&nbsp;:</strong> SAS, société par actions
+              simplifiée
             </li>
             <li>
-              <strong>Capital social&nbsp;:</strong>{" "}
-              [À COMPLÉTER : montant du capital social]
+              <strong>Capital social&nbsp;:</strong> 500&nbsp;000,00&nbsp;€
+              (fixe)
             </li>
             <li>
               <strong>Siège social&nbsp;:</strong> 99 rue de Fenouillet, 31200
               Toulouse, France
             </li>
             <li>
-              <strong>SIRET&nbsp;:</strong> [À COMPLÉTER : numéro SIRET]
+              <strong>SIRET&nbsp;:</strong> 384 622 684 00072
             </li>
             <li>
-              <strong>RCS&nbsp;:</strong>{" "}
-              [À COMPLÉTER : ville et numéro d&apos;immatriculation au RCS]
+              <strong>RCS&nbsp;:</strong> 384 622 684 R.C.S. Toulouse
             </li>
             <li>
               <strong>N&deg; TVA intracommunautaire&nbsp;:</strong>{" "}
-              [À COMPLÉTER : numéro de TVA intracommunautaire]
+              FR05 384 622 684
             </li>
             <li>
               <strong>Directeur de la publication&nbsp;:</strong>{" "}
-              [À COMPLÉTER : nom et qualité du directeur de la publication]
+              Jean-Jacques Castanet
             </li>
             <li>
               <strong>Téléphone&nbsp;:</strong>{" "}
@@ -120,17 +119,15 @@ export default function Page() {
           </p>
           <ul className="list-disc pl-6 space-y-2 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
             <li>
-              <strong>Garant&nbsp;:</strong>{" "}
-              [À COMPLÉTER : organisme garant, ex. APST — Association
-              Professionnelle de Solidarité du Tourisme]
+              <strong>Garant&nbsp;:</strong> AXA Assurances
             </li>
             <li>
               <strong>Adresse du garant&nbsp;:</strong>{" "}
-              [À COMPLÉTER : adresse de l&apos;organisme garant]
+              [À COMPLÉTER : adresse du garant AXA Assurances]
             </li>
             <li>
-              <strong>Montant / référence de la garantie&nbsp;:</strong>{" "}
-              [À COMPLÉTER : montant ou numéro de la garantie financière]
+              <strong>Montant / référence de la garantie&nbsp;:</strong> ARCUS
+              A58005
             </li>
           </ul>
 

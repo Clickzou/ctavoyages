@@ -94,6 +94,19 @@ const DEST: Dest[] = [
 
 const CONTINENT_NAMES: Record<string, string> = { asia: "Asie", africa: "Afrique", americas: "Amériques", europe: "Europe" };
 
+/** Villes/régions rattachées à un pays (drill-down dans la fiche). Clés = id du pays. */
+const COUNTRY_CITIES: Record<string, string[]> = {
+  grece: ["santorin", "crete"],
+  italie: ["venise", "rome"],
+  portugal: ["porto", "acores"],
+};
+/** Ids des villes rattachées : un seul point par pays sur la carte, ces villes
+ * ne sont accessibles que via la fiche de leur pays (elles restent dans DEST
+ * pour alimenter le menu déroulant, mais ne génèrent ni marqueur ni filtre). */
+const CHILD_CITY_IDS = new Set<string>(
+  Object.values(COUNTRY_CITIES).flat(),
+);
+
 /** Coordonnées géographiques d'ancrage des labels de continents (pour qu'ils suivent la carte). */
 const CONTINENT_LABEL_LL: Record<string, [number, number]> = {
   "north-america": [46, -100],
@@ -160,6 +173,7 @@ export default function WorldMap() {
       const tipName = document.getElementById("tip-name")!;
       const tipDesc = document.getElementById("tip-desc")!;
       const tipLink = document.getElementById("tip-link") as HTMLAnchorElement;
+      const tipCities = document.getElementById("tip-cities")!;
       const tipArrow = document.getElementById("tip-arrow")!;
       const mapFilters = document.getElementById("map-filters")!;
       const countryFilters = document.getElementById("country-filters")!;
@@ -168,9 +182,13 @@ export default function WorldMap() {
 
       let activeEl: any = null, currentContinent = "all", currentCountry: string | null = null, currentType = "all";
       let hideTimer: any = null, onMarker = false, onTooltip = false;
+      // Fiche « épinglée » : reste figée (aucun masquage au survol) après un clic
+      // sur un pays regroupant plusieurs destinations.
+      let pinned = false;
       const markerElements: Record<string, HTMLElement> = {};
 
       function hideTooltip() {
+        pinned = false;
         tooltip.classList.remove("tip-visible");
         if (activeEl) { activeEl.classList.remove("marker-active"); activeEl = null; }
         currentCountry = null;
@@ -186,7 +204,34 @@ export default function WorldMap() {
           : 'En savoir plus <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#3179C4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
         if (activeEl && activeEl !== el) activeEl.classList.remove("marker-active");
         activeEl = el; el.classList.add("marker-active"); tooltip.classList.add("tip-visible");
-        currentCountry = d.id; positionTip(el);
+        currentCountry = d.id;
+        // Drill-down : si le pays a des villes/régions rattachées, on les propose
+        // dans la fiche ; un clic redirige vers la page de la ville.
+        const cities = COUNTRY_CITIES[d.id];
+        tipCities.innerHTML = "";
+        if (cities && cities.length) {
+          const label = document.createElement("p");
+          label.className = "tip-cities-label";
+          label.textContent = "Villes & régions";
+          tipCities.appendChild(label);
+          const row = document.createElement("div");
+          row.className = "tip-cities-row";
+          cities.forEach((cid) => {
+            const cd = DEST.find((x) => x.id === cid);
+            if (!cd) return;
+            const b = document.createElement("button");
+            b.type = "button";
+            b.className = "tip-city-btn";
+            b.textContent = cd.name;
+            b.addEventListener("click", (ev) => { ev.stopPropagation(); window.location.href = cd.href; });
+            row.appendChild(b);
+          });
+          tipCities.appendChild(row);
+          tipCities.style.display = "";
+        } else {
+          tipCities.style.display = "none";
+        }
+        positionTip(el);
         document.querySelectorAll(".country-filter-btn").forEach((b) => b.classList.toggle("f-active", (b as HTMLElement).dataset.id === d.id));
       }
 
@@ -227,7 +272,7 @@ export default function WorldMap() {
       document.addEventListener("click", onDocClick);
       tooltip.addEventListener("mouseenter", () => { onTooltip = true; clearTimeout(hideTimer); });
       tooltip.addEventListener("mouseleave", () => { onTooltip = false; scheduleHide(); });
-      function scheduleHide() { clearTimeout(hideTimer); hideTimer = setTimeout(() => { if (!onMarker && !onTooltip) hideTooltip(); }, 75); }
+      function scheduleHide() { if (pinned) return; clearTimeout(hideTimer); hideTimer = setTimeout(() => { if (!onMarker && !onTooltip) hideTooltip(); }, 75); }
 
       function matchesDest(d: Dest) {
         const matchType = currentType === "all" || (currentType === "sport" && d.sport) || (currentType === "destination" && !d.sport);
@@ -257,16 +302,32 @@ export default function WorldMap() {
       }
 
       DEST.forEach((d) => {
+        // Villes rattachées à un pays : pas de marqueur propre (un seul point/pays).
+        if (CHILD_CITY_IDS.has(d.id)) return;
+        // Nombre de destinations regroupées sous ce point (pays + ses villes/régions).
+        const destCount = COUNTRY_CITIES[d.id] ? COUNTRY_CITIES[d.id].length + 1 : 1;
         const el = document.createElement("div");
-        el.className = "cta-marker-wrap" + (d.sport ? " sport-marker" : "");
+        el.className = "cta-marker-wrap" + (d.sport ? " sport-marker" : "") + (destCount > 1 ? " cta-multi" : "");
         el.dataset.continent = d.c; el.dataset.id = d.id; el.dataset.sport = d.sport ? "true" : "false";
         const flagUrl = d.flagUrl || "https://flagcdn.com/w40/" + (d.flagCode || "un") + ".png";
-        el.innerHTML = '<img class="cta-flag" src="' + flagUrl + '" alt="' + d.name + '"/><div class="cta-ring"></div><div class="cta-dot"></div>';
+        el.innerHTML = '<img class="cta-flag" src="' + flagUrl + '" alt="' + d.name + '"/><div class="cta-ring"></div><div class="cta-dot">' + (destCount > 1 ? destCount : "") + "</div>";
 
-        el.addEventListener("mouseenter", () => { onMarker = true; clearTimeout(hideTimer); showTip(d, el); const p = el.closest(".leaflet-marker-icon") as HTMLElement; if (p) p.style.zIndex = "9999"; });
-        el.addEventListener("mouseleave", () => { onMarker = false; scheduleHide(); const p = el.closest(".leaflet-marker-icon") as HTMLElement; if (p) p.style.zIndex = ""; });
+        el.addEventListener("mouseenter", () => { onMarker = true; clearTimeout(hideTimer); if (pinned) return; showTip(d, el); const p = el.closest(".leaflet-marker-icon") as HTMLElement; if (p) p.style.zIndex = "9999"; });
+        el.addEventListener("mouseleave", () => { onMarker = false; const p = el.closest(".leaflet-marker-icon") as HTMLElement; if (p) p.style.zIndex = ""; if (pinned) return; scheduleHide(); });
         el.addEventListener("click", (e) => {
           e.stopPropagation();
+          // Pays regroupant plusieurs destinations : le clic FIGE la fiche (aucune
+          // redirection). L'utilisateur choisit ensuite « En savoir plus » (le pays)
+          // ou une sous-destination dans la fiche.
+          if (COUNTRY_CITIES[d.id]) {
+            pinned = true;
+            showTip(d, el);
+            const cv = COUNTRY_VIEWS[d.id];
+            if (cv) map.flyTo(cv.center, cv.zoom, { animate: true, duration: 1.0 });
+            const p = el.closest(".leaflet-marker-icon") as HTMLElement; if (p) p.style.zIndex = "9999";
+            return;
+          }
+          pinned = false;
           if (currentCountry === d.id) { window.location.href = d.href; }
           else { showTip(d, el); const cv = COUNTRY_VIEWS[d.id]; if (cv) map.flyTo(cv.center, cv.zoom, { animate: true, duration: 1.0 }); }
         });
@@ -277,7 +338,7 @@ export default function WorldMap() {
 
       function buildCountryButtons(continent: string) {
         countryButtons.innerHTML = "";
-        DEST.filter((d) => d.c === continent && matchesDest(d)).forEach((d) => {
+        DEST.filter((d) => d.c === continent && matchesDest(d) && !CHILD_CITY_IDS.has(d.id)).forEach((d) => {
           const btn = document.createElement("button");
           btn.className = "country-filter-btn" + (d.sport ? " country-sport" : "");
           btn.dataset.id = d.id;
@@ -285,6 +346,9 @@ export default function WorldMap() {
           btn.innerHTML = '<span style="display:flex;align-items:center;gap:6px;"><img src="' + flagUrl + '" alt="" style="width:18px;height:13px;border-radius:2px;object-fit:cover;"/> ' + d.name + "</span>";
           btn.addEventListener("click", (e) => {
             e.stopPropagation();
+            // Mobile : trouver le point sur la carte n'est pas pratique — on
+            // redirige directement vers la page de présentation de la destination.
+            if (window.innerWidth < 768) { window.location.href = d.href; return; }
             const el = markerElements[d.id];
             if (el) {
               hideTooltip();
@@ -511,6 +575,8 @@ export default function WorldMap() {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
+          {/* Villes/régions rattachées au pays (drill-down) — rempli dynamiquement */}
+          <div id="tip-cities" style={{ display: "none" }} />
         </div>
         <div id="tip-arrow" />
       </div>

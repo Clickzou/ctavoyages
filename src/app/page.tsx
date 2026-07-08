@@ -75,7 +75,7 @@ export default function Home() {
                   className="group relative bg-white rounded-2xl p-7 sm:p-8 border border-outline-variant/40 shadow-[0_2px_24px_rgba(0,0,0,0.05)] hover:-translate-y-1.5 hover:shadow-[0_18px_44px_rgba(49,121,196,0.16)] transition-all duration-300 overflow-hidden"
                 >
                   <span className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-[#3179C4] to-[#FBBF12] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-                  <div className="w-14 h-14 rounded-2xl bg-[#3179C4]/10 flex items-center justify-center mb-6 group-hover:bg-[#3179C4] group-hover:scale-105 transition-all duration-300">
+                  <div className="w-14 h-14 rounded-2xl bg-[#3179C4]/10 flex items-center justify-center mb-6 mx-auto group-hover:bg-[#3179C4] group-hover:scale-105 transition-all duration-300">
                     <span className="material-symbols-outlined text-[28px] text-[#3179C4] group-hover:text-white transition-colors duration-300">
                       {a.icon}
                     </span>

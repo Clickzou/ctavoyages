@@ -588,6 +588,20 @@ html:not(.icons-ready) .material-symbols-outlined {
   animation: ctaPulse 2.4s ease-out infinite;
 }
 .cta-marker-wrap.marker-active .cta-dot { background: #fbbf12; border-color: #004191; }
+/* Pays regroupant plusieurs destinations : rond plus gros portant le nombre. */
+.cta-multi .cta-dot {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading), sans-serif;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #fff;
+}
+.cta-multi .cta-ring { width: 42px; height: 42px; }
+.cta-marker-wrap.marker-active.cta-multi .cta-dot { color: #004191; }
 .cta-marker-wrap.marker-dimmed { opacity: 0.15; pointer-events: none; }
 .cta-marker-wrap.sport-marker .cta-dot { background: #e74c3c; border-color: #fff; }
 .cta-marker-wrap.sport-marker .cta-ring { background: rgba(231, 76, 60, 0.22); }
@@ -665,6 +679,30 @@ html:not(.icons-ready) .material-symbols-outlined {
   transition: gap 0.18s;
 }
 .tip-cta:hover { gap: 9px; color: #004191; }
+#tip-cities { margin-top: 12px; padding-top: 11px; border-top: 1px solid #eef1f5; }
+.tip-cities-label {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #8a94a3;
+  margin: 0 0 7px;
+}
+.tip-cities-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.tip-city-btn {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #3179c4;
+  background: #eef4fb;
+  border: 1px solid #d5e3f4;
+  border-radius: 20px;
+  padding: 4px 12px;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s, border-color 0.16s;
+}
+.tip-city-btn:hover { background: #3179c4; color: #fff; border-color: #3179c4; }
 #tip-arrow { position: absolute; width: 13px; height: 13px; background: #fff; transform: rotate(45deg); z-index: 0; }
 
 /* MOBILE MENU */

@@ -239,6 +239,11 @@
   box-shadow: 0 10px 24px rgba(67, 160, 71, .22);
 }
 
+.pillar-card .icon-circle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pillar-card h3,
 .commitment-card h3,
 .document-card h3 {
