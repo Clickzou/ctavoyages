@@ -28,6 +28,12 @@
   transform: translateY(0);
   opacity: 1;
 }
+/* Conteneur de la révélation : positionne et clippe le fond photo comme sur les
+   autres pages offres (sejours, circuits...) — sinon l'animation diffère. */
+.unified-card {
+  position: relative;
+  overflow: hidden;
+}
 .unified-card .card-content {
   position: relative;
   z-index: 2;
