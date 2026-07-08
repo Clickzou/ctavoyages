@@ -109,7 +109,7 @@ export default function Header() {
                     keyboard_arrow_down
                   </span>
                 </button>
-                <div className="absolute top-full left-0 mt-2 w-52 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="absolute top-full left-0 mt-2 w-52 bg-white shadow-lg rounded-lg py-2 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                   {OFFERS.map((o) => (
                     <Link
                       key={o.href}
@@ -134,7 +134,7 @@ export default function Header() {
                     keyboard_arrow_down
                   </span>
                 </button>
-                <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="absolute top-full left-0 mt-2 w-56 bg-white shadow-lg rounded-lg py-2 overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                   {ABOUT.map((a) => (
                     <Link
                       key={a.href}
