@@ -54,7 +54,7 @@ const LEFT: FaqEntry[] = [
     question: <>Qu&apos;est-ce qu&apos;un circuit touristique&nbsp;?</>,
     answer: (
       <p>
-        Un <strong>circuit</strong> est un voyage composé de plusieurs étapes,
+        Un <strong>circuit</strong>{" "}est un voyage composé de plusieurs étapes,
         avec des déplacements successifs et un itinéraire organisé à l&apos;avance.
         Il permet de découvrir une destination dans sa diversité, en combinant
         plusieurs lieux, expériences et ambiances.
@@ -134,7 +134,7 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          <strong>Maroc</strong> et <strong>Laponie</strong> — deux univers
+          <strong>Maroc</strong>{" "}et <strong>Laponie</strong> — deux univers
           forts, culturels ou nature
         </li>
       </ul>
@@ -146,7 +146,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         C&apos;est simple : contactez-nous par téléphone, email ou via notre
         formulaire. Nos attachées clientèle prennent contact avec vous{" "}
-        <strong>sous 48h</strong> pour préciser votre projet et affiner votre
+        <strong>sous 48h</strong>{" "}pour préciser votre projet et affiner votre
         besoin, gratuitement et sans engagement.
       </p>
     ),
@@ -157,7 +157,7 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          Un <strong>itinéraire cohérent</strong> pensé dans les moindres détails
+          Un <strong>itinéraire cohérent</strong>{" "}pensé dans les moindres détails
         </li>
         <li>
           <Check />
@@ -166,11 +166,11 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          Des <strong>tarifs négociés</strong> via le réseau TourCom
+          Des <strong>tarifs négociés</strong>{" "}via le réseau TourCom
         </li>
         <li>
           <Check />
-          Une <strong>assistance personnalisée</strong> avant, pendant et après
+          Une <strong>assistance personnalisée</strong>{" "}avant, pendant et après
           votre voyage
         </li>
       </ul>

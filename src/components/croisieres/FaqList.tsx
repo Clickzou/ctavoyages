@@ -54,10 +54,10 @@ const LEFT: FaqEntry[] = [
     question: <>Qu&apos;est-ce qu&apos;une croisière&nbsp;?</>,
     answer: (
       <p>
-        Une <strong>croisière</strong> est un voyage touristique effectué
+        Une <strong>croisière</strong>{" "}est un voyage touristique effectué
         principalement à bord d&apos;un navire. Elle comprend généralement le{" "}
         <strong>transport maritime</strong>, l&apos;<strong>hébergement</strong>,
-        la <strong>restauration</strong> et diverses activités de loisirs ou
+        la <strong>restauration</strong>{" "}et diverses activités de loisirs ou
         d&apos;animation à bord, tout en proposant des escales dans différents
         ports.
       </p>
@@ -143,15 +143,15 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          <strong>Fjords norvégiens</strong> et Europe du Nord
+          <strong>Fjords norvégiens</strong>{" "}et Europe du Nord
         </li>
         <li>
           <Check />
-          <strong>Caraïbes</strong> et Antilles
+          <strong>Caraïbes</strong>{" "}et Antilles
         </li>
         <li>
           <Check />
-          <strong>Îles grecques</strong> et mer Égée
+          <strong>Îles grecques</strong>{" "}et mer Égée
         </li>
         <li>
           <Check />
@@ -198,7 +198,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Oui, bien sûr. Contactez-nous par téléphone, email ou via notre
         formulaire en ligne. Nos attachées clientèle prennent contact avec vous{" "}
-        <strong>sous 48h</strong> pour affiner votre projet et vous proposer une
+        <strong>sous 48h</strong>{" "}pour affiner votre projet et vous proposer une
         sélection personnalisée, <strong>gratuitement et sans engagement</strong>.
       </p>
     ),

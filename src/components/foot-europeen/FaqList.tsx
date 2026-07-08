@@ -87,12 +87,12 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Icon name="check" />
-          <strong>Billets de match officiels</strong> pour le championnat ou la
+          <strong>Billets de match officiels</strong>{" "}pour le championnat ou la
           compétition européenne de votre choix
         </li>
         <li>
           <Icon name="check" />
-          <strong>Nuits d&apos;hôtel</strong> avec petit-déjeuner, en centre-ville
+          <strong>Nuits d&apos;hôtel</strong>{" "}avec petit-déjeuner, en centre-ville
           ou proche du stade
         </li>
         <li>
@@ -155,7 +155,7 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Icon name="check" />
-          Partager des <strong>émotions fortes</strong> avec vos amis, collègues
+          Partager des <strong>émotions fortes</strong>{" "}avec vos amis, collègues
           ou clients
         </li>
         <li>
@@ -176,7 +176,7 @@ const RIGHT: FaqEntry[] = [
     answer: (
       <p>
         Oui. Nous créons des offres sur mesure pour les matchs de{" "}
-        <strong>Ligue des Champions</strong>, <strong>Europa League</strong> et{" "}
+        <strong>Ligue des Champions</strong>, <strong>Europa League</strong>{" "}et{" "}
         <strong>Conference League</strong>. Ces soirées européennes sont parmi
         les plus intenses de la saison — contactez-nous le plus tôt possible car
         les billets partent très vite.
@@ -194,15 +194,15 @@ const RIGHT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Icon name="sports_soccer" />
-            <strong>Manchester United – Arsenal</strong> à Old Trafford
+            <strong>Manchester United – Arsenal</strong>{" "}à Old Trafford
           </li>
           <li>
             <Icon name="sports_soccer" />
-            <strong>Real Madrid – FC Barcelone</strong> au Santiago Bernabéu
+            <strong>Real Madrid – FC Barcelone</strong>{" "}au Santiago Bernabéu
           </li>
           <li>
             <Icon name="sports_soccer" />
-            <strong>Bayern Munich – Borussia Dortmund</strong> à l&apos;Allianz
+            <strong>Bayern Munich – Borussia Dortmund</strong>{" "}à l&apos;Allianz
             Arena
           </li>
           <li>
@@ -221,7 +221,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Oui. Nous créons des formules sur mesure pour les{" "}
         <strong>voyages clients</strong>, les <strong>incentives</strong>, les{" "}
-        <strong>team buildings</strong> ou les groupes d&apos;amis. Billets
+        <strong>team buildings</strong>{" "}ou les groupes d&apos;amis. Billets
         groupes, animations, logistique complète — nous gérons tout pour vous.
       </p>
     ),
@@ -232,7 +232,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Cliquez sur &quot;Demander un devis gratuit&quot; en bas de cette page ou
         contactez-nous par téléphone ou email. Nos conseillers spécialisés
-        prennent contact avec vous <strong>sous 48h</strong> pour composer votre
+        prennent contact avec vous <strong>sous 48h</strong>{" "}pour composer votre
         pack foot sur mesure, <strong>gratuitement et sans engagement</strong>.
       </p>
     ),

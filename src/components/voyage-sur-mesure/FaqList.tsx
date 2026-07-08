@@ -54,7 +54,7 @@ const LEFT: FaqEntry[] = [
     question: <>Qu&apos;est-ce qu&apos;un voyage sur mesure&nbsp;?</>,
     answer: (
       <p>
-        Un <strong>voyage sur mesure</strong> est un voyage entièrement
+        Un <strong>voyage sur mesure</strong>{" "}est un voyage entièrement
         personnalisé : l&apos;itinéraire, les hébergements, les activités et le
         rythme sont conçus selon vos envies, avec l&apos;accompagnement d&apos;un
         conseiller expert. Contrairement à un voyage organisé, chaque détail est
@@ -151,7 +151,7 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          Labellisée <strong>Engagé RSE</strong> par l&apos;AFNOR
+          Labellisée <strong>Engagé RSE</strong>{" "}par l&apos;AFNOR
         </li>
       </ul>
     ),
@@ -179,7 +179,7 @@ const RIGHT: FaqEntry[] = [
         </ul>
         <p className="font-body-md text-[14px] text-on-surface-variant leading-relaxed mt-3">
           Nos attachées clientèle prennent contact avec vous{" "}
-          <strong>sous 48h</strong> pour affiner votre demande, gratuitement et
+          <strong>sous 48h</strong>{" "}pour affiner votre demande, gratuitement et
           sans engagement.
         </p>
       </>

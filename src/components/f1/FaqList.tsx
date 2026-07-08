@@ -105,11 +105,11 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Icon name="check" />
-          <strong>Hôtel</strong> 3, 4 ou 5 étoiles avec petits-déjeuners inclus
+          <strong>Hôtel</strong>{" "}3, 4 ou 5 étoiles avec petits-déjeuners inclus
         </li>
         <li>
           <Icon name="check" />
-          <strong>Transferts</strong> hôtel-circuit et options aéroport
+          <strong>Transferts</strong>{" "}hôtel-circuit et options aéroport
         </li>
         <li>
           <Icon name="check" />
@@ -124,7 +124,7 @@ const LEFT: FaqEntry[] = [
     answer: (
       <p>
         Oui. Nous proposons des formules <strong>1 jour</strong>,{" "}
-        <strong>2 jours</strong> ou <strong>week-end complet</strong> (essais +
+        <strong>2 jours</strong>{" "}ou <strong>week-end complet</strong> (essais +
         qualifications + course), selon vos envies et votre budget.
       </p>
     ),
@@ -135,7 +135,7 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Icon name="check" />
-          Vivre les <strong>courses les plus spectaculaires</strong> du
+          Vivre les <strong>courses les plus spectaculaires</strong>{" "}du
           championnat du monde
         </li>
         <li>
@@ -145,7 +145,7 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Icon name="check" />
-          Associer <strong>sport et tourisme</strong> dans des villes
+          Associer <strong>sport et tourisme</strong>{" "}dans des villes
           emblématiques du monde entier
         </li>
         <li>
@@ -164,7 +164,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Oui. Vous pouvez bénéficier d&apos;options <strong>hospitalité</strong>,{" "}
         <strong>salons privés</strong>,{" "}
-        <strong>restauration haut de gamme</strong> ou de places premium en
+        <strong>restauration haut de gamme</strong>{" "}ou de places premium en
         tribunes pour vivre le Grand Prix dans des conditions d&apos;exception.
       </p>
     ),
@@ -182,20 +182,20 @@ const RIGHT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1 mt-3">
           <li>
             <Icon name="flag" />
-            <strong>Monaco</strong> pour le prestige et le glamour
+            <strong>Monaco</strong>{" "}pour le prestige et le glamour
           </li>
           <li>
             <Icon name="flag" />
-            <strong>Barcelone</strong> pour l&apos;accessibilité et
+            <strong>Barcelone</strong>{" "}pour l&apos;accessibilité et
             l&apos;ambiance
           </li>
           <li>
             <Icon name="flag" />
-            <strong>Monza</strong> pour les tifosi et la passion italienne
+            <strong>Monza</strong>{" "}pour les tifosi et la passion italienne
           </li>
           <li>
             <Icon name="flag" />
-            <strong>Abu Dhabi</strong> pour une finale de saison spectaculaire
+            <strong>Abu Dhabi</strong>{" "}pour une finale de saison spectaculaire
           </li>
         </ul>
       </>
@@ -209,7 +209,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Oui. Nous organisons des formules sur mesure pour les{" "}
         <strong>voyages clients</strong>, les <strong>incentives</strong>, les{" "}
-        <strong>team buildings</strong> ou les groupes d&apos;amis. Billets
+        <strong>team buildings</strong>{" "}ou les groupes d&apos;amis. Billets
         groupes, hospitalités, logistique complète — nous gérons tout.
       </p>
     ),
@@ -220,7 +220,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Cliquez sur &quot;Demander un devis gratuit&quot; ou contactez-nous par
         téléphone ou email. Nos conseillers spécialisés prennent contact avec
-        vous <strong>sous 48h</strong> pour composer votre pack F1 sur mesure,{" "}
+        vous <strong>sous 48h</strong>{" "}pour composer votre pack F1 sur mesure,{" "}
         <strong>gratuitement et sans engagement</strong>.
       </p>
     ),

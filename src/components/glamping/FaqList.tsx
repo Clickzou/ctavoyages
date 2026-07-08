@@ -100,7 +100,7 @@ const LEFT: FaqEntry[] = [
       <p>
         Oui, absolument. De nombreux hébergements de glamping sont pensés pour les
         familles avec des <strong>espaces confortables</strong>, des{" "}
-        <strong>activités nature</strong> adaptées aux enfants et des environnements
+        <strong>activités nature</strong>{" "}adaptées aux enfants et des environnements
         sécurisés. C&apos;est une excellente façon de transmettre l&apos;amour de la
         nature aux plus jeunes.
       </p>

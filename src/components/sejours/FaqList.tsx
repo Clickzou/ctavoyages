@@ -56,7 +56,7 @@ const LEFT: FaqEntry[] = [
     question: <>Qu&apos;est-ce qu&apos;un séjour tout compris&nbsp;?</>,
     answer: (
       <p>
-        Un <strong>séjour tout compris</strong> inclut l&apos;hébergement, les
+        Un <strong>séjour tout compris</strong>{" "}inclut l&apos;hébergement, les
         repas (petit-déjeuner, déjeuner, dîner), les boissons et souvent les
         animations et activités sur place. Vous maîtrisez votre budget avant le
         départ, sans mauvaise surprise.
@@ -131,7 +131,7 @@ const LEFT: FaqEntry[] = [
           </li>
           <li>
             <Check />
-            Resorts face à l&apos;océan aux <strong>Seychelles</strong> et à l&apos;
+            Resorts face à l&apos;océan aux <strong>Seychelles</strong>{" "}et à l&apos;
             <strong>Île Maurice</strong>
           </li>
           <li>
@@ -184,7 +184,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Bien sûr. Contactez-nous par téléphone, email ou via notre formulaire en
         ligne. Nos attachées clientèle prennent contact avec vous{" "}
-        <strong>sous 48h</strong> pour affiner votre demande et vous proposer une
+        <strong>sous 48h</strong>{" "}pour affiner votre demande et vous proposer une
         sélection personnalisée, <strong>gratuitement et sans engagement</strong>.
       </p>
     ),
@@ -197,22 +197,22 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          Un <strong>conseiller humain</strong> qui connaît les hébergements et
+          Un <strong>conseiller humain</strong>{" "}qui connaît les hébergements et
           destinations
         </li>
         <li>
           <Check />
-          <strong>Tarifs négociés</strong> via le réseau TourCom (1 200 agences,
+          <strong>Tarifs négociés</strong>{" "}via le réseau TourCom (1 200 agences,
           6 000 points de vente)
         </li>
         <li>
           <Check />
-          <strong>Assistance personnalisée</strong> avant, pendant et après votre
+          <strong>Assistance personnalisée</strong>{" "}avant, pendant et après votre
           voyage
         </li>
         <li>
           <Check />
-          Une agence <strong>agréée Atout France</strong> et labellisée RSE
+          Une agence <strong>agréée Atout France</strong>{" "}et labellisée RSE
         </li>
       </ul>
     ),

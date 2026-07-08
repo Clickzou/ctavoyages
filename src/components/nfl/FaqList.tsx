@@ -54,7 +54,7 @@ const LEFT: FaqEntry[] = [
       <p>
         Le match <strong>Atlanta Falcons vs Cincinnati Bengals</strong>,
         rencontre officielle de saison régulière NFL, se jouera le{" "}
-        <strong>dimanche 8 novembre 2026</strong> au stade Santiago Bernabéu de
+        <strong>dimanche 8 novembre 2026</strong>{" "}au stade Santiago Bernabéu de
         Madrid, récemment rénové et capable d&apos;accueillir plus de 80 000
         spectateurs.
       </p>
@@ -66,21 +66,21 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>1 ou 2 nuits d&apos;hôtel</strong> 3 ou 4 étoiles à Madrid avec
+          <strong>1 ou 2 nuits d&apos;hôtel</strong>{" "}3 ou 4 étoiles à Madrid avec
           petits-déjeuners
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Billet officiel</strong> pour le match Falcons vs Bengals au
+          <strong>Billet officiel</strong>{" "}pour le match Falcons vs Bengals au
           Santiago Bernabéu
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Option vol A/R</strong> depuis Paris et transferts sur demande
+          <strong>Option vol A/R</strong>{" "}depuis Paris et transferts sur demande
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Assistance locale</strong> francophone et organisation clé en
+          <strong>Assistance locale</strong>{" "}francophone et organisation clé en
           main
         </li>
       </ul>
@@ -90,7 +90,7 @@ const LEFT: FaqEntry[] = [
     question: <>Où se déroule le match&nbsp;?</>,
     answer: (
       <p>
-        Au <strong>stade Santiago Bernabéu</strong> de Madrid, récemment rénové
+        Au <strong>stade Santiago Bernabéu</strong>{" "}de Madrid, récemment rénové
         et équipé pour accueillir les plus grands événements sportifs mondiaux.
         Avec plus de 80 000 places, c&apos;est l&apos;un des stades les plus
         emblématiques d&apos;Europe — un cadre exceptionnel pour vivre la NFL.
@@ -108,17 +108,17 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>Le{" "}
-          <strong>Santiago Bernabéu</strong> accueille pour la première fois la
+          <strong>Santiago Bernabéu</strong>{" "}accueille pour la première fois la
           NFL
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>Une{" "}
-          <strong>ambiance internationale</strong> unique mêlant fans américains
+          <strong>ambiance internationale</strong>{" "}unique mêlant fans américains
           et supporters européens
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>Madrid :{" "}
-          <strong>tapas, culture et art de vivre</strong> pour enrichir
+          <strong>tapas, culture et art de vivre</strong>{" "}pour enrichir
           l&apos;expérience
         </li>
       </ul>
@@ -134,8 +134,8 @@ const RIGHT: FaqEntry[] = [
     answer: (
       <p>
         Oui. Nos équipes créent des formules sur mesure pour les{" "}
-        <strong>groupes</strong>, les <strong>incentives</strong> ou les{" "}
-        <strong>voyages clients</strong> autour du NFL Madrid Game. Billets
+        <strong>groupes</strong>, les <strong>incentives</strong>{" "}ou les{" "}
+        <strong>voyages clients</strong>{" "}autour du NFL Madrid Game. Billets
         groupes, hébergement privatisé, animations et logistique complète — nous
         gérons tout.
       </p>
@@ -170,7 +170,7 @@ const RIGHT: FaqEntry[] = [
         Le plus tôt possible. Les billets pour cet événement unique partent très
         rapidement et les hôtels à Madrid se remplissent vite autour du match.
         Nous vous conseillons de réserver{" "}
-        <strong>plusieurs mois à l&apos;avance</strong> pour garantir les
+        <strong>plusieurs mois à l&apos;avance</strong>{" "}pour garantir les
         meilleures options.
       </p>
     ),

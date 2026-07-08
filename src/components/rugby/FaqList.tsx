@@ -54,7 +54,7 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <span className="material-symbols-outlined">check</span>Les finales de la{" "}
-          <strong>Champions Cup</strong> et de la <strong>Challenge Cup</strong>
+          <strong>Champions Cup</strong>{" "}et de la <strong>Challenge Cup</strong>
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>Les matchs du{" "}
@@ -77,15 +77,15 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Billets officiels</strong> pour les plus grands matchs
+          <strong>Billets officiels</strong>{" "}pour les plus grands matchs
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Hébergement</strong> en hôtel 3 ou 4 étoiles avec petits-déjeuners
+          <strong>Hébergement</strong>{" "}en hôtel 3 ou 4 étoiles avec petits-déjeuners
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Transferts</strong> aéroport-hôtel-stade selon la formule choisie
+          <strong>Transferts</strong>{" "}aéroport-hôtel-stade selon la formule choisie
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
@@ -155,8 +155,8 @@ const RIGHT: FaqEntry[] = [
     answer: (
       <p>
         Le plus tôt possible. Les événements comme le{" "}
-        <strong>Tournoi des 6 Nations</strong> ou les{" "}
-        <strong>finales de Champions Cup</strong> affichent complet très rapidement.
+        <strong>Tournoi des 6 Nations</strong>{" "}ou les{" "}
+        <strong>finales de Champions Cup</strong>{" "}affichent complet très rapidement.
         Nous vous recommandons de nous contacter plusieurs mois à l&apos;avance pour
         garantir la disponibilité des billets et des hôtels.
       </p>
@@ -190,7 +190,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Cliquez sur &quot;Demander un devis gratuit&quot; en bas de cette page ou
         contactez-nous par téléphone ou email. Nos conseillers spécialisés prennent
-        contact avec vous <strong>sous 48h</strong> pour composer votre pack rugby sur
+        contact avec vous <strong>sous 48h</strong>{" "}pour composer votre pack rugby sur
         mesure, <strong>gratuitement et sans engagement</strong>.
       </p>
     ),

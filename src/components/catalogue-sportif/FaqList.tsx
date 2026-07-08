@@ -58,7 +58,7 @@ const LEFT: FaqEntry[] = [
       <p>
         Rien de plus simple. Choisissez votre pack sportif, cliquez sur
         &quot;Découvrir&quot; puis renseignez votre demande. Nos conseillers
-        spécialisés prennent contact avec vous <strong>sous 48h</strong> pour
+        spécialisés prennent contact avec vous <strong>sous 48h</strong>{" "}pour
         finaliser votre séjour sur mesure, gratuitement et sans engagement.
       </p>
     ),
@@ -112,7 +112,7 @@ const LEFT: FaqEntry[] = [
           </li>
           <li>
             <Icon name="check" />
-            Les <strong>billets officiels</strong> pour l&apos;événement sportif
+            Les <strong>billets officiels</strong>{" "}pour l&apos;événement sportif
             choisi
           </li>
           <li>
@@ -189,7 +189,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Absolument. Nous créons des formules sur mesure pour les{" "}
         <strong>voyages clients</strong>, les <strong>incentives</strong>, les{" "}
-        <strong>team buildings</strong> ou les groupes d&apos;amis. Billets
+        <strong>team buildings</strong>{" "}ou les groupes d&apos;amis. Billets
         groupes, animations, logistique complète — nous gérons tout.
       </p>
     ),
@@ -201,7 +201,7 @@ const RIGHT: FaqEntry[] = [
         Le plus tôt possible. Les grands événements sportifs (6 Nations,
         Champions Cup, NFL Madrid Game, Grands Prix F1…) affichent complet très
         rapidement. Nous vous recommandons de nous contacter{" "}
-        <strong>plusieurs mois à l&apos;avance</strong> pour garantir la
+        <strong>plusieurs mois à l&apos;avance</strong>{" "}pour garantir la
         disponibilité des billets.
       </p>
     ),

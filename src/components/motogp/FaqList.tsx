@@ -80,19 +80,19 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Icon name="check" />
-          <strong>Billets officiels</strong> pour les qualifications et la course
+          <strong>Billets officiels</strong>{" "}pour les qualifications et la course
         </li>
         <li>
           <Icon name="check" />
-          <strong>Hôtel 3 ou 4 étoiles</strong> avec petits-déjeuners
+          <strong>Hôtel 3 ou 4 étoiles</strong>{" "}avec petits-déjeuners
         </li>
         <li>
           <Icon name="check" />
-          Options de <strong>transferts</strong> et transports
+          Options de <strong>transferts</strong>{" "}et transports
         </li>
         <li>
           <Icon name="check" />
-          Options <strong>VIP Village</strong> pour une expérience haut de gamme
+          Options <strong>VIP Village</strong>{" "}pour une expérience haut de gamme
         </li>
       </ul>
     ),
@@ -107,7 +107,7 @@ const LEFT: FaqEntry[] = [
     answer: (
       <p>
         Le billet classique vous donne accès à votre place en tribune. Le{" "}
-        <strong>VIP Village</strong> est l&apos;offre hospitalité officielle la
+        <strong>VIP Village</strong>{" "}est l&apos;offre hospitalité officielle la
         plus exclusive&nbsp;: il inclut une vue privilégiée sur la ligne de
         départ/arrivée, un accès au paddock à des horaires précis, un service de
         restauration gourmet (petit-déjeuner, déjeuner buffet, open bar) et des
@@ -122,7 +122,7 @@ const LEFT: FaqEntry[] = [
         L&apos;accès direct aux stands (Pit Lane) est généralement réservé aux
         détenteurs de pass VIP lors de sessions spécifiques (Pit Lane Walk).
         Cependant, nous pouvons organiser des options incluant des{" "}
-        <strong>visites de paddocks</strong> ou des rencontres exclusives selon
+        <strong>visites de paddocks</strong>{" "}ou des rencontres exclusives selon
         les disponibilités de nos partenaires et des écuries.
       </p>
     ),
@@ -139,10 +139,10 @@ const RIGHT: FaqEntry[] = [
     ),
     answer: (
       <p>
-        Le <strong>Mugello</strong> est célèbre pour son ambiance électrique au
-        milieu des collines toscanes. Le GP de <strong>Catalogne</strong> offre
+        Le <strong>Mugello</strong>{" "}est célèbre pour son ambiance électrique au
+        milieu des collines toscanes. Le GP de <strong>Catalogne</strong>{" "}offre
         souvent des duels mémorables sur une piste très technique. Enfin,{" "}
-        <strong>Valence</strong> est incontournable car c&apos;est la finale de la
+        <strong>Valence</strong>{" "}est incontournable car c&apos;est la finale de la
         saison&nbsp;: la tension et la fête y sont à leur comble.
       </p>
     ),
@@ -153,7 +153,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Pour vous éviter les contraintes de stationnement et d&apos;embouteillages,
         nous proposons dans nos packs des{" "}
-        <strong>navettes privées ou collectives</strong> dédiées depuis votre
+        <strong>navettes privées ou collectives</strong>{" "}dédiées depuis votre
         hôtel jusqu&apos;à l&apos;entrée du circuit. Nous pouvons également
         organiser la location d&apos;un véhicule si vous préférez être autonome.
       </p>
@@ -164,7 +164,7 @@ const RIGHT: FaqEntry[] = [
     answer: (
       <p>
         Selon vos envies et la disponibilité, nous proposons des hôtels soit{" "}
-        <strong>à proximité immédiate du circuit</strong> pour faciliter la
+        <strong>à proximité immédiate du circuit</strong>{" "}pour faciliter la
         logistique, soit en <strong>centre-ville</strong> (Barcelone, Valence,
         Florence) pour profiter de l&apos;animation, de la gastronomie et de la
         vie nocturne.
@@ -176,7 +176,7 @@ const RIGHT: FaqEntry[] = [
     answer: (
       <p>
         Oui, vous pouvez bénéficier d&apos;un placement premium via le{" "}
-        <strong>VIP Village</strong> pour vivre le Grand Prix dans des conditions
+        <strong>VIP Village</strong>{" "}pour vivre le Grand Prix dans des conditions
         exceptionnelles&nbsp;: espaces lounge, restauration haut de gamme, vue
         imprenable sur la piste et accès privilégiés.
       </p>

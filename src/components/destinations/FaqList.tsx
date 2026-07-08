@@ -131,7 +131,7 @@ const LEFT: FaqEntry[] = [
     question: <>Proposez-vous des escapades courtes en Europe&nbsp;?</>,
     answer: (
       <p>
-        Oui. Nous organisons des <strong>escapades de 2 à 5 nuits</strong> à
+        Oui. Nous organisons des <strong>escapades de 2 à 5 nuits</strong>{" "}à
         Londres, Amsterdam, Porto et Rome. Idéal pour un week-end prolongé ou une
         escapade culturelle et gastronomique.
       </p>
@@ -150,7 +150,7 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Icon name="check" />
-          Les <strong>billets officiels</strong> pour l&apos;événement sportif
+          Les <strong>billets officiels</strong>{" "}pour l&apos;événement sportif
         </li>
         <li>
           <Icon name="check" />

@@ -78,23 +78,23 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Billets officiels</strong> pour le match NBA de votre choix
+          <strong>Billets officiels</strong>{" "}pour le match NBA de votre choix
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Hôtel 4 étoiles</strong> avec petits-déjeuners inclus
+          <strong>Hôtel 4 étoiles</strong>{" "}avec petits-déjeuners inclus
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Vols aller-retour</strong> Paris – États-Unis
+          <strong>Vols aller-retour</strong>{" "}Paris – États-Unis
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Transferts</strong> aéroport-hôtel inclus
+          <strong>Transferts</strong>{" "}aéroport-hôtel inclus
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>
-          <strong>Assistance spécialisée</strong> sur place
+          <strong>Assistance spécialisée</strong>{" "}sur place
         </li>
       </ul>
     ),
@@ -103,7 +103,7 @@ const LEFT: FaqEntry[] = [
     question: <>Peut-on assister à plusieurs matchs durant le séjour&nbsp;?</>,
     answer: (
       <p>
-        Oui, des options <strong>multi-matchs</strong> sont tout à fait
+        Oui, des options <strong>multi-matchs</strong>{" "}sont tout à fait
         possibles. La NBA propose des rencontres quasi-quotidiennes, ce qui
         permet d&apos;assister à deux ou trois matchs lors d&apos;un même séjour
         d&apos;une semaine. Votre conseiller vous proposera les meilleures
@@ -119,7 +119,7 @@ const LEFT: FaqEntry[] = [
       <p>
         La saison régulière NBA se déroule d&apos;<strong>octobre à avril</strong>,
         avec des matchs pratiquement tous les jours. Les Playoffs se jouent
-        d&apos;<strong>avril à juin</strong> pour les meilleures équipes. Nous
+        d&apos;<strong>avril à juin</strong>{" "}pour les meilleures équipes. Nous
         vous conseillons de réserver tôt car les matchs à forte affiche (derbys,
         grandes équipes) se remplissent rapidement.
       </p>
@@ -136,15 +136,15 @@ const RIGHT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <span className="material-symbols-outlined">sports_basketball</span>
-            <strong>LeBron James</strong> avec les Lakers à Los Angeles
+            <strong>LeBron James</strong>{" "}avec les Lakers à Los Angeles
           </li>
           <li>
             <span className="material-symbols-outlined">sports_basketball</span>
-            <strong>Luka Dončić</strong> avec les Lakers à Los Angeles
+            <strong>Luka Dončić</strong>{" "}avec les Lakers à Los Angeles
           </li>
           <li>
             <span className="material-symbols-outlined">sports_basketball</span>
-            <strong>Victor Wembanyama</strong> si les Spurs jouent à New York ou
+            <strong>Victor Wembanyama</strong>{" "}si les Spurs jouent à New York ou
             LA
           </li>
           <li>
@@ -163,7 +163,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Oui. Nous créons des formules sur mesure pour les{" "}
         <strong>voyages clients</strong>, les <strong>incentives</strong>, les{" "}
-        <strong>team buildings</strong> ou les groupes d&apos;amis. Billets
+        <strong>team buildings</strong>{" "}ou les groupes d&apos;amis. Billets
         groupes, suites VIP, logistique complète — nous gérons tout pour une
         expérience NBA inoubliable.
       </p>
@@ -195,7 +195,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Cliquez sur &laquo;&nbsp;Demander un devis gratuit&nbsp;&raquo; ou
         contactez-nous par téléphone ou email. Nos conseillers spécialisés
-        prennent contact avec vous <strong>sous 48h</strong> pour composer votre
+        prennent contact avec vous <strong>sous 48h</strong>{" "}pour composer votre
         séjour NBA sur mesure, <strong>gratuitement et sans engagement</strong>.
       </p>
     ),

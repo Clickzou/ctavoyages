@@ -91,7 +91,7 @@ const LEFT: FaqEntry[] = [
         C&apos;est un point de logistique important : le 26 décembre, les
         transports publics (métro, trains) tournent souvent au ralenti ou sont
         interrompus. C&apos;est pourquoi{" "}
-        <strong>nos packs incluent des hôtels stratégiquement situés</strong> ou
+        <strong>nos packs incluent des hôtels stratégiquement situés</strong>{" "}ou
         des transferts privés pour vous garantir un accès facile au stade sans
         stress.
       </p>
@@ -143,8 +143,8 @@ const RIGHT: FaqEntry[] = [
     answer: (
       <p>
         En plus du football, nous pouvons inclure dans votre pack des billets
-        pour : <strong>Winter Wonderland</strong> à Hyde Park, une visite des{" "}
-        <strong>studios Harry Potter</strong> décorés pour Noël, une croisière
+        pour : <strong>Winter Wonderland</strong>{" "}à Hyde Park, une visite des{" "}
+        <strong>studios Harry Potter</strong>{" "}décorés pour Noël, une croisière
         sur la Tamise, ou des réservations dans les meilleurs pubs et
         restaurants pour vos soirées festives.
       </p>
