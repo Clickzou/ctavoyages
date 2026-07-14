@@ -22,14 +22,14 @@ type TypeVoyage = {
 
 const TYPES: TypeVoyage[] = [
   {
-    img: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/voyage-famille-2.jpg",
     alt: "Voyage sur mesure en famille",
     badge: "Famille",
     title: "Voyage en famille",
     desc: "Rythme adapté aux enfants, hébergements familiaux, activités pour tous les âges.",
   },
   {
-    img: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/voyage-noces-couple-2.jpg",
     alt: "Voyage de noces sur mesure",
     badge: "Couple",
     title: "Voyage de noces & en couple",

@@ -78,9 +78,9 @@ export default function VoyageSurMesurePage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Voyage sur mesure : paysage immersif"
+              alt="Couple sur une plage paradisiaque au coucher du soleil"
               className="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1600&h=900&fit=crop&auto=format"
+              src="/assets/images/voyage-noces-couple-1.jpg"
             />
             <div className="absolute inset-0 hero-overlay" />
           </div>

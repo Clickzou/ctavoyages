@@ -41,14 +41,14 @@ const TYPES: TypeCircuit[] = [
     href: "/circuits/road-trip",
   },
   {
-    img: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/circuit-culturel-1.jpg",
     alt: "Circuit culturel",
     title: "Circuit culturel",
     desc: "Temples, médinas, villages, grands sites historiques : pour aller au cœur d'une destination.",
     href: "/circuits/culturel",
   },
   {
-    img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/circuit-nature-2.jpg",
     alt: "Circuit nature et grands espaces",
     title: "Circuit nature",
     desc: "Parcs nationaux, volcans, forêts boréales et grands espaces pour les amateurs d'immersion nature.",

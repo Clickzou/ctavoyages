@@ -80,7 +80,7 @@ export default function CircuitsPage() {
             <img
               alt="Circuit organisé à travers des paysages d'exception : CTA Voyages"
               className="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&h=900&fit=crop&auto=format"
+              src="/assets/images/circuit-culturel-2.jpg"
             />
             <div className="absolute inset-0 hero-overlay" />
           </div>

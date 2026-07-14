@@ -78,9 +78,9 @@ export default function GlampingPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Glamping : tente lodge dans la nature : CTA Voyages"
+              alt="Glamping : cabane dans les arbres au cœur de la nature : CTA Voyages"
               className="w-full h-full object-cover"
-              src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1600&h=900&fit=crop&auto=format"
+              src="/assets/images/cabane-arbres-1.jpg"
             />
             <div className="absolute inset-0 hero-overlay" />
           </div>

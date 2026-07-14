@@ -21,13 +21,13 @@ type TypeHebergement = {
 
 const TYPES: TypeHebergement[] = [
   {
-    img: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/cabane-rondins-1.jpg",
     alt: "Tente lodge glamping",
     title: "Tente lodge",
     desc: "Grand espace, literie haut de gamme et terrasse privée : l'élégance du safari dans un décor naturel préservé.",
   },
   {
-    img: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/cabane-arbres-2.jpg",
     alt: "Cabane dans les arbres",
     title: "Cabane dans les arbres",
     desc: "Perchée dans la canopée, avec vue panoramique sur la forêt : une expérience suspendue entre ciel et terre.",
@@ -39,19 +39,19 @@ const TYPES: TypeHebergement[] = [
     desc: "Dormir sous les aurores boréales dans un igloo de verre ou une cabane chauffée au cœur de la Laponie.",
   },
   {
-    img: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/bulle-transparente-1.jpg",
     alt: "Bulle transparente nuit étoilée",
     title: "Bulle transparente",
     desc: "Dormir à la belle étoile dans une bulle de verre panoramique : une nuit magique entre ciel et nature.",
   },
   {
-    img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/eco-lodge-tropical-1.jpg",
     alt: "Lodge safari Afrique",
     title: "Lodge safari",
     desc: "Au cœur de la savane africaine, des lodges d'exception offrant une immersion totale dans la vie sauvage.",
   },
   {
-    img: "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=600&h=400&fit=crop&auto=format",
+    img: "/assets/images/campement-desert-1.jpg",
     alt: "Campement désert Maroc",
     title: "Campement du désert",
     desc: "Une nuit au cœur des dunes du Sahara dans un campement berbère de luxe, sous un ciel étoilé à couper le souffle.",
