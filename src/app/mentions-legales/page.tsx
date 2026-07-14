@@ -123,7 +123,7 @@ export default function Page() {
             </li>
             <li>
               <strong>Adresse du garant&nbsp;:</strong>{" "}
-              [À COMPLÉTER : adresse du garant AXA Assurances]
+              Espace ARAMIS, 35B route de Toulouse, 32600 L&apos;Isle-Jourdain
             </li>
             <li>
               <strong>Montant / référence de la garantie&nbsp;:</strong> ARCUS
