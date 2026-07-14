@@ -105,6 +105,16 @@ import A102 from "./decouvrir-destination-en-train";
 import A103 from "./meilleures-applis-voyage";
 import A104 from "./ou-partir-au-soleil-en-hiver";
 import A105 from "./ou-partir-pas-cher-en-europe";
+import A106 from "./circuit-canada-rocheuses-quebec";
+import A107 from "./circuit-costa-rica-volcans-jungle";
+import A108 from "./circuit-maroc-marrakech-atlas-sahara";
+import A109 from "./croisiere-mediterranee-rome-barcelone";
+import A110 from "./croisiere-fjords-norvegiens";
+import A111 from "./croisiere-caraibes-antilles";
+import A112 from "./croisiere-fluviale-europe";
+import A113 from "./glamping-cabane-canada";
+import A114 from "./glamping-eco-lodge-costa-rica";
+import A115 from "./glamping-ryokan-japon";
 
 /**
  * Registre des articles de blog. Clé = slug → /blog/<slug>.
@@ -217,6 +227,16 @@ export const BLOG_ARTICLES: Record<string, BlogArticle> = {
   "meilleures-applis-voyage": A103,
   "ou-partir-au-soleil-en-hiver": A104,
   "ou-partir-pas-cher-en-europe": A105,
+  "circuit-canada-rocheuses-quebec": A106,
+  "circuit-costa-rica-volcans-jungle": A107,
+  "circuit-maroc-marrakech-atlas-sahara": A108,
+  "croisiere-mediterranee-rome-barcelone": A109,
+  "croisiere-fjords-norvegiens": A110,
+  "croisiere-caraibes-antilles": A111,
+  "croisiere-fluviale-europe": A112,
+  "glamping-cabane-canada": A113,
+  "glamping-eco-lodge-costa-rica": A114,
+  "glamping-ryokan-japon": A115,
 };
 
 /** Liste ordonnée pour la grille /blog (vitrine d'abord). */
@@ -327,6 +347,16 @@ export const BLOG_LIST: BlogArticle[] = [
   A103,
   A104,
   A105,
+  A106,
+  A107,
+  A108,
+  A109,
+  A110,
+  A111,
+  A112,
+  A113,
+  A114,
+  A115,
 ];
 
 export const BLOG_SLUGS = Object.keys(BLOG_ARTICLES);

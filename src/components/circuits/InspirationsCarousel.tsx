@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type Inspiration = {
   img: string;
@@ -8,6 +10,7 @@ type Inspiration = {
   badge: string;
   title: string;
   desc: string;
+  href: string;
 };
 
 const INSPIRATIONS: Inspiration[] = [
@@ -17,6 +20,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "JAPON",
     title: "Tokyo, Kyoto & Alpes japonaises",
     desc: "Un itinéraire entre modernité, traditions et nature, pensé étape par étape.",
+    href: "/blog/itineraire-japon-2-semaines",
   },
   {
     img: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=600&h=400&fit=crop&auto=format",
@@ -24,6 +28,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "CANADA",
     title: "Des Rocheuses à Québec",
     desc: "Un circuit grands espaces entre lacs, montagnes, villes historiques et nature sauvage.",
+    href: "/blog/circuit-canada-rocheuses-quebec",
   },
   {
     img: "https://images.unsplash.com/photo-1500049242364-5f500807cdd7?w=600&h=400&fit=crop&auto=format",
@@ -31,6 +36,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "COSTA RICA",
     title: "Volcans, jungle & côte Pacifique",
     desc: "Un voyage rythmé entre volcans actifs, forêts tropicales et plages sauvages.",
+    href: "/blog/circuit-costa-rica-volcans-jungle",
   },
   {
     img: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop&auto=format",
@@ -38,6 +44,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "MAROC",
     title: "Marrakech, Atlas & Sahara",
     desc: "Une immersion entre médinas, kasbahs, vallées berbères et dunes infinies.",
+    href: "/blog/circuit-maroc-marrakech-atlas-sahara",
   },
   {
     img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop&auto=format",
@@ -45,6 +52,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "THAÏLANDE",
     title: "Bangkok, temples & îles du Sud",
     desc: "Un circuit équilibré entre culture, gastronomie, jungle et farniente en fin de voyage.",
+    href: "/blog/itineraire-thailande-2-semaines",
   },
   {
     img: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop&auto=format",
@@ -52,11 +60,13 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "LAPONIE",
     title: "Forêts boréales & aurores boréales",
     desc: "Un circuit d'hiver entre nature arctique, activités nordiques et hébergements insolites.",
+    href: "/blog/ou-voir-aurores-boreales",
   },
 ];
 
 export default function InspirationsCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   const scrollByDir = (direction: number) => {
     const track = trackRef.current;
@@ -72,15 +82,6 @@ export default function InspirationsCarousel() {
       if (track.scrollLeft <= 5)
         track.scrollTo({ left: track.scrollWidth, behavior: "smooth" });
       else track.scrollBy({ left: -amt, behavior: "smooth" });
-    }
-  };
-
-  const goToCta = () => {
-    const target = document.getElementById("cta-final");
-    if (target) {
-      const offset =
-        target.getBoundingClientRect().top + window.pageYOffset - 88;
-      window.scrollTo({ top: offset, behavior: "smooth" });
     }
   };
 
@@ -137,7 +138,7 @@ export default function InspirationsCarousel() {
           <div
             key={`${c.badge}-${i}`}
             className="carousel-card bg-surface-container-lowest rounded-xl luxury-shadow overflow-hidden group cursor-pointer border border-outline-variant/30"
-            onClick={goToCta}
+            onClick={() => router.push(c.href)}
           >
             <div className="h-52 sm:h-64 overflow-hidden relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -157,18 +158,14 @@ export default function InspirationsCarousel() {
               <p className="card-desc font-body-md text-[14px] sm:text-[16px] text-on-surface-variant mb-4">
                 {c.desc}
               </p>
-              <a
+              <Link
                 className="discover-link text-primary font-label text-label text-[13px] sm:text-[14px] flex items-center hover:gap-2 transition-all"
-                href="#cta-final"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  goToCta();
-                }}
+                href={c.href}
+                onClick={(e) => e.stopPropagation()}
               >
-                IMAGINER CE CIRCUIT{" "}
+                DÉCOUVRIR CE CIRCUIT{" "}
                 <span className="material-symbols-outlined ml-2">arrow_forward</span>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

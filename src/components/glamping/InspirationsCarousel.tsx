@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type Inspiration = {
   img: string;
@@ -8,6 +10,7 @@ type Inspiration = {
   badge: string;
   title: string;
   desc: string;
+  href: string;
 };
 
 const INSPIRATIONS: Inspiration[] = [
@@ -17,6 +20,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "LAPONIE",
     title: "Igloo de verre sous les aurores boréales",
     desc: "Dormir dans un igloo panoramique en Finlande et observer les aurores boréales depuis son lit.",
+    href: "/blog/ou-voir-aurores-boreales",
   },
   {
     img: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=600&h=400&fit=crop&auto=format",
@@ -24,6 +28,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "KENYA",
     title: "Lodge safari au cœur du Masai Mara",
     desc: "Un lodge de luxe face à la savane, avec vue sur les animaux sauvages et couchers de soleil inoubliables.",
+    href: "/blog/meilleures-destinations-safari",
   },
   {
     img: "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=600&h=400&fit=crop&auto=format",
@@ -31,6 +36,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "CANADA",
     title: "Cabane en rondins au bord d'un lac canadien",
     desc: "Une cabane isolée dans la forêt boréale avec jacuzzi, bain nordique et canoë sur le lac au lever du soleil.",
+    href: "/blog/glamping-cabane-canada",
   },
   {
     img: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=600&h=400&fit=crop&auto=format",
@@ -38,6 +44,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "MAROC",
     title: "Campement de luxe dans les dunes du Sahara",
     desc: "Des tentes berbères somptueuses au cœur des dunes de Merzouga, avec dîner aux étoiles et promenade à dos de dromadaire.",
+    href: "/blog/plus-beaux-deserts-du-monde",
   },
   {
     img: "https://images.unsplash.com/photo-1500049242364-5f500807cdd7?w=600&h=400&fit=crop&auto=format",
@@ -45,6 +52,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "COSTA RICA",
     title: "Éco-lodge en forêt tropicale",
     desc: "Un lodge suspendu dans la canopée du Costa Rica, entre biodiversité exceptionnelle et nature sauvage.",
+    href: "/blog/glamping-eco-lodge-costa-rica",
   },
   {
     img: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=600&h=400&fit=crop&auto=format",
@@ -52,20 +60,13 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "JAPON",
     title: "Ryokan traditionnel avec bains onsen",
     desc: "Un ryokan isolé dans les Alpes japonaises, avec bains thermaux privatifs et vue sur les montagnes enneigées.",
+    href: "/blog/glamping-ryokan-japon",
   },
 ];
 
 export default function InspirationsCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
-
-  const goToCta = () => {
-    const target = document.getElementById("cta-final");
-    if (target) {
-      const offset =
-        target.getBoundingClientRect().top + window.pageYOffset - 88;
-      window.scrollTo({ top: offset, behavior: "smooth" });
-    }
-  };
+  const router = useRouter();
 
   const scrollByDir = (direction: number) => {
     const track = trackRef.current;
@@ -137,7 +138,7 @@ export default function InspirationsCarousel() {
           <div
             key={d.badge}
             className="carousel-card bg-surface-container-lowest rounded-xl luxury-shadow overflow-hidden group cursor-pointer border border-outline-variant/30"
-            onClick={goToCta}
+            onClick={() => router.push(d.href)}
           >
             <div className="h-52 sm:h-64 overflow-hidden relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -157,18 +158,14 @@ export default function InspirationsCarousel() {
               <p className="card-desc font-body-md text-[14px] sm:text-[16px] text-on-surface-variant mb-4">
                 {d.desc}
               </p>
-              <a
+              <Link
                 className="discover-link text-primary font-label text-label text-[13px] sm:text-[14px] flex items-center hover:gap-2 transition-all"
-                href="#cta-final"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  goToCta();
-                }}
+                href={d.href}
+                onClick={(e) => e.stopPropagation()}
               >
-                NOUS CONTACTER{" "}
+                DÉCOUVRIR CE SÉJOUR{" "}
                 <span className="material-symbols-outlined ml-2">arrow_forward</span>
-              </a>
+              </Link>
             </div>
           </div>
         ))}

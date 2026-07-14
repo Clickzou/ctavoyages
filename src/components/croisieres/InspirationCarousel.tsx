@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type Inspiration = {
   img: string;
@@ -8,6 +10,7 @@ type Inspiration = {
   badge: string;
   title: string;
   desc: string;
+  href: string;
 };
 
 const INSPIRATIONS: Inspiration[] = [
@@ -17,6 +20,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "MÉDITERRANÉE",
     title: "Rome, Barcelone & Côte d'Azur",
     desc: "Un grand classique méditerranéen entre patrimoine, gastronomie et rivages ensoleillés.",
+    href: "/blog/croisiere-mediterranee-rome-barcelone",
   },
   {
     img: "https://images.unsplash.com/photo-1520769945061-0a448c463865?w=600&h=400&fit=crop&auto=format",
@@ -24,6 +28,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "EUROPE DU NORD",
     title: "Fjords norvégiens & aurores boréales",
     desc: "Paysages époustouflants, nature sauvage et lumières polaires dans les eaux du Grand Nord.",
+    href: "/blog/croisiere-fjords-norvegiens",
   },
   {
     img: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop&auto=format",
@@ -31,6 +36,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "CARAÏBES",
     title: "Îles des Caraïbes & Antilles",
     desc: "Plages de sable blanc, eaux cristallines et escales paradisiaques dans les îles des Caraïbes.",
+    href: "/blog/croisiere-caraibes-antilles",
   },
   {
     img: "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=600&h=400&fit=crop&auto=format",
@@ -38,6 +44,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "GRÈCE",
     title: "Santorin, Mykonos & Rhodes",
     desc: "Les incontournables des îles grecques entre architecture cycladique, sites antiques et mer Égée.",
+    href: "/blog/plus-belles-iles-grecques",
   },
   {
     img: "https://images.unsplash.com/photo-1589979481223-deb893043163?w=600&h=400&fit=crop&auto=format",
@@ -45,6 +52,7 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "OCÉAN INDIEN",
     title: "Maurice, Seychelles & Zanzibar",
     desc: "Cap sur les plus belles îles tropicales entre lagons turquoise et nature préservée.",
+    href: "/blog/plus-belles-plages-ocean-indien",
   },
   {
     img: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&h=400&fit=crop&auto=format",
@@ -52,11 +60,13 @@ const INSPIRATIONS: Inspiration[] = [
     badge: "EUROPE FLUVIALE",
     title: "Douro, Rhin & Danube",
     desc: "Vignobles, châteaux et cités historiques au fil des plus beaux fleuves d'Europe à bord d'un bateau de croisière.",
+    href: "/blog/croisiere-fluviale-europe",
   },
 ];
 
 export default function InspirationCarousel() {
   const trackRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
   const scrollByDir = (direction: number) => {
     const track = trackRef.current;
@@ -108,15 +118,6 @@ export default function InspirationCarousel() {
     };
   }, []);
 
-  const goToCta = () => {
-    const target = document.getElementById("cta-final");
-    if (target) {
-      const offset =
-        target.getBoundingClientRect().top + window.pageYOffset - 88;
-      window.scrollTo({ top: offset, behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="relative">
       <button
@@ -138,7 +139,7 @@ export default function InspirationCarousel() {
           <div
             key={d.title}
             className="carousel-card bg-surface-container-lowest rounded-xl luxury-shadow overflow-hidden group cursor-pointer border border-outline-variant/30"
-            onClick={goToCta}
+            onClick={() => router.push(d.href)}
           >
             <div className="h-52 sm:h-64 overflow-hidden relative">
               {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -158,18 +159,14 @@ export default function InspirationCarousel() {
               <p className="card-desc font-body-md text-[14px] sm:text-[16px] text-on-surface-variant mb-4">
                 {d.desc}
               </p>
-              <a
+              <Link
                 className="discover-link text-primary font-label text-label text-[13px] sm:text-[14px] flex items-center hover:gap-2 transition-all"
-                href="#cta-final"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  goToCta();
-                }}
+                href={d.href}
+                onClick={(e) => e.stopPropagation()}
               >
-                NOUS CONTACTER{" "}
+                DÉCOUVRIR CETTE CROISIÈRE{" "}
                 <span className="material-symbols-outlined ml-2">arrow_forward</span>
-              </a>
+              </Link>
             </div>
           </div>
         ))}
