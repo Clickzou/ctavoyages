@@ -1,3 +1,5 @@
+import fs from "node:fs";
+import path from "node:path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -33,7 +35,15 @@ export default async function BlogArticlePage({
   // Images de section : superposition Unsplash (par index) sauf si l'article
   // définit déjà son image en dur (ex. Maldives). La section 0 garde son visuel.
   const overlay = SECTION_IMAGES[slug] || {};
-  const imgFor = (i: number) => article.sections[i].img ?? overlay[i]?.src;
+  // Fallback par convention : si l'article n'a ni image en dur ni superposition
+  // Unsplash, on utilise /generated/blog-<slug>-<n>.jpg s'il existe (images fal.ai).
+  const publicDir = path.join(process.cwd(), "public");
+  const conventionImg = (i: number) => {
+    const rel = `/generated/blog-${slug}-${i + 1}.jpg`;
+    return fs.existsSync(path.join(publicDir, rel)) ? rel : undefined;
+  };
+  const imgFor = (i: number) =>
+    article.sections[i].img ?? overlay[i]?.src ?? conventionImg(i);
   const altFor = (i: number) =>
     article.sections[i].imgAlt ?? overlay[i]?.alt ?? article.sections[i].h2;
 
@@ -149,10 +159,11 @@ export default async function BlogArticlePage({
             </div>
           )}
 
-          {/* Sections : bandes pleine largeur alternées (blanc/gris, photo gauche/droite) */}
+          {/* Sections : bandes pleine largeur alternées. 1re section (après le hero)
+             = texte à gauche / photo à droite, puis on alterne à chaque section. */}
           {article.sections.map((section, i) => {
             const gray = i % 2 === 1;
-            const photoRight = i % 2 === 1;
+            const photoRight = i % 2 === 0;
             const bg = gray ? "bg-[#F4F6F9]" : "bg-white";
             const imgSrc = imgFor(i);
 
