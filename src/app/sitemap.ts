@@ -18,7 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/engagements-rse",
     "/equipe",
     "/demande-devis",
-    "/demande-renseignement",
     "/boxing-day",
     "/f1",
     "/foot-europeen",

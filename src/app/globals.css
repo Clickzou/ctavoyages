@@ -18,19 +18,21 @@
   --font-body-md: var(--font-body), sans-serif;
   --font-label: var(--font-body), sans-serif;
 
-  /* Tailles de police (taille / interligne / graisse / interlettrage) */
+  /* Tailles de police (taille / interligne / interlettrage).
+     NB : la graisse des titres n'est volontairement PAS définie ici. Sinon
+     les tailles nommées (text-h1/h2/h3) imposeraient 700 uniquement là où
+     elles sont utilisées (souvent au seul breakpoint md), tandis que les
+     tailles arbitraires text-[..] n'imposent aucune graisse — d'où des titres
+     inégalement gras selon la largeur. La graisse est fixée plus bas sur les
+     familles .font-h1/.font-h2/.font-h3, donc identique à tous les breakpoints. */
   --text-h1: 48px;
   --text-h1--line-height: 1.2;
-  --text-h1--font-weight: 700;
   --text-h1-mobile: 32px;
   --text-h1-mobile--line-height: 1.2;
-  --text-h1-mobile--font-weight: 700;
   --text-h2: 36px;
   --text-h2--line-height: 1.3;
-  --text-h2--font-weight: 700;
   --text-h3: 28px;
   --text-h3--line-height: 1.4;
-  --text-h3--font-weight: 700;
   --text-body-lg: 18px;
   --text-body-lg--line-height: 1.7;
   --text-body-lg--font-weight: 400;
@@ -103,6 +105,22 @@
 }
 
 /* =========================================================
+   GRAISSE DES TITRES — fixée sur les familles, identique à tous les
+   breakpoints (voir la note dans @theme). Placée en couche `base` pour que
+   les utilitaires posés explicitement (font-semibold, font-bold…) priment
+   quand un titre demande volontairement une autre graisse.
+   ========================================================= */
+@layer base {
+  .font-h1 {
+    font-weight: 800;
+  }
+  .font-h2,
+  .font-h3 {
+    font-weight: 700;
+  }
+}
+
+/* =========================================================
    CSS GLOBAL (porté quasi à l'identique depuis l'ancien <style>)
    ========================================================= */
 html {
@@ -164,6 +182,10 @@ html:not(.icons-ready) .material-symbols-outlined {
   background: linear-gradient(135deg, #004191 0%, #2974be 50%, #73a6d8 100%);
 }
 .trust-banner {
+  /* Hauteur d'un message = hauteur du bandeau. Pilotée par variable pour que
+     la translation du ticker s'y adapte automatiquement (mobile inclus). */
+  --trust-h: 48px;
+  height: var(--trust-h);
   overflow: hidden;
   position: relative;
 }
@@ -173,7 +195,7 @@ html:not(.icons-ready) .material-symbols-outlined {
   animation: trustSlide 6s ease-in-out infinite;
 }
 .trust-ticker-item {
-  height: 48px;
+  height: var(--trust-h);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,7 +211,7 @@ html:not(.icons-ready) .material-symbols-outlined {
 }
 @keyframes trustSlide {
   0%, 40% { transform: translateY(0); }
-  50%, 90% { transform: translateY(-48px); }
+  50%, 90% { transform: translateY(calc(-1 * var(--trust-h))); }
   100% { transform: translateY(0); }
 }
 
@@ -745,12 +767,11 @@ html:not(.icons-ready) .material-symbols-outlined {
   #cta-tooltip { width: calc(100vw - 24px); }
 }
 
-/* Trust banner mobile */
+/* Trust banner mobile : le ticker défile aussi (comme sur PC). On augmente la
+   hauteur pour que le message le plus long (2 lignes en mobile) tienne dans la
+   fenêtre du bandeau ; la translation suit via --trust-h. */
 @media (max-width: 480px) {
-  .trust-banner { height: auto; min-height: 48px; padding: 6px 12px; }
-  .trust-ticker { animation: none; }
-  .trust-ticker-item:first-child { display: flex; }
-  .trust-ticker-item:last-child { display: none; }
+  .trust-banner { --trust-h: 56px; }
 }
 
 /* Filtres map très petits écrans */

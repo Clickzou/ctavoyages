@@ -240,7 +240,7 @@ export default function Page() {
             </a>{" "}
             ou utiliser notre{" "}
             <Link
-              href="/demande-renseignement"
+              href="/demande-devis"
               className="text-primary font-medium hover:underline"
             >
               formulaire de demande de renseignement

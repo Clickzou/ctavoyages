@@ -109,8 +109,8 @@ export default function DestinationsPage() {
         <WorldMap />
 
         {/* GRILLE DESTINATIONS */}
-        <section className="bg-white py-section_padding_v" id="dest-section">
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+        <section className="bg-surface-container py-section_padding_v" id="dest-section">
+          <div className="px-4 sm:px-gutter lg:px-[100px]">
             <div className="text-center mb-8 sm:mb-10">
               <p className="text-primary font-label text-label mb-2 tracking-wider">
                 NOS DESTINATIONS ET ÉVÉNEMENTS
@@ -197,7 +197,7 @@ export default function DestinationsPage() {
                 </p>
                 <div className="flex flex-col xs:flex-row flex-wrap justify-center gap-3 sm:gap-4">
                   <Link
-                    href="/demande-renseignement"
+                    href="/demande-devis"
                     className="bg-[#FBBF12] text-[#1A1A1A] px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:brightness-110 hover:scale-105 active:scale-95 transition-all shadow-lg text-center flex items-center justify-center"
                   >
                     Nous contacter

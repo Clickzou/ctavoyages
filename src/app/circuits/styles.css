@@ -95,16 +95,10 @@
   scrollbar-width: none;
 }
 .carousel-track::-webkit-scrollbar { display: none; }
-.carousel-card {
-  flex: 0 0 360px;
-  scroll-snap-align: start;
-}
-@media (max-width: 480px) {
-  .carousel-card { flex: 0 0 calc(100vw - 48px); }
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .carousel-card { flex: 0 0 300px; }
-}
+/* NB : la largeur de .carousel-card (base 360px, variantes mobile, et surtout
+   « 4 cartes » sur desktop) est définie globalement dans globals.css. On ne la
+   redéfinit PAS ici : une copie locale, chargée après globals et de même
+   spécificité, écrasait la règle 4-colonnes et n'affichait que 3 cartes. */
 .carousel-card .discover-link { transition: color 0.2s, gap 0.2s; }
 .carousel-card:hover .discover-link,
 .carousel-card:hover .discover-link .material-symbols-outlined {

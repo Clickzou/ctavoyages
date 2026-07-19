@@ -546,7 +546,7 @@ export default function WorldMap() {
               Événements sportifs
             </div>
           </div>
-          <a href="/demande-renseignement" className="inline-flex items-center gap-1.5 font-body-md text-[14px] sm:text-[15px] font-medium text-[#3179C4] hover:underline">
+          <a href="/demande-devis" className="inline-flex items-center gap-1.5 font-body-md text-[14px] sm:text-[15px] font-medium text-[#3179C4] hover:underline">
             Vous ne trouvez pas votre destination ou événement ? Contactez-nous
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3179C4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M12 5l7 7-7 7" />

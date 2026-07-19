@@ -104,8 +104,11 @@ export default function HeroSlideshow() {
                 const stateClass = `transition-opacity duration-1000 ease-in-out ${
                   active ? "opacity-100" : "opacity-0 pointer-events-none"
                 }`;
+                // Graisse gérée globalement (.font-h1, cf. globals.css) donc
+                // identique à tous les breakpoints. xl:whitespace-nowrap force
+                // le titre sur une seule ligne sur grand écran (PC plein écran).
                 const titleClass =
-                  "font-h1 text-[32px] sm:text-[40px] md:text-h1 text-white mb-4 sm:mb-6 leading-[1.1]";
+                  "font-h1 text-[32px] sm:text-[40px] md:text-h1 xl:whitespace-nowrap text-white mb-4 sm:mb-6 leading-[1.1]";
                 return (
                   <div
                     key={slide.src}

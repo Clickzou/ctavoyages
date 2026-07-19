@@ -66,10 +66,6 @@ export default function TeamSection() {
             <div className="team-photo-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img className="team-photo" src={p.image} alt={p.alt} />
-              <span className="team-badge">
-                <span className="badge-default">{p.badgeDefault}</span>
-                <span className="badge-hover">{p.badgeHover}</span>
-              </span>
             </div>
             <div className="team-card-body">
               <h3 className="team-name">{p.name}</h3>

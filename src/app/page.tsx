@@ -72,7 +72,7 @@ export default function Home() {
                   key={a.title}
                   data-reveal="fade-up"
                   data-reveal-delay={i * 140}
-                  className="group relative bg-white rounded-2xl p-7 sm:p-8 border border-outline-variant/40 shadow-[0_2px_24px_rgba(0,0,0,0.05)] hover:-translate-y-1.5 hover:shadow-[0_18px_44px_rgba(49,121,196,0.16)] transition-all duration-300 overflow-hidden"
+                  className="group relative text-center bg-white rounded-2xl p-7 sm:p-8 border border-outline-variant/40 shadow-[0_2px_24px_rgba(0,0,0,0.05)] hover:-translate-y-1.5 hover:shadow-[0_18px_44px_rgba(49,121,196,0.16)] transition-all duration-300 overflow-hidden"
                 >
                   <span className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-[#3179C4] to-[#FBBF12] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
                   <div className="w-14 h-14 rounded-2xl bg-[#3179C4]/10 flex items-center justify-center mb-6 mx-auto group-hover:bg-[#3179C4] group-hover:scale-105 transition-all duration-300">
@@ -113,7 +113,7 @@ export default function Home() {
         </section>
 
         {/* TRUST BANNER */}
-        <div className="trust-banner bg-[#004191] h-[48px] px-4 sm:px-gutter">
+        <div className="trust-banner bg-[#004191] px-4 sm:px-gutter">
           <div className="trust-ticker">
             <div className="trust-ticker-item">
               <p className="text-white font-body-md text-[12px] xs:text-[14px] md:text-[16px] text-center">

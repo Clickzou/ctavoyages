@@ -166,7 +166,7 @@ const RIGHT: FaqEntry[] = [
       <p>
         Oui. Grâce au réseau TourCom et à nos partenaires, nous pouvons organiser
         des voyages vers de nombreuses autres destinations dans le monde.{" "}
-        <a href="/demande-renseignement" className="text-[#3179C4] underline">
+        <a href="/demande-devis" className="text-[#3179C4] underline">
           Contactez-nous
         </a>{" "}
         pour en discuter.

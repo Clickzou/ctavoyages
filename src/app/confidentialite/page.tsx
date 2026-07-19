@@ -282,7 +282,7 @@ export default function Page() {
             </Link>{" "}
             ou nous adresser une{" "}
             <Link
-              href="/demande-renseignement"
+              href="/demande-devis"
               className="text-primary font-medium hover:underline"
             >
               demande de renseignement

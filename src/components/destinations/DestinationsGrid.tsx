@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { MAP_DESTINATIONS } from "@/lib/map-destinations";
 
 type CardType = "destination" | "sport";
@@ -379,7 +379,7 @@ const COUNTRY_DATA: Record<Continent, { destination: string[]; sport: string[] }
   },
 };
 
-const PER_PAGE = 6;
+const PER_PAGE = 8;
 const CONTINENTS: Continent[] = ["asie", "afrique", "ameriques", "europe"];
 
 /** Normalise (minuscules + sans accents) pour la recherche. */
@@ -390,11 +390,16 @@ const norm = (s: string) =>
     .replace(/[̀-ͯ]/g, "");
 
 export default function DestinationsGrid() {
-  const [activeType, setActiveType] = useState<"all" | CardType>("all");
+  // Le filtre par type (destinations / sport) a été retiré de l'UI : on affiche
+  // toujours tout. `activeType` reste une constante pour la logique de filtrage.
+  const activeType: "all" | CardType = "all";
   const [activeContinent, setActiveContinent] = useState<"all" | Continent>("all");
   const [activeCountry, setActiveCountry] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [query, setQuery] = useState("");
+  // Menu déroulant ouvert dans la barre compacte ("type" | "continent" | null)
+  const [openMenu, setOpenMenu] = useState<null | "type" | "continent">(null);
+  const barRef = useRef<HTMLDivElement>(null);
 
   // Continents disponibles selon le type actif (masque les boutons vides)
   const continentsWithData = useMemo(() => {
@@ -438,13 +443,6 @@ export default function DestinationsGrid() {
     }));
   }, [activeContinent, activeType]);
 
-  function handleType(type: "all" | CardType) {
-    setActiveType(type);
-    setActiveContinent("all");
-    setActiveCountry(null);
-    setCurrentPage(1);
-  }
-
   function handleContinent(continent: "all" | Continent) {
     setActiveContinent(continent);
     setActiveCountry(null);
@@ -461,6 +459,25 @@ export default function DestinationsGrid() {
     setActiveCountry(null);
     setCurrentPage(1);
   }
+
+  // Ferme les menus déroulants au clic en dehors de la barre ou à la touche Échap.
+  useEffect(() => {
+    if (!openMenu) return;
+    const onDown = (e: MouseEvent) => {
+      if (barRef.current && !barRef.current.contains(e.target as Node)) {
+        setOpenMenu(null);
+      }
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpenMenu(null);
+    };
+    document.addEventListener("mousedown", onDown);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDown);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [openMenu]);
 
   function loadMore() {
     if (visibleCount >= total) {
@@ -483,62 +500,129 @@ export default function DestinationsGrid() {
 
   return (
     <>
-      {/* ÉTAPE 1 : CONTINENTS */}
-      {activeContinent === "all" && (
-        <div className="map-filter-row mb-10 sm:mb-12">
-          <span className="filter-label">Continent</span>
-          <div className="filter-buttons">
-            <button
-              className={`map-filter-btn${activeContinent === "all" ? " f-active" : ""}`}
-              onClick={() => handleContinent("all")}
-            >
-              Tous
-            </button>
-            {CONTINENTS.map((c) =>
-              continentsWithData.has(c) ? (
-                <button
-                  key={c}
-                  className="map-filter-btn"
-                  onClick={() => handleContinent(c)}
-                >
-                  {CONTINENT_NAMES[c]}
-                </button>
-              ) : null
+      {/* BARRE DE FILTRES COMPACTE STICKY : recherche + menus Type / Continent
+          + compteur, sur une seule ligne, qui reste visible au défilement. */}
+      <div
+        ref={barRef}
+        className="sticky top-[80px] z-30 mb-5 sm:mb-6 mx-auto w-full lg:w-[calc(50%-16px)]"
+      >
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3 rounded-2xl sm:rounded-full bg-white/95 backdrop-blur-md border border-outline-variant/50 shadow-[0_6px_24px_rgba(0,0,0,0.08)] p-2 sm:p-2.5">
+          {/* Recherche (pilule arrondie) */}
+          <div className="relative order-1 w-full sm:w-auto sm:flex-1 min-w-[160px] flex items-center rounded-full bg-surface-container-low">
+            <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">
+              search
+            </span>
+            <input
+              type="search"
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                setCurrentPage(1);
+              }}
+              placeholder="Rechercher une destination…"
+              aria-label="Rechercher une destination"
+              className="w-full pl-11 pr-9 py-2.5 rounded-full border-0 bg-transparent text-[14px] text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:ring-0"
+            />
+            {query && (
+              <button
+                type="button"
+                onClick={() => {
+                  setQuery("");
+                  setCurrentPage(1);
+                }}
+                aria-label="Effacer la recherche"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-[#3179C4] flex items-center"
+              >
+                <span className="material-symbols-outlined text-[20px]">close</span>
+              </button>
             )}
           </div>
-        </div>
-      )}
 
-      {/* ÉTAPE 2 : TYPE */}
-      <div className="map-filter-row mb-4">
-        <span className="filter-label">Votre événement</span>
-        <div className="filter-buttons">
-          <button
-            className={`type-filter-btn${activeType === "all" ? " tf-active" : ""}`}
-            onClick={() => handleType("all")}
-          >
-            <span className="flex items-center justify-center gap-1.5">
-              <span className="material-symbols-outlined text-[16px]">public</span> Tout
-            </span>
-          </button>
-          <button
-            className={`type-filter-btn${activeType === "destination" ? " tf-active" : ""}`}
-            onClick={() => handleType("destination")}
-          >
-            <span className="flex items-center justify-center gap-1.5">
-              <span className="material-symbols-outlined text-[16px]">flight_takeoff</span>{" "}
-              Destinations
-            </span>
-          </button>
-          <button
-            className={`type-filter-btn tf-sport${activeType === "sport" ? " tf-active" : ""}`}
-            onClick={() => handleType("sport")}
-          >
-            <span className="flex items-center justify-center gap-1.5">
-              <span className="material-symbols-outlined text-[16px]">sports_soccer</span>{" "}
-              Voyage sport
-            </span>
-          </button>
+          {/* Menu Continent */}
+          <div className="relative order-4">
+            <button
+              type="button"
+              aria-haspopup="menu"
+              aria-expanded={openMenu === "continent"}
+              onClick={() =>
+                setOpenMenu((m) => (m === "continent" ? null : "continent"))
+              }
+              className="inline-flex items-center gap-1.5 rounded-full border border-[#3179C4]/50 bg-white px-3 sm:px-3.5 py-2 text-[13px] sm:text-[14px] font-medium text-[#3179C4] hover:bg-[#3179C4]/[0.06] hover:border-[#3179C4] transition-colors whitespace-nowrap"
+            >
+              <span className="material-symbols-outlined text-[18px]">
+                travel_explore
+              </span>
+              <span className="hidden xs:inline">
+                {activeContinent === "all"
+                  ? "Tous les continents"
+                  : CONTINENT_NAMES[activeContinent]}
+              </span>
+              <span
+                className={`material-symbols-outlined text-[18px] transition-transform ${
+                  openMenu === "continent" ? "rotate-180" : ""
+                }`}
+              >
+                expand_more
+              </span>
+            </button>
+            {openMenu === "continent" && (
+              <div
+                role="menu"
+                className="absolute right-0 mt-2 z-40 min-w-[200px] rounded-xl bg-white border border-outline-variant/50 shadow-[0_12px_32px_rgba(0,0,0,0.16)] p-1.5"
+              >
+                <button
+                  type="button"
+                  role="menuitem"
+                  onClick={() => {
+                    handleContinent("all");
+                    setOpenMenu(null);
+                  }}
+                  className={`w-full px-3 py-2 rounded-lg text-[14px] text-left transition-colors ${
+                    activeContinent === "all"
+                      ? "bg-[#3179C4] text-white"
+                      : "text-on-surface hover:bg-surface-container-high"
+                  }`}
+                >
+                  Tous les continents
+                </button>
+                {CONTINENTS.filter((c) => continentsWithData.has(c)).map((c) => (
+                  <button
+                    key={c}
+                    type="button"
+                    role="menuitem"
+                    onClick={() => {
+                      handleContinent(c);
+                      setOpenMenu(null);
+                    }}
+                    className={`w-full px-3 py-2 rounded-lg text-[14px] text-left transition-colors ${
+                      activeContinent === c
+                        ? "bg-[#3179C4] text-white"
+                        : "text-on-surface hover:bg-surface-container-high"
+                    }`}
+                  >
+                    {CONTINENT_NAMES[c]}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Compteur */}
+          <span className="order-5 ml-auto sm:ml-1 px-1.5 text-[13px] sm:text-[14px] font-semibold text-on-surface whitespace-nowrap">
+            {total} résultat{total > 1 ? "s" : ""}
+          </span>
+        </div>
+      </div>
+
+      {/* Légende des pastilles (couleurs des marqueurs de la carte) */}
+      <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-5 sm:mb-6">
+        <div className="flex items-center gap-2 text-[13px] text-on-surface-variant">
+          <span className="inline-block w-3 h-3 rounded-full bg-[#3179C4] border-2 border-white shadow-[0_1px_4px_rgba(49,121,196,.4)]" />
+          Destinations de voyage
+        </div>
+        <div className="flex items-center gap-2 text-[13px] text-on-surface-variant">
+          <span className="inline-block w-3 h-3 rounded-full bg-[#e74c3c] border-2 border-white shadow-[0_1px_4px_rgba(231,76,60,.4)]" />
+          Événements sportifs
         </div>
       </div>
 
@@ -576,77 +660,9 @@ export default function DestinationsGrid() {
         </div>
       )}
 
-      {/* Légende */}
-      <div className="flex items-center justify-center gap-6 mb-6">
-        <div className="flex items-center gap-2 text-[13px] text-on-surface-variant">
-          <span
-            style={{
-              display: "inline-block",
-              width: "12px",
-              height: "12px",
-              borderRadius: "50%",
-              background: "#3179C4",
-              border: "2px solid #fff",
-              boxShadow: "0 1px 4px rgba(49,121,196,.4)",
-            }}
-          />
-          Destinations de voyage
-        </div>
-        <div className="flex items-center gap-2 text-[13px] text-on-surface-variant">
-          <span
-            style={{
-              display: "inline-block",
-              width: "12px",
-              height: "12px",
-              borderRadius: "50%",
-              background: "#e74c3c",
-              border: "2px solid #fff",
-              boxShadow: "0 1px 4px rgba(231,76,60,.4)",
-            }}
-          />
-          Événements sportifs
-        </div>
-      </div>
-
-      {/* RECHERCHE + COMPTEUR (recherche à gauche, compteur à droite) */}
-      <div className="flex flex-col sm:flex-row-reverse sm:items-center sm:justify-between gap-4 mb-6 sm:mb-8">
-        <p className="font-h3 text-[18px] sm:text-[20px] font-bold text-on-surface">
-          {total} résultat{total > 1 ? "s" : ""}
-        </p>
-        <div className="relative w-full sm:w-[320px]">
-          <span className="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px] pointer-events-none">
-            search
-          </span>
-          <input
-            type="search"
-            value={query}
-            onChange={(e) => {
-              setQuery(e.target.value);
-              setCurrentPage(1);
-            }}
-            placeholder="Rechercher une destination…"
-            aria-label="Rechercher une destination"
-            className="w-full pl-11 pr-10 py-2.5 rounded-full border-[1.5px] border-outline-variant/60 bg-white text-[14px] text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:border-[#3179C4] focus:ring-2 focus:ring-[#3179C4]/15 transition-all"
-          />
-          {query && (
-            <button
-              type="button"
-              onClick={() => {
-                setQuery("");
-                setCurrentPage(1);
-              }}
-              aria-label="Effacer la recherche"
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-[#3179C4] flex items-center"
-            >
-              <span className="material-symbols-outlined text-[20px]">close</span>
-            </button>
-          )}
-        </div>
-      </div>
-
       {/* GRILLE */}
       <div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
         id="dest-grid"
       >
         {visibleCards.map((card) => {
@@ -702,7 +718,7 @@ export default function DestinationsGrid() {
           </p>
           <p className="font-body-md text-[14px] text-on-surface-variant/70">
             Essayez un autre filtre ou{" "}
-            <a href="/demande-renseignement" className="text-[#3179C4] underline">
+            <a href="/demande-devis" className="text-[#3179C4] underline">
               contactez-nous
             </a>
             .

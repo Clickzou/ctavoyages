@@ -149,7 +149,7 @@ export default function Header() {
             </nav>
           <div className="flex items-center gap-3 flex-shrink-0">
             <Link
-              href="/demande-renseignement"
+              href="/demande-devis"
               className={`hidden sm:inline-flex px-4 lg:px-6 py-2.5 rounded-lg font-label text-label uppercase tracking-wide active:scale-95 transition-all text-[13px] lg:text-[14px] ${
                 overHero
                   ? "bg-white/10 backdrop-blur-sm text-white border-[1.5px] border-white hover:bg-white hover:text-[#3179C4]"
@@ -289,7 +289,7 @@ export default function Header() {
         </div>
         <div className="p-4 border-t border-outline-variant mt-2">
           <Link
-            href="/demande-renseignement"
+            href="/demande-devis"
             className="block w-full bg-white text-[#3179C4] border-[1.5px] border-[#3179C4] py-3 rounded-lg font-label text-label uppercase tracking-wide hover:bg-[#3179C4] hover:text-white transition-all shadow-sm text-center"
             onClick={closeMenu}
           >
