@@ -141,6 +141,27 @@ export default function WorldMap() {
         "qatar-sport": { center: [25.5, 51.2], zoom: 8 }, "emirats-sport": { center: [24.5, 54.6], zoom: 8 },
       };
 
+      // Toutes les destinations issues de MAP_DESTINATIONS (Inde, Bali, Oman…)
+      // n'avaient pas de vue dédiée ci-dessus : le clic ne recentrait donc pas
+      // la carte. On complète automatiquement avec les coordonnées du marqueur
+      // et un zoom adapté à la taille du pays (5.5 par défaut).
+      const FALLBACK_ZOOM: Record<string, number> = {
+        australie: 3.6, canada: 3.5, inde: 4.2, mongolie: 4.2, perou: 4.5,
+        patagonie: 4.5, "afrique-du-sud": 4.5, namibie: 4.8, egypte: 4.8,
+        norvege: 4.2, suede: 4.2, botswana: 5, kenya: 5.2, tanzanie: 5,
+        madagascar: 5, ouzbekistan: 5, vietnam: 5, italie: 5, espagne: 5,
+        france: 5, "nouvelle-zelande": 5, islande: 5, grece: 5.5, portugal: 5.5,
+        floride: 5.5, oman: 5.5, ecosse: 6, maldives: 6, croatie: 6.2,
+        jordanie: 6.5, "sri-lanka": 6.5, "costa-rica": 6.5, crete: 7.5,
+        "republique-dominicaine": 7, polynesie: 7, slovenie: 7, acores: 7.5,
+        bali: 8, dubai: 8.5, "la-reunion": 8.5, venise: 9, santorin: 9.5,
+      };
+      DEST.forEach((d) => {
+        if (!COUNTRY_VIEWS[d.id]) {
+          COUNTRY_VIEWS[d.id] = { center: d.ll, zoom: FALLBACK_ZOOM[d.id] ?? 5.5 };
+        }
+      });
+
       const isMobile = window.innerWidth < 768;
       if (isMobile) {
         VIEWS.all.zoom = 1.2; VIEWS.asia.zoom = 2.4; VIEWS.africa.zoom = 2.2; VIEWS.americas.zoom = 1.8; VIEWS.europe.zoom = 2.8;
