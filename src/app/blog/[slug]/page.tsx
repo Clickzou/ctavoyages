@@ -1,5 +1,3 @@
-import fs from "node:fs";
-import path from "node:path";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -7,6 +5,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import { getArticle, BLOG_SLUGS } from "@/lib/blog-content";
 import { SECTION_IMAGES } from "@/lib/blog-content/section-images.generated";
+import { GENERATED_SECTION_IMAGES } from "@/lib/blog-content/generated-images.generated";
 
 export function generateStaticParams() {
   return BLOG_SLUGS.map((slug) => ({ slug }));
@@ -37,11 +36,14 @@ export default async function BlogArticlePage({
   const overlay = SECTION_IMAGES[slug] || {};
   // Fallback par convention : si l'article n'a ni image en dur ni superposition
   // Unsplash, on utilise /generated/blog-<slug>-<n>.jpg s'il existe (images fal.ai).
-  const publicDir = path.join(process.cwd(), "public");
-  const conventionImg = (i: number) => {
-    const rel = `/generated/blog-${slug}-${i + 1}.jpg`;
-    return fs.existsSync(path.join(publicDir, rel)) ? rel : undefined;
-  };
+  // La liste des fichiers presents est generee au build (prebuild) : un test
+  // fs.existsSync sur process.cwd()+"/public" ferait embarquer tout le dossier
+  // public (275 Mo) dans la fonction serverless, au-dela de la limite Vercel.
+  const availableImgs = GENERATED_SECTION_IMAGES[slug];
+  const conventionImg = (i: number) =>
+    availableImgs?.includes(i + 1)
+      ? `/generated/blog-${slug}-${i + 1}.jpg`
+      : undefined;
   const imgFor = (i: number) =>
     article.sections[i].img ?? overlay[i]?.src ?? conventionImg(i);
   const altFor = (i: number) =>
