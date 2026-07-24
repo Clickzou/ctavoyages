@@ -22,7 +22,7 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.cta-voyages.com"),
+  metadataBase: new URL("https://www.cta-events.com"),
   title: {
     default: "CTA Voyages - 30 ans d'expertise en voyages sur mesure",
     template: "%s | CTA Voyages",
