@@ -28,7 +28,6 @@ import kenya from "./kenya";
 import tanzanie from "./tanzanie";
 import afriqueDuSud from "./afrique-du-sud";
 import namibie from "./namibie";
-import jordanie from "./jordanie";
 import dubai from "./dubai";
 import norvege from "./norvege";
 import ecosse from "./ecosse";
@@ -37,21 +36,41 @@ import venise from "./venise";
 import espagne from "./espagne";
 import portugal from "./portugal";
 import inde from "./inde";
-import madagascar from "./madagascar";
 import laReunion from "./la-reunion";
-import oman from "./oman";
 import botswana from "./botswana";
 import slovenie from "./slovenie";
-import ouzbekistan from "./ouzbekistan";
-import mongolie from "./mongolie";
 import patagonie from "./patagonie";
-import floride from "./floride";
 import republiqueDominicaine from "./republique-dominicaine";
 import polynesie from "./polynesie";
 import nouvelleZelande from "./nouvelle-zelande";
 import suede from "./suede";
 import acores from "./acores";
 import australie from "./australie";
+import royaumeUni from "./royaume-uni";
+import paysBas from "./pays-bas";
+import danemark from "./danemark";
+import finlande from "./finlande";
+import autriche from "./autriche";
+import suisse from "./suisse";
+import indonesie from "./indonesie";
+import malaisie from "./malaisie";
+import cambodge from "./cambodge";
+import laos from "./laos";
+import philippines from "./philippines";
+import coreeDuSud from "./coree-du-sud";
+import chine from "./chine";
+import senegal from "./senegal";
+import capVert from "./cap-vert";
+import tunisie from "./tunisie";
+import argentine from "./argentine";
+import bresil from "./bresil";
+import chili from "./chili";
+import bolivie from "./bolivie";
+import mexique from "./mexique";
+import guatemala from "./guatemala";
+import jamaique from "./jamaique";
+import bahamas from "./bahamas";
+import antillesFrancaises from "./antilles-francaises";
 
 /**
  * Registre des fiches destination « riches » (template complet avec itinéraire).
@@ -87,7 +106,6 @@ export const DESTINATION_CONTENT: Record<string, DestinationContent> = {
   tanzanie,
   "afrique-du-sud": afriqueDuSud,
   namibie,
-  jordanie,
   dubai,
   norvege,
   ecosse,
@@ -96,21 +114,41 @@ export const DESTINATION_CONTENT: Record<string, DestinationContent> = {
   espagne,
   portugal,
   inde,
-  madagascar,
   "la-reunion": laReunion,
-  oman,
   botswana,
   slovenie,
-  ouzbekistan,
-  mongolie,
   patagonie,
-  floride,
   "republique-dominicaine": republiqueDominicaine,
   polynesie,
   "nouvelle-zelande": nouvelleZelande,
   suede,
   acores,
   australie,
+  "royaume-uni": royaumeUni,
+  "pays-bas": paysBas,
+  danemark,
+  finlande,
+  autriche,
+  suisse,
+  indonesie,
+  malaisie,
+  cambodge,
+  laos,
+  philippines,
+  "coree-du-sud": coreeDuSud,
+  chine,
+  senegal,
+  "cap-vert": capVert,
+  tunisie,
+  argentine,
+  bresil,
+  chili,
+  bolivie,
+  mexique,
+  guatemala,
+  jamaique,
+  bahamas,
+  "antilles-francaises": antillesFrancaises,
 };
 
 /** Slugs disposant d'une fiche riche dédiée. */

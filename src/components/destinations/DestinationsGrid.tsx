@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { MAP_DESTINATIONS } from "@/lib/map-destinations";
+import { CHILD_CITY_IDS } from "@/lib/destination-groups";
 
 type CardType = "destination" | "sport";
 type Continent = "asie" | "afrique" | "ameriques" | "europe";
@@ -19,8 +20,8 @@ type DestCard = {
 };
 
 const CONTINENT_NAMES: Record<Continent, string> = {
-  asie: "Asie",
-  afrique: "Afrique",
+  asie: "Asie / Moyen-Orient",
+  afrique: "Afrique / Océan Indien",
   ameriques: "Amériques",
   europe: "Europe",
 };
@@ -28,11 +29,13 @@ const CONTINENT_NAMES: Record<Continent, string> = {
 /** Destinations déjà listées en dur ci-dessous (évite les doublons). */
 const EXISTING_GRID_IDS = new Set([
   "japon", "thailande", "maroc", "ile-maurice", "seychelles", "zanzibar",
-  "canada", "costa-rica", "laponie", "londres", "amsterdam", "porto", "rome",
+  "canada", "costa-rica",
 ]);
-/** Toutes les autres destinations (fiches riches) ajoutées automatiquement. */
+/** Toutes les autres destinations (fiches riches) ajoutées automatiquement.
+ *  Les villes/régions rattachées à un pays (Rome, Venise, Londres, Bali…) sont
+ *  exclues : la grille ne présente que des pays, comme la carte. */
 const EXTRA_DEST_CARDS: DestCard[] = MAP_DESTINATIONS.filter(
-  (m) => !EXISTING_GRID_IDS.has(m.id),
+  (m) => !EXISTING_GRID_IDS.has(m.id) && !CHILD_CITY_IDS.has(m.id),
 ).map((m) => ({
   badge: m.name.toUpperCase(),
   continent: m.continent,
@@ -133,61 +136,6 @@ const CARDS: DestCard[] = [
     alt: "Voyage au Costa Rica",
     title: "Costa Rica : volcans et forêts tropicales",
     desc: "Partez à l'aventure entre volcans, jungle luxuriante et écolodges nichés au cœur de la nature.",
-    cta: "DÉCOUVRIR",
-  },
-  {
-    badge: "LAPONIE",
-    continent: "europe",
-    type: "destination",
-    href: "/destination/laponie",
-    img: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=600&h=400&fit=crop&auto=format",
-    alt: "Voyage en Laponie",
-    title: "Laponie : Aurores boréales & rennes",
-    desc: "Vivez une expérience magique entre aurores boréales, étendues enneigées et nuit en igloo hôtel.",
-    cta: "DÉCOUVRIR",
-  },
-  {
-    badge: "LONDRES",
-    continent: "europe",
-    type: "destination",
-    href: "/destination/londres",
-    img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=600&h=400&fit=crop&auto=format",
-    alt: "Escapade à Londres",
-    title: "Londres : Big Ben, musées & gastronomie",
-    desc: "Découvrez une capitale vibrante où patrimoine, culture et art de vivre cosmopolite se rencontrent.",
-    cta: "DÉCOUVRIR",
-  },
-  {
-    badge: "AMSTERDAM",
-    continent: "europe",
-    type: "destination",
-    href: "/destination/amsterdam",
-    img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=600&h=400&fit=crop&auto=format",
-    alt: "Escapade à Amsterdam",
-    title: "Amsterdam : Canaux, musées & vélos",
-    desc: "Flânez entre canaux, maisons élégantes et ambiance créative au cœur d'une ville pleine de charme.",
-    cta: "DÉCOUVRIR",
-  },
-  {
-    badge: "PORTO",
-    continent: "europe",
-    type: "destination",
-    href: "/destination/porto",
-    img: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=600&h=400&fit=crop&auto=format",
-    alt: "Escapade à Porto",
-    title: "Porto : Azulejos, Douro & fado",
-    desc: "Laissez-vous porter par l'authenticité de Porto, entre façades colorées, caves du Douro et séjour en pousada de caractère.",
-    cta: "DÉCOUVRIR",
-  },
-  {
-    badge: "ROME",
-    continent: "europe",
-    type: "destination",
-    href: "/destination/rome",
-    img: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600&h=400&fit=crop&auto=format",
-    alt: "Escapade à Rome",
-    title: "Rome : Colisée, Vatican & dolce vita",
-    desc: "Plongez dans l'histoire éternelle entre vestiges antiques, places emblématiques et douceur de vivre italienne.",
     cta: "DÉCOUVRIR",
   },
   ...EXTRA_DEST_CARDS,
@@ -348,36 +296,39 @@ const CARDS: DestCard[] = [
   },
 ];
 
-// Données pays pour les boutons de filtre (reprend COUNTRY_DATA du script source)
-const COUNTRY_DATA: Record<Continent, { destination: string[]; sport: string[] }> = {
-  asie: {
-    destination: ["Japon", "Thaïlande"],
-    sport: ["Qatar", "Émirats arabes unis"],
-  },
-  afrique: {
-    destination: ["Maroc", "Île Maurice", "Seychelles", "Zanzibar"],
-    sport: [],
-  },
-  ameriques: {
-    destination: ["Canada", "Costa Rica"],
-    sport: ["États-Unis", "Canada (F1)"],
-  },
-  europe: {
-    destination: ["Laponie", "Londres", "Amsterdam", "Porto", "Rome"],
-    sport: [
-      "Angleterre",
-      "Espagne",
-      "Italie",
-      "Allemagne",
-      "France",
-      "Pays de Galles",
-      "Écosse",
-      "Irlande",
-      "Monaco",
-      "Belgique",
-    ],
-  },
+/** Libellé lisible d'un badge (le badge est en capitales sur la carte). Les
+ *  destinations sont résolues depuis MAP_DESTINATIONS, les pays « sport » sont
+ *  listés ici car ils n'ont pas de fiche destination. */
+const COUNTRY_LABELS: Record<string, string> = {
+  ...Object.fromEntries(MAP_DESTINATIONS.map((m) => [m.name.toUpperCase(), m.name])),
+  ANGLETERRE: "Angleterre",
+  ALLEMAGNE: "Allemagne",
+  "PAYS DE GALLES": "Pays de Galles",
+  IRLANDE: "Irlande",
+  MONACO: "Monaco",
+  BELGIQUE: "Belgique",
+  "ÉTATS-UNIS": "États-Unis",
+  QATAR: "Qatar",
+  "ÉMIRATS ARABES UNIS": "Émirats arabes unis",
 };
+
+/** Boutons de filtre « pays », déduits directement des cartes affichées : la
+ *  liste reste automatiquement synchronisée avec les destinations du site. */
+const COUNTRY_DATA: Record<Continent, { destination: string[]; sport: string[] }> =
+  CARDS.reduce(
+    (acc, card) => {
+      const bucket = acc[card.continent][card.type];
+      const label = COUNTRY_LABELS[card.badge] ?? card.badge;
+      if (!bucket.includes(label)) bucket.push(label);
+      return acc;
+    },
+    {
+      asie: { destination: [], sport: [] },
+      afrique: { destination: [], sport: [] },
+      ameriques: { destination: [], sport: [] },
+      europe: { destination: [], sport: [] },
+    } as Record<Continent, { destination: string[]; sport: string[] }>,
+  );
 
 const PER_PAGE = 8;
 const CONTINENTS: Continent[] = ["asie", "afrique", "ameriques", "europe"];
@@ -434,12 +385,15 @@ export default function DestinationsGrid() {
     if (activeContinent === "all") return [];
     const data = COUNTRY_DATA[activeContinent];
     let countries: string[];
-    if (activeType === "all") countries = [...data.destination, ...data.sport];
+    if (activeType === "all")
+      // Un pays peut être à la fois destination et événement sportif (France,
+      // Italie, Espagne, Canada) : un seul bouton, présenté en destination.
+      countries = Array.from(new Set([...data.destination, ...data.sport]));
     else if (activeType === "destination") countries = data.destination;
     else countries = data.sport;
     return countries.map((name) => ({
       name,
-      sport: data.sport.includes(name),
+      sport: data.sport.includes(name) && !data.destination.includes(name),
     }));
   }, [activeContinent, activeType]);
 

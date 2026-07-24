@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import "leaflet/dist/leaflet.css";
 import { MAP_DESTINATIONS } from "@/lib/map-destinations";
+import { COUNTRY_CITIES, CHILD_CITY_IDS } from "@/lib/destination-groups";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
@@ -30,19 +31,26 @@ const CONT_MAP: Record<string, string> = {
 /** Ids déjà présents ci-dessous (on ne les reduplique pas depuis MAP_DESTINATIONS). */
 const EXISTING_MAP_IDS = new Set([
   "japon", "thailande", "maroc", "ile-maurice", "seychelles", "zanzibar",
-  "canada", "costa-rica", "laponie", "londres", "amsterdam", "porto", "rome",
+  "canada", "costa-rica", "laponie", "porto", "rome",
 ]);
 /** Drapeau (code ISO 3166-1 alpha-2, ou subdivision flagcdn) par slug de destination. */
 const FLAG_BY_SLUG: Record<string, string> = {
   islande: "is", france: "fr", grece: "gr", santorin: "gr", crete: "gr",
   italie: "it", venise: "it", espagne: "es", portugal: "pt", croatie: "hr",
-  ecosse: "gb-sct", norvege: "no", suede: "se", slovenie: "si", acores: "pt",
-  egypte: "eg", kenya: "ke", tanzanie: "tz", "afrique-du-sud": "za",
-  namibie: "na", botswana: "bw", maldives: "mv", madagascar: "mg",
-  "la-reunion": "re", vietnam: "vn", inde: "in", "sri-lanka": "lk", bali: "id",
-  ouzbekistan: "uz", mongolie: "mn", jordanie: "jo", dubai: "ae", oman: "om",
+  "royaume-uni": "gb", londres: "gb", ecosse: "gb-sct", "pays-bas": "nl",
+  amsterdam: "nl", norvege: "no", suede: "se", danemark: "dk", finlande: "fi",
+  autriche: "at", suisse: "ch", slovenie: "si", acores: "pt",
+  egypte: "eg", tunisie: "tn", senegal: "sn", "cap-vert": "cv", kenya: "ke",
+  tanzanie: "tz", "afrique-du-sud": "za",
+  namibie: "na", botswana: "bw", maldives: "mv",
+  "la-reunion": "re", vietnam: "vn", cambodge: "kh", laos: "la",
+  malaisie: "my", indonesie: "id", philippines: "ph", chine: "cn",
+  "coree-du-sud": "kr", inde: "in", "sri-lanka": "lk", bali: "id",
+  dubai: "ae",
   polynesie: "pf", "nouvelle-zelande": "nz", australie: "au", perou: "pe",
-  patagonie: "ar", floride: "us", "republique-dominicaine": "do",
+  bolivie: "bo", bresil: "br", chili: "cl", argentine: "ar", patagonie: "ar",
+  mexique: "mx", guatemala: "gt", jamaique: "jm", bahamas: "bs",
+  "antilles-francaises": "gp", "republique-dominicaine": "do",
 };
 const EXTRA_MAP_DEST: Dest[] = MAP_DESTINATIONS.filter(
   (m) => !EXISTING_MAP_IDS.has(m.id),
@@ -70,8 +78,6 @@ const DEST: Dest[] = [
   { id: "canada", name: "Canada", c: "americas", ll: [53.0, -100.0], badge: "Amériques", desc: "Explorez l'immensité canadienne entre grands espaces, forêts majestueuses et villes chaleureuses.", img: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=400&h=200&fit=crop&auto=format", alt: "Paysage de grands espaces et montagnes au Canada", href: "/destination/canada", flagCode: "ca", sport: false },
   { id: "costa-rica", name: "Costa Rica", c: "americas", ll: [10.0, -84.1], badge: "Amériques", desc: "Partez à l'aventure entre volcans, jungle luxuriante et écolodges nichés au cœur de la nature.", img: "/assets/images/costa_rica.jpg", alt: "Forêt tropicale luxuriante et nature préservée au Costa Rica", href: "/destination/costa-rica", flagCode: "cr", sport: false },
   { id: "laponie", name: "Laponie", c: "europe", ll: [66.5, 25.7], badge: "Europe", desc: "Vivez une expérience magique entre aurores boréales, étendues enneigées et nuit en igloo hôtel.", img: "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=400&h=200&fit=crop&auto=format", alt: "Paysage enneigé et ambiance polaire en Laponie", href: "/destination/laponie", flagCode: "fi", sport: false },
-  { id: "londres", name: "Londres", c: "europe", ll: [51.5, -0.1], badge: "Europe", desc: "Découvrez une capitale vibrante où patrimoine, culture et art de vivre cosmopolite se rencontrent.", img: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&h=200&fit=crop&auto=format", alt: "Vue emblématique de Londres et architecture urbaine", href: "/destination/londres", flagCode: "gb", sport: false },
-  { id: "amsterdam", name: "Amsterdam", c: "europe", ll: [52.4, 4.9], badge: "Europe", desc: "Flânez entre canaux, maisons élégantes et ambiance créative au cœur d'une ville pleine de charme.", img: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=400&h=200&fit=crop&auto=format", alt: "Canaux et maisons traditionnelles à Amsterdam", href: "/destination/amsterdam", flagCode: "nl", sport: false },
   { id: "porto", name: "Porto", c: "europe", ll: [41.1, -8.6], badge: "Europe", desc: "Laissez-vous porter par l'authenticité de Porto, entre façades colorées, caves du Douro et séjour en pousada de caractère.", img: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400&h=200&fit=crop&auto=format", alt: "Façades colorées et vue urbaine à Porto", href: "/destination/porto", flagCode: "pt", sport: false },
   { id: "rome", name: "Rome", c: "europe", ll: [41.9, 12.5], badge: "Europe", desc: "Plongez dans l'histoire éternelle entre vestiges antiques, places emblématiques et douceur de vivre italienne.", img: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400&h=200&fit=crop&auto=format", alt: "Monument antique et ambiance historique à Rome", href: "/destination/rome", flagCode: "it", sport: false },
 
@@ -92,20 +98,7 @@ const DEST: Dest[] = [
   ...EXTRA_MAP_DEST,
 ];
 
-const CONTINENT_NAMES: Record<string, string> = { asia: "Asie / Moyen-Orient", africa: "Afrique", americas: "Amériques", europe: "Europe" };
-
-/** Villes/régions rattachées à un pays (drill-down dans la fiche). Clés = id du pays. */
-const COUNTRY_CITIES: Record<string, string[]> = {
-  grece: ["santorin", "crete"],
-  italie: ["venise", "rome"],
-  portugal: ["porto", "acores"],
-};
-/** Ids des villes rattachées : un seul point par pays sur la carte, ces villes
- * ne sont accessibles que via la fiche de leur pays (elles restent dans DEST
- * pour alimenter le menu déroulant, mais ne génèrent ni marqueur ni filtre). */
-const CHILD_CITY_IDS = new Set<string>(
-  Object.values(COUNTRY_CITIES).flat(),
-);
+const CONTINENT_NAMES: Record<string, string> = { asia: "Asie / Moyen-Orient", africa: "Afrique / Océan Indien", americas: "Amériques", europe: "Europe" };
 
 /** Coordonnées géographiques d'ancrage des labels de continents (pour qu'ils suivent la carte). */
 const CONTINENT_LABEL_LL: Record<string, [number, number]> = {
@@ -130,7 +123,7 @@ export default function WorldMap() {
         japon: { center: [36.2, 138.2], zoom: 5 }, thailande: { center: [15.8, 101.0], zoom: 5.5 }, maroc: { center: [31.8, -7.1], zoom: 5.5 },
         zanzibar: { center: [-6.1, 39.2], zoom: 7 }, seychelles: { center: [-4.6, 55.5], zoom: 7 }, maurice: { center: [-20.3, 57.5], zoom: 8 },
         canada: { center: [53.0, -100.0], zoom: 3.5 }, "costa-rica": { center: [10.0, -84.1], zoom: 6.5 },
-        laponie: { center: [66.5, 25.7], zoom: 5.5 }, londres: { center: [51.5, -0.1], zoom: 9 }, amsterdam: { center: [52.4, 4.9], zoom: 9 },
+        laponie: { center: [66.5, 25.7], zoom: 5.5 },
         porto: { center: [41.1, -8.6], zoom: 9 }, rome: { center: [41.9, 12.5], zoom: 9 },
         "angleterre-sport": { center: [52.8, -1.6], zoom: 6 }, "espagne-sport": { center: [40.3, -3.7], zoom: 6 },
         "italie-sport": { center: [42.8, 12.6], zoom: 6 }, "allemagne-sport": { center: [51.2, 10.4], zoom: 5.8 },
@@ -146,15 +139,21 @@ export default function WorldMap() {
       // la carte. On complète automatiquement avec les coordonnées du marqueur
       // et un zoom adapté à la taille du pays (5.5 par défaut).
       const FALLBACK_ZOOM: Record<string, number> = {
-        australie: 3.6, canada: 3.5, inde: 4.2, mongolie: 4.2, perou: 4.5,
-        patagonie: 4.5, "afrique-du-sud": 4.5, namibie: 4.8, egypte: 4.8,
-        norvege: 4.2, suede: 4.2, botswana: 5, kenya: 5.2, tanzanie: 5,
-        madagascar: 5, ouzbekistan: 5, vietnam: 5, italie: 5, espagne: 5,
-        france: 5, "nouvelle-zelande": 5, islande: 5, grece: 5.5, portugal: 5.5,
-        floride: 5.5, oman: 5.5, ecosse: 6, maldives: 6, croatie: 6.2,
-        jordanie: 6.5, "sri-lanka": 6.5, "costa-rica": 6.5, crete: 7.5,
-        "republique-dominicaine": 7, polynesie: 7, slovenie: 7, acores: 7.5,
+        australie: 3.6, canada: 3.5, chine: 3.4, bresil: 3.4, argentine: 3.8,
+        inde: 4.2, perou: 4.5, chili: 3.6, indonesie: 4, mexique: 4.2,
+        "afrique-du-sud": 4.5, namibie: 4.8, egypte: 4.8, bolivie: 5,
+        norvege: 4.2, suede: 4.2, finlande: 4.4, botswana: 5, kenya: 5.2,
+        tanzanie: 5, senegal: 6, tunisie: 5.6, vietnam: 5, italie: 5,
+        espagne: 5, france: 5, "nouvelle-zelande": 5, islande: 5,
+        "royaume-uni": 5, malaisie: 5.4, philippines: 5, grece: 5.5,
+        portugal: 5.5, autriche: 6.4, suisse: 6.8, danemark: 6.2,
+        "pays-bas": 6.6, cambodge: 6.4, laos: 5.6, "coree-du-sud": 6.4,
+        guatemala: 6.8, ecosse: 6, maldives: 6, croatie: 6.2,
+        "sri-lanka": 6.5, "costa-rica": 6.5, crete: 7.5, "cap-vert": 7.5,
+        "republique-dominicaine": 7, jamaique: 8, bahamas: 6.8,
+        "antilles-francaises": 8, polynesie: 7, slovenie: 7, acores: 7.5,
         bali: 8, dubai: 8.5, "la-reunion": 8.5, venise: 9, santorin: 9.5,
+        patagonie: 4.5,
       };
       DEST.forEach((d) => {
         if (!COUNTRY_VIEWS[d.id]) {
@@ -521,7 +520,7 @@ export default function WorldMap() {
             <button className="map-filter-btn f-active" data-c="all">Tous</button>
             <button className="map-filter-btn" data-c="europe">Europe</button>
             <button className="map-filter-btn" data-c="asia">Asie / Moyen-Orient</button>
-            <button className="map-filter-btn" data-c="africa">Afrique</button>
+            <button className="map-filter-btn" data-c="africa">Afrique / Océan Indien</button>
             <button className="map-filter-btn" data-c="americas">Amériques</button>
           </div>
         </div>

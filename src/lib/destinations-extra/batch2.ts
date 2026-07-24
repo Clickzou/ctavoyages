@@ -107,41 +107,6 @@ export const BATCH2: Destination[] = [
     ],
   },
   {
-    slug: "jordanie",
-    name: "Jordanie",
-    continent: "Moyen-Orient",
-    heroImg:
-      "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?w=1600&h=900&fit=crop&auto=format",
-    intro:
-      "Écrin de merveilles au cœur du Proche-Orient, la Jordanie révèle des trésors taillés dans le grès rose et des déserts cinématographiques. De la cité antique de Pétra aux paysages lunaires du Wadi Rum, ce pays accueillant offre un voyage hors du temps, entre histoire millénaire et hospitalité bédouine.",
-    highlights: [
-      "La cité nabatéenne de Pétra, l'une des sept nouvelles merveilles du monde",
-      "Le désert du Wadi Rum et ses bivouacs sous les étoiles",
-      "La baignade insolite dans les eaux de la mer Morte",
-      "Les mosaïques byzantines de Madaba et le mont Nébo",
-      "Les vestiges romains de Jerash, remarquablement préservés",
-    ],
-    bestSeason:
-      "De mars à mai et de septembre à novembre, pour des températures agréables propices à l'exploration des sites et du désert.",
-    experiences: [
-      {
-        title: "Pétra & Wadi Rum",
-        description:
-          "Découverte de la cité rose à travers le Siq, puis nuit en campement bédouin au cœur des dunes du Wadi Rum.",
-      },
-      {
-        title: "Grand tour de Jordanie",
-        description:
-          "Un circuit complet d'Amman à la mer Morte, en passant par Jerash, Madaba et les châteaux du désert.",
-      },
-      {
-        title: "Bien-être à la mer Morte",
-        description:
-          "Détente et flottaison dans les eaux les plus salées du globe, soins aux boues minérales et hébergement face au rivage.",
-      },
-    ],
-  },
-  {
     slug: "dubai",
     name: "Dubaï",
     continent: "Moyen-Orient",
@@ -173,41 +138,6 @@ export const BATCH2: Destination[] = [
         title: "Escapade balnéaire & famille",
         description:
           "Plages de sable fin, parcs aquatiques et attractions futuristes pour un séjour ludique adapté à tous les âges.",
-      },
-    ],
-  },
-  {
-    slug: "oman",
-    name: "Oman",
-    continent: "Moyen-Orient",
-    heroImg:
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&h=900&fit=crop&auto=format",
-    intro:
-      "Joyau authentique de la péninsule arabique, Oman séduit par sa nature préservée et sa douceur de vivre traditionnelle. Entre les sables ocre du désert de Wahiba, les wadis verdoyants et les forteresses séculaires, le sultanat offre une Arabie sereine, fidèle à ses racines et d'une hospitalité légendaire.",
-    highlights: [
-      "Mascate, sa Grande Mosquée et le souk de Mutrah",
-      "Les dunes dorées du désert de Wahiba Sands",
-      "Les wadis et oasis aux eaux turquoise, comme le Wadi Shab",
-      "Les fjords spectaculaires de la péninsule de Musandam",
-      "Les forteresses de Nizwa et Bahla, témoins de l'histoire omanaise",
-    ],
-    bestSeason:
-      "D'octobre à avril, pour un climat doux et ensoleillé propice à l'exploration du désert, des montagnes et des côtes.",
-    experiences: [
-      {
-        title: "Aventure désert & wadis",
-        description:
-          "Bivouac dans les dunes de Wahiba, baignade dans les wadis et exploration des villages de montagne du Jebel Akhdar.",
-      },
-      {
-        title: "Mascate & traditions omanaises",
-        description:
-          "Découverte de la capitale, de la Grande Mosquée et des souks, à la rencontre de l'artisanat et de la culture du sultanat.",
-      },
-      {
-        title: "Croisière dans les fjords du Musandam",
-        description:
-          "Navigation en boutre traditionnel au cœur des fjords spectaculaires, entre criques isolées et observation des dauphins.",
       },
     ],
   },

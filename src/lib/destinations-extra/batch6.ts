@@ -72,41 +72,6 @@ export const BATCH6: Destination[] = [
     ],
   },
   {
-    slug: "floride",
-    name: "Floride",
-    continent: "Amériques",
-    heroImg:
-      "https://images.unsplash.com/photo-1535498730771-e735b998cd64?w=1600&h=900&fit=crop&auto=format",
-    intro:
-      "État du soleil par excellence, la Floride conjugue plages dorées, parcs d'attractions légendaires et nature subtropicale. De l'effervescence art déco de Miami aux Everglades sauvages, en passant par la route mythique des Keys, c'est une destination idéale pour les familles comme pour les amateurs de farniente.",
-    highlights: [
-      "Miami Beach, son architecture art déco et l'ambiance latine de South Beach",
-      "Les parcs d'Orlando : Walt Disney World et Universal Studios",
-      "Le parc national des Everglades et ses balades en airboat",
-      "La route panoramique des Keys jusqu'à Key West",
-      "Les plages du golfe du Mexique, de Naples à Clearwater",
-    ],
-    bestSeason:
-      "De novembre à avril, durant la saison sèche : un climat ensoleillé et doux, idéal pour la plage comme pour les parcs.",
-    experiences: [
-      {
-        title: "Road trip du soleil",
-        description:
-          "De Miami aux Keys, un autotour le long des côtes floridiennes, entre plages, villes balnéaires et nature préservée.",
-      },
-      {
-        title: "Parcs & magie en famille",
-        description:
-          "Plusieurs jours dans les parcs d'Orlando, pour vivre la magie Disney et les sensations fortes d'Universal en famille.",
-      },
-      {
-        title: "Nature & Everglades",
-        description:
-          "Exploration des marais en hydroglisseur, observation des alligators et des oiseaux dans l'un des plus grands parcs des États-Unis.",
-      },
-    ],
-  },
-  {
     slug: "republique-dominicaine",
     name: "République dominicaine",
     continent: "Amériques",

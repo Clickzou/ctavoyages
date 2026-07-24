@@ -4,6 +4,10 @@ import { BATCH3 } from "./destinations-extra/batch3";
 import { BATCH4 } from "./destinations-extra/batch4";
 import { BATCH5 } from "./destinations-extra/batch5";
 import { BATCH6 } from "./destinations-extra/batch6";
+import { BATCH7 } from "./destinations-extra/batch7";
+import { BATCH8 } from "./destinations-extra/batch8";
+import { BATCH9 } from "./destinations-extra/batch9";
+import { BATCH10 } from "./destinations-extra/batch10";
 
 export type Experience = {
   title: string;
@@ -456,6 +460,10 @@ export const ALL_DESTINATIONS: Destination[] = [
   ...BATCH4,
   ...BATCH5,
   ...BATCH6,
+  ...BATCH7,
+  ...BATCH8,
+  ...BATCH9,
+  ...BATCH10,
 ];
 
 export function getDestination(slug: string): Destination | undefined {
@@ -480,6 +488,19 @@ const NAME_ALIASES: Record<string, string> = {
   Dubai: "dubai",
   Dubaï: "dubai",
   "Fjords de Norvège": "norvege",
+  // Pays regroupant des villes/régions déjà en fiche (cf. destination-groups.ts)
+  "Grande-Bretagne": "royaume-uni",
+  Angleterre: "royaume-uni",
+  "Pays de Galles": "royaume-uni",
+  "Royaume Uni": "royaume-uni",
+  Hollande: "pays-bas",
+  "Pays Bas": "pays-bas",
+  Corée: "coree-du-sud",
+  "Coree du Sud": "coree-du-sud",
+  "Cap Vert": "cap-vert",
+  Guadeloupe: "antilles-francaises",
+  Martinique: "antilles-francaises",
+  Antilles: "antilles-francaises",
 };
 
 /** Renvoie le slug d'une destination à partir du nom affiché (insensible à la casse), ou undefined. */

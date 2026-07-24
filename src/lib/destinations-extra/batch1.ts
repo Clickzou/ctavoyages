@@ -37,41 +37,6 @@ export const BATCH1: Destination[] = [
     ],
   },
   {
-    slug: "madagascar",
-    name: "Madagascar",
-    continent: "Afrique",
-    heroImg:
-      "https://images.unsplash.com/photo-1535941339077-2dd1c7963098?w=1600&h=900&fit=crop&auto=format",
-    intro:
-      "Île-continent au bout du monde, Madagascar abrite une nature unique sur la planète, où 80 % des espèces ne se rencontrent nulle part ailleurs. Forêts d'épineux, allées de baobabs majestueux, lémuriens facétieux et plages désertes composent un voyage d'aventure et d'émerveillement, porté par la chaleur du peuple malgache.",
-    highlights: [
-      "L'allée des Baobabs au coucher du soleil, près de Morondava",
-      "Les lémuriens et la forêt primaire des parcs d'Andasibe et de Ranomafana",
-      "Les pitons calcaires du Tsingy de Bemaraha, classé à l'UNESCO",
-      "Les plages paradisiaques et le snorkeling de Nosy Be et Nosy Iranja",
-      "La mythique Route Nationale 7, des hauts plateaux jusqu'au sud aride",
-    ],
-    bestSeason:
-      "D'avril à novembre, durant la saison sèche : un climat agréable pour explorer parcs et littoral, idéal d'août à octobre.",
-    experiences: [
-      {
-        title: "Aventure nature & lémuriens",
-        description:
-          "Treks guidés dans les parcs nationaux à la rencontre des lémuriens et caméléons, nuits en lodge au cœur de la forêt.",
-      },
-      {
-        title: "Grand tour de la RN7",
-        description:
-          "Un autotour mythique des hauts plateaux jusqu'au sud, entre villages d'artisans, paysages contrastés et baobabs géants.",
-      },
-      {
-        title: "Combiné aventure & plage",
-        description:
-          "L'exploration de la grande île prolongée par quelques jours de détente sur les plages préservées de Nosy Be.",
-      },
-    ],
-  },
-  {
     slug: "la-reunion",
     name: "La Réunion",
     continent: "Océan Indien",
