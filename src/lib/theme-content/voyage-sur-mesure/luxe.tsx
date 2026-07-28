@@ -49,11 +49,11 @@ const vsmLuxe: ThemeContent = {
     },
     {
       href: "/destinations",
-      img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop&auto=format",
-      alt: "Skyline futuriste de Dubaï avec la Burj Khalifa",
-      badge: "ÉMIRATS",
-      name: "Dubaï",
-      desc: "Palaces démesurés, désert privatisé et shopping d'exception.",
+      img: "https://images.unsplash.com/photo-1566296314736-6eaac1ca0cb9?w=600&h=400&fit=crop&auto=format",
+      alt: "Plantations de thé en terrasses dans les hautes terres du Sri Lanka",
+      badge: "ASIE",
+      name: "Sri Lanka",
+      desc: "Bungalows de planteurs, safaris privatisés et plages confidentielles.",
     },
     {
       href: "/destination-japon",
@@ -124,26 +124,26 @@ const vsmLuxe: ThemeContent = {
   },
   itinerary: {
     eyebrow: "Exemple de programme",
-    h2: "Huit nuits d'exception entre Dubaï et les Maldives",
+    h2: "Huit nuits d'exception entre le Sri Lanka et les Maldives",
     intro:
-      "Une parenthèse hors du temps, du faste émirati aux lagons des Maldives, ponctuée de services privés et d'expériences réservées à quelques privilégiés.",
+      "Une parenthèse hors du temps, des hautes terres cinghalaises aux lagons des Maldives, ponctuée de services privés et d'expériences réservées à quelques privilégiés.",
     steps: [
       {
         id: "s1",
         label: "JOURS 1 À 3",
-        title: "Dubaï : suite d'exception & démesure",
-        text: "Accueil VIP à l'aéroport, transfert en berline privée et installation dans une suite avec majordome dédié, vue sur la skyline. Trois jours pour savourer Dubaï : table étoilée, shopping d'exception et soirée au sommet de la Burj Khalifa.",
-        img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=400&fit=crop&auto=format",
-        alt: "Skyline de Dubaï avec la Burj Khalifa au crépuscule",
+        title: "Sri Lanka : bungalow de planteur & collines du thé",
+        text: "Accueil VIP à l'aéroport, transfert en berline privée puis installation dans un ancien bungalow de planteur au cœur des plantations. Trois jours de raffinement colonial : dégustation privée dans une fabrique de thé, dîner du chef sur la véranda et trajet en wagon privatisé sur la ligne mythique des hautes terres.",
+        img: "https://images.unsplash.com/photo-1566554273541-37a9ca77b91f?w=600&h=400&fit=crop&auto=format",
+        alt: "Train traversant les plantations de thé verdoyantes des hautes terres du Sri Lanka",
         align: "left",
       },
       {
         id: "s2",
         label: "JOUR 3",
-        title: "Expériences exclusives dans le désert",
-        text: "Échappée privatisée dans les dunes : safari en 4x4 d'exception, fauconnerie au coucher du soleil et dîner gastronomique sous les étoiles, dressé rien que pour vous au cœur du désert.",
-        img: "https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?w=600&h=400&fit=crop&auto=format",
-        alt: "Campement de luxe et dunes de sable au coucher du soleil dans le désert de Dubaï",
+        title: "Safari privatisé au parc de Yala",
+        text: "Échappée exclusive dans la jungle du sud-est : safari en 4x4 privatisé sur les traces du léopard, guide naturaliste dédié et dîner gastronomique dressé sous les étoiles, au camp de luxe installé rien que pour vous.",
+        img: "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=600&h=400&fit=crop&auto=format",
+        alt: "Léopard observé lors d'un safari privé au parc national de Yala",
         align: "right",
       },
       {
@@ -229,8 +229,8 @@ const vsmLuxe: ThemeContent = {
         months: ["ideal", "ideal", "ideal", "ideal", "ok", "avoid", "avoid", "avoid", "ok", "ok", "ideal", "ideal"],
       },
       {
-        destination: "Dubaï",
-        months: ["ideal", "ideal", "ideal", "ok", "avoid", "avoid", "avoid", "avoid", "ok", "ideal", "ideal", "ideal"],
+        destination: "Sri Lanka",
+        months: ["ideal", "ideal", "ideal", "ok", "avoid", "avoid", "avoid", "avoid", "ok", "ok", "ideal", "ideal"],
       },
       {
         destination: "Japon",
@@ -269,9 +269,10 @@ const vsmLuxe: ThemeContent = {
         question: "Quelles destinations recommandez-vous pour le luxe ?",
         answer: (
           <p>
-            Maldives, Polynésie, Seychelles et Île Maurice pour les lagons, Dubaï
-            pour la démesure, le Japon pour le raffinement&nbsp;: à chaque envie
-            son écrin d&apos;exception.
+            Maldives, Polynésie, Seychelles et Île Maurice pour les lagons, le
+            Sri Lanka pour les bungalows de planteurs et les safaris privés, le
+            Japon pour le raffinement&nbsp;: à chaque envie son écrin
+            d&apos;exception.
           </p>
         ),
       },
@@ -327,7 +328,7 @@ const vsmLuxe: ThemeContent = {
       {
         question: "Quelles destinations recommandez-vous pour un voyage de luxe ?",
         answer:
-          "Maldives, Polynésie, Seychelles et Île Maurice pour les lagons, Dubaï pour la démesure, le Japon pour le raffinement : à chaque envie son écrin d'exception.",
+          "Maldives, Polynésie, Seychelles et Île Maurice pour les lagons, le Sri Lanka pour les bungalows de planteurs et les safaris privés, le Japon pour le raffinement : à chaque envie son écrin d'exception.",
       },
       {
         question: "Pouvez-vous organiser des services privés ?",

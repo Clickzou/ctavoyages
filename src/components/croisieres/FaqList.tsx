@@ -139,7 +139,7 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Méditerranée</strong> : Italie, Espagne, France, Grèce
+          <strong>Méditerranée</strong> : Italie, Espagne, France, Grèce, Croatie
         </li>
         <li>
           <Check />
@@ -147,7 +147,8 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          <strong>Caraïbes</strong>{" "}et Antilles
+          <strong>Caraïbes</strong> : Antilles françaises, Bahamas, Jamaïque,
+          République dominicaine
         </li>
         <li>
           <Check />
@@ -155,7 +156,8 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          <strong>Océan Indien</strong> : Maurice, Seychelles, Zanzibar
+          <strong>Océan Indien</strong> : Maurice, Seychelles, Maldives, Zanzibar,
+          La Réunion
         </li>
       </ul>
     ),

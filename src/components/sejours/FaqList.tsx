@@ -109,8 +109,13 @@ const LEFT: FaqEntry[] = [
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Check />
-            <strong>Londres, Amsterdam, Porto, Rome</strong> : city breaks
-            culturels et gastronomiques
+            <strong>Londres, Amsterdam, Porto, Rome, Venise</strong> : city
+            breaks culturels et gastronomiques
+          </li>
+          <li>
+            <Check />
+            <strong>Santorin, Crète, Açores, Croatie</strong> : escapades
+            insulaires et bord de mer
           </li>
         </ul>
       </>
@@ -131,8 +136,13 @@ const LEFT: FaqEntry[] = [
           </li>
           <li>
             <Check />
-            Resorts face à l&apos;océan aux <strong>Seychelles</strong>{" "}et à l&apos;
-            <strong>Île Maurice</strong>
+            Resorts face à l&apos;océan aux <strong>Seychelles</strong>, à l&apos;
+            <strong>Île Maurice</strong>{" "}et aux <strong>Maldives</strong>
+          </li>
+          <li>
+            <Check />
+            Villas sur pilotis en <strong>Polynésie française</strong>{" "}et à{" "}
+            <strong>Bali</strong>
           </li>
           <li>
             <Check />
@@ -153,27 +163,37 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Maroc</strong> : riads de Marrakech, désert du Sahara
+          <strong>Maroc, Tunisie, Égypte</strong> : riads, désert et mer Rouge
         </li>
         <li>
           <Check />
-          <strong>Île Maurice</strong> : resorts et lagons
+          <strong>Île Maurice, Seychelles, Maldives, La Réunion</strong> :
+          resorts et lagons de l&apos;océan Indien
         </li>
         <li>
           <Check />
-          <strong>Seychelles</strong> : nature préservée et plages
+          <strong>Thaïlande, Bali, Vietnam, Sri Lanka</strong> : temples et
+          plages d&apos;Asie
         </li>
         <li>
           <Check />
-          <strong>Thaïlande</strong> : temples et plages du sud
+          <strong>République dominicaine, Jamaïque, Bahamas, Antilles
+          françaises</strong> : clubs et plages des Caraïbes
         </li>
         <li>
           <Check />
-          <strong>Laponie</strong> : aurores boréales et cabanes
+          <strong>Laponie, Islande, Norvège</strong> : aurores boréales et
+          grands espaces du Nord
         </li>
         <li>
           <Check />
-          <strong>Londres, Amsterdam, Porto, Rome</strong> : escapades urbaines
+          <strong>Espagne, Portugal, Grèce, Italie, Croatie</strong> : soleil et
+          bord de mer en Europe
+        </li>
+        <li>
+          <Check />
+          <strong>Londres, Amsterdam, Porto, Rome, Venise</strong> : escapades
+          urbaines
         </li>
       </ul>
     ),

@@ -76,7 +76,9 @@ const OLD_COUNTRY_TO_PATH: Record<string, string> = {
   maurice: "/destination/ile-maurice",
   reunion: "/destination/la-reunion",
   "polynesie-francaise": "/destination/polynesie",
-  "emirats-arabes-unis": "/destination/dubai",
+  // Dubaï n'est plus commercialisé (vols Air France déprogrammés) : on renvoie
+  // vers l'article de blog, seul contenu Dubaï encore en ligne.
+  "emirats-arabes-unis": "/blog/que-faire-a-dubai",
 };
 
 /** /products/thematic/<theme> → page thématique équivalente. */

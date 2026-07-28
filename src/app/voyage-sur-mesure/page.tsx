@@ -11,7 +11,7 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 export const metadata: Metadata = {
   title: "Voyage sur mesure - CTA Voyages",
   description:
-    "Créez votre voyage sur mesure avec CTA Voyages : itinéraire personnalisé, conseiller dédié, devis gratuit. Japon, Thaïlande, Maroc, Canada, Seychelles et 13 destinations.",
+    "Créez votre voyage sur mesure avec CTA Voyages : itinéraire personnalisé, conseiller dédié, devis gratuit. Japon, Thaïlande, Maroc, Canada, Seychelles et 70 destinations.",
 };
 
 const faqJsonLd = {
@@ -39,7 +39,7 @@ const faqJsonLd = {
       name: "Quelles sont vos destinations les plus demandées ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Japon, Thaïlande, Maroc, Île Maurice, Seychelles, Zanzibar, Canada, Costa Rica, Laponie, Londres, Amsterdam, Porto et Rome.",
+        text: "Parmi nos plus de 70 destinations : Japon, Thaïlande, Vietnam, Bali, Sri Lanka, Maroc, Tanzanie, Zanzibar, Afrique du Sud, Île Maurice, Seychelles, Maldives, La Réunion, Canada, Costa Rica, Pérou, Brésil, Islande, Laponie, Italie, Grèce et Portugal.",
       },
     },
     {
@@ -47,7 +47,7 @@ const faqJsonLd = {
       name: "Organisez-vous des voyages sur mesure en famille ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oui. Rythme adapté aux enfants, hébergements familiaux, activités pour tous les âges.",
+        text: "Oui. Rythme adapté aux enfants, hébergements familiaux, activités pour tous les âges. Destinations idéales : Costa Rica, Canada, Thaïlande, Japon, Île Maurice, La Réunion, Italie et Espagne.",
       },
     },
     {
@@ -312,7 +312,7 @@ export default function VoyageSurMesurePage() {
                 Explorez le monde avec un voyage sur mesure
               </h3>
               <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl">
-                13 destinations soigneusement sélectionnées, toutes
+                70 destinations soigneusement sélectionnées, toutes
                 personnalisables selon vos envies.
               </p>
             </div>

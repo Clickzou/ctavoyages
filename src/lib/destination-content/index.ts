@@ -28,7 +28,6 @@ import kenya from "./kenya";
 import tanzanie from "./tanzanie";
 import afriqueDuSud from "./afrique-du-sud";
 import namibie from "./namibie";
-import dubai from "./dubai";
 import norvege from "./norvege";
 import ecosse from "./ecosse";
 import crete from "./crete";
@@ -106,7 +105,6 @@ export const DESTINATION_CONTENT: Record<string, DestinationContent> = {
   tanzanie,
   "afrique-du-sud": afriqueDuSud,
   namibie,
-  dubai,
   norvege,
   ecosse,
   crete,

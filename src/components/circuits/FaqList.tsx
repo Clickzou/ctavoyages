@@ -118,24 +118,33 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Japon</strong> : entre Tokyo, Kyoto et les Alpes japonaises
+          <strong>Japon, Vietnam, Cambodge, Sri Lanka, Inde</strong> : temples,
+          villes millénaires et grands itinéraires d&apos;Asie
         </li>
         <li>
           <Check />
-          <strong>Canada</strong> : Rocheuses, lacs et grands espaces
+          <strong>Canada, Costa Rica</strong> : Rocheuses, lacs, volcans et
+          biodiversité
         </li>
         <li>
           <Check />
-          <strong>Costa Rica</strong> : volcans, jungle et biodiversité
+          <strong>Pérou, Bolivie, Argentine, Chili, Patagonie</strong> : Andes,
+          altiplano et bout du monde
         </li>
         <li>
           <Check />
-          <strong>Thaïlande</strong> : temples, villes et littoral tropical
+          <strong>Tanzanie, Kenya, Namibie, Botswana, Afrique du Sud</strong> :
+          safaris et grands espaces africains
         </li>
         <li>
           <Check />
-          <strong>Maroc</strong>{" "}et <strong>Laponie</strong> : deux univers
-          forts, culturels ou nature
+          <strong>Maroc, Égypte</strong> : médinas, désert et sites
+          pharaoniques
+        </li>
+        <li>
+          <Check />
+          <strong>Islande, Laponie, Écosse, Italie, Grèce</strong> : circuits
+          nature ou culturels en Europe
         </li>
       </ul>
     ),

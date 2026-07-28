@@ -76,8 +76,8 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          <strong>Igloos &amp; cabanes arctiques</strong> : en Laponie et dans les
-          régions nordiques
+          <strong>Igloos &amp; cabanes arctiques</strong> : en Laponie, en
+          Islande, en Norvège, en Suède et en Finlande
         </li>
         <li>
           <Check />
@@ -89,7 +89,7 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          <strong>Campements désert</strong> : au Maroc ou en Jordanie
+          <strong>Campements désert</strong> : au Maroc, en Égypte ou en Tunisie
         </li>
       </ul>
     ),
@@ -142,11 +142,13 @@ const RIGHT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <Check />
-          <strong>Laponie</strong> : igloos et cabanes sous les aurores boréales
+          <strong>Laponie, Islande, Norvège, Suède, Finlande</strong> : igloos
+          et cabanes sous les aurores boréales
         </li>
         <li>
           <Check />
-          <strong>Kenya</strong> : lodges safari dans la savane
+          <strong>Kenya, Tanzanie, Botswana, Namibie, Afrique du Sud</strong> :
+          lodges safari face à la savane
         </li>
         <li>
           <Check />
@@ -154,11 +156,18 @@ const RIGHT: FaqEntry[] = [
         </li>
         <li>
           <Check />
-          <strong>Maroc</strong> : campements dans les dunes du Sahara
+          <strong>Maroc, Égypte, Tunisie</strong> : campements dans les dunes du
+          désert
         </li>
         <li>
           <Check />
-          <strong>Costa Rica</strong> : éco-lodges dans la forêt tropicale
+          <strong>Costa Rica, Bali</strong> : éco-lodges au cœur de la forêt
+          tropicale
+        </li>
+        <li>
+          <Check />
+          <strong>France, Slovénie, Autriche</strong> : bulles, cabanes perchées
+          et tentes lodges en pleine nature
         </li>
         <li>
           <Check />

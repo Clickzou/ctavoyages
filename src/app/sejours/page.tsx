@@ -31,7 +31,7 @@ const faqJsonLd = {
       name: "Quelles sont vos destinations de séjours les plus demandées ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nos destinations phares : Maroc, Île Maurice, Seychelles, Zanzibar, Thaïlande, Laponie, et les escapades européennes à Londres, Amsterdam, Porto et Rome.",
+        text: "Nos destinations phares : Maroc, Tunisie, Égypte, Île Maurice, Seychelles, Maldives, La Réunion, Zanzibar, Thaïlande, Bali, Vietnam, Sri Lanka, République dominicaine, Jamaïque, Bahamas, Antilles françaises, Laponie, Islande, Espagne, Portugal, Grèce, Italie, Croatie, et les escapades urbaines à Londres, Amsterdam, Porto, Rome et Venise.",
       },
     },
     {
@@ -63,7 +63,7 @@ const faqJsonLd = {
       name: "Proposez-vous des courts séjours et escapades ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oui. Nous proposons des escapades de 2 à 5 nuits, notamment à Londres, Amsterdam, Porto et Rome.",
+        text: "Oui. Nous proposons des escapades de 2 à 5 nuits, notamment à Londres, Amsterdam, Porto, Rome, Venise, Santorin, en Crète, aux Açores et en Croatie.",
       },
     },
     {

@@ -70,8 +70,8 @@ const partirEnAmoureuxWeekEnd: BlogArticle = {
             week-end prolongé dépaysant à moins de 3&nbsp;heures de Paris.
           </p>
           <p>
-            Pour un cran de plus, <strong>Dubaï</strong>{" "}offre dîners en haut des
-            gratte-ciel et dunes au crépuscule, tandis qu&apos;une île de la{" "}
+            Pour un cran de plus, <strong>Venise</strong>{" "}offre balades en gondole au
+            crépuscule et palais transformés en hôtels de charme, tandis qu&apos;une île de la{" "}
             <strong>Méditerranée</strong>{" "}comme Malte ou Santorin promet criques
             turquoise et villages perchés rien que pour vous deux.
           </p>

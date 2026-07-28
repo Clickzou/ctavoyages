@@ -47,7 +47,7 @@ const faqJsonLd = {
       name: "Quelles sont les destinations de glamping les plus demandées ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Laponie pour les cabanes sous les aurores boréales, Kenya pour les lodges safari, Canada pour les cabanes en forêt, Costa Rica pour les éco-lodges et Maroc pour les campements du désert.",
+        text: "Laponie, Islande, Norvège, Suède et Finlande pour les igloos et cabanes sous les aurores boréales, Kenya, Tanzanie, Botswana, Namibie et Afrique du Sud pour les lodges safari, Canada pour les cabanes en forêt, Costa Rica pour les éco-lodges, Maroc, Égypte et Tunisie pour les campements du désert, France et Slovénie pour les bulles et cabanes en pleine nature.",
       },
     },
     {

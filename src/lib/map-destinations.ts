@@ -78,7 +78,6 @@ const META: Record<
   "coree-du-sud": { ll: [36.5, 127.9], bucket: "asie", badge: "Asie" },
   inde: { ll: [20.6, 79.0], bucket: "asie", badge: "Asie" },
   "sri-lanka": { ll: [7.9, 80.8], bucket: "asie", badge: "Asie" },
-  dubai: { ll: [25.2, 55.3], bucket: "asie", badge: "Moyen-Orient" },
   polynesie: { ll: [-17.7, -149.4], bucket: "asie", badge: "Océanie" },
   "nouvelle-zelande": { ll: [-41.0, 174.0], bucket: "asie", badge: "Océanie" },
   australie: { ll: [-25.3, 133.8], bucket: "asie", badge: "Océanie" },

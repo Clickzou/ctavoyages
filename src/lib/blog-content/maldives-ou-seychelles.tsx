@@ -189,7 +189,7 @@ const maldivesOuSeychelles: BlogArticle = {
     },
     {
       q: "Peut-on combiner les deux dans un même voyage ?",
-      a: "C'est possible mais peu courant car les deux archipels sont éloignés et nécessitent des vols distincts. Votre conseiller CTA Voyages peut toutefois étudier un combiné, ou plutôt une étape à Dubaï ou en Afrique de l'Est selon votre itinéraire.",
+      a: "C'est possible mais peu courant car les deux archipels sont éloignés et nécessitent des vols distincts. Votre conseiller CTA Voyages peut toutefois étudier un combiné, ou plutôt une étape au Sri Lanka ou en Afrique de l'Est selon votre itinéraire.",
     },
   ],
 };

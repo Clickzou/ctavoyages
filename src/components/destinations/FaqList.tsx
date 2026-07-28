@@ -57,25 +57,45 @@ const LEFT: FaqEntry[] = [
     answer: (
       <>
         <p>
-          Nous proposons <strong>13 destinations de voyage</strong> :
+          Nous proposons <strong>plus de 70 destinations de voyage</strong>,
+          réparties sur tous les continents :
         </p>
         <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
           <li>
             <Icon name="check" />
-            <strong>Asie</strong> : Japon, Thaïlande
+            <strong>Asie</strong> : Japon, Thaïlande, Vietnam, Bali, Indonésie,
+            Sri Lanka, Cambodge, Laos, Inde, Philippines, Malaisie, Corée du
+            Sud, Chine
           </li>
           <li>
             <Icon name="check" />
-            <strong>Afrique et Océan Indien</strong> : Maroc, Île Maurice,
-            Seychelles, Zanzibar
+            <strong>Afrique</strong> : Maroc, Tunisie, Égypte, Sénégal,
+            Cap-Vert, Kenya, Tanzanie, Zanzibar, Afrique du Sud, Namibie,
+            Botswana
           </li>
           <li>
             <Icon name="check" />
-            <strong>Amériques</strong> : Canada, Costa Rica
+            <strong>Océan Indien</strong> : Île Maurice, Seychelles, Maldives,
+            La Réunion
           </li>
           <li>
             <Icon name="check" />
-            <strong>Europe</strong> : Laponie, Londres, Amsterdam, Porto, Rome
+            <strong>Amériques et Caraïbes</strong> : Canada, Mexique, Guatemala,
+            Costa Rica, Pérou, Bolivie, Brésil, Argentine, Chili, Patagonie,
+            Bahamas, Jamaïque, République dominicaine, Antilles françaises
+          </li>
+          <li>
+            <Icon name="check" />
+            <strong>Europe</strong> : Islande, Laponie, Norvège, Suède,
+            Finlande, Danemark, Écosse, Royaume-Uni, Pays-Bas, France, Suisse,
+            Autriche, Slovénie, Croatie, Italie, Grèce, Espagne, Portugal,
+            Açores — ainsi que nos escapades urbaines Londres, Amsterdam, Porto,
+            Rome, Venise, Santorin et Crète
+          </li>
+          <li>
+            <Icon name="check" />
+            <strong>Océanie et Pacifique</strong> : Australie, Nouvelle-Zélande,
+            Polynésie française
           </li>
         </ul>
       </>
@@ -132,8 +152,10 @@ const LEFT: FaqEntry[] = [
     answer: (
       <p>
         Oui. Nous organisons des <strong>escapades de 2 à 5 nuits</strong>{" "}à
-        Londres, Amsterdam, Porto et Rome. Idéal pour un week-end prolongé ou une
-        escapade culturelle et gastronomique.
+        Londres, Amsterdam, Porto, Rome, Venise, Santorin ou en Crète, ainsi que
+        des séjours plus longs en Espagne, en Grèce, en Croatie ou en Slovénie.
+        Idéal pour un week-end prolongé ou une escapade culturelle et
+        gastronomique.
       </p>
     ),
   },
@@ -203,9 +225,10 @@ const RIGHT: FaqEntry[] = [
     answer: (
       <p>
         Oui. Nous pouvons combiner plusieurs étapes dans un même voyage : un
-        circuit au Japon suivi d&apos;un séjour en Thaïlande, ou une escapade à
-        Londres puis Amsterdam. Votre conseiller vous propose les meilleures
-        combinaisons selon vos envies et votre budget.
+        circuit au Sri Lanka suivi d&apos;un séjour aux Maldives, un safari en
+        Tanzanie prolongé par les plages de Zanzibar, ou encore le Vietnam et le
+        Cambodge dans un même itinéraire. Votre conseiller vous propose les
+        meilleures combinaisons selon vos envies et votre budget.
       </p>
     ),
   },

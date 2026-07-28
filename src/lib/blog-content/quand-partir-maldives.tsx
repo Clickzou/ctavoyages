@@ -175,7 +175,7 @@ const quandPartirMaldives: BlogArticle = {
             temps de vol (environ 10&nbsp;heures avec escale) et savourer
             pleinement l&apos;art de vivre maldivien. Pour une lune de miel ou une
             occasion spéciale, 10&nbsp;à 12&nbsp;nuits permettent de combiner deux
-            atolls — ou d&apos;ajouter une étape à <strong>Dubaï</strong>{" "}sur le
+            atolls — ou d&apos;ajouter une étape au <strong>Sri Lanka</strong>{" "}sur le
             trajet.
           </p>
         </>
@@ -208,7 +208,7 @@ const quandPartirMaldives: BlogArticle = {
     },
     {
       q: "Combien de temps faut-il rester aux Maldives ?",
-      a: "Comptez au minimum 7 nuits pour rentabiliser le temps de vol (environ 10 heures avec escale). Pour une lune de miel, 10 à 12 nuits permettent de combiner deux atolls ou d'ajouter une étape à Dubaï.",
+      a: "Comptez au minimum 7 nuits pour rentabiliser le temps de vol (environ 10 heures avec escale). Pour une lune de miel, 10 à 12 nuits permettent de combiner deux atolls ou d'ajouter une étape au Sri Lanka.",
     },
     {
       q: "Quel budget prévoir pour un voyage aux Maldives ?",

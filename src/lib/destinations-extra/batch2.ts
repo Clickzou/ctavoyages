@@ -106,39 +106,4 @@ export const BATCH2: Destination[] = [
       },
     ],
   },
-  {
-    slug: "dubai",
-    name: "Dubaï",
-    continent: "Moyen-Orient",
-    heroImg:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&h=900&fit=crop&auto=format",
-    intro:
-      "Vitrine futuriste du Golfe, Dubaï défie la démesure avec ses gratte-ciel vertigineux et ses îles artificielles. Entre la pointe de la modernité, les souks traditionnels et l'immensité du désert, la cité-émirat conjugue luxe étincelant, shopping débridé et aventures dans les dunes.",
-    highlights: [
-      "Le Burj Khalifa, plus haute tour du monde, et ses panoramas vertigineux",
-      "Le safari dans les dunes et le dîner sous tente dans le désert",
-      "Les souks de l'or et des épices du vieux Dubaï",
-      "Les centres commerciaux géants et la fontaine du Dubai Mall",
-      "Les plages et la silhouette emblématique du Burj Al Arab",
-    ],
-    bestSeason:
-      "De novembre à mars, durant la saison fraîche, pour profiter des plages et des activités extérieures sans la chaleur écrasante de l'été.",
-    experiences: [
-      {
-        title: "City break luxe & démesure",
-        description:
-          "Séjour dans un hôtel d'exception, ascension du Burj Khalifa et shopping dans les plus grands malls de la ville.",
-      },
-      {
-        title: "Safari dans le désert",
-        description:
-          "Sensations dans les dunes en 4x4, balade à dos de dromadaire et dîner traditionnel sous les étoiles au campement.",
-      },
-      {
-        title: "Escapade balnéaire & famille",
-        description:
-          "Plages de sable fin, parcs aquatiques et attractions futuristes pour un séjour ludique adapté à tous les âges.",
-      },
-    ],
-  },
 ];

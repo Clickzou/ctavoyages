@@ -46,7 +46,6 @@ const FLAG_BY_SLUG: Record<string, string> = {
   "la-reunion": "re", vietnam: "vn", cambodge: "kh", laos: "la",
   malaisie: "my", indonesie: "id", philippines: "ph", chine: "cn",
   "coree-du-sud": "kr", inde: "in", "sri-lanka": "lk", bali: "id",
-  dubai: "ae",
   polynesie: "pf", "nouvelle-zelande": "nz", australie: "au", perou: "pe",
   bolivie: "bo", bresil: "br", chili: "cl", argentine: "ar", patagonie: "ar",
   mexique: "mx", guatemala: "gt", jamaique: "jm", bahamas: "bs",
@@ -152,7 +151,7 @@ export default function WorldMap() {
         "sri-lanka": 6.5, "costa-rica": 6.5, crete: 7.5, "cap-vert": 7.5,
         "republique-dominicaine": 7, jamaique: 8, bahamas: 6.8,
         "antilles-francaises": 8, polynesie: 7, slovenie: 7, acores: 7.5,
-        bali: 8, dubai: 8.5, "la-reunion": 8.5, venise: 9, santorin: 9.5,
+        bali: 8, "la-reunion": 8.5, venise: 9, santorin: 9.5,
         patagonie: 4.5,
       };
       DEST.forEach((d) => {

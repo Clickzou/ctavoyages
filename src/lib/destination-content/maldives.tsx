@@ -176,7 +176,7 @@ const maldives: DestinationContent = {
         Cet exemple est proposé pour vous inspirer. Votre conseiller CTA Voyages
         adaptera chaque étape selon vos envies, votre rythme et votre budget.
         D&apos;autres expériences comme une croisière entre atolls, un combiné avec
-        Dubaï ou le Sri Lanka, ou un séjour sur une île locale peuvent facilement
+        le Sri Lanka, ou un séjour sur une île locale peuvent facilement
         s&apos;intégrer à votre programme.
       </>
     ),
@@ -273,8 +273,7 @@ const maldives: DestinationContent = {
               </li>
               <li>
                 <Icon name="check" />
-                <strong>Combiné</strong> : les Maldives associées à Dubaï ou au Sri
-                Lanka.
+                <strong>Combiné</strong> : les Maldives associées au Sri Lanka.
               </li>
             </ul>
           </>
@@ -441,7 +440,7 @@ const maldives: DestinationContent = {
       {
         question: "Quels types de voyages proposez-vous aux Maldives ?",
         answer:
-          "CTA Voyages propose des séjours balnéaires, des lunes de miel, des escapades plongée, des combinés avec Dubaï ou le Sri Lanka et des voyages entièrement sur mesure.",
+          "CTA Voyages propose des séjours balnéaires, des lunes de miel, des escapades plongée, des combinés avec le Sri Lanka et des voyages entièrement sur mesure.",
       },
       {
         question: "Peut-on personnaliser entièrement le séjour aux Maldives ?",

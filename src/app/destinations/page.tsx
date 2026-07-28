@@ -9,7 +9,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 export const metadata: Metadata = {
   title: "Nos destinations et événements sportifs - CTA Voyages",
   description:
-    "Découvrez les destinations et événements sportifs proposés par CTA Voyages : Japon, Thaïlande, Maroc, Île Maurice, Seychelles, Zanzibar, Canada, Costa Rica, Laponie, Londres, Amsterdam, Porto, Rome et nos séjours sportifs en Europe, Amériques et Asie.",
+    "Plus de 70 destinations de voyage avec CTA Voyages : Japon, Thaïlande, Vietnam, Bali, Maroc, Tanzanie, Île Maurice, Seychelles, Maldives, Canada, Costa Rica, Pérou, Islande, Laponie, Italie, Grèce, Polynésie et nos séjours sportifs en Europe, Amériques et Asie.",
 };
 
 const faqJsonLd = {
@@ -21,7 +21,7 @@ const faqJsonLd = {
       name: "Quelles destinations proposez-vous ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nous proposons 13 destinations de voyage et 14 destinations d'événements sportifs à travers le monde.",
+        text: "Nous proposons plus de 70 destinations de voyage sur tous les continents (Asie, Afrique, océan Indien, Amériques et Caraïbes, Europe, Océanie) et 14 destinations d'événements sportifs à travers le monde.",
       },
     },
     {

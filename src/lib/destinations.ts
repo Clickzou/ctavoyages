@@ -485,8 +485,6 @@ const NAME_ALIASES: Record<string, string> = {
   "République dominicaine": "republique-dominicaine",
   Polynésie: "polynesie",
   "Polynésie française": "polynesie",
-  Dubai: "dubai",
-  Dubaï: "dubai",
   "Fjords de Norvège": "norvege",
   // Pays regroupant des villes/régions déjà en fiche (cf. destination-groups.ts)
   "Grande-Bretagne": "royaume-uni",

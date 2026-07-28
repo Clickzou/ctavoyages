@@ -47,7 +47,7 @@ const faqJsonLd = {
       name: "Quelles sont vos destinations de circuits les plus demandées ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nos circuits les plus recherchés concernent le Japon, le Canada, le Costa Rica, la Thaïlande, le Maroc et la Laponie.",
+        text: "Nos circuits les plus recherchés concernent le Japon, le Vietnam, le Cambodge, le Sri Lanka, l'Inde, le Canada, le Costa Rica, le Pérou, la Bolivie, l'Argentine, le Chili, la Thaïlande, le Maroc, l'Égypte, la Tanzanie, la Namibie, l'Afrique du Sud, l'Islande, la Laponie, l'Italie et la Grèce.",
       },
     },
     {

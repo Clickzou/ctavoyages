@@ -87,7 +87,10 @@ const LEFT: FaqEntry[] = [
           <li>
             <Check />
             Destinations idéales :{" "}
-            <strong>Thaïlande, Costa Rica, Maroc, Canada</strong>
+            <strong>
+              Costa Rica, Canada, Thaïlande, Japon, Île Maurice, La Réunion,
+              Italie, Espagne
+            </strong>
           </li>
         </ul>
       </>
@@ -105,7 +108,10 @@ const LEFT: FaqEntry[] = [
           <li>
             <Check />
             Destinations phares :{" "}
-            <strong>Seychelles, Île Maurice, Zanzibar, Japon</strong>
+            <strong>
+              Maldives, Seychelles, Île Maurice, Polynésie française, Bali,
+              Zanzibar, Japon
+            </strong>
           </li>
         </ul>
       </>
@@ -117,24 +123,34 @@ const RIGHT: FaqEntry[] = [
   {
     question: <>Quelles sont vos destinations les plus demandées&nbsp;?</>,
     answer: (
-      <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
-        <li>
-          <Check />
-          <strong>Japon, Thaïlande, Maroc</strong>
-        </li>
-        <li>
-          <Check />
-          <strong>Île Maurice, Seychelles, Zanzibar</strong>
-        </li>
-        <li>
-          <Check />
-          <strong>Canada, Costa Rica, Laponie</strong>
-        </li>
-        <li>
-          <Check />
-          <strong>Londres, Amsterdam, Porto, Rome</strong>
-        </li>
-      </ul>
+      <>
+        <p>
+          Parmi nos <strong>plus de 70 destinations</strong>, les plus
+          plébiscitées sont :
+        </p>
+        <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
+          <li>
+            <Check />
+            <strong>Japon, Thaïlande, Vietnam, Bali, Sri Lanka</strong>
+          </li>
+          <li>
+            <Check />
+            <strong>Maroc, Tanzanie, Zanzibar, Afrique du Sud</strong>
+          </li>
+          <li>
+            <Check />
+            <strong>Île Maurice, Seychelles, Maldives, La Réunion</strong>
+          </li>
+          <li>
+            <Check />
+            <strong>Canada, Costa Rica, Pérou, Brésil</strong>
+          </li>
+          <li>
+            <Check />
+            <strong>Islande, Laponie, Italie, Grèce, Portugal</strong>
+          </li>
+        </ul>
+      </>
     ),
   },
   {

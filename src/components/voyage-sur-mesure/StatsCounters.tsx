@@ -76,7 +76,7 @@ export default function StatsCounters() {
         </div>
         <div className="flex flex-col">
           <span className="font-h1 text-[28px] sm:text-[36px] font-bold text-[#004191] leading-none mb-1">
-            <span className="counter-value" data-target="13" data-suffix="+">
+            <span className="counter-value" data-target="70" data-suffix="+">
               0
             </span>
           </span>
