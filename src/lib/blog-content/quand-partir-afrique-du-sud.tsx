@@ -47,8 +47,6 @@ const quandPartirAfriqueDuSud: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-afrique-du-sud-1.jpg",
-      imgAlt: "Montagne de la Table surplombant la ville du Cap en Afrique du Sud",
     },
     {
       h2: "Pour le safari : de mai à septembre",

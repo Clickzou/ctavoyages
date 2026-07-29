@@ -48,8 +48,6 @@ const vacancesNatureDeconnexion: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-vacances-nature-deconnexion-1.jpg",
-      imgAlt: "Sentier de randonnée traversant une forêt baignée de lumière",
     },
     {
       h2: "Dormir au cœur du paysage",

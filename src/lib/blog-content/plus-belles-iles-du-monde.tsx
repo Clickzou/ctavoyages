@@ -53,8 +53,6 @@ const plusBellesIlesDuMonde: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-belles-iles-du-monde-1.jpg",
-      imgAlt: "Plage de granit rose et sable blanc aux Seychelles",
     },
     {
       h2: "Les joyaux du Pacifique",

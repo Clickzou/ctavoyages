@@ -51,8 +51,6 @@ const plusBellesPlagesDEurope: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-belles-plages-d-europe-1.jpg",
-      imgAlt: "Plage de sable rose et lagon turquoise en Crète",
     },
     {
       h2: "Les criques du Portugal et d'Espagne",

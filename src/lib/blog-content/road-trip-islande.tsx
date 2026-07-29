@@ -46,9 +46,6 @@ const roadTripIslande: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-road-trip-islande-1.jpg",
-      imgAlt:
-        "Geyser Strokkur en éruption dans le Cercle d'Or islandais",
     },
     {
       h2: "Étape 2 : la côte sud, cascades et plages noires",

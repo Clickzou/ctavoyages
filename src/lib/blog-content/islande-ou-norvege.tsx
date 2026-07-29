@@ -49,8 +49,6 @@ const islandeOuNorvege: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-islande-ou-norvege-1.jpg",
-      imgAlt: "Cascade islandaise et fjord norvégien côte à côte",
     },
     {
       h2: "Quelles activités selon vos envies ?",

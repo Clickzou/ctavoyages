@@ -32,7 +32,7 @@ const STYLE =
   "vivid yet natural colors, wide landscape framing. " +
   "No text, no logos, no watermarks, no recognizable faces.";
 
-// 5 scènes par article (ordre = sections 1 à 5).
+// 5 scenes par article (ordre = sections 1 a 5).
 const PROMPTS = {
   "circuit-canada-rocheuses-quebec": [
     "Turquoise glacial Lake Louise mirroring snow-capped Canadian Rockies, pine forest, dramatic peaks, clear morning light",
@@ -106,9 +106,44 @@ const PROMPTS = {
   ],
 };
 
+// Prompts des autres articles : trop nombreux pour tenir ici, ils vivent dans
+// scripts/section-prompts/*.json ({ slug: [{ prompt, alt }, ...] }), un fichier
+// par lot thematique. Ces fichiers portent aussi le texte alternatif, repris
+// par build-section-images.mjs : une image generee ne peut pas conserver le
+// credit du photographe Unsplash qu'elle remplace.
+export function loadExternalPrompts(dir = path.join(__dirname, "section-prompts")) {
+  const merged = {};
+  if (!fs.existsSync(dir)) return merged;
+  for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".json"))) {
+    const batch = JSON.parse(fs.readFileSync(path.join(dir, file), "utf8"));
+    for (const [slug, entries] of Object.entries(batch)) {
+      if (merged[slug]) {
+        throw new Error(`section-prompts : "${slug}" defini deux fois (${file})`);
+      }
+      merged[slug] = entries;
+    }
+  }
+  return merged;
+}
+
+const EXTERNAL_SLUGS = new Set();
+for (const [slug, entries] of Object.entries(loadExternalPrompts())) {
+  PROMPTS[slug] = entries.map((e) => (typeof e === "string" ? e : e.prompt));
+  EXTERNAL_SLUGS.add(slug);
+}
+
 const argv = process.argv.slice(2);
 const FORCE = argv.includes("--force");
 const ONLY = argv.find((a) => a.startsWith("--slug="))?.slice("--slug=".length);
+// --external-only : ne traite que les articles decrits dans section-prompts/,
+// pour ne pas regenerer avec --force les series deja validees d'ici.
+const EXTERNAL_ONLY = argv.includes("--external-only");
+// --skip=a,b : preserve des articles dont les images ont deja ete validees.
+const SKIP = new Set(
+  (argv.find((a) => a.startsWith("--skip="))?.slice("--skip=".length) ?? "")
+    .split(",")
+    .filter(Boolean),
+);
 
 fal.config({ credentials: readFalKey() });
 
@@ -134,6 +169,8 @@ async function genOne(prompt) {
 const jobs = [];
 for (const [slug, prompts] of Object.entries(PROMPTS)) {
   if (ONLY && slug !== ONLY) continue;
+  if (EXTERNAL_ONLY && !EXTERNAL_SLUGS.has(slug)) continue;
+  if (SKIP.has(slug)) continue;
   prompts.forEach((prompt, idx) => {
     const out = path.join(OUT_DIR, `blog-${slug}-${idx + 1}.jpg`);
     if (!FORCE && fs.existsSync(out)) return;

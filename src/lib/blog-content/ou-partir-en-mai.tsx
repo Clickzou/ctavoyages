@@ -45,8 +45,6 @@ const ouPartirEnMai: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-mai-1.jpg",
-      imgAlt: "Crique aux eaux turquoise sur une côte méditerranéenne en mai",
     },
     {
       h2: "La nature luxuriante : Islande, Açores et Écosse",

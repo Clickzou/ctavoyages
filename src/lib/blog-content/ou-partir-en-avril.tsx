@@ -45,8 +45,6 @@ const ouPartirEnAvril: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-avril-1.jpg",
-      imgAlt: "Ruelle fleurie d'une ville européenne au printemps",
     },
     {
       h2: "Les cerisiers et le Japon en fête",

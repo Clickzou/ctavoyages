@@ -46,9 +46,6 @@ const ouPartirEnOctobre: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-octobre-1.jpg",
-      imgAlt:
-        "Côte méditerranéenne ensoleillée et paisible au mois d'octobre",
     },
     {
       h2: "Les couleurs flamboyantes de l'automne",

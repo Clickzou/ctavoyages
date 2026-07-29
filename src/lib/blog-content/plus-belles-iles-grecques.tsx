@@ -63,9 +63,6 @@ const plusBellesIlesGrecques: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-belles-iles-grecques-1.jpg",
-      imgAlt:
-        "Village blanc aux dômes bleus surplombant la caldeira de Santorin au coucher du soleil",
     },
     {
       h2: "Le Dodécanèse, entre Grèce et Orient",

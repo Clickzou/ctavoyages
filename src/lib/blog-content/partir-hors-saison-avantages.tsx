@@ -47,8 +47,6 @@ const partirHorsSaisonAvantages: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-partir-hors-saison-avantages-1.jpg",
-      imgAlt: "Ruelle paisible d'une vieille ville européenne sans touristes",
     },
     {
       h2: "Des sites enfin sans la foule",

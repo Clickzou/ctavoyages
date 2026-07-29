@@ -48,9 +48,6 @@ const quandPartirJordanie: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-jordanie-1.jpg",
-      imgAlt:
-        "Dunes et formations rocheuses du désert du Wadi Rum en Jordanie",
     },
     {
       h2: "La meilleure période : printemps et automne",

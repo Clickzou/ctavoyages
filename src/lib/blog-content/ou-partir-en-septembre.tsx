@@ -48,9 +48,6 @@ const ouPartirEnSeptembre: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-septembre-1.jpg",
-      imgAlt:
-        "Crique méditerranéenne paisible aux eaux chaudes en septembre",
     },
     {
       h2: "Les vendanges et l'art de vivre",

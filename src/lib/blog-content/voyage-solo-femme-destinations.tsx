@@ -68,8 +68,6 @@ const voyageSoloFemmeDestinations: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-voyage-solo-femme-destinations-1.jpg",
-      imgAlt: "Voyageuse marchant seule sur un sentier panoramique",
     },
     {
       h2: "Sécurité : nos repères pour bien choisir",

@@ -48,9 +48,6 @@ const marocOuTunisie: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-maroc-ou-tunisie-1.jpg",
-      imgAlt:
-        "Place animée de Marrakech et plage de Djerba en Tunisie",
     },
     {
       h2: "Culture et médinas : l'intensité marocaine",

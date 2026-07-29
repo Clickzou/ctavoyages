@@ -46,9 +46,6 @@ const quandPartirCanada: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-canada-1.jpg",
-      imgAlt:
-        "Forêt d'érables rouges et orangés au bord d'un lac canadien",
     },
     {
       h2: "Été (juin à août) : la saison reine des grands espaces",

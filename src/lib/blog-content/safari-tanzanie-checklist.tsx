@@ -60,9 +60,6 @@ const safariTanzanieChecklist: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-safari-tanzanie-checklist-1.jpg",
-      imgAlt:
-        "Troupeau de gnous lors de la grande migration dans le Serengeti en Tanzanie",
     },
     {
       h2: "Les parcs incontournables",

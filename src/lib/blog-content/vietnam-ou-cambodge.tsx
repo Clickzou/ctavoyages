@@ -46,9 +46,6 @@ const vietnamOuCambodge: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-vietnam-ou-cambodge-1.jpg",
-      imgAlt:
-        "Baie d'Halong au Vietnam et temple d'Angkor au Cambodge",
     },
     {
       h2: "Paysages : l'avantage de la diversité au Vietnam",

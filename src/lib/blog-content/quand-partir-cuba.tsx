@@ -48,8 +48,6 @@ const quandPartirCuba: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-cuba-1.jpg",
-      imgAlt: "Voitures vintage colorées dans une rue animée de La Havane à Cuba",
     },
     {
       h2: "La meilleure période : de décembre à avril",

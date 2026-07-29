@@ -1,0 +1,638 @@
+{
+  "budget-voyage-bien-calculer": [
+    {
+      "prompt": "Desk with a notebook, pen, calculator and a world map, planning a trip budget, warm daylight",
+      "alt": "Bureau avec carnet, calculatrice et carte du monde pour préparer un budget"
+    },
+    {
+      "prompt": "Notebook with a handwritten daily budget, a calculator and foreign banknotes on a wooden desk, warm daylight",
+      "alt": "Carnet de budget journalier, calculatrice et devises étrangères"
+    },
+    {
+      "prompt": "Restaurant bill, taxi receipts and small change on a cafe table beside a coffee cup",
+      "alt": "Addition, tickets de taxi et monnaie sur une table de café"
+    },
+    {
+      "prompt": "Glass jar filled with coins and folded banknotes beside a small globe, soft window light",
+      "alt": "Bocal d'épargne rempli de pièces à côté d'un globe"
+    },
+    {
+      "prompt": "Traveler checking expenses on a phone at a cafe table with a notebook and pen, warm light",
+      "alt": "Voyageur suivant ses dépenses sur son téléphone à une terrasse"
+    },
+    {
+      "prompt": "Travel documents, a boarding pass and a brochure neatly arranged on a wooden table",
+      "alt": "Documents de voyage et carte d'embarquement disposés sur une table"
+    }
+  ],
+  "choisir-assurance-voyage": [
+    {
+      "prompt": "Passport, boarding pass and an insurance document neatly arranged on a desk beside a suitcase handle",
+      "alt": "Passeport, carte d'embarquement et document d'assurance sur un bureau"
+    },
+    {
+      "prompt": "Insurance contract pages with a pen and reading glasses on a desk, soft natural light",
+      "alt": "Contrat d'assurance, stylo et lunettes posés sur un bureau"
+    },
+    {
+      "prompt": "Bank card and an insurance leaflet side by side on a wooden table, warm daylight",
+      "alt": "Carte bancaire et brochure d'assurance côte à côte"
+    },
+    {
+      "prompt": "Magnifying glass over dense small print on a contract page, shallow depth of field",
+      "alt": "Loupe grossissant les petites lignes d'un contrat"
+    },
+    {
+      "prompt": "Calendar with a circled departure date beside a passport and a pen on a desk",
+      "alt": "Calendrier avec une date de départ entourée, à côté d'un passeport"
+    },
+    {
+      "prompt": "First aid kit, passport and phone laid out on a bed before departure, tidy composition",
+      "alt": "Trousse de secours, passeport et téléphone préparés avant le départ"
+    }
+  ],
+  "croisiere-premiere-fois-conseils": [
+    {
+      "prompt": "Large modern cruise ship at sea seen from the water at golden hour, calm blue ocean",
+      "alt": "Navire de croisière moderne en mer à l'heure dorée"
+    },
+    {
+      "prompt": "Cruise ship cabin with a balcony opening onto a calm blue sea, neatly made bed, morning light",
+      "alt": "Cabine de croisière avec balcon donnant sur la mer"
+    },
+    {
+      "prompt": "Ship railing and horizon line over a calm open sea under a clear sky, sense of stability",
+      "alt": "Bastingage d'un navire face à une mer calme"
+    },
+    {
+      "prompt": "Elegant cruise ship dining room with set tables and large sea-view windows, warm light",
+      "alt": "Salle à manger d'un navire de croisière face à la mer"
+    },
+    {
+      "prompt": "Cruise ship anchored off a picturesque coastal town with tenders heading to shore",
+      "alt": "Navire de croisière au mouillage devant une ville côtière"
+    },
+    {
+      "prompt": "Open suitcase with neatly folded clothes and a sun hat beside a cruise ticket on a bed",
+      "alt": "Valise préparée pour une croisière, avec billet et chapeau"
+    }
+  ],
+  "decouvrir-destination-en-train": [
+    {
+      "prompt": "Red panoramic train crossing a curved stone viaduct in snowy Swiss Alps, dramatic mountains",
+      "alt": "Train panoramique rouge franchissant un viaduc dans les Alpes suisses"
+    },
+    {
+      "prompt": "Train crossing a tall stone viaduct through wild green Scottish highlands and moorland, steam and mist",
+      "alt": "Train franchissant un viaduc de pierre dans les Highlands écossais"
+    },
+    {
+      "prompt": "Blue vintage train winding through emerald tea plantations on a hillside, Sri Lanka, open doors",
+      "alt": "Train bleu traversant les plantations de thé sri-lankaises"
+    },
+    {
+      "prompt": "Long-distance train crossing an immense snowy taiga plain under a pale winter sky, Siberia",
+      "alt": "Train traversant la taïga enneigée sous un ciel d'hiver"
+    },
+    {
+      "prompt": "Red panoramic train on a curved stone viaduct amid snow-capped Alpine peaks, Switzerland",
+      "alt": "Train panoramique rouge sur un viaduc au cœur des Alpes"
+    }
+  ],
+  "destinations-plongee-debutant": [
+    {
+      "prompt": "Calm turquoise bay with a dive boat anchored above a shallow coral reef, clear water",
+      "alt": "Bateau de plongée mouillé au-dessus d'un récif peu profond"
+    },
+    {
+      "prompt": "Vibrant Red Sea coral reef with clouds of orange anthias fish in crystal-clear blue water",
+      "alt": "Récif corallien de la mer Rouge et bancs de poissons orangés"
+    },
+    {
+      "prompt": "Shallow turquoise water above a bright coral garden with a sandy bottom, tropical island",
+      "alt": "Jardin de corail dans une eau turquoise peu profonde"
+    },
+    {
+      "prompt": "Diver descending along a colorful coral wall in warm clear water, Southeast Asia",
+      "alt": "Plongeuse longeant un tombant corallien coloré"
+    },
+    {
+      "prompt": "Snorkeler at the surface looking down at a coral reef and tropical fish, sunlight on the water",
+      "alt": "Palmeur observant un récif corallien depuis la surface"
+    },
+    {
+      "prompt": "Diving instructor and beginner practicing in calm shallow turquoise water near a boat",
+      "alt": "Moniteur et débutant s'exerçant dans une eau calme près d'un bateau"
+    }
+  ],
+  "destinations-voyage-aventure": [
+    {
+      "prompt": "Trekker on a high mountain trail facing snow-capped Himalayan peaks, prayer flags, clear cold air",
+      "alt": "Randonneur face aux sommets himalayens et à des drapeaux de prière"
+    },
+    {
+      "prompt": "Vast red desert with towering sandstone formations and a tiny 4x4 for scale, harsh clear light",
+      "alt": "Formations de grès dominant un désert rouge"
+    },
+    {
+      "prompt": "Jagged granite peaks above a windswept turquoise lake and steppe, Patagonia, dramatic clouds",
+      "alt": "Pics granitiques dominant un lac turquoise en Patagonie"
+    },
+    {
+      "prompt": "Dense green rainforest canopy with mist and a river winding through, tropical wilderness",
+      "alt": "Canopée de forêt tropicale traversée par une rivière"
+    },
+    {
+      "prompt": "Hiking boots, a map and a backpack on a rock overlooking a wild mountain valley",
+      "alt": "Chaussures de randonnée et sac à dos face à une vallée sauvage"
+    }
+  ],
+  "eviter-le-jet-lag": [
+    {
+      "prompt": "Airplane silhouette crossing a sky at dusk with time zone feel, long clouds, deep blue and orange",
+      "alt": "Avion traversant le ciel au crépuscule"
+    },
+    {
+      "prompt": "Two clocks showing different time zones on a wall beside a packed suitcase, soft light",
+      "alt": "Deux horloges affichant des fuseaux horaires différents"
+    },
+    {
+      "prompt": "Airplane cabin window at cruising altitude with a sleep mask and blanket on the seat, dim light",
+      "alt": "Hublot d'avion, masque de sommeil et couverture sur le siège"
+    },
+    {
+      "prompt": "Traveler stretching by a hotel window at sunrise in a new city, warm morning light",
+      "alt": "Voyageur s'étirant devant la fenêtre d'un hôtel au lever du jour"
+    },
+    {
+      "prompt": "Glass of water and a small pill box on a bedside table with warm lamp light",
+      "alt": "Verre d'eau et pilulier sur une table de chevet"
+    },
+    {
+      "prompt": "Sunlight streaming into a bedroom over rumpled white sheets, peaceful morning atmosphere",
+      "alt": "Lumière du matin entrant dans une chambre"
+    }
+  ],
+  "formalites-visa-voyage": [
+    {
+      "prompt": "Passport, pen and travel documents on a desk with a world map in the background, warm light",
+      "alt": "Passeport et documents de voyage devant une carte du monde"
+    },
+    {
+      "prompt": "Passport open at a page of colorful entry stamps beside a laptop, warm desk light",
+      "alt": "Passeport ouvert sur des tampons d'entrée, à côté d'un ordinateur"
+    },
+    {
+      "prompt": "Vaccination record booklet, a vial and a stethoscope on a clean white surface",
+      "alt": "Carnet de vaccination, flacon et stéthoscope"
+    },
+    {
+      "prompt": "Insurance and assistance documents fanned out beside a passport and a phone on a desk",
+      "alt": "Documents d'assurance et d'assistance à côté d'un passeport"
+    },
+    {
+      "prompt": "International driving permit, car keys and a road map on a wooden table",
+      "alt": "Permis international, clés de voiture et carte routière"
+    },
+    {
+      "prompt": "World map on a wall with pinned notes and a passport on the desk below",
+      "alt": "Carte du monde punaisée de notes au-dessus d'un bureau"
+    }
+  ],
+  "lune-de-miel-destination": [
+    {
+      "prompt": "Couple's silhouette on a quiet tropical beach at sunset, gentle waves, warm romantic colors",
+      "alt": "Silhouette d'un couple sur une plage tropicale au coucher du soleil"
+    },
+    {
+      "prompt": "Private overwater villa deck with two loungers facing a turquoise lagoon at sunset, romantic",
+      "alt": "Terrasse privative face au lagon au coucher du soleil"
+    },
+    {
+      "prompt": "Couple silhouette on a wild mountain ridge at golden hour, vast landscape ahead",
+      "alt": "Silhouette d'un couple sur une crête au coucher du soleil"
+    },
+    {
+      "prompt": "Elegant candlelit dinner table on a terrace overlooking a historic European city at dusk",
+      "alt": "Dîner aux chandelles sur une terrasse dominant une ville historique"
+    },
+    {
+      "prompt": "Calendar and a travel brochure on a table with two coffee cups, planning atmosphere",
+      "alt": "Calendrier et brochure de voyage à côté de deux tasses de café"
+    },
+    {
+      "prompt": "Rose petals and two glasses of champagne on a bed with a sea view, soft warm light",
+      "alt": "Pétales de rose et coupes de champagne dans une chambre avec vue sur mer"
+    }
+  ],
+  "ou-voir-aurores-boreales": [
+    {
+      "prompt": "Vivid green aurora borealis filling the sky above a snowy Arctic landscape and dark mountains",
+      "alt": "Aurore boréale illuminant un paysage arctique enneigé"
+    },
+    {
+      "prompt": "Bright green aurora arching across a starry sky above a snowy Arctic landscape, deep winter",
+      "alt": "Aurore boréale verte au-dessus d'un paysage arctique enneigé"
+    },
+    {
+      "prompt": "Isolated cabin far from any light source under a vivid aurora and clear starry sky",
+      "alt": "Cabane isolée sous une aurore boréale et un ciel étoilé"
+    },
+    {
+      "prompt": "Husky sled team running across a snowy Arctic plain in blue twilight",
+      "alt": "Attelage de huskies traversant une plaine arctique au crépuscule"
+    },
+    {
+      "prompt": "Camera on a tripod pointed at a green aurora over a frozen lake, long exposure atmosphere",
+      "alt": "Appareil photo sur trépied face à une aurore boréale"
+    }
+  ],
+  "partir-en-amoureux-week-end": [
+    {
+      "prompt": "Romantic European city at dusk with lit bridges, a river and warm golden facades",
+      "alt": "Ville européenne romantique illuminée au crépuscule"
+    },
+    {
+      "prompt": "Sunlit exotic terrace with palm shade, two chairs and a distant turquoise sea",
+      "alt": "Terrasse exotique ombragée face à une mer turquoise"
+    },
+    {
+      "prompt": "Cozy wooden cabin interior with a lit fireplace and a big window onto a snowy forest",
+      "alt": "Intérieur de cabane en bois avec feu de cheminée et vue sur la forêt enneigée"
+    },
+    {
+      "prompt": "Transparent bubble lodge in a forest clearing under a starry night sky, warm interior glow",
+      "alt": "Bulle transparente en clairière sous un ciel étoilé"
+    },
+    {
+      "prompt": "Breakfast tray with coffee and pastries on a bed facing a window with a countryside view",
+      "alt": "Petit-déjeuner servi au lit face à une fenêtre ouverte sur la campagne"
+    }
+  ],
+  "prendre-avion-premiere-fois": [
+    {
+      "prompt": "Airport terminal window with an aircraft at the gate and travelers waiting, soft daylight",
+      "alt": "Avion à la porte d'embarquement vu depuis le terminal"
+    },
+    {
+      "prompt": "Bright airport check-in hall with departure boards and travelers with luggage, wide view",
+      "alt": "Hall d'enregistrement d'un aéroport et ses panneaux d'affichage"
+    },
+    {
+      "prompt": "Airport security lane with trays, belongings and a scanner, clean modern terminal",
+      "alt": "Poste de contrôle de sécurité d'un aéroport et ses bacs"
+    },
+    {
+      "prompt": "Passengers boarding an aircraft through a jet bridge window with the plane visible outside",
+      "alt": "Embarquement des passagers par une passerelle vers l'avion"
+    },
+    {
+      "prompt": "View from an airplane window of the wing above clouds at golden hour",
+      "alt": "Aile de l'avion au-dessus des nuages à l'heure dorée"
+    },
+    {
+      "prompt": "Baggage carousel in an arrivals hall with suitcases going round, travelers waiting",
+      "alt": "Tapis à bagages dans un hall d'arrivée"
+    }
+  ],
+  "preparer-sa-valise-voyage": [
+    {
+      "prompt": "Open empty suitcase on a bed with folded clothes waiting beside it, bright bedroom light",
+      "alt": "Valise ouverte et vêtements pliés prêts à être rangés"
+    },
+    {
+      "prompt": "Neatly folded clothes arranged in colors on a bed beside an open suitcase, bright daylight",
+      "alt": "Vêtements pliés par couleurs à côté d'une valise ouverte"
+    },
+    {
+      "prompt": "Open toiletry bag with small bottles and a compact first aid kit on a white surface",
+      "alt": "Trousse de toilette ouverte et petite trousse de secours"
+    },
+    {
+      "prompt": "Rolled clothes and packing cubes fitted tightly into an open suitcase, top view",
+      "alt": "Vêtements roulés et cubes de rangement dans une valise"
+    },
+    {
+      "prompt": "Small cabin bag with a book, headphones, passport and a water bottle laid beside it",
+      "alt": "Bagage cabine avec livre, casque, passeport et gourde"
+    },
+    {
+      "prompt": "Handwritten checklist on a notepad beside a closed suitcase by the front door",
+      "alt": "Check-list manuscrite posée près d'une valise bouclée"
+    }
+  ],
+  "safari-tanzanie-checklist": [
+    {
+      "prompt": "Safari vehicle watching elephants on the golden savanna at sunrise, acacia trees",
+      "alt": "Véhicule de safari observant des éléphants dans la savane"
+    },
+    {
+      "prompt": "Golden savanna plain with acacia trees and distant animals under a vast sky, Tanzania",
+      "alt": "Plaine de savane parsemée d'acacias en Tanzanie"
+    },
+    {
+      "prompt": "Vaccination booklet, passport and a mosquito net folded on a table, travel preparation",
+      "alt": "Carnet de vaccination, passeport et moustiquaire"
+    },
+    {
+      "prompt": "Safari packing flat lay: neutral clothes, binoculars, hat, camera and boots on a wooden floor",
+      "alt": "Équipement de safari : vêtements neutres, jumelles, chapeau et jumelles"
+    },
+    {
+      "prompt": "Open safari vehicle on a dirt track raising dust in the savanna at golden hour",
+      "alt": "Véhicule de safari soulevant la poussière dans la savane"
+    },
+    {
+      "prompt": "Sunset over the savanna seen from a safari camp deck with lanterns and folding chairs",
+      "alt": "Coucher de soleil sur la savane vu d'un camp de safari"
+    }
+  ],
+  "slow-travel-guide": [
+    {
+      "prompt": "Traveler walking slowly on a quiet country path with a small backpack, soft morning light",
+      "alt": "Voyageur cheminant tranquillement sur un sentier de campagne"
+    },
+    {
+      "prompt": "Traveler sitting on a village bench reading, unhurried atmosphere, warm afternoon light",
+      "alt": "Voyageur lisant tranquillement sur un banc de village"
+    },
+    {
+      "prompt": "Shared meal around a rustic table with local dishes and hands passing plates, warm light",
+      "alt": "Repas partagé autour d'une table rustique"
+    },
+    {
+      "prompt": "Bicycle leaning against a stone wall on a quiet country lane with fields beyond",
+      "alt": "Vélo appuyé contre un mur de pierre sur un chemin de campagne"
+    },
+    {
+      "prompt": "Small guesthouse courtyard with plants, hanging laundry and simple wooden furniture",
+      "alt": "Cour d'une maison d'hôtes avec plantes et mobilier simple"
+    }
+  ],
+  "vacances-au-ski-hors-alpes": [
+    {
+      "prompt": "Pyrenean ski resort with snowy slopes, pine forest and mountain village, sunny winter day",
+      "alt": "Station de ski pyrénéenne et son village de montagne"
+    },
+    {
+      "prompt": "Pale limestone spires above snowy ski slopes and pine forest at sunrise, Dolomites, Italy",
+      "alt": "Aiguilles calcaires des Dolomites dominant les pistes enneigées"
+    },
+    {
+      "prompt": "Skier making a deep powder turn in a snowy forest of tall firs, bright snow spray, Canada",
+      "alt": "Skieur dans la poudreuse au milieu d'une forêt de sapins"
+    },
+    {
+      "prompt": "Snow-laden trees shaped like sculptures on a Japanese ski mountain, soft grey light",
+      "alt": "Arbres chargés de neige sur une montagne japonaise"
+    },
+    {
+      "prompt": "Ski gear leaning against a wooden chalet wall with mountains behind, sunny winter day",
+      "alt": "Skis appuyés contre un chalet de bois face aux montagnes"
+    }
+  ],
+  "vacances-nature-deconnexion": [
+    {
+      "prompt": "Peaceful forest clearing with morning light through tall trees and mist near a stream",
+      "alt": "Clairière forestière baignée de lumière matinale"
+    },
+    {
+      "prompt": "Wooden cabin on stilts at the edge of a forest lake at dawn, mist over the water",
+      "alt": "Cabane sur pilotis au bord d'un lac forestier à l'aube"
+    },
+    {
+      "prompt": "Wild green valley with a river and no buildings, morning mist and soft light",
+      "alt": "Vallée sauvage traversée par une rivière dans la brume matinale"
+    },
+    {
+      "prompt": "Phone switched off on a wooden table beside a book and a mug, forest visible through a window",
+      "alt": "Téléphone éteint près d'un livre et d'une tasse, forêt en arrière-plan"
+    },
+    {
+      "prompt": "Hiker crossing a wooden footbridge over a clear stream in a mossy forest",
+      "alt": "Randonneur traversant une passerelle au-dessus d'un ruisseau"
+    },
+    {
+      "prompt": "Campfire embers glowing at dusk beside a tent in a forest clearing, stars appearing",
+      "alt": "Braises d'un feu de camp au crépuscule près d'une tente"
+    }
+  ],
+  "voyage-avec-ados-idees": [
+    {
+      "prompt": "Teenagers zip-lining or climbing in a forest adventure park, bright daylight, motion",
+      "alt": "Adolescents en tyrolienne dans un parc aventure"
+    },
+    {
+      "prompt": "Lively city square with street art, skaters and cafes, energetic urban atmosphere",
+      "alt": "Place urbaine animée décorée de street art"
+    },
+    {
+      "prompt": "Car on an open scenic road with luggage on the roof and mountains ahead, sense of freedom",
+      "alt": "Voiture chargée sur une route panoramique"
+    },
+    {
+      "prompt": "Teenagers paddleboarding on clear turquoise water near a rocky coast, bright summer day",
+      "alt": "Paddle sur une eau turquoise près d'une côte rocheuse"
+    },
+    {
+      "prompt": "Family looking at a map together on a viewpoint over a valley, warm afternoon light",
+      "alt": "Famille consultant une carte à un belvédère"
+    }
+  ],
+  "voyage-bien-etre-spa": [
+    {
+      "prompt": "Serene spa pavilion surrounded by tropical greenery with a stone bath and frangipani flowers",
+      "alt": "Pavillon de spa entouré de végétation tropicale"
+    },
+    {
+      "prompt": "Open-air spa pavilion on stilts above a turquoise lagoon with massage table, Indian Ocean",
+      "alt": "Pavillon de spa sur pilotis au-dessus d'un lagon turquoise"
+    },
+    {
+      "prompt": "Traditional Thai massage room with wooden floors, orchids and soft filtered light",
+      "alt": "Salle de massage thaïlandaise traditionnelle ornée d'orchidées"
+    },
+    {
+      "prompt": "Moroccan hammam interior with tadelakt walls, brass basins and steam, warm light from above",
+      "alt": "Hammam marocain aux murs de tadelakt dans la vapeur"
+    },
+    {
+      "prompt": "Ayurvedic treatment table with copper oil vessels, herbs and flower petals, warm tones",
+      "alt": "Table de soins ayurvédiques, huiles et pétales de fleurs"
+    },
+    {
+      "prompt": "Serene spa relaxation area with loungers, plants and a quiet pool, soft natural light",
+      "alt": "Espace de détente d'un spa et son bassin"
+    }
+  ],
+  "voyage-famille-astuces": [
+    {
+      "prompt": "Family with children walking together on a sunny beach with a gentle sea, backs to camera",
+      "alt": "Famille marchant sur une plage ensoleillée"
+    },
+    {
+      "prompt": "Family packing suitcases together in a bright living room, relaxed atmosphere",
+      "alt": "Famille préparant ses valises dans un salon lumineux"
+    },
+    {
+      "prompt": "Children and parents exploring a sunny beach rock pool together, holiday atmosphere",
+      "alt": "Enfants et parents explorant des rochers sur une plage ensoleillée"
+    },
+    {
+      "prompt": "Family first aid kit, sun cream and hats laid out on a table before departure",
+      "alt": "Trousse de secours, crème solaire et chapeaux préparés pour un départ en famille"
+    },
+    {
+      "prompt": "Parent and child looking at a menu board outside a small local restaurant",
+      "alt": "Parent et enfant devant l'ardoise d'un restaurant local"
+    },
+    {
+      "prompt": "Family walking hand in hand along a beach path at golden hour, backs to camera",
+      "alt": "Famille marchant main dans la main sur un chemin de bord de mer"
+    }
+  ],
+  "voyage-gastronomique-destinations": [
+    {
+      "prompt": "Rustic Italian table with fresh pasta, tomatoes, olive oil and basil, warm natural light",
+      "alt": "Table italienne garnie de pâtes fraîches et de produits du terroir"
+    },
+    {
+      "prompt": "Elegant Japanese kaiseki dishes beautifully plated on dark lacquer, minimal composition",
+      "alt": "Plats japonais raffinés dressés sur un plateau de laque"
+    },
+    {
+      "prompt": "Southeast Asian street food stall at night with steaming bowls and colorful herbs",
+      "alt": "Échoppe de street food asiatique et ses bols fumants"
+    },
+    {
+      "prompt": "Colorful Latin American market stall with chilies, corn and tropical produce",
+      "alt": "Étal de marché latino-américain garni de piments et de maïs"
+    },
+    {
+      "prompt": "Moroccan tagine steaming on a table with bread, olives and mint tea, warm light",
+      "alt": "Tajine fumant accompagné de pain, d'olives et de thé à la menthe"
+    }
+  ],
+  "voyage-photo-plus-beaux-spots": [
+    {
+      "prompt": "Photographer standing before a grandiose mountain landscape at sunrise, camera in hand",
+      "alt": "Photographe face à un paysage de montagne au lever du soleil"
+    },
+    {
+      "prompt": "Milky way and green aurora over a silhouetted mountain range, long exposure night sky",
+      "alt": "Voie lactée et aurore boréale au-dessus d'une chaîne de montagnes"
+    },
+    {
+      "prompt": "Ancient city rooftops and domes at blue hour with warm window lights, elevated view",
+      "alt": "Toits et coupoles d'une cité ancienne à l'heure bleue"
+    },
+    {
+      "prompt": "Colorful market scene with fabrics and spices, vivid colors and natural light",
+      "alt": "Scène de marché aux étoffes et épices colorées"
+    },
+    {
+      "prompt": "Camera on a tripod at a viewpoint during sunrise, mountains and mist beyond",
+      "alt": "Appareil photo sur trépied à un belvédère au lever du soleil"
+    }
+  ],
+  "voyage-responsable-ecotourisme": [
+    {
+      "prompt": "Lush protected forest with a wooden walkway and soft light through the canopy",
+      "alt": "Forêt protégée traversée par un cheminement de bois"
+    },
+    {
+      "prompt": "Modern electric train crossing a green landscape with wind turbines on the horizon",
+      "alt": "Train électrique traversant un paysage verdoyant"
+    },
+    {
+      "prompt": "Eco-lodge built of local wood blending into dense forest, solar panels on the roof",
+      "alt": "Éco-lodge en bois local intégré à la forêt"
+    },
+    {
+      "prompt": "Local artisan weaving in a workshop, hands at work, warm natural light",
+      "alt": "Artisan local au travail dans son atelier"
+    },
+    {
+      "prompt": "Ranger observing wildlife at a distance with binoculars in a protected natural area",
+      "alt": "Garde observant la faune à distance dans un espace protégé"
+    },
+    {
+      "prompt": "Traveler on a forest boardwalk in a protected reserve, tall trees and dappled light",
+      "alt": "Voyageur sur un caillebotis en forêt protégée"
+    }
+  ],
+  "voyage-solo-femme-destinations": [
+    {
+      "prompt": "Solo woman traveler with a backpack looking out over a scenic viewpoint, confident and calm",
+      "alt": "Voyageuse contemplant un panorama depuis un belvédère"
+    },
+    {
+      "prompt": "Solo traveler with a backpack walking a safe well-lit city street at dusk, calm atmosphere",
+      "alt": "Voyageuse marchant dans une rue éclairée au crépuscule"
+    },
+    {
+      "prompt": "Friendly guesthouse common room with travelers chatting around a wooden table",
+      "alt": "Salon d'une maison d'hôtes où discutent des voyageurs"
+    },
+    {
+      "prompt": "Woman consulting a map on a sunlit terrace with a coffee and a notebook",
+      "alt": "Voyageuse consultant une carte à une terrasse ensoleillée"
+    },
+    {
+      "prompt": "Small group of hikers walking a mountain trail together with a guide, clear day",
+      "alt": "Petit groupe de randonneurs accompagnés d'un guide"
+    }
+  ],
+  "voyager-avec-bebe-conseils": [
+    {
+      "prompt": "Parent packing a small suitcase with baby clothes in a bright sunny room",
+      "alt": "Parent préparant une valise avec des vêtements de bébé"
+    },
+    {
+      "prompt": "Airplane cabin bassinet by a window with soft blanket, calm dim light",
+      "alt": "Nacelle bébé installée en cabine près du hublot"
+    },
+    {
+      "prompt": "Compact stroller, a small bag and baby essentials neatly arranged by a suitcase",
+      "alt": "Poussette compacte et affaires de bébé rangées près d'une valise"
+    },
+    {
+      "prompt": "Baby sleeping peacefully in a shaded pram on a quiet terrace, soft daylight",
+      "alt": "Bébé endormi dans un landau à l'ombre"
+    },
+    {
+      "prompt": "Sun hat, baby sunscreen and a small first aid kit on a table beside a beach bag",
+      "alt": "Chapeau, crème solaire et trousse de secours pour bébé"
+    },
+    {
+      "prompt": "Parent carrying a baby in a sling on a sunny coastal path, backs to camera",
+      "alt": "Parent portant son bébé en écharpe sur un sentier côtier"
+    }
+  ],
+  "voyager-pas-cher-astuces": [
+    {
+      "prompt": "Laptop showing a flight search beside a notebook, coffee and a small globe on a desk",
+      "alt": "Recherche de vols sur un ordinateur portable à côté d'un carnet et d'un globe"
+    },
+    {
+      "prompt": "Quiet off-season seaside promenade with closed shutters and soft light, no crowd",
+      "alt": "Promenade de bord de mer déserte hors saison"
+    },
+    {
+      "prompt": "Simple bright guesthouse room with white linen and a window onto a sunny street",
+      "alt": "Chambre d'hôtes simple et lumineuse ouvrant sur une rue ensoleillée"
+    },
+    {
+      "prompt": "Local bus and a street food stall on a lively neighbourhood corner, warm daylight",
+      "alt": "Bus local et échoppe de rue à un carrefour animé"
+    },
+    {
+      "prompt": "Wallet, a few banknotes and a bank card on a table beside a small backpack",
+      "alt": "Portefeuille, billets et carte bancaire à côté d'un sac à dos"
+    },
+    {
+      "prompt": "Travel advisor and clients talking over a map and brochures at a desk, warm light",
+      "alt": "Conseiller voyage échangeant avec des clients autour d'une carte"
+    }
+  ]
+}

@@ -64,8 +64,6 @@ const croisierePremiereFoisConseils: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-croisiere-premiere-fois-conseils-1.jpg",
-      imgAlt: "Pont supérieur d'un navire de croisière avec piscine et transats",
     },
     {
       h2: "Quelle cabine réserver ?",

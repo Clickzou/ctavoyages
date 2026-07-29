@@ -57,9 +57,6 @@ const cityBreakEuropeHorsSaison: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-city-break-europe-hors-saison-1.jpg",
-      imgAlt:
-        "Vue sur les maisons colorées de Porto et le fleuve Douro au coucher du soleil",
     },
     {
       h2: "Prague, la magie sans la foule",

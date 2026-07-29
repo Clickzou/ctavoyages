@@ -47,9 +47,6 @@ const itineraireJapon2Semaines: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-itineraire-japon-2-semaines-1.jpg",
-      imgAlt:
-        "Le carrefour animé de Shibuya à Tokyo illuminé de néons la nuit",
     },
     {
       h2: "Jours 5 et 6 : le mont Fuji et Hakone",

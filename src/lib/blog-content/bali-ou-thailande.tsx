@@ -47,8 +47,6 @@ const baliOuThailande: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-bali-ou-thailande-1.jpg",
-      imgAlt: "Rizières en terrasses de Bali et plage thaïlandaise côte à côte",
     },
     {
       h2: "La culture et l'ambiance",

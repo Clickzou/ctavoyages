@@ -48,9 +48,6 @@ const queFaireAMarrakech: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-que-faire-a-marrakech-1.jpg",
-      imgAlt:
-        "Place Jemaa el-Fna animée au crépuscule avec la mosquée Koutoubia",
     },
     {
       h2: "Palais et monuments : l'héritage des sultans",

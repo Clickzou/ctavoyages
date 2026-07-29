@@ -69,9 +69,6 @@ const luneDeMielDestination: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-lune-de-miel-destination-1.jpg",
-      imgAlt:
-        "Couple complice planifiant son voyage de noces autour d'une carte du monde",
     },
     {
       h2: "Plage et farniente : les classiques du voyage de noces",

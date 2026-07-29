@@ -61,8 +61,6 @@ const preparerSaValiseVoyage: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-preparer-sa-valise-voyage-1.jpg",
-      imgAlt: "Documents de voyage, passeport et accessoires posés sur une table",
     },
     {
       h2: "Choisir ses vêtements avec méthode",

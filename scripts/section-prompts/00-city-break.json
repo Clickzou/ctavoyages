@@ -1,0 +1,28 @@
+{
+  "city-break-europe-hors-saison": [
+    {
+      "prompt": "Quiet European old town square at dawn with wet cobblestones, warm streetlamps and no crowd",
+      "alt": "Place d'une vieille ville européenne déserte à l'aube"
+    },
+    {
+      "prompt": "Charles Bridge in Prague at dawn with its baroque statues, the Vltava river and Prague Castle behind, light morning mist, almost no people",
+      "alt": "Le pont Charles et le château de Prague au petit matin, dans la brume"
+    },
+    {
+      "prompt": "Plaza de España in Seville, Spain: curved brick and ceramic pavilion, tiled bridges over a canal, orange trees in blossom, clear spring light",
+      "alt": "La place d'Espagne de Séville et ses ponts de céramique, au printemps"
+    },
+    {
+      "prompt": "Vienna in winter: the baroque Schonbrunn palace facade under light snow, formal gardens dusted white, soft grey sky, warm lamplight",
+      "alt": "Le palais de Schönbrunn à Vienne sous une fine couche de neige"
+    },
+    {
+      "prompt": "Edinburgh in autumn: the castle on its volcanic crag seen from Princes Street Gardens, golden and russet trees, moody Scottish sky",
+      "alt": "Le château d'Édimbourg dominant les jardins de Princes Street en automne"
+    },
+    {
+      "prompt": "Cozy European cafe terrace on a cobbled old town square in low season, empty chairs, warm lights, autumn leaves on the ground, calm atmosphere",
+      "alt": "Terrasse de café déserte sur une place pavée d'une vieille ville européenne hors saison"
+    }
+  ]
+}

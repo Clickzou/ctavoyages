@@ -47,8 +47,6 @@ const voyageResponsableEcotourisme: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-voyage-responsable-ecotourisme-1.jpg",
-      imgAlt: "Lodge écologique intégré dans une forêt tropicale luxuriante",
     },
     {
       h2: "Réduire son empreinte carbone, étape par étape",

@@ -48,8 +48,6 @@ const costaRicaOuPanama: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-costa-rica-ou-panama-1.jpg",
-      imgAlt: "Paresseux dans la canopée et oiseau tropical coloré",
     },
     {
       h2: "Plages et îles : Pacifique contre Caraïbes",

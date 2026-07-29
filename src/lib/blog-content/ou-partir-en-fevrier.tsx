@@ -48,8 +48,6 @@ const ouPartirEnFevrier: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-fevrier-1.jpg",
-      imgAlt: "Plage de sable blanc et eau turquoise sous le soleil de février",
     },
     {
       h2: "Cap sur la neige : Alpes, Canada et Laponie",

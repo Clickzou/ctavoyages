@@ -49,8 +49,6 @@ const quandPartirIslande: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-islande-1.jpg",
-      imgAlt: "Cascade puissante et paysage volcanique verdoyant en Islande",
     },
     {
       h2: "L'été (juin à août) : soleil de minuit et route circulaire",

@@ -45,8 +45,6 @@ const vacancesAuSkiHorsAlpes: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-vacances-au-ski-hors-alpes-1.jpg",
-      imgAlt: "Pistes ensoleillées et sommets enneigés des Pyrénées",
     },
     {
       h2: "Les Dolomites italiennes, ski et décor de carte postale",

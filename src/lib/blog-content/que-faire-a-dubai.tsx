@@ -46,9 +46,6 @@ const queFaireADubai: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-que-faire-a-dubai-1.jpg",
-      imgAlt:
-        "Spectacle des fontaines dansantes de Dubaï illuminées au pied du Burj Khalifa",
     },
     {
       h2: "Jour 2 : safari dans le désert et dîner bédouin",

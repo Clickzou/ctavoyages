@@ -45,8 +45,6 @@ const ouPartirAuSoleilEnHiver: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-au-soleil-en-hiver-1.jpg",
-      imgAlt: "Côte volcanique ensoleillée des îles Canaries en hiver",
     },
     {
       h2: "Le Maghreb et l'Égypte : soleil et culture",

@@ -47,8 +47,6 @@ const voyageGastronomiqueDestinations: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-voyage-gastronomique-destinations-1.jpg",
-      imgAlt: "Assiette de pâtes fraîches italiennes sur une table conviviale",
     },
     {
       h2: "Le Japon, raffinement et art culinaire",

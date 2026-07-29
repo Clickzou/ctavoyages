@@ -49,8 +49,6 @@ const quandPartirCapVert: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-cap-vert-1.jpg",
-      imgAlt: "Plage de sable doré et eaux turquoise sous un ciel dégagé au Cap-Vert",
     },
     {
       h2: "La meilleure période : de novembre à juin",

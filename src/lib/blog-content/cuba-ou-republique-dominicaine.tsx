@@ -46,9 +46,6 @@ const cubaOuRepubliqueDominicaine: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-cuba-ou-republique-dominicaine-1.jpg",
-      imgAlt:
-        "Rue colorée de La Havane à Cuba et plage de Punta Cana en République dominicaine",
     },
     {
       h2: "Plages : la carte maîtresse dominicaine",

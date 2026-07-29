@@ -55,8 +55,6 @@ const meilleuresDestinationsPlongee: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-meilleures-destinations-plongee-1.jpg",
-      imgAlt: "Banc de poissons colorés au-dessus d'un récif corallien intact",
     },
     {
       h2: "Pour nager avec les géants des mers",

@@ -55,8 +55,6 @@ const voyagerAvecBebeConseils: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-voyager-avec-bebe-conseils-1.jpg",
-      imgAlt: "Valise ouverte avec affaires de bébé prêtes pour le voyage",
     },
     {
       h2: "Bien gérer l'avion avec un nourrisson",

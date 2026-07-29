@@ -47,8 +47,6 @@ const ouPartirEnMars: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-mars-1.jpg",
-      imgAlt: "Place ensoleillée d'une ville méditerranéenne au printemps",
     },
     {
       h2: "Le soleil tropical : Thaïlande, Sri Lanka et Maldives",

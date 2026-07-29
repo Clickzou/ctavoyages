@@ -67,8 +67,6 @@ const plusBellesCascadesDuMonde: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-belles-cascades-du-monde-1.jpg",
-      imgAlt: "Cascade puissante avec arc-en-ciel dans la brume",
     },
     {
       h2: "Les géantes d'Amérique",

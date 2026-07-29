@@ -54,8 +54,6 @@ const plusBeauxVillagesDeFrance: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-beaux-villages-de-france-1.jpg",
-      imgAlt: "Village provençal en pierre dominant un champ de lavande",
     },
     {
       h2: "Les joyaux du Sud-Ouest et de la Dordogne",

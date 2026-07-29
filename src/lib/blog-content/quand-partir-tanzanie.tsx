@@ -46,8 +46,6 @@ const quandPartirTanzanie: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-tanzanie-1.jpg",
-      imgAlt: "Troupeau d'éléphants et acacias dans la savane du Serengeti en Tanzanie",
     },
     {
       h2: "La meilleure période : de juin à octobre",

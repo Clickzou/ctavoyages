@@ -44,8 +44,6 @@ const autotourNamibie: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-autotour-namibie-1.jpg",
-      imgAlt: "Piste désertique rectiligne traversant le paysage rouge de Namibie",
     },
     {
       h2: "Jours 4 et 5 : le canyon de Fish River",

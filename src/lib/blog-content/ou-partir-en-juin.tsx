@@ -45,8 +45,6 @@ const ouPartirEnJuin: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-juin-1.jpg",
-      imgAlt: "Plage méditerranéenne aux eaux turquoise en juin",
     },
     {
       h2: "Le soleil de minuit : Scandinavie et Islande",

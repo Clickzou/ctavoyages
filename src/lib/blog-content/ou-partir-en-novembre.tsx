@@ -45,9 +45,6 @@ const ouPartirEnNovembre: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-novembre-1.jpg",
-      imgAlt:
-        "Lagon turquoise des Caraïbes sous un ciel dégagé en novembre",
     },
     {
       h2: "L'océan Indien au sommet",

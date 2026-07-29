@@ -49,8 +49,6 @@ const quandPartirEspagne: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-espagne-1.jpg",
-      imgAlt: "Façades colorées et architecture moderniste de Barcelone",
     },
     {
       h2: "Printemps et automne : la période idéale",

@@ -55,8 +55,6 @@ const partirEnAmoureuxWeekEnd: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-partir-en-amoureux-week-end-1.jpg",
-      imgAlt: "Gondole glissant sur un canal de Venise au coucher du soleil",
     },
     {
       h2: "Une escapade exotique pour un grand dépaysement",

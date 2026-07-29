@@ -48,8 +48,6 @@ const quandPartirEgypte: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-egypte-1.jpg",
-      imgAlt: "Temple égyptien et colonnes antiques sous un ciel ensoleillé",
     },
     {
       h2: "La meilleure période : d'octobre à avril",

@@ -48,9 +48,6 @@ const ouPartirEnJanvier: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-janvier-1.jpg",
-      imgAlt:
-        "Lagon turquoise et plage de sable blanc bordée de palmiers",
     },
     {
       h2: "Les déserts et grands espaces ensoleillés",

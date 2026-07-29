@@ -47,9 +47,6 @@ const creteOuSantorin: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-crete-ou-santorin-1.jpg",
-      imgAlt:
-        "Vue de la caldeira de Santorin et d'une plage sauvage de Crète",
     },
     {
       h2: "Ambiance : authenticité ou carte postale",

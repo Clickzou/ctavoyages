@@ -68,8 +68,6 @@ const ilesParadisiaquesPasCher: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-iles-paradisiaques-pas-cher-1.jpg",
-      imgAlt: "Lagon turquoise et plage déserte sur une île tropicale",
     },
     {
       h2: "Pourquoi ces îles sont plus abordables",

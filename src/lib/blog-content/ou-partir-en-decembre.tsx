@@ -50,9 +50,6 @@ const ouPartirEnDecembre: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-decembre-1.jpg",
-      imgAlt:
-        "Lagon turquoise et palmiers sous un ciel dégagé en décembre",
     },
     {
       h2: "La féérie de Noël : marchés et villes illuminées",

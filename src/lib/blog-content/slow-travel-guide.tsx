@@ -47,8 +47,6 @@ const slowTravelGuide: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-slow-travel-guide-1.jpg",
-      imgAlt: "Ruelle paisible d'un village traditionnel baignée de lumière douce",
     },
     {
       h2: "Prendre le temps : changer de rythme",

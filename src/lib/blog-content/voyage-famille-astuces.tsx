@@ -69,9 +69,6 @@ const voyageFamilleAstuces: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-voyage-famille-astuces-1.jpg",
-      imgAlt:
-        "Enfants jouant au bord de l'eau sur une plage familiale en été",
     },
     {
       h2: "Préparer le voyage sereinement",

@@ -46,8 +46,6 @@ const quandPartirItalie: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-italie-1.jpg",
-      imgAlt: "Ruelle pavée et façades colorées d'un village italien au printemps",
     },
     {
       h2: "Villes d'art : printemps et automne",

@@ -67,8 +67,6 @@ const plusBeauxSitesUnesco: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-beaux-sites-unesco-1.jpg",
-      imgAlt: "Cité antique classée au patrimoine mondial de l'UNESCO",
     },
     {
       h2: "Les merveilles bâties par l'homme",

@@ -55,8 +55,6 @@ const formalitesVisaVoyage: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-formalites-visa-voyage-1.jpg",
-      imgAlt: "Documents de voyage, passeport et carte du monde sur une table",
     },
     {
       h2: "Visa ou autorisation électronique : faire la différence",

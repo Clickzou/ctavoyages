@@ -59,8 +59,6 @@ const voyageAvecAdosIdees: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-voyage-avec-ados-idees-1.jpg",
-      imgAlt: "Famille pratiquant une activité de plein air en pleine nature",
     },
     {
       h2: "Les villes qui plaisent aux ados",

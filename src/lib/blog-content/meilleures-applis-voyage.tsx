@@ -43,8 +43,6 @@ const meilleuresApplisVoyage: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-meilleures-applis-voyage-1.jpg",
-      imgAlt: "Voyageur consultant des applications de réservation sur son téléphone",
     },
     {
       h2: "Se repérer partout, même sans réseau",

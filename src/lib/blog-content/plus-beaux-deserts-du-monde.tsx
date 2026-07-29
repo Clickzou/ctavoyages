@@ -63,8 +63,6 @@ const plusBeauxDesertsDuMonde: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-beaux-deserts-du-monde-1.jpg",
-      imgAlt: "Caravane de dromadaires traversant de hautes dunes orangées",
     },
     {
       h2: "Les déserts de sel, miroirs du ciel",

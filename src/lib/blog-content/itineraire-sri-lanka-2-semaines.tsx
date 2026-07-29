@@ -53,8 +53,6 @@ const itineraireSriLanka2Semaines: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-itineraire-sri-lanka-2-semaines-1.jpg",
-      imgAlt: "Forteresse rocheuse de Sigiriya émergeant de la jungle sri-lankaise",
     },
     {
       h2: "Jours 5 et 6 : Kandy, capitale spirituelle",

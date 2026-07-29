@@ -60,9 +60,6 @@ const plusBeauxRoadTripsDuMonde: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-beaux-road-trips-du-monde-1.jpg",
-      imgAlt:
-        "Voiture sur une route côtière sinueuse surplombant l'océan turquoise",
     },
     {
       h2: "Les grands espaces et les déserts",

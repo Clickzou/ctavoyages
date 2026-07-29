@@ -44,9 +44,6 @@ const roadTripOuestAmericain: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-road-trip-ouest-americain-1.jpg",
-      imgAlt:
-        "Le Strip de Las Vegas illuminé de nuit dans le désert du Nevada",
     },
     {
       h2: "Étape 2 : Grand Canyon et Route 66",

@@ -1,0 +1,418 @@
+{
+  "autotour-namibie": [
+    {
+      "prompt": "Gravel road stretching across the red Kalahari savanna with camelthorn trees and a big sky, Namibia",
+      "alt": "Piste traversant la savane rouge du Kalahari en Namibie"
+    },
+    {
+      "prompt": "Immense arid canyon with layered rock walls and a dry riverbed winding far below, Namibia, harsh clear light",
+      "alt": "Canyon aride aux parois stratifiées en Namibie"
+    },
+    {
+      "prompt": "Towering rust-orange sand dunes with sharp crests and dead camelthorn trees on a white clay pan, Namib desert",
+      "alt": "Dunes orangées et arbres morts sur un pan blanc du désert du Namib"
+    },
+    {
+      "prompt": "Rusting shipwreck half-buried on a foggy desolate Atlantic beach where dunes meet the ocean, Skeleton Coast",
+      "alt": "Épave échouée sur la côte des Squelettes, dans la brume"
+    },
+    {
+      "prompt": "Desert-adapted elephants walking across a dry rocky plain with red granite hills, Damaraland, Namibia",
+      "alt": "Éléphants du désert traversant une plaine rocheuse du Damaraland"
+    }
+  ],
+  "itineraire-croatie-1-semaine": [
+    {
+      "prompt": "Walled Adriatic old town with terracotta roofs and city walls above a deep blue sea, golden hour",
+      "alt": "Vieille ville fortifiée de l'Adriatique et ses toits de tuiles"
+    },
+    {
+      "prompt": "Small green Adriatic islands with pine forests and hidden coves seen from a wooden boat, turquoise water",
+      "alt": "Îlots boisés et criques turquoise de l'Adriatique"
+    },
+    {
+      "prompt": "Roman colonnaded courtyard with tall stone arches inside an ancient palace, Split, Croatia, warm light",
+      "alt": "Cour à colonnades du palais de Dioclétien à Split"
+    },
+    {
+      "prompt": "Lavender fields and a glamorous harbour with yachts on a Dalmatian island, Hvar, summer light",
+      "alt": "Champs de lavande et port de plaisance sur l'île de Hvar"
+    },
+    {
+      "prompt": "Terracotta rooftops of a walled Adriatic old town seen from above at golden hour, deep blue sea",
+      "alt": "Toits de tuiles d'une vieille ville fortifiée de l'Adriatique"
+    }
+  ],
+  "itineraire-japon-2-semaines": [
+    {
+      "prompt": "Tokyo skyline at blue hour with illuminated skyscrapers and a busy crossing far below",
+      "alt": "Les gratte-ciel de Tokyo illuminés à l'heure bleue"
+    },
+    {
+      "prompt": "Mount Fuji perfect snow-capped cone above a calm lake and autumn foliage, clear morning, Japan",
+      "alt": "Le mont Fuji enneigé se reflétant dans un lac"
+    },
+    {
+      "prompt": "Path of vermilion torii gates winding up a forested hillside, Kyoto, soft filtered light",
+      "alt": "Allée de torii vermillon sur une colline boisée de Kyoto"
+    },
+    {
+      "prompt": "Great vermilion torii gate standing in the sea at high tide with forested mountains behind, Miyajima, Japan",
+      "alt": "Le torii de Miyajima se dressant dans la mer à marée haute"
+    },
+    {
+      "prompt": "Neon-lit canal street in Osaka at night with reflections on the water and food stalls, vivid colors",
+      "alt": "Canal d'Osaka illuminé de néons et ses échoppes"
+    },
+    {
+      "prompt": "Shinkansen bullet train passing through the Japanese countryside with rice fields and distant mountains",
+      "alt": "Train à grande vitesse traversant la campagne japonaise"
+    }
+  ],
+  "itineraire-sri-lanka-2-semaines": [
+    {
+      "prompt": "Ancient rock fortress rising above tropical plains at sunrise, Sri Lanka, warm haze",
+      "alt": "Forteresse rocheuse dominant les plaines tropicales sri-lankaises"
+    },
+    {
+      "prompt": "White Buddhist temple beside a calm lake surrounded by green hills, Kandy, Sri Lanka, soft light",
+      "alt": "Temple bouddhique blanc au bord du lac de Kandy"
+    },
+    {
+      "prompt": "Blue vintage train crossing a stone viaduct through emerald tea plantations and mist, Sri Lankan highlands",
+      "alt": "Le train bleu franchissant un viaduc au milieu des plantations de thé"
+    },
+    {
+      "prompt": "Leopard resting on a rock in dry scrubland at golden hour, Sri Lankan national park",
+      "alt": "Léopard au repos dans un parc national sri-lankais"
+    },
+    {
+      "prompt": "Palm-fringed golden beach with turquoise water and fishing stilts, southern Sri Lanka",
+      "alt": "Plage dorée bordée de cocotiers dans le sud du Sri Lanka"
+    }
+  ],
+  "itineraire-thailande-2-semaines": [
+    {
+      "prompt": "Bangkok riverside at dusk with golden temple spires, longtail boats and city lights",
+      "alt": "Bangkok au crépuscule : temples dorés et bateaux sur le fleuve"
+    },
+    {
+      "prompt": "Misty green mountains with terraced fields and a golden hilltop temple, northern Thailand, morning",
+      "alt": "Montagnes brumeuses et temple doré du nord de la Thaïlande"
+    },
+    {
+      "prompt": "Night train platform in Thailand at dusk with warm lamps and travelers with backpacks, atmospheric",
+      "alt": "Quai de gare thaïlandais au crépuscule"
+    },
+    {
+      "prompt": "Turquoise bay ringed by limestone karst cliffs with longtail boats and white sand, southern Thailand",
+      "alt": "Baie turquoise et falaises calcaires du sud de la Thaïlande"
+    },
+    {
+      "prompt": "Golden royal temple spires against a bright sky above a busy river, Bangkok, Thailand",
+      "alt": "Flèches dorées d'un temple royal au bord du fleuve à Bangkok"
+    }
+  ],
+  "itineraire-vietnam-3-semaines": [
+    {
+      "prompt": "Old quarter street in Hanoi with scooters, colonial facades and hanging lanterns, warm evening light",
+      "alt": "Rue du vieux quartier de Hanoï, scooters et façades coloniales"
+    },
+    {
+      "prompt": "Ancient imperial citadel gate with tiered roofs reflected in a moat, Hue, Vietnam, soft light",
+      "alt": "Porte de la cité impériale de Hué reflétée dans les douves"
+    },
+    {
+      "prompt": "Old town street glowing with hundreds of colored silk lanterns at dusk, Hoi An, Vietnam",
+      "alt": "Rue de Hoi An illuminée par des lanternes de soie"
+    },
+    {
+      "prompt": "Busy Vietnamese city street at night with scooters, neon signs and street food stalls, energetic",
+      "alt": "Rue animée d'une grande ville vietnamienne la nuit"
+    },
+    {
+      "prompt": "Wooden boats on a narrow palm-lined channel of the Mekong delta, green water, Vietnam",
+      "alt": "Barques sur un bras du delta du Mékong bordé de palmiers"
+    }
+  ],
+  "que-faire-a-bali": [
+    {
+      "prompt": "Ubud landscape with jungle, a temple gate and mist rising over the valley, Bali",
+      "alt": "Jungle, portail de temple et brume matinale à Ubud"
+    },
+    {
+      "prompt": "Balinese split gate temple with stone carvings and offerings, tropical trees, warm morning light",
+      "alt": "Portail fendu d'un temple balinais orné de sculptures"
+    },
+    {
+      "prompt": "Surfers walking along a golden Balinese beach at sunset, cliffs and palm trees, orange sky",
+      "alt": "Surfeurs sur une plage balinaise au coucher du soleil"
+    },
+    {
+      "prompt": "Tall jungle waterfall plunging into a green pool surrounded by tropical vegetation, Bali",
+      "alt": "Cascade tropicale se jetant dans un bassin verdoyant à Bali"
+    },
+    {
+      "prompt": "Balinese offering basket with frangipani flowers beside a carved stone statue, incense smoke",
+      "alt": "Offrande balinaise de fleurs de frangipanier devant une statue de pierre"
+    }
+  ],
+  "que-faire-a-dubai": [
+    {
+      "prompt": "Modern Gulf city skyline with tall glass towers and a dancing fountain at dusk",
+      "alt": "Gratte-ciel et fontaines d'une métropole du Golfe au crépuscule"
+    },
+    {
+      "prompt": "Four-wheel drive cresting golden desert dunes at sunset with long shadows, Arabian desert",
+      "alt": "4x4 franchissant les dunes du désert au coucher du soleil"
+    },
+    {
+      "prompt": "Traditional wooden abra boat crossing a creek lined with old wind-tower buildings and souks, Dubai",
+      "alt": "Abra traditionnel traversant la crique du vieux Dubaï"
+    },
+    {
+      "prompt": "Curved artificial island coastline with luxury beach resorts and turquoise Gulf water seen from above",
+      "alt": "Vue aérienne d'une île artificielle bordée de plages"
+    },
+    {
+      "prompt": "Modern glass skyscrapers reflecting golden desert light beside a wide boulevard, Gulf metropolis",
+      "alt": "Gratte-ciel de verre reflétant la lumière dorée du désert"
+    }
+  ],
+  "que-faire-a-marrakech": [
+    {
+      "prompt": "Marrakech medina square at dusk with market stalls, lantern light and a minaret",
+      "alt": "Place de la médina de Marrakech au crépuscule"
+    },
+    {
+      "prompt": "Ornate Moroccan palace courtyard with zellige tilework, carved cedar and a central fountain, warm light",
+      "alt": "Cour de palais marocain ornée de zelliges et d'une fontaine"
+    },
+    {
+      "prompt": "Tranquil Moroccan garden with cobalt blue walls, bamboo, cacti and terracotta pots, dappled shade",
+      "alt": "Jardin marocain aux murs bleu cobalt planté de bambous et de cactus"
+    },
+    {
+      "prompt": "Traditional hammam interior with steam, brass basins and tadelakt walls, soft light from above",
+      "alt": "Intérieur d'un hammam traditionnel dans la vapeur"
+    },
+    {
+      "prompt": "Winding mountain road through the High Atlas with Berber villages and terraced fields, Morocco",
+      "alt": "Route de montagne serpentant dans le Haut Atlas"
+    }
+  ],
+  "que-faire-aux-acores": [
+    {
+      "prompt": "Azorean crater lakes surrounded by green hills and hydrangeas under dramatic clouds",
+      "alt": "Lacs de cratère et collines verdoyantes des Açores"
+    },
+    {
+      "prompt": "Steaming ochre thermal pool surrounded by lush subtropical vegetation and tree ferns, Azores",
+      "alt": "Bassin thermal fumant entouré de végétation subtropicale aux Açores"
+    },
+    {
+      "prompt": "Whale tail rising from the deep blue Atlantic with a volcanic island on the horizon, Azores",
+      "alt": "Queue de baleine émergeant de l'Atlantique près des Açores"
+    },
+    {
+      "prompt": "Hiking trail along a green crater rim above a blue lake and the ocean, Azores, dramatic clouds",
+      "alt": "Sentier longeant la crête d'un cratère au-dessus d'un lac açoréen"
+    },
+    {
+      "prompt": "Rustic table with local cheese, bread and a cup of coffee facing green Atlantic pastures, Azores",
+      "alt": "Table rustique de produits locaux face aux pâturages açoréens"
+    }
+  ],
+  "que-voir-au-perou": [
+    {
+      "prompt": "Andean colonial city with red-tiled roofs and mountains behind, warm high-altitude light",
+      "alt": "Ville coloniale andine aux toits de tuiles rouges"
+    },
+    {
+      "prompt": "Andean valley with Inca agricultural terraces, a river and snow-capped peaks, Sacred Valley, Peru",
+      "alt": "Terrasses incas et sommets enneigés de la Vallée sacrée"
+    },
+    {
+      "prompt": "Machu Picchu stone citadel on its ridge with Huayna Picchu behind and morning mist, Peru",
+      "alt": "La citadelle du Machu Picchu émergeant de la brume matinale"
+    },
+    {
+      "prompt": "Andean condor gliding above a deep canyon with terraced slopes, Colca, Peru",
+      "alt": "Condor des Andes planant au-dessus du canyon de Colca"
+    },
+    {
+      "prompt": "Reed islands and traditional boats on a deep blue high-altitude lake, Titicaca, Peru, crisp light",
+      "alt": "Îles de roseaux et barques traditionnelles sur le lac Titicaca"
+    }
+  ],
+  "road-trip-ecosse": [
+    {
+      "prompt": "Edinburgh old town rooftops and spires under a moody Scottish sky, warm stone",
+      "alt": "Toits et clochers de la vieille ville d'Édimbourg"
+    },
+    {
+      "prompt": "Calm Scottish loch surrounded by wooded hills and heather under a moody sky, Trossachs",
+      "alt": "Loch écossais entouré de collines boisées"
+    },
+    {
+      "prompt": "Dramatic green glen with steep mountain walls and low clouds, a single road winding through, Highlands",
+      "alt": "Vallée encaissée des Highlands sous les nuages bas"
+    },
+    {
+      "prompt": "Jagged black ridges above a green moor and a sea loch, Isle of Skye, Scotland, dramatic light",
+      "alt": "Crêtes acérées et lande verdoyante sur l'île de Skye"
+    },
+    {
+      "prompt": "Single-track coastal road hugging rugged cliffs above a wild northern sea, Scotland",
+      "alt": "Route côtière longeant les falaises du nord de l'Écosse"
+    },
+    {
+      "prompt": "Stone Scottish castle beside a loch in soft rain, autumn colors, atmospheric",
+      "alt": "Château de pierre écossais au bord d'un loch sous la pluie"
+    }
+  ],
+  "road-trip-islande": [
+    {
+      "prompt": "Geothermal geyser erupting on a golden plain with steam and dramatic Icelandic sky",
+      "alt": "Geyser en éruption sur une plaine islandaise"
+    },
+    {
+      "prompt": "Powerful waterfall falling over a green cliff onto black sand, Iceland south coast, dramatic sky",
+      "alt": "Cascade se jetant sur une plage de sable noir en Islande"
+    },
+    {
+      "prompt": "Blue icebergs floating in a glacial lagoon with a glacier tongue behind, Iceland, cold clear light",
+      "alt": "Icebergs bleutés dans une lagune glaciaire islandaise"
+    },
+    {
+      "prompt": "Remote fjord with steep mountains plunging into dark water and a tiny red-roofed farm, east Iceland",
+      "alt": "Fjord isolé et ferme isolée dans l'est de l'Islande"
+    },
+    {
+      "prompt": "Black church and a distinctive cone-shaped mountain under moody clouds, Snaefellsnes, Iceland",
+      "alt": "Montagne conique et petite église noire dans la péninsule de Snæfellsnes"
+    },
+    {
+      "prompt": "Gravel road crossing a vast volcanic plain with a 4x4 and mountains on the horizon, Iceland",
+      "alt": "Piste de gravier traversant une plaine volcanique islandaise"
+    }
+  ],
+  "road-trip-ouest-americain": [
+    {
+      "prompt": "Neon-lit desert city boulevard at dusk with mountains on the horizon, American West",
+      "alt": "Boulevard illuminé d'une ville du désert américain au crépuscule"
+    },
+    {
+      "prompt": "Vast layered red canyon with a river far below at sunrise, American Southwest",
+      "alt": "Immense canyon rouge stratifié au lever du soleil"
+    },
+    {
+      "prompt": "Isolated red sandstone buttes rising from a flat desert plain under a huge sky, American Southwest",
+      "alt": "Buttes de grès rouge se dressant dans une plaine désertique"
+    },
+    {
+      "prompt": "Amphitheater of orange rock spires and hoodoos glowing at sunrise, Utah, clear air",
+      "alt": "Cheminées de fée orangées illuminées au lever du jour"
+    },
+    {
+      "prompt": "Granite domes and waterfalls above a green valley with tall pines, Sierra Nevada, golden light",
+      "alt": "Dômes de granit et cascades dominant une vallée boisée"
+    },
+    {
+      "prompt": "Empty desert highway stretching to the horizon with heat haze and distant mesas, American West",
+      "alt": "Route désertique s'étirant jusqu'à l'horizon dans l'Ouest américain"
+    }
+  ],
+  "visiter-barcelone-3-jours": [
+    {
+      "prompt": "Organic modernist architecture with curved stone and colorful mosaic details, Barcelona style",
+      "alt": "Architecture moderniste aux formes organiques et mosaïques colorées"
+    },
+    {
+      "prompt": "Narrow gothic alley with stone balconies and hanging lanterns in a Mediterranean old town, warm light",
+      "alt": "Ruelle gothique aux balcons de pierre dans la vieille ville"
+    },
+    {
+      "prompt": "City beach with palm trees, golden sand and a marina, Mediterranean sea, bright afternoon, Barcelona",
+      "alt": "Plage urbaine et marina au bord de la Méditerranée à Barcelone"
+    },
+    {
+      "prompt": "Colorful mosaic tiled bench curving above a park with city and sea in the distance, Barcelona modernism",
+      "alt": "Banc de mosaïque colorée dominant la ville et la mer à Barcelone"
+    },
+    {
+      "prompt": "Market stalls of fresh fruit, jamon and seafood under an iron and glass roof, Spanish covered market",
+      "alt": "Étals colorés d'un marché couvert espagnol"
+    }
+  ],
+  "visiter-lisbonne-week-end": [
+    {
+      "prompt": "Lisbon hillside of terracotta rooftops and pastel facades above the river, golden light",
+      "alt": "Toits de tuiles et façades pastel de Lisbonne au-dessus du Tage"
+    },
+    {
+      "prompt": "Ornate white limestone Manueline monastery facade under a blue sky, Belem, Lisbon",
+      "alt": "Façade manuéline d'un monastère de Belém à Lisbonne"
+    },
+    {
+      "prompt": "Yellow vintage tram climbing a narrow cobbled street between azulejo facades, Lisbon",
+      "alt": "Tramway jaune grimpant une ruelle pavée de Lisbonne"
+    },
+    {
+      "prompt": "Colorful romantic palace with turrets on a forested hilltop wrapped in mist, Sintra, Portugal",
+      "alt": "Palais coloré perché sur une colline boisée à Sintra"
+    },
+    {
+      "prompt": "Miradouro terrace overlooking terracotta rooftops and the river at sunset, Lisbon, warm light",
+      "alt": "Belvédère lisboète dominant les toits et le Tage au coucher du soleil"
+    }
+  ],
+  "visiter-new-york-premiere-fois": [
+    {
+      "prompt": "Midtown Manhattan avenue with skyscrapers and bright billboards at dusk, energetic",
+      "alt": "Avenue de Midtown Manhattan illuminée au crépuscule"
+    },
+    {
+      "prompt": "Central Park lawn with trees and Manhattan skyscrapers rising behind, clear day, New York",
+      "alt": "Pelouse de Central Park et gratte-ciel de Manhattan"
+    },
+    {
+      "prompt": "Statue of Liberty on its island seen from the water with the Manhattan skyline behind, clear light",
+      "alt": "La statue de la Liberté et la silhouette de Manhattan"
+    },
+    {
+      "prompt": "Elevated planted walkway between brick buildings with city views, High Line style, New York",
+      "alt": "Promenade plantée surélevée entre les immeubles new-yorkais"
+    },
+    {
+      "prompt": "Cast-iron facades and fire escapes on a cobbled SoHo street with boutiques, New York, warm light",
+      "alt": "Façades en fonte et escaliers de secours d'une rue de SoHo"
+    },
+    {
+      "prompt": "Yellow taxis on a busy New York avenue between skyscrapers, motion blur, golden hour",
+      "alt": "Taxis jaunes sur une avenue new-yorkaise à l'heure dorée"
+    }
+  ],
+  "visiter-rome-3-jours": [
+    {
+      "prompt": "Ancient Roman forum ruins with columns and umbrella pines at golden hour, Rome",
+      "alt": "Ruines du forum romain et pins parasols à l'heure dorée"
+    },
+    {
+      "prompt": "Vast domed basilica interior with marble columns and shafts of light, Renaissance art, Vatican style",
+      "alt": "Intérieur d'une basilique à coupole baignée de lumière"
+    },
+    {
+      "prompt": "Baroque fountain with sculpted figures and turquoise water on a Roman square, warm evening light",
+      "alt": "Fontaine baroque sculptée sur une place romaine"
+    },
+    {
+      "prompt": "Roman trattoria terrace with checkered tablecloths and a plate of pasta on a cobbled ivy-covered alley",
+      "alt": "Terrasse de trattoria romaine dans une ruelle pavée"
+    },
+    {
+      "prompt": "The Colosseum ancient amphitheater arches at golden hour with a clear sky, Rome",
+      "alt": "Les arches du Colisée de Rome à l'heure dorée"
+    }
+  ]
+}

@@ -48,8 +48,6 @@ const quandPartirRepubliqueDominicaine: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-republique-dominicaine-1.jpg",
-      imgAlt: "Cocotiers et plage de sable blanc bordée d'eaux turquoise en République dominicaine",
     },
     {
       h2: "La meilleure période : de décembre à avril",

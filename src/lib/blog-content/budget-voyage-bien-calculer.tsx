@@ -59,8 +59,6 @@ const budgetVoyageBienCalculer: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-budget-voyage-bien-calculer-1.jpg",
-      imgAlt: "Personne planifiant son budget de voyage avec un carnet et une carte",
     },
     {
       h2: "Estimer un coût réaliste par jour",

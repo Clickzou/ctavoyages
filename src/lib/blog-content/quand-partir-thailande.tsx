@@ -48,8 +48,6 @@ const quandPartirThailande: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-thailande-1.jpg",
-      imgAlt: "Temple thaïlandais doré sous un ciel bleu en saison sèche",
     },
     {
       h2: "La meilleure période : de novembre à février",

@@ -44,8 +44,6 @@ const ouPartirPasCherEnEurope: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-pas-cher-en-europe-1.jpg",
-      imgAlt: "Place médiévale colorée d'une ville d'Europe centrale",
     },
     {
       h2: "Le Portugal : le charme atlantique abordable",

@@ -46,8 +46,6 @@ const quandPartirBali: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-bali-1.jpg",
-      imgAlt: "Rizières en terrasses verdoyantes de Tegallalang près d'Ubud",
     },
     {
       h2: "La meilleure période : d'avril à octobre",

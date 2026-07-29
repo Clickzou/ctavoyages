@@ -48,8 +48,6 @@ const quandPartirMexique: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-mexique-1.jpg",
-      imgAlt: "Plage caraïbe turquoise et cocotiers de la Riviera Maya au Mexique",
     },
     {
       h2: "La meilleure période : de novembre à avril",

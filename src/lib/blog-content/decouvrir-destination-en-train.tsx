@@ -44,8 +44,6 @@ const decouvrirDestinationEnTrain: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-decouvrir-destination-en-train-1.jpg",
-      imgAlt: "Train rouge franchissant un viaduc dans les Alpes suisses enneigées",
     },
     {
       h2: "Le West Highland Line, l'Écosse sauvage",

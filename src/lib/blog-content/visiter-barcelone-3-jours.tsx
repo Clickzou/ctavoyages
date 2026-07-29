@@ -48,9 +48,6 @@ const visiterBarcelone3Jours: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-visiter-barcelone-3-jours-1.jpg",
-      imgAlt:
-        "Mosaïques colorées et terrasse panoramique du Park Güell de Gaudí à Barcelone",
     },
     {
       h2: "Jour 2 : vieille ville, Ramblas et marché de la Boqueria",

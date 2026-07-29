@@ -47,8 +47,6 @@ const quandPartirMaroc: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-maroc-1.jpg",
-      imgAlt: "Place Jemaa el-Fna animée à Marrakech au coucher du soleil",
     },
     {
       h2: "Marrakech et Fès : printemps et automne",

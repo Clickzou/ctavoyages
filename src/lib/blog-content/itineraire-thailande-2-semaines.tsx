@@ -51,8 +51,6 @@ const itineraireThailande2Semaines: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-itineraire-thailande-2-semaines-1.jpg",
-      imgAlt: "Temple doré de Bangkok illuminé au crépuscule en Thaïlande",
     },
     {
       h2: "Jours 4 à 7 : Chiang Mai et le nord",

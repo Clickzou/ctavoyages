@@ -49,9 +49,6 @@ const quandPartirLaReunion: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-la-reunion-1.jpg",
-      imgAlt:
-        "Cirque verdoyant et pitons de La Réunion enveloppés de nuages",
     },
     {
       h2: "La meilleure période : de mai à novembre",

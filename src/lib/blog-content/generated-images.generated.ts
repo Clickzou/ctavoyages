@@ -81,7 +81,7 @@ export const GENERATED_SECTION_IMAGES: Record<string, number[]> = {
   "quand-partir-japon": [1, 2, 3, 4, 5],
   "quand-partir-jordanie": [1, 2, 3, 4, 5, 6],
   "quand-partir-la-reunion": [1, 2, 3, 4, 5, 6],
-  "quand-partir-maldives": [2, 3, 4, 5, 6],
+  "quand-partir-maldives": [1, 2, 3, 4, 5, 6],
   "quand-partir-maroc": [1, 2, 3, 4, 5],
   "quand-partir-mexique": [1, 2, 3, 4, 5, 6],
   "quand-partir-new-york": [1, 2, 3, 4, 5, 6],

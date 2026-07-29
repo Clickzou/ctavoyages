@@ -50,9 +50,6 @@ const itineraireVietnam3Semaines: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-itineraire-vietnam-3-semaines-1.jpg",
-      imgAlt:
-        "Jonque traditionnelle naviguant entre les pitons karstiques de la baie d'Halong",
     },
     {
       h2: "Jours 7 à 11 : Hué et la cité impériale",

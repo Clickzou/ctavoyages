@@ -62,8 +62,6 @@ const destinationsPlongeeDebutant: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-destinations-plongee-debutant-1.jpg",
-      imgAlt: "Instructeur de plongée encadrant un débutant près d'un récif peu profond",
     },
     {
       h2: "L'Égypte et la mer Rouge : la valeur sûre",

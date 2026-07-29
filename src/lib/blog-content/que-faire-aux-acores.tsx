@@ -52,8 +52,6 @@ const queFaireAuxAcores: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-que-faire-aux-acores-1.jpg",
-      imgAlt: "Vue sur le lac vert d'un cratère volcanique de São Miguel aux Açores",
     },
     {
       h2: "Se baigner dans les sources chaudes",

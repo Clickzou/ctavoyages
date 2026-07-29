@@ -51,9 +51,6 @@ const visiterLisbonneWeekEnd: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-visiter-lisbonne-week-end-1.jpg",
-      imgAlt:
-        "Ruelles pavées et façades en azulejos du quartier de l'Alfama à Lisbonne",
     },
     {
       h2: "Jour 2 : Belém, ses monuments et ses pastéis",

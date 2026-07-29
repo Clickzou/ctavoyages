@@ -48,8 +48,6 @@ const choisirAssuranceVoyage: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-choisir-assurance-voyage-1.jpg",
-      imgAlt: "Voyageur consultant ses documents et son passeport avant un départ",
     },
     {
       h2: "Les garanties essentielles à vérifier",

@@ -64,9 +64,6 @@ const plusBellesPlagesOceanIndien: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-plus-belles-plages-ocean-indien-1.jpg",
-      imgAlt:
-        "Lagon turquoise et plage de sable blanc de Trou aux Biches à l'île Maurice",
     },
     {
       h2: "Seychelles : les plages de granit les plus photographiées",

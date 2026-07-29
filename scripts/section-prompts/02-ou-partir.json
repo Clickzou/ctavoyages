@@ -1,0 +1,360 @@
+{
+  "ou-partir-au-soleil-en-hiver": [
+    {
+      "prompt": "Volcanic island coastline with black cliffs, white villages and a bright Atlantic sea, winter sun",
+      "alt": "Côte volcanique et villages blancs sous le soleil d'hiver"
+    },
+    {
+      "prompt": "Ochre kasbah and palm oasis at the edge of the Sahara under a clear winter sun, North Africa",
+      "alt": "Kasbah ocre et palmeraie en bordure du Sahara"
+    },
+    {
+      "prompt": "Classic Caribbean postcard beach with leaning palm trees, white sand and turquoise water, bright sun",
+      "alt": "Plage caraïbe de carte postale, sable blanc et cocotiers"
+    },
+    {
+      "prompt": "Luxury overwater villa on a turquoise Indian Ocean lagoon at golden hour, wooden deck",
+      "alt": "Villa sur pilotis au-dessus d'un lagon de l'océan Indien"
+    },
+    {
+      "prompt": "Golden temple roofs above tropical palms and a busy Southeast Asian street market, warm light",
+      "alt": "Toits dorés d'un temple et marché de rue en Asie du Sud-Est"
+    }
+  ],
+  "ou-partir-en-aout": [
+    {
+      "prompt": "Mediterranean cove with turquoise water, pine trees and sunbathers far below, high summer",
+      "alt": "Crique méditerranéenne turquoise en plein été"
+    },
+    {
+      "prompt": "Alpine meadow with wildflowers below snow-capped peaks and a clear mountain lake in summer",
+      "alt": "Alpage fleuri au pied de sommets enneigés en été"
+    },
+    {
+      "prompt": "Vast Nordic landscape with fjord, low green tundra and long golden northern light",
+      "alt": "Fjord et toundra sous la lumière dorée du Grand Nord"
+    },
+    {
+      "prompt": "Southern hemisphere winter scene: snow-dusted Andean peaks above a deep blue lake, Patagonia",
+      "alt": "Sommets andins enneigés au-dessus d'un lac patagonien"
+    },
+    {
+      "prompt": "Wooden mountain chalet with flower boxes on a green alpine slope, summer afternoon",
+      "alt": "Chalet de montagne fleuri sur un alpage"
+    },
+    {
+      "prompt": "Family hiking trail along a turquoise mountain lake shore in high summer, pine forest",
+      "alt": "Sentier de randonnée au bord d'un lac de montagne turquoise"
+    }
+  ],
+  "ou-partir-en-avril": [
+    {
+      "prompt": "Southern European coastline in spring with wildflowers, olive trees and a calm blue sea",
+      "alt": "Côte du sud de l'Europe fleurie au printemps"
+    },
+    {
+      "prompt": "Cherry blossom trees in full bloom over a stone path and traditional Japanese lanterns, soft petals falling",
+      "alt": "Cerisiers en fleurs au-dessus d'une allée de pierre au Japon"
+    },
+    {
+      "prompt": "Golden desert dunes and an ochre fortified village under a clear spring sky, North Africa or Jordan",
+      "alt": "Dunes dorées et village fortifié ocre au printemps"
+    },
+    {
+      "prompt": "Turquoise lagoon and white sand islet under a bright blue sky, tropical atoll, calm sea",
+      "alt": "Lagon turquoise et îlot de sable blanc sous un ciel dégagé"
+    },
+    {
+      "prompt": "Powerful waterfall in a green volcanic landscape under a dramatic sky, Iceland",
+      "alt": "Cascade puissante dans un paysage volcanique verdoyant"
+    },
+    {
+      "prompt": "Elephant herd walking across golden savanna grass at sunset, acacia silhouettes",
+      "alt": "Troupeau d'éléphants dans la savane au coucher du soleil"
+    }
+  ],
+  "ou-partir-en-decembre": [
+    {
+      "prompt": "Palm-fringed tropical beach with turquoise water under a strong December sun, holiday feel",
+      "alt": "Plage tropicale ensoleillée bordée de palmiers en décembre"
+    },
+    {
+      "prompt": "European Christmas market at dusk with wooden chalets, warm lights, garlands and a snowy square",
+      "alt": "Marché de Noël européen illuminé sous la neige"
+    },
+    {
+      "prompt": "Sunny southern hemisphere summer beach with golden sand, blue ocean and dramatic coastal cliffs",
+      "alt": "Plage ensoleillée de l'hémisphère sud en plein été austral"
+    },
+    {
+      "prompt": "Snow-covered forest of frosted pines under green northern lights, Arctic Lapland",
+      "alt": "Forêt de pins givrés sous les aurores boréales en Laponie"
+    },
+    {
+      "prompt": "Reindeer sled gliding across a vast snowy plain at blue hour, Arctic Europe",
+      "alt": "Traîneau à rennes sur une plaine enneigée à l'heure bleue"
+    }
+  ],
+  "ou-partir-en-fevrier": [
+    {
+      "prompt": "Bright tropical lagoon with white sand and palm shade, perfect dry-season weather",
+      "alt": "Lagon tropical et sable blanc en pleine saison sèche"
+    },
+    {
+      "prompt": "Snow-covered ski slopes and pine forest below jagged alpine peaks, bright winter day",
+      "alt": "Pistes enneigées et forêt de sapins au pied des Alpes"
+    },
+    {
+      "prompt": "Carnival celebration with elaborate feathered costumes and confetti in a festive street, vivid colors",
+      "alt": "Costumes de carnaval et confettis dans une rue en fête"
+    },
+    {
+      "prompt": "Warm desert coastline with golden dunes meeting a calm turquoise sea, clear February light",
+      "alt": "Dunes dorées bordant une mer turquoise"
+    },
+    {
+      "prompt": "Venetian carnival mask and ornate costume on a misty canal bridge, soft winter light, Venice",
+      "alt": "Masque et costume vénitiens sur un pont dans la brume"
+    }
+  ],
+  "ou-partir-en-janvier": [
+    {
+      "prompt": "Sunlit tropical beach with palm trees and calm turquoise water under a clear January sky",
+      "alt": "Plage tropicale ensoleillée sous un ciel dégagé"
+    },
+    {
+      "prompt": "Vast sunlit desert with rippled orange dunes and long morning shadows, clear blue sky",
+      "alt": "Étendue de dunes orangées sous le soleil du matin"
+    },
+    {
+      "prompt": "Southern hemisphere summer: green vineyards and rolling hills above a deep blue bay, bright sun",
+      "alt": "Vignobles verdoyants dominant une baie en été austral"
+    },
+    {
+      "prompt": "Skier carving fresh powder snow on a sunny alpine slope, snow spray, mountain panorama",
+      "alt": "Skieur dans la poudreuse sur une pente alpine ensoleillée"
+    },
+    {
+      "prompt": "Quiet historic European square in winter with bare trees, warm streetlights and almost no one",
+      "alt": "Place historique européenne déserte en hiver"
+    },
+    {
+      "prompt": "Palm-lined tropical beach with calm turquoise water under a bright January sun",
+      "alt": "Plage tropicale bordée de palmiers sous un soleil éclatant"
+    }
+  ],
+  "ou-partir-en-juillet": [
+    {
+      "prompt": "Mediterranean coastal town with white houses above a deep blue sea, bright July light",
+      "alt": "Village côtier méditerranéen dominant une mer bleue"
+    },
+    {
+      "prompt": "Dry-season savanna with acacia trees, golden grass and a waterhole at sunrise, African plains",
+      "alt": "Savane africaine et point d'eau en saison sèche"
+    },
+    {
+      "prompt": "Vast North American canyon with red rock layers and a winding river far below, clear summer sky",
+      "alt": "Grand canyon de roche rouge et rivière encaissée"
+    },
+    {
+      "prompt": "Midnight sun low over an Arctic coastline with calm water and golden light, Scandinavia",
+      "alt": "Soleil de minuit sur une côte arctique"
+    },
+    {
+      "prompt": "Turquoise glacial lake below snow-capped peaks and pine forest, bright summer day",
+      "alt": "Lac glaciaire turquoise au pied de sommets enneigés"
+    },
+    {
+      "prompt": "Empty white sand beach with turquoise water and dunes under a strong summer sun",
+      "alt": "Plage de sable blanc déserte sous le soleil d'été"
+    }
+  ],
+  "ou-partir-en-juin": [
+    {
+      "prompt": "Greek island coastline with whitewashed houses and turquoise water before the summer crowds",
+      "alt": "Côte d'une île grecque avant l'affluence estivale"
+    },
+    {
+      "prompt": "Midnight sun glowing over a Scandinavian fjord with red wooden cabins on the shore",
+      "alt": "Soleil de minuit sur un fjord scandinave et ses cabanes rouges"
+    },
+    {
+      "prompt": "Wildlife-rich green savanna after the rains with zebras grazing, distant hills, East Africa",
+      "alt": "Savane verdoyante et zèbres après la saison des pluies"
+    },
+    {
+      "prompt": "Dramatic Scottish highland glen with heather, a loch and low clouds over green mountains",
+      "alt": "Vallée écossaise, loch et bruyère sous les nuages bas"
+    },
+    {
+      "prompt": "Green volcanic crater lake surrounded by hydrangeas in bloom, Atlantic island, soft June light",
+      "alt": "Lac de cratère bordé d'hortensias en fleurs"
+    }
+  ],
+  "ou-partir-en-mai": [
+    {
+      "prompt": "Mediterranean hillside covered in wildflowers above a turquoise bay, soft May light",
+      "alt": "Colline méditerranéenne fleurie surplombant une baie turquoise"
+    },
+    {
+      "prompt": "Lush green volcanic landscape with waterfalls and moss-covered cliffs under a soft spring sky",
+      "alt": "Paysage volcanique verdoyant parsemé de cascades"
+    },
+    {
+      "prompt": "Turquoise Indian Ocean lagoon with a white sand beach and casuarina trees, calm water",
+      "alt": "Lagon turquoise et plage de sable blanc de l'océan Indien"
+    },
+    {
+      "prompt": "Safari vehicle silhouette watching giraffes on golden savanna at sunset, acacia trees",
+      "alt": "Girafes observées depuis un véhicule de safari au coucher du soleil"
+    },
+    {
+      "prompt": "Rolling green hills with grazing sheep and a stone ruin under a moody spring sky",
+      "alt": "Collines verdoyantes et ruine de pierre au printemps"
+    }
+  ],
+  "ou-partir-en-mars": [
+    {
+      "prompt": "Andalusian or North African courtyard with orange trees in blossom and white walls, spring light",
+      "alt": "Patio andalou aux orangers en fleurs"
+    },
+    {
+      "prompt": "Longtail boat on turquoise tropical water below limestone cliffs, bright dry-season light",
+      "alt": "Bateau traditionnel sur une eau turquoise au pied de falaises calcaires"
+    },
+    {
+      "prompt": "Desert canyon with rose-colored sandstone walls and small spring wildflowers, warm light",
+      "alt": "Canyon de grès rose parsemé de fleurs printanières"
+    },
+    {
+      "prompt": "Path lined with blooming cherry trees, pink petals in the air, traditional Japanese garden",
+      "alt": "Allée de cerisiers en fleurs dans un jardin japonais"
+    },
+    {
+      "prompt": "Palm-shaded white sand beach with calm turquoise water and a wooden jetty, tropical island",
+      "alt": "Ponton de bois sur une plage tropicale ombragée de palmiers"
+    }
+  ],
+  "ou-partir-en-novembre": [
+    {
+      "prompt": "Caribbean beach with palm trees and calm turquoise water under a clear November sky",
+      "alt": "Plage caraïbe et eaux calmes en novembre"
+    },
+    {
+      "prompt": "Perfect turquoise lagoon with an overwater deck and clear calm water, Indian Ocean, bright sun",
+      "alt": "Ponton sur un lagon turquoise de l'océan Indien"
+    },
+    {
+      "prompt": "Golden Sahara dunes with a camel caravan and long shadows in warm late-afternoon light",
+      "alt": "Caravane de dromadaires sur les dunes du Sahara"
+    },
+    {
+      "prompt": "Long-haul journey scene: a winding road through a vast empty landscape at golden hour",
+      "alt": "Route sinueuse traversant un vaste paysage désert"
+    },
+    {
+      "prompt": "Tropical resort pool overlooking the ocean at sunset, palm silhouettes, warm colors",
+      "alt": "Piscine face à l'océan au coucher du soleil"
+    },
+    {
+      "prompt": "Traveler's open suitcase with light clothes, a hat and a map on a wooden floor, warm daylight",
+      "alt": "Valise ouverte préparée pour un voyage au soleil"
+    }
+  ],
+  "ou-partir-en-octobre": [
+    {
+      "prompt": "Mediterranean harbour in soft autumn light with fishing boats and warm stone houses",
+      "alt": "Port méditerranéen dans la lumière douce de l'automne"
+    },
+    {
+      "prompt": "Forest ablaze with red, orange and gold autumn foliage reflected in a calm lake",
+      "alt": "Forêt aux couleurs d'automne reflétée dans un lac"
+    },
+    {
+      "prompt": "Red rock desert buttes and sagebrush plain under a wide autumn sky, American Southwest",
+      "alt": "Buttes de roche rouge et plaine désertique du sud-ouest américain"
+    },
+    {
+      "prompt": "Calm turquoise tropical sea with a white sand beach and palm trees, perfect clear weather",
+      "alt": "Mer tropicale turquoise et plage de sable blanc"
+    },
+    {
+      "prompt": "Vineyard rows turning golden on rolling hills at sunset, autumn harvest season",
+      "alt": "Rangs de vigne dorés au coucher du soleil"
+    },
+    {
+      "prompt": "Mountain village with stone houses surrounded by autumn forest and morning mist",
+      "alt": "Village de pierre entouré de forêts automnales"
+    }
+  ],
+  "ou-partir-en-septembre": [
+    {
+      "prompt": "Quiet Mediterranean beach in September with warm light, calm sea and very few people",
+      "alt": "Plage méditerranéenne paisible en septembre"
+    },
+    {
+      "prompt": "Grape harvest in a sunlit vineyard with baskets of ripe grapes and rolling hills behind",
+      "alt": "Vendanges dans un vignoble ensoleillé"
+    },
+    {
+      "prompt": "Turquoise lagoon and coral reef seen from a white sand beach, Indian Ocean, calm and bright",
+      "alt": "Lagon turquoise et récif corallien vus de la plage"
+    },
+    {
+      "prompt": "Traveler looking out over a vast mountain valley at sunrise, backpack, sense of departure",
+      "alt": "Voyageur contemplant une vallée au lever du soleil"
+    },
+    {
+      "prompt": "Mediterranean coastal village with terracotta roofs above a calm blue sea in early autumn",
+      "alt": "Village méditerranéen aux toits de tuiles en début d'automne"
+    },
+    {
+      "prompt": "Olive grove and stone terrace overlooking the sea in warm September light",
+      "alt": "Oliveraie en terrasses surplombant la mer"
+    }
+  ],
+  "ou-partir-pas-cher-en-europe": [
+    {
+      "prompt": "Central European capital square with pastel baroque facades and a tram, warm afternoon light",
+      "alt": "Place d'une capitale d'Europe centrale aux façades baroques"
+    },
+    {
+      "prompt": "Pastel houses and azulejo facades on a steep cobbled Portuguese street with laundry lines, warm light",
+      "alt": "Ruelle portugaise aux façades pastel et azulejos"
+    },
+    {
+      "prompt": "Turquoise river canyon with a stone bridge and forested mountains, Balkans, clear day",
+      "alt": "Rivière turquoise et pont de pierre dans les Balkans"
+    },
+    {
+      "prompt": "Whitewashed southern village with narrow alleys and bougainvillea above a blue sea",
+      "alt": "Village blanc et bougainvilliers dominant la mer"
+    },
+    {
+      "prompt": "Local market stall with fresh produce and hand-written prices in a European old town square",
+      "alt": "Étal d'un marché local sur une place de vieille ville européenne"
+    }
+  ],
+  "partir-hors-saison-avantages": [
+    {
+      "prompt": "Empty scenic viewpoint over a famous-looking coastline in low season, soft light, no crowd",
+      "alt": "Belvédère désert surplombant une côte hors saison"
+    },
+    {
+      "prompt": "Famous-looking European monument square almost empty at dawn, soft light, long shadows, no crowd",
+      "alt": "Place monumentale européenne déserte au lever du jour"
+    },
+    {
+      "prompt": "Mild sunny day on a Mediterranean coastal path with wildflowers and a calm sea, no tourists",
+      "alt": "Sentier côtier méditerranéen fleuri par une douce journée"
+    },
+    {
+      "prompt": "Closed seaside shopfronts and empty terrace chairs on a quiet promenade under a grey sky",
+      "alt": "Commerces fermés et terrasse déserte sur une promenade de bord de mer"
+    },
+    {
+      "prompt": "Traveler consulting a wall calendar and a map on a wooden desk, warm natural light",
+      "alt": "Voyageur consultant un calendrier et une carte pour planifier son départ"
+    }
+  ]
+}

@@ -48,9 +48,6 @@ const ouPartirEnAout: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-aout-1.jpg",
-      imgAlt:
-        "Plage méditerranéenne aux eaux turquoise sous le soleil d'août",
     },
     {
       h2: "La montagne pour fuir la chaleur",

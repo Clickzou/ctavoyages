@@ -47,9 +47,6 @@ const itineraireCroatie1Semaine: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-itineraire-croatie-1-semaine-1.jpg",
-      imgAlt:
-        "Vue panoramique sur les remparts et les toits de tuiles de Dubrovnik face à la mer",
     },
     {
       h2: "Jour 3 : excursion sur les îles Élaphites",

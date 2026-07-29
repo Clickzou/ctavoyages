@@ -49,8 +49,6 @@ const quandPartirCroatie: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-croatie-1.jpg",
-      imgAlt: "Côte de l'Adriatique avec îles et bateau à voile en Croatie",
     },
     {
       h2: "L'été (juillet-août) : soleil garanti mais forte affluence",

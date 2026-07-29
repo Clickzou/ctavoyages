@@ -57,8 +57,6 @@ const voyagePhotoPlusBeauxSpots: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-voyage-photo-plus-beaux-spots-1.jpg",
-      imgAlt: "Cascade spectaculaire dans un paysage islandais aux lumières dorées",
     },
     {
       h2: "Aurores boréales et ciels étoilés",

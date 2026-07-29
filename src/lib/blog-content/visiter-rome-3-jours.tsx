@@ -49,9 +49,6 @@ const visiterRome3Jours: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-visiter-rome-3-jours-1.jpg",
-      imgAlt:
-        "Vestiges antiques du Forum romain au lever du soleil à Rome",
     },
     {
       h2: "Jour 2 : le Vatican et les chefs-d'œuvre",

@@ -57,8 +57,6 @@ const voyagerPasCherAstuces: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-voyager-pas-cher-astuces-1.jpg",
-      imgAlt: "Tableau d'affichage des départs dans un aéroport",
     },
     {
       h2: "Voyager hors saison : le levier numéro un",

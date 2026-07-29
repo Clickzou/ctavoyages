@@ -65,9 +65,6 @@ const ouVoirAuroresBoreales: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-ou-voir-aurores-boreales-1.jpg",
-      imgAlt:
-        "Igloo de verre sous un ciel illuminé par une aurore boréale en Laponie",
     },
     {
       h2: "Quand partir pour voir les aurores ?",

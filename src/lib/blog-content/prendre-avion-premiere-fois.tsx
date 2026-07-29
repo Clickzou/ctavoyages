@@ -55,8 +55,6 @@ const prendreAvionPremiereFois: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-prendre-avion-premiere-fois-1.jpg",
-      imgAlt: "Passeport, carte d'embarquement et valise prêts pour le départ",
     },
     {
       h2: "Arriver à l'aéroport et s'enregistrer",

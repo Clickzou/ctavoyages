@@ -45,8 +45,6 @@ const quandPartirNewYork: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-new-york-1.jpg",
-      imgAlt: "Gratte-ciel de Manhattan au coucher du soleil",
     },
     {
       h2: "Printemps et automne : les saisons idéales",

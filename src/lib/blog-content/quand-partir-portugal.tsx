@@ -46,8 +46,6 @@ const quandPartirPortugal: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-portugal-1.jpg",
-      imgAlt: "Tramway jaune typique dans une rue pavée de Lisbonne",
     },
     {
       h2: "Printemps et automne : le meilleur moment",

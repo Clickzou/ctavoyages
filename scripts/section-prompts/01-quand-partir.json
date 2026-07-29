@@ -1,0 +1,628 @@
+{
+  "quand-partir-afrique-du-sud": [
+    {
+      "prompt": "South African landscape with mountains, vineyards and the ocean beyond, dramatic clear light",
+      "alt": "Paysage sud-africain entre montagnes, vignobles et océan"
+    },
+    {
+      "prompt": "A pride of lions resting in tall golden savanna grass at sunrise, flat-topped acacia trees, South African bushveld",
+      "alt": "Lions au repos dans la savane sud-africaine au lever du soleil"
+    },
+    {
+      "prompt": "Table Mountain flat summit rising above Cape Town and the Atlantic coastline on a clear summer day",
+      "alt": "La Montagne de la Table dominant Le Cap et l'océan Atlantique"
+    },
+    {
+      "prompt": "A humpback whale breaching off a rugged South African coastline, cliffs covered in fynbos vegetation, Hermanus area",
+      "alt": "Baleine à bosse au large de la côte sud-africaine"
+    },
+    {
+      "prompt": "Colorful pastel houses of the Bo-Kaap quarter on a cobbled street in Cape Town, Signal Hill behind",
+      "alt": "Les maisons colorées du quartier Bo-Kaap au Cap"
+    },
+    {
+      "prompt": "Winding coastal road of the Garden Route along ocean cliffs and indigenous forest, South Africa",
+      "alt": "La route côtière de la Route des Jardins en Afrique du Sud"
+    }
+  ],
+  "quand-partir-bali": [
+    {
+      "prompt": "Balinese landscape with rice terraces, palm trees and a volcano silhouette at sunrise",
+      "alt": "Paysage balinais : rizières, palmiers et volcan à l'aube"
+    },
+    {
+      "prompt": "Emerald green terraced rice paddies with palm trees in Ubud, Bali, warm morning light",
+      "alt": "Rizières en terrasses d'Ubud à Bali au petit matin"
+    },
+    {
+      "prompt": "Tropical monsoon rain falling on lush Balinese jungle and a stone temple gate, dramatic clouds, vivid greens",
+      "alt": "Pluie tropicale sur la jungle balinaise et un portail de temple en pierre"
+    },
+    {
+      "prompt": "Crowded golden beach at sunset in Bali with surfers and warungs, silhouettes against orange sky",
+      "alt": "Plage balinaise animée au coucher du soleil"
+    },
+    {
+      "prompt": "A surfer riding a clean turquoise wave off a Balinese reef break, palm-lined cliff in the background",
+      "alt": "Surfeur sur une vague turquoise au large de Bali"
+    },
+    {
+      "prompt": "Traditional Balinese split gate temple on a cliff above the ocean at golden hour, offerings and frangipani",
+      "alt": "Temple balinais perché sur une falaise au-dessus de l'océan"
+    }
+  ],
+  "quand-partir-canada": [
+    {
+      "prompt": "Vast Canadian landscape with a lake, boreal forest and mountains under a wide sky",
+      "alt": "Vaste paysage canadien : lac, forêt boréale et montagnes"
+    },
+    {
+      "prompt": "Turquoise glacial lake mirroring snow-capped Canadian Rocky Mountains, pine forest, bright summer day",
+      "alt": "Lac glaciaire turquoise et sommets enneigés des Rocheuses canadiennes"
+    },
+    {
+      "prompt": "Blazing red and orange maple forest reflected in a calm Quebec lake in autumn, low golden light",
+      "alt": "Forêt d'érables flamboyante reflétée dans un lac québécois en automne"
+    },
+    {
+      "prompt": "Northern lights above a snow-covered boreal forest and a frozen lake in Canada, deep blue winter night",
+      "alt": "Aurores boréales au-dessus d'une forêt boréale enneigée au Canada"
+    },
+    {
+      "prompt": "A grizzly bear fishing for salmon in a rushing river surrounded by Canadian rainforest",
+      "alt": "Grizzly pêchant le saumon dans une rivière canadienne"
+    },
+    {
+      "prompt": "A red canoe on a mirror-calm lake at sunrise, mist over the water, Canadian wilderness",
+      "alt": "Canoë rouge sur un lac canadien à l'aube"
+    }
+  ],
+  "quand-partir-cap-vert": [
+    {
+      "prompt": "Cape Verde coastline with volcanic hills, golden beach and bright Atlantic water",
+      "alt": "Côte cap-verdienne entre collines volcaniques et plage dorée"
+    },
+    {
+      "prompt": "Wide empty golden beach with turquoise Atlantic water and dunes, Sal island, Cape Verde, bright dry-season light",
+      "alt": "Plage dorée et eaux turquoise de l'île de Sal, au Cap-Vert"
+    },
+    {
+      "prompt": "Kitesurfers on a windy turquoise bay with colorful kites in the sky, Cape Verde coastline",
+      "alt": "Kitesurfeurs sur une baie ventée du Cap-Vert"
+    },
+    {
+      "prompt": "Dramatic green volcanic valley with terraced fields and a winding road, Santo Antao, Cape Verde",
+      "alt": "Vallée volcanique verdoyante et cultures en terrasses à Santo Antão"
+    },
+    {
+      "prompt": "Colorful colonial houses along a cobbled seafront street in a Cape Verdean town, warm afternoon light",
+      "alt": "Maisons coloniales colorées en bord de mer au Cap-Vert"
+    },
+    {
+      "prompt": "Fishing boats pulled up on a black volcanic sand beach at golden hour, Cape Verde",
+      "alt": "Barques de pêche sur une plage de sable volcanique au Cap-Vert"
+    }
+  ],
+  "quand-partir-croatie": [
+    {
+      "prompt": "Croatian Adriatic coast with pine-covered islands, turquoise water and a stone town",
+      "alt": "Côte adriatique croate, îles boisées et eaux turquoise"
+    },
+    {
+      "prompt": "Crowded Adriatic beach with turquoise water, pine trees and terracotta rooftops in high summer, Croatian coast",
+      "alt": "Plage adriatique animée en plein été sur la côte croate"
+    },
+    {
+      "prompt": "Old stone harbour town on the Adriatic with terracotta roofs and moored boats, soft late-afternoon light, few people",
+      "alt": "Port de pierre sur l'Adriatique en arrière-saison"
+    },
+    {
+      "prompt": "Turquoise cascading waterfalls and wooden walkways through the lakes of Plitvice, Croatia, lush green forest",
+      "alt": "Cascades turquoise et passerelles en bois des lacs de Plitvice"
+    },
+    {
+      "prompt": "Narrow limestone alley with stone stairs and green shutters in a Dalmatian old town, warm light",
+      "alt": "Ruelle de pierre dans une vieille ville dalmate"
+    },
+    {
+      "prompt": "Sailing boat gliding between green Adriatic islands under a clear blue sky, Croatia",
+      "alt": "Voilier naviguant entre les îles de l'Adriatique croate"
+    }
+  ],
+  "quand-partir-cuba": [
+    {
+      "prompt": "Cuban landscape with palm trees, red earth tobacco fields and limestone hills, warm light",
+      "alt": "Paysage cubain : palmiers, champs de tabac et mogotes"
+    },
+    {
+      "prompt": "Vintage 1950s American cars in pastel colors parked along a colonial street in Havana, Cuba, bright winter light",
+      "alt": "Voitures américaines des années 1950 dans une rue coloniale de La Havane"
+    },
+    {
+      "prompt": "Heavy tropical rain clouds gathering over a Cuban tobacco valley with palm trees and red earth",
+      "alt": "Nuages d'orage tropical sur une vallée à tabac cubaine"
+    },
+    {
+      "prompt": "Limestone mogote hills rising above tobacco fields and palm trees in the Vinales valley, Cuba, morning mist",
+      "alt": "Les mogotes calcaires de la vallée de Viñales à Cuba"
+    },
+    {
+      "prompt": "Faded pastel colonial facades with columns on a quiet Cuban town square, warm afternoon light",
+      "alt": "Façades coloniales pastel sur une place cubaine"
+    },
+    {
+      "prompt": "White sand Caribbean beach with leaning palm trees and calm turquoise water, Cuban cay",
+      "alt": "Plage de sable blanc et cocotiers sur un cayo cubain"
+    }
+  ],
+  "quand-partir-egypte": [
+    {
+      "prompt": "Egyptian desert landscape with golden sand, distant ruins and a clear hot sky",
+      "alt": "Paysage désertique égyptien et ruines lointaines"
+    },
+    {
+      "prompt": "The Great Pyramids of Giza and the Sphinx on the desert plateau at golden hour, warm sand and clear sky",
+      "alt": "Les pyramides de Gizeh et le Sphinx à l'heure dorée"
+    },
+    {
+      "prompt": "Vibrant coral reef with colorful fish in the crystal-clear water of the Red Sea, sunbeams underwater",
+      "alt": "Récif corallien et poissons colorés en mer Rouge"
+    },
+    {
+      "prompt": "Traditional felucca sailboat on the Nile at sunset, palm-lined banks and desert cliffs, Egypt",
+      "alt": "Felouque sur le Nil au coucher du soleil"
+    },
+    {
+      "prompt": "Massive carved stone columns of an ancient Egyptian temple hall with hieroglyphs, warm shafts of light",
+      "alt": "Colonnes gravées de hiéroglyphes dans un temple égyptien"
+    },
+    {
+      "prompt": "Camels resting on golden dunes near a desert oasis with palm trees, Egypt, late afternoon",
+      "alt": "Dromadaires près d'une oasis du désert égyptien"
+    }
+  ],
+  "quand-partir-espagne": [
+    {
+      "prompt": "Spanish landscape with olive groves, a hilltop village and warm afternoon light",
+      "alt": "Paysage espagnol d'oliviers et village perché"
+    },
+    {
+      "prompt": "Andalusian patio with white walls, blue ceramic pots of geraniums and orange trees in spring bloom, Spain",
+      "alt": "Patio andalou fleuri de géraniums et d'orangers au printemps"
+    },
+    {
+      "prompt": "Turquoise Mediterranean cove with pine trees and limestone cliffs on the Spanish coast in summer",
+      "alt": "Crique méditerranéenne aux pins et falaises calcaires en Espagne"
+    },
+    {
+      "prompt": "Volcanic black lava landscape with a whitewashed village and Atlantic ocean, Canary Islands, winter sun",
+      "alt": "Paysage volcanique et village blanc aux îles Canaries"
+    },
+    {
+      "prompt": "Flamenco dancer in a red ruffled dress performing in a warm-lit Andalusian courtyard, motion and passion",
+      "alt": "Danseuse de flamenco dans un patio andalou"
+    },
+    {
+      "prompt": "Tapas bar counter with small plates, jamon and vermouth glasses in a lively Spanish old town, evening light",
+      "alt": "Comptoir à tapas dans une vieille ville espagnole"
+    }
+  ],
+  "quand-partir-grece": [
+    {
+      "prompt": "Greek coastline with olive trees, white chapel and deep blue Aegean water",
+      "alt": "Côte grecque, oliviers et chapelle blanche"
+    },
+    {
+      "prompt": "Whitewashed Cycladic village with blue domes above a deep blue Aegean sea, bougainvillea, clear spring light",
+      "alt": "Village cycladique blanc et bleu au-dessus de la mer Égée"
+    },
+    {
+      "prompt": "Crowded Greek island beach with sun loungers, turquoise water and rocky headland in high summer",
+      "alt": "Plage grecque bondée en plein été"
+    },
+    {
+      "prompt": "Wildflower-covered Greek hillside with olive trees and a small stone chapel overlooking the sea in spring",
+      "alt": "Colline grecque fleurie plantée d'oliviers face à la mer"
+    },
+    {
+      "prompt": "Ancient Greek marble temple with Doric columns on a hill at golden hour, Athens skyline below",
+      "alt": "Temple grec à colonnes doriques dominant Athènes"
+    },
+    {
+      "prompt": "Traditional blue wooden fishing boat moored in a tiny Greek harbour, whitewashed houses behind",
+      "alt": "Barque de pêche bleue dans un petit port grec"
+    }
+  ],
+  "quand-partir-ile-maurice": [
+    {
+      "prompt": "Mauritius landscape with a turquoise lagoon, sugar cane fields and a basalt mountain",
+      "alt": "Paysage mauricien : lagon, champs de canne et montagne basaltique"
+    },
+    {
+      "prompt": "Turquoise lagoon with a white sand beach and filao trees, Mauritius, clear dry-season light, mountain in the distance",
+      "alt": "Lagon turquoise et plage de sable blanc à l'île Maurice"
+    },
+    {
+      "prompt": "Tropical rain shower over a lush green Mauritian valley with sugar cane fields and a dramatic sky",
+      "alt": "Averse tropicale sur les champs de canne à sucre mauriciens"
+    },
+    {
+      "prompt": "Aerial view of a coral reef edge where turquoise lagoon meets deep blue ocean, Mauritius coastline",
+      "alt": "Vue aérienne du récif corallien bordant le lagon mauricien"
+    },
+    {
+      "prompt": "Dramatic basalt mountain rising behind a palm-fringed lagoon, Le Morne style peninsula, Mauritius",
+      "alt": "Montagne basaltique dominant un lagon bordé de palmiers à Maurice"
+    },
+    {
+      "prompt": "Colorful Hindu temple with statues beside a still crater lake surrounded by tropical forest, Mauritius",
+      "alt": "Temple hindou coloré au bord d'un lac de cratère mauricien"
+    }
+  ],
+  "quand-partir-islande": [
+    {
+      "prompt": "Icelandic landscape with mossy lava fields, a waterfall and dramatic changing weather",
+      "alt": "Paysage islandais : champs de lave moussus et cascade"
+    },
+    {
+      "prompt": "Midnight sun glowing over an Icelandic waterfall and green mossy canyon, long golden light",
+      "alt": "Soleil de minuit sur une cascade islandaise"
+    },
+    {
+      "prompt": "Green and violet northern lights above a snow-covered Icelandic landscape and a frozen lagoon",
+      "alt": "Aurores boréales au-dessus d'un paysage islandais enneigé"
+    },
+    {
+      "prompt": "Black volcanic beach with basalt columns and crashing white surf under a moody Icelandic sky",
+      "alt": "Plage de sable noir et orgues basaltiques en Islande"
+    },
+    {
+      "prompt": "Steam rising from a milky blue geothermal pool amid black lava fields, Iceland",
+      "alt": "Vapeur s'élevant d'un bassin géothermique bleu laiteux en Islande"
+    },
+    {
+      "prompt": "Icebergs floating in a glacial lagoon with a glacier tongue behind, Iceland, soft daylight",
+      "alt": "Icebergs dérivant dans une lagune glaciaire islandaise"
+    }
+  ],
+  "quand-partir-italie": [
+    {
+      "prompt": "Italian landscape with cypress-lined hills, a stone farmhouse and warm golden light",
+      "alt": "Paysage italien de collines bordées de cyprès"
+    },
+    {
+      "prompt": "Renaissance city skyline with a great cathedral dome and terracotta rooftops in soft spring light, Florence, Italy",
+      "alt": "Le dôme de la cathédrale de Florence et les toits de tuiles"
+    },
+    {
+      "prompt": "Rolling Tuscan hills with cypress-lined roads, a stone farmhouse and golden fields at sunset",
+      "alt": "Collines toscanes bordées de cyprès au coucher du soleil"
+    },
+    {
+      "prompt": "Pastel cliffside village above the turquoise Mediterranean on the Amalfi coast, lemon trees, summer",
+      "alt": "Village aux façades pastel accroché à la côte amalfitaine"
+    },
+    {
+      "prompt": "Snow-capped Dolomite peaks above an alpine lake with pine forest, northern Italy, crisp clear day",
+      "alt": "Sommets enneigés des Dolomites au-dessus d'un lac alpin"
+    }
+  ],
+  "quand-partir-japon": [
+    {
+      "prompt": "Japanese landscape blending cherry blossom, a temple roof and a distant snow-capped peak",
+      "alt": "Paysage japonais : cerisiers, toit de temple et sommet enneigé"
+    },
+    {
+      "prompt": "Cherry blossom trees in full bloom along a canal with traditional Japanese houses, petals on the water, soft spring light",
+      "alt": "Cerisiers en fleurs le long d'un canal bordé de maisons japonaises"
+    },
+    {
+      "prompt": "Fiery red Japanese maple trees over a mossy temple garden and stone path in autumn",
+      "alt": "Érables rouges surplombant un jardin de temple japonais en automne"
+    },
+    {
+      "prompt": "Summer festival in Japan at night with paper lanterns, yukata-clad crowd from behind, warm glowing light",
+      "alt": "Festival d'été japonais illuminé de lanternes de papier"
+    },
+    {
+      "prompt": "Outdoor onsen hot spring with rising steam surrounded by deep snow and bare trees, Japan, winter dusk",
+      "alt": "Onsen en plein air entouré de neige au Japon"
+    }
+  ],
+  "quand-partir-jordanie": [
+    {
+      "prompt": "Jordanian desert landscape with red sandstone cliffs and a vast empty valley",
+      "alt": "Paysage désertique jordanien aux falaises de grès rouge"
+    },
+    {
+      "prompt": "Narrow red sandstone canyon opening onto a carved rock facade, Petra, Jordan, warm morning light",
+      "alt": "Le défilé de grès rouge menant aux façades sculptées de Pétra"
+    },
+    {
+      "prompt": "Vast red desert valley with towering sandstone monoliths and rippled sand, Wadi Rum, Jordan, midday heat haze",
+      "alt": "Monolithes de grès et sable rouge du Wadi Rum"
+    },
+    {
+      "prompt": "A person floating effortlessly on the mineral-rich turquoise water of the Dead Sea, salt formations, distant hills",
+      "alt": "Baigneur flottant sur les eaux salées de la mer Morte"
+    },
+    {
+      "prompt": "Bedouin camp with traditional tents and a campfire under a vast starry desert sky, Jordan",
+      "alt": "Campement bédouin sous le ciel étoilé du désert jordanien"
+    },
+    {
+      "prompt": "Ancient Roman colonnaded street with standing columns under a blue sky, Jerash, Jordan",
+      "alt": "Rue à colonnades romaines de Jerash en Jordanie"
+    }
+  ],
+  "quand-partir-la-reunion": [
+    {
+      "prompt": "Reunion Island landscape with green volcanic peaks, clouds and deep ravines",
+      "alt": "Pitons volcaniques verdoyants et ravines de La Réunion"
+    },
+    {
+      "prompt": "Dramatic volcanic cirque with sharp green peaks and low clouds, Reunion Island, clear dry-season morning",
+      "alt": "Cirque volcanique et pitons verdoyants de La Réunion"
+    },
+    {
+      "prompt": "Tropical rain and mist over a lush ravine with waterfalls cascading down basalt cliffs, Reunion Island",
+      "alt": "Cascades et brume sur les remparts de basalte réunionnais"
+    },
+    {
+      "prompt": "Steaming volcanic crater with black lava fields under a wide sky, Piton de la Fournaise style, Reunion",
+      "alt": "Cratère volcanique et coulées de lave noire à La Réunion"
+    },
+    {
+      "prompt": "Turquoise lagoon protected by a coral reef with a white sand beach and filao trees, Reunion Island west coast",
+      "alt": "Lagon turquoise de la côte ouest de La Réunion"
+    },
+    {
+      "prompt": "Hiking trail winding along a green mountain ridge above the clouds, Reunion Island highlands",
+      "alt": "Sentier de randonnée sur une crête réunionnaise au-dessus des nuages"
+    }
+  ],
+  "quand-partir-maldives": [
+    {
+      "prompt": "Maldivian atoll from above with a turquoise lagoon, white sandbank and deep blue ocean",
+      "alt": "Atoll maldivien vu du ciel, lagon turquoise et banc de sable"
+    },
+    {
+      "prompt": "Overwater villas on stilts above a crystal-clear turquoise lagoon, white sand atoll, perfect blue sky, Maldives",
+      "alt": "Villas sur pilotis au-dessus du lagon turquoise des Maldives"
+    },
+    {
+      "prompt": "A giant manta ray gliding through clear blue water above a coral reef, Maldives, sunbeams from the surface",
+      "alt": "Raie manta glissant au-dessus d'un récif corallien aux Maldives"
+    },
+    {
+      "prompt": "Aerial view of a tiny palm-covered island ringed by a turquoise lagoon and deep blue ocean, Maldives",
+      "alt": "Vue aérienne d'un îlot maldivien cerné de son lagon"
+    },
+    {
+      "prompt": "Snorkelers above a vivid coral garden with schools of tropical fish, shallow turquoise water, Maldives",
+      "alt": "Palmeurs au-dessus d'un jardin de corail maldivien"
+    },
+    {
+      "prompt": "Sandbank at sunset in the Maldives with pastel sky reflected on a mirror-calm lagoon",
+      "alt": "Banc de sable maldivien au coucher du soleil"
+    }
+  ],
+  "quand-partir-maroc": [
+    {
+      "prompt": "Moroccan landscape with an ochre kasbah, palm grove and the Atlas mountains behind",
+      "alt": "Kasbah ocre, palmeraie et montagnes de l'Atlas"
+    },
+    {
+      "prompt": "Bustling Moroccan medina souk with spice pyramids, lanterns and ochre walls, warm shafts of light",
+      "alt": "Souk d'une médina marocaine et ses pyramides d'épices"
+    },
+    {
+      "prompt": "Camel caravan crossing golden Sahara sand dunes at sunset, long shadows, Morocco",
+      "alt": "Caravane de dromadaires sur les dunes du Sahara marocain"
+    },
+    {
+      "prompt": "Atlantic coastline of Morocco with a fortified white and blue harbour town, fishing boats, sea breeze",
+      "alt": "Port fortifié blanc et bleu sur la côte atlantique marocaine"
+    },
+    {
+      "prompt": "Snow-covered High Atlas mountain peaks above a Berber village with terraced fields, Morocco, winter",
+      "alt": "Sommets enneigés du Haut Atlas au-dessus d'un village berbère"
+    }
+  ],
+  "quand-partir-mexique": [
+    {
+      "prompt": "Mexican landscape with a Mayan pyramid, jungle and a turquoise Caribbean coast beyond",
+      "alt": "Pyramide maya, jungle et côte caraïbe mexicaine"
+    },
+    {
+      "prompt": "Ancient Mayan stepped pyramid in a clearing of tropical jungle under a bright blue sky, Mexico",
+      "alt": "Pyramide maya à degrés au cœur de la jungle mexicaine"
+    },
+    {
+      "prompt": "Sea turtle swimming in clear turquoise Caribbean water above white sand, Mexican coast",
+      "alt": "Tortue marine nageant dans les eaux turquoise mexicaines"
+    },
+    {
+      "prompt": "Circular limestone cenote with turquoise water, hanging vines and a shaft of sunlight, Yucatan, Mexico",
+      "alt": "Cénote calcaire du Yucatán et son puits de lumière"
+    },
+    {
+      "prompt": "Colorful colonial street with pastel facades and papel picado banners in a Mexican town, warm light",
+      "alt": "Rue coloniale colorée et guirlandes de papel picado au Mexique"
+    },
+    {
+      "prompt": "White sand Caribbean beach with palm trees and turquoise sea on the Riviera Maya, Mexico",
+      "alt": "Plage de sable blanc et cocotiers de la Riviera Maya"
+    }
+  ],
+  "quand-partir-new-york": [
+    {
+      "prompt": "Manhattan skyline seen across the water under a clear sky, iconic New York silhouette",
+      "alt": "La silhouette de Manhattan vue depuis l'eau"
+    },
+    {
+      "prompt": "Central Park in spring with blossoming trees and the Manhattan skyline behind, clear soft light, New York",
+      "alt": "Central Park au printemps et les gratte-ciel de Manhattan"
+    },
+    {
+      "prompt": "Brooklyn Bridge cables against the Manhattan skyline at golden hour in summer, New York",
+      "alt": "Le pont de Brooklyn et la silhouette de Manhattan à l'heure dorée"
+    },
+    {
+      "prompt": "Snowy New York street at dusk with warm shop windows, holiday lights and yellow cabs",
+      "alt": "Rue new-yorkaise enneigée illuminée pour les fêtes"
+    },
+    {
+      "prompt": "Manhattan skyline at blue hour seen across the water, thousands of lit windows, New York",
+      "alt": "Les gratte-ciel de Manhattan illuminés à l'heure bleue"
+    },
+    {
+      "prompt": "Fire escapes and brownstone facades on a tree-lined New York street in autumn",
+      "alt": "Escaliers de secours et façades de brownstones à New York en automne"
+    }
+  ],
+  "quand-partir-portugal": [
+    {
+      "prompt": "Portuguese coastline with golden cliffs, Atlantic waves and a whitewashed village",
+      "alt": "Côte portugaise : falaises dorées et village blanc"
+    },
+    {
+      "prompt": "Pastel houses and azulejo tiled facades on a steep cobbled street with a yellow tram, Lisbon, spring light",
+      "alt": "Ruelle pavée de Lisbonne, façades d'azulejos et tramway jaune"
+    },
+    {
+      "prompt": "Golden limestone cliffs and sea stacks above a turquoise Atlantic beach, Algarve, Portugal, summer",
+      "alt": "Falaises dorées et plage turquoise de l'Algarve"
+    },
+    {
+      "prompt": "Volcanic crater lake surrounded by deep green hydrangea-lined hills, Azores, Atlantic ocean beyond",
+      "alt": "Lac de cratère et collines verdoyantes des Açores"
+    },
+    {
+      "prompt": "Terraced vineyards of the Douro valley descending to the river in soft winter light, Portugal",
+      "alt": "Vignobles en terrasses de la vallée du Douro"
+    }
+  ],
+  "quand-partir-republique-dominicaine": [
+    {
+      "prompt": "Dominican landscape with palm-covered green hills meeting a turquoise Caribbean sea",
+      "alt": "Collines verdoyantes dominant la mer des Caraïbes"
+    },
+    {
+      "prompt": "Palm-fringed white sand Caribbean beach with turquoise water and gentle surf, Dominican Republic, dry season",
+      "alt": "Plage de sable blanc bordée de cocotiers en République dominicaine"
+    },
+    {
+      "prompt": "Dramatic tropical storm clouds over a green Caribbean coastline and palm trees, warm light breaking through",
+      "alt": "Nuages d'orage tropical sur la côte caraïbe"
+    },
+    {
+      "prompt": "Humpback whale tail rising from the blue Atlantic near a green tropical bay, Samana style, Dominican Republic",
+      "alt": "Nageoire caudale de baleine à bosse dans la baie de Samaná"
+    },
+    {
+      "prompt": "Lush waterfall cascading into a natural pool in dense Dominican tropical forest",
+      "alt": "Cascade se jetant dans un bassin naturel en forêt dominicaine"
+    }
+  ],
+  "quand-partir-sri-lanka": [
+    {
+      "prompt": "Sri Lankan landscape with tea-covered hills, a temple and palm trees, morning mist",
+      "alt": "Collines de thé, temple et palmiers au Sri Lanka"
+    },
+    {
+      "prompt": "Emerald tea plantations on rolling hills with pickers' paths and morning mist, Sri Lankan highlands",
+      "alt": "Plantations de thé vallonnées des hauts plateaux sri-lankais"
+    },
+    {
+      "prompt": "Wide empty golden beach with palm trees and calm Indian Ocean water on the east coast of Sri Lanka",
+      "alt": "Plage dorée et cocotiers sur la côte est du Sri Lanka"
+    },
+    {
+      "prompt": "Wild elephants crossing a grassy plain with a lake and distant hills, Sri Lankan national park",
+      "alt": "Éléphants sauvages dans une plaine d'un parc national sri-lankais"
+    },
+    {
+      "prompt": "Blue vintage train winding through green hills and tea fields on a viaduct, Sri Lanka",
+      "alt": "Train bleu traversant les collines de thé sri-lankaises"
+    },
+    {
+      "prompt": "Ancient Buddhist stupa and stone ruins surrounded by tropical vegetation, Sri Lanka, warm light",
+      "alt": "Stupa bouddhique et ruines de pierre au Sri Lanka"
+    }
+  ],
+  "quand-partir-tanzanie": [
+    {
+      "prompt": "Tanzanian savanna with acacia trees, distant mountains and grazing animals at sunrise",
+      "alt": "Savane tanzanienne et acacias au lever du soleil"
+    },
+    {
+      "prompt": "Herd of wildebeest crossing golden savanna plains with acacia trees at sunrise, Serengeti, Tanzania",
+      "alt": "Troupeau de gnous traversant la savane du Serengeti"
+    },
+    {
+      "prompt": "Thousands of wildebeest fording a river with churning water and dust, great migration, Tanzania",
+      "alt": "La grande migration : gnous traversant une rivière"
+    },
+    {
+      "prompt": "Snow-capped Kilimanjaro rising above the savanna and acacia trees at dawn, Tanzania",
+      "alt": "Le Kilimandjaro enneigé dominant la savane à l'aube"
+    },
+    {
+      "prompt": "White sand beach with turquoise water and a traditional dhow sailing boat, Zanzibar, Tanzania",
+      "alt": "Boutre traditionnel au large d'une plage de Zanzibar"
+    }
+  ],
+  "quand-partir-thailande": [
+    {
+      "prompt": "Thai landscape with a golden temple, palm trees and limestone cliffs above turquoise water",
+      "alt": "Temple doré, palmiers et falaises calcaires en Thaïlande"
+    },
+    {
+      "prompt": "Golden Thai temple with ornate tiered roofs against a clear blue sky, tropical trees, cool-season light",
+      "alt": "Temple thaïlandais doré aux toits étagés"
+    },
+    {
+      "prompt": "Thai water festival street celebration with splashing water and joyful crowd from behind, bright sunlight",
+      "alt": "Fête de l'eau de Songkran dans une rue thaïlandaise"
+    },
+    {
+      "prompt": "Monsoon rain over a lush green Thai valley with rice paddies and dramatic clouds",
+      "alt": "Pluie de mousson sur des rizières thaïlandaises"
+    },
+    {
+      "prompt": "Longtail boat on turquoise water below towering limestone karst cliffs, Andaman sea, Thailand",
+      "alt": "Bateau à longue queue devant les falaises calcaires de la mer d'Andaman"
+    },
+    {
+      "prompt": "Floating market with wooden boats loaded with tropical fruit on a narrow canal, Thailand, morning light",
+      "alt": "Marché flottant thaïlandais et ses barques chargées de fruits"
+    }
+  ],
+  "quand-partir-vietnam": [
+    {
+      "prompt": "Vietnamese landscape with limestone karsts, rice paddies and a river, soft morning light",
+      "alt": "Pitons calcaires et rizières du Vietnam au petit matin"
+    },
+    {
+      "prompt": "Emerald rice terraces cascading down misty mountain slopes in northern Vietnam, early morning",
+      "alt": "Rizières en terrasses du nord du Vietnam dans la brume"
+    },
+    {
+      "prompt": "Limestone karst islands rising from calm emerald water with a traditional junk boat, Halong bay, Vietnam",
+      "alt": "Pitons calcaires et jonque traditionnelle dans la baie d'Halong"
+    },
+    {
+      "prompt": "Ancient Vietnamese town street lit by hundreds of colored silk lanterns at dusk, Hoi An style",
+      "alt": "Rue d'une vieille ville vietnamienne illuminée de lanternes de soie"
+    },
+    {
+      "prompt": "Floating market on the Mekong delta with wooden boats loaded with fruit, palm-lined banks, Vietnam",
+      "alt": "Marché flottant du delta du Mékong"
+    },
+    {
+      "prompt": "Vietnamese new year street decorations with pink peach blossom branches and red lanterns, festive atmosphere",
+      "alt": "Décorations du Têt : branches de pêcher en fleurs et lanternes rouges"
+    }
+  ]
+}

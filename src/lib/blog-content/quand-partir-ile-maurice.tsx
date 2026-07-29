@@ -48,9 +48,6 @@ const quandPartirIleMaurice: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-ile-maurice-1.jpg",
-      imgAlt:
-        "Plage de sable blanc et eaux cristallines à l'île Maurice",
     },
     {
       h2: "La meilleure période : de mai à novembre",

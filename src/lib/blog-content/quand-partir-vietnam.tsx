@@ -47,8 +47,6 @@ const quandPartirVietnam: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-vietnam-1.jpg",
-      imgAlt: "Rizières en terrasses verdoyantes dans la région de Sapa",
     },
     {
       h2: "Le meilleur compromis : mars-avril et octobre-novembre",

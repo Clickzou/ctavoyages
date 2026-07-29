@@ -44,8 +44,6 @@ const quandPartirJapon: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-japon-1.jpg",
-      imgAlt: "Cerisiers en fleurs et pagode traditionnelle au printemps",
     },
     {
       h2: "Le printemps : la saison des cerisiers",

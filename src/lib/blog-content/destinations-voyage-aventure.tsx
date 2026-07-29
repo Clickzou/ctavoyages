@@ -48,8 +48,6 @@ const destinationsVoyageAventure: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-destinations-voyage-aventure-1.jpg",
-      imgAlt: "Sentier de trek menant vers les sommets enneigés de l'Himalaya",
     },
     {
       h2: "Déserts et grands espaces : Namibie et Jordanie",

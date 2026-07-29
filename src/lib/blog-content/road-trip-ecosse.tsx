@@ -47,9 +47,6 @@ const roadTripEcosse: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-road-trip-ecosse-1.jpg",
-      imgAlt:
-        "Vue du château d'Édimbourg dominant les toits de la vieille ville",
     },
     {
       h2: "Étape 2 : Stirling, les Trossachs et le Loch Lomond",

@@ -48,9 +48,6 @@ const maldivesOuSeychelles: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-maldives-ou-seychelles-1.jpg",
-      imgAlt:
-        "Plage de granit rose des Seychelles face à un lagon corallien des Maldives",
     },
     {
       h2: "Budget : l'avantage relatif des Seychelles",

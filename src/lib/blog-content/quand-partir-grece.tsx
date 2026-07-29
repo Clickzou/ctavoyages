@@ -46,8 +46,6 @@ const quandPartirGrece: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-grece-1.jpg",
-      imgAlt: "Ruelle aux maisons blanches et bougainvilliers dans les Cyclades",
     },
     {
       h2: "La meilleure période : mai-juin et septembre",

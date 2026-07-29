@@ -46,9 +46,6 @@ const visiterNewYorkPremiereFois: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-visiter-new-york-premiere-fois-1.jpg",
-      imgAlt:
-        "Vue panoramique sur les gratte-ciel de Manhattan depuis un rooftop",
     },
     {
       h2: "Jour 2 : Central Park et l'Upper East Side",

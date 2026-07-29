@@ -48,9 +48,6 @@ const ouPartirEnJuillet: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-ou-partir-en-juillet-1.jpg",
-      imgAlt:
-        "Crique aux eaux cristallines d'une île méditerranéenne en plein été",
     },
     {
       h2: "Les tropiques en saison sèche",

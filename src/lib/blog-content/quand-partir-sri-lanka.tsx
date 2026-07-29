@@ -47,8 +47,6 @@ const quandPartirSriLanka: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-quand-partir-sri-lanka-1.jpg",
-      imgAlt: "Plantation de thé en terrasses dans les collines du Sri Lanka",
     },
     {
       h2: "Décembre à mars : la meilleure période globale",

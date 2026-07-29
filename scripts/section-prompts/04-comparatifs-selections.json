@@ -1,0 +1,484 @@
+{
+  "bali-ou-thailande": [
+    {
+      "prompt": "Split view feel: tropical beach with palm trees and turquoise water, lush green headland, Southeast Asia",
+      "alt": "Plage tropicale et promontoire verdoyant en Asie du Sud-Est"
+    },
+    {
+      "prompt": "Balinese temple ceremony with offerings and carved stone gates, tropical greenery, warm light",
+      "alt": "Cérémonie devant un temple balinais orné d'offrandes"
+    },
+    {
+      "prompt": "Thai street food market at night with steaming woks, colorful stalls and warm lantern light",
+      "alt": "Marché de rue thaïlandais illuminé le soir"
+    },
+    {
+      "prompt": "Longtail boat on turquoise water below limestone cliffs, tropical Southeast Asia, bright day",
+      "alt": "Bateau à longue queue sur une eau turquoise en Asie du Sud-Est"
+    },
+    {
+      "prompt": "Emerald rice terraces with palm trees and a distant volcano at sunrise, tropical Asia",
+      "alt": "Rizières en terrasses et volcan à l'aube"
+    }
+  ],
+  "costa-rica-ou-panama": [
+    {
+      "prompt": "Dense tropical rainforest canopy with mist and a distant volcano, Central America, morning light",
+      "alt": "Canopée tropicale et volcan lointain en Amérique centrale"
+    },
+    {
+      "prompt": "Wild Pacific beach with jungle reaching the sand and powerful surf at sunset, Central America",
+      "alt": "Plage sauvage du Pacifique bordée de jungle au coucher du soleil"
+    },
+    {
+      "prompt": "Caribbean stilt houses over turquoise shallow water with palm trees, Central America",
+      "alt": "Maisons sur pilotis au-dessus d'une eau turquoise des Caraïbes"
+    },
+    {
+      "prompt": "Misty cloud forest canopy with hanging vines and a suspension bridge, Central America",
+      "alt": "Canopée d'une forêt de nuages traversée par une passerelle"
+    },
+    {
+      "prompt": "Colorful tropical bird perched on a branch in dense rainforest, Central America, soft light",
+      "alt": "Oiseau tropical coloré perché dans la forêt humide"
+    }
+  ],
+  "crete-ou-santorin": [
+    {
+      "prompt": "Aegean sea seen from a rocky headland with white houses in the distance, bright Greek light",
+      "alt": "La mer Égée vue d'un promontoire rocheux"
+    },
+    {
+      "prompt": "Traditional Cretan mountain village with stone houses, olive trees and a taverna terrace, warm light",
+      "alt": "Village de montagne crétois et sa taverne ombragée"
+    },
+    {
+      "prompt": "Whitewashed houses with blue domes on a volcanic caldera cliff above a deep blue sea, Cyclades",
+      "alt": "Maisons blanches à dômes bleus surplombant la caldeira"
+    },
+    {
+      "prompt": "Pink-tinted sand beach with shallow turquoise lagoon water and rocky headland, Greek island",
+      "alt": "Plage de sable rosé et lagon peu profond sur une île grecque"
+    },
+    {
+      "prompt": "Black volcanic sand beach with red cliffs and clear blue Aegean water, Greek island",
+      "alt": "Plage de sable noir et falaises rouges d'une île grecque"
+    }
+  ],
+  "cuba-ou-republique-dominicaine": [
+    {
+      "prompt": "Two Caribbean atmospheres: palm-lined beach and colorful colonial street corner, warm tropical light",
+      "alt": "Plage bordée de palmiers et rue coloniale des Caraïbes"
+    },
+    {
+      "prompt": "Long white sand Caribbean beach with leaning palms and calm turquoise water, resort umbrellas far away",
+      "alt": "Longue plage caraïbe de sable blanc bordée de cocotiers"
+    },
+    {
+      "prompt": "Musicians playing on a faded colonial street with pastel facades and vintage cars, Cuba, warm light",
+      "alt": "Musiciens dans une rue coloniale cubaine aux façades pastel"
+    },
+    {
+      "prompt": "Caribbean resort pool with palm trees and loungers facing the sea at golden hour",
+      "alt": "Piscine d'un complexe balnéaire caraïbe face à la mer"
+    },
+    {
+      "prompt": "Traveler's backpack on a rural Caribbean road with green hills and palm trees, sense of journey",
+      "alt": "Sac à dos sur une route rurale des Caraïbes"
+    },
+    {
+      "prompt": "Colonial church tower above a lively Caribbean town square at sunset, warm colors",
+      "alt": "Clocher colonial dominant une place animée des Caraïbes"
+    }
+  ],
+  "iles-paradisiaques-pas-cher": [
+    {
+      "prompt": "Simple turquoise lagoon with a wooden pier and palm trees, unspoiled tropical island, bright day",
+      "alt": "Ponton de bois sur un lagon turquoise d'une île préservée"
+    },
+    {
+      "prompt": "Simple beach bungalow with a thatched roof steps from a turquoise lagoon, palm trees, tropical island",
+      "alt": "Bungalow au toit de chaume au bord d'un lagon turquoise"
+    },
+    {
+      "prompt": "Quiet tropical beach with a single wooden boat and no crowd under a soft cloudy sky, low season",
+      "alt": "Plage tropicale déserte et barque de bois hors saison"
+    },
+    {
+      "prompt": "Local island market with tropical fruit, spices and colorful fabrics under palm shade",
+      "alt": "Marché local d'une île tropicale à l'ombre des palmiers"
+    },
+    {
+      "prompt": "Aerial view of a small tropical island ringed by shallow turquoise water and coral",
+      "alt": "Vue aérienne d'une petite île tropicale cernée de corail"
+    }
+  ],
+  "islande-ou-norvege": [
+    {
+      "prompt": "Dramatic Nordic landscape with a waterfall, steep green cliffs and a fjord under moody clouds",
+      "alt": "Paysage nordique : cascade, falaises verdoyantes et fjord"
+    },
+    {
+      "prompt": "Hiker on a green mountain ridge above a deep fjord with waterfalls, Nordic landscape, dramatic light",
+      "alt": "Randonneur sur une crête dominant un fjord parsemé de cascades"
+    },
+    {
+      "prompt": "Colorful wooden houses along a Nordic harbour with reflections on calm water, soft daylight",
+      "alt": "Maisons de bois colorées le long d'un port nordique"
+    },
+    {
+      "prompt": "Green northern lights above a snowy Nordic landscape with a lone cabin, deep winter night",
+      "alt": "Aurores boréales au-dessus d'un paysage nordique enneigé"
+    },
+    {
+      "prompt": "Steam rising from geothermal pools on a black lava field under a wide grey sky, Iceland",
+      "alt": "Vapeur s'échappant de bassins géothermiques sur un champ de lave"
+    }
+  ],
+  "maldives-ou-seychelles": [
+    {
+      "prompt": "Two Indian Ocean moods: a flat turquoise atoll lagoon and granite boulders on white sand",
+      "alt": "Lagon d'atoll turquoise et rochers de granit de l'océan Indien"
+    },
+    {
+      "prompt": "Beach of giant smooth granite boulders with turquoise water and takamaka trees, Seychelles",
+      "alt": "Blocs de granit arrondis et eaux turquoise aux Seychelles"
+    },
+    {
+      "prompt": "Overwater villa deck with a private ladder into a still turquoise lagoon at sunset, Maldives",
+      "alt": "Terrasse d'une villa sur pilotis donnant sur le lagon au crépuscule"
+    },
+    {
+      "prompt": "Coral reef wall with schools of colorful tropical fish and clear blue water, Indian Ocean",
+      "alt": "Tombant corallien et bancs de poissons tropicaux"
+    },
+    {
+      "prompt": "Aerial view of a turquoise atoll lagoon meeting deep blue ocean, white sandbank, Indian Ocean",
+      "alt": "Vue aérienne d'un atoll et de son banc de sable"
+    },
+    {
+      "prompt": "Palm-fringed beach with a hammock and calm turquoise water, tropical island, golden light",
+      "alt": "Hamac entre deux palmiers face à un lagon turquoise"
+    }
+  ],
+  "maroc-ou-tunisie": [
+    {
+      "prompt": "North African rooftop view over a white and ochre medina with minarets at golden hour",
+      "alt": "Vue sur les toits d'une médina nord-africaine à l'heure dorée"
+    },
+    {
+      "prompt": "Bustling Moroccan medina alley with ochre walls, carpets and lanterns, shafts of warm light",
+      "alt": "Ruelle d'une médina marocaine tapissée de tapis et de lanternes"
+    },
+    {
+      "prompt": "White and blue coastal village above a calm Mediterranean sea with fishing boats, North Africa",
+      "alt": "Village côtier blanc et bleu dominant la Méditerranée"
+    },
+    {
+      "prompt": "Golden Sahara dunes with wind-sculpted crests and a lone camel track at sunset",
+      "alt": "Dunes sahariennes sculptées par le vent au coucher du soleil"
+    },
+    {
+      "prompt": "Traditional mint tea poured into small glasses on a copper tray, North African setting",
+      "alt": "Thé à la menthe servi sur un plateau de cuivre"
+    },
+    {
+      "prompt": "Ochre fortified ksar village with palm grove under a clear desert sky, North Africa",
+      "alt": "Ksar fortifié ocre et sa palmeraie"
+    }
+  ],
+  "meilleures-applis-voyage": [
+    {
+      "prompt": "Smartphone, passport and headphones on a table beside a window with an airplane wing view",
+      "alt": "Téléphone, passeport et casque posés près d'un hublot"
+    },
+    {
+      "prompt": "Smartphone showing a map on a wooden table beside a paper map, compass and coffee, warm daylight",
+      "alt": "Téléphone affichant une carte à côté d'une carte papier et d'une boussole"
+    },
+    {
+      "prompt": "Two travelers talking with a local vendor at a market stall, friendly exchange, warm light",
+      "alt": "Voyageurs échangeant avec un commerçant sur un marché"
+    },
+    {
+      "prompt": "Notebook with handwritten budget, banknotes of different currencies and a pen on a desk",
+      "alt": "Carnet de budget de voyage, devises et stylo sur un bureau"
+    },
+    {
+      "prompt": "Neatly organized travel documents, boarding passes and a phone on a made bed before departure",
+      "alt": "Documents de voyage et cartes d'embarquement soigneusement préparés"
+    },
+    {
+      "prompt": "Passport, travel insurance papers and a phone on a wooden desk beside a small globe",
+      "alt": "Passeport, documents d'assurance et téléphone posés sur un bureau"
+    }
+  ],
+  "meilleures-destinations-plongee": [
+    {
+      "prompt": "Diver silhouetted above a vast colorful coral reef in clear blue water, sunbeams from the surface",
+      "alt": "Plongeur au-dessus d'un vaste récif corallien"
+    },
+    {
+      "prompt": "A whale shark gliding slowly through deep blue water with small fish around it, sunbeams above",
+      "alt": "Requin-baleine glissant dans les eaux profondes"
+    },
+    {
+      "prompt": "Beginner divers above a shallow bright coral garden in calm turquoise water, clear visibility",
+      "alt": "Plongeurs débutants au-dessus d'un jardin de corail peu profond"
+    },
+    {
+      "prompt": "Sunken shipwreck covered in coral in deep blue water with a diver silhouette above",
+      "alt": "Épave recouverte de corail et silhouette d'un plongeur"
+    },
+    {
+      "prompt": "Diving gear, mask and fins laid out on a wooden boat deck facing a calm tropical sea",
+      "alt": "Matériel de plongée sur le pont d'un bateau face à la mer"
+    }
+  ],
+  "meilleures-destinations-safari": [
+    {
+      "prompt": "Acacia tree silhouette against an orange African sunset with distant animals on the savanna",
+      "alt": "Acacia se découpant sur un coucher de soleil africain"
+    },
+    {
+      "prompt": "Endless line of wildebeest crossing golden savanna plains with dust rising, great migration",
+      "alt": "File de gnous traversant la savane pendant la grande migration"
+    },
+    {
+      "prompt": "Elephant, lion and buffalo in a golden savanna waterhole scene at sunset, acacia trees",
+      "alt": "Faune africaine réunie autour d'un point d'eau au coucher du soleil"
+    },
+    {
+      "prompt": "Dry-season savanna with cracked earth, sparse trees and animals at a shrinking waterhole",
+      "alt": "Savane en saison sèche autour d'un point d'eau"
+    },
+    {
+      "prompt": "Safari camp tent with a view over the savanna at dawn, folding chairs and a lantern",
+      "alt": "Tente de camp de safari face à la savane à l'aube"
+    }
+  ],
+  "plus-beaux-deserts-du-monde": [
+    {
+      "prompt": "Endless orange sand dunes with sharp wind-sculpted crests at sunrise, vast desert",
+      "alt": "Dunes de sable orangé à perte de vue au lever du soleil"
+    },
+    {
+      "prompt": "Vast white salt flat perfectly mirroring the sky and clouds after rain, endless horizon",
+      "alt": "Désert de sel reflétant le ciel comme un miroir"
+    },
+    {
+      "prompt": "Deep red rock canyon with layered walls and a narrow slot lit by a shaft of sunlight",
+      "alt": "Canyon de roche rouge traversé par un rayon de lumière"
+    },
+    {
+      "prompt": "Polar desert of ice and bare rock under a low sun, stark and empty landscape",
+      "alt": "Désert polaire de glace et de roche sous un soleil rasant"
+    },
+    {
+      "prompt": "Camel caravan crossing golden dunes with long shadows at sunset, vast desert",
+      "alt": "Caravane traversant les dunes dorées au coucher du soleil"
+    }
+  ],
+  "plus-beaux-road-trips-du-monde": [
+    {
+      "prompt": "Coastal highway curving along dramatic cliffs above the ocean at golden hour",
+      "alt": "Route côtière longeant des falaises au-dessus de l'océan"
+    },
+    {
+      "prompt": "Empty straight highway crossing a vast red desert plain toward distant mesas, big sky",
+      "alt": "Route rectiligne traversant une plaine désertique rouge"
+    },
+    {
+      "prompt": "Mountain road with hairpin bends climbing through green alpine slopes and snow-capped peaks",
+      "alt": "Route de montagne en lacets au milieu des alpages"
+    },
+    {
+      "prompt": "Narrow country road winding between stone walls and rolling green hills, soft European light",
+      "alt": "Petite route serpentant entre murets de pierre et collines verdoyantes"
+    },
+    {
+      "prompt": "Car roof loaded with luggage parked at a scenic overlook at golden hour, open road ahead",
+      "alt": "Voiture chargée de bagages à un belvédère au coucher du soleil"
+    }
+  ],
+  "plus-beaux-sites-unesco": [
+    {
+      "prompt": "Majestic ancient monument at sunrise with warm light on carved stone, few visitors",
+      "alt": "Monument antique baigné de la lumière du lever du soleil"
+    },
+    {
+      "prompt": "Monumental ancient stone temple complex with intricate carvings at sunrise, tropical trees",
+      "alt": "Temple de pierre monumental aux sculptures détaillées à l'aube"
+    },
+    {
+      "prompt": "Spectacular natural wonder: terraced turquoise mineral pools cascading down a white hillside",
+      "alt": "Bassins turquoise en terrasses sur une colline calcaire"
+    },
+    {
+      "prompt": "Remote cliffside monastery reached by a narrow path, mist and mountains, few visitors",
+      "alt": "Monastère accroché à une falaise, accessible par un sentier étroit"
+    },
+    {
+      "prompt": "Traveler studying a guidebook before a grand historic monument in soft morning light",
+      "alt": "Voyageur consultant un guide devant un monument historique"
+    }
+  ],
+  "plus-beaux-villages-de-france": [
+    {
+      "prompt": "Perched Provencal village of stone houses among cypress and lavender fields, golden light",
+      "alt": "Village provençal perché entouré de cyprès et de lavande"
+    },
+    {
+      "prompt": "Golden stone village perched above a river valley with a castle and walnut trees, Dordogne, France",
+      "alt": "Village de pierre dorée dominant une vallée en Dordogne"
+    },
+    {
+      "prompt": "Half-timbered colorful houses with geraniums along a canal in an Alsatian village, France",
+      "alt": "Maisons à colombages fleuries le long d'un canal alsacien"
+    },
+    {
+      "prompt": "Granite village with slate roofs and hydrangeas near the Atlantic coast, Brittany, France",
+      "alt": "Village de granit aux toits d'ardoise et hortensias en Bretagne"
+    },
+    {
+      "prompt": "Cobbled village square with a stone fountain, plane trees and a cafe terrace, southern France",
+      "alt": "Place pavée d'un village du sud de la France et sa fontaine"
+    }
+  ],
+  "plus-belles-cascades-du-monde": [
+    {
+      "prompt": "Immense waterfall thundering into a green gorge with rising mist and a rainbow",
+      "alt": "Immense cascade se jetant dans une gorge verdoyante"
+    },
+    {
+      "prompt": "Immense horseshoe waterfall with rising mist and a rainbow, lush green surroundings, Americas",
+      "alt": "Immense chute en fer à cheval et arc-en-ciel dans la brume"
+    },
+    {
+      "prompt": "Wide curtain of falling water across a basalt gorge with dense spray and green forest, Africa",
+      "alt": "Large rideau d'eau se déversant dans une gorge de basalte"
+    },
+    {
+      "prompt": "Powerful waterfall at peak flow after the rains, dramatic clouds and swollen river",
+      "alt": "Cascade en crue après la saison des pluies"
+    },
+    {
+      "prompt": "Wooden viewing walkway leading to a tall waterfall through rainforest, visitors small in frame",
+      "alt": "Passerelle de bois menant à une haute cascade en forêt"
+    }
+  ],
+  "plus-belles-iles-du-monde": [
+    {
+      "prompt": "Aerial view of a turquoise lagoon around a green tropical island with a coral reef",
+      "alt": "Vue aérienne d'une île tropicale et de son lagon turquoise"
+    },
+    {
+      "prompt": "Turquoise Pacific lagoon with a volcanic green peak and overwater bungalows, French Polynesia style",
+      "alt": "Lagon turquoise du Pacifique et pic volcanique verdoyant"
+    },
+    {
+      "prompt": "Limestone karst islands in emerald water with white sand beaches, Southeast Asia, aerial view",
+      "alt": "Îlots calcaires et plages de sable blanc en Asie du Sud-Est"
+    },
+    {
+      "prompt": "Classic Caribbean island beach with palm trees, white sand and calm turquoise sea",
+      "alt": "Plage antillaise de sable blanc bordée de cocotiers"
+    },
+    {
+      "prompt": "Small plane wing over a scattering of tropical islands and reefs in turquoise water",
+      "alt": "Vue depuis un avion survolant un archipel tropical"
+    }
+  ],
+  "plus-belles-iles-grecques": [
+    {
+      "prompt": "Cycladic village of whitewashed houses and blue domes above a deep blue Aegean sea",
+      "alt": "Village cycladique blanc et bleu dominant la mer Égée"
+    },
+    {
+      "prompt": "Medieval stone fortress town with palm trees and an old harbour on a Greek island, Dodecanese",
+      "alt": "Cité fortifiée médiévale et vieux port d'une île du Dodécanèse"
+    },
+    {
+      "prompt": "Turquoise bay with pine-covered cliffs and a white sand beach, Ionian island, Greece",
+      "alt": "Baie turquoise bordée de falaises boisées dans les îles Ioniennes"
+    },
+    {
+      "prompt": "Rugged Cretan gorge with wild herbs and a distant blue sea, Greek island landscape",
+      "alt": "Gorge crétoise sauvage ouvrant sur la mer"
+    },
+    {
+      "prompt": "Ferry approaching a Greek island harbour with white houses and a chapel, morning light",
+      "alt": "Ferry approchant du port d'une île grecque"
+    }
+  ],
+  "plus-belles-plages-d-europe": [
+    {
+      "prompt": "European coastline with a crescent beach, turquoise water and limestone cliffs, bright day",
+      "alt": "Plage en croissant et falaises calcaires sur une côte européenne"
+    },
+    {
+      "prompt": "Golden limestone cliffs sheltering a small turquoise cove with clear Atlantic water, Iberian coast",
+      "alt": "Crique turquoise abritée par des falaises dorées"
+    },
+    {
+      "prompt": "Mediterranean beach with pastel houses, colorful umbrellas and a rocky headland, Italy",
+      "alt": "Plage méditerranéenne aux parasols colorés et maisons pastel"
+    },
+    {
+      "prompt": "Pebble beach with crystal-clear turquoise water framed by white cliffs and pines, Adriatic",
+      "alt": "Plage de galets et eaux cristallines de l'Adriatique"
+    },
+    {
+      "prompt": "Empty European beach at sunrise with soft light, footprints in the sand and calm sea",
+      "alt": "Plage européenne déserte au lever du soleil"
+    }
+  ],
+  "plus-belles-plages-ocean-indien": [
+    {
+      "prompt": "Perfect Indian Ocean beach with white sand, palm trees and a still turquoise lagoon",
+      "alt": "Plage de rêve de l'océan Indien et son lagon turquoise"
+    },
+    {
+      "prompt": "Sculpted pink granite boulders on a white sand beach with turquoise water and takamaka trees, Seychelles",
+      "alt": "Rochers de granit rose sur une plage seychelloise"
+    },
+    {
+      "prompt": "Traditional wooden dhow with a white sail on turquoise shallow water at low tide, Zanzibar",
+      "alt": "Boutre à voile blanche sur les eaux turquoise de Zanzibar"
+    },
+    {
+      "prompt": "Volcanic island coastline with black rocks, a coral lagoon and green mountains behind, Indian Ocean",
+      "alt": "Côte volcanique et lagon corallien de l'océan Indien"
+    },
+    {
+      "prompt": "Perfectly calm turquoise lagoon with a white sandbank at midday, Indian Ocean atoll",
+      "alt": "Banc de sable blanc au milieu d'un lagon turquoise"
+    },
+    {
+      "prompt": "Beach umbrella and two loungers facing an empty turquoise lagoon in soft morning light",
+      "alt": "Transats face à un lagon turquoise au petit matin"
+    }
+  ],
+  "vietnam-ou-cambodge": [
+    {
+      "prompt": "Southeast Asian scene with a temple silhouette, palm trees and a calm river at sunrise",
+      "alt": "Temple et rivière au lever du soleil en Asie du Sud-Est"
+    },
+    {
+      "prompt": "Emerald rice terraces stepping down misty mountains in northern Vietnam, morning light",
+      "alt": "Rizières en terrasses du nord du Vietnam dans la brume"
+    },
+    {
+      "prompt": "Ancient sandstone temple towers with carved faces emerging from jungle at sunrise, Angkor, Cambodia",
+      "alt": "Tours de pierre sculptées d'Angkor émergeant de la jungle"
+    },
+    {
+      "prompt": "Street food stall with steaming bowls of noodle soup and small plastic stools, Southeast Asia",
+      "alt": "Échoppe de soupe de nouilles en Asie du Sud-Est"
+    },
+    {
+      "prompt": "Wooden boat gliding on a calm river past stilt houses and palm trees, Southeast Asia, golden hour",
+      "alt": "Barque glissant sur une rivière bordée de maisons sur pilotis"
+    }
+  ]
+}

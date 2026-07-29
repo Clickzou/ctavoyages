@@ -49,9 +49,6 @@ const queFaireABali: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-que-faire-a-bali-1.jpg",
-      imgAlt:
-        "Rizières en terrasses verdoyantes de Tegallalang près d'Ubud à Bali",
     },
     {
       h2: "Les temples emblématiques de Bali",

@@ -47,8 +47,6 @@ const eviterLeJetLag: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-eviter-le-jet-lag-1.jpg",
-      imgAlt: "Aile d'avion survolant une mer de nuages en altitude",
     },
     {
       h2: "Se préparer avant le départ",

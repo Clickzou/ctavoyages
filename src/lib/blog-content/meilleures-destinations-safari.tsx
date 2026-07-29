@@ -71,8 +71,6 @@ const meilleuresDestinationsSafari: BlogArticle = {
           </ul>
         </>
       ),
-      img: "/generated/blog-meilleures-destinations-safari-1.jpg",
-      imgAlt: "Lion observant la savane dans une réserve africaine",
     },
     {
       h2: "La grande migration : le spectacle absolu",

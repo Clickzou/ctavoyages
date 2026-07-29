@@ -46,8 +46,6 @@ const voyageBienEtreSpa: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-voyage-bien-etre-spa-1.jpg",
-      imgAlt: "Pavillon de yoga en bois surplombant les rizières de Bali",
     },
     {
       h2: "Maldives et océan Indien : le spa face au lagon",

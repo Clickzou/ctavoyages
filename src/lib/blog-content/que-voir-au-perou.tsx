@@ -48,9 +48,6 @@ const queVoirAuPerou: BlogArticle = {
           </p>
         </>
       ),
-      img: "/generated/blog-que-voir-au-perou-1.jpg",
-      imgAlt:
-        "Place d'Armes de Cusco avec sa cathédrale et ses arcades coloniales",
     },
     {
       h2: "Jours 3 à 5 : la vallée sacrée des Incas",
