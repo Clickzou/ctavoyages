@@ -3,6 +3,7 @@
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { sendGAEvent } from "@next/third-parties/google";
 import { submitDevisRequest } from "@/lib/submitForm";
 
 type DestOption = {
@@ -434,6 +435,16 @@ export default function DevisForm() {
         },
         { subject: "Nouvelle demande de devis : CTA Voyages" }
       );
+
+      // Conversion signalée ici et non sur /merci, page que l'on peut atteindre
+      // sans avoir rien envoyé. Seuls le type de voyage et la destination
+      // partent vers Analytics : aucune donnée personnelle. Sans consentement,
+      // GA n'est pas chargé et l'appel n'a simplement aucun effet.
+      sendGAEvent("event", "generate_lead", {
+        type_voyage: type || "non precise",
+        destination: destination || "non precise",
+      });
+
       router.push("/merci");
     } catch {
       setSubmitError(
