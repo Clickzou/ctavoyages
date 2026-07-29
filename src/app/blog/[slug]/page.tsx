@@ -3,6 +3,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedArticles from "@/components/blog/RelatedArticles";
+import DestinationLinks from "@/components/destination/DestinationLinks";
+import { destinationsForArticle, relatedArticles } from "@/lib/internal-links";
+import { createLinkifier } from "@/lib/linkify";
 import { getArticle, BLOG_SLUGS } from "@/lib/blog-content";
 import { SECTION_IMAGES } from "@/lib/blog-content/section-images.generated";
 import { GENERATED_SECTION_IMAGES } from "@/lib/blog-content/generated-images.generated";
@@ -34,6 +39,17 @@ export default async function BlogArticlePage({
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) notFound();
+
+  // Maillage interne : fiches destination traitées par l'article, et articles
+  // à lire ensuite (destination commune d'abord, puis même catégorie).
+  const destinations = destinationsForArticle(slug);
+  const related = relatedArticles(slug, 3);
+
+  // Liens contextuels : les noms de destinations cités dans le texte pointent
+  // vers leur fiche. L'état est partagé entre l'intro et les sections, d'où un
+  // linkifier créé une fois pour tout l'article.
+  const linkify = createLinkifier(destinations, 5);
+  const introNode = linkify(article.intro);
 
   // Images de section : superposition Unsplash (par index) sauf si l'article
   // définit déjà son image en dur (ex. Maldives). La section 0 garde son visuel.
@@ -125,12 +141,15 @@ export default async function BlogArticlePage({
           <HeroScrollIndicator />
           <div className="absolute inset-0 flex flex-col justify-end pb-12 sm:pb-16">
             <div className="hero-anim max-w-[860px] mx-auto px-4 sm:px-gutter w-full">
-              <p className="font-label text-label text-white/70 mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
-                <Link href="/blog" className="hover:text-white transition-colors">
-                  Blog
-                </Link>{" "}
-                <span className="text-white/40">/</span> {article.category}
-              </p>
+              <Breadcrumbs
+                variant="hero"
+                className="mb-3"
+                items={[
+                  { label: "Accueil", href: "/" },
+                  { label: "Blog", href: "/blog" },
+                  { label: article.category },
+                ]}
+              />
               <h1 className="font-h1 text-[28px] sm:text-[40px] md:text-h1 text-white mb-4 leading-[1.12] max-w-3xl">
                 {article.title}
               </h1>
@@ -159,7 +178,7 @@ export default async function BlogArticlePage({
             <div className="bg-white pt-10 sm:pt-14">
               <div className="max-w-[760px] mx-auto px-4 sm:px-gutter">
                 <p className="font-body-lg text-[17px] sm:text-[19px] text-on-surface leading-relaxed">
-                  {article.intro}
+                  {introNode}
                 </p>
               </div>
             </div>
@@ -182,7 +201,7 @@ export default async function BlogArticlePage({
                       {section.h2}
                     </h2>
                     <div className="article-body font-body-md text-[15px] sm:text-[17px] text-on-surface-variant leading-relaxed space-y-4">
-                      {section.body}
+                      {linkify(section.body)}
                     </div>
                   </div>
                 </section>
@@ -206,14 +225,14 @@ export default async function BlogArticlePage({
                   <div className={photoRight ? "lg:order-1" : ""}>
                     {i === 0 && introInFirst && (
                       <p className="font-body-lg text-[16px] sm:text-[18px] text-on-surface leading-relaxed mb-6">
-                        {article.intro}
+                        {introNode}
                       </p>
                     )}
                     <h2 className="font-h2 text-[24px] sm:text-[30px] text-on-surface mb-4 sm:mb-5">
                       {section.h2}
                     </h2>
                     <div className="article-body font-body-md text-[15px] sm:text-[17px] text-on-surface-variant leading-relaxed space-y-4">
-                      {section.body}
+                      {linkify(section.body)}
                     </div>
                   </div>
                 </div>
@@ -231,6 +250,12 @@ export default async function BlogArticlePage({
                   {article.conclusion}
                 </p>
               </div>
+
+              {/* Destinations traitées par l'article (maillage blog → fiches) */}
+              <DestinationLinks
+                destinations={destinations}
+                className="mb-12"
+              />
 
               {/* FAQ (SEO) */}
               {article.faq && article.faq.length > 0 && (
@@ -320,6 +345,21 @@ export default async function BlogArticlePage({
             </div>
           </section>
         </article>
+
+        {/* À LIRE ENSUITE (maillage entre articles) */}
+        {related.length > 0 && (
+          <section
+            className={`${trailingGray ? "bg-white" : "bg-[#F4F6F9]"} w-full py-12 sm:py-16`}
+          >
+            <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+              <RelatedArticles
+                articles={related}
+                title="À lire ensuite"
+                intro="Nos autres guides pour préparer ce voyage."
+              />
+            </div>
+          </section>
+        )}
       </main>
 
       {/* NEWSLETTER */}

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import RseStats from "@/components/engagements-rse/RseStats";
 import RseFaq from "@/components/engagements-rse/RseFaq";
 import NewsletterForm from "@/components/home/NewsletterForm";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/engagements-rse" },
@@ -19,6 +20,14 @@ export default function EngagementsRsePage() {
         <div className="hero-rse-inner">
           <div>
             <span className="hero-kicker">Engagements RSE</span>
+            <Breadcrumbs
+              variant="hero"
+              className="mb-4"
+              items={[
+                { label: "Accueil", href: "/" },
+                { label: "Engagements RSE" },
+              ]}
+            />
             <h1 className="hero-title">
               Voyager et organiser mieux, avec sens et responsabilité
             </h1>

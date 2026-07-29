@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/confidentialite" },
@@ -13,6 +14,13 @@ export default function Page() {
     <main className="pt-[72px]">
       <section className="bg-white py-16 sm:py-20">
         <div className="max-w-[800px] mx-auto px-4 sm:px-gutter">
+          <Breadcrumbs
+            className="mb-4"
+            items={[
+              { label: "Accueil", href: "/" },
+              { label: "Politique de confidentialité" },
+            ]}
+          />
           <h1 className="font-h1 text-[28px] sm:text-[36px] md:text-h2 text-on-surface mb-8">
             Politique de confidentialité
           </h1>

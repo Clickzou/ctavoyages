@@ -6,8 +6,8 @@ import { CIRCUIT_THEME_SLUGS } from "@/lib/theme-content/circuits";
 import { CROISIERE_THEME_SLUGS } from "@/lib/theme-content/croisieres";
 import { GLAMPING_THEME_SLUGS } from "@/lib/theme-content/glamping";
 import { VSM_THEME_SLUGS } from "@/lib/theme-content/voyage-sur-mesure";
-
-const BASE_URL = "https://cta-voyages.com";
+import { BLOG_TOTAL_PAGES } from "@/lib/blog-content/pagination";
+import { SITE_URL as BASE_URL } from "@/lib/site";
 
 /** Sous-pages de /sejours, servies par des routes statiques dédiées. */
 const SEJOUR_THEMES = [
@@ -58,6 +58,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes = BLOG_SLUGS.map((slug) => `/blog/${slug}`);
 
+  // Pages 2+ de la grille : la page 1 est déjà déclarée sous /blog.
+  const blogPageRoutes = Array.from(
+    { length: BLOG_TOTAL_PAGES - 1 },
+    (_, i) => `/blog/page/${i + 2}`,
+  );
+
   // Seuls japon et thailande ont une page dédiée /destination-<slug>.
   const richRoutes = STATIC_RICH_SLUGS.map((slug) => `/destination-${slug}`);
 
@@ -71,6 +77,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticRoutes,
     ...themeRoutes,
     ...blogRoutes,
+    ...blogPageRoutes,
     ...richRoutes,
     ...destinationRoutes,
   ].map((route) => ({

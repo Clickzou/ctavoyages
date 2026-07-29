@@ -1,6 +1,7 @@
 import "./styles.css";
 import type { Metadata } from "next";
 import DevisForm from "@/components/demande-devis/DevisForm";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/demande-devis" },
@@ -30,6 +31,14 @@ export default function DemandeDevisPage() {
           <p className="font-label text-label text-white/70 mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
             Votre projet sur mesure
           </p>
+          <Breadcrumbs
+            variant="hero"
+            className="mb-4 [&>ol]:justify-center"
+            items={[
+              { label: "Accueil", href: "/" },
+              { label: "Demander un devis" },
+            ]}
+          />
           <h1 className="font-h1 text-[28px] sm:text-[36px] md:text-[44px] text-white mb-4 leading-[1.1]">
             Concevons ensemble votre voyage idéal
           </h1>

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3001",
-    "prebuild": "node scripts/build-generated-blog-images.mjs",
+    "prebuild": "node scripts/build-generated-blog-images.mjs && node scripts/build-blog-meta.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"

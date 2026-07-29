@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 function formatNumber(n: number, separator?: string) {
   if (!separator) return String(n);
@@ -68,7 +69,11 @@ export default function HeroStats() {
 
       <div className="hero-inner">
         <div>
-          <span className="hero-kicker">Groupe CTA</span>
+          <Breadcrumbs
+            variant="hero"
+            className="mb-3"
+            items={[{ label: "Accueil", href: "/" }, { label: "Le Groupe CTA" }]}
+          />
           <h1 className="hero-title">
             Quatre expertises pour créer des expériences qui rapprochent
           </h1>

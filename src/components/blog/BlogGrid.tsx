@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import Pagination from "@/components/Pagination";
+import { ARTICLES_PER_PAGE as PER_PAGE } from "@/lib/blog-content/pagination";
 
 export type BlogCard = {
   slug: string;
@@ -13,8 +15,6 @@ export type BlogCard = {
   heroAlt: string;
 };
 
-const PER_PAGE = 12;
-
 /** Normalise (minuscule + sans accents) pour une recherche tolérante. */
 function norm(s: string): string {
   return s
@@ -23,7 +23,26 @@ function norm(s: string): string {
     .replace(/\p{Diacritic}/gu, "");
 }
 
-export default function BlogGrid({ articles }: { articles: BlogCard[] }) {
+/**
+ * Grille du blog.
+ *
+ * Deux modes : au repos, la tranche affichée est celle de la page demandée par
+ * l'URL (`/blog/page/3`), et la pagination est faite de liens présents dans le
+ * HTML — c'est par là que les moteurs atteignent les 116 articles. Dès qu'une
+ * recherche ou une catégorie est active, on bascule sur un filtrage local de la
+ * liste complète, avec « charger plus » : l'URL ne décrit plus la sélection,
+ * mais elle n'a plus à être explorable puisque tous les articles sont déjà
+ * atteignables par la pagination.
+ */
+export default function BlogGrid({
+  articles,
+  page = 1,
+  basePath = "/blog",
+}: {
+  articles: BlogCard[];
+  page?: number;
+  basePath?: string;
+}) {
   const [query, setQuery] = useState("");
   const [cat, setCat] = useState<string>("Tous");
   const [visible, setVisible] = useState(PER_PAGE);
@@ -32,6 +51,8 @@ export default function BlogGrid({ articles }: { articles: BlogCard[] }) {
     () => ["Tous", ...Array.from(new Set(articles.map((a) => a.category)))],
     [articles],
   );
+
+  const filtering = query.trim() !== "" || cat !== "Tous";
 
   const filtered = useMemo(() => {
     const q = norm(query.trim());
@@ -43,7 +64,10 @@ export default function BlogGrid({ articles }: { articles: BlogCard[] }) {
     });
   }, [articles, query, cat]);
 
-  const shown = filtered.slice(0, visible);
+  const totalPages = Math.max(1, Math.ceil(articles.length / PER_PAGE));
+  const shown = filtering
+    ? filtered.slice(0, visible)
+    : articles.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
   const resetAndSet = (fn: () => void) => {
     fn();
@@ -95,8 +119,16 @@ export default function BlogGrid({ articles }: { articles: BlogCard[] }) {
 
       {/* Compteur */}
       <p className="text-center text-[13px] text-on-surface-variant mb-6">
-        {filtered.length} article{filtered.length > 1 ? "s" : ""}
-        {cat !== "Tous" ? ` · ${cat}` : ""}
+        {filtering ? (
+          <>
+            {filtered.length} article{filtered.length > 1 ? "s" : ""}
+            {cat !== "Tous" ? ` · ${cat}` : ""}
+          </>
+        ) : (
+          <>
+            {articles.length} articles · page {page} sur {totalPages}
+          </>
+        )}
       </p>
 
       {/* Grille */}
@@ -143,8 +175,8 @@ export default function BlogGrid({ articles }: { articles: BlogCard[] }) {
         </p>
       )}
 
-      {/* Charger plus */}
-      {visible < filtered.length && (
+      {/* Recherche active : on complète la liste sans quitter la page. */}
+      {filtering && visible < filtered.length && (
         <div className="mt-10 sm:mt-12 text-center">
           <button
             onClick={() => setVisible((v) => v + PER_PAGE)}
@@ -159,6 +191,16 @@ export default function BlogGrid({ articles }: { articles: BlogCard[] }) {
             </span>
           </button>
         </div>
+      )}
+
+      {/* Au repos : pagination par URL, explorable par les moteurs. */}
+      {!filtering && (
+        <Pagination
+          basePath={basePath}
+          page={page}
+          totalPages={totalPages}
+          label="Pagination des articles"
+        />
       )}
     </div>
   );

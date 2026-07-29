@@ -5,6 +5,12 @@ import FaqList from "./FaqList";
 import DestCarousel from "./DestCarousel";
 import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedArticles from "@/components/blog/RelatedArticles";
+import {
+  articlesForDestination,
+  getLinkableDestination,
+} from "@/lib/internal-links";
 import type { DestinationContent, InfoZone } from "@/lib/destination-content/types";
 
 function InfoZoneView({ zone }: { zone: InfoZone }) {
@@ -66,6 +72,13 @@ export default function DestinationTemplate({
     })),
   };
 
+  // Maillage : nom canonique de la destination (le label du hero est une
+  // formulation éditoriale, ex. « Destination Japon ») et articles associés.
+  const destinationName =
+    getLinkableDestination(content.slug)?.name ??
+    content.hero.label.replace(/^Destination\s+/i, "");
+  const articles = articlesForDestination(content.slug, 3);
+
   return (
     <>
       <script
@@ -86,6 +99,15 @@ export default function DestinationTemplate({
           <HeroScrollIndicator />
           <div className="absolute inset-0 flex flex-col justify-center">
             <div className="hero-anim max-w-[1200px] mx-auto px-4 sm:px-gutter w-full">
+              <Breadcrumbs
+                variant="hero"
+                className="mb-2"
+                items={[
+                  { label: "Accueil", href: "/" },
+                  { label: "Destinations", href: "/destinations" },
+                  { label: destinationName },
+                ]}
+              />
               <p className="font-label text-label text-white/70 mb-2 sm:mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
                 {content.hero.label}
               </p>
@@ -312,6 +334,19 @@ export default function DestinationTemplate({
             </div>
           </div>
         </section>
+
+        {/* NOS ARTICLES SUR LA DESTINATION (maillage fiche → blog) */}
+        {articles.length > 0 && (
+          <section className="section-bg-blue py-section_padding_v">
+            <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+              <RelatedArticles
+                articles={articles}
+                title={`Nos guides pour préparer votre voyage ${destinationName}`}
+                intro="Conseils de saison, itinéraires et bonnes adresses, par nos conseillers."
+              />
+            </div>
+          </section>
+        )}
 
         {/* CARROUSEL DESTINATIONS */}
         <section className="bg-white py-section_padding_v overflow-hidden">

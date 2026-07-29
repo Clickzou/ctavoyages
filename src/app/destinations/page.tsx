@@ -2,6 +2,8 @@ import "./styles.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import DestinationsGrid from "@/components/destinations/DestinationsGrid";
+import AllDestinations from "@/components/destinations/AllDestinations";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import WorldMap from "@/components/home/WorldMap";
 import FaqList from "@/components/destinations/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
@@ -77,6 +79,14 @@ export default function DestinationsPage() {
           </div>
           <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-gutter w-full py-10 sm:py-14">
             <div className="max-w-2xl">
+              <Breadcrumbs
+                variant="hero"
+                className="mb-2"
+                items={[
+                  { label: "Accueil", href: "/" },
+                  { label: "Destinations" },
+                ]}
+              />
               <p className="font-label text-label text-white/70 mb-2 sm:mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
                 Nos destinations et événements
               </p>
@@ -124,6 +134,9 @@ export default function DestinationsPage() {
             <DestinationsGrid />
           </div>
         </section>
+
+        {/* INDEX COMPLET : toutes les fiches atteignables sans interaction */}
+        <AllDestinations />
 
         {/* RSE */}
         <section className="rse-section w-full py-12 sm:py-20">

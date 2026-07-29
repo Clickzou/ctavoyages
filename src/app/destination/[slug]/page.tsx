@@ -5,6 +5,9 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import DestCarousel from "@/components/destination/DestCarousel";
 import DestinationTemplate from "@/components/destination/DestinationTemplate";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedArticles from "@/components/blog/RelatedArticles";
+import { articlesForDestination } from "@/lib/internal-links";
 import { getDestination, getAllSlugs } from "@/lib/destinations";
 import {
   getDestinationContent,
@@ -74,6 +77,9 @@ export default async function DestinationPage({
     notFound();
   }
 
+  // Articles du blog traitant de cette destination (maillage fiche → blog).
+  const articles = articlesForDestination(slug, 3);
+
   return (
     <>
       <main>
@@ -89,12 +95,16 @@ export default async function DestinationPage({
           <HeroScrollIndicator />
           <div className="absolute inset-0 flex flex-col justify-center">
             <div className="hero-anim max-w-[1200px] mx-auto px-4 sm:px-gutter w-full">
-              <p className="font-label text-label text-white/70 mb-2 sm:mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
-                <Link href="/destinations" className="hover:text-white transition-colors">
-                  Destinations
-                </Link>{" "}
-                <span className="text-white/40">/</span> {dest.continent}
-              </p>
+              <Breadcrumbs
+                variant="hero"
+                className="mb-2 sm:mb-3"
+                items={[
+                  { label: "Accueil", href: "/" },
+                  { label: "Destinations", href: "/destinations" },
+                  { label: dest.continent },
+                  { label: dest.name },
+                ]}
+              />
               <h1 className="font-h1 text-[30px] sm:text-[42px] md:text-h1 text-white mb-3 sm:mb-4 leading-[1.1] max-w-3xl">
                 Voyage {dest.name}
               </h1>
@@ -276,6 +286,19 @@ export default async function DestinationPage({
             </div>
           </div>
         </section>
+
+        {/* NOS ARTICLES SUR LA DESTINATION (maillage fiche → blog) */}
+        {articles.length > 0 && (
+          <section className="bg-white py-section_padding_v">
+            <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+              <RelatedArticles
+                articles={articles}
+                title={`Nos guides pour préparer votre voyage ${dest.name}`}
+                intro="Conseils de saison, itinéraires et bonnes adresses, par nos conseillers."
+              />
+            </div>
+          </section>
+        )}
 
         {/* AUTRES DESTINATIONS */}
         <section className="section-bg-blue py-section_padding_v overflow-hidden">

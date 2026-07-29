@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import FaqList from "@/components/motogp/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/motogp" },
@@ -76,9 +77,15 @@ export default function MotoGpPage() {
           </div>
           <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-gutter w-full py-10 sm:py-14 md:py-20">
             <div className="max-w-3xl">
-              <p className="font-label text-label text-white/80 mb-2 sm:mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
-                Catalogue sportif · Moto GP
-              </p>
+              <Breadcrumbs
+                variant="hero"
+                className="mb-3 sm:mb-4"
+                items={[
+                  { label: "Accueil", href: "/" },
+                  { label: "Catalogue sportif", href: "/catalogue-sportif" },
+                  { label: "Moto GP" },
+                ]}
+              />
               <h1 className="font-h1 text-[26px] sm:text-[34px] md:text-[42px] text-white mb-3 sm:mb-4 leading-[1.1]">
                 Vivez la vitesse et l&apos;adrénaline sur les plus grands circuits
               </h1>

@@ -161,8 +161,9 @@ export const RICH_DESTINATION_SLUGS = Object.keys(DESTINATION_CONTENT);
  * Fiches servies sur une page statique dédiée /destination-<slug> plutôt que
  * par la route dynamique, qui redirige vers elles. Seuls ces deux slugs ont
  * une route de ce type ; le sitemap et les canoniques s'alignent dessus.
+ * Défini dans `static-slugs.ts` pour rester importable sans tirer le contenu.
  */
-export const STATIC_RICH_SLUGS = ["japon", "thailande"];
+export { STATIC_RICH_SLUGS } from "./static-slugs";
 
 export function getDestinationContent(
   slug: string,

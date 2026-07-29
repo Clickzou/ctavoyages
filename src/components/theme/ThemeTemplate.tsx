@@ -5,6 +5,7 @@ import ItinerarySection from "@/components/destination/ItinerarySection";
 import ThemeDestCarousel from "./ThemeDestCarousel";
 import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import type { ThemeContent } from "@/lib/theme-content/types";
 
 const MONTHS = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
@@ -56,12 +57,15 @@ export default function ThemeTemplate({ content }: { content: ThemeContent }) {
           <HeroScrollIndicator />
           <div className="absolute inset-0 flex flex-col justify-center">
             <div className="hero-anim max-w-[1200px] mx-auto px-4 sm:px-gutter w-full">
-              <p className="font-label text-label text-white/70 mb-2 sm:mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
-                <Link href={content.parentHref} className="hover:text-white transition-colors">
-                  {content.parentLabel}
-                </Link>{" "}
-                <span className="text-white/40">/</span> {content.hero.label}
-              </p>
+              <Breadcrumbs
+                variant="hero"
+                className="mb-2 sm:mb-3"
+                items={[
+                  { label: "Accueil", href: "/" },
+                  { label: content.parentLabel, href: content.parentHref },
+                  { label: content.hero.label },
+                ]}
+              />
               <h1 className="font-h1 text-[30px] sm:text-[42px] md:text-h1 text-white mb-3 sm:mb-4 leading-[1.1] max-w-3xl">
                 {content.hero.h1}
               </h1>

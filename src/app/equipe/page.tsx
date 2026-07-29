@@ -2,6 +2,7 @@ import "./styles.css";
 import type { Metadata } from "next";
 import TeamSection from "@/components/equipe/TeamSection";
 import NewsletterForm from "@/components/home/NewsletterForm";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/equipe" },
@@ -17,9 +18,14 @@ export default function EquipePage() {
       <section className="hero-team py-section_padding_v">
         <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter relative z-10 w-full">
           <div className="max-w-3xl">
-            <p className="font-label text-label text-white/70 mb-3 tracking-wider uppercase text-[12px] sm:text-[14px]">
-              L&apos;équipe CTA Voyages
-            </p>
+            <Breadcrumbs
+              variant="hero"
+              className="mb-3 sm:mb-4"
+              items={[
+                { label: "Accueil", href: "/" },
+                { label: "L'équipe CTA Voyages" },
+              ]}
+            />
             <h1 className="font-h1 text-[32px] sm:text-[40px] md:text-h1 text-white mb-4 sm:mb-6 leading-[1.2]">
               Des conseillères dédiées pour imaginer votre prochain voyage
             </h1>
