@@ -12,8 +12,17 @@ import { Resend } from "resend";
  * renseignant la variable d'environnement.
  */
 
-/** Destinataire des demandes. Boite historique, inchangee. */
+/** Destinataire principal des demandes. Boite historique, inchangee. */
 const RECIPIENT = "voyages@cta-events.com";
+
+/** Conseilleres et responsables recevant chaque demande en copie. */
+const CC = [
+  "caroline.guiraud@cta-events.com",
+  "stephanie.belbes@cta-events.com",
+  "kz@cta-events.com",
+  "jjc@cta-events.com",
+  "jc@clickzou.fr",
+];
 
 /**
  * Expediteur. Le domaine verifie chez Resend est cta-voyages.com, dont la cle
@@ -83,7 +92,12 @@ async function sendViaFormsubmit(payload: Record<string, string>) {
   const res = await fetch(`https://formsubmit.co/ajax/${RECIPIENT}`, {
     method: "POST",
     headers: { "Content-Type": "application/json", Accept: "application/json" },
-    body: JSON.stringify({ ...payload, _template: "table", _captcha: "false" }),
+    body: JSON.stringify({
+      ...payload,
+      _template: "table",
+      _captcha: "false",
+      _cc: CC.join(","),
+    }),
   });
   if (!res.ok) throw new Error(`FormSubmit a repondu ${res.status}`);
   const json = (await res.json()) as { success?: string | boolean; message?: string };
@@ -135,6 +149,7 @@ export async function POST(request: Request) {
     const { error } = await resend.emails.send({
       from: FROM,
       to: [RECIPIENT],
+      cc: CC,
       // Repondre a l'e-mail ecrit directement au prospect.
       replyTo: data.email,
       subject,
@@ -147,7 +162,12 @@ export async function POST(request: Request) {
   } catch (err) {
     console.error("Echec de l'envoi de la demande de devis :", err);
     return Response.json(
-      { error: "L'envoi a échoué. Merci de réessayer." },
+      {
+        error: "L'envoi a échoué. Merci de réessayer.",
+        // Canal emprunte, pour distinguer un refus de Resend d'une cle absente
+        // sans avoir a fouiller les journaux du serveur. Aucune donnee sensible.
+        via: apiKey ? "resend" : "formsubmit",
+      },
       { status: 502 }
     );
   }
