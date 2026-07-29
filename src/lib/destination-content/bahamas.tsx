@@ -14,7 +14,7 @@ const bahamas: DestinationContent = {
   slug: "bahamas",
   meta: {
     title:
-      "Voyage aux Bahamas : séjour, croisière et voyage sur mesure | CTA Voyages",
+      "Voyage aux Bahamas : séjour, croisière et voyage sur mesure",
     description:
       "Organisez votre voyage aux Bahamas avec CTA Voyages. Exumas et cochons nageurs, plage de sable rose d'Harbour Island, Nassau et Paradise Island, blue holes d'Andros. Séjour, croisière ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },
@@ -25,7 +25,7 @@ const bahamas: DestinationContent = {
     label: "Destination Bahamas",
     h1: "Voyage aux Bahamas : lagons turquoise et îles désertes",
     description:
-      "Séjour balnéaire de luxe, croisière en catamaran dans les Exumas, lune de miel ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Séjour balnéaire de luxe, croisière en catamaran dans les Exumas, lune de miel ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

@@ -5,9 +5,9 @@ const laponie: DestinationContent = {
   slug: "laponie",
   meta: {
     title:
-      "Voyage en Laponie : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Laponie : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Laponie avec CTA Voyages. Aurores boréales, igloo de verre, traîneau à chiens, motoneige, rencontre des Samis et du Père Noël à Rovaniemi. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Laponie avec CTA Voyages. Aurores boréales, igloo de verre, traîneau à chiens, motoneige, rencontre des Samis et du Père Noël à Rovaniemi.",
   },
   hero: {
     image:
@@ -17,7 +17,7 @@ const laponie: DestinationContent = {
     label: "Destination Laponie",
     h1: "Voyage en Laponie : aurores boréales et grand blanc",
     description:
-      "Séjour féerique sous les aurores, aventure en traîneau à chiens, nuit en igloo de verre ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Séjour féerique sous les aurores, aventure en traîneau à chiens, nuit en igloo de verre ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

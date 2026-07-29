@@ -5,9 +5,9 @@ const polynesie: DestinationContent = {
   slug: "polynesie",
   meta: {
     title:
-      "Voyage en Polynésie française : séjour, croisière et voyage sur mesure | CTA Voyages",
+      "Voyage en Polynésie française : séjour, croisière et voyage sur mesure",
     description:
-      "Organisez votre voyage en Polynésie française avec CTA Voyages. Lagons de Bora Bora, villas sur pilotis, plongée à Rangiroa, perles de Taha'a, séjour, croisière ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Polynésie française avec CTA Voyages. Lagons de Bora Bora, villas sur pilotis, plongée à Rangiroa, perles de Taha'a, séjour, croisière ou voyage sur mesure.",
   },
   hero: {
     image:

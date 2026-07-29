@@ -6,7 +6,7 @@ const roadTripIslande: BlogArticle = {
   date: "juin 2025",
   readingTime: "7 min",
   meta: {
-    title: "Road trip en Islande : la route circulaire | CTA Voyages",
+    title: "Road trip en Islande : la route circulaire",
     description:
       "Cascades, glaciers, plages noires et sources chaudes : suivez l'itinéraire complet de la Ring Road avec CTA Voyages pour un road trip parfait en Islande.",
   },

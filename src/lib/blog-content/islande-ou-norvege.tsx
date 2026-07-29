@@ -6,7 +6,7 @@ const islandeOuNorvege: BlogArticle = {
   date: "juillet 2025",
   readingTime: "6 min",
   meta: {
-    title: "Islande ou Norvège : quel voyage nature ? | CTA Voyages",
+    title: "Islande ou Norvège : quel voyage nature ?",
     description:
       "Volcans et geysers ou fjords et montagnes ? CTA Voyages compare l'Islande et la Norvège (paysages, budget, saisons) pour choisir votre prochaine aventure nature.",
   },

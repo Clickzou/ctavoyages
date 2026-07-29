@@ -8,9 +8,9 @@ const vsmAmis: ThemeContent = {
   parentLabel: "Voyage sur mesure",
   parentHref: "/voyage-sur-mesure",
   meta: {
-    title: "Voyage entre amis sur mesure — Aventures de groupe | CTA Voyages",
+    title: "Voyage entre amis sur mesure — Aventures de groupe",
     description:
-      "Organisez votre voyage entre amis avec CTA Voyages : aventures de groupe sur mesure, hébergements adaptés, activités fun et logistique gérée. Conseiller dédié, devis gratuit.",
+      "Organisez votre voyage entre amis avec CTA Voyages : aventures de groupe sur mesure, hébergements adaptés, activités fun et logistique gérée.",
   },
   hero: {
     image:

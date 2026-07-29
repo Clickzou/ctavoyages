@@ -6,9 +6,9 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/nba" },
-  title: "Séjour NBA - CTA Voyages",
+  title: "Séjour NBA",
   description:
-    "Vivez un match NBA à New York ou Los Angeles avec CTA Voyages. Knicks, Nets, Lakers, Clippers : billets officiels, hôtel, vols et expériences inclus. Devis gratuit.",
+    "Vivez un match NBA à New York ou Los Angeles avec CTA Voyages. Knicks, Nets, Lakers, Clippers : billets officiels, hôtel, vols et expériences inclus.",
 };
 
 const faqJsonLd = {
@@ -367,9 +367,9 @@ export default function NbaPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Choisissez votre match
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Dites-nous quelle équipe, quelle ville et quelles dates vous
                     intéressent. Nos conseillers composent votre séjour idéal.
@@ -383,9 +383,9 @@ export default function NbaPage() {
                       confirmation_number
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous composons votre pack
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel 4 étoiles, vols, transferts et
                     options multi-matchs : tout est organisé.
@@ -399,9 +399,9 @@ export default function NbaPage() {
                       sports_score
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vivez l&apos;expérience NBA
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après le match, nous assurons une assistance
                     personnalisée pour que votre voyage soit parfait.

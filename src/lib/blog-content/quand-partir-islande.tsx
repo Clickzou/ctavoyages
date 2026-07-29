@@ -6,7 +6,7 @@ const quandPartirIslande: BlogArticle = {
   date: "novembre 2025",
   readingTime: "5 min",
   meta: {
-    title: "Quand partir en Islande ? Été ou hiver | CTA Voyages",
+    title: "Quand partir en Islande ? Été ou hiver",
     description:
       "Soleil de minuit, aurores boréales, route circulaire ou glaciers : le guide de CTA Voyages pour choisir entre l'été et l'hiver et réussir votre voyage en Islande.",
   },

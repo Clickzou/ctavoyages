@@ -5,9 +5,9 @@ const ileMaurice: DestinationContent = {
   slug: "ile-maurice",
   meta: {
     title:
-      "Voyage à l'île Maurice : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage à l'île Maurice : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage à l'île Maurice avec CTA Voyages. Lagons turquoise, plages de sable blanc, terre des 7 couleurs de Chamarel, Grand Bassin, séjour balnéaire ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à l'île Maurice avec CTA Voyages. Lagons turquoise, plages de sable blanc, terre des 7 couleurs de Chamarel, Grand Bassin, séjour balnéaire ou voyage sur mesure.",
   },
   hero: {
     image:

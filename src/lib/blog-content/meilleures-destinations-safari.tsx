@@ -6,7 +6,7 @@ const meilleuresDestinationsSafari: BlogArticle = {
   date: "mai 2026",
   readingTime: "5 min",
   meta: {
-    title: "Les meilleures destinations safari | CTA Voyages",
+    title: "Les meilleures destinations safari",
     description:
       "Kenya, Tanzanie, Botswana, Afrique du Sud : le guide CTA Voyages des plus belles destinations safari pour observer le Big Five et la grande migration.",
   },

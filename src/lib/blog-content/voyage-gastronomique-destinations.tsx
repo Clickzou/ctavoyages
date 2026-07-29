@@ -6,7 +6,7 @@ const voyageGastronomiqueDestinations: BlogArticle = {
   date: "juin 2025",
   readingTime: "7 min",
   meta: {
-    title: "Voyage gastronomique : où se régaler ? | CTA Voyages",
+    title: "Voyage gastronomique : où se régaler ?",
     description:
       "Italie, Japon, Thaïlande, Pérou ou Maroc : nos destinations gourmandes et nos conseils pour un voyage gastronomique qui éveille toutes vos papilles.",
   },

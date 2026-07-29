@@ -8,7 +8,7 @@ const glampingIglooArctique: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Igloo & cabane arctique sous les aurores boréales | CTA Voyages",
+    title: "Igloo & cabane arctique sous les aurores boréales",
     description:
       "Dormez sous les aurores boréales dans un igloo de verre ou une cabane arctique. CTA Voyages compose votre séjour grand froid : Laponie, Norvège, Islande, conseiller dédié, devis gratuit.",
   },

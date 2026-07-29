@@ -6,9 +6,9 @@ const glampingEcoLodgeCostaRica: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Glamping éco-lodge au Costa Rica en forêt tropicale | CTA Voyages",
+    title: "Glamping éco-lodge au Costa Rica en forêt tropicale",
     description:
-      "Dormez dans la canopée d'une forêt tropicale du Costa Rica : éco-lodge suspendu, biodiversité exceptionnelle et esprit pura vida. Le glamping durable signé CTA Voyages.",
+      "Dormez dans la canopée d'une forêt tropicale du Costa Rica : éco-lodge suspendu, biodiversité exceptionnelle et esprit pura vida.",
   },
   title: "Éco-lodge en forêt tropicale au Costa Rica",
   excerpt:

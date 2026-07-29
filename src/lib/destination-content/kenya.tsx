@@ -5,9 +5,9 @@ const kenya: DestinationContent = {
   slug: "kenya",
   meta: {
     title:
-      "Voyage au Kenya : safari, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Kenya : safari, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Kenya avec CTA Voyages. Safari dans le Masai Mara, flamants roses du lac Nakuru, Kilimandjaro depuis Amboseli, plages de Diani. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Kenya avec CTA Voyages. Safari dans le Masai Mara, flamants roses du lac Nakuru, Kilimandjaro depuis Amboseli, plages de Diani.",
   },
   hero: {
     image:

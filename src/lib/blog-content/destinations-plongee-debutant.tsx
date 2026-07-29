@@ -6,7 +6,7 @@ const destinationsPlongeeDebutant: BlogArticle = {
   date: "décembre 2025",
   readingTime: "8 min",
   meta: {
-    title: "Plongée débutant : où commencer ? | CTA Voyages",
+    title: "Plongée débutant : où commencer ?",
     description:
       "Eaux chaudes, faibles profondeurs et récifs accessibles : les meilleures destinations de CTA Voyages pour débuter la plongée ou le snorkeling en toute sérénité.",
   },

@@ -6,7 +6,7 @@ const quandPartirJapon: BlogArticle = {
   date: "septembre 2025",
   readingTime: "6 min",
   meta: {
-    title: "Quand partir au Japon ? Saisons et cerisiers | CTA Voyages",
+    title: "Quand partir au Japon ? Saisons et cerisiers",
     description:
       "Cerisiers, érables rouges, mousson et hiver enneigé : les meilleures périodes pour partir au Japon selon vos envies, avec les conseils de CTA Voyages.",
   },

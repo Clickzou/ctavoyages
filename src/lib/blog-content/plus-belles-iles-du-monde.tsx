@@ -6,7 +6,7 @@ const plusBellesIlesDuMonde: BlogArticle = {
   date: "septembre 2025",
   readingTime: "5 min",
   meta: {
-    title: "Les plus belles îles du monde | CTA Voyages",
+    title: "Les plus belles îles du monde",
     description:
       "Maldives, Bora-Bora, Seychelles, Palawan... CTA Voyages vous emmène à la découverte des plus belles îles du monde, lagons turquoise et plages de rêve.",
   },

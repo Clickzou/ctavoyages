@@ -6,7 +6,7 @@ const quandPartirCroatie: BlogArticle = {
   date: "décembre 2025",
   readingTime: "8 min",
   meta: {
-    title: "Quand partir en Croatie ? Météo et affluence | CTA Voyages",
+    title: "Quand partir en Croatie ? Météo et affluence",
     description:
       "Côte adriatique, îles dalmates, Dubrovnik et parcs nationaux : le guide de CTA Voyages pour choisir la meilleure période entre météo idéale et affluence.",
   },

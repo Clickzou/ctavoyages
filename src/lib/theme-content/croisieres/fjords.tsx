@@ -9,9 +9,9 @@ const croisiereFjords: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière fjords de Norvège & Europe du Nord — Aurores boréales | CTA Voyages",
+    title: "Croisière fjords de Norvège & Europe du Nord — Aurores boréales",
     description:
-      "Embarquez pour une croisière fjords avec CTA Voyages : parois vertigineuses, villages colorés, soleil de minuit et aurores boréales. Cabine bien choisie, conseiller dédié, devis gratuit.",
+      "Embarquez pour une croisière fjords avec CTA Voyages : parois vertigineuses, villages colorés, soleil de minuit et aurores boréales.",
   },
   hero: {
     image:
@@ -20,7 +20,7 @@ const croisiereFjords: ThemeContent = {
     label: "Croisières",
     h1: "Croisière fjords : la grandeur nordique au fil de l'eau",
     description:
-      "Des parois de granit qui plongent dans la mer, des villages colorés blottis au bord de l'eau, le soleil de minuit l'été et les aurores boréales l'hiver. Nous composons la croisière fjords qui vous ressemble, cabine et escales incluses.",
+      "Des parois de granit qui plongent dans la mer, des villages colorés blottis au bord de l'eau, le soleil de minuit l'été et les aurores boréales l'hiver.",
     primaryCtaLabel: "Composer ma croisière fjords",
     secondaryCtaLabel: "Pourquoi une croisière fjords ?",
   },

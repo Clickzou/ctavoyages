@@ -160,7 +160,7 @@ export default function DestinationTemplate({
                     <span className="material-symbols-outlined pack-icon">
                       {card.icon}
                     </span>
-                    <h4>{card.title}</h4>
+                    <h3>{card.title}</h3>
                     <p>{card.text}</p>
                   </div>
                 </div>

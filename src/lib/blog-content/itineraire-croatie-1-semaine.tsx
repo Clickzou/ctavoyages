@@ -6,7 +6,7 @@ const itineraireCroatie1Semaine: BlogArticle = {
   date: "février 2026",
   readingTime: "7 min",
   meta: {
-    title: "La Croatie en une semaine : itinéraire | CTA Voyages",
+    title: "La Croatie en une semaine : itinéraire",
     description:
       "Dubrovnik, Split, Hvar, les chutes de Krka et les îles dalmates : notre itinéraire d'une semaine en Croatie, étape par étape, signé CTA Voyages.",
   },

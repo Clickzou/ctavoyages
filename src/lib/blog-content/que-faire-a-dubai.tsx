@@ -6,7 +6,7 @@ const queFaireADubai: BlogArticle = {
   date: "novembre 2025",
   readingTime: "5 min",
   meta: {
-    title: "Que faire à Dubaï ? Le guide complet | CTA Voyages",
+    title: "Que faire à Dubaï ? Le guide complet",
     description:
       "Burj Khalifa, désert, souks, plages et parcs aquatiques : tous les incontournables de Dubaï et notre programme jour par jour, signé CTA Voyages.",
   },

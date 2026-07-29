@@ -6,7 +6,7 @@ const circuitCostaRicaVolcansJungle: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Circuit Costa Rica : volcans, jungle et Pacifique | CTA Voyages",
+    title: "Circuit Costa Rica : volcans, jungle et Pacifique",
     description:
       "Volcan Arenal, forêt de nuages de Monteverde, canaux de Tortuguero et plages du Pacifique : le circuit nature du Costa Rica signé CTA Voyages.",
   },

@@ -6,7 +6,7 @@ const voyageAvecAdosIdees: BlogArticle = {
   date: "octobre 2025",
   readingTime: "7 min",
   meta: {
-    title: "Voyage avec des ados : nos idées de destinations | CTA Voyages",
+    title: "Voyage avec des ados : nos idées de destinations",
     description:
       "Aventure, road trips, villes branchées et plages sportives : les meilleures idées de CTA Voyages pour réussir un voyage avec des adolescents qui plaira à toute la famille.",
   },

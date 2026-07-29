@@ -8,9 +8,9 @@ const circuitRoadTrip: ThemeContent = {
   parentLabel: "Circuits",
   parentHref: "/circuits",
   meta: {
-    title: "Road trip organisé sur mesure — Voiture, van & étapes réservées | CTA Voyages",
+    title: "Road trip organisé sur mesure — Voiture, van & étapes réservées",
     description:
-      "Partez en road trip organisé avec CTA Voyages : itinéraire optimisé, voiture ou van, hébergements réservés à l'avance et conseiller dédié. La liberté de la route, sans la logistique. Devis gratuit.",
+      "Partez en road trip organisé avec CTA Voyages : itinéraire optimisé, voiture ou van, hébergements réservés à l'avance et conseiller dédié.",
   },
   hero: {
     image:

@@ -14,7 +14,7 @@ const finlande: DestinationContent = {
   slug: "finlande",
   meta: {
     title:
-      "Voyage en Finlande : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Finlande : séjour, circuit et voyage sur mesure",
     description:
       "Organisez votre voyage en Finlande avec CTA Voyages. Aurores boréales et igloos de verre en Laponie, village du Père Noël, traîneau à chiens, lacs de Saimaa et design à Helsinki. Séjour hiver ou été, voyage sur mesure. Devis gratuit, contact sous 48h.",
   },
@@ -25,7 +25,7 @@ const finlande: DestinationContent = {
     label: "Destination Finlande",
     h1: "Voyage en Finlande : aurores boréales, lacs et grand Nord",
     description:
-      "Séjour polaire en Laponie, escapade design à Helsinki, chalet au bord des lacs ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Séjour polaire en Laponie, escapade design à Helsinki, chalet au bord des lacs ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

@@ -6,7 +6,7 @@ const croisiereCaraibesAntilles: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Croisière dans les Caraïbes et les Antilles | CTA Voyages",
+    title: "Croisière dans les Caraïbes et les Antilles",
     description:
       "Martinique, Guadeloupe, Sainte-Lucie, Antigua, la Dominique : le guide CTA Voyages pour réussir votre croisière aux Antilles et éviter la saison cyclonique.",
   },

@@ -6,7 +6,7 @@ const ouPartirEnOctobre: BlogArticle = {
   date: "avril 2026",
   readingTime: "7 min",
   meta: {
-    title: "Où partir en octobre ? Soleil d'automne | CTA Voyages",
+    title: "Où partir en octobre ? Soleil d'automne",
     description:
       "Soleil d'automne, couleurs flamboyantes et tropiques au beau fixe : nos meilleures destinations où partir en octobre, avec les conseils de CTA Voyages.",
   },

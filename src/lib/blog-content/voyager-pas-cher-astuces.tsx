@@ -6,7 +6,7 @@ const voyagerPasCherAstuces: BlogArticle = {
   date: "janvier 2025",
   readingTime: "5 min",
   meta: {
-    title: "Voyager pas cher : 15 astuces concrètes | CTA Voyages",
+    title: "Voyager pas cher : 15 astuces concrètes",
     description:
       "Vols, hébergement, dates, bons plans : 15 astuces testées pour voyager pas cher sans renoncer au confort. Le guide pratique de CTA Voyages.",
   },

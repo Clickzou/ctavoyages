@@ -6,7 +6,7 @@ const maldivesOuSeychelles: BlogArticle = {
   date: "février 2025",
   readingTime: "8 min",
   meta: {
-    title: "Maldives ou Seychelles : comparatif | CTA Voyages",
+    title: "Maldives ou Seychelles : comparatif",
     description:
       "Lagons, plages, budget, plongée et ambiance : le comparatif complet de CTA Voyages pour choisir entre les Maldives et les Seychelles selon votre profil.",
   },

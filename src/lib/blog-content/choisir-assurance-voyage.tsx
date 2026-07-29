@@ -6,7 +6,7 @@ const choisirAssuranceVoyage: BlogArticle = {
   date: "juin 2026",
   readingTime: "7 min",
   meta: {
-    title: "Bien choisir son assurance voyage | CTA Voyages",
+    title: "Bien choisir son assurance voyage",
     description:
       "Annulation, frais médicaux, rapatriement, bagages : le guide complet de CTA Voyages pour comprendre les garanties et choisir la bonne assurance voyage.",
   },

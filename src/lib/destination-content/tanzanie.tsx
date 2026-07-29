@@ -5,9 +5,9 @@ const tanzanie: DestinationContent = {
   slug: "tanzanie",
   meta: {
     title:
-      "Voyage en Tanzanie : safari, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Tanzanie : safari, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Tanzanie avec CTA Voyages. Safari dans le Serengeti, cratère du Ngorongoro, grande migration, plages de Zanzibar, circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Tanzanie avec CTA Voyages. Safari dans le Serengeti, cratère du Ngorongoro, grande migration, plages de Zanzibar, circuit ou voyage sur mesure.",
   },
   hero: {
     image:
@@ -17,7 +17,7 @@ const tanzanie: DestinationContent = {
     label: "Destination Tanzanie",
     h1: "Voyage en Tanzanie : safaris mythiques et plages de Zanzibar",
     description:
-      "Safari dans les grands parcs, observation de la grande migration, ascension du Kilimandjaro ou farniente à Zanzibar. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Safari dans les grands parcs, observation de la grande migration, ascension du Kilimandjaro ou farniente à Zanzibar.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

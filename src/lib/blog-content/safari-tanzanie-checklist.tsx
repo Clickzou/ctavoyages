@@ -10,7 +10,7 @@ const safariTanzanieChecklist: BlogArticle = {
   date: "Avril 2026",
   readingTime: "8 min",
   meta: {
-    title: "Safari en Tanzanie : la check-list avant de partir | CTA Voyages",
+    title: "Safari en Tanzanie : la check-list avant de partir",
     description:
       "Quand partir, parcs incontournables, formalités, valise, budget et pourboires : la check-list complète de CTA Voyages pour réussir votre safari en Tanzanie.",
   },

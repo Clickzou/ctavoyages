@@ -6,7 +6,7 @@ const quandPartirEspagne: BlogArticle = {
   date: "juin 2025",
   readingTime: "7 min",
   meta: {
-    title: "Quand partir en Espagne ? Le guide complet | CTA Voyages",
+    title: "Quand partir en Espagne ? Le guide complet",
     description:
       "Côtes, villes et îles : climat région par région, meilleures périodes, fêtes incontournables et bons plans pour réussir votre voyage en Espagne.",
   },

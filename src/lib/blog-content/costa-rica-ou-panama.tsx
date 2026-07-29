@@ -6,7 +6,7 @@ const costaRicaOuPanama: BlogArticle = {
   date: "août 2025",
   readingTime: "7 min",
   meta: {
-    title: "Costa Rica ou Panama : comparatif | CTA Voyages",
+    title: "Costa Rica ou Panama : comparatif",
     description:
       "Volcans et faune ou jungle et deux océans ? CTA Voyages compare le Costa Rica et le Panama (nature, plages, budget, saisons) pour choisir votre voyage.",
   },

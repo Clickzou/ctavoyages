@@ -6,7 +6,7 @@ const quandPartirVietnam: BlogArticle = {
   date: "août 2025",
   readingTime: "8 min",
   meta: {
-    title: "Quand partir au Vietnam ? Nord, centre et sud | CTA Voyages",
+    title: "Quand partir au Vietnam ? Nord, centre et sud",
     description:
       "Trois climats sur un même pays : meilleures périodes pour le nord, le centre et le sud du Vietnam, mousson, fêtes et conseils de CTA Voyages.",
   },

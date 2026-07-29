@@ -14,9 +14,9 @@ const suisse: DestinationContent = {
   slug: "suisse",
   meta: {
     title:
-      "Voyage en Suisse : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Suisse : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Suisse avec CTA Voyages. Cervin et Zermatt, Glacier Express, Jungfrau et Grindelwald, Lucerne, Lavaux et lac Léman. Trains panoramiques, randonnée ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Suisse avec CTA Voyages. Cervin et Zermatt, Glacier Express, Jungfrau et Grindelwald, Lucerne, Lavaux et lac Léman.",
   },
   hero: {
     image: "/generated/suisse.jpg",
@@ -25,7 +25,7 @@ const suisse: DestinationContent = {
     label: "Destination Suisse",
     h1: "Voyage en Suisse : trains panoramiques, sommets et lacs",
     description:
-      "Itinéraire en trains panoramiques, séjour randonnée face au Cervin, escapade au bord des lacs ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Itinéraire en trains panoramiques, séjour randonnée face au Cervin, escapade au bord des lacs ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

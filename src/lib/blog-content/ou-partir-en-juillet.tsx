@@ -6,7 +6,7 @@ const ouPartirEnJuillet: BlogArticle = {
   date: "janvier 2026",
   readingTime: "5 min",
   meta: {
-    title: "Où partir en juillet ? Nos meilleures idées | CTA Voyages",
+    title: "Où partir en juillet ? Nos meilleures idées",
     description:
       "Plages méditerranéennes, lagons tropicaux ou grands espaces : découvrez les meilleures destinations où partir en juillet avec les conseils de CTA Voyages.",
   },

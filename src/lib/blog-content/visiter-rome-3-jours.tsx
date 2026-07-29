@@ -6,7 +6,7 @@ const visiterRome3Jours: BlogArticle = {
   date: "janvier 2025",
   readingTime: "6 min",
   meta: {
-    title: "Visiter Rome en 3 jours : itinéraire idéal | CTA Voyages",
+    title: "Visiter Rome en 3 jours : itinéraire idéal",
     description:
       "Colisée, Vatican, fontaine de Trevi et trastevere : notre itinéraire jour par jour pour visiter Rome en 3 jours sans rien manquer de la Ville éternelle.",
   },

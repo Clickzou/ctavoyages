@@ -6,7 +6,7 @@ const ouPartirPasCherEnEurope: BlogArticle = {
   date: "octobre 2025",
   readingTime: "8 min",
   meta: {
-    title: "Où partir pas cher en Europe ? Nos idées | CTA Voyages",
+    title: "Où partir pas cher en Europe ? Nos idées",
     description:
       "Villes abordables, charme garanti et bons plans : les meilleures destinations européennes pas chères sélectionnées par CTA Voyages.",
   },

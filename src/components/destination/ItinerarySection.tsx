@@ -68,9 +68,9 @@ export default function ItinerarySection({ steps }: { steps: ItineraryStep[] }) 
               <span className="step-label font-label text-on-surface-variant text-[13px] sm:text-[14px] transition-colors">
                 {step.label}
               </span>
-              <h4 className="step-title font-h3 text-[18px] sm:text-[20px] font-bold mb-3 transition-colors">
+              <h3 className="step-title font-h3 text-[18px] sm:text-[20px] font-bold mb-3 transition-colors">
                 {step.title}
-              </h4>
+              </h3>
               <p className="text-on-surface-variant text-[14px] sm:text-body-md">
                 {step.text}
               </p>

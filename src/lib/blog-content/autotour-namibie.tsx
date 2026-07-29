@@ -6,7 +6,7 @@ const autotourNamibie: BlogArticle = {
   date: "avril 2026",
   readingTime: "8 min",
   meta: {
-    title: "Autotour en Namibie : itinéraire et conseils | CTA Voyages",
+    title: "Autotour en Namibie : itinéraire et conseils",
     description:
       "Dunes de Sossusvlei, canyon de Fish River, désert du Namib et safari à Etosha : l'itinéraire et les conseils de CTA Voyages pour un autotour réussi en Namibie.",
   },

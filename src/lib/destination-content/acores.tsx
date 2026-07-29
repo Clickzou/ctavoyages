@@ -5,9 +5,9 @@ const acores: DestinationContent = {
   slug: "acores",
   meta: {
     title:
-      "Voyage aux Açores : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage aux Açores : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage aux Açores avec CTA Voyages. Cratères de Sete Cidades, sources thermales de Furnas, observation des baleines, volcan de Pico et randonnées. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage aux Açores avec CTA Voyages. Cratères de Sete Cidades, sources thermales de Furnas, observation des baleines, volcan de Pico et randonnées. Circuit ou voyage sur mesure.",
   },
   hero: {
     image:

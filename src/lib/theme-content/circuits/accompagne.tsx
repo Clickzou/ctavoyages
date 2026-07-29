@@ -8,9 +8,9 @@ const circuitAccompagne: ThemeContent = {
   parentLabel: "Circuits",
   parentHref: "/circuits",
   meta: {
-    title: "Circuit accompagné avec guide francophone — Voyages encadrés | CTA Voyages",
+    title: "Circuit accompagné avec guide francophone — Voyages encadrés",
     description:
-      "Partez en circuit accompagné avec CTA Voyages : un guide ou accompagnateur francophone vous suit sur les temps forts du voyage. Expertise, anecdotes, confort et sérénité d'un voyage encadré. Devis gratuit.",
+      "Partez en circuit accompagné avec CTA Voyages : un guide ou accompagnateur francophone vous suit sur les temps forts du voyage.",
   },
   hero: {
     image:
@@ -19,7 +19,7 @@ const circuitAccompagne: ThemeContent = {
     label: "Circuit accompagné",
     h1: "Circuit accompagné : voyagez l'esprit libre, guidé à chaque étape",
     description:
-      "Un guide ou accompagnateur francophone vous suit sur les temps forts du voyage — expertise, anecdotes et logistique réglée. Le confort et la sérénité d'un grand circuit encadré, sans rien manquer de l'essentiel.",
+      "Un guide ou accompagnateur francophone vous suit sur les temps forts du voyage — expertise, anecdotes et logistique réglée.",
     primaryCtaLabel: "Composer mon circuit accompagné",
     secondaryCtaLabel: "Pourquoi un circuit accompagné ?",
   },
@@ -73,7 +73,7 @@ const circuitAccompagne: ThemeContent = {
       desc: "Pétra, le Wadi Rum et la mer Morte, expliqués par un accompagnateur passionné.",
     },
     {
-      href: "/destination-vietnam",
+      href: "/destination/vietnam",
       img: "https://images.unsplash.com/photo-1528127269322-539801943592?w=600&h=400&fit=crop&auto=format",
       alt: "Jonques dans la baie d'Halong au Vietnam",
       badge: "ASIE",

@@ -6,7 +6,7 @@ const quandPartirSriLanka: BlogArticle = {
   date: "février 2026",
   readingTime: "7 min",
   meta: {
-    title: "Quand partir au Sri Lanka ? Les deux moussons | CTA Voyages",
+    title: "Quand partir au Sri Lanka ? Les deux moussons",
     description:
       "Deux moussons, plantations de thé, plages et safaris : le guide de CTA Voyages pour choisir la meilleure période et réussir votre voyage au Sri Lanka.",
   },

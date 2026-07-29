@@ -14,7 +14,7 @@ const tunisie: DestinationContent = {
   slug: "tunisie",
   meta: {
     title:
-      "Voyage en Tunisie : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Tunisie : séjour, circuit et voyage sur mesure",
     description:
       "Organisez votre voyage en Tunisie avec CTA Voyages. Carthage et Sidi Bou Saïd, médina de Tunis, amphithéâtre d'El Jem, Kairouan, oasis de Tozeur, Sahara et plages de Djerba. Circuit, thalasso ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

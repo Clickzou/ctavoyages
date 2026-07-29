@@ -5,9 +5,9 @@ const patagonie: DestinationContent = {
   slug: "patagonie",
   meta: {
     title:
-      "Voyage en Patagonie : circuit, trek et voyage sur mesure | CTA Voyages",
+      "Voyage en Patagonie : circuit, trek et voyage sur mesure",
     description:
-      "Organisez votre voyage en Patagonie avec CTA Voyages. Glacier Perito Moreno, Fitz Roy, Torres del Paine, Ushuaïa et le bout du monde. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Patagonie avec CTA Voyages. Glacier Perito Moreno, Fitz Roy, Torres del Paine, Ushuaïa et le bout du monde.",
   },
   hero: {
     image:

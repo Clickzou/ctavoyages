@@ -6,9 +6,9 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/rugby" },
-  title: "Séjour Rugby - CTA Voyages",
+  title: "Séjour Rugby",
   description:
-    "Vivez les plus grands événements rugby avec CTA Voyages. Champions Cup, 6 Nations, Quilter Nations Series : billets officiels, hôtel et transport inclus. Devis gratuit.",
+    "Vivez les plus grands événements rugby avec CTA Voyages. Champions Cup, 6 Nations, Quilter Nations Series : billets officiels, hôtel et transport inclus.",
 };
 
 const faqJsonLd = {
@@ -176,9 +176,9 @@ export default function RugbyPage() {
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                     confirmation_number
                   </span>
-                  <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                     Billets officiels
-                  </h4>
+                  </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                     Champions Cup, Challenge Cup, 6 Nations, Quilter Nations Series —
                     accès aux plus grands événements rugby.
@@ -198,9 +198,9 @@ export default function RugbyPage() {
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                     hotel
                   </span>
-                  <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                     Hébergement
-                  </h4>
+                  </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                     Hôtel 3 ou 4 étoiles avec petits-déjeuners, en centre-ville ou à
                     proximité du stade.
@@ -220,9 +220,9 @@ export default function RugbyPage() {
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                     flight
                   </span>
-                  <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                     Transferts
-                  </h4>
+                  </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                     Transferts aéroport-hôtel-stade selon la formule choisie. Options vols
                     disponibles.
@@ -242,9 +242,9 @@ export default function RugbyPage() {
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                     celebration
                   </span>
-                  <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                     Options festives
-                  </h4>
+                  </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                     Repas d&apos;avant-match, soirées festives, visites culturelles ou
                     excursions locales.
@@ -385,9 +385,9 @@ export default function RugbyPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Choisissez votre match
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Dites-nous quelle compétition, quelle destination et quelles dates
                     vous intéressent. Nos conseillers trouvent le meilleur match pour
@@ -402,9 +402,9 @@ export default function RugbyPage() {
                       confirmation_number
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous composons votre pack
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel, transferts et options festives : tout est
                     organisé pour un week-end rugby sans souci.
@@ -418,9 +418,9 @@ export default function RugbyPage() {
                       sports_score
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vibrez dans les tribunes
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après le match, nous assurons une assistance
                     personnalisée pour que votre expérience soit mémorable.

@@ -10,7 +10,7 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/voyage-sur-mesure" },
-  title: "Voyage sur mesure - CTA Voyages",
+  title: "Voyage sur mesure",
   description:
     "Créez votre voyage sur mesure avec CTA Voyages : itinéraire personnalisé, conseiller dédié, devis gratuit. Japon, Thaïlande, Maroc, Canada, Seychelles et 70 destinations.",
 };
@@ -353,9 +353,9 @@ export default function VoyageSurMesurePage() {
               <div className="timeline-step">
                 <div className="timeline-num">1</div>
                 <div>
-                  <h4 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
+                  <h3 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
                     Échangeons
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[12px] sm:text-[13px] text-on-surface-variant">
                     Parlez-nous de vos envies, dates, budget et style de voyage.
                     Par téléphone ou email.
@@ -365,9 +365,9 @@ export default function VoyageSurMesurePage() {
               <div className="timeline-step">
                 <div className="timeline-num">2</div>
                 <div>
-                  <h4 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
+                  <h3 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
                     Proposition
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[12px] sm:text-[13px] text-on-surface-variant">
                     Votre conseiller crée un itinéraire sur mesure détaillé et vous
                     prend contact sous 48h.
@@ -377,9 +377,9 @@ export default function VoyageSurMesurePage() {
               <div className="timeline-step">
                 <div className="timeline-num">3</div>
                 <div>
-                  <h4 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
+                  <h3 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
                     Ajustements
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[12px] sm:text-[13px] text-on-surface-variant">
                     On affine ensemble jusqu&apos;à ce que le voyage soit parfait.
                     Sans frais supplémentaires.
@@ -389,9 +389,9 @@ export default function VoyageSurMesurePage() {
               <div className="timeline-step">
                 <div className="timeline-num">4</div>
                 <div>
-                  <h4 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
+                  <h3 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
                     Réservation
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[12px] sm:text-[13px] text-on-surface-variant">
                     Nous réservons vols, hôtels, activités et vous remettez votre
                     carnet de voyage.
@@ -401,9 +401,9 @@ export default function VoyageSurMesurePage() {
               <div className="timeline-step">
                 <div className="timeline-num">5</div>
                 <div>
-                  <h4 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
+                  <h3 className="font-h3 text-[15px] sm:text-[16px] font-semibold text-on-surface mb-1">
                     Bon voyage&nbsp;!
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[12px] sm:text-[13px] text-on-surface-variant">
                     Partez serein avec notre assistance pendant tout votre séjour en
                     cas d&apos;imprévu.

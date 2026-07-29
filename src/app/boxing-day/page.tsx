@@ -5,9 +5,9 @@ import FaqList from "@/components/boxing-day/FaqList";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/boxing-day" },
-  title: "Séjour Boxing Day - CTA Voyages",
+  title: "Séjour Boxing Day",
   description:
-    "Vivez la magie du Football Boxing Day en Angleterre avec CTA Voyages. Chelsea, Liverpool, Manchester United : billets officiels et séjour féerique inclus. Devis gratuit.",
+    "Vivez la magie du Football Boxing Day en Angleterre avec CTA Voyages. Chelsea, Liverpool, Manchester United : billets officiels et séjour féerique inclus.",
 };
 
 export default function BoxingDayPage() {
@@ -131,9 +131,9 @@ export default function BoxingDayPage() {
                 <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                   confirmation_number
                 </span>
-                <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                   Billets officiels
-                </h4>
+                </h3>
                 <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                   Places garanties pour les chocs du 26 décembre (Chelsea,
                   Liverpool, Man. Utd...).
@@ -154,9 +154,9 @@ export default function BoxingDayPage() {
                 <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                   hotel
                 </span>
-                <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                   Hébergement
-                </h4>
+                </h3>
                 <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                   Hôtel sélectionné avec soin, situé au cœur de l&apos;ambiance
                   festive des fêtes.
@@ -177,9 +177,9 @@ export default function BoxingDayPage() {
                 <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                   flight
                 </span>
-                <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                   Transports
-                </h4>
+                </h3>
                 <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                   Vols, transferts et logistique complète pour un week-end sans
                   stress.
@@ -200,9 +200,9 @@ export default function BoxingDayPage() {
                 <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                   auto_awesome
                 </span>
-                <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                   Expérience Noël
-                </h4>
+                </h3>
                 <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                   Visites de stades, musées ou marchés de Noël pour prolonger la
                   féerie.
@@ -232,9 +232,9 @@ export default function BoxingDayPage() {
                     history
                   </span>
                 </div>
-                <h4 className="font-h3 text-[17px] sm:text-[19px] font-bold mb-3">
+                <h3 className="font-h3 text-[17px] sm:text-[19px] font-bold mb-3">
                   Un moment historique
-                </h4>
+                </h3>
                 <p className="font-body-md text-[13px] sm:text-[14px] text-on-surface-variant">
                   Une tradition qui remonte au XIXème siècle, devenue le
                   rendez-vous incontournable du calendrier anglais.
@@ -249,9 +249,9 @@ export default function BoxingDayPage() {
                     stadium
                   </span>
                 </div>
-                <h4 className="font-h3 text-[17px] sm:text-[19px] font-bold mb-3">
+                <h3 className="font-h3 text-[17px] sm:text-[19px] font-bold mb-3">
                   Affiches légendaires
-                </h4>
+                </h3>
                 <p className="font-body-md text-[13px] sm:text-[14px] text-on-surface-variant">
                   Les plus grands clubs de Premier League s&apos;affrontent dans
                   des stades combles et survoltés.
@@ -266,9 +266,9 @@ export default function BoxingDayPage() {
                     festival
                   </span>
                 </div>
-                <h4 className="font-h3 text-[17px] sm:text-[19px] font-bold mb-3">
+                <h3 className="font-h3 text-[17px] sm:text-[19px] font-bold mb-3">
                   Ambiance familiale
-                </h4>
+                </h3>
                 <p className="font-body-md text-[13px] sm:text-[14px] text-on-surface-variant">
                   Une atmosphère festive unique, mêlant passion du foot et
                   convivialité des fêtes de fin d&apos;année.
@@ -283,9 +283,9 @@ export default function BoxingDayPage() {
                     location_city
                   </span>
                 </div>
-                <h4 className="font-h3 text-[17px] sm:text-[19px] font-bold mb-3">
+                <h3 className="font-h3 text-[17px] sm:text-[19px] font-bold mb-3">
                   Villes en fête
-                </h4>
+                </h3>
                 <p className="font-body-md text-[13px] sm:text-[14px] text-on-surface-variant">
                   Londres, Liverpool ou Manchester brillent de mille feux avec
                   leurs illuminations et marchés de Noël.

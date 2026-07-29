@@ -10,9 +10,9 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/sejours" },
-  title: "Nos séjours - CTA Voyages",
+  title: "Nos séjours",
   description:
-    "Découvrez nos séjours tout compris : hôtels, clubs, resorts et hébergements de charme en France et à l'international. Conseiller dédié, devis gratuit, accompagnement personnalisé.",
+    "Découvrez nos séjours tout compris : hôtels, clubs, resorts et hébergements de charme en France et à l'international.",
 };
 
 const faqJsonLd = {
@@ -374,9 +374,9 @@ export default function SejoursPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous nous parlez de votre projet
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Votre conseiller prend le temps de comprendre vos envies, vos
                     dates, votre budget et vos attentes.
@@ -390,9 +390,9 @@ export default function SejoursPage() {
                       map
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous sélectionnons les meilleures options
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Grâce à notre réseau et notre expertise, nous vous présentons
                     une sélection de séjours adaptée à votre profil.
@@ -406,9 +406,9 @@ export default function SejoursPage() {
                       verified_user
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous partez serein
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après votre séjour, nous assurons une
                     assistance personnalisée pour que votre voyage se passe

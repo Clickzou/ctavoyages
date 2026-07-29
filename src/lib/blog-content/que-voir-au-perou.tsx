@@ -6,7 +6,7 @@ const queVoirAuPerou: BlogArticle = {
   date: "janvier 2026",
   readingTime: "6 min",
   meta: {
-    title: "Que voir au Pérou ? Itinéraire essentiel | CTA Voyages",
+    title: "Que voir au Pérou ? Itinéraire essentiel",
     description:
       "Machu Picchu, Cusco, vallée sacrée, lac Titicaca, Arequipa et canyon de Colca : notre itinéraire essentiel pour découvrir le Pérou, signé CTA Voyages.",
   },

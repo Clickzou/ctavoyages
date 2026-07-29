@@ -6,7 +6,7 @@ const quandPartirBali: BlogArticle = {
   date: "février 2025",
   readingTime: "7 min",
   meta: {
-    title: "Quand partir à Bali ? Le guide des saisons | CTA Voyages",
+    title: "Quand partir à Bali ? Le guide des saisons",
     description:
       "Saison sèche, saison des pluies, affluence et meilleurs mois : le guide CTA Voyages pour choisir le bon moment et réussir votre voyage à Bali.",
   },

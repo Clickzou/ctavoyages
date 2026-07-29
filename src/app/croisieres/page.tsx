@@ -10,9 +10,9 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/croisieres" },
-  title: "Croisières - CTA Voyages",
+  title: "Croisières",
   description:
-    "Découvrez nos croisières en mer avec CTA Voyages. Transport, hébergement, restauration et animations à bord : une expérience complète sur les mers du monde. Devis gratuit, conseiller dédié.",
+    "Découvrez nos croisières en mer avec CTA Voyages. Transport, hébergement, restauration et animations à bord : une expérience complète sur les mers du monde.",
 };
 
 const faqJsonLd = {
@@ -349,9 +349,9 @@ export default function CroisieresPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous nous parlez de vos envies
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Votre conseiller prend le temps de comprendre vos attentes :
                     destination, durée, type de navire, budget et ambiance
@@ -366,9 +366,9 @@ export default function CroisieresPage() {
                       sailing
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous sélectionnons la croisière idéale
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Compagnie, itinéraire, catégorie de cabine, excursions et
                     extensions terrestres : nous organisons tout pour vous.
@@ -382,9 +382,9 @@ export default function CroisieresPage() {
                       verified_user
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous embarquez sereinement
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après votre croisière, nous assurons une
                     assistance personnalisée pour que votre voyage se passe

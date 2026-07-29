@@ -5,9 +5,9 @@ const maldives: DestinationContent = {
   slug: "maldives",
   meta: {
     title:
-      "Voyage aux Maldives : séjour, lune de miel et voyage sur mesure | CTA Voyages",
+      "Voyage aux Maldives : séjour, lune de miel et voyage sur mesure",
     description:
-      "Organisez votre voyage aux Maldives avec CTA Voyages. Villas sur pilotis, lagons turquoise, snorkeling et plongée, séjour balnéaire ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage aux Maldives avec CTA Voyages. Villas sur pilotis, lagons turquoise, snorkeling et plongée, séjour balnéaire ou voyage sur mesure.",
   },
   hero: {
     image:

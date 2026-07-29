@@ -8,9 +8,9 @@ const croisiereMediterranee: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière en Méditerranée sur mesure — Escales de rêve | CTA Voyages",
+    title: "Croisière en Méditerranée sur mesure — Escales de rêve",
     description:
-      "Embarquez pour une croisière en Méditerranée avec CTA Voyages : escales entre Italie, Grèce, Espagne et Croatie, soleil, patrimoine et confort à bord. Conseiller dédié, devis gratuit.",
+      "Embarquez pour une croisière en Méditerranée avec CTA Voyages : escales entre Italie, Grèce, Espagne et Croatie, soleil, patrimoine et confort à bord.",
   },
   hero: {
     image:
@@ -19,7 +19,7 @@ const croisiereMediterranee: ThemeContent = {
     label: "Croisières",
     h1: "Croisière en Méditerranée : le berceau du voyage",
     description:
-      "Une mer turquoise, des escales chargées d'histoire et le confort d'un navire qui devient votre hôtel flottant. De l'Italie à la Grèce, de l'Espagne à la Croatie, nous composons l'itinéraire qui vous fera rêver.",
+      "Une mer turquoise, des escales chargées d'histoire et le confort d'un navire qui devient votre hôtel flottant.",
     primaryCtaLabel: "Composer ma croisière",
     secondaryCtaLabel: "Pourquoi la Méditerranée ?",
   },

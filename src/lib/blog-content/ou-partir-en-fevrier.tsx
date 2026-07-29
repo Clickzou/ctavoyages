@@ -6,7 +6,7 @@ const ouPartirEnFevrier: BlogArticle = {
   date: "août 2025",
   readingTime: "7 min",
   meta: {
-    title: "Où partir en février ? Soleil, neige et carnaval | CTA Voyages",
+    title: "Où partir en février ? Soleil, neige et carnaval",
     description:
       "Plages au soleil, sports d'hiver ou carnavals flamboyants : nos meilleures destinations pour voyager en février et trouver la météo idéale selon vos envies.",
   },

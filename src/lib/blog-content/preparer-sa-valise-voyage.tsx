@@ -6,7 +6,7 @@ const preparerSaValiseVoyage: BlogArticle = {
   date: "avril 2026",
   readingTime: "8 min",
   meta: {
-    title: "Préparer sa valise : la check-list | CTA Voyages",
+    title: "Préparer sa valise : la check-list",
     description:
       "Liste essentielle, astuces de rangement, bagage cabine : la méthode complète de CTA Voyages pour préparer sa valise sans rien oublier ni voyager trop chargé.",
   },

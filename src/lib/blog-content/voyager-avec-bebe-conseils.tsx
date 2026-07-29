@@ -6,7 +6,7 @@ const voyagerAvecBebeConseils: BlogArticle = {
   date: "avril 2025",
   readingTime: "7 min",
   meta: {
-    title: "Voyager avec un bébé : nos conseils pratiques | CTA Voyages",
+    title: "Voyager avec un bébé : nos conseils pratiques",
     description:
       "Avion, bagages, santé, rythme : les conseils pratiques de CTA Voyages pour voyager avec un bébé sereinement et profiter pleinement de votre séjour.",
   },

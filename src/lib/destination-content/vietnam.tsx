@@ -5,9 +5,9 @@ const vietnam: DestinationContent = {
   slug: "vietnam",
   meta: {
     title:
-      "Voyage au Vietnam : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Vietnam : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Vietnam avec CTA Voyages. Hanoï et sa vieille ville, croisière dans la baie d'Halong, lanternes de Hoi An, cité impériale de Hué, delta du Mékong et Saïgon. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Vietnam avec CTA Voyages. Hanoï et sa vieille ville, croisière dans la baie d'Halong, lanternes de Hoi An, cité impériale de Hué, delta du Mékong et Saïgon. Circuit ou voyage sur mesure.",
   },
   hero: {
     image:
@@ -17,7 +17,7 @@ const vietnam: DestinationContent = {
     label: "Destination Vietnam",
     h1: "Voyage au Vietnam : baies émeraude et villes lanternes",
     description:
-      "Circuit culturel du Nord au Sud, croisière dans la baie d'Halong, escapade au fil du Mékong ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Circuit culturel du Nord au Sud, croisière dans la baie d'Halong, escapade au fil du Mékong ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

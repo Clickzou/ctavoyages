@@ -5,7 +5,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/equipe" },
-  title: "L'équipe CTA Voyages | Conseillères voyages sur mesure à Toulouse",
+  title: "Nos conseillères voyages sur mesure à Toulouse",
   description:
     "Découvrez l'équipe CTA Voyages. Caroline et Stéphanie conçoivent vos séjours individuels ou en groupe, en France, en Europe et à l'international, avec un accompagnement personnalisé.",
 };

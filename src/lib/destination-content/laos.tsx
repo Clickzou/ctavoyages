@@ -13,9 +13,9 @@ import {
 const laos: DestinationContent = {
   slug: "laos",
   meta: {
-    title: "Voyage au Laos : séjour, circuit et voyage sur mesure | CTA Voyages",
+    title: "Voyage au Laos : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Laos avec CTA Voyages. Luang Prabang et l'aumône des moines, cascades de Kuang Si, croisière sur le Mékong, Plaine des Jarres et 4 000 îles. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Laos avec CTA Voyages. Luang Prabang et l'aumône des moines, cascades de Kuang Si, croisière sur le Mékong, Plaine des Jarres et 4 000 îles. Circuit ou voyage sur mesure.",
   },
   hero: {
     image: "/generated/laos.jpg",
@@ -24,7 +24,7 @@ const laos: DestinationContent = {
     label: "Destination Laos",
     h1: "Voyage au Laos : le Mékong, les temples et la lenteur",
     description:
-      "Croisière sur le Mékong, immersion à Luang Prabang, trek dans les montagnes du Nord ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Croisière sur le Mékong, immersion à Luang Prabang, trek dans les montagnes du Nord ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

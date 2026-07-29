@@ -6,7 +6,7 @@ const ouPartirEnAvril: BlogArticle = {
   date: "octobre 2025",
   readingTime: "8 min",
   meta: {
-    title: "Où partir en avril ? Le top des destinations | CTA Voyages",
+    title: "Où partir en avril ? Le top des destinations",
     description:
       "Printemps éclatant, nature en fleurs et plages encore tranquilles : nos meilleures destinations pour voyager en avril avec une météo idéale.",
   },

@@ -41,7 +41,7 @@ export async function generateMetadata({
   }
   const dest = getDestination(slug);
   if (!dest) {
-    return { title: "Destination introuvable | CTA Voyages" };
+    return { title: "Destination introuvable" };
   }
   return {
     title: `Voyage ${dest.name} : séjour, circuit et voyage sur mesure | CTA Voyages`,

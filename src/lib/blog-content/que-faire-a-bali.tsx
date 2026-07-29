@@ -6,7 +6,7 @@ const queFaireABali: BlogArticle = {
   date: "avril 2025",
   readingTime: "8 min",
   meta: {
-    title: "Que faire à Bali ? Nos coups de cœur | CTA Voyages",
+    title: "Que faire à Bali ? Nos coups de cœur",
     description:
       "Rizières d'Ubud, temples sacrés, plages de surf et cascades : notre sélection des incontournables et coups de cœur pour réussir votre voyage à Bali.",
   },

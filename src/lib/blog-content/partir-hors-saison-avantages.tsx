@@ -6,7 +6,7 @@ const partirHorsSaisonAvantages: BlogArticle = {
   date: "mars 2026",
   readingTime: "5 min",
   meta: {
-    title: "Partir hors saison : tous les avantages | CTA Voyages",
+    title: "Partir hors saison : tous les avantages",
     description:
       "Prix réduits, sites désertés, climat doux : découvrez tous les avantages de voyager hors saison et nos conseils pour réussir un séjour à contre-courant.",
   },

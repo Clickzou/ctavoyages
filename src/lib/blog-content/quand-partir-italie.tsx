@@ -6,7 +6,7 @@ const quandPartirItalie: BlogArticle = {
   date: "mai 2025",
   readingTime: "6 min",
   meta: {
-    title: "Quand partir en Italie ? Saison par saison | CTA Voyages",
+    title: "Quand partir en Italie ? Saison par saison",
     description:
       "Rome, Toscane, lacs, côte amalfitaine : le guide CTA Voyages pour choisir le meilleur mois selon la région et le climat pour votre voyage en Italie.",
   },

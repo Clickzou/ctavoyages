@@ -5,9 +5,9 @@ const ecosse: DestinationContent = {
   slug: "ecosse",
   meta: {
     title:
-      "Voyage en Écosse : circuit, autotour et voyage sur mesure | CTA Voyages",
+      "Voyage en Écosse : circuit, autotour et voyage sur mesure",
     description:
-      "Organisez votre voyage en Écosse avec CTA Voyages. Château d'Édimbourg, Highlands et Glencoe, Loch Ness, île de Skye, distilleries de whisky du Speyside. Circuit, autotour ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Écosse avec CTA Voyages. Château d'Édimbourg, Highlands et Glencoe, Loch Ness, île de Skye, distilleries de whisky du Speyside.",
   },
   hero: {
     image:

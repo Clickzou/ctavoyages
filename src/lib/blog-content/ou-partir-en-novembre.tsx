@@ -6,7 +6,7 @@ const ouPartirEnNovembre: BlogArticle = {
   date: "mai 2026",
   readingTime: "5 min",
   meta: {
-    title: "Où partir en novembre ? Fuir la grisaille | CTA Voyages",
+    title: "Où partir en novembre ? Fuir la grisaille",
     description:
       "Soleil tropical, déserts doux et longs courriers au beau fixe : nos meilleures destinations où partir en novembre pour fuir la grisaille avec CTA Voyages.",
   },

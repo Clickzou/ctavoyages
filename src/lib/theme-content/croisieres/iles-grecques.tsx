@@ -8,9 +8,9 @@ const croisiereIlesGrecques: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière Îles grecques & mer Égée sur mesure — Cyclades & Dodécanèse | CTA Voyages",
+    title: "Croisière Îles grecques & mer Égée sur mesure — Cyclades & Dodécanèse",
     description:
-      "Partez en croisière dans les îles grecques avec CTA Voyages : Cyclades aux maisons blanches, eaux turquoise, sites antiques et couchers de soleil mythiques. Escales à Santorin, Mykonos, Crète, Rhodes, Athènes et Corfou. Conseiller dédié, devis gratuit.",
+      "Partez en croisière dans les îles grecques avec CTA Voyages : Cyclades aux maisons blanches, eaux turquoise, sites antiques et couchers de soleil mythiques.",
   },
   hero: {
     image:
@@ -19,7 +19,7 @@ const croisiereIlesGrecques: ThemeContent = {
     label: "Croisière",
     h1: "Croisière dans les îles grecques : la mer Égée, île après île",
     description:
-      "Maisons blanches accrochées aux falaises, eaux turquoise, vestiges antiques et couchers de soleil légendaires. Embarquez pour les Cyclades, le Dodécanèse et la Crète — un itinéraire composé sur mesure par votre conseiller.",
+      "Maisons blanches accrochées aux falaises, eaux turquoise, vestiges antiques et couchers de soleil légendaires.",
     primaryCtaLabel: "Composer ma croisière",
     secondaryCtaLabel: "Pourquoi une croisière en Grèce ?",
   },

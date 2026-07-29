@@ -5,9 +5,9 @@ const inde: DestinationContent = {
   slug: "inde",
   meta: {
     title:
-      "Voyage en Inde : circuit Rajasthan, Taj Mahal et voyage sur mesure | CTA Voyages",
+      "Voyage en Inde : circuit Rajasthan, Taj Mahal et voyage sur mesure",
     description:
-      "Organisez votre voyage en Inde avec CTA Voyages. Triangle d'or Delhi-Agra-Jaipur, palais du Rajasthan, Taj Mahal, lacs d'Udaipur et le Gange à Varanasi. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Inde avec CTA Voyages. Triangle d'or Delhi-Agra-Jaipur, palais du Rajasthan, Taj Mahal, lacs d'Udaipur et le Gange à Varanasi.",
   },
   hero: {
     image:

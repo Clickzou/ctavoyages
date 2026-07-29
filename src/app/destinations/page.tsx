@@ -8,7 +8,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/destinations" },
-  title: "Nos destinations et événements sportifs - CTA Voyages",
+  title: "Nos destinations et événements sportifs",
   description:
     "Plus de 70 destinations de voyage avec CTA Voyages : Japon, Thaïlande, Vietnam, Bali, Maroc, Tanzanie, Île Maurice, Seychelles, Maldives, Canada, Costa Rica, Pérou, Islande, Laponie, Italie, Grèce, Polynésie et nos séjours sportifs en Europe, Amériques et Asie.",
 };

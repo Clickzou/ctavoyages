@@ -5,9 +5,9 @@ const slovenie: DestinationContent = {
   slug: "slovenie",
   meta: {
     title:
-      "Voyage en Slovénie : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Slovénie : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Slovénie avec CTA Voyages. Lac de Bled, gorges de Vintgar, grottes de Postojna, parc du Triglav, Ljubljana et la côte de Piran. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Slovénie avec CTA Voyages. Lac de Bled, gorges de Vintgar, grottes de Postojna, parc du Triglav, Ljubljana et la côte de Piran.",
   },
   hero: {
     image:

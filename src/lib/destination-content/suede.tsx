@@ -5,9 +5,9 @@ const suede: DestinationContent = {
   slug: "suede",
   meta: {
     title:
-      "Voyage en Suède : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Suède : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Suède avec CTA Voyages. Stockholm et la vieille ville, archipel, Göteborg, Laponie suédoise, hôtel de glace, aurores boréales à Kiruna. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Suède avec CTA Voyages. Stockholm et la vieille ville, archipel, Göteborg, Laponie suédoise, hôtel de glace, aurores boréales à Kiruna. Circuit ou voyage sur mesure.",
   },
   hero: {
     image:

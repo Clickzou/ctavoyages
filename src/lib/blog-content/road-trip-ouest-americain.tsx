@@ -6,7 +6,7 @@ const roadTripOuestAmericain: BlogArticle = {
   date: "juillet 2025",
   readingTime: "5 min",
   meta: {
-    title: "Road trip dans l'Ouest américain | CTA Voyages",
+    title: "Road trip dans l'Ouest américain",
     description:
       "Las Vegas, Grand Canyon, Monument Valley et parcs nationaux : l'itinéraire complet de CTA Voyages pour un road trip légendaire dans l'Ouest américain.",
   },

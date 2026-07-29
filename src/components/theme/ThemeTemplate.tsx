@@ -194,7 +194,7 @@ export default function ThemeTemplate({ content }: { content: ThemeContent }) {
                       <span className="inline-block text-primary font-label text-[11px] uppercase tracking-wider mb-1.5">
                         {card.tag}
                       </span>
-                      <h4>{card.name}</h4>
+                      <h3>{card.name}</h3>
                       <p>{card.text}</p>
                     </div>
                   </div>
@@ -302,7 +302,7 @@ export default function ThemeTemplate({ content }: { content: ThemeContent }) {
                     <span className="material-symbols-outlined pack-icon">
                       {card.icon}
                     </span>
-                    <h4>{card.title}</h4>
+                    <h3>{card.title}</h3>
                     <p>{card.text}</p>
                   </div>
                 </div>

@@ -6,7 +6,7 @@ const destinationsVoyageAventure: BlogArticle = {
   date: "mai 2025",
   readingTime: "6 min",
   meta: {
-    title: "Voyage aventure : les meilleures destinations | CTA Voyages",
+    title: "Voyage aventure : les meilleures destinations",
     description:
       "Trek au Népal, désert de Namibie, fjords de Patagonie ou jungle costaricienne : nos destinations et conseils pour un voyage d'aventure inoubliable.",
   },

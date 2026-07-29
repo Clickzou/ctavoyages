@@ -14,9 +14,9 @@ const autriche: DestinationContent = {
   slug: "autriche",
   meta: {
     title:
-      "Voyage en Autriche : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Autriche : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Autriche avec CTA Voyages. Vienne impériale, Salzbourg et Mozart, lacs du Salzkammergut, Hallstatt, Tyrol et route du Grossglockner. Circuit, autotour ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Autriche avec CTA Voyages. Vienne impériale, Salzbourg et Mozart, lacs du Salzkammergut, Hallstatt, Tyrol et route du Grossglockner.",
   },
   hero: {
     image: "/generated/autriche.jpg",

@@ -9,7 +9,7 @@ const culturel: ThemeContent = {
   parentLabel: "Séjours",
   parentHref: "/sejours",
   meta: {
-    title: "Séjour culturel sur mesure — Patrimoine, histoire & traditions | CTA Voyages",
+    title: "Séjour culturel sur mesure — Patrimoine, histoire & traditions",
     description:
       "Organisez votre séjour culturel avec CTA Voyages : sites classés, médinas, temples et traditions vivantes. Guides experts francophones, itinéraires sur mesure, conseiller dédié, devis gratuit.",
   },

@@ -4,9 +4,9 @@ import type { DestinationContent } from "./types";
 const japon: DestinationContent = {
   slug: "japon",
   meta: {
-    title: "Voyage au Japon : séjour, circuit et voyage sur mesure | CTA Voyages",
+    title: "Voyage au Japon : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Japon avec CTA Voyages. Séjour en ryokan, circuit culturel de Tokyo à Kyoto, glamping, croisière ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Japon avec CTA Voyages. Séjour en ryokan, circuit culturel de Tokyo à Kyoto, glamping, croisière ou voyage sur mesure.",
   },
   hero: {
     image: "/assets/images/iStock-1969999309.jpg",

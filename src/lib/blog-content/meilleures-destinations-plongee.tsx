@@ -6,7 +6,7 @@ const meilleuresDestinationsPlongee: BlogArticle = {
   date: "janvier 2026",
   readingTime: "5 min",
   meta: {
-    title: "Les meilleures destinations plongée | CTA Voyages",
+    title: "Les meilleures destinations plongée",
     description:
       "Récifs coralliens, raies manta, requins et épaves : découvrez les meilleures destinations plongée du monde et nos conseils d'experts avec CTA Voyages.",
   },

@@ -6,7 +6,7 @@ const itineraireJapon2Semaines: BlogArticle = {
   date: "septembre 2025",
   readingTime: "6 min",
   meta: {
-    title: "Le Japon en 2 semaines : itinéraire parfait | CTA Voyages",
+    title: "Le Japon en 2 semaines : itinéraire parfait",
     description:
       "Tokyo, Kyoto, le mont Fuji, Hiroshima et Osaka : l'itinéraire complet de CTA Voyages pour découvrir le Japon en 2 semaines, étape par étape.",
   },

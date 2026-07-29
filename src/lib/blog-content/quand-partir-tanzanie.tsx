@@ -6,7 +6,7 @@ const quandPartirTanzanie: BlogArticle = {
   date: "janvier 2025",
   readingTime: "5 min",
   meta: {
-    title: "Quand partir en Tanzanie ? Safari et migration | CTA Voyages",
+    title: "Quand partir en Tanzanie ? Safari et migration",
     description:
       "Saison sèche, grande migration, Kilimandjaro et Zanzibar : le guide de CTA Voyages pour choisir le meilleur moment de votre safari et de votre voyage en Tanzanie.",
   },

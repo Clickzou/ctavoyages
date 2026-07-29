@@ -6,7 +6,7 @@ const circuitCanadaRocheusesQuebec: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Circuit Canada : des Rocheuses à Québec | CTA Voyages",
+    title: "Circuit Canada : des Rocheuses à Québec",
     description:
       "Traversez le Canada d'ouest en est avec CTA Voyages : Rocheuses, Vancouver, Toronto, Montréal et Québec. Notre circuit signature étape par étape.",
   },

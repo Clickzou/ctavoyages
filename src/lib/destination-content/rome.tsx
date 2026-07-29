@@ -5,9 +5,9 @@ const rome: DestinationContent = {
   slug: "rome",
   meta: {
     title:
-      "Voyage à Rome : séjour, circuit et city-break sur mesure | CTA Voyages",
+      "Voyage à Rome : séjour, circuit et city-break sur mesure",
     description:
-      "Organisez votre voyage à Rome avec CTA Voyages. Colisée, Vatican, fontaine de Trevi, dolce vita et trésors de la Ville éternelle. City-break, séjour ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à Rome avec CTA Voyages. Colisée, Vatican, fontaine de Trevi, dolce vita et trésors de la Ville éternelle.",
   },
   hero: {
     image:

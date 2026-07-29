@@ -5,9 +5,9 @@ const islande: DestinationContent = {
   slug: "islande",
   meta: {
     title:
-      "Voyage en Islande : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Islande : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Islande avec CTA Voyages. Cercle d'Or, cascades de la côte sud, glaciers, lagune de Jökulsárlón, aurores boréales, circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Islande avec CTA Voyages. Cercle d'Or, cascades de la côte sud, glaciers, lagune de Jökulsárlón, aurores boréales, circuit ou voyage sur mesure.",
   },
   hero: {
     image:

@@ -6,7 +6,7 @@ const ouPartirEnAout: BlogArticle = {
   date: "février 2026",
   readingTime: "8 min",
   meta: {
-    title: "Où partir en août ? Mer, montagne et ailleurs | CTA Voyages",
+    title: "Où partir en août ? Mer, montagne et ailleurs",
     description:
       "Mer chaude, fraîcheur de la montagne ou dépaysement à l'autre bout du monde : nos meilleures idées pour choisir où partir en août avec CTA Voyages.",
   },

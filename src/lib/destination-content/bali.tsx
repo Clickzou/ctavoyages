@@ -5,9 +5,9 @@ const bali: DestinationContent = {
   slug: "bali",
   meta: {
     title:
-      "Voyage à Bali : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage à Bali : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage à Bali avec CTA Voyages. Rizières de Tegallalang, temples de Tanah Lot et Uluwatu, lever de soleil au Mont Batur, plages du sud et Nusa Penida. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à Bali avec CTA Voyages. Rizières de Tegallalang, temples de Tanah Lot et Uluwatu, lever de soleil au Mont Batur, plages du sud et Nusa Penida. Circuit ou voyage sur mesure.",
   },
   hero: {
     image:

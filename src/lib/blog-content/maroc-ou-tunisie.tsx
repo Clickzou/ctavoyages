@@ -6,7 +6,7 @@ const marocOuTunisie: BlogArticle = {
   date: "avril 2025",
   readingTime: "7 min",
   meta: {
-    title: "Maroc ou Tunisie : quelle destination ? | CTA Voyages",
+    title: "Maroc ou Tunisie : quelle destination ?",
     description:
       "Médinas, désert, plages, budget et ambiance : le comparatif de CTA Voyages pour choisir entre le Maroc et la Tunisie selon votre style de voyage.",
   },

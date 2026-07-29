@@ -6,7 +6,7 @@ const queFaireAMarrakech: BlogArticle = {
   date: "mars 2025",
   readingTime: "5 min",
   meta: {
-    title: "Que faire à Marrakech ? Les incontournables | CTA Voyages",
+    title: "Que faire à Marrakech ? Les incontournables",
     description:
       "Médina, jardins Majorelle, place Jemaa el-Fna et souks : notre sélection des incontournables et bonnes adresses pour réussir votre séjour à Marrakech.",
   },

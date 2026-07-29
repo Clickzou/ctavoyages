@@ -6,7 +6,7 @@ const quandPartirPortugal: BlogArticle = {
   date: "juillet 2025",
   readingTime: "5 min",
   meta: {
-    title: "Quand partir au Portugal ? Climat et conseils | CTA Voyages",
+    title: "Quand partir au Portugal ? Climat et conseils",
     description:
       "Lisbonne, Porto, Algarve, Açores et Madère : climat région par région, meilleures périodes et bons plans pour réussir votre voyage au Portugal.",
   },

@@ -5,9 +5,9 @@ const seychelles: DestinationContent = {
   slug: "seychelles",
   meta: {
     title:
-      "Voyage aux Seychelles : séjour, croisière et voyage sur mesure | CTA Voyages",
+      "Voyage aux Seychelles : séjour, croisière et voyage sur mesure",
     description:
-      "Organisez votre voyage aux Seychelles avec CTA Voyages. Plages de Mahé, Vallée de Mai à Praslin, Anse Source d'Argent à La Digue, snorkeling et tortues géantes. Séjour, croisière ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage aux Seychelles avec CTA Voyages. Plages de Mahé, Vallée de Mai à Praslin, Anse Source d'Argent à La Digue, snorkeling et tortues géantes.",
   },
   hero: {
     image:

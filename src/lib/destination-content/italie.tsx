@@ -5,9 +5,9 @@ const italie: DestinationContent = {
   slug: "italie",
   meta: {
     title:
-      "Voyage en Italie : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Italie : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Italie avec CTA Voyages. Rome éternelle, Florence et la Toscane, Venise, les Cinque Terre, Naples et la côte amalfitaine, circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Italie avec CTA Voyages. Rome éternelle, Florence et la Toscane, Venise, les Cinque Terre, Naples et la côte amalfitaine, circuit ou voyage sur mesure.",
   },
   hero: {
     image:

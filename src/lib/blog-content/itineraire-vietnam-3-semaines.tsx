@@ -6,7 +6,7 @@ const itineraireVietnam3Semaines: BlogArticle = {
   date: "octobre 2025",
   readingTime: "7 min",
   meta: {
-    title: "Le Vietnam en 3 semaines : itinéraire | CTA Voyages",
+    title: "Le Vietnam en 3 semaines : itinéraire",
     description:
       "Du nord au sud : Hanoï, Halong, Sapa, Hué, Hoi An, le delta du Mékong... Notre itinéraire complet de 3 semaines au Vietnam, étape par étape, par CTA Voyages.",
   },

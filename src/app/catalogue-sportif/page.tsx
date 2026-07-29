@@ -10,7 +10,7 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/catalogue-sportif" },
-  title: "Catalogue sportif - CTA Voyages",
+  title: "Catalogue sportif",
   description:
     "Vivez les plus grands événements sportifs du monde avec CTA Voyages. Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : des séjours clés en main pour vivre le sport autrement.",
 };
@@ -326,9 +326,9 @@ export default function CatalogueSportifPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous nous parlez de votre projet
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Votre sport, votre destination, vos dates, votre budget : nos
                     conseillers spécialisés prennent le temps d&apos;écouter vos
@@ -343,9 +343,9 @@ export default function CatalogueSportifPage() {
                       confirmation_number
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous composons votre pack
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel, transports, transferts et options
                     exclusives : nous orchestrons chaque détail pour un séjour sans
@@ -360,9 +360,9 @@ export default function CatalogueSportifPage() {
                       sports_score
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous n&apos;avez plus qu&apos;à vibrer
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après l&apos;événement, nous assurons une
                     assistance personnalisée pour que chaque moment soit

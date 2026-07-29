@@ -8,9 +8,9 @@ const escapadeUrbaine: ThemeContent = {
   parentLabel: "Séjours",
   parentHref: "/sejours",
   meta: {
-    title: "Escapade urbaine & city break sur mesure — Week-ends en ville | CTA Voyages",
+    title: "Escapade urbaine & city break sur mesure — Week-ends en ville",
     description:
-      "Organisez votre escapade urbaine avec CTA Voyages : city breaks de 2 à 5 nuits dans les plus belles villes d'Europe et d'ailleurs. Vols, hôtel central, conseiller dédié, devis gratuit.",
+      "Organisez votre escapade urbaine avec CTA Voyages : city breaks de 2 à 5 nuits dans les plus belles villes d'Europe et d'ailleurs.",
   },
   hero: {
     image:

@@ -14,9 +14,9 @@ const danemark: DestinationContent = {
   slug: "danemark",
   meta: {
     title:
-      "Voyage au Danemark : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Danemark : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Danemark avec CTA Voyages. Copenhague et Nyhavn, design scandinave, châteaux royaux, plages du Jutland et gastronomie nordique. City break, autotour ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Danemark avec CTA Voyages. Copenhague et Nyhavn, design scandinave, châteaux royaux, plages du Jutland et gastronomie nordique.",
   },
   hero: {
     image: "/generated/danemark.jpg",
@@ -25,7 +25,7 @@ const danemark: DestinationContent = {
     label: "Destination Danemark",
     h1: "Voyage au Danemark : hygge, design et côtes sauvages",
     description:
-      "City break à Copenhague, autotour entre châteaux et plages, escapade en famille ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "City break à Copenhague, autotour entre châteaux et plages, escapade en famille ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

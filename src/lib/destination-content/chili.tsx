@@ -13,9 +13,9 @@ import {
 const chili: DestinationContent = {
   slug: "chili",
   meta: {
-    title: "Voyage au Chili : séjour, circuit et voyage sur mesure | CTA Voyages",
+    title: "Voyage au Chili : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Chili avec CTA Voyages. Désert d'Atacama, Torres del Paine et Patagonie, Valparaíso, région des lacs et volcans, vignobles et île de Pâques. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Chili avec CTA Voyages. Désert d'Atacama, Torres del Paine et Patagonie, Valparaíso, région des lacs et volcans, vignobles et île de Pâques. Circuit ou voyage sur mesure.",
   },
   hero: {
     image: "/generated/chili.jpg",
@@ -24,7 +24,7 @@ const chili: DestinationContent = {
     label: "Destination Chili",
     h1: "Voyage au Chili : du désert d'Atacama à la Patagonie",
     description:
-      "Circuit Atacama-Patagonie, autotour dans la région des lacs, extension à l'île de Pâques ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Circuit Atacama-Patagonie, autotour dans la région des lacs, extension à l'île de Pâques ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

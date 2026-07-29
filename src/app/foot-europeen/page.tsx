@@ -6,9 +6,9 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/foot-europeen" },
-  title: "Séjour Football Européen - CTA Voyages",
+  title: "Séjour Football Européen",
   description:
-    "Vivez les plus grands matchs de football européen avec CTA Voyages. Premier League, Liga, Serie A, Bundesliga : billets officiels, hôtel et transport inclus. Devis gratuit.",
+    "Vivez les plus grands matchs de football européen avec CTA Voyages. Premier League, Liga, Serie A, Bundesliga : billets officiels, hôtel et transport inclus.",
 };
 
 const faqJsonLd = {
@@ -177,9 +177,9 @@ export default function FootEuropeenPage() {
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                     confirmation_number
                   </span>
-                  <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                     Billets officiels
-                  </h4>
+                  </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                     Premier League, Liga, Serie A, Bundesliga : accès aux stades
                     mythiques d&apos;Europe.
@@ -199,9 +199,9 @@ export default function FootEuropeenPage() {
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                     hotel
                   </span>
-                  <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                     Hébergement
-                  </h4>
+                  </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                     Hôtel soigneusement sélectionné, en centre-ville ou à
                     proximité du stade.
@@ -221,9 +221,9 @@ export default function FootEuropeenPage() {
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                     flight
                   </span>
-                  <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                     Transport
-                  </h4>
+                  </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                     Vol + hôtel et transferts disponibles selon la destination
                     choisie.
@@ -243,9 +243,9 @@ export default function FootEuropeenPage() {
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
                     museum
                   </span>
-                  <h4 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
                     Expériences
-                  </h4>
+                  </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
                     Visites guidées, musées et gastronomie locale pour enrichir
                     votre week-end foot.
@@ -456,9 +456,9 @@ export default function FootEuropeenPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Choisissez votre match
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Dites-nous quel club, quel championnat et quelles dates vous
                     intéressent. Nos conseillers trouvent le meilleur match pour
@@ -473,9 +473,9 @@ export default function FootEuropeenPage() {
                       confirmation_number
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous composons votre pack
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel, transport et activités culturelles
                     : tout est organisé pour un week-end foot sans souci.
@@ -489,9 +489,9 @@ export default function FootEuropeenPage() {
                       sports_score
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vivez le match
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après le match, nous assurons une
                     assistance personnalisée pour que votre expérience soit

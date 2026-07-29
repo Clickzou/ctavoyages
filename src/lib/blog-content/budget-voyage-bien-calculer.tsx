@@ -6,7 +6,7 @@ const budgetVoyageBienCalculer: BlogArticle = {
   date: "mai 2025",
   readingTime: "5 min",
   meta: {
-    title: "Bien calculer son budget voyage : la méthode | CTA Voyages",
+    title: "Bien calculer son budget voyage : la méthode",
     description:
       "Transport, hébergement, repas, activités, imprévus : la méthode de CTA Voyages pour calculer un budget voyage réaliste et partir l'esprit tranquille.",
   },

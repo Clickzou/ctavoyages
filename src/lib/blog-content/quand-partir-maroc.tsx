@@ -6,7 +6,7 @@ const quandPartirMaroc: BlogArticle = {
   date: "mars 2025",
   readingTime: "5 min",
   meta: {
-    title: "Quand partir au Maroc ? Climat ville par ville | CTA Voyages",
+    title: "Quand partir au Maroc ? Climat ville par ville",
     description:
       "Marrakech, désert, côte atlantique ou Atlas : le guide CTA Voyages pour choisir le meilleur moment selon la région et le climat au Maroc.",
   },

@@ -8,7 +8,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 export const metadata: Metadata = {
   alternates: { canonical: "/groupe-cta" },
   title:
-    "Groupe CTA : voyages d'affaires, événementiel, MICE et voyages sur mesure | CTA Voyages",
+    "Groupe CTA : voyages d'affaires, événementiel, MICE et voyages sur mesure",
   description:
     "Découvrez les expertises du Groupe CTA : SOP Events pour l'événementiel, CTA Business Travel pour les déplacements professionnels, CTA Meeting & Events pour les événements MICE, et CTA Voyages pour les voyages sur mesure.",
 };

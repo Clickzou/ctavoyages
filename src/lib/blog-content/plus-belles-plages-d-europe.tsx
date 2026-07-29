@@ -6,7 +6,7 @@ const plusBellesPlagesDEurope: BlogArticle = {
   date: "novembre 2025",
   readingTime: "6 min",
   meta: {
-    title: "Les plus belles plages d'Europe | CTA Voyages",
+    title: "Les plus belles plages d'Europe",
     description:
       "Navagio, Balos, Praia da Marinha, Cala Macarella... CTA Voyages vous dévoile les plus belles plages d'Europe, criques secrètes et eaux turquoise.",
   },

@@ -6,7 +6,7 @@ const quandPartirCanada: BlogArticle = {
   date: "mai 2025",
   readingTime: "5 min",
   meta: {
-    title: "Quand partir au Canada ? Été indien & hiver | CTA Voyages",
+    title: "Quand partir au Canada ? Été indien & hiver",
     description:
       "Été indien, hiver enneigé, observation des baleines et aurores boréales : le guide de CTA Voyages pour choisir la meilleure période pour voyager au Canada.",
   },

@@ -6,7 +6,7 @@ const quandPartirThailande: BlogArticle = {
   date: "janvier 2025",
   readingTime: "6 min",
   meta: {
-    title: "Quand partir en Thaïlande ? Climat et saisons | CTA Voyages",
+    title: "Quand partir en Thaïlande ? Climat et saisons",
     description:
       "Saison sèche, mousson, Bangkok, Phuket ou Koh Samui : le guide CTA Voyages pour choisir le meilleur mois et profiter d'un climat idéal en Thaïlande.",
   },

@@ -6,7 +6,7 @@ const quandPartirNewYork: BlogArticle = {
   date: "octobre 2025",
   readingTime: "7 min",
   meta: {
-    title: "Quand partir à New York ? La meilleure saison | CTA Voyages",
+    title: "Quand partir à New York ? La meilleure saison",
     description:
       "Printemps fleuri, été animé, automne doré ou New York sous la neige à Noël : la meilleure période pour visiter la Grosse Pomme selon vos envies.",
   },

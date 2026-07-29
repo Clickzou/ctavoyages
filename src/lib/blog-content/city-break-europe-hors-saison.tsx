@@ -9,7 +9,7 @@ const cityBreakEuropeHorsSaison: BlogArticle = {
   date: "Mai 2026",
   readingTime: "6 min",
   meta: {
-    title: "City break hors saison : 5 villes d'Europe | CTA Voyages",
+    title: "City break hors saison : 5 villes d'Europe",
     description:
       "Porto, Prague, Séville, Vienne, Édimbourg : nos 5 city breaks à vivre hors saison, loin de la foule et à prix doux. Les conseils d'initiés de CTA Voyages.",
   },

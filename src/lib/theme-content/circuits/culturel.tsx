@@ -8,9 +8,9 @@ const circuitCulturel: ThemeContent = {
   parentLabel: "Circuits",
   parentHref: "/circuits",
   meta: {
-    title: "Circuit culturel sur mesure — Temples, médinas & sites UNESCO | CTA Voyages",
+    title: "Circuit culturel sur mesure — Temples, médinas & sites UNESCO",
     description:
-      "Partez en circuit culturel avec CTA Voyages : temples, médinas, villages et grands sites historiques classés UNESCO, accompagnés de guides experts. Itinéraire sur mesure, conseiller dédié, devis gratuit.",
+      "Partez en circuit culturel avec CTA Voyages : temples, médinas, villages et grands sites historiques classés UNESCO, accompagnés de guides experts.",
   },
   hero: {
     image:

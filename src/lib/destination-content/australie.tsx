@@ -4,7 +4,7 @@ import type { DestinationContent } from "./types";
 const australie: DestinationContent = {
   slug: "australie",
   meta: {
-    title: "Voyage en Australie : circuit et sur mesure | CTA Voyages",
+    title: "Voyage en Australie : circuit et sur mesure",
     description:
       "Organisez votre voyage en Australie avec CTA Voyages. Sydney, Uluru, Grande Barrière de corail, Great Ocean Road. Circuit ou sur mesure, devis gratuit sous 48h.",
   },

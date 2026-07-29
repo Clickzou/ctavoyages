@@ -8,9 +8,9 @@ const glampingLodgeSafari: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Lodge safari de luxe — Glamping au cœur de la savane | CTA Voyages",
+    title: "Lodge safari de luxe — Glamping au cœur de la savane",
     description:
-      "Vivez le grand safari autrement avec CTA Voyages : lodges d'exception face à la savane, réveil avec les animaux sauvages, safaris guidés au lever du jour. Conseiller dédié, devis gratuit.",
+      "Vivez le grand safari autrement avec CTA Voyages : lodges d'exception face à la savane, réveil avec les animaux sauvages, safaris guidés au lever du jour.",
   },
   hero: {
     image:
@@ -19,7 +19,7 @@ const glampingLodgeSafari: ThemeContent = {
     label: "Lodge safari",
     h1: "Lodge safari : dormir au cœur du grand spectacle",
     description:
-      "Des lodges d'exception posés au milieu de la savane, le réveil face aux animaux sauvages et des safaris guidés au lever du jour. Le luxe et l'aventure réunis, sans jamais quitter le confort.",
+      "Des lodges d'exception posés au milieu de la savane, le réveil face aux animaux sauvages et des safaris guidés au lever du jour.",
     primaryCtaLabel: "Composer mon safari",
     secondaryCtaLabel: "Pourquoi un lodge safari ?",
   },

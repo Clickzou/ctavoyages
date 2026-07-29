@@ -14,9 +14,9 @@ const coreeDuSud: DestinationContent = {
   slug: "coree-du-sud",
   meta: {
     title:
-      "Voyage en Corée du Sud : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Corée du Sud : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Corée du Sud avec CTA Voyages. Séoul et ses palais, village hanok de Bukchon, Gyeongju, temple stay, île de Jeju et gastronomie coréenne. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Corée du Sud avec CTA Voyages. Séoul et ses palais, village hanok de Bukchon, Gyeongju, temple stay, île de Jeju et gastronomie coréenne. Circuit ou voyage sur mesure.",
   },
   hero: {
     image: "/generated/coree-du-sud.jpg",
@@ -25,7 +25,7 @@ const coreeDuSud: DestinationContent = {
     label: "Destination Corée du Sud",
     h1: "Voyage en Corée du Sud : palais, néons et montagnes sacrées",
     description:
-      "Circuit culturel de Séoul à Busan, immersion en temple, escapade sur l'île de Jeju ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Circuit culturel de Séoul à Busan, immersion en temple, escapade sur l'île de Jeju ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

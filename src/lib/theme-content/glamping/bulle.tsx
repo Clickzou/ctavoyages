@@ -9,9 +9,9 @@ const glampingBulle: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Bulle transparente : nuit sous les étoiles — Dôme & glamping | CTA Voyages",
+    title: "Bulle transparente : nuit sous les étoiles — Dôme & glamping",
     description:
-      "Dormez dans une bulle transparente avec CTA Voyages : nuit à la belle étoile sous un dôme, ciel étoilé au-dessus du lit, intimité et confort. Conseiller dédié, devis gratuit.",
+      "Dormez dans une bulle transparente avec CTA Voyages : nuit à la belle étoile sous un dôme, ciel étoilé au-dessus du lit, intimité et confort.",
   },
   hero: {
     image:
@@ -20,7 +20,7 @@ const glampingBulle: ThemeContent = {
     label: "Bulle transparente",
     h1: "Bulle transparente : dormir sous les étoiles",
     description:
-      "Une nuit à la belle étoile sans renoncer au confort : un dôme transparent, un vrai lit douillet et la voûte céleste pour seul plafond. Intimité, silence et magie, loin de la pollution lumineuse.",
+      "Une nuit à la belle étoile sans renoncer au confort : un dôme transparent, un vrai lit douillet et la voûte céleste pour seul plafond.",
     primaryCtaLabel: "Réserver ma nuit en bulle",
     secondaryCtaLabel: "Pourquoi dormir en bulle ?",
   },

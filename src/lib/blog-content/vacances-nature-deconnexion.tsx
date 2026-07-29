@@ -6,7 +6,7 @@ const vacancesNatureDeconnexion: BlogArticle = {
   date: "février 2026",
   readingTime: "7 min",
   meta: {
-    title: "Vacances nature : se déconnecter vraiment | CTA Voyages",
+    title: "Vacances nature : se déconnecter vraiment",
     description:
       "Cabanes en forêt, lacs sauvages, nuits sous les étoiles : nos idées de vacances nature pour vous déconnecter du numérique et vous reconnecter à l'essentiel.",
   },

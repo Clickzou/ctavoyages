@@ -14,7 +14,7 @@ const malaisie: DestinationContent = {
   slug: "malaisie",
   meta: {
     title:
-      "Voyage en Malaisie : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Malaisie : séjour, circuit et voyage sur mesure",
     description:
       "Organisez votre voyage en Malaisie avec CTA Voyages. Kuala Lumpur et les tours Petronas, George Town à Penang, orangs-outans de Bornéo, Cameron Highlands et îles de Langkawi. Circuit ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

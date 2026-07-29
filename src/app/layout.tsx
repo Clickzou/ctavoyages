@@ -39,13 +39,14 @@ export const metadata: Metadata = {
   // hérité par toutes les pages qui ne le redéfinissent pas. Une canonique
   // posée ici désignerait donc l'accueil depuis n'importe quelle page. Chaque
   // page déclare la sienne.
+  // openGraph et twitter ne fixent volontairement ni title ni description :
+  // faute de valeur ici, Next reprend celles de chaque page, si bien qu'un
+  // partage sur les réseaux affiche le titre de la page partagée. Les y
+  // déclarer les figerait sur toutes les pages du site.
   openGraph: {
     type: "website",
     siteName: "CTA Voyages",
     locale: "fr_FR",
-    title: "CTA Voyages - 30 ans d'expertise en voyages sur mesure",
-    description:
-      "Agence de voyages sur mesure à Toulouse. Séjours, circuits, croisières, glamping, catalogue sportif et voyages à la carte.",
     images: [
       {
         url: "/assets/images/iStock-2207441086.jpg",
@@ -57,11 +58,49 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CTA Voyages - 30 ans d'expertise en voyages sur mesure",
-    description:
-      "Agence de voyages sur mesure à Toulouse. Séjours, circuits, croisières, glamping, catalogue sportif et voyages à la carte.",
     images: ["/assets/images/iStock-2207441086.jpg"],
   },
+};
+
+/**
+ * Fiche d'entreprise, servie sur toutes les pages : elle donne à Google
+ * l'identité, l'adresse et les horaires de l'agence, ce qui alimente le
+ * référencement local et le panneau de connaissance. Les pages qui portent
+ * déjà un balisage FAQPage ou Article s'y ajoutent sans conflit.
+ */
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  name: "CTA Voyages",
+  description:
+    "Agence de voyages sur mesure à Toulouse : séjours, circuits, croisières, glamping et catalogue sportif.",
+  url: "https://cta-voyages.com",
+  logo: "https://cta-voyages.com/assets/images/Logo%20CTA%20Voyages.png",
+  image: "https://cta-voyages.com/assets/images/iStock-2207441086.jpg",
+  telephone: "+33534391391",
+  email: "voyages@cta-events.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "99 rue de Fenouillet",
+    postalCode: "31200",
+    addressLocality: "Toulouse",
+    addressCountry: "FR",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+      opens: "09:00",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Friday",
+      opens: "09:00",
+      closes: "17:00",
+    },
+  ],
+  sameAs: ["https://www.linkedin.com/company/cta-voyages"],
 };
 
 export default function RootLayout({
@@ -90,6 +129,10 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-on-surface font-body-md">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <Header />
         {children}
         <Footer />

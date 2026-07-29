@@ -6,7 +6,7 @@ const voyageSoloFemmeDestinations: BlogArticle = {
   date: "mars 2025",
   readingTime: "5 min",
   meta: {
-    title: "Voyage solo au féminin : où partir ? | CTA Voyages",
+    title: "Voyage solo au féminin : où partir ?",
     description:
       "Islande, Japon, Portugal, Costa Rica : le guide CTA Voyages des meilleures destinations pour un voyage solo au féminin, en toute sécurité et sérénité.",
   },

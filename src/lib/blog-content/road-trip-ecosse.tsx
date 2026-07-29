@@ -6,7 +6,7 @@ const roadTripEcosse: BlogArticle = {
   date: "mai 2025",
   readingTime: "6 min",
   meta: {
-    title: "Road trip en Écosse : itinéraire et conseils | CTA Voyages",
+    title: "Road trip en Écosse : itinéraire et conseils",
     description:
       "Édimbourg, Highlands, île de Skye et North Coast 500 : l'itinéraire complet de CTA Voyages pour un road trip inoubliable en Écosse, étape par étape.",
   },

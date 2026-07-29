@@ -8,9 +8,9 @@ const vsmLuxe: ThemeContent = {
   parentLabel: "Voyage sur mesure",
   parentHref: "/voyage-sur-mesure",
   meta: {
-    title: "Voyage de luxe sur mesure — Palaces & expériences d'exception | CTA Voyages",
+    title: "Voyage de luxe sur mesure — Palaces & expériences d'exception",
     description:
-      "Composez votre voyage de luxe avec CTA Voyages : palaces et adresses d'exception, services privés, expériences exclusives et attentions sur mesure. Conseiller dédié, devis gratuit.",
+      "Composez votre voyage de luxe avec CTA Voyages : palaces et adresses d'exception, services privés, expériences exclusives et attentions sur mesure.",
   },
   hero: {
     image:
@@ -19,7 +19,7 @@ const vsmLuxe: ThemeContent = {
     label: "Voyage de luxe",
     h1: "Voyage de luxe : l'excellence à chaque instant",
     description:
-      "Palaces et adresses d'exception, majordome dédié, transferts privés et expériences réservées à quelques privilégiés. Nous orchestrons un séjour où chaque détail est anticipé pour vous.",
+      "Palaces et adresses d'exception, majordome dédié, transferts privés et expériences réservées à quelques privilégiés.",
     primaryCtaLabel: "Composer mon voyage d'exception",
     secondaryCtaLabel: "Pourquoi un voyage de luxe ?",
   },

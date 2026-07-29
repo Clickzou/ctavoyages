@@ -6,7 +6,7 @@ const partirEnAmoureuxWeekEnd: BlogArticle = {
   date: "avril 2025",
   readingTime: "8 min",
   meta: {
-    title: "Partir en amoureux : nos plus beaux week-ends | CTA Voyages",
+    title: "Partir en amoureux : nos plus beaux week-ends",
     description:
       "Venise, Lisbonne, Marrakech ou un chalet douillet : nos idées de week-ends en amoureux et nos conseils pour une parenthèse romantique réussie à deux.",
   },

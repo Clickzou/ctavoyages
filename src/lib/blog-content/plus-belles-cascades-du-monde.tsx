@@ -6,7 +6,7 @@ const plusBellesCascadesDuMonde: BlogArticle = {
   date: "février 2025",
   readingTime: "7 min",
   meta: {
-    title: "Les plus belles cascades du monde | CTA Voyages",
+    title: "Les plus belles cascades du monde",
     description:
       "Iguazú, Victoria, Niagara, Angel Falls : le guide CTA Voyages des plus belles cascades du monde et conseils pour les découvrir au meilleur moment.",
   },

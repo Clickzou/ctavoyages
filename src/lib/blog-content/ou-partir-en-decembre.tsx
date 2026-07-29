@@ -6,7 +6,7 @@ const ouPartirEnDecembre: BlogArticle = {
   date: "juin 2026",
   readingTime: "8 min",
   meta: {
-    title: "Où partir en décembre ? Fêtes et soleil | CTA Voyages",
+    title: "Où partir en décembre ? Fêtes et soleil",
     description:
       "Soleil garanti, marchés de Noël féériques ou réveillon les pieds dans le sable : nos meilleures idées de destinations pour partir en décembre selon vos envies.",
   },

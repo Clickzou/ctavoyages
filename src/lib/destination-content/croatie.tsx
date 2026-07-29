@@ -5,9 +5,9 @@ const croatie: DestinationContent = {
   slug: "croatie",
   meta: {
     title:
-      "Voyage en Croatie : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Croatie : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Croatie avec CTA Voyages. Dubrovnik, Split et le palais de Dioclétien, îles de Hvar et Brač, lacs de Plitvice, parc de Krka. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Croatie avec CTA Voyages. Dubrovnik, Split et le palais de Dioclétien, îles de Hvar et Brač, lacs de Plitvice, parc de Krka.",
   },
   hero: {
     image:

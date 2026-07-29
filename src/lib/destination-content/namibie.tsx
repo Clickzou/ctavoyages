@@ -5,9 +5,9 @@ const namibie: DestinationContent = {
   slug: "namibie",
   meta: {
     title:
-      "Voyage en Namibie : circuit, safari et voyage sur mesure | CTA Voyages",
+      "Voyage en Namibie : circuit, safari et voyage sur mesure",
     description:
-      "Organisez votre voyage en Namibie avec CTA Voyages. Dunes de Sossusvlei, désert du Namib, safari à Etosha, canyon de la Fish River, voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Namibie avec CTA Voyages. Dunes de Sossusvlei, désert du Namib, safari à Etosha, canyon de la Fish River, voyage sur mesure.",
   },
   hero: {
     image:

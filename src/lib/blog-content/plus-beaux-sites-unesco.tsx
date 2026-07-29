@@ -6,7 +6,7 @@ const plusBeauxSitesUnesco: BlogArticle = {
   date: "juin 2026",
   readingTime: "8 min",
   meta: {
-    title: "Les plus beaux sites classés UNESCO | CTA Voyages",
+    title: "Les plus beaux sites classés UNESCO",
     description:
       "Machu Picchu, Petra, Angkor, taj Mahal : le guide CTA Voyages des plus beaux sites classés au patrimoine mondial de l'UNESCO à découvrir au moins une fois.",
   },

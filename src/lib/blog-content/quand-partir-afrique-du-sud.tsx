@@ -6,7 +6,7 @@ const quandPartirAfriqueDuSud: BlogArticle = {
   date: "février 2025",
   readingTime: "8 min",
   meta: {
-    title: "Quand partir en Afrique du Sud ? Le guide | CTA Voyages",
+    title: "Quand partir en Afrique du Sud ? Le guide",
     description:
       "Safari, baleines, Le Cap et Route des Jardins : le guide de CTA Voyages pour choisir le meilleur moment selon les régions de votre voyage en Afrique du Sud.",
   },

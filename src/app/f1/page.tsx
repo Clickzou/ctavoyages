@@ -6,9 +6,9 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/f1" },
-  title: "Séjour Formule 1 - CTA Voyages",
+  title: "Séjour Formule 1",
   description:
-    "Vivez les Grands Prix de Formule 1 avec CTA Voyages. Monaco, Barcelone, Monza, Spa, Abu Dhabi, Madrid : billets officiels, hôtel et transport inclus. Devis gratuit.",
+    "Vivez les Grands Prix de Formule 1 avec CTA Voyages. Monaco, Barcelone, Monza, Spa, Abu Dhabi, Madrid : billets officiels, hôtel et transport inclus.",
 };
 
 const faqJsonLd = {
@@ -506,9 +506,9 @@ export default function F1Page() {
                     forum
                   </span>
                 </div>
-                <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                   Choisissez votre Grand Prix
-                </h4>
+                </h3>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                   Dites-nous quel circuit, quelles dates et quel niveau de
                   confort vous intéressent. Nos conseillers trouvent la meilleure
@@ -523,9 +523,9 @@ export default function F1Page() {
                     confirmation_number
                   </span>
                 </div>
-                <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                   Nous composons votre pack
-                </h4>
+                </h3>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                   Billets officiels, hôtel, transferts et options VIP ou
                   excursions culturelles : tout est organisé.
@@ -539,9 +539,9 @@ export default function F1Page() {
                     sports_score
                   </span>
                 </div>
-                <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                   Prenez rendez-vous avec le premier virage
-                </h4>
+                </h3>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                   Avant, pendant et après la course, nous assurons une assistance
                   personnalisée pour une immersion totale.

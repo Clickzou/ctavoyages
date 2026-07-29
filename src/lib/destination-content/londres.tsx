@@ -5,9 +5,9 @@ const londres: DestinationContent = {
   slug: "londres",
   meta: {
     title:
-      "Voyage à Londres : séjour, week-end et city break sur mesure | CTA Voyages",
+      "Voyage à Londres : séjour, week-end et city break sur mesure",
     description:
-      "Organisez votre voyage à Londres avec CTA Voyages. Westminster et Big Ben, British Museum, Tower of London, Camden, musées de South Kensington, week-end ou séjour sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à Londres avec CTA Voyages. Westminster et Big Ben, British Museum, Tower of London, Camden, musées de South Kensington, week-end ou séjour sur mesure.",
   },
   hero: {
     image:

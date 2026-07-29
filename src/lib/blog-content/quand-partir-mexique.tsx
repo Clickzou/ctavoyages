@@ -6,7 +6,7 @@ const quandPartirMexique: BlogArticle = {
   date: "mars 2026",
   readingTime: "5 min",
   meta: {
-    title: "Quand partir au Mexique ? Saison sèche et pluies | CTA Voyages",
+    title: "Quand partir au Mexique ? Saison sèche et pluies",
     description:
       "Saison sèche, saison des pluies, plages des Caraïbes et sites mayas : le guide de CTA Voyages pour choisir la meilleure période et réussir votre voyage au Mexique.",
   },

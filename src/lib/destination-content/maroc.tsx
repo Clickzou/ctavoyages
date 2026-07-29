@@ -5,9 +5,9 @@ const maroc: DestinationContent = {
   slug: "maroc",
   meta: {
     title:
-      "Voyage au Maroc : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Maroc : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Maroc avec CTA Voyages. Médinas de Marrakech et Fès, route des kasbahs, désert de Merzouga, Chefchaouen la bleue, Essaouira. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Maroc avec CTA Voyages. Médinas de Marrakech et Fès, route des kasbahs, désert de Merzouga, Chefchaouen la bleue, Essaouira.",
   },
   hero: {
     image:

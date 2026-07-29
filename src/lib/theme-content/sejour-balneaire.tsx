@@ -9,9 +9,9 @@ const sejourBalneaire: ThemeContent = {
   parentLabel: "Séjours",
   parentHref: "/sejours",
   meta: {
-    title: "Séjour balnéaire sur mesure — Plage, resort & farniente | CTA Voyages",
+    title: "Séjour balnéaire sur mesure — Plage, resort & farniente",
     description:
-      "Organisez votre séjour balnéaire avec CTA Voyages : resorts les pieds dans l'eau, formules tout compris, plages de rêve et activités nautiques. Conseiller dédié, devis gratuit.",
+      "Organisez votre séjour balnéaire avec CTA Voyages : resorts les pieds dans l'eau, formules tout compris, plages de rêve et activités nautiques.",
   },
   hero: {
     image:

@@ -8,7 +8,7 @@ const croisiereFluviale: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière fluviale sur mesure — Au fil de l'eau au cœur des terres | CTA Voyages",
+    title: "Croisière fluviale sur mesure — Au fil de l'eau au cœur des terres",
     description:
       "Organisez votre croisière fluviale avec CTA Voyages : Nil, Danube, Rhin, Douro, Mékong ou Seine. Bateau à taille humaine, escales culturelles quotidiennes, conseiller dédié, devis gratuit.",
   },
@@ -19,7 +19,7 @@ const croisiereFluviale: ThemeContent = {
     label: "Croisière fluviale",
     h1: "Croisière fluviale : voguer au fil de l'eau, au cœur des terres",
     description:
-      "Le confort d'un bateau à taille humaine, une nouvelle escale chaque jour et le paysage qui défile en douceur depuis votre cabine. Nous composons la croisière fluviale qui vous ressemble, du Nil au Mékong.",
+      "Le confort d'un bateau à taille humaine, une nouvelle escale chaque jour et le paysage qui défile en douceur depuis votre cabine.",
     primaryCtaLabel: "Composer ma croisière fluviale",
     secondaryCtaLabel: "Pourquoi la croisière fluviale ?",
   },

@@ -14,7 +14,7 @@ const guatemala: DestinationContent = {
   slug: "guatemala",
   meta: {
     title:
-      "Voyage au Guatemala : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Guatemala : séjour, circuit et voyage sur mesure",
     description:
       "Organisez votre voyage au Guatemala avec CTA Voyages. Cité maya de Tikal, lac Atitlán et ses volcans, Antigua coloniale, marché de Chichicastenango et ascension de l'Acatenango. Circuit ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },
@@ -25,7 +25,7 @@ const guatemala: DestinationContent = {
     label: "Destination Guatemala",
     h1: "Voyage au Guatemala : volcans, lacs et cité maya de Tikal",
     description:
-      "Circuit volcans et cités mayas, immersion dans les Hautes Terres, combiné avec le Mexique ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Circuit volcans et cités mayas, immersion dans les Hautes Terres, combiné avec le Mexique ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

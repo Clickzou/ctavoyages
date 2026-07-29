@@ -167,21 +167,21 @@ export default function Home() {
                 <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
                   <span className="material-symbols-outlined text-xl sm:text-2xl">forum</span>
                 </div>
-                <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">Écoute &amp; dialogue</h4>
+                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">Écoute &amp; dialogue</h3>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">Nous prenons le temps de comprendre vos envies, vos passions et vos impératifs pour créer un voyage qui vous ressemble vraiment.</p>
               </div>
               <div data-reveal="fade-up" data-reveal-delay={140} className="unified-card expertise-card">
                 <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
                   <span className="material-symbols-outlined text-xl sm:text-2xl">map</span>
                 </div>
-                <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">Conception unique</h4>
+                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">Conception unique</h3>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">Chaque détail est minutieusement étudié par nos conseillers experts pour garantir une fluidité parfaite et des moments d&apos;exception.</p>
               </div>
               <div data-reveal="fade-up" data-reveal-delay={280} className="unified-card expertise-card sm:col-span-2 md:col-span-1">
                 <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
                   <span className="material-symbols-outlined text-xl sm:text-2xl">verified_user</span>
                 </div>
-                <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">Accompagnement</h4>
+                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">Accompagnement</h3>
                 <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">De la genèse de votre projet jusqu&apos;à votre retour, que ce soit avant, pendant ou après votre voyage, nous assurons une assistance personnalisée.</p>
               </div>
             </div>

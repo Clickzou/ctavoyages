@@ -6,7 +6,7 @@ const slowTravelGuide: BlogArticle = {
   date: "novembre 2025",
   readingTime: "5 min",
   meta: {
-    title: "Le slow travel : voyager autrement | CTA Voyages",
+    title: "Le slow travel : voyager autrement",
     description:
       "Prendre son temps, vivre local, voyager responsable : le guide CTA Voyages du slow travel pour des séjours plus profonds, plus authentiques et plus mémorables.",
   },

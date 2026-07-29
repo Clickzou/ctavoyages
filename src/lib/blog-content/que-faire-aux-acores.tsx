@@ -6,7 +6,7 @@ const queFaireAuxAcores: BlogArticle = {
   date: "juin 2026",
   readingTime: "7 min",
   meta: {
-    title: "Que faire aux Açores ? L'archipel vert | CTA Voyages",
+    title: "Que faire aux Açores ? L'archipel vert",
     description:
       "Cratères, lacs, sources chaudes, baleines et randonnées : les incontournables des Açores et nos conseils CTA Voyages pour explorer l'archipel vert du Portugal.",
   },

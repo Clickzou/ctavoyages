@@ -155,7 +155,7 @@ export default function AlsoCarousel() {
               </div>
             </div>
             <div className="p-4">
-              <h4 className="font-h3 text-[18px] font-bold mb-1">{c.title}</h4>
+              <h3 className="font-h3 text-[18px] font-bold mb-1">{c.title}</h3>
               <p className="text-[13px] text-on-surface-variant mb-3">{c.desc}</p>
               <span
                 className={

@@ -6,7 +6,7 @@ const ilesParadisiaquesPasCher: BlogArticle = {
   date: "janvier 2025",
   readingTime: "6 min",
   meta: {
-    title: "Îles paradisiaques pas chères | CTA Voyages",
+    title: "Îles paradisiaques pas chères",
     description:
       "Cap-Vert, Zanzibar, Philippines, Sri Lanka : le guide CTA Voyages des plus belles îles paradisiaques à petit prix pour s'offrir le rêve sans se ruiner.",
   },

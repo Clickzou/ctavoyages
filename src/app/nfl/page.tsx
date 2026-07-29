@@ -7,7 +7,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/nfl" },
-  title: "Séjour NFL Madrid Game - CTA Voyages",
+  title: "Séjour NFL Madrid Game",
   description:
     "Vivez le NFL Madrid Game 2026 avec CTA Voyages. Atlanta Falcons vs Cincinnati Bengals au Santiago Bernabéu le 8 novembre 2026 : billets officiels, hôtel et options inclus. Devis gratuit.",
 };
@@ -408,9 +408,9 @@ export default function NflPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous nous contactez
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Indiquez-nous vos dates, le nombre de personnes et vos
                     préférences. Nos conseillers composent votre pack sur mesure.
@@ -424,9 +424,9 @@ export default function NflPage() {
                       confirmation_number
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous gérons tout
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel, vol, transferts et options
                     culturelles : nous orchestrons chaque détail pour un week-end
@@ -441,9 +441,9 @@ export default function NflPage() {
                       sports_score
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous vibrez au Bernabéu
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après le match, nous assurons une
                     assistance locale francophone pour que votre expérience soit

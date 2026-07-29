@@ -14,9 +14,9 @@ const capVert: DestinationContent = {
   slug: "cap-vert",
   meta: {
     title:
-      "Voyage au Cap-Vert : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Cap-Vert : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Cap-Vert avec CTA Voyages. Plages de Sal et Boa Vista, randonnées à Santo Antão, volcan de Fogo, Mindelo et musique cap-verdienne. Séjour balnéaire, multi-îles ou voyage sur mesure. Devis gratuit, contact sous 48h.",
+      "Organisez votre voyage au Cap-Vert avec CTA Voyages. Plages de Sal et Boa Vista, randonnées à Santo Antão, volcan de Fogo, Mindelo et musique cap-verdienne.",
   },
   hero: {
     image: "/generated/cap-vert.jpg",
@@ -25,7 +25,7 @@ const capVert: DestinationContent = {
     label: "Destination Cap-Vert",
     h1: "Voyage au Cap-Vert : le soleil toute l'année et la morabeza",
     description:
-      "Séjour balnéaire à Sal ou Boa Vista, randonnées à Santo Antão, itinéraire multi-îles ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Séjour balnéaire à Sal ou Boa Vista, randonnées à Santo Antão, itinéraire multi-îles ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

@@ -8,7 +8,7 @@ const vsmFamille: ThemeContent = {
   parentLabel: "Voyage sur mesure",
   parentHref: "/voyage-sur-mesure",
   meta: {
-    title: "Voyage en famille sur mesure — Itinéraire adapté aux enfants | CTA Voyages",
+    title: "Voyage en famille sur mesure — Itinéraire adapté aux enfants",
     description:
       "Organisez votre voyage en famille avec CTA Voyages : itinéraire 100% personnalisé selon l'âge des enfants, rythme adapté, activités pour tous et organisation clé en main. Conseiller dédié, devis gratuit.",
   },
@@ -19,7 +19,7 @@ const vsmFamille: ThemeContent = {
     label: "Voyage en famille",
     h1: "Voyage en famille : un itinéraire pensé pour chacun",
     description:
-      "Des plus petits aux ados, nous composons un voyage où chaque âge trouve son bonheur : rythme adapté, activités partagées et logistique entièrement gérée. À vous les souvenirs, à nous l'organisation.",
+      "Des plus petits aux ados, nous composons un voyage où chaque âge trouve son bonheur : rythme adapté, activités partagées et logistique entièrement gérée.",
     primaryCtaLabel: "Composer notre voyage en famille",
     secondaryCtaLabel: "Pourquoi partir en famille avec nous ?",
   },

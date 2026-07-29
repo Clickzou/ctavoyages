@@ -6,7 +6,7 @@ const ouPartirEnJuin: BlogArticle = {
   date: "décembre 2025",
   readingTime: "7 min",
   meta: {
-    title: "Où partir en juin ? Avant la haute saison | CTA Voyages",
+    title: "Où partir en juin ? Avant la haute saison",
     description:
       "Soleil estival, mer chaude et prix encore doux : nos meilleures destinations pour voyager en juin et profiter du beau temps avant la foule de l'été.",
   },

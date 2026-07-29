@@ -5,9 +5,9 @@ const sriLanka: DestinationContent = {
   slug: "sri-lanka",
   meta: {
     title:
-      "Voyage au Sri Lanka : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Sri Lanka : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Sri Lanka avec CTA Voyages. Rocher de Sigiriya, temple de la Dent à Kandy, train des plantations de thé, safari à Yala, plages du sud. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Sri Lanka avec CTA Voyages. Rocher de Sigiriya, temple de la Dent à Kandy, train des plantations de thé, safari à Yala, plages du sud.",
   },
   hero: {
     image:

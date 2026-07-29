@@ -6,7 +6,7 @@ const plusBellesIlesGrecques: BlogArticle = {
   date: "avril 2026",
   readingTime: "7 min",
   meta: {
-    title: "Les plus belles îles grecques | CTA Voyages",
+    title: "Les plus belles îles grecques",
     description:
       "Santorin, Mykonos, Naxos, Milos : découvrez les plus belles îles grecques et nos conseils pour choisir la vôtre selon vos envies, avec CTA Voyages.",
   },

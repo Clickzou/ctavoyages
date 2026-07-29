@@ -14,9 +14,9 @@ const paysBas: DestinationContent = {
   slug: "pays-bas",
   meta: {
     title:
-      "Voyage aux Pays-Bas : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage aux Pays-Bas : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage aux Pays-Bas avec CTA Voyages. Canaux d'Amsterdam, champs de tulipes et Keukenhof, moulins de Kinderdijk, Rotterdam et Delft. Week-end, autotour ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage aux Pays-Bas avec CTA Voyages. Canaux d'Amsterdam, champs de tulipes et Keukenhof, moulins de Kinderdijk, Rotterdam et Delft.",
   },
   hero: {
     image: "/generated/pays-bas.jpg",

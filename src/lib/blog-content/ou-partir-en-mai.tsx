@@ -6,7 +6,7 @@ const ouPartirEnMai: BlogArticle = {
   date: "novembre 2025",
   readingTime: "6 min",
   meta: {
-    title: "Où partir en mai ? Climat doux et nature | CTA Voyages",
+    title: "Où partir en mai ? Climat doux et nature",
     description:
       "Méditerranée fleurie, premières baignades et nature luxuriante : nos meilleures destinations pour voyager en mai avec une météo idéale, loin de la foule.",
   },

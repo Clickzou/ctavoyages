@@ -6,9 +6,9 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/motogp" },
-  title: "Séjour Moto GP - CTA Voyages",
+  title: "Séjour Moto GP",
   description:
-    "Vivez les plus grands Grands Prix Moto GP avec CTA Voyages. Catalogne, Mugello, Valence : billets officiels, hôtel, options VIP et expériences sur mesure. Devis gratuit.",
+    "Vivez les plus grands Grands Prix Moto GP avec CTA Voyages. Catalogne, Mugello, Valence : billets officiels, hôtel, options VIP et expériences sur mesure.",
 };
 
 const faqJsonLd = {
@@ -377,9 +377,9 @@ export default function MotoGpPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Choisissez votre Grand Prix
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Dites-nous quelle course, quelles dates et quelles options vous
                     intéressent. Nos conseillers trouvent la meilleure formule.
@@ -393,9 +393,9 @@ export default function MotoGpPage() {
                       confirmation_number
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous composons votre pack
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Billets officiels, hôtel, transferts et options VIP Village —
                     tout est organisé pour votre confort.
@@ -409,9 +409,9 @@ export default function MotoGpPage() {
                       sports_score
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vivez le Moto GP
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après la course, nous assurons une assistance
                     personnalisée pour une expérience mémorable.

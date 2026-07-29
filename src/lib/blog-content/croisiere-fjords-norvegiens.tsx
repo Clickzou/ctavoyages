@@ -6,7 +6,7 @@ const croisiereFjordsNorvegiens: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Croisière des fjords norvégiens : le guide | CTA Voyages",
+    title: "Croisière des fjords norvégiens : le guide",
     description:
       "Bergen, le Geirangerfjord, le train de Flåm, le cap Nord et les aurores boréales : le guide CTA Voyages pour réussir votre croisière en Norvège.",
   },

@@ -5,9 +5,9 @@ const zanzibar: DestinationContent = {
   slug: "zanzibar",
   meta: {
     title:
-      "Voyage à Zanzibar : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage à Zanzibar : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage à Zanzibar avec CTA Voyages. Stone Town classée UNESCO, plages de Nungwi et Kendwa, île aux épices, banc de sable de Nakupenda, snorkeling à Mnemba. Séjour, circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à Zanzibar avec CTA Voyages. Stone Town classée UNESCO, plages de Nungwi et Kendwa, île aux épices, banc de sable de Nakupenda, snorkeling à Mnemba. Séjour, circuit ou voyage sur mesure.",
   },
   hero: {
     image:
@@ -17,7 +17,7 @@ const zanzibar: DestinationContent = {
     label: "Destination Zanzibar",
     h1: "Voyage à Zanzibar : l'île aux épices et ses plages turquoise",
     description:
-      "Séjour balnéaire de rêve, escapade culturelle à Stone Town, immersion nature ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Séjour balnéaire de rêve, escapade culturelle à Stone Town, immersion nature ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

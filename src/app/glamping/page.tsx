@@ -10,9 +10,9 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/glamping" },
-  title: "Glamping & hébergements insolites - CTA Voyages",
+  title: "Glamping & hébergements insolites",
   description:
-    "Découvrez nos séjours glamping et hébergements insolites avec CTA Voyages. Tentes lodges, cabanes, igloos, tree houses : vivez la nature sans sacrifier le confort. Devis gratuit, conseiller dédié.",
+    "Découvrez nos séjours glamping et hébergements insolites avec CTA Voyages. Tentes lodges, cabanes, igloos, tree houses : vivez la nature sans sacrifier le confort.",
 };
 
 const faqJsonLd = {
@@ -353,9 +353,9 @@ export default function GlampingPage() {
                       forum
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous nous parlez de vos envies
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Votre conseiller prend le temps de comprendre votre style de
                     voyage, votre destination rêvée et le niveau de confort
@@ -370,9 +370,9 @@ export default function GlampingPage() {
                       forest
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous sélectionnons l&apos;hébergement idéal
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Parmi notre sélection d&apos;hébergements insolites, nous vous
                     proposons celui qui correspond le mieux à vos attentes et votre
@@ -387,9 +387,9 @@ export default function GlampingPage() {
                       verified_user
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous vivez une expérience inoubliable
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après votre séjour, nous assurons une
                     assistance personnalisée pour que chaque moment soit parfait.

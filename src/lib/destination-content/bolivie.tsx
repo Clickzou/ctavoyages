@@ -14,9 +14,9 @@ const bolivie: DestinationContent = {
   slug: "bolivie",
   meta: {
     title:
-      "Voyage en Bolivie : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Bolivie : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Bolivie avec CTA Voyages. Salar d'Uyuni et son effet miroir, lagunes du Sud Lípez, lac Titicaca et Isla del Sol, La Paz, Potosí et Sucre. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Bolivie avec CTA Voyages. Salar d'Uyuni et son effet miroir, lagunes du Sud Lípez, lac Titicaca et Isla del Sol, La Paz, Potosí et Sucre. Circuit ou voyage sur mesure.",
   },
   hero: {
     image: "/generated/bolivie.jpg",
@@ -25,7 +25,7 @@ const bolivie: DestinationContent = {
     label: "Destination Bolivie",
     h1: "Voyage en Bolivie : salar d'Uyuni, Andes et lagunes colorées",
     description:
-      "Traversée du salar d'Uyuni, découverte du lac Titicaca, combiné andin avec le Pérou ou voyage entièrement sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+      "Traversée du salar d'Uyuni, découverte du lac Titicaca, combiné andin avec le Pérou ou voyage entièrement sur mesure.",
     primaryCtaLabel: "Demander un devis gratuit",
     secondaryCtaLabel: "Des lieux uniques",
   },

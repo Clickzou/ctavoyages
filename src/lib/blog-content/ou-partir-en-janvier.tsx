@@ -6,7 +6,7 @@ const ouPartirEnJanvier: BlogArticle = {
   date: "juillet 2025",
   readingTime: "6 min",
   meta: {
-    title: "Où partir en janvier ? Soleil et bons plans | CTA Voyages",
+    title: "Où partir en janvier ? Soleil et bons plans",
     description:
       "Soleil tropical, neige ou bons plans hors saison : les meilleures destinations où partir en janvier, sélectionnées par les conseillers de CTA Voyages.",
   },

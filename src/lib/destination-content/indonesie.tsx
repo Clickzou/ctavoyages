@@ -14,9 +14,9 @@ const indonesie: DestinationContent = {
   slug: "indonesie",
   meta: {
     title:
-      "Voyage en Indonésie : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Indonésie : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Indonésie avec CTA Voyages. Rizières de Bali, temple de Borobudur, volcans Bromo et Ijen, dragons de Komodo et plongée à Raja Ampat. Circuit, séjour ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Indonésie avec CTA Voyages. Rizières de Bali, temple de Borobudur, volcans Bromo et Ijen, dragons de Komodo et plongée à Raja Ampat.",
   },
   hero: {
     image: "/generated/indonesie.jpg",

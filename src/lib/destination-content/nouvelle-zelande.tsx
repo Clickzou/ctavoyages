@@ -5,9 +5,9 @@ const nouvelleZelande: DestinationContent = {
   slug: "nouvelle-zelande",
   meta: {
     title:
-      "Voyage en Nouvelle-Zélande : circuit, autotour et voyage sur mesure | CTA Voyages",
+      "Voyage en Nouvelle-Zélande : circuit, autotour et voyage sur mesure",
     description:
-      "Organisez votre voyage en Nouvelle-Zélande avec CTA Voyages. Fjords du Milford Sound, geysers de Rotorua, Hobbiton, aventure à Queenstown, glaciers de Franz Josef. Circuit, autotour ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Nouvelle-Zélande avec CTA Voyages. Fjords du Milford Sound, geysers de Rotorua, Hobbiton, aventure à Queenstown, glaciers de Franz Josef. Circuit, autotour ou voyage sur mesure.",
   },
   hero: {
     image:

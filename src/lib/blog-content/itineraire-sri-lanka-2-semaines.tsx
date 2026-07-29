@@ -6,7 +6,7 @@ const itineraireSriLanka2Semaines: BlogArticle = {
   date: "mars 2026",
   readingTime: "5 min",
   meta: {
-    title: "Le Sri Lanka en 2 semaines : itinéraire | CTA Voyages",
+    title: "Le Sri Lanka en 2 semaines : itinéraire",
     description:
       "Triangle culturel, train bleu des hauts plateaux, safaris et plages du sud : l'itinéraire idéal de CTA Voyages pour découvrir le Sri Lanka en 14 jours.",
   },

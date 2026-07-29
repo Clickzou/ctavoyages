@@ -6,7 +6,7 @@ const cubaOuRepubliqueDominicaine: BlogArticle = {
   date: "juin 2025",
   readingTime: "8 min",
   meta: {
-    title: "Cuba ou République dominicaine ? | CTA Voyages",
+    title: "Cuba ou République dominicaine ?",
     description:
       "Plages, culture, budget, ambiance et formules : le comparatif de CTA Voyages pour choisir entre Cuba et la République dominicaine selon votre profil.",
   },

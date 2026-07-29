@@ -14,7 +14,7 @@ const argentine: DestinationContent = {
   slug: "argentine",
   meta: {
     title:
-      "Voyage en Argentine : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Argentine : séjour, circuit et voyage sur mesure",
     description:
       "Organisez votre voyage en Argentine avec CTA Voyages. Buenos Aires et le tango, chutes d'Iguazú, glacier Perito Moreno et Patagonie, vignobles de Mendoza et Nord-Ouest andin. Circuit ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

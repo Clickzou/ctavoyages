@@ -6,7 +6,7 @@ const creteOuSantorin: BlogArticle = {
   date: "mars 2025",
   readingTime: "6 min",
   meta: {
-    title: "Crète ou Santorin : laquelle choisir ? | CTA Voyages",
+    title: "Crète ou Santorin : laquelle choisir ?",
     description:
       "Plages, villages, budget, ambiance et durée idéale : le comparatif de CTA Voyages pour choisir entre la Crète et Santorin selon votre style de voyage.",
   },

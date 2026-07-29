@@ -462,7 +462,7 @@ export default function DevisForm() {
         {/* SIDEBAR STEPPER */}
         <div className="lg:col-span-4 bg-[#004191] p-6 sm:p-8 lg:p-10 text-white flex flex-col justify-between">
           <div>
-            <h3 className="font-h3 text-[22px] sm:text-[26px] font-bold mb-6 sm:mb-8">Votre demande</h3>
+            <h2 className="font-h3 text-[22px] sm:text-[26px] font-bold mb-6 sm:mb-8">Votre demande</h2>
             <div className="space-y-5 sm:space-y-6" id="stepper">
               <div
                 className={`${stepClass(1)} flex items-center gap-3 sm:gap-4`}

@@ -6,7 +6,7 @@ const quandPartirJordanie: BlogArticle = {
   date: "juin 2025",
   readingTime: "8 min",
   meta: {
-    title: "Quand partir en Jordanie ? Climat & désert | CTA Voyages",
+    title: "Quand partir en Jordanie ? Climat & désert",
     description:
       "Printemps, automne, chaleur du désert et fraîcheur de Petra : le guide complet de CTA Voyages pour choisir la meilleure période pour votre voyage en Jordanie.",
   },

@@ -6,7 +6,7 @@ const plusBeauxRoadTripsDuMonde: BlogArticle = {
   date: "février 2026",
   readingTime: "8 min",
   meta: {
-    title: "Les plus beaux road trips du monde | CTA Voyages",
+    title: "Les plus beaux road trips du monde",
     description:
       "Routes côtières, déserts, fjords et montagnes : découvrez les plus beaux road trips du monde et nos conseils d'itinéraires avec CTA Voyages.",
   },

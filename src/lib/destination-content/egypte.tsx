@@ -5,9 +5,9 @@ const egypte: DestinationContent = {
   slug: "egypte",
   meta: {
     title:
-      "Voyage en Égypte : séjour, circuit et croisière sur le Nil sur mesure | CTA Voyages",
+      "Voyage en Égypte : séjour, circuit et croisière sur le Nil sur mesure",
     description:
-      "Organisez votre voyage en Égypte avec CTA Voyages. Pyramides de Gizeh, temples de Louxor et Karnak, croisière sur le Nil, Abou Simbel. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Égypte avec CTA Voyages. Pyramides de Gizeh, temples de Louxor et Karnak, croisière sur le Nil, Abou Simbel.",
   },
   hero: {
     image:

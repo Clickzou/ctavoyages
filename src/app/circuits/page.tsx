@@ -10,7 +10,7 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/circuits" },
-  title: "Nos circuits - CTA Voyages",
+  title: "Nos circuits",
   description:
     "Découvrez nos circuits individuels, accompagnés ou en petit groupe avec CTA Voyages. Itinéraires organisés, conseiller dédié, devis gratuit et accompagnement personnalisé.",
 };
@@ -339,9 +339,9 @@ export default function CircuitsPage() {
                       travel_explore
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous nous expliquez votre projet
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Votre conseiller échange avec vous pour définir les étapes, le
                     rythme, la durée et le niveau de confort souhaité.
@@ -355,9 +355,9 @@ export default function CircuitsPage() {
                       route
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Nous construisons l&apos;itinéraire
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Étapes, transferts, visites, hébergements, temps libres : nous
                     orchestrons chaque séquence pour un voyage fluide.
@@ -371,9 +371,9 @@ export default function CircuitsPage() {
                       verified_user
                     </span>
                   </div>
-                  <h4 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
+                  <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
                     Vous voyagez sereinement
-                  </h4>
+                  </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
                     Avant, pendant et après votre circuit, nous assurons une
                     assistance personnalisée pour vous accompagner à chaque étape.

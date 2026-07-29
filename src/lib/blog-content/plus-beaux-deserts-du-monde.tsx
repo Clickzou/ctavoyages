@@ -6,7 +6,7 @@ const plusBeauxDesertsDuMonde: BlogArticle = {
   date: "décembre 2025",
   readingTime: "7 min",
   meta: {
-    title: "Les plus beaux déserts du monde | CTA Voyages",
+    title: "Les plus beaux déserts du monde",
     description:
       "Dunes rouges, sel infini, oasis et ciels étoilés : découvrez notre sélection des plus beaux déserts du monde et nos conseils pour les explorer avec CTA Voyages.",
   },

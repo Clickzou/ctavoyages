@@ -6,7 +6,7 @@ const meilleuresApplisVoyage: BlogArticle = {
   date: "août 2025",
   readingTime: "7 min",
   meta: {
-    title: "Les meilleures applis pour voyager | CTA Voyages",
+    title: "Les meilleures applis pour voyager",
     description:
       "Vols, hébergements, cartes hors-ligne, traduction et budget : la sélection d'applis indispensables de CTA Voyages pour voyager l'esprit léger.",
   },

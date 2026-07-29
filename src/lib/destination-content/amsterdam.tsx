@@ -5,9 +5,9 @@ const amsterdam: DestinationContent = {
   slug: "amsterdam",
   meta: {
     title:
-      "Voyage à Amsterdam : séjour, week-end et voyage sur mesure | CTA Voyages",
+      "Voyage à Amsterdam : séjour, week-end et voyage sur mesure",
     description:
-      "Organisez votre voyage à Amsterdam avec CTA Voyages. Canaux classés à l'UNESCO, Rijksmuseum et musée Van Gogh, quartier du Jordaan, balades à vélo. Séjour, week-end ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à Amsterdam avec CTA Voyages. Canaux classés à l'UNESCO, Rijksmuseum et musée Van Gogh, quartier du Jordaan, balades à vélo.",
   },
   hero: {
     image:

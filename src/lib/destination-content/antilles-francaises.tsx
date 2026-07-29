@@ -14,7 +14,7 @@ const antillesFrancaises: DestinationContent = {
   slug: "antilles-francaises",
   meta: {
     title:
-      "Voyage aux Antilles françaises : Guadeloupe, Martinique et voyage sur mesure | CTA Voyages",
+      "Voyage aux Antilles françaises : Guadeloupe, Martinique et voyage sur mesure",
     description:
       "Organisez votre voyage en Guadeloupe et en Martinique avec CTA Voyages. Plages des Salines et de Grande Anse, Soufrière et chutes du Carbet, Les Saintes, route des rhums et réserve Cousteau. Séjour ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

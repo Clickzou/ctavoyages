@@ -18,7 +18,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const article = getArticle(slug);
-  if (!article) return { title: "Article introuvable | CTA Voyages" };
+  if (!article) return { title: "Article introuvable" };
   return {
     title: article.meta.title,
     description: article.meta.description,

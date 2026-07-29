@@ -4,7 +4,7 @@ import DevisForm from "@/components/demande-devis/DevisForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/demande-devis" },
-  title: "Demande de devis - CTA Voyages",
+  title: "Demande de devis",
   description:
     "Demandez un devis gratuit pour votre prochain voyage. Séjours, circuits, croisières, glamping ou voyages sur mesure : nos attachées clientèle vous recontactent sous 48h.",
 };
@@ -52,7 +52,7 @@ export default function DemandeDevisPage() {
                 verified_user
               </span>
               <div>
-                <h4 className="font-bold text-[14px] sm:text-[15px] mb-1">Expertise locale</h4>
+                <h3 className="font-bold text-[14px] sm:text-[15px] mb-1">Expertise locale</h3>
                 <p className="text-on-surface-variant text-[13px]">Des spécialistes passionnés par chaque destination.</p>
               </div>
             </div>
@@ -61,7 +61,7 @@ export default function DemandeDevisPage() {
                 thumb_up
               </span>
               <div>
-                <h4 className="font-bold text-[14px] sm:text-[15px] mb-1">Zéro frais de dossier</h4>
+                <h3 className="font-bold text-[14px] sm:text-[15px] mb-1">Zéro frais de dossier</h3>
                 <p className="text-on-surface-variant text-[13px]">Une tarification transparente et directe.</p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function DemandeDevisPage() {
                 timer
               </span>
               <div>
-                <h4 className="font-bold text-[14px] sm:text-[15px] mb-1">Contact sous 48h</h4>
+                <h3 className="font-bold text-[14px] sm:text-[15px] mb-1">Contact sous 48h</h3>
                 <p className="text-on-surface-variant text-[13px]">
                   Nos attachées clientèle prennent contact rapidement.
                 </p>

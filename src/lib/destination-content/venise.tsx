@@ -5,9 +5,9 @@ const venise: DestinationContent = {
   slug: "venise",
   meta: {
     title:
-      "Voyage à Venise : séjour, week-end et voyage sur mesure | CTA Voyages",
+      "Voyage à Venise : séjour, week-end et voyage sur mesure",
     description:
-      "Organisez votre voyage à Venise avec CTA Voyages. Place Saint-Marc, Grand Canal en gondole, pont du Rialto, îles de Murano et Burano, séjour romantique ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à Venise avec CTA Voyages. Place Saint-Marc, Grand Canal en gondole, pont du Rialto, îles de Murano et Burano, séjour romantique ou voyage sur mesure.",
   },
   hero: {
     image:

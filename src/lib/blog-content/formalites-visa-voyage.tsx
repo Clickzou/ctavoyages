@@ -6,7 +6,7 @@ const formalitesVisaVoyage: BlogArticle = {
   date: "mars 2025",
   readingTime: "6 min",
   meta: {
-    title: "Visa et formalités de voyage : le guide pratique | CTA Voyages",
+    title: "Visa et formalités de voyage : le guide pratique",
     description:
       "Passeport, visa, autorisations électroniques, vaccins : le guide pratique de CTA Voyages pour préparer toutes vos formalités de voyage sans mauvaise surprise.",
   },

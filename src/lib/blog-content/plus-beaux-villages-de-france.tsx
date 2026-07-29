@@ -6,7 +6,7 @@ const plusBeauxVillagesDeFrance: BlogArticle = {
   date: "octobre 2025",
   readingTime: "8 min",
   meta: {
-    title: "Les plus beaux villages de France | CTA Voyages",
+    title: "Les plus beaux villages de France",
     description:
       "Eze, Gordes, Rocamadour, Conques... CTA Voyages vous fait découvrir les plus beaux villages de France, perchés, médiévaux et pleins de charme.",
   },

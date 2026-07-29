@@ -9,9 +9,9 @@ const glampingCabaneArbres: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Cabane dans les arbres — Nuit perchée en forêt sur mesure | CTA Voyages",
+    title: "Cabane dans les arbres — Nuit perchée en forêt sur mesure",
     description:
-      "Dormez perché au cœur de la forêt avec CTA Voyages : cabanes dans les arbres tout confort, déconnexion totale et réveil dans la canopée. Conseiller dédié, devis gratuit.",
+      "Dormez perché au cœur de la forêt avec CTA Voyages : cabanes dans les arbres tout confort, déconnexion totale et réveil dans la canopée.",
   },
   hero: {
     image: "/cabanne-arbre.jpg",
@@ -19,7 +19,7 @@ const glampingCabaneArbres: ThemeContent = {
     label: "Cabane dans les arbres",
     h1: "Cabane dans les arbres : dormir perché au cœur de la forêt",
     description:
-      "Une nuit suspendue entre ciel et feuillage, le retour à l'enfance version luxe : terrasse panoramique, déconnexion totale et réveil au chant des oiseaux. Nous composons votre séjour perché sur mesure.",
+      "Une nuit suspendue entre ciel et feuillage, le retour à l'enfance version luxe : terrasse panoramique, déconnexion totale et réveil au chant des oiseaux.",
     primaryCtaLabel: "Composer mon séjour perché",
     secondaryCtaLabel: "Pourquoi une cabane dans les arbres ?",
   },

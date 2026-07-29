@@ -6,7 +6,7 @@ const baliOuThailande: BlogArticle = {
   date: "janvier 2025",
   readingTime: "5 min",
   meta: {
-    title: "Bali ou Thaïlande : que choisir ? | CTA Voyages",
+    title: "Bali ou Thaïlande : que choisir ?",
     description:
       "Plages, culture, budget, ambiance et durée idéale : le comparatif équilibré de CTA Voyages pour choisir entre Bali et la Thaïlande selon votre profil de voyageur.",
   },

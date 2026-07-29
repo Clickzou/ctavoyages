@@ -6,7 +6,7 @@ const eviterLeJetLag: BlogArticle = {
   date: "mai 2026",
   readingTime: "6 min",
   meta: {
-    title: "Éviter le jet lag : nos astuces | CTA Voyages",
+    title: "Éviter le jet lag : nos astuces",
     description:
       "Décalage horaire mal vécu ? Lumière, sommeil, hydratation, mélatonine : nos astuces concrètes pour limiter le jet lag avant, pendant et après le vol.",
   },

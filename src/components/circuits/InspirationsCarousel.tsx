@@ -152,9 +152,9 @@ export default function InspirationsCarousel() {
               </div>
             </div>
             <div className="p-4 sm:p-card_padding">
-              <h4 className="card-title font-h3 text-[20px] sm:text-[22px] font-bold mb-2">
+              <h3 className="card-title font-h3 text-[20px] sm:text-[22px] font-bold mb-2">
                 {c.title}
-              </h4>
+              </h3>
               <p className="card-desc font-body-md text-[14px] sm:text-[16px] text-on-surface-variant mb-4">
                 {c.desc}
               </p>

@@ -6,7 +6,7 @@ const vacancesAuSkiHorsAlpes: BlogArticle = {
   date: "juillet 2025",
   readingTime: "5 min",
   meta: {
-    title: "Vacances au ski hors des Alpes | CTA Voyages",
+    title: "Vacances au ski hors des Alpes",
     description:
       "Pyrénées, Dolomites, Canada ou Japon : nos destinations de ski hors des Alpes et nos conseils pour des vacances à la neige originales et plus abordables.",
   },

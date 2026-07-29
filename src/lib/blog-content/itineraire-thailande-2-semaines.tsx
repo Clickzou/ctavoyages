@@ -6,7 +6,7 @@ const itineraireThailande2Semaines: BlogArticle = {
   date: "mai 2026",
   readingTime: "6 min",
   meta: {
-    title: "La Thaïlande en 2 semaines : itinéraire | CTA Voyages",
+    title: "La Thaïlande en 2 semaines : itinéraire",
     description:
       "Bangkok, le nord à Chiang Mai et les îles du sud : l'itinéraire idéal de CTA Voyages pour découvrir le meilleur de la Thaïlande en 14 jours.",
   },

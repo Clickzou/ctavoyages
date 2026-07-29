@@ -6,7 +6,7 @@ const voyagePhotoPlusBeauxSpots: BlogArticle = {
   date: "janvier 2026",
   readingTime: "6 min",
   meta: {
-    title: "Voyage photo : les plus beaux spots du monde | CTA Voyages",
+    title: "Voyage photo : les plus beaux spots du monde",
     description:
       "Lumières dorées, paysages grandioses et scènes uniques : la sélection CTA Voyages des plus beaux spots photo du monde et nos conseils pour rapporter des clichés inoubliables.",
   },

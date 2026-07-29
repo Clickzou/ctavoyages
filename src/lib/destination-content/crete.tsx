@@ -5,9 +5,9 @@ const crete: DestinationContent = {
   slug: "crete",
   meta: {
     title:
-      "Voyage en Crète : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Crète : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Crète avec CTA Voyages. Port vénitien de La Canée, palais de Knossos, gorges de Samaria, lagons de Balos et Elafonissi, circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Crète avec CTA Voyages. Port vénitien de La Canée, palais de Knossos, gorges de Samaria, lagons de Balos et Elafonissi, circuit ou voyage sur mesure.",
   },
   hero: {
     image:

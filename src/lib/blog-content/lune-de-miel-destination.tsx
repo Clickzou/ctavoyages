@@ -9,7 +9,7 @@ const luneDeMielDestination: BlogArticle = {
   date: "Avril 2026",
   readingTime: "6 min",
   meta: {
-    title: "Lune de miel : choisir la destination idéale | CTA Voyages",
+    title: "Lune de miel : choisir la destination idéale",
     description:
       "Plage, aventure ou romantisme urbain : nos conseils pour choisir la destination de votre lune de miel selon vos envies, votre budget et la saison.",
   },

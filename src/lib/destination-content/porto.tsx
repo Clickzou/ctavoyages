@@ -5,9 +5,9 @@ const porto: DestinationContent = {
   slug: "porto",
   meta: {
     title:
-      "Voyage à Porto : séjour, circuit et city-break sur mesure | CTA Voyages",
+      "Voyage à Porto : séjour, circuit et city-break sur mesure",
     description:
-      "Organisez votre voyage à Porto avec CTA Voyages. Ribeira et pont Dom-Luís, caves de Porto à Vila Nova de Gaia, croisière sur le Douro, city-break ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à Porto avec CTA Voyages. Ribeira et pont Dom-Luís, caves de Porto à Vila Nova de Gaia, croisière sur le Douro, city-break ou voyage sur mesure.",
   },
   hero: {
     image:

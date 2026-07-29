@@ -6,7 +6,7 @@ const quandPartirLaReunion: BlogArticle = {
   date: "mars 2025",
   readingTime: "6 min",
   meta: {
-    title: "Quand partir à La Réunion ? Saisons & cyclones | CTA Voyages",
+    title: "Quand partir à La Réunion ? Saisons & cyclones",
     description:
       "Saison sèche, saison des pluies, risque cyclonique et meilleures périodes par région : le guide complet de CTA Voyages pour bien choisir quand partir à La Réunion.",
   },

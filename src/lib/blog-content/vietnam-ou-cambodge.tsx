@@ -6,7 +6,7 @@ const vietnamOuCambodge: BlogArticle = {
   date: "mai 2025",
   readingTime: "5 min",
   meta: {
-    title: "Vietnam ou Cambodge : que préférer ? | CTA Voyages",
+    title: "Vietnam ou Cambodge : que préférer ?",
     description:
       "Paysages, temples, budget, durée et ambiance : le comparatif de CTA Voyages pour choisir entre le Vietnam et le Cambodge, ou les combiner.",
   },

@@ -6,7 +6,7 @@ const visiterBarcelone3Jours: BlogArticle = {
   date: "décembre 2025",
   readingTime: "8 min",
   meta: {
-    title: "Visiter Barcelone en 3 jours : itinéraire | CTA Voyages",
+    title: "Visiter Barcelone en 3 jours : itinéraire",
     description:
       "Sagrada Familia, Park Güell, Ramblas, Gothique et plage : notre itinéraire de 3 jours à Barcelone, étape par étape, signé CTA Voyages.",
   },

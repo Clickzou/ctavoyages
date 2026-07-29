@@ -6,7 +6,7 @@ const quandPartirRepubliqueDominicaine: BlogArticle = {
   date: "mai 2026",
   readingTime: "6 min",
   meta: {
-    title: "Quand partir en République dominicaine ? | CTA Voyages",
+    title: "Quand partir en République dominicaine ?",
     description:
       "Saison sèche, saison des pluies, cyclones et baleines à bosse : le guide de CTA Voyages pour choisir le meilleur moment de votre voyage en République dominicaine.",
   },

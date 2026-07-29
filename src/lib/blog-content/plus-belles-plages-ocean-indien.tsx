@@ -9,7 +9,7 @@ const plusBellesPlagesOceanIndien: BlogArticle = {
   date: "Juin 2026",
   readingTime: "7 min",
   meta: {
-    title: "Les 10 plus belles plages de l'océan Indien | CTA Voyages",
+    title: "Les 10 plus belles plages de l'océan Indien",
     description:
       "Maurice, Seychelles, Zanzibar, Réunion, Maldives : notre sélection des 10 plus belles plages de l'océan Indien, spot par spot, par CTA Voyages.",
   },

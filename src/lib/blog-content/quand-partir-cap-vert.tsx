@@ -6,7 +6,7 @@ const quandPartirCapVert: BlogArticle = {
   date: "avril 2026",
   readingTime: "8 min",
   meta: {
-    title: "Quand partir au Cap-Vert ? Le guide complet | CTA Voyages",
+    title: "Quand partir au Cap-Vert ? Le guide complet",
     description:
       "Soleil toute l'année, vents d'alizé, baignade et randonnée : le guide de CTA Voyages pour choisir le meilleur moment et la bonne île pour votre voyage au Cap-Vert.",
   },

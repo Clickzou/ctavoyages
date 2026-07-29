@@ -39,9 +39,9 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h4 className="font-h1 text-[14px] font-bold uppercase tracking-wide text-white mb-4 sm:mb-6">
+            <h3 className="font-h1 text-[14px] font-bold uppercase tracking-wide text-white mb-4 sm:mb-6">
               Nos offres
-            </h4>
+            </h3>
             <ul className="flex flex-col gap-3 sm:gap-4">
               <li><Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="/sejours">Séjours</Link></li>
               <li><Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="/circuits">Circuits</Link></li>
@@ -50,7 +50,15 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-h1 text-[14px] font-bold uppercase tracking-wide text-white mb-4 sm:mb-6 invisible hidden lg:block">.</h4>
+            {/* Cale d'alignement : reproduit la hauteur d'un titre de colonne
+                sans en être un. Un vrai titre serait annoncé vide par les
+                lecteurs d'écran. */}
+            <div
+              aria-hidden="true"
+              className="font-h1 text-[14px] font-bold uppercase tracking-wide mb-4 sm:mb-6 invisible hidden lg:block"
+            >
+              .
+            </div>
             <ul className="flex flex-col gap-3 sm:gap-4">
               <li><Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="/voyage-sur-mesure">Voyages sur mesure</Link></li>
               <li><Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="/catalogue-sportif">Catalogue sportif</Link></li>
@@ -62,9 +70,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-h1 text-[14px] font-bold uppercase tracking-wide text-white mb-4 sm:mb-6">
+            <h3 className="font-h1 text-[14px] font-bold uppercase tracking-wide text-white mb-4 sm:mb-6">
               À propos
-            </h4>
+            </h3>
             <ul className="flex flex-col gap-3 sm:gap-4">
               <li><Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="/equipe">L&apos;équipe CTA Voyages</Link></li>
               <li><Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="/engagements-rse">Notre engagement RSE</Link></li>
@@ -74,9 +82,9 @@ export default function Footer() {
             </ul>
           </div>
           <div className="sm:col-span-2 lg:col-span-1">
-            <h4 className="font-h1 text-[14px] font-bold uppercase tracking-wide text-white mb-4 sm:mb-6">
+            <h3 className="font-h1 text-[14px] font-bold uppercase tracking-wide text-white mb-4 sm:mb-6">
               Contact
-            </h4>
+            </h3>
             <div className="flex flex-col gap-3 sm:gap-4">
               <a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors flex items-start gap-3" href="https://www.google.com/maps/place/99+Rue+de+Fenouillet,+31200+Toulouse" target="_blank" rel="noopener noreferrer">
                 <span className="material-symbols-outlined text-sm mt-1 flex-shrink-0">location_on</span>

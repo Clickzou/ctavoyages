@@ -6,7 +6,7 @@ const visiterNewYorkPremiereFois: BlogArticle = {
   date: "août 2025",
   readingTime: "8 min",
   meta: {
-    title: "Visiter New York pour la première fois | CTA Voyages",
+    title: "Visiter New York pour la première fois",
     description:
       "Times Square, Central Park, Statue de la Liberté et Brooklyn : l'itinéraire complet de CTA Voyages pour réussir votre premier séjour à New York.",
   },

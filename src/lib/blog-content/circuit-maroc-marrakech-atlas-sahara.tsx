@@ -6,7 +6,7 @@ const circuitMarocMarrakechAtlasSahara: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Circuit Maroc : Marrakech, Atlas & Sahara | CTA Voyages",
+    title: "Circuit Maroc : Marrakech, Atlas & Sahara",
     description:
       "De la médina de Marrakech aux dunes de Merzouga en passant par le Haut Atlas et Aït-Ben-Haddou : le grand circuit marocain signé CTA Voyages.",
   },

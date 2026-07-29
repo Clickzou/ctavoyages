@@ -8,9 +8,9 @@ const circuitNature: ThemeContent = {
   parentLabel: "Circuits",
   parentHref: "/circuits",
   meta: {
-    title: "Circuit nature & grands espaces sur mesure — Parcs, volcans, faune sauvage | CTA Voyages",
+    title: "Circuit nature & grands espaces sur mesure — Parcs, volcans, faune sauvage",
     description:
-      "Partez en circuit nature avec CTA Voyages : parcs nationaux, volcans, forêts et faune sauvage du Costa Rica au Kenya. Guides naturalistes, lodges engagés, conseiller dédié, devis gratuit.",
+      "Partez en circuit nature avec CTA Voyages : parcs nationaux, volcans, forêts et faune sauvage du Costa Rica au Kenya.",
   },
   hero: {
     image:
@@ -19,7 +19,7 @@ const circuitNature: ThemeContent = {
     label: "Circuit nature",
     h1: "Circuit nature : à la rencontre des grands espaces",
     description:
-      "Parcs nationaux, volcans fumants, forêts primaires et faune sauvage&nbsp;: nous composons des itinéraires pour les amoureux de nature et d'aventure douce. Guides naturalistes, lodges immersifs et émerveillement garanti.",
+      "Parcs nationaux, volcans fumants, forêts primaires et faune sauvage&nbsp;: nous composons des itinéraires pour les amoureux de nature et d'aventure douce.",
     primaryCtaLabel: "Composer mon circuit nature",
     secondaryCtaLabel: "Pourquoi un circuit nature ?",
   },

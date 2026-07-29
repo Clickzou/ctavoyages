@@ -6,7 +6,7 @@ const croisiereFluvialeEurope: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Croisière fluviale en Europe : Douro, Rhin & Danube | CTA Voyages",
+    title: "Croisière fluviale en Europe : Douro, Rhin & Danube",
     description:
       "Découvrez la croisière fluviale en Europe avec CTA Voyages : le Douro portugais, le Rhin romantique et le Danube impérial, au fil de l'eau et des plus belles escales.",
   },

@@ -6,7 +6,7 @@ const ouVoirAuroresBoreales: BlogArticle = {
   date: "mars 2026",
   readingTime: "6 min",
   meta: {
-    title: "Où voir les aurores boréales ? | CTA Voyages",
+    title: "Où voir les aurores boréales ?",
     description:
       "Laponie, Islande, Norvège, Canada : découvrez où et quand voir les aurores boréales, avec nos meilleurs spots et conseils d'experts CTA Voyages.",
   },

@@ -14,9 +14,9 @@ const cambodge: DestinationContent = {
   slug: "cambodge",
   meta: {
     title:
-      "Voyage au Cambodge : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Cambodge : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Cambodge avec CTA Voyages. Temples d'Angkor, Bayon et Ta Prohm, villages flottants du Tonlé Sap, Phnom Penh et plages de Kep et Koh Rong. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Cambodge avec CTA Voyages. Temples d'Angkor, Bayon et Ta Prohm, villages flottants du Tonlé Sap, Phnom Penh et plages de Kep et Koh Rong. Circuit ou voyage sur mesure.",
   },
   hero: {
     image: "/generated/cambodge.jpg",

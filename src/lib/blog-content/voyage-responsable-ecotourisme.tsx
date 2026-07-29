@@ -6,7 +6,7 @@ const voyageResponsableEcotourisme: BlogArticle = {
   date: "juin 2025",
   readingTime: "8 min",
   meta: {
-    title: "Voyage responsable : guide de l'écotourisme | CTA Voyages",
+    title: "Voyage responsable : guide de l'écotourisme",
     description:
       "Réduire son empreinte, soutenir les communautés locales, choisir les bons hébergements : le guide complet de CTA Voyages pour voyager de façon responsable.",
   },

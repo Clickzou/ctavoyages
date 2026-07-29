@@ -6,7 +6,7 @@ const quandPartirGrece: BlogArticle = {
   date: "avril 2025",
   readingTime: "8 min",
   meta: {
-    title: "Quand partir en Grèce ? Météo et meilleures périodes | CTA Voyages",
+    title: "Quand partir en Grèce ? Météo et meilleures périodes",
     description:
       "Cyclades, Athènes, Crète : le guide CTA Voyages pour choisir le meilleur mois selon la météo, l'affluence et les budgets pour votre voyage en Grèce.",
   },

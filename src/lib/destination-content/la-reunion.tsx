@@ -5,9 +5,9 @@ const laReunion: DestinationContent = {
   slug: "la-reunion",
   meta: {
     title:
-      "Voyage à La Réunion : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage à La Réunion : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage à La Réunion avec CTA Voyages. Piton de la Fournaise, cirques de Mafate, Salazie et Cilaos, lagon de l'Ermitage, randonnées et plages. Circuit ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage à La Réunion avec CTA Voyages. Piton de la Fournaise, cirques de Mafate, Salazie et Cilaos, lagon de l'Ermitage, randonnées et plages.",
   },
   hero: {
     image:

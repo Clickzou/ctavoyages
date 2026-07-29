@@ -6,7 +6,7 @@ const ouPartirAuSoleilEnHiver: BlogArticle = {
   date: "septembre 2025",
   readingTime: "5 min",
   meta: {
-    title: "Où partir au soleil en hiver ? Nos idées | CTA Voyages",
+    title: "Où partir au soleil en hiver ? Nos idées",
     description:
       "Fuir le froid sans aller trop loin ni dépenser trop : les meilleures destinations soleil de l'hiver sélectionnées par CTA Voyages.",
   },

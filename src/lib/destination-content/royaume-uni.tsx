@@ -14,9 +14,9 @@ const royaumeUni: DestinationContent = {
   slug: "royaume-uni",
   meta: {
     title:
-      "Voyage au Royaume-Uni : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage au Royaume-Uni : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage au Royaume-Uni avec CTA Voyages. Londres, Highlands d'Écosse, Cotswolds, châteaux du pays de Galles et côte de Cornouailles. City break, autotour ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage au Royaume-Uni avec CTA Voyages. Londres, Highlands d'Écosse, Cotswolds, châteaux du pays de Galles et côte de Cornouailles.",
   },
   hero: {
     image: "/generated/royaume-uni.jpg",

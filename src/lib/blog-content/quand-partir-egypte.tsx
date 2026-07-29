@@ -6,7 +6,7 @@ const quandPartirEgypte: BlogArticle = {
   date: "janvier 2026",
   readingTime: "6 min",
   meta: {
-    title: "Quand partir en Égypte ? Climat et croisières | CTA Voyages",
+    title: "Quand partir en Égypte ? Climat et croisières",
     description:
       "Pyramides, croisière sur le Nil, mer Rouge et déserts : le guide de CTA Voyages pour choisir la meilleure période et réussir votre voyage en Égypte.",
   },

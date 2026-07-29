@@ -6,7 +6,7 @@ const ouPartirEnSeptembre: BlogArticle = {
   date: "mars 2026",
   readingTime: "6 min",
   meta: {
-    title: "Où partir en septembre ? L'arrière-saison | CTA Voyages",
+    title: "Où partir en septembre ? L'arrière-saison",
     description:
       "Mer encore chaude, lumière dorée et tarifs adoucis : nos meilleures destinations où partir en septembre pour profiter de l'arrière-saison avec CTA Voyages.",
   },

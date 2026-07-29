@@ -6,7 +6,7 @@ const prendreAvionPremiereFois: BlogArticle = {
   date: "février 2025",
   readingTime: "8 min",
   meta: {
-    title: "Prendre l'avion pour la première fois : guide | CTA Voyages",
+    title: "Prendre l'avion pour la première fois : guide",
     description:
       "Enregistrement, sécurité, embarquement, vol : le guide étape par étape de CTA Voyages pour prendre l'avion sereinement la première fois.",
   },

@@ -6,7 +6,7 @@ const visiterLisbonneWeekEnd: BlogArticle = {
   date: "février 2025",
   readingTime: "7 min",
   meta: {
-    title: "Visiter Lisbonne en un week-end | CTA Voyages",
+    title: "Visiter Lisbonne en un week-end",
     description:
       "Alfama, Belém, tram 28 et pastéis de nata : notre itinéraire pour visiter Lisbonne en un week-end et savourer la capitale portugaise sans rien manquer.",
   },

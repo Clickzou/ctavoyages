@@ -6,7 +6,7 @@ const ouPartirEnMars: BlogArticle = {
   date: "septembre 2025",
   readingTime: "5 min",
   meta: {
-    title: "Où partir en mars ? Nos idées de destinations | CTA Voyages",
+    title: "Où partir en mars ? Nos idées de destinations",
     description:
       "Premiers rayons de printemps, déserts en fleurs et plages encore désertes : nos meilleures destinations pour voyager en mars avec une météo idéale.",
   },

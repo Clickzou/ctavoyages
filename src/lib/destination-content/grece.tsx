@@ -5,9 +5,9 @@ const grece: DestinationContent = {
   slug: "grece",
   meta: {
     title:
-      "Voyage en Grèce : séjour, circuit et voyage sur mesure | CTA Voyages",
+      "Voyage en Grèce : séjour, circuit et voyage sur mesure",
     description:
-      "Organisez votre voyage en Grèce avec CTA Voyages. Acropole d'Athènes, Delphes, Météores, Santorin, Mykonos et Crète : circuit, séjour balnéaire ou voyage sur mesure. Devis gratuit, conseiller dédié, contact sous 48h.",
+      "Organisez votre voyage en Grèce avec CTA Voyages. Acropole d'Athènes, Delphes, Météores, Santorin, Mykonos et Crète : circuit, séjour balnéaire ou voyage sur mesure.",
   },
   hero: {
     image:

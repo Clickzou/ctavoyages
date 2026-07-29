@@ -9,7 +9,7 @@ const voyageFamilleAstuces: BlogArticle = {
   date: "Mai 2026",
   readingTime: "7 min",
   meta: {
-    title: "Voyage en famille : nos astuces vacances | CTA Voyages",
+    title: "Voyage en famille : nos astuces vacances",
     description:
       "Choix de la destination, formalités, activités par âge, santé et budget : le guide complet de CTA Voyages pour des vacances en famille réussies et sereines.",
   },

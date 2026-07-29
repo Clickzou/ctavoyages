@@ -6,7 +6,7 @@ const croisierePremiereFoisConseils: BlogArticle = {
   date: "septembre 2025",
   readingTime: "6 min",
   meta: {
-    title: "Première croisière : nos conseils essentiels | CTA Voyages",
+    title: "Première croisière : nos conseils essentiels",
     description:
       "Choisir sa compagnie, sa cabine, gérer le mal de mer, le budget et les excursions : le guide complet de CTA Voyages pour réussir votre toute première croisière.",
   },

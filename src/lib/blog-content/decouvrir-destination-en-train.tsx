@@ -6,7 +6,7 @@ const decouvrirDestinationEnTrain: BlogArticle = {
   date: "juillet 2025",
   readingTime: "6 min",
   meta: {
-    title: "Voyager en train : nos plus beaux trajets | CTA Voyages",
+    title: "Voyager en train : nos plus beaux trajets",
     description:
       "Trains panoramiques, lignes mythiques et grands voyages au ralenti : CTA Voyages vous emmène sur les plus beaux trajets ferroviaires du monde.",
   },

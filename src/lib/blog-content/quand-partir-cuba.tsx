@@ -6,7 +6,7 @@ const quandPartirCuba: BlogArticle = {
   date: "juin 2026",
   readingTime: "7 min",
   meta: {
-    title: "Quand partir à Cuba ? Climat et meilleurs mois | CTA Voyages",
+    title: "Quand partir à Cuba ? Climat et meilleurs mois",
     description:
       "Saison sèche, saison des pluies, cyclones et festivals : le guide de CTA Voyages pour choisir le meilleur moment et la bonne région de votre voyage à Cuba.",
   },

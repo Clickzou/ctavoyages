@@ -6,7 +6,7 @@ const quandPartirIleMaurice: BlogArticle = {
   date: "avril 2025",
   readingTime: "7 min",
   meta: {
-    title: "Quand partir à l'île Maurice ? Météo idéale | CTA Voyages",
+    title: "Quand partir à l'île Maurice ? Météo idéale",
     description:
       "Saison sèche, été austral, côtes au vent et sous le vent : le guide complet de CTA Voyages pour choisir la meilleure période et réussir votre voyage à l'île Maurice.",
   },

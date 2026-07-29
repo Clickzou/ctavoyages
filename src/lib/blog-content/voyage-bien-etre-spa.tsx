@@ -6,7 +6,7 @@ const voyageBienEtreSpa: BlogArticle = {
   date: "août 2025",
   readingTime: "8 min",
   meta: {
-    title: "Voyage bien-être : nos destinations spa | CTA Voyages",
+    title: "Voyage bien-être : nos destinations spa",
     description:
       "Bali, Maldives, Thaïlande, Maroc ou Inde : nos destinations bien-être et nos conseils pour un voyage spa, détox ou yoga qui ressource le corps et l'esprit.",
   },
