@@ -261,16 +261,16 @@ export default function Page() {
           </h2>
           <p className="font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed">
             Pour toute question relative à la protection de vos données, vous
-            pouvez contacter notre référent en la matière&nbsp;:{" "}
-            [À COMPLÉTER : nom et coordonnées du DPO ou du référent données, si
-            désigné] : à défaut, par email à{" "}
+            pouvez contacter notre délégué à la protection des données,{" "}
+            <strong>Jean-Jacques Castanet</strong>, par email à{" "}
             <a
               href="mailto:voyages@cta-events.com"
               className="text-primary font-medium hover:underline"
             >
               voyages@cta-events.com
-            </a>
-            .
+            </a>{" "}
+            ou par courrier à l&apos;adresse du siège social&nbsp;: 99 rue de
+            Fenouillet, 31200 Toulouse.
           </p>
 
           <p className="font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-6">
