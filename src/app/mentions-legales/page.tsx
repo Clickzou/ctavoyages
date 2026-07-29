@@ -32,8 +32,10 @@ export default function Page() {
           </p>
           <ul className="list-disc pl-6 space-y-2 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
             <li>
-              <strong>Raison sociale&nbsp;:</strong> CTA Voyages, marque du
-              Groupe CTA
+              <strong>Raison sociale&nbsp;:</strong> CTA Events
+            </li>
+            <li>
+              <strong>Marque commerciale&nbsp;:</strong> CTA Voyages
             </li>
             <li>
               <strong>Forme juridique&nbsp;:</strong> SAS, société par actions
@@ -73,10 +75,10 @@ export default function Page() {
             <li>
               <strong>Email&nbsp;:</strong>{" "}
               <a
-                href="mailto:voyages@cta-events.com"
+                href="mailto:contact@cta-events.com"
                 className="text-primary font-medium hover:underline"
               >
-                voyages@cta-events.com
+                contact@cta-events.com
               </a>
             </li>
             <li>

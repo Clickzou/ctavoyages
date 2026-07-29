@@ -55,7 +55,7 @@ export default function Page() {
               </a>
             </li>
             <li>
-              SIRET&nbsp;: [À COMPLÉTER : numéro SIRET]
+              SIRET&nbsp;: 384 622 684 00072 — RCS Toulouse 384 622 684
             </li>
           </ul>
 
