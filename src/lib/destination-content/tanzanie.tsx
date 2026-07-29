@@ -5,9 +5,9 @@ const tanzanie: DestinationContent = {
   slug: "tanzanie",
   meta: {
     title:
-      "Voyage en Tanzanie : safari, circuit et voyage sur mesure",
+      "Voyage en Tanzanie : safari, circuit",
     description:
-      "Organisez votre voyage en Tanzanie avec CTA Voyages. Safari dans le Serengeti, cratère du Ngorongoro, grande migration, plages de Zanzibar, circuit ou voyage sur mesure.",
+      "Organisez votre voyage en Tanzanie avec CTA Voyages. Safari dans le Serengeti, cratère du Ngorongoro, grande migration et plages de Zanzibar.",
   },
   hero: {
     image:

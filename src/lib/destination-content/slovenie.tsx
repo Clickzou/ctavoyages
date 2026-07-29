@@ -5,7 +5,7 @@ const slovenie: DestinationContent = {
   slug: "slovenie",
   meta: {
     title:
-      "Voyage en Slovénie : séjour, circuit et voyage sur mesure",
+      "Voyage en Slovénie : séjour, circuit",
     description:
       "Organisez votre voyage en Slovénie avec CTA Voyages. Lac de Bled, gorges de Vintgar, grottes de Postojna, parc du Triglav, Ljubljana et la côte de Piran.",
   },

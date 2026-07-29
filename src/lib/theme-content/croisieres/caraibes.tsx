@@ -9,7 +9,7 @@ const croisiereCaraibes: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière aux Caraïbes sur mesure — Îles paradisiaques au soleil",
+    title: "Croisière aux Caraïbes sur mesure",
     description:
       "Organisez votre croisière aux Caraïbes avec CTA Voyages : eaux turquoise, plages de sable blanc et escales de rêve aux Bahamas, en Jamaïque ou à Cuba.",
   },

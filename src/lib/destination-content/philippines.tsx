@@ -14,7 +14,7 @@ const philippines: DestinationContent = {
   slug: "philippines",
   meta: {
     title:
-      "Voyage aux Philippines : séjour, circuit et voyage sur mesure",
+      "Voyage aux Philippines : séjour, circuit",
     description:
       "Organisez votre voyage aux Philippines avec CTA Voyages. Lagons d'El Nido à Palawan, épaves de Coron, rizières de Banaue, collines de chocolat de Bohol et plages de Boracay. Island hopping ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

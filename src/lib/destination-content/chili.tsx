@@ -13,7 +13,7 @@ import {
 const chili: DestinationContent = {
   slug: "chili",
   meta: {
-    title: "Voyage au Chili : séjour, circuit et voyage sur mesure",
+    title: "Voyage au Chili : séjour, circuit",
     description:
       "Organisez votre voyage au Chili avec CTA Voyages. Désert d'Atacama, Torres del Paine et Patagonie, Valparaíso, région des lacs et volcans, vignobles et île de Pâques. Circuit ou voyage sur mesure.",
   },

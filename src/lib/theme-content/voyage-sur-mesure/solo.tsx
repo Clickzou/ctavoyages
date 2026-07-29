@@ -8,7 +8,7 @@ const vsmSolo: ThemeContent = {
   parentLabel: "Voyage sur mesure",
   parentHref: "/voyage-sur-mesure",
   meta: {
-    title: "Voyage solo sur mesure — Partir seul en toute sérénité",
+    title: "Voyage solo sur mesure : partir seul",
     description:
       "Organisez votre voyage solo avec CTA Voyages : destinations sûres et accueillantes, accompagnement sur mesure et liberté totale.",
   },

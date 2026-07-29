@@ -5,9 +5,9 @@ const laponie: DestinationContent = {
   slug: "laponie",
   meta: {
     title:
-      "Voyage en Laponie : séjour, circuit et voyage sur mesure",
+      "Voyage en Laponie : séjour, circuit",
     description:
-      "Organisez votre voyage en Laponie avec CTA Voyages. Aurores boréales, igloo de verre, traîneau à chiens, motoneige, rencontre des Samis et du Père Noël à Rovaniemi.",
+      "Organisez votre voyage en Laponie avec CTA Voyages. Aurores boréales, igloo de verre, traîneau à chiens, motoneige et rencontre des Samis.",
   },
   hero: {
     image:

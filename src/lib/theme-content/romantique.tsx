@@ -9,7 +9,7 @@ const romantique: ThemeContent = {
   parentLabel: "Séjours",
   parentHref: "/sejours",
   meta: {
-    title: "Séjour romantique & lune de miel sur mesure — Voyage à deux",
+    title: "Séjour romantique & lune de miel sur mesure",
     description:
       "Offrez-vous un séjour romantique avec CTA Voyages : lunes de miel, escapades à deux, boutique-hôtels et dîners face à la mer. Conseiller dédié, devis gratuit.",
   },

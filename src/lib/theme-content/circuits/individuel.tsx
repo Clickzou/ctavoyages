@@ -9,9 +9,9 @@ const circuitIndividuel: ThemeContent = {
   parentLabel: "Circuits",
   parentHref: "/circuits",
   meta: {
-    title: "Circuit individuel privé & autotour sur mesure — Itinéraire rien que pour vous",
+    title: "Circuit individuel privé & autotour sur mesure",
     description:
-      "Partez en circuit individuel avec CTA Voyages : un itinéraire privé et autonome, en voiture ou avec chauffeur, organisé clé en main (vols, hôtels, transferts, road-book). Liberté totale, sérénité garantie, devis gratuit.",
+      "Partez en circuit individuel avec CTA Voyages : itinéraire privé et autonome, en voiture ou avec chauffeur, organisé clé en main. Devis gratuit.",
   },
   hero: {
     image:

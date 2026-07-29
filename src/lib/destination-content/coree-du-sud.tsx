@@ -14,7 +14,7 @@ const coreeDuSud: DestinationContent = {
   slug: "coree-du-sud",
   meta: {
     title:
-      "Voyage en Corée du Sud : séjour, circuit et voyage sur mesure",
+      "Voyage en Corée du Sud : séjour, circuit",
     description:
       "Organisez votre voyage en Corée du Sud avec CTA Voyages. Séoul et ses palais, village hanok de Bukchon, Gyeongju, temple stay, île de Jeju et gastronomie coréenne. Circuit ou voyage sur mesure.",
   },

@@ -14,7 +14,7 @@ const suisse: DestinationContent = {
   slug: "suisse",
   meta: {
     title:
-      "Voyage en Suisse : séjour, circuit et voyage sur mesure",
+      "Voyage en Suisse : séjour, circuit",
     description:
       "Organisez votre voyage en Suisse avec CTA Voyages. Cervin et Zermatt, Glacier Express, Jungfrau et Grindelwald, Lucerne, Lavaux et lac Léman.",
   },

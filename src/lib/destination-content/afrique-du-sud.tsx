@@ -5,9 +5,9 @@ const afriqueDuSud: DestinationContent = {
   slug: "afrique-du-sud",
   meta: {
     title:
-      "Voyage en Afrique du Sud : safari, circuit et voyage sur mesure",
+      "Voyage en Afrique du Sud : safari, circuit",
     description:
-      "Organisez votre voyage en Afrique du Sud avec CTA Voyages. Le Cap et Table Mountain, route des vins de Stellenbosch, route des Jardins, baleines d'Hermanus, safari Big Five au parc Kruger. Circuit ou voyage sur mesure.",
+      "Organisez votre voyage en Afrique du Sud avec CTA Voyages. Le Cap, route des vins de Stellenbosch, baleines d'Hermanus, safari Big Five au Kruger.",
   },
   hero: {
     image:

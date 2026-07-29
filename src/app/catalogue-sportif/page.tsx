@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/catalogue-sportif" },
   title: "Catalogue sportif",
   description:
-    "Vivez les plus grands événements sportifs du monde avec CTA Voyages. Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : des séjours clés en main pour vivre le sport autrement.",
+    "Vivez les plus grands événements sportifs avec CTA Voyages. Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : des séjours clés en main.",
 };
 
 const faqJsonLd = {

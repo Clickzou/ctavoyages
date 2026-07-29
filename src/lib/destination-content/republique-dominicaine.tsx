@@ -5,9 +5,9 @@ const republiqueDominicaine: DestinationContent = {
   slug: "republique-dominicaine",
   meta: {
     title:
-      "Voyage en République dominicaine : séjour, circuit et voyage sur mesure",
+      "Voyage en République dominicaine : séjour, circuit",
     description:
-      "Organisez votre voyage en République dominicaine avec CTA Voyages. Plages de Punta Cana, île de Saona, baleines de Samaná, zone coloniale de Saint-Domingue, séjour ou voyage sur mesure.",
+      "Organisez votre voyage en République dominicaine avec CTA Voyages. Punta Cana, île de Saona, baleines de Samaná, Saint-Domingue.",
   },
   hero: {
     image:

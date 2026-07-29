@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/glamping" },
   title: "Glamping & hébergements insolites",
   description:
-    "Découvrez nos séjours glamping et hébergements insolites avec CTA Voyages. Tentes lodges, cabanes, igloos, tree houses : vivez la nature sans sacrifier le confort.",
+    "Découvrez nos séjours glamping et hébergements insolites avec CTA Voyages. Tentes lodges, cabanes, igloos : la nature sans sacrifier le confort.",
 };
 
 const faqJsonLd = {

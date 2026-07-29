@@ -5,7 +5,7 @@ const sriLanka: DestinationContent = {
   slug: "sri-lanka",
   meta: {
     title:
-      "Voyage au Sri Lanka : séjour, circuit et voyage sur mesure",
+      "Voyage au Sri Lanka : séjour, circuit",
     description:
       "Organisez votre voyage au Sri Lanka avec CTA Voyages. Rocher de Sigiriya, temple de la Dent à Kandy, train des plantations de thé, safari à Yala, plages du sud.",
   },

@@ -8,7 +8,7 @@ const vsmNoces: ThemeContent = {
   parentLabel: "Voyage sur mesure",
   parentHref: "/voyage-sur-mesure",
   meta: {
-    title: "Voyage de noces & en couple sur mesure — Lune de miel d'exception",
+    title: "Voyage de noces & lune de miel sur mesure",
     description:
       "Composez votre voyage de noces ou votre parenthèse romantique avec CTA Voyages : adresses d'exception, attentions personnalisées et moments inoubliables à deux.",
   },

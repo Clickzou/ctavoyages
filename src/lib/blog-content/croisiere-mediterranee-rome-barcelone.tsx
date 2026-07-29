@@ -6,7 +6,7 @@ const croisiereMediterraneeRomeBarcelone: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Croisière Méditerranée : Rome, Barcelone & Côte d'Azur",
+    title: "Croisière Méditerranée : Rome & Barcelone",
     description:
       "Rome, la Toscane, la Côte d'Azur, Barcelone et les Baléares en une seule croisière : l'itinéraire idéal en Méditerranée occidentale avec CTA Voyages.",
   },

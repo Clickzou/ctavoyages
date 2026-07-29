@@ -5,7 +5,7 @@ const portugal: DestinationContent = {
   slug: "portugal",
   meta: {
     title:
-      "Voyage au Portugal : séjour, circuit et voyage sur mesure",
+      "Voyage au Portugal : séjour, circuit",
     description:
       "Organisez votre voyage au Portugal avec CTA Voyages. Lisbonne et ses tramways, Porto et la vallée du Douro, falaises de l'Algarve, circuit ou voyage sur mesure.",
   },

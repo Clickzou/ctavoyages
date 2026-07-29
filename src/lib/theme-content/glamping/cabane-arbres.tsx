@@ -9,7 +9,7 @@ const glampingCabaneArbres: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Cabane dans les arbres — Nuit perchée en forêt sur mesure",
+    title: "Cabane dans les arbres — Nuit perchée en forêt",
     description:
       "Dormez perché au cœur de la forêt avec CTA Voyages : cabanes dans les arbres tout confort, déconnexion totale et réveil dans la canopée.",
   },

@@ -6,9 +6,9 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/engagements-rse" },
-  title: "Engagements RSE du Groupe CTA | Voyager et organiser mieux",
+  title: "Engagements RSE du Groupe CTA",
   description:
-    "Découvrez la politique RSE du Groupe CTA : environnement, social, éthique, achats responsables, numérique responsable, bien-être des équipes et engagements solidaires.",
+    "Découvrez la politique RSE du Groupe CTA : environnement, social, éthique, achats responsables, numérique responsable et engagements solidaires.",
 };
 
 export default function EngagementsRsePage() {

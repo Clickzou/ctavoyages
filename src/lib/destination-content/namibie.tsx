@@ -5,7 +5,7 @@ const namibie: DestinationContent = {
   slug: "namibie",
   meta: {
     title:
-      "Voyage en Namibie : circuit, safari et voyage sur mesure",
+      "Voyage en Namibie : circuit, safari",
     description:
       "Organisez votre voyage en Namibie avec CTA Voyages. Dunes de Sossusvlei, désert du Namib, safari à Etosha, canyon de la Fish River, voyage sur mesure.",
   },

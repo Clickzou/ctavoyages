@@ -14,7 +14,7 @@ const danemark: DestinationContent = {
   slug: "danemark",
   meta: {
     title:
-      "Voyage au Danemark : séjour, circuit et voyage sur mesure",
+      "Voyage au Danemark : séjour, circuit",
     description:
       "Organisez votre voyage au Danemark avec CTA Voyages. Copenhague et Nyhavn, design scandinave, châteaux royaux, plages du Jutland et gastronomie nordique.",
   },

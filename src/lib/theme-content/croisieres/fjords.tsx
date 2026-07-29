@@ -9,7 +9,7 @@ const croisiereFjords: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière fjords de Norvège & Europe du Nord — Aurores boréales",
+    title: "Croisière fjords & aurores boréales",
     description:
       "Embarquez pour une croisière fjords avec CTA Voyages : parois vertigineuses, villages colorés, soleil de minuit et aurores boréales.",
   },

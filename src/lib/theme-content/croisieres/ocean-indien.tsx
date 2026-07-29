@@ -8,9 +8,9 @@ const croisiereOceanIndien: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière Océan Indien — Maurice, Seychelles, Madagascar",
+    title: "Croisière Océan Indien : Maurice & Seychelles",
     description:
-      "Partez en croisière dans l'océan Indien avec CTA Voyages : lagons turquoise, îles paradisiaques et culture créole entre Maurice, Seychelles, Madagascar, Maldives et Zanzibar. Conseiller dédié, devis gratuit.",
+      "Croisière dans l'océan Indien avec CTA Voyages : lagons turquoise et culture créole entre Maurice, Seychelles, Madagascar et Zanzibar. Devis gratuit.",
   },
   hero: {
     image:

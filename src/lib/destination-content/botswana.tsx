@@ -5,9 +5,9 @@ const botswana: DestinationContent = {
   slug: "botswana",
   meta: {
     title:
-      "Voyage au Botswana : safari, circuit et voyage sur mesure",
+      "Voyage au Botswana : safari, circuit",
     description:
-      "Organisez votre voyage au Botswana avec CTA Voyages. Delta de l'Okavango en mokoro, réserve de Moremi, éléphants de Chobe, désert du Kalahari, extension chutes Victoria. Safari ou voyage sur mesure,",
+      "Organisez votre voyage au Botswana avec CTA Voyages. Delta de l'Okavango en mokoro, réserve de Moremi, éléphants de Chobe, désert du Kalahari.",
   },
   hero: {
     image:

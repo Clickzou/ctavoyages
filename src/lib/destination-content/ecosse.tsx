@@ -5,7 +5,7 @@ const ecosse: DestinationContent = {
   slug: "ecosse",
   meta: {
     title:
-      "Voyage en Écosse : circuit, autotour et voyage sur mesure",
+      "Voyage en Écosse : circuit, autotour",
     description:
       "Organisez votre voyage en Écosse avec CTA Voyages. Château d'Édimbourg, Highlands et Glencoe, Loch Ness, île de Skye, distilleries de whisky du Speyside.",
   },

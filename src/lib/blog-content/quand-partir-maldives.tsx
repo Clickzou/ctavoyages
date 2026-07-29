@@ -10,7 +10,7 @@ const quandPartirMaldives: BlogArticle = {
   date: "Juin 2026",
   readingTime: "8 min",
   meta: {
-    title: "Quand partir aux Maldives ? Saisons, spots & conseils",
+    title: "Quand partir aux Maldives ? Saisons & conseils",
     description:
       "Saison sèche, mousson, meilleurs atolls et spots secrets : le guide complet de CTA Voyages pour choisir le bon moment et réussir votre voyage aux Maldives.",
   },

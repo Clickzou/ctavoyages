@@ -14,7 +14,7 @@ const bolivie: DestinationContent = {
   slug: "bolivie",
   meta: {
     title:
-      "Voyage en Bolivie : séjour, circuit et voyage sur mesure",
+      "Voyage en Bolivie : séjour, circuit",
     description:
       "Organisez votre voyage en Bolivie avec CTA Voyages. Salar d'Uyuni et son effet miroir, lagunes du Sud Lípez, lac Titicaca et Isla del Sol, La Paz, Potosí et Sucre. Circuit ou voyage sur mesure.",
   },

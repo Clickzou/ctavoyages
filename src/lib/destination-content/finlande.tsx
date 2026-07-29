@@ -14,7 +14,7 @@ const finlande: DestinationContent = {
   slug: "finlande",
   meta: {
     title:
-      "Voyage en Finlande : séjour, circuit et voyage sur mesure",
+      "Voyage en Finlande : séjour, circuit",
     description:
       "Organisez votre voyage en Finlande avec CTA Voyages. Aurores boréales et igloos de verre en Laponie, village du Père Noël, traîneau à chiens, lacs de Saimaa et design à Helsinki. Séjour hiver ou été, voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

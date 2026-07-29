@@ -5,9 +5,9 @@ const perou: DestinationContent = {
   slug: "perou",
   meta: {
     title:
-      "Voyage au Pérou : séjour, circuit et voyage sur mesure",
+      "Voyage au Pérou : séjour, circuit",
     description:
-      "Organisez votre voyage au Pérou avec CTA Voyages. Machu Picchu, Cusco et la Vallée sacrée des Incas, lac Titicaca, canyon de Colca, circuit ou voyage sur mesure.",
+      "Organisez votre voyage au Pérou avec CTA Voyages. Machu Picchu, Cusco et la Vallée sacrée des Incas, lac Titicaca et canyon de Colca.",
   },
   hero: {
     image:

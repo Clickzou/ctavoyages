@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/equipe" },
   title: "Nos conseillères voyages sur mesure à Toulouse",
   description:
-    "Découvrez l'équipe CTA Voyages. Caroline et Stéphanie conçoivent vos séjours individuels ou en groupe, en France, en Europe et à l'international, avec un accompagnement personnalisé.",
+    "Découvrez l'équipe CTA Voyages. Caroline et Stéphanie conçoivent vos séjours individuels ou en groupe, en France, en Europe et à l'international.",
 };
 
 export default function EquipePage() {

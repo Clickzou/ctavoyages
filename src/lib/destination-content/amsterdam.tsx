@@ -5,7 +5,7 @@ const amsterdam: DestinationContent = {
   slug: "amsterdam",
   meta: {
     title:
-      "Voyage à Amsterdam : séjour, week-end et voyage sur mesure",
+      "Voyage à Amsterdam : séjour, week-end",
     description:
       "Organisez votre voyage à Amsterdam avec CTA Voyages. Canaux classés à l'UNESCO, Rijksmuseum et musée Van Gogh, quartier du Jordaan, balades à vélo.",
   },

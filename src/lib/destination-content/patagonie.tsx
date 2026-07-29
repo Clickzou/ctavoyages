@@ -5,7 +5,7 @@ const patagonie: DestinationContent = {
   slug: "patagonie",
   meta: {
     title:
-      "Voyage en Patagonie : circuit, trek et voyage sur mesure",
+      "Voyage en Patagonie : circuit, trek",
     description:
       "Organisez votre voyage en Patagonie avec CTA Voyages. Glacier Perito Moreno, Fitz Roy, Torres del Paine, Ushuaïa et le bout du monde.",
   },

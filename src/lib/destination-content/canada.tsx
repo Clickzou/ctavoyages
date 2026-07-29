@@ -5,9 +5,9 @@ const canada: DestinationContent = {
   slug: "canada",
   meta: {
     title:
-      "Voyage au Canada : séjour, circuit et voyage sur mesure",
+      "Voyage au Canada : séjour, circuit",
     description:
-      "Organisez votre voyage au Canada avec CTA Voyages. Montréal et Québec, chutes du Niagara, Rocheuses et lac Louise, Vancouver, observation des baleines et des ours. Circuit ou voyage sur mesure.",
+      "Organisez votre voyage au Canada avec CTA Voyages. Montréal et Québec, chutes du Niagara, Rocheuses et lac Louise, Vancouver, baleines et ours.",
   },
   hero: {
     image:

@@ -5,7 +5,7 @@ const croatie: DestinationContent = {
   slug: "croatie",
   meta: {
     title:
-      "Voyage en Croatie : séjour, circuit et voyage sur mesure",
+      "Voyage en Croatie : séjour, circuit",
     description:
       "Organisez votre voyage en Croatie avec CTA Voyages. Dubrovnik, Split et le palais de Dioclétien, îles de Hvar et Brač, lacs de Plitvice, parc de Krka.",
   },

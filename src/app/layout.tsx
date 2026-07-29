@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | CTA Voyages",
   },
   description:
-    "CTA Voyages, agence de voyages sur mesure à Toulouse. Séjours, circuits, croisières, glamping, catalogue sportif et voyages à la carte. Devis gratuit, conseiller dédié.",
+    "CTA Voyages, agence de voyages sur mesure à Toulouse. Séjours, circuits, croisières, glamping et catalogue sportif. Devis gratuit, conseiller dédié.",
   icons: {
     icon: "/assets/images/favicon-cta-voyages.png",
     shortcut: "/assets/images/favicon-cta-voyages.png",

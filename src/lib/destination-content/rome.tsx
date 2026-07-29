@@ -5,7 +5,7 @@ const rome: DestinationContent = {
   slug: "rome",
   meta: {
     title:
-      "Voyage à Rome : séjour, circuit et city-break sur mesure",
+      "Voyage à Rome : séjour, circuit et city-break",
     description:
       "Organisez votre voyage à Rome avec CTA Voyages. Colisée, Vatican, fontaine de Trevi, dolce vita et trésors de la Ville éternelle.",
   },

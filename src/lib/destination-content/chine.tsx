@@ -14,7 +14,7 @@ const chine: DestinationContent = {
   slug: "chine",
   meta: {
     title:
-      "Voyage en Chine : séjour, circuit et voyage sur mesure",
+      "Voyage en Chine : séjour, circuit",
     description:
       "Organisez votre voyage en Chine avec CTA Voyages. Grande Muraille et Cité interdite, armée de terre cuite de Xi'an, rivière Li à Guilin, Shanghai et pandas de Chengdu. Circuit privé ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

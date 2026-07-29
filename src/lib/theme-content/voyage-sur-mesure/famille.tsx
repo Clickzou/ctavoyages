@@ -8,9 +8,9 @@ const vsmFamille: ThemeContent = {
   parentLabel: "Voyage sur mesure",
   parentHref: "/voyage-sur-mesure",
   meta: {
-    title: "Voyage en famille sur mesure — Itinéraire adapté aux enfants",
+    title: "Voyage en famille : adapté aux enfants",
     description:
-      "Organisez votre voyage en famille avec CTA Voyages : itinéraire 100% personnalisé selon l'âge des enfants, rythme adapté, activités pour tous et organisation clé en main. Conseiller dédié, devis gratuit.",
+      "Organisez votre voyage en famille avec CTA Voyages : itinéraire adapté à l'âge des enfants, rythme souple et organisation clé en main.",
   },
   hero: {
     image:

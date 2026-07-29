@@ -5,9 +5,9 @@ const costaRica: DestinationContent = {
   slug: "costa-rica",
   meta: {
     title:
-      "Voyage au Costa Rica : séjour, circuit et voyage sur mesure",
+      "Voyage au Costa Rica : séjour, circuit",
     description:
-      "Organisez votre voyage au Costa Rica avec CTA Voyages. Volcan Arenal, forêt nuageuse de Monteverde, parc Manuel Antonio, tortues de Tortuguero et plages du Pacifique. Circuit ou voyage sur mesure.",
+      "Organisez votre voyage au Costa Rica avec CTA Voyages. Volcan Arenal, forêt de Monteverde, parc Manuel Antonio, tortues de Tortuguero, Pacifique.",
   },
   hero: {
     image:

@@ -14,7 +14,7 @@ const bresil: DestinationContent = {
   slug: "bresil",
   meta: {
     title:
-      "Voyage au Brésil : séjour, circuit et voyage sur mesure",
+      "Voyage au Brésil : séjour, circuit",
     description:
       "Organisez votre voyage au Brésil avec CTA Voyages. Rio de Janeiro et le Christ Rédempteur, chutes d'Iguaçu, Amazonie, Pantanal et jaguars, Salvador de Bahia et plages du Nordeste. Circuit ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

@@ -5,7 +5,7 @@ const norvege: DestinationContent = {
   slug: "norvege",
   meta: {
     title:
-      "Voyage en Norvège : fjords, aurores boréales et voyage sur mesure",
+      "Voyage en Norvège : fjords, aurores boréales",
     description:
       "Organisez votre voyage en Norvège avec CTA Voyages. Fjords spectaculaires, îles Lofoten, aurores boréales à Tromsø, train de Flåm, circuit ou voyage sur mesure.",
   },

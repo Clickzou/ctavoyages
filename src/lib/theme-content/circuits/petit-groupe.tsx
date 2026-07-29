@@ -8,7 +8,7 @@ const circuitPetitGroupe: ThemeContent = {
   parentLabel: "Circuits",
   parentHref: "/circuits",
   meta: {
-    title: "Circuit en petit groupe — Voyages à taille humaine (8-15 pers.)",
+    title: "Circuit en petit groupe : 8 à 15 voyageurs",
     description:
       "Partez en circuit accompagné en petit groupe avec CTA Voyages : 8 à 15 voyageurs, convivialité, confort préservé, départs garantis et guide francophone.",
   },

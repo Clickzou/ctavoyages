@@ -14,7 +14,7 @@ const senegal: DestinationContent = {
   slug: "senegal",
   meta: {
     title:
-      "Voyage au Sénégal : séjour, circuit et voyage sur mesure",
+      "Voyage au Sénégal : séjour, circuit",
     description:
       "Organisez votre voyage au Sénégal avec CTA Voyages. Île de Gorée, Saint-Louis, delta du Saloum, lac Rose, désert de Lompoul, réserves animalières et plages de la Petite Côte. Circuit ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

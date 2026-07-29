@@ -8,7 +8,7 @@ const circuitAccompagne: ThemeContent = {
   parentLabel: "Circuits",
   parentHref: "/circuits",
   meta: {
-    title: "Circuit accompagné avec guide francophone — Voyages encadrés",
+    title: "Circuit accompagné avec guide francophone",
     description:
       "Partez en circuit accompagné avec CTA Voyages : un guide ou accompagnateur francophone vous suit sur les temps forts du voyage.",
   },

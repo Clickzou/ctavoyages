@@ -5,7 +5,7 @@ const egypte: DestinationContent = {
   slug: "egypte",
   meta: {
     title:
-      "Voyage en Égypte : séjour, circuit et croisière sur le Nil sur mesure",
+      "Voyage en Égypte : circuit & croisière sur le Nil",
     description:
       "Organisez votre voyage en Égypte avec CTA Voyages. Pyramides de Gizeh, temples de Louxor et Karnak, croisière sur le Nil, Abou Simbel.",
   },

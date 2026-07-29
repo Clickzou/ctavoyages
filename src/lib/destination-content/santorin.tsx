@@ -5,9 +5,9 @@ const santorin: DestinationContent = {
   slug: "santorin",
   meta: {
     title:
-      "Voyage à Santorin : séjour, circuit et voyage sur mesure",
+      "Voyage à Santorin : séjour, circuit",
     description:
-      "Organisez votre voyage à Santorin avec CTA Voyages. Couchers de soleil d'Oia, villages blancs de la caldeira, croisière au volcan, plages volcaniques et vignobles. Séjour, circuit ou voyage sur mesure.",
+      "Organisez votre voyage à Santorin avec CTA Voyages. Couchers de soleil d'Oia, villages de la caldeira, croisière au volcan et vignobles.",
   },
   hero: {
     image:

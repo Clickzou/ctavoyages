@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/voyage-sur-mesure" },
   title: "Voyage sur mesure",
   description:
-    "Créez votre voyage sur mesure avec CTA Voyages : itinéraire personnalisé, conseiller dédié, devis gratuit. Japon, Thaïlande, Maroc, Canada, Seychelles et 70 destinations.",
+    "Créez votre voyage sur mesure avec CTA Voyages : itinéraire personnalisé, conseiller dédié, devis gratuit. Plus de 70 destinations.",
 };
 
 const faqJsonLd = {

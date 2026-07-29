@@ -8,7 +8,7 @@ const croisiereIlesGrecques: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière Îles grecques & mer Égée sur mesure — Cyclades & Dodécanèse",
+    title: "Croisière Îles grecques & mer Égée",
     description:
       "Partez en croisière dans les îles grecques avec CTA Voyages : Cyclades aux maisons blanches, eaux turquoise, sites antiques et couchers de soleil mythiques.",
   },

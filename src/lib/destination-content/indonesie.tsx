@@ -14,7 +14,7 @@ const indonesie: DestinationContent = {
   slug: "indonesie",
   meta: {
     title:
-      "Voyage en Indonésie : séjour, circuit et voyage sur mesure",
+      "Voyage en Indonésie : séjour, circuit",
     description:
       "Organisez votre voyage en Indonésie avec CTA Voyages. Rizières de Bali, temple de Borobudur, volcans Bromo et Ijen, dragons de Komodo et plongée à Raja Ampat.",
   },

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/circuits" },
   title: "Nos circuits",
   description:
-    "Découvrez nos circuits individuels, accompagnés ou en petit groupe avec CTA Voyages. Itinéraires organisés, conseiller dédié, devis gratuit et accompagnement personnalisé.",
+    "Découvrez nos circuits individuels, accompagnés ou en petit groupe avec CTA Voyages. Itinéraires organisés, conseiller dédié, devis gratuit.",
 };
 
 const faqJsonLd = {

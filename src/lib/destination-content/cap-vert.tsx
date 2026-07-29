@@ -14,7 +14,7 @@ const capVert: DestinationContent = {
   slug: "cap-vert",
   meta: {
     title:
-      "Voyage au Cap-Vert : séjour, circuit et voyage sur mesure",
+      "Voyage au Cap-Vert : séjour, circuit",
     description:
       "Organisez votre voyage au Cap-Vert avec CTA Voyages. Plages de Sal et Boa Vista, randonnées à Santo Antão, volcan de Fogo, Mindelo et musique cap-verdienne.",
   },

@@ -14,9 +14,9 @@ const jamaique: DestinationContent = {
   slug: "jamaique",
   meta: {
     title:
-      "Voyage en Jamaïque : séjour, circuit et voyage sur mesure",
+      "Voyage en Jamaïque : séjour, circuit",
     description:
-      "Organisez votre voyage en Jamaïque avec CTA Voyages. Chutes de Dunn's River, plage de Negril, Montagnes Bleues et route du café, Kingston et le reggae, lagune bleue de Port Antonio. Séjour ou voyage sur mesure. Devis gratuit, contact sous 48h.",
+      "Organisez votre voyage en Jamaïque avec CTA Voyages. Chutes de Dunn's River, plage de Negril, Montagnes Bleues, Kingston et le reggae.",
   },
   hero: {
     image: "/generated/jamaique.jpg",

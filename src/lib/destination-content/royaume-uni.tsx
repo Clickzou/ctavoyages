@@ -14,7 +14,7 @@ const royaumeUni: DestinationContent = {
   slug: "royaume-uni",
   meta: {
     title:
-      "Voyage au Royaume-Uni : séjour, circuit et voyage sur mesure",
+      "Voyage au Royaume-Uni : séjour, circuit",
     description:
       "Organisez votre voyage au Royaume-Uni avec CTA Voyages. Londres, Highlands d'Écosse, Cotswolds, châteaux du pays de Galles et côte de Cornouailles.",
   },

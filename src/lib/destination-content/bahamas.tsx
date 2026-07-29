@@ -14,9 +14,9 @@ const bahamas: DestinationContent = {
   slug: "bahamas",
   meta: {
     title:
-      "Voyage aux Bahamas : séjour, croisière et voyage sur mesure",
+      "Voyage aux Bahamas : séjour, croisière",
     description:
-      "Organisez votre voyage aux Bahamas avec CTA Voyages. Exumas et cochons nageurs, plage de sable rose d'Harbour Island, Nassau et Paradise Island, blue holes d'Andros. Séjour, croisière ou voyage sur mesure. Devis gratuit, contact sous 48h.",
+      "Organisez votre voyage aux Bahamas avec CTA Voyages. Exumas et cochons nageurs, sable rose d'Harbour Island, Nassau, blue holes d'Andros.",
   },
   hero: {
     image: "/generated/bahamas.jpg",

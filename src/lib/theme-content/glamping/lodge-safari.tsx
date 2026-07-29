@@ -8,7 +8,7 @@ const glampingLodgeSafari: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Lodge safari de luxe — Glamping au cœur de la savane",
+    title: "Lodge safari de luxe : glamping en savane",
     description:
       "Vivez le grand safari autrement avec CTA Voyages : lodges d'exception face à la savane, réveil avec les animaux sauvages, safaris guidés au lever du jour.",
   },

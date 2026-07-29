@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/confidentialite" },
   title: "Politique de confidentialité",
   description:
-    "Politique de confidentialité et de protection des données personnelles de CTA Voyages, conforme au RGPD : données collectées, finalités, durées de conservation et droits des utilisateurs.",
+    "Politique de confidentialité de CTA Voyages, conforme au RGPD : données collectées, finalités, durées de conservation et droits des utilisateurs.",
 };
 
 export default function Page() {
@@ -141,9 +141,14 @@ export default function Page() {
           </p>
           <ul className="list-disc pl-6 space-y-2 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
             <li>
-              <strong>FormSubmit</strong>, prestataire technique
-              (sous-traitant) assurant l&apos;acheminement par email des
-              messages envoyés depuis nos formulaires&nbsp;;
+              <strong>Resend</strong>, prestataire technique (sous-traitant)
+              assurant l&apos;acheminement par email des demandes envoyées
+              depuis nos formulaires&nbsp;;
+            </li>
+            <li>
+              <strong>Brevo</strong>, prestataire technique (sous-traitant)
+              hébergeant nos listes de diffusion et assurant l&apos;envoi de
+              notre newsletter&nbsp;;
             </li>
             <li>
               <strong>le réseau TourCom</strong>, dont CTA Voyages est membre,

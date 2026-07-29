@@ -8,7 +8,7 @@ const vsmLuxe: ThemeContent = {
   parentLabel: "Voyage sur mesure",
   parentHref: "/voyage-sur-mesure",
   meta: {
-    title: "Voyage de luxe sur mesure — Palaces & expériences d'exception",
+    title: "Voyage de luxe : palaces & exception",
     description:
       "Composez votre voyage de luxe avec CTA Voyages : palaces et adresses d'exception, services privés, expériences exclusives et attentions sur mesure.",
   },

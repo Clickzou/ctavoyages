@@ -5,7 +5,7 @@ const france: DestinationContent = {
   slug: "france",
   meta: {
     title:
-      "Voyage en France : séjour, circuit et voyage sur mesure",
+      "Voyage en France : séjour, circuit",
     description:
       "Organisez votre voyage en France avec CTA Voyages. Paris, châteaux de la Loire, Provence, Côte d'Azur, Bretagne et Alpes, circuit ou voyage sur mesure.",
   },

@@ -14,7 +14,7 @@ const mexique: DestinationContent = {
   slug: "mexique",
   meta: {
     title:
-      "Voyage au Mexique : séjour, circuit et voyage sur mesure",
+      "Voyage au Mexique : séjour, circuit",
     description:
       "Organisez votre voyage au Mexique avec CTA Voyages. Chichén Itzá, Tulum et Palenque, cénotes du Yucatán, Mexico et Teotihuacán, villes coloniales, Oaxaca et Riviera Maya. Circuit ou voyage sur mesure. Devis gratuit, contact sous 48h.",
   },

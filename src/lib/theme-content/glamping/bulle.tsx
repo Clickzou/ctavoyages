@@ -9,7 +9,7 @@ const glampingBulle: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Bulle transparente : nuit sous les étoiles — Dôme & glamping",
+    title: "Bulle transparente : nuit sous les étoiles",
     description:
       "Dormez dans une bulle transparente avec CTA Voyages : nuit à la belle étoile sous un dôme, ciel étoilé au-dessus du lit, intimité et confort.",
   },

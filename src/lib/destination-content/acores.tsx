@@ -5,7 +5,7 @@ const acores: DestinationContent = {
   slug: "acores",
   meta: {
     title:
-      "Voyage aux Açores : séjour, circuit et voyage sur mesure",
+      "Voyage aux Açores : séjour, circuit",
     description:
       "Organisez votre voyage aux Açores avec CTA Voyages. Cratères de Sete Cidades, sources thermales de Furnas, observation des baleines, volcan de Pico et randonnées. Circuit ou voyage sur mesure.",
   },

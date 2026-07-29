@@ -9,7 +9,7 @@ const famille: ThemeContent = {
   parentLabel: "Séjours",
   parentHref: "/sejours",
   meta: {
-    title: "Séjour en famille sur mesure — Clubs & resorts familiaux",
+    title: "Séjour en famille : clubs & resorts",
     description:
       "Organisez vos vacances en famille avec CTA Voyages : clubs et resorts familiaux, chambres communicantes, clubs enfants et activités pour tous les âges.",
   },

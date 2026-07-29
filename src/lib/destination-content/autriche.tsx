@@ -14,7 +14,7 @@ const autriche: DestinationContent = {
   slug: "autriche",
   meta: {
     title:
-      "Voyage en Autriche : séjour, circuit et voyage sur mesure",
+      "Voyage en Autriche : séjour, circuit",
     description:
       "Organisez votre voyage en Autriche avec CTA Voyages. Vienne impériale, Salzbourg et Mozart, lacs du Salzkammergut, Hallstatt, Tyrol et route du Grossglockner.",
   },

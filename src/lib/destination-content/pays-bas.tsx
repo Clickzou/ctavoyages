@@ -14,7 +14,7 @@ const paysBas: DestinationContent = {
   slug: "pays-bas",
   meta: {
     title:
-      "Voyage aux Pays-Bas : séjour, circuit et voyage sur mesure",
+      "Voyage aux Pays-Bas : séjour, circuit",
     description:
       "Organisez votre voyage aux Pays-Bas avec CTA Voyages. Canaux d'Amsterdam, champs de tulipes et Keukenhof, moulins de Kinderdijk, Rotterdam et Delft.",
   },

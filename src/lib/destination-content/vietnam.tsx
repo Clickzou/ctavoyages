@@ -5,9 +5,9 @@ const vietnam: DestinationContent = {
   slug: "vietnam",
   meta: {
     title:
-      "Voyage au Vietnam : séjour, circuit et voyage sur mesure",
+      "Voyage au Vietnam : séjour, circuit",
     description:
-      "Organisez votre voyage au Vietnam avec CTA Voyages. Hanoï et sa vieille ville, croisière dans la baie d'Halong, lanternes de Hoi An, cité impériale de Hué, delta du Mékong et Saïgon. Circuit ou voyage sur mesure.",
+      "Organisez votre voyage au Vietnam avec CTA Voyages. Hanoï, croisière en baie d'Halong, lanternes de Hoi An, cité impériale de Hué, Mékong.",
   },
   hero: {
     image:

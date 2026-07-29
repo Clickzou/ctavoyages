@@ -8,7 +8,7 @@ const croisiereMediterranee: ThemeContent = {
   parentLabel: "Croisières",
   parentHref: "/croisieres",
   meta: {
-    title: "Croisière en Méditerranée sur mesure — Escales de rêve",
+    title: "Croisière en Méditerranée sur mesure",
     description:
       "Embarquez pour une croisière en Méditerranée avec CTA Voyages : escales entre Italie, Grèce, Espagne et Croatie, soleil, patrimoine et confort à bord.",
   },

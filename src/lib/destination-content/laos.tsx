@@ -13,7 +13,7 @@ import {
 const laos: DestinationContent = {
   slug: "laos",
   meta: {
-    title: "Voyage au Laos : séjour, circuit et voyage sur mesure",
+    title: "Voyage au Laos : séjour, circuit",
     description:
       "Organisez votre voyage au Laos avec CTA Voyages. Luang Prabang et l'aumône des moines, cascades de Kuang Si, croisière sur le Mékong, Plaine des Jarres et 4 000 îles. Circuit ou voyage sur mesure.",
   },

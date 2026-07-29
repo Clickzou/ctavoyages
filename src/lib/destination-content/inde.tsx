@@ -5,7 +5,7 @@ const inde: DestinationContent = {
   slug: "inde",
   meta: {
     title:
-      "Voyage en Inde : circuit Rajasthan, Taj Mahal et voyage sur mesure",
+      "Voyage en Inde : circuit Rajasthan, Taj Mahal",
     description:
       "Organisez votre voyage en Inde avec CTA Voyages. Triangle d'or Delhi-Agra-Jaipur, palais du Rajasthan, Taj Mahal, lacs d'Udaipur et le Gange à Varanasi.",
   },

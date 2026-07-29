@@ -10,7 +10,7 @@ const glampingIglooArctique: ThemeContent = {
   meta: {
     title: "Igloo & cabane arctique sous les aurores boréales",
     description:
-      "Dormez sous les aurores boréales dans un igloo de verre ou une cabane arctique. CTA Voyages compose votre séjour grand froid : Laponie, Norvège, Islande, conseiller dédié, devis gratuit.",
+      "Dormez sous les aurores boréales en igloo de verre ou cabane arctique. CTA Voyages compose votre séjour grand froid : Laponie, Norvège, Islande.",
   },
   hero: {
     image:

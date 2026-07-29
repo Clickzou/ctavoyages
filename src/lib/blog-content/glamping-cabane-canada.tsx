@@ -6,7 +6,7 @@ const glampingCabaneCanada: BlogArticle = {
   date: "juillet 2026",
   readingTime: "6 min",
   meta: {
-    title: "Glamping au Canada : cabane en rondins au bord d'un lac",
+    title: "Glamping au Canada : cabane en rondins",
     description:
       "Une cabane en rondins face à un lac canadien, entre jacuzzi, forêt boréale et aurores : le glamping selon CTA Voyages pour se reconnecter à la nature.",
   },

@@ -8,7 +8,7 @@ const circuitNature: ThemeContent = {
   parentLabel: "Circuits",
   parentHref: "/circuits",
   meta: {
-    title: "Circuit nature & grands espaces sur mesure — Parcs, volcans, faune sauvage",
+    title: "Circuit nature & grands espaces sur mesure",
     description:
       "Partez en circuit nature avec CTA Voyages : parcs nationaux, volcans, forêts et faune sauvage du Costa Rica au Kenya.",
   },

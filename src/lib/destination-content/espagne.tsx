@@ -5,9 +5,9 @@ const espagne: DestinationContent = {
   slug: "espagne",
   meta: {
     title:
-      "Voyage en Espagne : séjour, circuit et voyage sur mesure",
+      "Voyage en Espagne : séjour, circuit",
     description:
-      "Organisez votre voyage en Espagne avec CTA Voyages. Barcelone et Gaudí, Madrid, l'Alhambra de Grenade, l'Alcázar de Séville, Cordoue, Valence : circuit ou voyage sur mesure.",
+      "Organisez votre voyage en Espagne avec CTA Voyages. Barcelone et Gaudí, Madrid, l'Alhambra de Grenade, l'Alcázar de Séville, Cordoue, Valence.",
   },
   hero: {
     image:

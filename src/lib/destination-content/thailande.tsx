@@ -5,7 +5,7 @@ const thailande: DestinationContent = {
   slug: "thailande",
   meta: {
     title:
-      "Voyage en Thaïlande : séjour, circuit et voyage sur mesure",
+      "Voyage en Thaïlande : séjour, circuit",
     description:
       "Organisez votre voyage en Thaïlande avec CTA Voyages. Temples de Bangkok, triangle d'or de Chiang Mai, plages de la mer d'Andaman, circuit ou voyage sur mesure.",
   },

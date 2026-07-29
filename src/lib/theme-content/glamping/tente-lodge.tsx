@@ -8,7 +8,7 @@ const glampingTenteLodge: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Tente lodge & safari de luxe — Glamping en pleine nature",
+    title: "Tente lodge & safari de luxe",
     description:
       "Dormez en tente lodge avec CTA Voyages : lit king size, salle de bains privative et confort d'hôtel au cœur de la savane.",
   },

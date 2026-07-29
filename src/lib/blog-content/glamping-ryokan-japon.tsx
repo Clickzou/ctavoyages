@@ -8,7 +8,7 @@ const glampingRyokanJapon: BlogArticle = {
   meta: {
     title: "Ryokan traditionnel et bains onsen au Japon",
     description:
-      "Tatami, futon, cuisine kaiseki et sources thermales : vivez l'expérience d'un ryokan traditionnel avec bains onsen au Japon, un séjour insolite signé CTA Voyages.",
+      "Tatami, futon, cuisine kaiseki et sources thermales : vivez l'expérience d'un ryokan traditionnel avec bains onsen au Japon, signé CTA Voyages.",
   },
   title: "Ryokan traditionnel avec bains onsen au Japon",
   excerpt:

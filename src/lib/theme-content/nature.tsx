@@ -8,7 +8,7 @@ const nature: ThemeContent = {
   parentLabel: "Séjours",
   parentHref: "/sejours",
   meta: {
-    title: "Séjour nature & grands espaces sur mesure — Faune, randonnée & déconnexion",
+    title: "Séjour nature & grands espaces sur mesure",
     description:
       "Organisez votre séjour nature avec CTA Voyages : grands espaces préservés, faune sauvage, randonnées et écolodges aux quatre coins du monde.",
   },

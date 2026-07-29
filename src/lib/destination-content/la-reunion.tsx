@@ -5,7 +5,7 @@ const laReunion: DestinationContent = {
   slug: "la-reunion",
   meta: {
     title:
-      "Voyage à La Réunion : séjour, circuit et voyage sur mesure",
+      "Voyage à La Réunion : séjour, circuit",
     description:
       "Organisez votre voyage à La Réunion avec CTA Voyages. Piton de la Fournaise, cirques de Mafate, Salazie et Cilaos, lagon de l'Ermitage, randonnées et plages.",
   },

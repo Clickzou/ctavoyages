@@ -8,9 +8,9 @@ const glampingCampementDesert: ThemeContent = {
   parentLabel: "Glamping",
   parentHref: "/glamping",
   meta: {
-    title: "Campement du désert & nuit sous tente berbère — Glamping dunes",
+    title: "Campement du désert & tente berbère",
     description:
-      "Vivez une nuit au campement du désert avec CTA Voyages : tente berbère ou caïdale au milieu des dunes, dîner aux chandelles, ciel étoilé et balade à dos de chameau. Conseiller dédié, devis gratuit.",
+      "Vivez une nuit au campement du désert avec CTA Voyages : tente berbère au milieu des dunes, dîner aux chandelles et ciel étoilé. Devis gratuit.",
   },
   hero: {
     image:

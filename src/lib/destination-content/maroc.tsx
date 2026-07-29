@@ -5,7 +5,7 @@ const maroc: DestinationContent = {
   slug: "maroc",
   meta: {
     title:
-      "Voyage au Maroc : séjour, circuit et voyage sur mesure",
+      "Voyage au Maroc : séjour, circuit",
     description:
       "Organisez votre voyage au Maroc avec CTA Voyages. Médinas de Marrakech et Fès, route des kasbahs, désert de Merzouga, Chefchaouen la bleue, Essaouira.",
   },

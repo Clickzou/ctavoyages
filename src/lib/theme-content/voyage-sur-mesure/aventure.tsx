@@ -8,7 +8,7 @@ const vsmAventure: ThemeContent = {
   parentLabel: "Voyage sur mesure",
   parentHref: "/voyage-sur-mesure",
   meta: {
-    title: "Voyage aventure sur mesure — Trek, immersion & grands espaces",
+    title: "Voyage aventure : trek & grands espaces",
     description:
       "Partez à l'aventure avec CTA Voyages : treks, immersions et sensations dans les plus beaux espaces sauvages du monde.",
   },
