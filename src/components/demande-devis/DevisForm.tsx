@@ -3,7 +3,7 @@
 import { useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { submitDataToFormsubmit } from "@/lib/submitForm";
+import { submitDevisRequest } from "@/lib/submitForm";
 
 type DestOption = {
   text: string;
@@ -414,7 +414,7 @@ export default function DevisForm() {
     setSubmitting(true);
     setSubmitError(null);
     try {
-      await submitDataToFormsubmit(
+      await submitDevisRequest(
         {
           type_voyage: type,
           destination,
