@@ -99,8 +99,7 @@ export default function Page() {
           <ul className="list-disc pl-6 space-y-2 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
             <li>
               <strong>N&deg; d&apos;immatriculation Atout France&nbsp;:</strong>{" "}
-              IM0310[À COMPLÉTER : numéro complet d&apos;immatriculation Atout
-              France]
+              IM031110034
             </li>
             <li>
               <strong>Atout France&nbsp;:</strong> 79-81 rue de Clichy, 75009
