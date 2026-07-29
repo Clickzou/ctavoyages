@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 /**
  * Reprise des URL de l'ancien site (plateforme de réservation Rails servie sur
- * www.cta-events.com). Le nouveau site est servi sur www.cta-voyages.com, vers
+ * www.cta-events.com). Le nouveau site est servi sur cta-voyages.com, vers
  * lequel cta-events.com redirige en conservant le chemin : ces redirections 308
  * évitent que les centaines d'URL déjà indexées ne tombent en 404 et
  * transmettent leur référencement aux pages équivalentes.
