@@ -13,10 +13,32 @@ plus rien.
   vers l'apex en 308.
 - ✅ **Étape 2 — le code déclare le nouveau domaine canonique** (`metadataBase`,
   `robots.ts`, `sitemap.ts`).
-- ⬜ **Étape 3 — `cta-events.com` ne redirige pas encore.** L'ancien site Rails
-  répond toujours chez Gandi. C'est la dernière opération de la bascule.
-- ⬜ **Search Console** : propriété à créer pour `cta-voyages.com`, sitemap à
-  soumettre, puis outil de changement d'adresse depuis `cta-events.com`.
+- ✅ **Search Console** : propriété `cta-voyages.com` validée par TXT, sitemap
+  soumis, 241 URL découvertes.
+- ⛔ **Étape 3 — la redirection de `cta-events.com` est abandonnée.** L'accès à
+  la zone DNS du domaine n'est pas disponible côté projet ; le site part donc
+  sans reprendre le référencement de l'ancien. Le changement d'adresse Google
+  est sans objet, faute de redirection à constater.
+
+### Ce qu'est réellement cta-events.com
+
+Contrairement à ce que son usage passé laissait croire, ce domaine n'est pas
+celui de l'ancien site : c'est le **domaine de messagerie du Groupe CTA**. Son
+enregistrement SPF le raccorde à Microsoft 365, à **Amadeus** et à
+**Traveldoo**. Seul le serveur Rails est appelé à disparaître.
+
+Deux conséquences :
+
+- **La messagerie ne risque rien.** `voyages@cta-events.com` est une boîte
+  Exchange, indépendante de l'hébergement du site : arrêter le serveur Rails ne
+  coupe pas la réception des demandes de devis.
+- **Le domaine expire le 8 décembre 2026** (registrar Gandi). Son renouvellement
+  conditionne la messagerie de l'entreprise entière, donc l'arrivée des devis.
+  L'interlocuteur à identifier est l'administrateur Microsoft 365 du groupe.
+
+Les 58 redirections de [`next.config.ts`](next.config.ts) sont conservées : sans
+coût ni effet tant qu'aucun trafic n'arrive par les anciennes URL, elles
+redeviendraient immédiatement utiles si l'accès à la zone DNS était retrouvé.
 
 Formulaires opérationnels et vérifiés de bout en bout : les demandes de devis
 partent par **Resend** (`devis@cta-voyages.com` → `voyages@cta-events.com` plus
