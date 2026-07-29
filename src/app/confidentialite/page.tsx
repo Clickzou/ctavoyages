@@ -151,6 +151,11 @@ export default function Page() {
               notre newsletter&nbsp;;
             </li>
             <li>
+              <strong>Google Analytics</strong>, pour la seule mesure
+              d&apos;audience et uniquement si vous y avez consenti&nbsp;; à
+              défaut, aucune donnée ne lui est transmise&nbsp;;
+            </li>
+            <li>
               <strong>le réseau TourCom</strong>, dont CTA Voyages est membre,
               ainsi que nos partenaires et prestataires de voyage (compagnies,
               hôteliers, réceptifs), lorsque cela est nécessaire à la

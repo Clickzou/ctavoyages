@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ConsentSettings from "@/components/ConsentSettings";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/cookies" },
@@ -72,11 +73,14 @@ export default function Page() {
             </li>
           </ul>
           <p className="font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
-            À ce jour, ce site n&apos;emploie aucun outil de mesure
-            d&apos;audience et ne dépose aucun cookie de suivi&nbsp;: ni Google
-            Analytics, ni Vercel Analytics, ni pixel publicitaire. Cette page
-            sera mise à jour si un tel outil venait à être installé.
+            Ce site utilise <strong>Google Analytics 4</strong> comme unique
+            outil de mesure d&apos;audience. Ses cookies ne sont déposés
+            qu&apos;après votre acceptation&nbsp;: tant que vous n&apos;avez pas
+            choisi, ou si vous refusez, aucun script de mesure n&apos;est chargé
+            et aucune donnée n&apos;est transmise à Google. Le site n&apos;emploie
+            aucun cookie publicitaire ni pixel de réseau social.
           </p>
+
 
           <h2 className="font-h3 text-[20px] sm:text-[22px] font-bold text-on-surface mt-10 mb-4">
             3. Polices Google Fonts
@@ -103,6 +107,7 @@ export default function Page() {
             des traitements antérieurs. Le retrait du consentement est aussi
             simple que son recueil.
           </p>
+          <ConsentSettings />
 
           <h2 className="font-h3 text-[20px] sm:text-[22px] font-bold text-on-surface mt-10 mb-4">
             5. Durée de conservation

@@ -7,6 +7,7 @@ import FlightCursor from "@/components/FlightCursor";
 import BackToTop from "@/components/BackToTop";
 import ScrollReveal from "@/components/ScrollReveal";
 import IconFontReady from "@/components/IconFontReady";
+import CookieConsent from "@/components/CookieConsent";
 
 const heading = Plus_Jakarta_Sans({
   variable: "--font-heading",
@@ -140,6 +141,7 @@ export default function RootLayout({
         <IconFontReady />
         <FlightCursor />
         <BackToTop />
+        <CookieConsent />
       </body>
     </html>
   );
