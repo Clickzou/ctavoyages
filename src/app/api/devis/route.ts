@@ -16,11 +16,15 @@ import { Resend } from "resend";
 const RECIPIENT = "voyages@cta-events.com";
 
 /**
- * Expediteur. Resend impose un domaine verifie chez lui : un sous-domaine
- * dedie evite de toucher aux enregistrements SPF/MX de la messagerie OVH
- * existante.
+ * Expediteur. Le domaine verifie chez Resend est cta-voyages.com, dont la cle
+ * DKIM est publiee sur resend._domainkey ; l'adresse doit donc appartenir a ce
+ * domaine. Le sous-domaine `send` ne porte que le retour technique (SPF et MX
+ * de bounce), il n'a pas vocation a apparaitre dans l'expediteur.
+ *
+ * A noter : les MX de cta-voyages.com restent ceux d'OVH. Envoyer via Resend
+ * ne change rien a la reception du courrier.
  */
-const FROM = process.env.RESEND_FROM ?? "CTA Voyages <devis@send.cta-voyages.com>";
+const FROM = process.env.RESEND_FROM ?? "CTA Voyages <devis@cta-voyages.com>";
 
 /** Champs affiches en clair dans l'e-mail, dans cet ordre. */
 const LABELS: Record<string, string> = {
