@@ -6,6 +6,25 @@ un **nouveau domaine, `cta-voyages.com`** (acheté chez OVH), **sans `www`** :
 `www.cta-voyages.com` et `cta-events.com` redirigent vers lui et n'hébergent
 plus rien.
 
+## Avancement au 29 juillet 2026
+
+- ✅ **Étape 1 — le site est en ligne sur `cta-voyages.com`.** Domaine acheté
+  chez OVH, zone DNS pointée sur Vercel, certificat TLS émis. `www` redirige
+  vers l'apex en 308.
+- ✅ **Étape 2 — le code déclare le nouveau domaine canonique** (`metadataBase`,
+  `robots.ts`, `sitemap.ts`).
+- ⬜ **Étape 3 — `cta-events.com` ne redirige pas encore.** L'ancien site Rails
+  répond toujours chez Gandi. C'est la dernière opération de la bascule.
+- ⬜ **Search Console** : propriété à créer pour `cta-voyages.com`, sitemap à
+  soumettre, puis outil de changement d'adresse depuis `cta-events.com`.
+
+Formulaires opérationnels et vérifiés de bout en bout : les demandes de devis
+partent par **Resend** (`devis@cta-voyages.com` → `voyages@cta-events.com` plus
+cinq destinataires en copie), les inscriptions newsletter alimentent la liste
+**Brevo** `CTA Voyages` (#49). Quatre variables d'environnement sont requises
+côté Vercel : `RESEND_API_KEY`, `BREVO_API_KEY`, `BREVO_LIST_ID`, et
+éventuellement `RESEND_FROM`.
+
 ## État des lieux
 
 | | Site actuel | Nouveau site |
