@@ -143,16 +143,15 @@ export default function Page() {
           </p>
           <ul className="list-disc pl-6 space-y-2 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
             <li>
-              <strong>Assureur (RCP)&nbsp;:</strong>{" "}
-              [À COMPLÉTER : nom de la compagnie d&apos;assurance]
+              <strong>Assureur (RCP)&nbsp;:</strong> HISCOX
             </li>
             <li>
-              <strong>Adresse de l&apos;assureur&nbsp;:</strong>{" "}
-              [À COMPLÉTER : adresse de l&apos;assureur]
+              <strong>Adresse de l&apos;assureur&nbsp;:</strong> 49 avenue de
+              l&apos;Opéra, 75002 Paris, France
             </li>
             <li>
               <strong>N&deg; de police&nbsp;:</strong>{" "}
-              [À COMPLÉTER : numéro de contrat / police d&apos;assurance]
+              PL-FR-PSC900278430/00
             </li>
           </ul>
 
