@@ -20,6 +20,7 @@ const RECIPIENT = "voyages@cta-events.com";
 const CC = [
   "caroline.guiraud@cta-events.com",
   "stephanie.belbes@cta-events.com",
+  "kevin.massat@cta-events.com",
   "kz@cta-events.com",
   "jjc@cta-events.com",
   "jc@clickzou.fr",
