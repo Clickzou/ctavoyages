@@ -72,9 +72,10 @@ export default function Page() {
             </li>
           </ul>
           <p className="font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
-            [À COMPLÉTER : préciser les outils de mesure d&apos;audience
-            réellement employés, ex. Google Analytics / Vercel Analytics, ou
-            indiquer qu&apos;aucun outil de suivi n&apos;est utilisé.]
+            À ce jour, ce site n&apos;emploie aucun outil de mesure
+            d&apos;audience et ne dépose aucun cookie de suivi&nbsp;: ni Google
+            Analytics, ni Vercel Analytics, ni pixel publicitaire. Cette page
+            sera mise à jour si un tel outil venait à être installé.
           </p>
 
           <h2 className="font-h3 text-[20px] sm:text-[22px] font-bold text-on-surface mt-10 mb-4">

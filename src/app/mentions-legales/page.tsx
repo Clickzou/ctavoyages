@@ -160,16 +160,23 @@ export default function Page() {
           </h2>
           <ul className="list-disc pl-6 space-y-2 font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed">
             <li>
-              <strong>Hébergeur&nbsp;:</strong>{" "}
-              [À COMPLÉTER : nom de l&apos;hébergeur, ex. Vercel Inc. / OVHcloud]
+              <strong>Hébergeur&nbsp;:</strong> Vercel Inc.
             </li>
             <li>
-              <strong>Adresse&nbsp;:</strong>{" "}
-              [À COMPLÉTER : adresse de l&apos;hébergeur]
+              <strong>Adresse&nbsp;:</strong> 440 N Barranca Avenue #4133,
+              Covina, CA 91723, États-Unis
             </li>
             <li>
               <strong>Contact&nbsp;:</strong>{" "}
-              [À COMPLÉTER : téléphone ou site de l&apos;hébergeur]
+              <a
+                href="https://vercel.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary font-medium hover:underline"
+              >
+                vercel.com
+              </a>{" "}
+              — privacy@vercel.com
             </li>
           </ul>
 

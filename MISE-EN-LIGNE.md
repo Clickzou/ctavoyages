@@ -83,6 +83,21 @@ pages mortes. Le push sur `main` déclenche le déploiement.
    reste l'adresse de contact du site et doit continuer de fonctionner. Ne
    modifier que les A et CNAME n'affecte pas la messagerie.
 
+### Ce que « couper l'ancien site » veut dire ici
+
+La plateforme Rails est arrêtée et son hébergement résilié, mais le domaine
+`cta-events.com` **reste enregistré chez Gandi** pour deux raisons :
+
+- il porte `voyages@cta-events.com`, adresse vers laquelle le formulaire de
+  devis du nouveau site envoie les demandes — la perdre, c'est perdre les
+  contacts entrants ;
+- ses enregistrements A et CNAME pointent vers Vercel, qui émet les
+  redirections. **Cela ne coûte rien de plus** : aucun hébergement n'est
+  facturé pour rediriger, et le référencement acquis est transmis au nouveau
+  domaine plutôt que de tomber en 404.
+
+Autrement dit, résilier l'hébergement n'oblige pas à renoncer aux redirections.
+
 ## Précautions
 
 - **Abaisser le TTL à 300 s quelques heures avant la bascule.** Le retour en
