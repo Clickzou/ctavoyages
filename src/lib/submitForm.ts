@@ -2,9 +2,9 @@
  * Envoi des demandes de devis.
  *
  * Le navigateur poste vers notre propre route `/api/devis`, qui se charge de
- * l'expedition (Resend, ou FormSubmit tant que la cle n'est pas configuree).
- * Passer par le serveur permet de garder la cle d'API secrete et de ne plus
- * exposer l'adresse du destinataire dans le code client.
+ * l'expedition via Resend. Passer par le serveur permet de garder la cle d'API
+ * secrete et de ne plus exposer les adresses des destinataires dans le code
+ * client.
  */
 
 /** Transmet une demande de devis déjà validée par le formulaire. */

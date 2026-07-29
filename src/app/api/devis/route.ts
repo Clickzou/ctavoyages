@@ -1,15 +1,16 @@
 import { Resend } from "resend";
 
 /**
- * Reception des demandes de devis.
+ * Reception des demandes de devis, envoyees par Resend.
  *
  * L'envoi passe par le serveur et non par le navigateur : la cle Resend est un
  * secret, elle ne doit jamais partir dans le bundle client.
  *
- * Tant que RESEND_API_KEY n'est pas configuree, la route retombe sur
- * FormSubmit, le service utilise jusqu'ici. Aucune demande n'est donc perdue
- * pendant la mise en place de Resend, et la bascule se fait simplement en
- * renseignant la variable d'environnement.
+ * Il n'y a volontairement pas de repli sur un autre service. Le precedent,
+ * FormSubmit, refuse desormais nos requetes par un 403 : appelees depuis le
+ * serveur et non plus depuis le navigateur, elles n'ont plus l'origine qu'il
+ * attend. Un repli condamne avalerait la demande en silence la ou une erreur
+ * franche invite le visiteur a reessayer ou a telephoner.
  */
 
 /** Destinataire principal des demandes. Boite historique, inchangee. */
@@ -87,25 +88,6 @@ function buildText(data: Record<string, string>): string {
     .join("\n");
 }
 
-/** Repli sur le service historique tant que Resend n'est pas configure. */
-async function sendViaFormsubmit(payload: Record<string, string>) {
-  const res = await fetch(`https://formsubmit.co/ajax/${RECIPIENT}`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Accept: "application/json" },
-    body: JSON.stringify({
-      ...payload,
-      _template: "table",
-      _captcha: "false",
-      _cc: CC.join(","),
-    }),
-  });
-  if (!res.ok) throw new Error(`FormSubmit a repondu ${res.status}`);
-  const json = (await res.json()) as { success?: string | boolean; message?: string };
-  if (json.success !== "true" && json.success !== true) {
-    throw new Error(json.message || "FormSubmit a refuse l'envoi");
-  }
-}
-
 export async function POST(request: Request) {
   let body: unknown;
   try {
@@ -138,13 +120,15 @@ export async function POST(request: Request) {
   delete data._subject;
 
   const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    console.error("RESEND_API_KEY absente : impossible d'envoyer la demande.");
+    return Response.json(
+      { error: "L'envoi a échoué. Merci de réessayer." },
+      { status: 500 }
+    );
+  }
 
   try {
-    if (!apiKey) {
-      await sendViaFormsubmit({ ...data, _subject: subject });
-      return Response.json({ ok: true, via: "formsubmit" });
-    }
-
     const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
       from: FROM,
@@ -158,16 +142,11 @@ export async function POST(request: Request) {
     });
 
     if (error) throw new Error(error.message);
-    return Response.json({ ok: true, via: "resend" });
+    return Response.json({ ok: true });
   } catch (err) {
     console.error("Echec de l'envoi de la demande de devis :", err);
     return Response.json(
-      {
-        error: "L'envoi a échoué. Merci de réessayer.",
-        // Canal emprunte, pour distinguer un refus de Resend d'une cle absente
-        // sans avoir a fouiller les journaux du serveur. Aucune donnee sensible.
-        via: apiKey ? "resend" : "formsubmit",
-      },
+      { error: "L'envoi a échoué. Merci de réessayer." },
       { status: 502 }
     );
   }
