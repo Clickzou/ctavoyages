@@ -4,6 +4,7 @@ import BlogGrid, { type BlogCard } from "@/components/blog/BlogGrid";
 import { BLOG_LIST } from "@/lib/blog-content";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/blog" },
   title: "Blog voyage : Conseils, inspirations & guides | CTA Voyages",
   description:
     "Le blog de CTA Voyages : conseils d'experts, idées de destinations, guides pratiques et inspirations pour préparer votre prochain voyage sur mesure.",

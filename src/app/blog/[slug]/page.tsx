@@ -19,7 +19,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) return { title: "Article introuvable | CTA Voyages" };
-  return { title: article.meta.title, description: article.meta.description };
+  return {
+    title: article.meta.title,
+    description: article.meta.description,
+    alternates: { canonical: `/blog/${slug}` },
+  };
 }
 
 export default async function BlogArticlePage({

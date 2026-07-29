@@ -5,6 +5,7 @@ import FaqList from "@/components/f1/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/f1" },
   title: "Séjour Formule 1 - CTA Voyages",
   description:
     "Vivez les Grands Prix de Formule 1 avec CTA Voyages. Monaco, Barcelone, Monza, Spa, Abu Dhabi, Madrid : billets officiels, hôtel et transport inclus. Devis gratuit.",

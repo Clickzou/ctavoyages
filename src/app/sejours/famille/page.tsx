@@ -5,6 +5,7 @@ import { getThemeContent } from "@/lib/theme-content";
 const content = getThemeContent("famille")!;
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sejours/famille" },
   title: content.meta.title,
   description: content.meta.description,
 };

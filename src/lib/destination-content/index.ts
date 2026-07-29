@@ -149,8 +149,20 @@ export const DESTINATION_CONTENT: Record<string, DestinationContent> = {
   "antilles-francaises": antillesFrancaises,
 };
 
-/** Slugs disposant d'une fiche riche dédiée. */
+/**
+ * Slugs disposant d'un contenu riche. Ils sont servis par la route dynamique
+ * /destination/<slug>, à l'exception de ceux listés dans STATIC_RICH_SLUGS.
+ * Attention : ce tableau ne décrit pas des URL — construire des adresses
+ * /destination-<slug> à partir de lui produirait des 404.
+ */
 export const RICH_DESTINATION_SLUGS = Object.keys(DESTINATION_CONTENT);
+
+/**
+ * Fiches servies sur une page statique dédiée /destination-<slug> plutôt que
+ * par la route dynamique, qui redirige vers elles. Seuls ces deux slugs ont
+ * une route de ce type ; le sitemap et les canoniques s'alignent dessus.
+ */
+export const STATIC_RICH_SLUGS = ["japon", "thailande"];
 
 export function getDestinationContent(
   slug: string,

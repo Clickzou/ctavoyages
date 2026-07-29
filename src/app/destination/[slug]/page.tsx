@@ -6,10 +6,10 @@ import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import DestCarousel from "@/components/destination/DestCarousel";
 import DestinationTemplate from "@/components/destination/DestinationTemplate";
 import { getDestination, getAllSlugs } from "@/lib/destinations";
-import { getDestinationContent } from "@/lib/destination-content";
-
-/** Slugs disposant d'une fiche riche servie en page statique dédiée (/destination-<slug>). */
-const STATIC_RICH_SLUGS = ["japon", "thailande"];
+import {
+  getDestinationContent,
+  STATIC_RICH_SLUGS,
+} from "@/lib/destination-content";
 
 export function generateStaticParams() {
   // On exclut japon/thailande (servis sur /destination-<slug>).
@@ -24,9 +24,20 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+
+  // japon/thailande sont servis sur /destination-<slug> : la canonique doit
+  // désigner cette adresse, pas celle qui redirige vers elle.
+  const canonical = STATIC_RICH_SLUGS.includes(slug)
+    ? `/destination-${slug}`
+    : `/destination/${slug}`;
+
   const rich = getDestinationContent(slug);
   if (rich) {
-    return { title: rich.meta.title, description: rich.meta.description };
+    return {
+      title: rich.meta.title,
+      description: rich.meta.description,
+      alternates: { canonical },
+    };
   }
   const dest = getDestination(slug);
   if (!dest) {
@@ -35,6 +46,7 @@ export async function generateMetadata({
   return {
     title: `Voyage ${dest.name} : séjour, circuit et voyage sur mesure | CTA Voyages`,
     description: `Organisez votre voyage ${dest.name} avec CTA Voyages. ${dest.intro} Devis gratuit, conseiller dédié, contact sous 48h.`,
+    alternates: { canonical },
   };
 }
 

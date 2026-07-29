@@ -5,6 +5,7 @@ import FaqList from "@/components/rugby/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/rugby" },
   title: "Séjour Rugby - CTA Voyages",
   description:
     "Vivez les plus grands événements rugby avec CTA Voyages. Champions Cup, 6 Nations, Quilter Nations Series : billets officiels, hôtel et transport inclus. Devis gratuit.",

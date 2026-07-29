@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/mentions-legales" },
   title: "Mentions légales",
   description:
     "Mentions légales du site CTA Voyages : éditeur, immatriculation Atout France, garantie financière, assurance responsabilité civile professionnelle et hébergeur.",

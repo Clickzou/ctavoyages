@@ -9,6 +9,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sejours" },
   title: "Nos séjours - CTA Voyages",
   description:
     "Découvrez nos séjours tout compris : hôtels, clubs, resorts et hébergements de charme en France et à l'international. Conseiller dédié, devis gratuit, accompagnement personnalisé.",

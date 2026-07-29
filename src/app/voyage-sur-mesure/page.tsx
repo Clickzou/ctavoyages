@@ -9,6 +9,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/voyage-sur-mesure" },
   title: "Voyage sur mesure - CTA Voyages",
   description:
     "Créez votre voyage sur mesure avec CTA Voyages : itinéraire personnalisé, conseiller dédié, devis gratuit. Japon, Thaïlande, Maroc, Canada, Seychelles et 70 destinations.",

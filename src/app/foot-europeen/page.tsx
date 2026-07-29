@@ -5,6 +5,7 @@ import FaqList from "@/components/foot-europeen/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/foot-europeen" },
   title: "Séjour Football Européen - CTA Voyages",
   description:
     "Vivez les plus grands matchs de football européen avec CTA Voyages. Premier League, Liga, Serie A, Bundesliga : billets officiels, hôtel et transport inclus. Devis gratuit.",

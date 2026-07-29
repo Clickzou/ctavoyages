@@ -9,6 +9,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/glamping" },
   title: "Glamping & hébergements insolites - CTA Voyages",
   description:
     "Découvrez nos séjours glamping et hébergements insolites avec CTA Voyages. Tentes lodges, cabanes, igloos, tree houses : vivez la nature sans sacrifier le confort. Devis gratuit, conseiller dédié.",

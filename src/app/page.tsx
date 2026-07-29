@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import HeroSlideshow from "@/components/home/HeroSlideshow";
 import WorldMap from "@/components/home/WorldMap";
@@ -5,6 +6,11 @@ import OfferCarousel from "@/components/home/OfferCarousel";
 import DestCarousel from "@/components/home/DestCarousel";
 import StatsCounters from "@/components/home/StatsCounters";
 import NewsletterForm from "@/components/home/NewsletterForm";
+
+// Titre et description viennent du layout ; seule la canonique est propre à la page.
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const ATOUTS = [
   {

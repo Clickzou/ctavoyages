@@ -34,14 +34,15 @@ export const metadata: Metadata = {
     shortcut: "/assets/images/favicon-cta-voyages.png",
     apple: "/assets/images/favicon-cta-voyages.png",
   },
-  alternates: {
-    canonical: "/",
-  },
+  // Pas de `alternates.canonical` ni de `openGraph.url` ici : les métadonnées
+  // sont fusionnées à plat, si bien qu'un champ défini dans ce layout est
+  // hérité par toutes les pages qui ne le redéfinissent pas. Une canonique
+  // posée ici désignerait donc l'accueil depuis n'importe quelle page. Chaque
+  // page déclare la sienne.
   openGraph: {
     type: "website",
     siteName: "CTA Voyages",
     locale: "fr_FR",
-    url: "/",
     title: "CTA Voyages - 30 ans d'expertise en voyages sur mesure",
     description:
       "Agence de voyages sur mesure à Toulouse. Séjours, circuits, croisières, glamping, catalogue sportif et voyages à la carte.",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/plan-du-site" },
   title: "Plan du site",
   description:
     "Plan du site CTA Voyages : retrouvez l'ensemble de nos pages : offres, destinations, blog, événements sportifs et informations pratiques.",

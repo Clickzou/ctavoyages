@@ -5,6 +5,7 @@ import FaqList from "@/components/motogp/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/motogp" },
   title: "Séjour Moto GP - CTA Voyages",
   description:
     "Vivez les plus grands Grands Prix Moto GP avec CTA Voyages. Catalogne, Mugello, Valence : billets officiels, hôtel, options VIP et expériences sur mesure. Devis gratuit.",

@@ -5,6 +5,7 @@ import RseFaq from "@/components/engagements-rse/RseFaq";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/engagements-rse" },
   title: "Engagements RSE du Groupe CTA | Voyager et organiser mieux",
   description:
     "Découvrez la politique RSE du Groupe CTA : environnement, social, éthique, achats responsables, numérique responsable, bien-être des équipes et engagements solidaires.",

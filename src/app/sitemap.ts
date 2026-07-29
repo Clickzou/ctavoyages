@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/destinations";
-import { RICH_DESTINATION_SLUGS } from "@/lib/destination-content";
+import { STATIC_RICH_SLUGS } from "@/lib/destination-content";
 
 const BASE_URL = "https://cta-voyages.com";
 
@@ -30,12 +30,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/cookies",
   ];
 
-  // Fiches « riches » dédiées (template validé) : /destination-<slug>
-  const richRoutes = RICH_DESTINATION_SLUGS.map((slug) => `/destination-${slug}`);
+  // Seuls japon et thailande ont une page dédiée /destination-<slug>.
+  const richRoutes = STATIC_RICH_SLUGS.map((slug) => `/destination-${slug}`);
 
-  // Anciennes fiches génériques, hors slugs déjà couverts par une fiche riche.
+  // Toutes les autres fiches sont servies par la route /destination/<slug>,
+  // qu'elles disposent ou non d'un contenu riche.
   const destinationRoutes = getAllSlugs()
-    .filter((slug) => !RICH_DESTINATION_SLUGS.includes(slug))
+    .filter((slug) => !STATIC_RICH_SLUGS.includes(slug))
     .map((slug) => `/destination/${slug}`);
 
   return [...staticRoutes, ...richRoutes, ...destinationRoutes].map((route) => ({

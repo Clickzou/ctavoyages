@@ -5,6 +5,7 @@ import FaqList from "@/components/nba/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/nba" },
   title: "Séjour NBA - CTA Voyages",
   description:
     "Vivez un match NBA à New York ou Los Angeles avec CTA Voyages. Knicks, Nets, Lakers, Clippers : billets officiels, hôtel, vols et expériences inclus. Devis gratuit.",

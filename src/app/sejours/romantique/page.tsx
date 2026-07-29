@@ -5,6 +5,7 @@ import { getThemeContent } from "@/lib/theme-content";
 const content = getThemeContent("romantique")!;
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/sejours/romantique" },
   title: content.meta.title,
   description: content.meta.description,
 };

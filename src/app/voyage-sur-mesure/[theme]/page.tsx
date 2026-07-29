@@ -15,7 +15,11 @@ export async function generateMetadata({
   const { theme } = await params;
   const content = VSM_THEMES[theme];
   if (!content) return {};
-  return { title: content.meta.title, description: content.meta.description };
+  return {
+    title: content.meta.title,
+    description: content.meta.description,
+    alternates: { canonical: `/voyage-sur-mesure/${theme}` },
+  };
 }
 
 export default async function VsmThemePage({

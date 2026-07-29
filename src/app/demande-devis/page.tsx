@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import DevisForm from "@/components/demande-devis/DevisForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/demande-devis" },
   title: "Demande de devis - CTA Voyages",
   description:
     "Demandez un devis gratuit pour votre prochain voyage. Séjours, circuits, croisières, glamping ou voyages sur mesure : nos attachées clientèle vous recontactent sous 48h.",

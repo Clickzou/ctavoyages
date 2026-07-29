@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/cookies" },
   title: "Politique de cookies",
   description:
     "Politique de gestion des cookies du site CTA Voyages : définition, types de cookies, consentement, durée de conservation et paramétrage de votre navigateur.",

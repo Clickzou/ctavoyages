@@ -4,6 +4,7 @@ import Link from "next/link";
 import FaqList from "@/components/boxing-day/FaqList";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/boxing-day" },
   title: "Séjour Boxing Day - CTA Voyages",
   description:
     "Vivez la magie du Football Boxing Day en Angleterre avec CTA Voyages. Chelsea, Liverpool, Manchester United : billets officiels et séjour féerique inclus. Devis gratuit.",

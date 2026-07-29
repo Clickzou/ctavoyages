@@ -6,6 +6,7 @@ import FaqGroupe from "@/components/groupe-cta/FaqGroupe";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/groupe-cta" },
   title:
     "Groupe CTA : voyages d'affaires, événementiel, MICE et voyages sur mesure | CTA Voyages",
   description:

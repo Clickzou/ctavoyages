@@ -9,6 +9,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/croisieres" },
   title: "Croisières - CTA Voyages",
   description:
     "Découvrez nos croisières en mer avec CTA Voyages. Transport, hébergement, restauration et animations à bord : une expérience complète sur les mers du monde. Devis gratuit, conseiller dédié.",

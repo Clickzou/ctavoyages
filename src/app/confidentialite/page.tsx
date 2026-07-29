@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/confidentialite" },
   title: "Politique de confidentialité",
   description:
     "Politique de confidentialité et de protection des données personnelles de CTA Voyages, conforme au RGPD : données collectées, finalités, durées de conservation et droits des utilisateurs.",

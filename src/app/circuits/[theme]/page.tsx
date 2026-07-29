@@ -15,7 +15,11 @@ export async function generateMetadata({
   const { theme } = await params;
   const content = CIRCUITS_THEMES[theme];
   if (!content) return {};
-  return { title: content.meta.title, description: content.meta.description };
+  return {
+    title: content.meta.title,
+    description: content.meta.description,
+    alternates: { canonical: `/circuits/${theme}` },
+  };
 }
 
 export default async function CircuitThemePage({

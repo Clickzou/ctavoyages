@@ -6,6 +6,7 @@ import FaqList from "@/components/nfl/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/nfl" },
   title: "Séjour NFL Madrid Game - CTA Voyages",
   description:
     "Vivez le NFL Madrid Game 2026 avec CTA Voyages. Atlanta Falcons vs Cincinnati Bengals au Santiago Bernabéu le 8 novembre 2026 : billets officiels, hôtel et options inclus. Devis gratuit.",

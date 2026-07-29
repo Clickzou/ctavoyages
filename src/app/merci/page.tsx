@@ -3,6 +3,7 @@ import Link from "next/link";
 import "./styles.css";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/merci" },
   title: "Merci",
   description:
     "Merci pour votre demande. Nos attachées clientèle prennent contact avec vous sous 48h pour vous proposer une offre personnalisée.",

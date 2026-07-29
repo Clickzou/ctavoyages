@@ -9,6 +9,7 @@ import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/catalogue-sportif" },
   title: "Catalogue sportif - CTA Voyages",
   description:
     "Vivez les plus grands événements sportifs du monde avec CTA Voyages. Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : des séjours clés en main pour vivre le sport autrement.",
