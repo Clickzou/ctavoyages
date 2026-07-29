@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/destinations";
 import { RICH_DESTINATION_SLUGS } from "@/lib/destination-content";
 
-const BASE_URL = "https://www.cta-events.com";
+const BASE_URL = "https://www.cta-voyages.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
