@@ -51,6 +51,7 @@ const LABELS: Record<string, string> = {
   nombre_voyageurs: "Nombre de voyageurs",
   budget: "Budget",
   nom: "Nom",
+  prenom: "Prénom",
   telephone: "Téléphone",
   email: "E-mail",
   message: "Message",

@@ -183,6 +183,7 @@ export default function DevisForm() {
 
   // Étape 3
   const [nom, setNom] = useState("");
+  const [prenom, setPrenom] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
@@ -375,6 +376,10 @@ export default function DevisForm() {
         newErrors["nom"] = true;
         valid = false;
       }
+      if (!prenom.trim()) {
+        newErrors["prenom"] = true;
+        valid = false;
+      }
       if (!tel.trim()) {
         newErrors["tel"] = true;
         valid = false;
@@ -427,6 +432,7 @@ export default function DevisForm() {
           nombre_voyageurs: voyageurs,
           budget,
           nom,
+          prenom,
           telephone: tel,
           email,
           message,
@@ -791,20 +797,38 @@ export default function DevisForm() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
                 <div className="flex flex-col gap-1.5">
                   <label className="font-label text-[11px] sm:text-[12px] text-on-surface-variant uppercase tracking-wider">
-                    Prénom et nom *
+                    Nom *
                   </label>
                   <input
                     id="f-nom"
-                    name="prenom_nom"
+                    name="nom"
                     type="text"
                     required
-                    placeholder="Jean Dupont"
+                    placeholder="Dupont"
                     value={nom}
                     onChange={(e) => setNom(e.target.value)}
                     className={`${inputClass}${errors["nom"] ? " field-error" : ""}`}
                   />
                   <p className={`error-msg${errors["nom"] ? " visible" : ""}`} id="err-nom">
                     Veuillez indiquer votre nom.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-1.5">
+                  <label className="font-label text-[11px] sm:text-[12px] text-on-surface-variant uppercase tracking-wider">
+                    Prénom *
+                  </label>
+                  <input
+                    id="f-prenom"
+                    name="prenom"
+                    type="text"
+                    required
+                    placeholder="Jean"
+                    value={prenom}
+                    onChange={(e) => setPrenom(e.target.value)}
+                    className={`${inputClass}${errors["prenom"] ? " field-error" : ""}`}
+                  />
+                  <p className={`error-msg${errors["prenom"] ? " visible" : ""}`} id="err-prenom">
+                    Veuillez indiquer votre prénom.
                   </p>
                 </div>
                 <div className="flex flex-col gap-1.5">
@@ -825,7 +849,7 @@ export default function DevisForm() {
                     Veuillez indiquer votre numéro.
                   </p>
                 </div>
-                <div className="sm:col-span-2 flex flex-col gap-1.5">
+                <div className="flex flex-col gap-1.5">
                   <label className="font-label text-[11px] sm:text-[12px] text-on-surface-variant uppercase tracking-wider">
                     Adresse email
                   </label>
