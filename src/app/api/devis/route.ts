@@ -1,5 +1,7 @@
 import { Resend } from "resend";
 
+import { subscribeToBrevo } from "@/lib/brevo";
+
 /**
  * Reception des demandes de devis, envoyees par Resend.
  *
@@ -143,6 +145,19 @@ export async function POST(request: Request) {
     });
 
     if (error) throw new Error(error.message);
+
+    // La case « offres et actualites » vaut opt-in : le contact rejoint la
+    // meme liste Brevo que le bloc newsletter du site, sans ressaisie. Un
+    // echec est seulement journalise — la demande de devis, elle, est partie,
+    // et il serait absurde de la declarer perdue au visiteur pour autant.
+    if (data.newsletter === "Oui") {
+      try {
+        await subscribeToBrevo(data.email, "demande de devis");
+      } catch (err) {
+        console.error("Echec de l'inscription newsletter depuis le devis :", err);
+      }
+    }
+
     return Response.json({ ok: true });
   } catch (err) {
     console.error("Echec de l'envoi de la demande de devis :", err);

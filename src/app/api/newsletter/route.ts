@@ -1,16 +1,12 @@
+import { subscribeToBrevo } from "@/lib/brevo";
+
 /**
- * Inscription a la newsletter.
+ * Inscription a la newsletter depuis le bloc du site.
  *
  * Le contact est cree directement dans la liste Brevo qui sert aux campagnes :
  * une adresse saisie sur le site est ainsi immediatement exploitable, sans
- * ressaisie manuelle. La cle d'API reste cote serveur.
- *
- * Deux variables d'environnement sont attendues :
- *   BREVO_API_KEY  — cle d'API v3 (Brevo : SMTP & API > Cles API)
- *   BREVO_LIST_ID  — identifiant numerique de la liste de destination
+ * ressaisie manuelle. La cle d'API reste cote serveur (voir `@/lib/brevo`).
  */
-
-const BREVO_ENDPOINT = "https://api.brevo.com/v3/contacts";
 
 export async function POST(request: Request) {
   let body: unknown;
@@ -32,10 +28,7 @@ export async function POST(request: Request) {
     );
   }
 
-  const apiKey = process.env.BREVO_API_KEY;
-  const listId = Number(process.env.BREVO_LIST_ID);
-
-  if (!apiKey || !listId) {
+  if (!process.env.BREVO_API_KEY || !process.env.BREVO_LIST_ID) {
     console.error(
       "BREVO_API_KEY ou BREVO_LIST_ID absente : inscription impossible."
     );
@@ -46,30 +39,8 @@ export async function POST(request: Request) {
   }
 
   try {
-    const res = await fetch(BREVO_ENDPOINT, {
-      method: "POST",
-      headers: {
-        "api-key": apiKey,
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      // updateEnabled evite l'erreur sur une adresse deja connue : le contact
-      // est alors simplement rattache a la liste.
-      body: JSON.stringify({
-        email,
-        listIds: [listId],
-        updateEnabled: true,
-        attributes: { OPTIN_SOURCE: "site cta-voyages.com" },
-      }),
-    });
-
-    // 201 : contact cree. 204 : contact existant mis a jour.
-    if (res.status === 201 || res.status === 204) {
-      return Response.json({ ok: true });
-    }
-
-    const detail = await res.text();
-    throw new Error(`Brevo a repondu ${res.status} : ${detail.slice(0, 300)}`);
+    await subscribeToBrevo(email, "site cta-voyages.com");
+    return Response.json({ ok: true });
   } catch (err) {
     console.error("Echec de l'inscription à la newsletter :", err);
     return Response.json(
