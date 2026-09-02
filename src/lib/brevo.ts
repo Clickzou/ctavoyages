@@ -19,14 +19,16 @@ const BREVO_ENDPOINT = "https://api.brevo.com/v3/contacts";
  * Cree ou met a jour le contact, puis le rattache a la liste.
  *
  * `source` est enregistre dans l'attribut OPTIN_SOURCE : il permet de savoir,
- * dans Brevo, d'ou vient chaque adresse — bloc newsletter ou demande de devis.
+ * dans Brevo, d'ou vient chaque adresse — page newsletter ou demande de devis.
+ * `identity` porte le prenom et le nom quand le formulaire les demande.
  *
  * Leve une erreur si l'inscription echoue ; a l'appelant de decider si cela
  * doit ou non faire echouer sa propre reponse.
  */
 export async function subscribeToBrevo(
   email: string,
-  source: string
+  source: string,
+  identity: { firstName?: string; lastName?: string } = {}
 ): Promise<void> {
   const apiKey = process.env.BREVO_API_KEY;
   const listId = Number(process.env.BREVO_LIST_ID);
@@ -48,7 +50,14 @@ export async function subscribeToBrevo(
       email,
       listIds: [listId],
       updateEnabled: true,
-      attributes: { OPTIN_SOURCE: source },
+      attributes: {
+        OPTIN_SOURCE: source,
+        // PRENOM / NOM sont les attributs standards du compte Brevo : renseignes
+        // quand le formulaire les collecte, laisses de cote sinon pour ne pas
+        // ecraser une valeur deja connue par une chaine vide.
+        ...(identity.firstName ? { PRENOM: identity.firstName } : {}),
+        ...(identity.lastName ? { NOM: identity.lastName } : {}),
+      },
     }),
   });
 

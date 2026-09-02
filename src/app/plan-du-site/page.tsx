@@ -59,7 +59,10 @@ const SECTIONS: SiteSection[] = [
   },
   {
     title: "Contact & devis",
-    links: [{ label: "Demander un devis gratuit", href: "/demande-devis" }],
+    links: [
+      { label: "Demander un devis gratuit", href: "/demande-devis" },
+      { label: "Newsletter", href: "/newsletter" },
+    ],
   },
   {
     title: "Informations légales",

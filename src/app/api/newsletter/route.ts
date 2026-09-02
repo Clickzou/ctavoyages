@@ -16,10 +16,16 @@ export async function POST(request: Request) {
     return Response.json({ error: "Requête illisible." }, { status: 400 });
   }
 
-  const email =
+  const fields =
     typeof body === "object" && body !== null
-      ? String((body as Record<string, unknown>).email ?? "").trim()
-      : "";
+      ? (body as Record<string, unknown>)
+      : {};
+  const text = (key: string, max: number) =>
+    String(fields[key] ?? "").trim().slice(0, max);
+
+  const email = text("email", 150);
+  const firstName = text("firstName", 100);
+  const lastName = text("lastName", 100);
 
   if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return Response.json(
@@ -39,7 +45,10 @@ export async function POST(request: Request) {
   }
 
   try {
-    await subscribeToBrevo(email, "site cta-voyages.com");
+    await subscribeToBrevo(email, "site cta-voyages.com", {
+      firstName,
+      lastName,
+    });
     return Response.json({ ok: true });
   } catch (err) {
     console.error("Echec de l'inscription à la newsletter :", err);
