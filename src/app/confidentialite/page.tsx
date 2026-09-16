@@ -179,6 +179,14 @@ export default function Page() {
             </li>
           </ul>
           <p className="font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
+            Dans le cadre de nos activités de communication et de gestion de la
+            relation client, certaines de vos données peuvent transiter par des
+            outils d&apos;automatisation et de traitement hébergés au sein de
+            l&apos;Union Européenne (n8n, Brevo). Ces outils agissent en tant que
+            sous-traitants conformément au RGPD et ne traitent vos données que
+            pour les finalités décrites dans la présente politique.
+          </p>
+          <p className="font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mt-3">
             Nous ne vendons ni ne louons vos données personnelles à des tiers.
             En cas de transfert de données hors de l&apos;Union européenne par
             l&apos;un de nos sous-traitants, des garanties appropriées (clauses
