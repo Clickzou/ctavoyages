@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FooterCredit from "./FooterCredit";
+import { ADRESSE_COMPLETE, AGENCE, MAPS_URL } from "@/lib/agence";
 
 export default function Footer() {
   return (
@@ -86,22 +87,30 @@ export default function Footer() {
               Contact
             </h3>
             <div className="flex flex-col gap-3 sm:gap-4">
-              <a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors flex items-start gap-3" href="https://www.google.com/maps/place/99+Rue+de+Fenouillet,+31200+Toulouse" target="_blank" rel="noopener noreferrer">
+              {/* Le lien vise la fiche de l'établissement plutôt qu'un point sur
+                  la carte : le visiteur y trouve les avis, les photos et les
+                  horaires, et chaque interaction profite au référencement
+                  local. */}
+              <a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors flex items-start gap-3" href={MAPS_URL} target="_blank" rel="noopener noreferrer">
                 <span className="material-symbols-outlined text-sm mt-1 flex-shrink-0">location_on</span>
-                <span>99 rue de Fenouillet, 31200 Toulouse</span>
+                <span>{ADRESSE_COMPLETE}</span>
               </a>
-              <a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors flex items-start gap-3" href="mailto:voyages@cta-events.com">
+              <a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors flex items-start gap-3" href={`mailto:${AGENCE.email}`}>
                 <span className="material-symbols-outlined text-sm mt-1 flex-shrink-0">mail</span>
-                <span>voyages@cta-events.com</span>
+                <span>{AGENCE.email}</span>
               </a>
-              <p className="font-body-md text-[14px] text-white/80 flex items-start gap-3">
+              <a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors flex items-start gap-3" href={`tel:${AGENCE.phone}`}>
                 <span className="material-symbols-outlined text-sm mt-1 flex-shrink-0">call</span>
-                <span>+33 (0)5 34 391 391</span>
-              </p>
+                <span>{AGENCE.phoneDisplay}</span>
+              </a>
               <p className="font-body-md text-[14px] text-white/80 flex items-start gap-3">
                 <span className="material-symbols-outlined text-sm mt-1 flex-shrink-0">calendar_today</span>
                 <span>Lun–Jeu : 9h-18h · Ven : 9h-17h</span>
               </p>
+              <Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors flex items-start gap-3" href="/contact">
+                <span className="material-symbols-outlined text-sm mt-1 flex-shrink-0">explore_nearby</span>
+                <span>Contact et accès à l&apos;agence</span>
+              </Link>
             </div>
           </div>
         </div>

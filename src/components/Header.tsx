@@ -18,6 +18,7 @@ const ABOUT = [
   { label: "Le Groupe CTA", href: "/groupe-cta" },
   { label: "Nos engagements RSE", href: "/engagements-rse" },
   { label: "L'équipe CTA Voyages", href: "/equipe" },
+  { label: "Contact et accès", href: "/contact" },
 ];
 
 /** Routes avec un hero plein écran sombre : header transparent autorisé en haut de page. */

@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/groupe-cta",
     "/engagements-rse",
     "/equipe",
+    "/contact",
     "/demande-devis",
     "/newsletter",
     "/boxing-day",

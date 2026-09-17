@@ -1,0 +1,64 @@
+/* Styles spécifiques à la page Contact */
+
+#acces,
+#faq-contact {
+  scroll-margin-top: 92px;
+}
+
+/* HERO
+   Pas d'image de fond ici : le site n'a pas de photo de l'agence, et une vue
+   de stock présenterait un lieu qui n'est pas le sien sur la page même où le
+   visiteur cherche à reconnaître l'endroit. Fond aux couleurs de la marque. */
+.hero-contact {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(135deg, #001c38 0%, #004191 55%, #3179c4 100%);
+}
+.hero-contact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(251, 191, 18, 0.18) 0%, transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(255, 255, 255, 0.08) 0%, transparent 40%);
+}
+
+/* CARTE OPENSTREETMAP */
+.agence-pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  background: #004191;
+  border: 3px solid #fbbf12;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+.agence-pin::after {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  background: #fbbf12;
+}
+
+/* FAQ : chevron des blocs dépliants natifs */
+.faq-contact-item summary {
+  list-style: none;
+  cursor: pointer;
+}
+.faq-contact-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-contact-item summary .faq-contact-icon {
+  transition: transform 0.3s ease;
+}
+.faq-contact-item[open] summary .faq-contact-icon {
+  transform: rotate(180deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-contact-item summary .faq-contact-icon {
+    transition: none;
+  }
+}

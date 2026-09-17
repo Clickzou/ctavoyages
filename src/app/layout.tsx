@@ -8,6 +8,8 @@ import BackToTop from "@/components/BackToTop";
 import ScrollReveal from "@/components/ScrollReveal";
 import IconFontReady from "@/components/IconFontReady";
 import CookieConsent from "@/components/CookieConsent";
+import { AGENCE, HORAIRES, MAPS_URL, ZONE_DESSERVIE } from "@/lib/agence";
+import { SITE_URL } from "@/lib/site";
 
 const heading = Plus_Jakarta_Sans({
   variable: "--font-heading",
@@ -68,40 +70,67 @@ export const metadata: Metadata = {
  * l'identité, l'adresse et les horaires de l'agence, ce qui alimente le
  * référencement local et le panneau de connaissance. Les pages qui portent
  * déjà un balisage FAQPage ou Article s'y ajoutent sans conflit.
+ *
+ * L'`@id` sert d'ancre stable : les autres balisages du site (la page de
+ * contact, notamment) désignent l'agence par cet identifiant plutôt que d'en
+ * redéclarer une copie, ce qui éviterait à Google d'avoir à recouper deux
+ * fiches quasi identiques.
  */
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "TravelAgency",
-  name: "CTA Voyages",
+  "@id": `${SITE_URL}/#agence`,
+  name: AGENCE.name,
+  legalName: AGENCE.legalName,
   description:
     "Agence de voyages sur mesure à Toulouse : séjours, circuits, croisières, glamping et catalogue sportif.",
-  url: "https://cta-voyages.com",
-  logo: "https://cta-voyages.com/assets/images/Logo%20CTA%20Voyages.png",
-  image: "https://cta-voyages.com/assets/images/iStock-2207441086.jpg",
-  telephone: "+33534391391",
-  email: "voyages@cta-events.com",
+  url: SITE_URL,
+  logo: `${SITE_URL}/assets/images/Logo%20CTA%20Voyages.png`,
+  image: `${SITE_URL}/assets/images/iStock-2207441086.jpg`,
+  telephone: AGENCE.phone,
+  email: AGENCE.email,
+  // Ordre de grandeur tarifaire attendu par Google pour les établissements
+  // locaux. Sur du voyage sur mesure, aucun tarif fixe n'a de sens : l'échelle
+  // reste volontairement large.
+  priceRange: "€€",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "99 rue de Fenouillet",
-    postalCode: "31200",
-    addressLocality: "Toulouse",
-    addressCountry: "FR",
+    streetAddress: AGENCE.streetAddress,
+    postalCode: AGENCE.postalCode,
+    addressLocality: AGENCE.city,
+    addressRegion: AGENCE.region,
+    addressCountry: AGENCE.country,
   },
-  openingHoursSpecification: [
-    {
+  // Coordonnées et lien de carte : ils permettent à Google de rapprocher
+  // explicitement le site du point porté par la fiche Business Profile.
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: AGENCE.geo.latitude,
+    longitude: AGENCE.geo.longitude,
+  },
+  hasMap: MAPS_URL,
+  // Communes et départements où l'agence intervient sans y avoir d'adresse.
+  areaServed: ZONE_DESSERVIE.map((name) => ({ "@type": "Place", name })),
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "Renseignements et devis",
+    telephone: AGENCE.phone,
+    email: AGENCE.email,
+    availableLanguage: ["French"],
+    areaServed: AGENCE.country,
+  },
+  openingHoursSpecification: HORAIRES.filter((h) => h.opens && h.closes).map(
+    (h) => ({
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
-      opens: "09:00",
-      closes: "18:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Friday",
-      opens: "09:00",
-      closes: "17:00",
-    },
-  ],
-  sameAs: ["https://www.linkedin.com/company/cta-voyages"],
+      dayOfWeek: h.days,
+      opens: h.opens,
+      closes: h.closes,
+    }),
+  ),
+  // Profils tiers qui décrivent la même entité. La fiche Google Business
+  // Profile a sa place ici : c'est le signal le plus direct entre le site et
+  // elle.
+  sameAs: ["https://www.linkedin.com/company/cta-voyages", MAPS_URL],
 };
 
 export default function RootLayout({

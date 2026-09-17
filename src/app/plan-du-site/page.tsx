@@ -60,6 +60,7 @@ const SECTIONS: SiteSection[] = [
   {
     title: "Contact & devis",
     links: [
+      { label: "Contact et accès à l'agence", href: "/contact" },
       { label: "Demander un devis gratuit", href: "/demande-devis" },
       { label: "Newsletter", href: "/newsletter" },
     ],
