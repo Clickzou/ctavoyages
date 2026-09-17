@@ -53,17 +53,13 @@ export const HORAIRES: {
 ];
 
 /**
- * Lien vers la fiche de l'établissement sur Google Maps.
+ * Lien vers la fiche de l'établissement sur Google.
  *
- * On passe par l'endpoint officiel « Maps URLs » plutôt que par une URL
- * copiée depuis le navigateur : il est stable et ouvre la fiche complète (avis,
- * photos, horaires) au lieu d'un simple point sur la carte. À remplacer par le
- * lien court de la fiche (`https://maps.app.goo.gl/…`) une fois celui-ci relevé
- * dans Google Business Profile.
+ * Lien de partage relevé dans Google Business Profile (bouton « Partager ») :
+ * il ouvre la fiche complète (avis, photos, horaires) plutôt qu'un simple point
+ * sur la carte, et désigne sans ambiguïté l'établissement dans le balisage.
  */
-export const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-  `${AGENCE.name}, ${ADRESSE_COMPLETE}`,
-)}`;
+export const MAPS_URL = "https://share.google/AXPyINRUksj9rIVCh";
 
 /** Itinéraire depuis la position du visiteur jusqu'à l'agence. */
 export const ITINERAIRE_URL = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
