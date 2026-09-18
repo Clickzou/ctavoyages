@@ -7,7 +7,7 @@ import { AGENCE, ADRESSE_COMPLETE } from "@/lib/agence";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 /**
- * Situe l'agence sur une carte OpenStreetMap.
+ * Situe l'agence sur une carte.
  *
  * On garde Leaflet plutôt qu'une iframe Google Maps : l'iframe déposerait des
  * cookies Google dès l'affichage de la page, avant tout consentement, alors que
@@ -42,13 +42,15 @@ export default function AgenceMap() {
         zoomControl: true,
       });
 
+      // Fond Esri : libre d'accès sans clé, contrairement aux tuiles CARTO qui
+      // sont désormais filigranées « API KEY REQUIRED » hors abonnement.
+      // Attention à l'ordre des segments : Esri attend {z}/{y}/{x}, pas {z}/{x}/{y}.
       L.tileLayer(
-        "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
+        "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
         {
           maxZoom: 19,
-          subdomains: "abcd",
           attribution:
-            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            'Fond de carte &copy; <a href="https://www.esri.com/">Esri</a>',
         },
       ).addTo(map);
 

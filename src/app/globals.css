@@ -555,7 +555,17 @@ html:not(.icons-ready) .material-symbols-outlined {
 @media (max-width: 768px) { #map-wrap { height: 360px; border-radius: 12px; } }
 @media (max-width: 480px) { #map-wrap { height: 280px; } }
 #leaflet-map { width: 100%; height: 100%; z-index: 1; border-radius: 16px; overflow: hidden; }
-.leaflet-control-attribution { display: none !important; }
+/* Le fournisseur de tuiles impose de le créditer : on garde la mention, mais
+   discrète, pour qu'elle ne parasite pas la carte. */
+.leaflet-control-attribution {
+  background: rgba(255, 255, 255, 0.72) !important;
+  padding: 1px 6px !important;
+  border-radius: 8px 0 0 0;
+  font-size: 10px !important;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+.leaflet-control-attribution a { color: rgba(0, 65, 145, 0.6) !important; }
 /* Boutons zoom +/- modernisés (verre dépoli, coins arrondis) */
 .leaflet-control-zoom {
   border: none !important;

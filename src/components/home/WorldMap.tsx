@@ -170,7 +170,10 @@ export default function WorldMap() {
       if (!container) return;
       map = L.map(container, { center: VIEWS.all.center, zoom: VIEWS.all.zoom, zoomControl: true, scrollWheelZoom: false, doubleClickZoom: true, dragging: true, zoomSnap: 0, minZoom: 0.2, maxZoom: 14, worldCopyJump: true });
       map.zoomControl.setPosition("topright");
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png", { maxZoom: 19, subdomains: "abcd" }).addTo(map);
+      // Fond Esri : libre d'accès sans clé, contrairement aux tuiles CARTO qui
+      // sont désormais filigranées « API KEY REQUIRED » hors abonnement.
+      // Attention à l'ordre des segments : Esri attend {z}/{y}/{x}, pas {z}/{x}/{y}.
+      L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, attribution: 'Fond de carte &copy; <a href="https://www.esri.com/">Esri</a>' }).addTo(map);
 
       // Zoom "monde entier" qui REMPLIT toujours le conteneur (aucun fond gris) tout en
       // montrant le maximum du monde. On prend le zoom qui couvre la plus grande dimension
