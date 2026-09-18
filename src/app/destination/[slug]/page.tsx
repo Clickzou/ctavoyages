@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import NewsletterForm from "@/components/home/NewsletterForm";
 import HeroScrollIndicator from "@/components/HeroScrollIndicator";
 import DestCarousel from "@/components/destination/DestCarousel";
@@ -62,7 +62,10 @@ export default async function DestinationPage({
 
   // japon/thailande : fiche riche servie sur /destination-<slug>.
   if (STATIC_RICH_SLUGS.includes(slug)) {
-    redirect(`/destination-${slug}`);
+    // Permanente (308) et non temporaire : l'adresse /destination-<slug> est
+    // définitive, autant que Google transfère l'historique plutôt que de
+    // continuer à explorer l'ancienne.
+    permanentRedirect(`/destination-${slug}`);
   }
 
   // Fiche riche (template complet avec itinéraire) si disponible.

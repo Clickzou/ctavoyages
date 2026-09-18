@@ -8,7 +8,13 @@ import BackToTop from "@/components/BackToTop";
 import ScrollReveal from "@/components/ScrollReveal";
 import IconFontReady from "@/components/IconFontReady";
 import CookieConsent from "@/components/CookieConsent";
-import { AGENCE, HORAIRES, MAPS_URL, ZONE_DESSERVIE } from "@/lib/agence";
+import {
+  AGENCE,
+  GOOGLE_ENTITY_URL,
+  HORAIRES,
+  MAPS_PLACE_URL,
+  ZONE_DESSERVIE,
+} from "@/lib/agence";
 import { SITE_URL } from "@/lib/site";
 
 const heading = Plus_Jakarta_Sans({
@@ -108,7 +114,15 @@ const organizationJsonLd = {
     latitude: AGENCE.geo.latitude,
     longitude: AGENCE.geo.longitude,
   },
-  hasMap: MAPS_URL,
+  hasMap: MAPS_PLACE_URL,
+  // Rattachement au groupe. Sans cette précision, le `legalName` « CTA Events »
+  // laisse penser que le site et cta-events.com décrivent la même entité, alors
+  // qu'il s'agit de deux marques distinctes d'un même groupe.
+  parentOrganization: {
+    "@type": "Organization",
+    name: "Groupe CTA",
+    url: "https://groupe-cta.com/",
+  },
   // Communes et départements où l'agence intervient sans y avoir d'adresse.
   areaServed: ZONE_DESSERVIE.map((name) => ({ "@type": "Place", name })),
   contactPoint: {
@@ -127,10 +141,19 @@ const organizationJsonLd = {
       closes: h.closes,
     }),
   ),
-  // Profils tiers qui décrivent la même entité. La fiche Google Business
-  // Profile a sa place ici : c'est le signal le plus direct entre le site et
-  // elle.
-  sameAs: ["https://www.linkedin.com/company/cta-voyages", MAPS_URL],
+  // Profils tiers qui décrivent la même entité. Plus la liste est fournie, plus
+  // Google peut recouper les mentions éparpillées de l'agence — y compris les
+  // annuaires qui la référencent encore sous « CTA Events » — et les rattacher
+  // à ce site. La fiche Google Business Profile ouvre la liste : c'est le
+  // signal le plus direct entre le site et elle.
+  sameAs: [
+    GOOGLE_ENTITY_URL,
+    "https://www.linkedin.com/company/cta-voyages",
+    "https://groupe-cta.com/",
+    "https://ctabusinesstravel.com/",
+    "https://www.pagesjaunes.fr/pros/61643498",
+    "https://fr.mappy.com/poi/62afded9ddc73076985115c1",
+  ],
 };
 
 export default function RootLayout({

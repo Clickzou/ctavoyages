@@ -17,7 +17,10 @@ const SLIDES: Slide[] = [
   {
     src: "/grece.jpg",
     alt: "Village aux maisons blanches et dômes bleus en Grèce",
-    title: "Agence de voyage sur mesure",
+    // La marque est dans le <h1> : sur une recherche « CTA Voyages », c'est un
+    // signal de pertinence direct, et trois autres domaines du groupe se
+    // disputent déjà cette requête.
+    title: "CTA Voyages, agence de voyage sur mesure",
     subtitle:
       "Séjours, circuits, croisières, glamping, catalogue sportif et voyages sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
   },

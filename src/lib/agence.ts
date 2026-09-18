@@ -57,9 +57,32 @@ export const HORAIRES: {
  *
  * Lien de partage relevé dans Google Business Profile (bouton « Partager ») :
  * il ouvre la fiche complète (avis, photos, horaires) plutôt qu'un simple point
- * sur la carte, et désigne sans ambiguïté l'établissement dans le balisage.
+ * sur la carte. Réservé aux liens *visibles* : il redirige correctement pour un
+ * visiteur, mais suivi par une machine il retombe sur une recherche générique.
+ * Le balisage utilise donc les deux constantes ci-dessous.
  */
 export const MAPS_URL = "https://share.google/AXPyINRUksj9rIVCh";
+
+/**
+ * Identifiant Knowledge Graph de l'établissement (`kgmid`), extrait du lien de
+ * partage ci-dessus. C'est la désignation la plus stable et la moins ambiguë de
+ * la fiche : elle sert de `sameAs` pour rattacher le site à l'entité que Google
+ * affiche déjà à droite de ses résultats.
+ */
+export const GOOGLE_ENTITY_URL =
+  "https://www.google.com/search?kgmid=/g/11b6d60y1h";
+
+/**
+ * Emplacement sur Google Maps, pour le `hasMap` du balisage. Contrairement au
+ * lien de partage, cette forme documentée résout sans redirection.
+ *
+ * Si le CID de la fiche est un jour relevé dans Google Business Profile, une
+ * URL `https://www.google.com/maps?cid=<CID>` serait encore plus précise :
+ * elle désigne l'établissement, là où celle-ci désigne son adresse.
+ */
+export const MAPS_PLACE_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  `${AGENCE.name}, ${ADRESSE_COMPLETE}`,
+)}`;
 
 /** Itinéraire depuis la position du visiteur jusqu'à l'agence. */
 export const ITINERAIRE_URL = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(

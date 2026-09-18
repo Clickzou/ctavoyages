@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { MAPS_URL } from "@/lib/agence";
 import "./styles.css";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/merci" },
+  // Page de confirmation : aucun intérêt dans les résultats de recherche, où
+  // elle n'aurait aucun sens pour un visiteur arrivant de Google. `follow`
+  // reste actif pour que les liens vers les destinations soient suivis.
+  robots: { index: false, follow: true },
   title: "Merci",
   description:
     "Merci pour votre demande. Nos attachées clientèle prennent contact avec vous sous 48h pour vous proposer une offre personnalisée.",
@@ -85,7 +90,7 @@ export default function MerciPage() {
               </p>
               <a
                 className="font-body-md text-[14px] text-white/90 hover:text-[#FBBF12] transition-colors flex items-center gap-3"
-                href="https://www.google.com/maps/place/99+Rue+de+Fenouillet,+31200+Toulouse"
+                href={MAPS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >

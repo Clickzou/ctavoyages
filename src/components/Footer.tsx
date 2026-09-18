@@ -77,6 +77,10 @@ export default function Footer() {
             <ul className="flex flex-col gap-3 sm:gap-4">
               <li><Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="/equipe">L&apos;équipe CTA Voyages</Link></li>
               <li><Link className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="/engagements-rse">Notre engagement RSE</Link></li>
+              {/* groupe-cta.com renvoie déjà vers ce site : le lien en retour
+                  rend la réciprocité lisible par Google, qui rattache alors les
+                  marques du groupe entre elles. */}
+              <li><a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="https://groupe-cta.com/" target="_blank" rel="noopener noreferrer">Groupe CTA</a></li>
               <li><a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="https://sop-events.fr/" target="_blank" rel="noopener noreferrer">SOP Events</a></li>
               <li><a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="https://ctabusinesstravel.com/" target="_blank" rel="noopener noreferrer">CTA Business Travel</a></li>
               <li><a className="font-body-md text-[14px] text-white/80 hover:text-[#FBBF12] transition-colors" href="https://ctameetingevents.fr/" target="_blank" rel="noopener noreferrer">CTA Meeting &amp; Events</a></li>
