@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { AGENCE } from "@/lib/agence";
 
 type Slide = {
   src: string;
   alt: string;
-  /** Titre affiché par-dessus la slide. La 1re slide porte le <h1> de la page. */
+  /** Titre affiché par-dessus la slide. La 1re slide porte le <h1> de la page.
+   *  Un « \n » marque un retour à la ligne voulu (titre sur deux lignes). */
   title: string;
   subtitle: string;
 };
@@ -19,10 +21,13 @@ const SLIDES: Slide[] = [
     alt: "Village aux maisons blanches et dômes bleus en Grèce",
     // La marque est dans le <h1> : sur une recherche « CTA Voyages », c'est un
     // signal de pertinence direct, et trois autres domaines du groupe se
-    // disputent déjà cette requête.
-    title: "CTA Voyages, agence de voyage sur mesure",
-    subtitle:
-      "Séjours, circuits, croisières, glamping, catalogue sportif et voyages sur mesure. Votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.",
+    // disputent déjà cette requête. « Toulouse » y figure aussi (action Pulse
+    // du 06/10/2026) : sans la ville, ni Google ni les IA ne relient l'agence
+    // aux questions « agence de voyages à Toulouse ». Trop long pour une seule
+    // ligne : coupé en deux lignes équilibrées.
+    title: "CTA Voyages, agence de voyages\nsur mesure à Toulouse",
+    // Adresse lue dans agence.ts (source unique du NAP).
+    subtitle: `Depuis notre agence du ${AGENCE.streetAddress}, à ${AGENCE.city}, votre conseiller dédié conçoit le voyage qui vous ressemble, de A à Z.`,
   },
   {
     src: "/ile-maurice-chapelle.jpg",
@@ -62,6 +67,25 @@ const SLIDES: Slide[] = [
 ];
 
 const INTERVAL_MS = 5000;
+
+/** Remplace les « \n » du titre par un retour à la ligne sur grand écran
+ *  (là où le titre tient sur une ligne, cf. xl:whitespace-nowrap) ; en dessous
+ *  il se coupe naturellement. Une espace reste dans le texte lu par les
+ *  moteurs : « voyages sur mesure ». */
+function renderTitle(title: string) {
+  const lines = title.split("\n");
+  return lines.map((line, i) => (
+    <span key={i}>
+      {line}
+      {i < lines.length - 1 && (
+        <>
+          {" "}
+          <br className="hidden xl:inline" />
+        </>
+      )}
+    </span>
+  ));
+}
 
 export default function HeroSlideshow() {
   const [index, setIndex] = useState(0);
@@ -120,10 +144,10 @@ export default function HeroSlideshow() {
                     aria-hidden={!active}
                   >
                     {i === 0 ? (
-                      <h1 className={titleClass}>{slide.title}</h1>
+                      <h1 className={titleClass}>{renderTitle(slide.title)}</h1>
                     ) : (
                       <div className={titleClass} role="heading" aria-level={2}>
-                        {slide.title}
+                        {renderTitle(slide.title)}
                       </div>
                     )}
                     <p className="font-body-lg text-[16px] sm:text-[18px] md:text-[20px] text-white/90 max-w-2xl">
