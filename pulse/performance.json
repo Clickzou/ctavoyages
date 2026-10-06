@@ -1,0 +1,4086 @@
+{
+  "version": 1,
+  "depot": "Clickzou/ctavoyages",
+  "site": "https://cta-voyages.com",
+  "propriete_search_console": "sc-domain:cta-voyages.com",
+  "genere_le": "2026-10-06T21:02:29.663Z",
+  "periodes": {
+    "j90": {
+      "du": "2026-07-06",
+      "au": "2026-10-03"
+    },
+    "j28": {
+      "du": "2026-09-06",
+      "au": "2026-10-03"
+    }
+  },
+  "quota_contenus_mois": null,
+  "inventaire": "complet",
+  "arbitrage": {
+    "decision": "geler",
+    "explication_client": "59 de vos 116 articles en ligne depuis plus de 3 mois ne sont encore jamais montrés par Google. Plutôt que d'en ajouter de nouveaux, nous améliorons et regroupons ceux qui existent : c'est ce qui fait monter un site.",
+    "stats": {
+      "articles_mesures": 120,
+      "articles_90j_et_plus": 116,
+      "invisibles": 59,
+      "taux_invisibles": 0.509,
+      "en_zone_refresh": 3,
+      "articles_moins_90j": 0
+    },
+    "recommandations": [
+      {
+        "regle": "a",
+        "action": "refresh",
+        "chemin": "/blog/autotour-namibie",
+        "titre": "Autotour en Namibie : itinéraire et conseils",
+        "cible": null,
+        "requetes": [
+          {
+            "requete": "autotour namibie",
+            "impressions": 88,
+            "clics": 0,
+            "position": 27
+          },
+          {
+            "requete": "autotour en namibie",
+            "impressions": 58,
+            "clics": 0,
+            "position": 32.1
+          },
+          {
+            "requete": "autotour namibie toulouse",
+            "impressions": 2,
+            "clics": 0,
+            "position": 12
+          }
+        ],
+        "j90": {
+          "impressions": 151,
+          "clics": 0,
+          "position": 28.4
+        },
+        "j28": {
+          "impressions": 151,
+          "clics": 0,
+          "position": 28.4
+        },
+        "raison": "(a) position 28.4 sur 90 j, 151 affichages, 0 clics.",
+        "pourquoi_client": "Cet article a été vu 151 fois dans Google en 3 mois, mais il est en 28e position, en troisième page de Google, où l'on clique très peu. Le retravailler pour le faire monter rapporte plus qu'un nouvel article.",
+        "rang": 1
+      },
+      {
+        "regle": "a",
+        "action": "refresh",
+        "chemin": "/blog/islande-ou-norvege",
+        "titre": "Islande ou Norvège : quel voyage nature choisir ?",
+        "cible": null,
+        "requetes": [
+          {
+            "requete": "norvege ou islande",
+            "impressions": 7,
+            "clics": 0,
+            "position": 5.1
+          },
+          {
+            "requete": "islande ou norvege",
+            "impressions": 6,
+            "clics": 0,
+            "position": 8.5
+          },
+          {
+            "requete": "circuits par l'islande et la norvège",
+            "impressions": 1,
+            "clics": 0,
+            "position": 28
+          }
+        ],
+        "j90": {
+          "impressions": 83,
+          "clics": 1,
+          "position": 8.1
+        },
+        "j28": {
+          "impressions": 83,
+          "clics": 1,
+          "position": 8.1
+        },
+        "raison": "(a) position 8.1 sur 90 j, 83 affichages, 1 clics.",
+        "pourquoi_client": "Cet article a été vu 83 fois dans Google en 3 mois, mais il est en 8e position, en bas de la première page de Google, où l'on clique très peu. Le retravailler pour le faire monter rapporte plus qu'un nouvel article.",
+        "rang": 2
+      },
+      {
+        "regle": "a",
+        "action": "refresh",
+        "chemin": "/blog/crete-ou-santorin",
+        "titre": "Crète ou Santorin : laquelle choisir ?",
+        "cible": null,
+        "requetes": [
+          {
+            "requete": "crete ou santorin",
+            "impressions": 2,
+            "clics": 0,
+            "position": 6
+          }
+        ],
+        "j90": {
+          "impressions": 50,
+          "clics": 0,
+          "position": 8.6
+        },
+        "j28": {
+          "impressions": 50,
+          "clics": 0,
+          "position": 8.6
+        },
+        "raison": "(a) position 8.6 sur 90 j, 50 affichages, 0 clics.",
+        "pourquoi_client": "Cet article a été vu 50 fois dans Google en 3 mois, mais il est en 9e position, en bas de la première page de Google, où l'on clique très peu. Le retravailler pour le faire monter rapporte plus qu'un nouvel article.",
+        "rang": 3
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/quand-partir-thailande",
+        "titre": "Quand partir en Thaïlande ? Climat et saisons",
+        "cible": {
+          "chemin": "/blog/quand-partir-bali",
+          "titre": "Quand partir à Bali ? Le guide des saisons"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-01-01, 0 affichage sur 90 j, proche de /blog/quand-partir-bali (similarité 0.33).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Quand partir à Bali ? Le guide des saisons », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 4
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/visiter-rome-3-jours",
+        "titre": "Visiter Rome en 3 jours : l'itinéraire idéal",
+        "cible": {
+          "chemin": "/blog/visiter-barcelone-3-jours",
+          "titre": "Visiter Barcelone en 3 jours : l'itinéraire idéal"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-01-01, 0 affichage sur 90 j, proche de /blog/visiter-barcelone-3-jours (similarité 0.62).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Visiter Barcelone en 3 jours : l'itinéraire idéal », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 5
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/iles-paradisiaques-pas-cher",
+        "titre": "Îles paradisiaques pas chères",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-01-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 6
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/voyager-pas-cher-astuces",
+        "titre": "Voyager pas cher : 15 astuces qui marchent vraiment",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-01-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 7
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/quand-partir-afrique-du-sud",
+        "titre": "Quand partir en Afrique du Sud ? Le guide",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-02-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 8
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/quand-partir-maroc",
+        "titre": "Quand partir au Maroc ? Climat ville par ville",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-03-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 9
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/quand-partir-la-reunion",
+        "titre": "Quand partir à La Réunion ? Saisons et cyclones",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-03-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 10
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/que-faire-a-marrakech",
+        "titre": "Que faire à Marrakech ? Les incontournables",
+        "cible": {
+          "chemin": "/blog/que-faire-a-dubai",
+          "titre": "Que faire à Dubaï ? Les incontournables"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-03-01, 0 affichage sur 90 j, proche de /blog/que-faire-a-dubai (similarité 0.47).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Que faire à Dubaï ? Les incontournables », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 11
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/formalites-visa-voyage",
+        "titre": "Visa et formalités : le guide pratique avant de partir",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-03-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 12
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/que-faire-a-bali",
+        "titre": "Que faire à Bali ? Nos coups de cœur",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-04-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 13
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/partir-en-amoureux-week-end",
+        "titre": "Partir en amoureux : nos plus belles idées de week-ends",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-04-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 14
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/voyager-avec-bebe-conseils",
+        "titre": "Voyager avec un bébé : nos conseils pour un séjour serein",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-04-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 15
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/quand-partir-italie",
+        "titre": "Quand partir en Italie ? Saison par saison",
+        "cible": {
+          "chemin": "/blog/quand-partir-bali",
+          "titre": "Quand partir à Bali ? Le guide des saisons"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-05-01, 0 affichage sur 90 j, proche de /blog/quand-partir-bali (similarité 0.38).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Quand partir à Bali ? Le guide des saisons », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 16
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/destinations-voyage-aventure",
+        "titre": "Voyage aventure : les meilleures destinations pour se dépasser",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-05-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 17
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/quand-partir-jordanie",
+        "titre": "Quand partir en Jordanie ? Climat et désert",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-06-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 18
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/voyage-responsable-ecotourisme",
+        "titre": "Voyage responsable : le guide de l'écotourisme",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-06-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 19
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/ou-partir-en-janvier",
+        "titre": "Où partir en janvier ? Soleil et bons plans",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-07-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 20
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/road-trip-ouest-americain",
+        "titre": "Road trip dans l'Ouest américain",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-07-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 21
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/decouvrir-destination-en-train",
+        "titre": "Voyager en train : nos plus beaux trajets",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-07-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 22
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/quand-partir-vietnam",
+        "titre": "Quand partir au Vietnam ? Nord, centre et sud",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-08-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 23
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/visiter-new-york-premiere-fois",
+        "titre": "Visiter New York pour la première fois",
+        "cible": {
+          "chemin": "/blog/quand-partir-new-york",
+          "titre": "Quand partir à New York ? La meilleure saison"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-08-01, 0 affichage sur 90 j, proche de /blog/quand-partir-new-york (similarité 0.30).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Quand partir à New York ? La meilleure saison », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 24
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/costa-rica-ou-panama",
+        "titre": "Costa Rica ou Panama : quel pays d'Amérique centrale choisir ?",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-08-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 25
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/voyage-bien-etre-spa",
+        "titre": "Voyage bien-être : nos plus belles destinations spa",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-08-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 26
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/meilleures-applis-voyage",
+        "titre": "Les meilleures applis pour voyager",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-08-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 27
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/quand-partir-japon",
+        "titre": "Quand partir au Japon ? Saisons et cerisiers",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-09-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 28
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/croisiere-premiere-fois-conseils",
+        "titre": "Première croisière : nos conseils pour bien la réussir",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-09-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 29
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/ou-partir-en-avril",
+        "titre": "Où partir en avril ? Le top des destinations",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-10-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 30
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/itineraire-vietnam-3-semaines",
+        "titre": "Le Vietnam en 3 semaines, du nord au sud",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-10-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 31
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/ou-partir-pas-cher-en-europe",
+        "titre": "Où partir pas cher en Europe ?",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-10-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 32
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/quand-partir-islande",
+        "titre": "Quand partir en Islande ? Été ou hiver, le guide complet",
+        "cible": {
+          "chemin": "/blog/quand-partir-canada",
+          "titre": "Quand partir au Canada ? Été indien et hiver"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-11-01, 0 affichage sur 90 j, proche de /blog/quand-partir-canada (similarité 0.48).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Quand partir au Canada ? Été indien et hiver », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 33
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/ou-partir-en-mai",
+        "titre": "Où partir en mai ? Climat doux et nature",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-11-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 34
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/plus-beaux-deserts-du-monde",
+        "titre": "Les plus beaux déserts du monde",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-12-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 35
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/destinations-plongee-debutant",
+        "titre": "Plongée pour débutants : où commencer ?",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2025-12-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 36
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/quand-partir-egypte",
+        "titre": "Quand partir en Égypte ? Climat, croisières et saisons",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-01-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 37
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/ou-partir-en-juillet",
+        "titre": "Où partir en juillet ? Nos meilleures idées de destinations",
+        "cible": {
+          "chemin": "/blog/ou-partir-en-mars",
+          "titre": "Où partir en mars ? Nos idées de destinations"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-01-01, 0 affichage sur 90 j, proche de /blog/ou-partir-en-mars (similarité 0.44).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Où partir en mars ? Nos idées de destinations », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 38
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/que-voir-au-perou",
+        "titre": "Que voir au Pérou ? L'itinéraire essentiel",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-01-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 39
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/meilleures-destinations-plongee",
+        "titre": "Les meilleures destinations plongée du monde",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-01-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 40
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/voyage-photo-plus-beaux-spots",
+        "titre": "Voyage photo : les plus beaux spots du monde",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-01-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 41
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/ou-partir-en-aout",
+        "titre": "Où partir en août ? Mer, montagne et ailleurs",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-02-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 42
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/plus-beaux-road-trips-du-monde",
+        "titre": "Les plus beaux road trips du monde",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-02-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 43
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/itineraire-sri-lanka-2-semaines",
+        "titre": "Le Sri Lanka en 2 semaines : l'itinéraire idéal",
+        "cible": {
+          "chemin": "/blog/itineraire-croatie-1-semaine",
+          "titre": "La Croatie en une semaine : l'itinéraire idéal"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-03-01, 0 affichage sur 90 j, proche de /blog/itineraire-croatie-1-semaine (similarité 0.42).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « La Croatie en une semaine : l'itinéraire idéal », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 44
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/ou-voir-aurores-boreales",
+        "titre": "Où voir les aurores boréales ?",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-03-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 45
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/safari-tanzanie-checklist",
+        "titre": "Safari en Tanzanie : la check-list avant de partir",
+        "cible": {
+          "chemin": "/blog/quand-partir-tanzanie",
+          "titre": "Quand partir en Tanzanie ? Safari et migration"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-04-01, 0 affichage sur 90 j, proche de /blog/quand-partir-tanzanie (similarité 0.33).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Quand partir en Tanzanie ? Safari et migration », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 46
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/ou-partir-en-octobre",
+        "titre": "Où partir en octobre ? Le soleil d'automne",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-04-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 47
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/plus-belles-iles-grecques",
+        "titre": "Les plus belles îles grecques",
+        "cible": {
+          "chemin": "/blog/plus-belles-iles-du-monde",
+          "titre": "Les plus belles îles du monde : notre sélection de rêve"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-04-01, 0 affichage sur 90 j, proche de /blog/plus-belles-iles-du-monde (similarité 0.32).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Les plus belles îles du monde : notre sélection de rêve », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 48
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/preparer-sa-valise-voyage",
+        "titre": "Préparer sa valise : la check-list pour ne rien oublier",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-04-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 49
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/voyage-famille-astuces",
+        "titre": "Voyage en famille : nos astuces pour des vacances réussies",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-05-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 50
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/quand-partir-republique-dominicaine",
+        "titre": "Quand partir en République dominicaine ?",
+        "cible": {
+          "chemin": "/blog/cuba-ou-republique-dominicaine",
+          "titre": "Cuba ou République dominicaine ?"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-05-01, 0 affichage sur 90 j, proche de /blog/cuba-ou-republique-dominicaine (similarité 0.53).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Cuba ou République dominicaine ? », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 51
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/ou-partir-en-novembre",
+        "titre": "Où partir en novembre ? Échapper à la grisaille",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-05-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 52
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/itineraire-thailande-2-semaines",
+        "titre": "La Thaïlande en 2 semaines : l'itinéraire idéal",
+        "cible": {
+          "chemin": "/blog/itineraire-croatie-1-semaine",
+          "titre": "La Croatie en une semaine : l'itinéraire idéal"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-05-01, 0 affichage sur 90 j, proche de /blog/itineraire-croatie-1-semaine (similarité 0.53).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « La Croatie en une semaine : l'itinéraire idéal », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 53
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/meilleures-destinations-safari",
+        "titre": "Les meilleures destinations safari",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-05-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 54
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/eviter-le-jet-lag",
+        "titre": "Éviter le jet lag : nos astuces pour s'adapter au décalage horaire",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-05-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 55
+      },
+      {
+        "regle": "b",
+        "action": "fusion",
+        "chemin": "/blog/quand-partir-maldives",
+        "titre": "Quand partir aux Maldives ? Le guide saison par saison",
+        "cible": {
+          "chemin": "/blog/quand-partir-bali",
+          "titre": "Quand partir à Bali ? Le guide des saisons"
+        },
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-06-01, 0 affichage sur 90 j, proche de /blog/quand-partir-bali (similarité 0.39).",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le regroupons avec « Quand partir à Bali ? Le guide des saisons », qui traite d'un sujet proche : une seule page plus complète a de bien meilleures chances d'être placée.",
+        "rang": 56
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/plus-beaux-sites-unesco",
+        "titre": "Les plus beaux sites classés UNESCO",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-06-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 57
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/choisir-assurance-voyage",
+        "titre": "Bien choisir son assurance voyage : le guide pratique",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-06-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 58
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/circuit-maroc-marrakech-atlas-sahara",
+        "titre": "Circuit Maroc : Marrakech, l'Atlas et le Sahara",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-07-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 59
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/croisiere-fjords-norvegiens",
+        "titre": "Fjords norvégiens & aurores boréales : notre croisière de rêve",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-07-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 60
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/glamping-eco-lodge-costa-rica",
+        "titre": "Éco-lodge en forêt tropicale au Costa Rica",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-07-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 61
+      },
+      {
+        "regle": "b",
+        "action": "refonte",
+        "chemin": "/blog/glamping-ryokan-japon",
+        "titre": "Ryokan traditionnel avec bains onsen au Japon",
+        "cible": null,
+        "requetes": [],
+        "j90": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "j28": {
+          "impressions": 0,
+          "clics": 0,
+          "position": null
+        },
+        "raison": "(b) publié le 2026-07-01, 0 affichage sur 90 j, aucun article proche.",
+        "pourquoi_client": "Cet article est en ligne depuis plus de 3 mois et Google ne l'a encore jamais montré. Nous le réécrivons autour d'une question que vos clients posent vraiment.",
+        "rang": 62
+      }
+    ],
+    "deja_au_journal": {}
+  },
+  "requetes_mal_couvertes": [
+    {
+      "requete": "quand partir à cuba",
+      "impressions": 206,
+      "meilleure_position": 45.9,
+      "meilleure_page": "/blog/quand-partir-cuba",
+      "page_dediee": true,
+      "informationnelle": true,
+      "candidate_nouvel_article": false
+    },
+    {
+      "requete": "que faire a dubai",
+      "impressions": 133,
+      "meilleure_position": 39.4,
+      "meilleure_page": "/blog/que-faire-a-dubai",
+      "page_dediee": true,
+      "informationnelle": true,
+      "candidate_nouvel_article": false
+    },
+    {
+      "requete": "autotour namibie",
+      "impressions": 88,
+      "meilleure_position": 27,
+      "meilleure_page": "/blog/autotour-namibie",
+      "page_dediee": true,
+      "informationnelle": false,
+      "candidate_nouvel_article": false
+    },
+    {
+      "requete": "quand partir ile maurice",
+      "impressions": 84,
+      "meilleure_position": 41.2,
+      "meilleure_page": "/blog/quand-partir-ile-maurice",
+      "page_dediee": true,
+      "informationnelle": true,
+      "candidate_nouvel_article": false
+    },
+    {
+      "requete": "autotour en namibie",
+      "impressions": 58,
+      "meilleure_position": 32.1,
+      "meilleure_page": "/blog/autotour-namibie",
+      "page_dediee": true,
+      "informationnelle": false,
+      "candidate_nouvel_article": false
+    }
+  ],
+  "pages_money_a_soutenir": [
+    {
+      "chemin": "/",
+      "impressions": 651,
+      "clics": 41,
+      "position": 12.9,
+      "requetes": [
+        {
+          "requete": "cta voyages",
+          "impressions": 135,
+          "clics": 28,
+          "position": 10.3
+        },
+        {
+          "requete": "cta voyage",
+          "impressions": 93,
+          "clics": 1,
+          "position": 13.9
+        },
+        {
+          "requete": "cta business travel",
+          "impressions": 64,
+          "clics": 0,
+          "position": 28.6
+        }
+      ]
+    },
+    {
+      "chemin": "/groupe-cta",
+      "impressions": 415,
+      "clics": 1,
+      "position": 21.8,
+      "requetes": [
+        {
+          "requete": "cta business travel",
+          "impressions": 79,
+          "clics": 0,
+          "position": 14.2
+        },
+        {
+          "requete": "groupe cta",
+          "impressions": 69,
+          "clics": 0,
+          "position": 14.6
+        },
+        {
+          "requete": "cta voyage",
+          "impressions": 34,
+          "clics": 0,
+          "position": 59.5
+        }
+      ]
+    },
+    {
+      "chemin": "/equipe",
+      "impressions": 279,
+      "clics": 6,
+      "position": 17.2,
+      "requetes": [
+        {
+          "requete": "cta voyages",
+          "impressions": 88,
+          "clics": 2,
+          "position": 13.7
+        },
+        {
+          "requete": "cta voyage",
+          "impressions": 71,
+          "clics": 0,
+          "position": 16.3
+        },
+        {
+          "requete": "cta business travel",
+          "impressions": 61,
+          "clics": 0,
+          "position": 28.1
+        }
+      ]
+    },
+    {
+      "chemin": "/mentions-legales",
+      "impressions": 162,
+      "clics": 0,
+      "position": 23,
+      "requetes": [
+        {
+          "requete": "cta voyages",
+          "impressions": 49,
+          "clics": 0,
+          "position": 13.6
+        },
+        {
+          "requete": "cta business travel",
+          "impressions": 40,
+          "clics": 0,
+          "position": 41.6
+        },
+        {
+          "requete": "cta voyage",
+          "impressions": 40,
+          "clics": 0,
+          "position": 27.1
+        }
+      ]
+    }
+  ],
+  "suivi_effets": [],
+  "articles": [
+    {
+      "chemin": "/blog/quand-partir-cuba",
+      "titre": "Quand partir à Cuba ? Climat et meilleurs mois",
+      "publie_le": "2026-06-01",
+      "j90": {
+        "impressions": 450,
+        "clics": 0,
+        "position": 42.7
+      },
+      "j28": {
+        "impressions": 275,
+        "clics": 0,
+        "position": 37.6
+      },
+      "requetes": [
+        {
+          "requete": "quand partir à cuba",
+          "impressions": 206,
+          "clics": 0,
+          "position": 45.9
+        },
+        {
+          "requete": "climat cuba",
+          "impressions": 28,
+          "clics": 0,
+          "position": 40.8
+        },
+        {
+          "requete": "cuba quand partir",
+          "impressions": 28,
+          "clics": 0,
+          "position": 35.3
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-ile-maurice",
+      "titre": "Quand partir à l'île Maurice ? La météo idéale",
+      "publie_le": "2025-04-01",
+      "j90": {
+        "impressions": 432,
+        "clics": 0,
+        "position": 47.4
+      },
+      "j28": {
+        "impressions": 430,
+        "clics": 0,
+        "position": 47.6
+      },
+      "requetes": [
+        {
+          "requete": "quand partir ile maurice",
+          "impressions": 84,
+          "clics": 0,
+          "position": 41.2
+        },
+        {
+          "requete": "quand partir à l'ile maurice",
+          "impressions": 48,
+          "clics": 0,
+          "position": 44.3
+        },
+        {
+          "requete": "quand partir à maurice",
+          "impressions": 43,
+          "clics": 0,
+          "position": 46.6
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/que-faire-a-dubai",
+      "titre": "Que faire à Dubaï ? Les incontournables",
+      "publie_le": "2025-11-01",
+      "j90": {
+        "impressions": 204,
+        "clics": 0,
+        "position": 39.6
+      },
+      "j28": {
+        "impressions": 204,
+        "clics": 0,
+        "position": 39.6
+      },
+      "requetes": [
+        {
+          "requete": "que faire a dubai",
+          "impressions": 133,
+          "clics": 0,
+          "position": 39.4
+        },
+        {
+          "requete": "que faire à dubai",
+          "impressions": 40,
+          "clics": 0,
+          "position": 35.2
+        },
+        {
+          "requete": "que faire à dubaï",
+          "impressions": 15,
+          "clics": 0,
+          "position": 34.7
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/autotour-namibie",
+      "titre": "Autotour en Namibie : itinéraire et conseils",
+      "publie_le": "2026-04-01",
+      "j90": {
+        "impressions": 151,
+        "clics": 0,
+        "position": 28.4
+      },
+      "j28": {
+        "impressions": 151,
+        "clics": 0,
+        "position": 28.4
+      },
+      "requetes": [
+        {
+          "requete": "autotour namibie",
+          "impressions": 88,
+          "clics": 0,
+          "position": 27
+        },
+        {
+          "requete": "autotour en namibie",
+          "impressions": 58,
+          "clics": 0,
+          "position": 32.1
+        },
+        {
+          "requete": "autotour namibie toulouse",
+          "impressions": 2,
+          "clics": 0,
+          "position": 12
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-cap-vert",
+      "titre": "Quand partir au Cap-Vert ? Soleil toute l'année",
+      "publie_le": "2026-04-01",
+      "j90": {
+        "impressions": 138,
+        "clics": 0,
+        "position": 49
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 9
+      },
+      "requetes": [
+        {
+          "requete": "quand partir au cap vert",
+          "impressions": 34,
+          "clics": 0,
+          "position": 44
+        },
+        {
+          "requete": "cap vert quand partir",
+          "impressions": 30,
+          "clics": 0,
+          "position": 45.4
+        },
+        {
+          "requete": "partir cap vert",
+          "impressions": 17,
+          "clics": 0,
+          "position": 43.2
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-sri-lanka",
+      "titre": "Quand partir au Sri Lanka ? Comprendre les deux moussons",
+      "publie_le": "2026-02-01",
+      "j90": {
+        "impressions": 105,
+        "clics": 0,
+        "position": 38.9
+      },
+      "j28": {
+        "impressions": 104,
+        "clics": 0,
+        "position": 38.9
+      },
+      "requetes": [
+        {
+          "requete": "quand partir au sri lanka",
+          "impressions": 46,
+          "clics": 0,
+          "position": 43.2
+        },
+        {
+          "requete": "quand partir sri lanka",
+          "impressions": 15,
+          "clics": 0,
+          "position": 35.5
+        },
+        {
+          "requete": "sri lanka quand partir",
+          "impressions": 14,
+          "clics": 0,
+          "position": 30
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/islande-ou-norvege",
+      "titre": "Islande ou Norvège : quel voyage nature choisir ?",
+      "publie_le": "2025-07-01",
+      "j90": {
+        "impressions": 83,
+        "clics": 1,
+        "position": 8.1
+      },
+      "j28": {
+        "impressions": 83,
+        "clics": 1,
+        "position": 8.1
+      },
+      "requetes": [
+        {
+          "requete": "norvege ou islande",
+          "impressions": 7,
+          "clics": 0,
+          "position": 5.1
+        },
+        {
+          "requete": "islande ou norvege",
+          "impressions": 6,
+          "clics": 0,
+          "position": 8.5
+        },
+        {
+          "requete": "circuits par l'islande et la norvège",
+          "impressions": 1,
+          "clics": 0,
+          "position": 28
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-croatie",
+      "titre": "Quand partir en Croatie ? Météo, saisons et affluence",
+      "publie_le": "2025-12-01",
+      "j90": {
+        "impressions": 59,
+        "clics": 0,
+        "position": 41.7
+      },
+      "j28": {
+        "impressions": 57,
+        "clics": 0,
+        "position": 40.9
+      },
+      "requetes": [
+        {
+          "requete": "quand partir en croatie",
+          "impressions": 17,
+          "clics": 0,
+          "position": 40.5
+        },
+        {
+          "requete": "climat croatie",
+          "impressions": 12,
+          "clics": 0,
+          "position": 58.2
+        },
+        {
+          "requete": "quand partir croatie",
+          "impressions": 9,
+          "clics": 0,
+          "position": 43.7
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/visiter-barcelone-3-jours",
+      "titre": "Visiter Barcelone en 3 jours : l'itinéraire idéal",
+      "publie_le": "2025-12-01",
+      "j90": {
+        "impressions": 52,
+        "clics": 0,
+        "position": 81.6
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "que faire a barcelone en 3 jours",
+          "impressions": 17,
+          "clics": 0,
+          "position": 87.7
+        },
+        {
+          "requete": "visiter barcelone en 3 jours",
+          "impressions": 10,
+          "clics": 0,
+          "position": 78.2
+        },
+        {
+          "requete": "barcelone en 3 jours",
+          "impressions": 8,
+          "clics": 0,
+          "position": 79.6
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/crete-ou-santorin",
+      "titre": "Crète ou Santorin : laquelle choisir ?",
+      "publie_le": "2025-03-01",
+      "j90": {
+        "impressions": 50,
+        "clics": 0,
+        "position": 8.6
+      },
+      "j28": {
+        "impressions": 50,
+        "clics": 0,
+        "position": 8.6
+      },
+      "requetes": [
+        {
+          "requete": "crete ou santorin",
+          "impressions": 2,
+          "clics": 0,
+          "position": 6
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-mexique",
+      "titre": "Quand partir au Mexique ? Saison sèche et saison des pluies",
+      "publie_le": "2026-03-01",
+      "j90": {
+        "impressions": 41,
+        "clics": 0,
+        "position": 19.3
+      },
+      "j28": {
+        "impressions": 41,
+        "clics": 0,
+        "position": 19.3
+      },
+      "requetes": [
+        {
+          "requete": "quelle est la meilleure période pour voyager en riviera maya ?",
+          "impressions": 10,
+          "clics": 0,
+          "position": 33
+        },
+        {
+          "requete": "mexique saison des pluies",
+          "impressions": 4,
+          "clics": 0,
+          "position": 10.5
+        },
+        {
+          "requete": "saison des pluies au mexique",
+          "impressions": 1,
+          "clics": 0,
+          "position": 84
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/lune-de-miel-destination",
+      "titre": "Lune de miel : comment choisir la destination idéale ?",
+      "publie_le": "2026-04-01",
+      "j90": {
+        "impressions": 37,
+        "clics": 0,
+        "position": 26.5
+      },
+      "j28": {
+        "impressions": 31,
+        "clics": 0,
+        "position": 28.5
+      },
+      "requetes": [
+        {
+          "requete": "lune de miel toulouse",
+          "impressions": 24,
+          "clics": 0,
+          "position": 20.9
+        },
+        {
+          "requete": "cta voyages",
+          "impressions": 3,
+          "clics": 0,
+          "position": 1.3
+        },
+        {
+          "requete": "voyage de noces nouvelle-zélande depuis toulouse",
+          "impressions": 2,
+          "clics": 0,
+          "position": 73
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/plus-belles-plages-ocean-indien",
+      "titre": "Les 10 plus belles plages de l'océan Indien",
+      "publie_le": "2026-06-01",
+      "j90": {
+        "impressions": 37,
+        "clics": 1,
+        "position": 32.5
+      },
+      "j28": {
+        "impressions": 12,
+        "clics": 1,
+        "position": 13.2
+      },
+      "requetes": [
+        {
+          "requete": "plage inde",
+          "impressions": 7,
+          "clics": 0,
+          "position": 87.1
+        },
+        {
+          "requete": "plage ocean indien",
+          "impressions": 7,
+          "clics": 0,
+          "position": 25.3
+        },
+        {
+          "requete": "inde plage paradisiaque",
+          "impressions": 1,
+          "clics": 0,
+          "position": 92
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-espagne",
+      "titre": "Quand partir en Espagne ? Le guide complet",
+      "publie_le": "2025-06-01",
+      "j90": {
+        "impressions": 33,
+        "clics": 0,
+        "position": 37.8
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "quand partir en espagne",
+          "impressions": 22,
+          "clics": 0,
+          "position": 41.2
+        },
+        {
+          "requete": "quand partir espagne",
+          "impressions": 9,
+          "clics": 0,
+          "position": 36.9
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/maroc-ou-tunisie",
+      "titre": "Maroc ou Tunisie : quelle destination ?",
+      "publie_le": "2025-04-01",
+      "j90": {
+        "impressions": 29,
+        "clics": 0,
+        "position": 7.6
+      },
+      "j28": {
+        "impressions": 14,
+        "clics": 0,
+        "position": 9.6
+      },
+      "requetes": [
+        {
+          "requete": "maroc ou tunisie",
+          "impressions": 2,
+          "clics": 0,
+          "position": 3.5
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-new-york",
+      "titre": "Quand partir à New York ? La meilleure saison",
+      "publie_le": "2025-10-01",
+      "j90": {
+        "impressions": 29,
+        "clics": 0,
+        "position": 38.1
+      },
+      "j28": {
+        "impressions": 29,
+        "clics": 0,
+        "position": 38.1
+      },
+      "requetes": [
+        {
+          "requete": "quand partir à new york",
+          "impressions": 8,
+          "clics": 0,
+          "position": 43.1
+        },
+        {
+          "requete": "meilleur période pour new york",
+          "impressions": 2,
+          "clics": 0,
+          "position": 44
+        },
+        {
+          "requete": "meilleure période new york",
+          "impressions": 2,
+          "clics": 0,
+          "position": 44.5
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/cuba-ou-republique-dominicaine",
+      "titre": "Cuba ou République dominicaine ?",
+      "publie_le": "2025-06-01",
+      "j90": {
+        "impressions": 26,
+        "clics": 0,
+        "position": 11
+      },
+      "j28": {
+        "impressions": 26,
+        "clics": 0,
+        "position": 11
+      },
+      "requetes": [
+        {
+          "requete": "cuba republique dominicaine",
+          "impressions": 6,
+          "clics": 0,
+          "position": 23.7
+        },
+        {
+          "requete": "cuba et republique dominicaine",
+          "impressions": 1,
+          "clics": 0,
+          "position": 1
+        },
+        {
+          "requete": "cubain ou dominicain",
+          "impressions": 1,
+          "clics": 0,
+          "position": 11
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/plus-belles-plages-d-europe",
+      "titre": "Les plus belles plages d'Europe : notre sélection",
+      "publie_le": "2025-11-01",
+      "j90": {
+        "impressions": 22,
+        "clics": 0,
+        "position": 41.6
+      },
+      "j28": {
+        "impressions": 19,
+        "clics": 0,
+        "position": 44
+      },
+      "requetes": [
+        {
+          "requete": "plus belles plages deurope",
+          "impressions": 14,
+          "clics": 0,
+          "position": 40.8
+        },
+        {
+          "requete": "plus belles plages d'europe",
+          "impressions": 3,
+          "clics": 0,
+          "position": 36.7
+        },
+        {
+          "requete": "belle plage europe",
+          "impressions": 2,
+          "clics": 0,
+          "position": 58
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-tanzanie",
+      "titre": "Quand partir en Tanzanie ? Safari et migration",
+      "publie_le": "2025-01-01",
+      "j90": {
+        "impressions": 21,
+        "clics": 0,
+        "position": 51.9
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "quand partir en tanzanie",
+          "impressions": 8,
+          "clics": 0,
+          "position": 46.4
+        },
+        {
+          "requete": "quand faire un safari en tanzanie",
+          "impressions": 2,
+          "clics": 0,
+          "position": 46.5
+        },
+        {
+          "requete": "quand partir en tanzanie pour un safari",
+          "impressions": 2,
+          "clics": 0,
+          "position": 49.5
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/visiter-lisbonne-week-end",
+      "titre": "Visiter Lisbonne en un week-end : notre itinéraire",
+      "publie_le": "2025-02-01",
+      "j90": {
+        "impressions": 19,
+        "clics": 0,
+        "position": 70.9
+      },
+      "j28": {
+        "impressions": 18,
+        "clics": 0,
+        "position": 74.6
+      },
+      "requetes": [
+        {
+          "requete": "lisbonne weekend",
+          "impressions": 4,
+          "clics": 0,
+          "position": 73
+        },
+        {
+          "requete": "lisbonne week end",
+          "impressions": 3,
+          "clics": 0,
+          "position": 71.3
+        },
+        {
+          "requete": "week end a lisbonne",
+          "impressions": 3,
+          "clics": 0,
+          "position": 75.3
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/plus-beaux-villages-de-france",
+      "titre": "Les plus beaux villages de France : notre sélection",
+      "publie_le": "2025-10-01",
+      "j90": {
+        "impressions": 16,
+        "clics": 0,
+        "position": 26.1
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "plus beaux villages de france",
+          "impressions": 10,
+          "clics": 0,
+          "position": 26.5
+        },
+        {
+          "requete": "les plus beaux villages de france",
+          "impressions": 2,
+          "clics": 0,
+          "position": 27
+        },
+        {
+          "requete": "les plus beau villages de france",
+          "impressions": 1,
+          "clics": 0,
+          "position": 28
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-canada",
+      "titre": "Quand partir au Canada ? Été indien et hiver",
+      "publie_le": "2025-05-01",
+      "j90": {
+        "impressions": 16,
+        "clics": 0,
+        "position": 45.5
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "quand partir au canada",
+          "impressions": 10,
+          "clics": 0,
+          "position": 48.6
+        },
+        {
+          "requete": "quand partir au canada pour l été indien",
+          "impressions": 2,
+          "clics": 0,
+          "position": 27.5
+        },
+        {
+          "requete": "quand partir canada",
+          "impressions": 2,
+          "clics": 0,
+          "position": 50.5
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/prendre-avion-premiere-fois",
+      "titre": "Prendre l'avion pour la première fois : le guide complet",
+      "publie_le": "2025-02-01",
+      "j90": {
+        "impressions": 14,
+        "clics": 0,
+        "position": 45.6
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 11
+      },
+      "requetes": [
+        {
+          "requete": "prendre l avion",
+          "impressions": 3,
+          "clics": 0,
+          "position": 48.3
+        },
+        {
+          "requete": "comment prendre l avion",
+          "impressions": 2,
+          "clics": 0,
+          "position": 59.5
+        },
+        {
+          "requete": "prendre l'avion",
+          "impressions": 2,
+          "clics": 0,
+          "position": 44.5
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/budget-voyage-bien-calculer",
+      "titre": "Bien calculer son budget voyage : la méthode poste par poste",
+      "publie_le": "2025-05-01",
+      "j90": {
+        "impressions": 12,
+        "clics": 0,
+        "position": 48.9
+      },
+      "j28": {
+        "impressions": 12,
+        "clics": 0,
+        "position": 48.9
+      },
+      "requetes": [
+        {
+          "requete": "budget voyage",
+          "impressions": 3,
+          "clics": 0,
+          "position": 94
+        },
+        {
+          "requete": "budget voyages",
+          "impressions": 2,
+          "clics": 0,
+          "position": 92
+        },
+        {
+          "requete": "comment calculer budget vacances",
+          "impressions": 1,
+          "clics": 0,
+          "position": 84
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/maldives-ou-seychelles",
+      "titre": "Maldives ou Seychelles : comparatif",
+      "publie_le": "2025-02-01",
+      "j90": {
+        "impressions": 12,
+        "clics": 0,
+        "position": 9.9
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "maldives seychelles",
+          "impressions": 1,
+          "clics": 0,
+          "position": 28
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/ou-partir-en-septembre",
+      "titre": "Où partir en septembre ? Profiter de l'arrière-saison",
+      "publie_le": "2026-03-01",
+      "j90": {
+        "impressions": 11,
+        "clics": 0,
+        "position": 10.5
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 11
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/itineraire-japon-2-semaines",
+      "titre": "Le Japon en 2 semaines : itinéraire parfait",
+      "publie_le": "2025-09-01",
+      "j90": {
+        "impressions": 10,
+        "clics": 0,
+        "position": 65.2
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 5
+      },
+      "requetes": [
+        {
+          "requete": "circuit japon 2 semaines",
+          "impressions": 3,
+          "clics": 0,
+          "position": 83.7
+        },
+        {
+          "requete": "road trip japon 2 semaines",
+          "impressions": 3,
+          "clics": 0,
+          "position": 75
+        },
+        {
+          "requete": "itinéraire deux semaines au japon",
+          "impressions": 1,
+          "clics": 0,
+          "position": 80
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-grece",
+      "titre": "Quand partir en Grèce ? Météo et meilleures périodes",
+      "publie_le": "2025-04-01",
+      "j90": {
+        "impressions": 10,
+        "clics": 0,
+        "position": 67.1
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "quand partir grece",
+          "impressions": 4,
+          "clics": 0,
+          "position": 51.5
+        },
+        {
+          "requete": "quand partir grèce",
+          "impressions": 2,
+          "clics": 0,
+          "position": 95.5
+        },
+        {
+          "requete": "climat grece",
+          "impressions": 1,
+          "clics": 0,
+          "position": 83
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/quand-partir-bali",
+      "titre": "Quand partir à Bali ? Le guide des saisons",
+      "publie_le": "2025-02-01",
+      "j90": {
+        "impressions": 8,
+        "clics": 0,
+        "position": 57.4
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "bali quand partir",
+          "impressions": 2,
+          "clics": 0,
+          "position": 43
+        },
+        {
+          "requete": "quand partir bali",
+          "impressions": 2,
+          "clics": 0,
+          "position": 71.5
+        },
+        {
+          "requete": "quand partir au bali",
+          "impressions": 1,
+          "clics": 0,
+          "position": 48
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/bali-ou-thailande",
+      "titre": "Bali ou Thaïlande : que choisir pour votre voyage ?",
+      "publie_le": "2025-01-01",
+      "j90": {
+        "impressions": 6,
+        "clics": 0,
+        "position": 18.3
+      },
+      "j28": {
+        "impressions": 6,
+        "clics": 0,
+        "position": 18.3
+      },
+      "requetes": [
+        {
+          "requete": "bali thailande",
+          "impressions": 1,
+          "clics": 0,
+          "position": 64
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/croisiere-mediterranee-rome-barcelone",
+      "titre": "Croisière en Méditerranée : Rome, Barcelone et la Côte d'Azur",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 6,
+        "clics": 0,
+        "position": 9.5
+      },
+      "j28": {
+        "impressions": 3,
+        "clics": 0,
+        "position": 9.7
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/plus-belles-iles-du-monde",
+      "titre": "Les plus belles îles du monde : notre sélection de rêve",
+      "publie_le": "2025-09-01",
+      "j90": {
+        "impressions": 6,
+        "clics": 0,
+        "position": 8
+      },
+      "j28": {
+        "impressions": 6,
+        "clics": 0,
+        "position": 8
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-au-soleil-en-hiver",
+      "titre": "Où partir au soleil en hiver ?",
+      "publie_le": "2025-09-01",
+      "j90": {
+        "impressions": 5,
+        "clics": 0,
+        "position": 41
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "vacances d hiver au soleil",
+          "impressions": 2,
+          "clics": 0,
+          "position": 52
+        },
+        {
+          "requete": "ou partir au soleil en hiver",
+          "impressions": 1,
+          "clics": 0,
+          "position": 32
+        },
+        {
+          "requete": "ou partir au soleil l'hiver",
+          "impressions": 1,
+          "clics": 0,
+          "position": 39
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/itineraire-croatie-1-semaine",
+      "titre": "La Croatie en une semaine : l'itinéraire idéal",
+      "publie_le": "2026-02-01",
+      "j90": {
+        "impressions": 4,
+        "clics": 0,
+        "position": 49.5
+      },
+      "j28": {
+        "impressions": 4,
+        "clics": 0,
+        "position": 49.5
+      },
+      "requetes": [
+        {
+          "requete": "1 semaine en croatie",
+          "impressions": 2,
+          "clics": 0,
+          "position": 49
+        },
+        {
+          "requete": "croatie une semaine",
+          "impressions": 1,
+          "clics": 0,
+          "position": 46
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/ou-partir-en-fevrier",
+      "titre": "Où partir en février ? Soleil, neige et carnaval",
+      "publie_le": "2025-08-01",
+      "j90": {
+        "impressions": 4,
+        "clics": 0,
+        "position": 8.3
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 1
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/page/6",
+      "titre": null,
+      "publie_le": null,
+      "j90": {
+        "impressions": 4,
+        "clics": 0,
+        "position": 8.8
+      },
+      "j28": {
+        "impressions": 4,
+        "clics": 0,
+        "position": 8.8
+      },
+      "requetes": [
+        {
+          "requete": "cta voyages",
+          "impressions": 2,
+          "clics": 0,
+          "position": 10.5
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/vacances-nature-deconnexion",
+      "titre": "Vacances nature : se déconnecter pour mieux se retrouver",
+      "publie_le": "2026-02-01",
+      "j90": {
+        "impressions": 4,
+        "clics": 0,
+        "position": 10.3
+      },
+      "j28": {
+        "impressions": 4,
+        "clics": 0,
+        "position": 10.3
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/voyage-avec-ados-idees",
+      "titre": "Voyage avec des ados : nos idées pour les emballer",
+      "publie_le": "2025-10-01",
+      "j90": {
+        "impressions": 4,
+        "clics": 0,
+        "position": 51.8
+      },
+      "j28": {
+        "impressions": 3,
+        "clics": 0,
+        "position": 66
+      },
+      "requetes": [
+        {
+          "requete": "idées vacances avec des ados",
+          "impressions": 2,
+          "clics": 0,
+          "position": 92.5
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/plus-belles-cascades-du-monde",
+      "titre": "Les plus belles cascades du monde",
+      "publie_le": "2025-02-01",
+      "j90": {
+        "impressions": 3,
+        "clics": 0,
+        "position": 8.3
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/que-faire-aux-acores",
+      "titre": "Que faire aux Açores ? Le guide de l'archipel vert",
+      "publie_le": "2026-06-01",
+      "j90": {
+        "impressions": 3,
+        "clics": 0,
+        "position": 8.7
+      },
+      "j28": {
+        "impressions": 3,
+        "clics": 0,
+        "position": 8.7
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/road-trip-ecosse",
+      "titre": "Road trip en Écosse : itinéraire et conseils",
+      "publie_le": "2025-05-01",
+      "j90": {
+        "impressions": 3,
+        "clics": 0,
+        "position": 20
+      },
+      "j28": {
+        "impressions": 2,
+        "clics": 0,
+        "position": 27.5
+      },
+      "requetes": [
+        {
+          "requete": "aller en ecosse en voiture",
+          "impressions": 1,
+          "clics": 0,
+          "position": 54
+        },
+        {
+          "requete": "cta voyages",
+          "impressions": 1,
+          "clics": 0,
+          "position": 5
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/voyage-gastronomique-destinations",
+      "titre": "Voyage gastronomique : nos destinations pour se régaler",
+      "publie_le": "2025-06-01",
+      "j90": {
+        "impressions": 3,
+        "clics": 0,
+        "position": 32.7
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "voyage gastronomique brésilluxo",
+          "impressions": 2,
+          "clics": 0,
+          "position": 24.5
+        },
+        {
+          "requete": "destination gourmande",
+          "impressions": 1,
+          "clics": 0,
+          "position": 49
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/circuit-canada-rocheuses-quebec",
+      "titre": "Des Rocheuses à Québec : le grand circuit du Canada",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 2,
+        "clics": 0,
+        "position": 9
+      },
+      "j28": {
+        "impressions": 2,
+        "clics": 0,
+        "position": 9
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/croisiere-caraibes-antilles",
+      "titre": "Îles des Caraïbes & Antilles : notre croisière au paradis",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 2,
+        "clics": 0,
+        "position": 9
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-juin",
+      "titre": "Où partir en juin ? Avant la haute saison",
+      "publie_le": "2025-12-01",
+      "j90": {
+        "impressions": 2,
+        "clics": 0,
+        "position": 32.5
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 58
+      },
+      "requetes": [
+        {
+          "requete": "dernière minute juin",
+          "impressions": 1,
+          "clics": 0,
+          "position": 58
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/slow-travel-guide",
+      "titre": "Le slow travel : l'art de voyager autrement",
+      "publie_le": "2025-11-01",
+      "j90": {
+        "impressions": 2,
+        "clics": 0,
+        "position": 33.5
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": [
+        {
+          "requete": "hotel slow travel toulouse",
+          "impressions": 1,
+          "clics": 0,
+          "position": 58
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/circuit-costa-rica-volcans-jungle",
+      "titre": "Costa Rica : volcans, jungle et côte Pacifique",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 8
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 8
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/city-break-europe-hors-saison",
+      "titre": "City break : 5 villes européennes à découvrir hors saison",
+      "publie_le": "2026-05-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 44
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/croisiere-fluviale-europe",
+      "titre": "Croisière fluviale en Europe : Douro, Rhin & Danube",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 6
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/cuba-uv-republique-dominicaine",
+      "titre": null,
+      "publie_le": null,
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 1
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 1
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/glamping-cabane-canada",
+      "titre": "Glamping au Canada : une cabane en rondins au bord d'un lac",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 1
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-decembre",
+      "titre": "Où partir en décembre ? Fêtes et soleil garantis",
+      "publie_le": "2026-06-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 2
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 2
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-mars",
+      "titre": "Où partir en mars ? Nos idées de destinations",
+      "publie_le": "2025-09-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 8
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 8
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/page/3",
+      "titre": null,
+      "publie_le": null,
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 7
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/page/9",
+      "titre": null,
+      "publie_le": null,
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 11
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 11
+      },
+      "requetes": [
+        {
+          "requete": "blog conseil voyage",
+          "impressions": 1,
+          "clics": 0,
+          "position": 11
+        }
+      ]
+    },
+    {
+      "chemin": "/blog/partir-hors-saison-avantages",
+      "titre": "Partir hors saison : tous les avantages d'un voyage à contre-courant",
+      "publie_le": "2026-03-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 6
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-portugal",
+      "titre": "Quand partir au Portugal ? Climat et conseils",
+      "publie_le": "2025-07-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 10
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 10
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/road-trip-islande",
+      "titre": "Road trip en Islande : la route circulaire",
+      "publie_le": "2025-06-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 5
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 5
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/vacances-au-ski-hors-alpes",
+      "titre": "Vacances au ski hors des Alpes : nos destinations originales",
+      "publie_le": "2025-07-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 9
+      },
+      "j28": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 9
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/vietnam-ou-cambodge",
+      "titre": "Vietnam ou Cambodge : que préférer ?",
+      "publie_le": "2025-05-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 2
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/voyage-solo-femme-destinations",
+      "titre": "Voyage solo au féminin : où partir ?",
+      "publie_le": "2025-03-01",
+      "j90": {
+        "impressions": 1,
+        "clics": 0,
+        "position": 53
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/choisir-assurance-voyage",
+      "titre": "Bien choisir son assurance voyage : le guide pratique",
+      "publie_le": "2026-06-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/circuit-maroc-marrakech-atlas-sahara",
+      "titre": "Circuit Maroc : Marrakech, l'Atlas et le Sahara",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/costa-rica-ou-panama",
+      "titre": "Costa Rica ou Panama : quel pays d'Amérique centrale choisir ?",
+      "publie_le": "2025-08-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/croisiere-fjords-norvegiens",
+      "titre": "Fjords norvégiens & aurores boréales : notre croisière de rêve",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/croisiere-premiere-fois-conseils",
+      "titre": "Première croisière : nos conseils pour bien la réussir",
+      "publie_le": "2025-09-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/decouvrir-destination-en-train",
+      "titre": "Voyager en train : nos plus beaux trajets",
+      "publie_le": "2025-07-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/destinations-plongee-debutant",
+      "titre": "Plongée pour débutants : où commencer ?",
+      "publie_le": "2025-12-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/destinations-voyage-aventure",
+      "titre": "Voyage aventure : les meilleures destinations pour se dépasser",
+      "publie_le": "2025-05-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/eviter-le-jet-lag",
+      "titre": "Éviter le jet lag : nos astuces pour s'adapter au décalage horaire",
+      "publie_le": "2026-05-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/formalites-visa-voyage",
+      "titre": "Visa et formalités : le guide pratique avant de partir",
+      "publie_le": "2025-03-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/glamping-eco-lodge-costa-rica",
+      "titre": "Éco-lodge en forêt tropicale au Costa Rica",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/glamping-ryokan-japon",
+      "titre": "Ryokan traditionnel avec bains onsen au Japon",
+      "publie_le": "2026-07-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/iles-paradisiaques-pas-cher",
+      "titre": "Îles paradisiaques pas chères",
+      "publie_le": "2025-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/itineraire-sri-lanka-2-semaines",
+      "titre": "Le Sri Lanka en 2 semaines : l'itinéraire idéal",
+      "publie_le": "2026-03-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/itineraire-thailande-2-semaines",
+      "titre": "La Thaïlande en 2 semaines : l'itinéraire idéal",
+      "publie_le": "2026-05-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/itineraire-vietnam-3-semaines",
+      "titre": "Le Vietnam en 3 semaines, du nord au sud",
+      "publie_le": "2025-10-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/meilleures-applis-voyage",
+      "titre": "Les meilleures applis pour voyager",
+      "publie_le": "2025-08-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/meilleures-destinations-plongee",
+      "titre": "Les meilleures destinations plongée du monde",
+      "publie_le": "2026-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/meilleures-destinations-safari",
+      "titre": "Les meilleures destinations safari",
+      "publie_le": "2026-05-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-aout",
+      "titre": "Où partir en août ? Mer, montagne et ailleurs",
+      "publie_le": "2026-02-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-avril",
+      "titre": "Où partir en avril ? Le top des destinations",
+      "publie_le": "2025-10-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-janvier",
+      "titre": "Où partir en janvier ? Soleil et bons plans",
+      "publie_le": "2025-07-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-juillet",
+      "titre": "Où partir en juillet ? Nos meilleures idées de destinations",
+      "publie_le": "2026-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-mai",
+      "titre": "Où partir en mai ? Climat doux et nature",
+      "publie_le": "2025-11-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-novembre",
+      "titre": "Où partir en novembre ? Échapper à la grisaille",
+      "publie_le": "2026-05-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-en-octobre",
+      "titre": "Où partir en octobre ? Le soleil d'automne",
+      "publie_le": "2026-04-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-partir-pas-cher-en-europe",
+      "titre": "Où partir pas cher en Europe ?",
+      "publie_le": "2025-10-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/ou-voir-aurores-boreales",
+      "titre": "Où voir les aurores boréales ?",
+      "publie_le": "2026-03-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/partir-en-amoureux-week-end",
+      "titre": "Partir en amoureux : nos plus belles idées de week-ends",
+      "publie_le": "2025-04-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/plus-beaux-deserts-du-monde",
+      "titre": "Les plus beaux déserts du monde",
+      "publie_le": "2025-12-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/plus-beaux-road-trips-du-monde",
+      "titre": "Les plus beaux road trips du monde",
+      "publie_le": "2026-02-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/plus-beaux-sites-unesco",
+      "titre": "Les plus beaux sites classés UNESCO",
+      "publie_le": "2026-06-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/plus-belles-iles-grecques",
+      "titre": "Les plus belles îles grecques",
+      "publie_le": "2026-04-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/preparer-sa-valise-voyage",
+      "titre": "Préparer sa valise : la check-list pour ne rien oublier",
+      "publie_le": "2026-04-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-afrique-du-sud",
+      "titre": "Quand partir en Afrique du Sud ? Le guide",
+      "publie_le": "2025-02-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-egypte",
+      "titre": "Quand partir en Égypte ? Climat, croisières et saisons",
+      "publie_le": "2026-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-islande",
+      "titre": "Quand partir en Islande ? Été ou hiver, le guide complet",
+      "publie_le": "2025-11-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-italie",
+      "titre": "Quand partir en Italie ? Saison par saison",
+      "publie_le": "2025-05-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-japon",
+      "titre": "Quand partir au Japon ? Saisons et cerisiers",
+      "publie_le": "2025-09-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-jordanie",
+      "titre": "Quand partir en Jordanie ? Climat et désert",
+      "publie_le": "2025-06-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-la-reunion",
+      "titre": "Quand partir à La Réunion ? Saisons et cyclones",
+      "publie_le": "2025-03-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-maldives",
+      "titre": "Quand partir aux Maldives ? Le guide saison par saison",
+      "publie_le": "2026-06-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-maroc",
+      "titre": "Quand partir au Maroc ? Climat ville par ville",
+      "publie_le": "2025-03-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-republique-dominicaine",
+      "titre": "Quand partir en République dominicaine ?",
+      "publie_le": "2026-05-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-thailande",
+      "titre": "Quand partir en Thaïlande ? Climat et saisons",
+      "publie_le": "2025-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/quand-partir-vietnam",
+      "titre": "Quand partir au Vietnam ? Nord, centre et sud",
+      "publie_le": "2025-08-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/que-faire-a-bali",
+      "titre": "Que faire à Bali ? Nos coups de cœur",
+      "publie_le": "2025-04-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/que-faire-a-marrakech",
+      "titre": "Que faire à Marrakech ? Les incontournables",
+      "publie_le": "2025-03-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/que-voir-au-perou",
+      "titre": "Que voir au Pérou ? L'itinéraire essentiel",
+      "publie_le": "2026-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/road-trip-ouest-americain",
+      "titre": "Road trip dans l'Ouest américain",
+      "publie_le": "2025-07-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/safari-tanzanie-checklist",
+      "titre": "Safari en Tanzanie : la check-list avant de partir",
+      "publie_le": "2026-04-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/visiter-new-york-premiere-fois",
+      "titre": "Visiter New York pour la première fois",
+      "publie_le": "2025-08-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/visiter-rome-3-jours",
+      "titre": "Visiter Rome en 3 jours : l'itinéraire idéal",
+      "publie_le": "2025-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/voyage-bien-etre-spa",
+      "titre": "Voyage bien-être : nos plus belles destinations spa",
+      "publie_le": "2025-08-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/voyage-famille-astuces",
+      "titre": "Voyage en famille : nos astuces pour des vacances réussies",
+      "publie_le": "2026-05-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/voyage-photo-plus-beaux-spots",
+      "titre": "Voyage photo : les plus beaux spots du monde",
+      "publie_le": "2026-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/voyage-responsable-ecotourisme",
+      "titre": "Voyage responsable : le guide de l'écotourisme",
+      "publie_le": "2025-06-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/voyager-avec-bebe-conseils",
+      "titre": "Voyager avec un bébé : nos conseils pour un séjour serein",
+      "publie_le": "2025-04-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    },
+    {
+      "chemin": "/blog/voyager-pas-cher-astuces",
+      "titre": "Voyager pas cher : 15 astuces qui marchent vraiment",
+      "publie_le": "2025-01-01",
+      "j90": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "j28": {
+        "impressions": 0,
+        "clics": 0,
+        "position": null
+      },
+      "requetes": []
+    }
+  ]
+}
