@@ -18,6 +18,18 @@ export type BlogMeta = {
 
 export const BLOG_META: BlogMeta[] = [
   {
+    slug: "organiser-voyage-de-noces-toulouse",
+    category: "Conseils",
+    date: "Novembre 2026",
+    readingTime: "7 min",
+    title: "Voyage de noces : les étapes pour l'organiser avec une agence à Toulouse, du premier rendez-vous au départ",
+    excerpt: "Quand commencer, quoi préparer, comment caler la destination sur vos dates, quelles formalités anticiper : le calendrier d'un voyage de noces bien organisé, du premier échange au départ.",
+    heroImg: "/assets/images/voyage-noces-couple-2.jpg",
+    heroAlt: "Couple enlacé sur une terrasse blanche dominant la mer et les maisons de Santorin",
+    motCle: "organiser son voyage de noces",
+    datePublication: "2026-11-10",
+  },
+  {
     slug: "choisir-agence-voyage-sur-mesure-toulouse",
     category: "Conseils",
     date: "Octobre 2026",
