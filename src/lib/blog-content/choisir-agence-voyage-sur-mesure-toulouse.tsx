@@ -7,8 +7,8 @@ const lien =
 const choisirAgenceVoyageSurMesureToulouse: BlogArticle = {
   slug: "choisir-agence-voyage-sur-mesure-toulouse",
   category: "Conseils",
-  date: "Octobre 2026",
-  datePublication: "2026-10-27",
+  date: "Novembre 2026",
+  datePublication: "2026-11-03",
   readingTime: "7 min",
   motCle: "agence voyage sur mesure toulouse",
   motsClesSecondaires: [

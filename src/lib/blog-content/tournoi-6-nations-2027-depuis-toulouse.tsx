@@ -8,7 +8,7 @@ const tournoi6Nations2027DepuisToulouse: BlogArticle = {
   slug: "tournoi-6-nations-2027-depuis-toulouse",
   category: "Conseils",
   date: "Octobre 2026",
-  datePublication: "2026-10-13",
+  datePublication: "2026-10-20",
   readingTime: "7 min",
   motCle: "séjour 6 nations",
   motsClesSecondaires: [

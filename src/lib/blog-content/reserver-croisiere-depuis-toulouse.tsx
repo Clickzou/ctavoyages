@@ -7,8 +7,8 @@ const lien =
 const reserverCroisiereDepuisToulouse: BlogArticle = {
   slug: "reserver-croisiere-depuis-toulouse",
   category: "Croisière",
-  date: "Novembre 2026",
-  datePublication: "2026-11-24",
+  date: "Décembre 2026",
+  datePublication: "2026-12-01",
   readingTime: "7 min",
   motCle: "agence croisière toulouse",
   motsClesSecondaires: [

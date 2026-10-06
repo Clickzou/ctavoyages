@@ -8,7 +8,7 @@ const organiserVoyageDeNocesToulouse: BlogArticle = {
   slug: "organiser-voyage-de-noces-toulouse",
   category: "Conseils",
   date: "Novembre 2026",
-  datePublication: "2026-11-10",
+  datePublication: "2026-11-17",
   readingTime: "7 min",
   motCle: "organiser son voyage de noces",
   motsClesSecondaires: ["voyage de noces toulouse", "lune de miel toulouse"],
