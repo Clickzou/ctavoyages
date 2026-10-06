@@ -18,6 +18,18 @@ export type BlogMeta = {
 
 export const BLOG_META: BlogMeta[] = [
   {
+    slug: "tournoi-6-nations-2027-depuis-toulouse",
+    category: "Conseils",
+    date: "Octobre 2026",
+    readingTime: "7 min",
+    title: "Tournoi des 6 Nations 2027 : comment y aller depuis Toulouse",
+    excerpt: "Calendrier du XV de France, match à domicile ou à l'extérieur, billets, hôtel et transferts : tout pour préparer votre séjour au Tournoi des 6 Nations 2027 depuis Toulouse.",
+    heroImg: "/assets/images/iStock-1268222741.jpg",
+    heroAlt: "Mêlée de rugby au cœur d'un match, joueurs en appui sur la pelouse",
+    motCle: "séjour 6 nations",
+    datePublication: "2026-10-13",
+  },
+  {
     slug: "quand-partir-maldives",
     category: "Conseils",
     date: "Juin 2026",
