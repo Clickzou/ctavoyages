@@ -18,6 +18,18 @@ export type BlogMeta = {
 
 export const BLOG_META: BlogMeta[] = [
   {
+    slug: "reserver-croisiere-depuis-toulouse",
+    category: "Croisière",
+    date: "Novembre 2026",
+    readingTime: "7 min",
+    title: "Réserver une croisière depuis Toulouse : quel port d'embarquement choisir et comment s'y rendre",
+    excerpt: "Ports proches ou lointains, trajet jusqu'au navire, nuit avant l'embarquement, croisière fluviale : comment organiser une croisière quand on part de Toulouse.",
+    heroImg: "/generated/blog-croisiere-premiere-fois-conseils-5.jpg",
+    heroAlt: "Navire de croisière au mouillage devant une ville côtière",
+    motCle: "agence croisière toulouse",
+    datePublication: "2026-11-24",
+  },
+  {
     slug: "organiser-voyage-de-noces-toulouse",
     category: "Conseils",
     date: "Novembre 2026",
