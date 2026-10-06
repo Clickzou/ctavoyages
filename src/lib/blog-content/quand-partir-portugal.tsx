@@ -5,6 +5,7 @@ const quandPartirPortugal: BlogArticle = {
   category: "Conseils",
   date: "juillet 2025",
   readingTime: "5 min",
+  motCle: "quand partir au portugal",
   meta: {
     title: "Quand partir au Portugal ? Climat et conseils",
     description:

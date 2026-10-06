@@ -5,6 +5,7 @@ const quandPartirBali: BlogArticle = {
   category: "Conseils",
   date: "février 2025",
   readingTime: "7 min",
+  motCle: "quand partir à bali",
   meta: {
     title: "Quand partir à Bali ? Le guide des saisons",
     description:

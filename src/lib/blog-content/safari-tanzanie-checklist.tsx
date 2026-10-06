@@ -9,6 +9,7 @@ const safariTanzanieChecklist: BlogArticle = {
   category: "Pratique",
   date: "Avril 2026",
   readingTime: "8 min",
+  motCle: "safari tanzanie",
   meta: {
     title: "Safari en Tanzanie : la check-list avant de partir",
     description:

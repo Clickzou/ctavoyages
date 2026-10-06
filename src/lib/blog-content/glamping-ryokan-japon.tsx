@@ -5,6 +5,7 @@ const glampingRyokanJapon: BlogArticle = {
   category: "Glamping",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "ryokan japon",
   meta: {
     title: "Ryokan traditionnel et bains onsen au Japon",
     description:

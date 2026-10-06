@@ -11,6 +11,7 @@
 import { ALL_DESTINATIONS } from "./destinations";
 import { STATIC_RICH_SLUGS } from "./destination-content/static-slugs";
 import { BLOG_META, type BlogMeta } from "./blog-content/meta.generated";
+import { aujourdhuiParis } from "./blog-content/publication";
 
 export type { BlogMeta };
 
@@ -241,7 +242,11 @@ export function articlesForDestination(
   destinationSlug: string,
   limit = 0,
 ): BlogMeta[] {
-  const list = ARTICLES_BY_DESTINATION.get(destinationSlug) ?? [];
+  // Publication programmée : seuls les articles en ligne sont proposés.
+  const jour = aujourdhuiParis();
+  const list = (ARTICLES_BY_DESTINATION.get(destinationSlug) ?? []).filter(
+    (a) => a.datePublication <= jour,
+  );
   return limit > 0 ? list.slice(0, limit) : list;
 }
 
@@ -254,12 +259,14 @@ export function relatedArticles(articleSlug: string, limit = 3): BlogMeta[] {
   const current = BLOG_META.find((a) => a.slug === articleSlug);
   if (!current) return [];
 
+  // Publication programmée : un article à paraître n'est jamais suggéré.
+  const jour = aujourdhuiParis();
   const picked: BlogMeta[] = [];
   const seen = new Set([articleSlug]);
   const take = (candidates: BlogMeta[]) => {
     for (const candidate of candidates) {
       if (picked.length >= limit) return;
-      if (seen.has(candidate.slug)) continue;
+      if (seen.has(candidate.slug) || candidate.datePublication > jour) continue;
       seen.add(candidate.slug);
       picked.push(candidate);
     }

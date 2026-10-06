@@ -5,6 +5,7 @@ const quandPartirSriLanka: BlogArticle = {
   category: "Conseils",
   date: "février 2026",
   readingTime: "7 min",
+  motCle: "quand partir au sri lanka",
   meta: {
     title: "Quand partir au Sri Lanka ? Les deux moussons",
     description:

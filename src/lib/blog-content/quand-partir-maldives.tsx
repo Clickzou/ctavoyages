@@ -9,6 +9,7 @@ const quandPartirMaldives: BlogArticle = {
   category: "Conseils",
   date: "Juin 2026",
   readingTime: "8 min",
+  motCle: "quand partir aux maldives",
   meta: {
     title: "Quand partir aux Maldives ? Saisons & conseils",
     description:

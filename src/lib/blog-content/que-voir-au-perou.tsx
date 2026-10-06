@@ -5,6 +5,7 @@ const queVoirAuPerou: BlogArticle = {
   category: "Itinéraire",
   date: "janvier 2026",
   readingTime: "6 min",
+  motCle: "que voir au pérou",
   meta: {
     title: "Que voir au Pérou ? Itinéraire essentiel",
     description:

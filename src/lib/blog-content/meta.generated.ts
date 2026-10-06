@@ -11,6 +11,9 @@ export type BlogMeta = {
   excerpt: string;
   heroImg: string;
   heroAlt: string;
+  motCle: string;
+  /** AAAA-MM-JJ : jour de mise en ligne (heure de Paris). */
+  datePublication: string;
 };
 
 export const BLOG_META: BlogMeta[] = [
@@ -23,6 +26,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, mousson, meilleurs spots et atolls secrets : tout ce qu'il faut savoir pour choisir le meilleur moment et profiter d'un lagon parfait.",
     heroImg: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Villas sur pilotis au-dessus d'un lagon turquoise aux Maldives",
+    motCle: "quand partir aux maldives",
+    datePublication: "2026-06-01",
   },
   {
     slug: "plus-belles-plages-ocean-indien",
@@ -33,6 +38,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Sable corallien, lagons turquoise et rochers de granit sculptés : notre sélection des plus belles plages de l'océan Indien, de Maurice aux Maldives.",
     heroImg: "/generated/blog-plus-belles-plages-ocean-indien-hero.jpg",
     heroAlt: "Plage de sable blanc bordée de cocotiers et lagon turquoise dans l'océan Indien",
+    motCle: "plus belles plages océan indien",
+    datePublication: "2026-06-01",
   },
   {
     slug: "city-break-europe-hors-saison",
@@ -43,6 +50,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Moins de foule, des tarifs plus doux et une lumière magique : voici cinq villes d'Europe à savourer hors saison, avec nos repères pour réussir chaque escapade.",
     heroImg: "/generated/blog-city-break-europe-hors-saison-hero.jpg",
     heroAlt: "Ruelle pavée d'une vieille ville européenne baignée par la lumière dorée du matin hors saison",
+    motCle: "city break europe hors saison",
+    datePublication: "2026-05-01",
   },
   {
     slug: "voyage-famille-astuces",
@@ -53,6 +62,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Choisir la bonne destination, préparer les bagages, occuper petits et grands sans stress : nos conseils d'experts pour des vacances en famille inoubliables.",
     heroImg: "/generated/blog-voyage-famille-astuces-hero.jpg",
     heroAlt: "Famille souriante marchant sur une plage ensoleillée pendant les vacances",
+    motCle: "voyage en famille",
+    datePublication: "2026-05-01",
   },
   {
     slug: "safari-tanzanie-checklist",
@@ -63,6 +74,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, grande migration, parcs mythiques, formalités et valise idéale : tout ce qu'il faut préparer pour vivre un safari inoubliable en Tanzanie.",
     heroImg: "/generated/blog-safari-tanzanie-checklist-hero.jpg",
     heroAlt: "Éléphants traversant la savane au coucher du soleil lors d'un safari en Tanzanie",
+    motCle: "safari tanzanie",
+    datePublication: "2026-04-01",
   },
   {
     slug: "lune-de-miel-destination",
@@ -73,6 +86,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Plage paradisiaque, grands espaces ou escapade romantique : tout ce qu'il faut savoir pour choisir la destination de votre voyage de noces selon vos envies à deux.",
     heroImg: "/generated/blog-lune-de-miel-destination-hero.jpg",
     heroAlt: "Couple de jeunes mariés marchant main dans la main sur une plage au coucher du soleil",
+    motCle: "destination lune de miel",
+    datePublication: "2026-04-01",
   },
   {
     slug: "quand-partir-thailande",
@@ -83,6 +98,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, mousson et microclimats : tout ce qu'il faut savoir pour choisir le bon mois et réussir votre voyage en Thaïlande.",
     heroImg: "/generated/blog-quand-partir-thailande-hero.jpg",
     heroAlt: "Plage thaïlandaise avec bateau à longue queue devant des falaises calcaires",
+    motCle: "quand partir en thaïlande",
+    datePublication: "2025-01-01",
   },
   {
     slug: "quand-partir-bali",
@@ -93,6 +110,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, saison des pluies et pics d'affluence : tout ce qu'il faut savoir pour choisir le meilleur moment pour découvrir l'île des Dieux.",
     heroImg: "/generated/blog-quand-partir-bali-hero.jpg",
     heroAlt: "Rizières en terrasses verdoyantes et temple hindou à Bali en Indonésie",
+    motCle: "quand partir à bali",
+    datePublication: "2025-02-01",
   },
   {
     slug: "quand-partir-maroc",
@@ -103,6 +122,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Marrakech, désert, montagnes et côte atlantique : tout ce qu'il faut savoir pour choisir la meilleure période selon votre destination au Maroc.",
     heroImg: "/generated/blog-quand-partir-maroc-hero.jpg",
     heroAlt: "Toits de la médina de Marrakech avec les montagnes de l'Atlas en arrière-plan",
+    motCle: "quand partir au maroc",
+    datePublication: "2025-03-01",
   },
   {
     slug: "quand-partir-grece",
@@ -113,6 +134,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Météo, affluence et budget : tout ce qu'il faut savoir pour choisir le meilleur moment et profiter pleinement des îles grecques et du continent.",
     heroImg: "/generated/blog-quand-partir-grece-hero.jpg",
     heroAlt: "Maisons blanches et dômes bleus de Santorin surplombant la mer Égée",
+    motCle: "quand partir en grèce",
+    datePublication: "2025-04-01",
   },
   {
     slug: "quand-partir-italie",
@@ -123,6 +146,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Villes d'art, lacs, Toscane et côte amalfitaine : tout ce qu'il faut savoir pour choisir la meilleure période selon votre destination en Italie.",
     heroImg: "/generated/blog-quand-partir-italie-hero.jpg",
     heroAlt: "Collines vallonnées de Toscane parsemées de cyprès sous la lumière dorée",
+    motCle: "quand partir en italie",
+    datePublication: "2025-05-01",
   },
   {
     slug: "quand-partir-espagne",
@@ -133,6 +158,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Du printemps andalou aux étés des Baléares : tout ce qu'il faut savoir pour choisir le meilleur moment selon la région que vous visez.",
     heroImg: "/generated/blog-quand-partir-espagne-hero.jpg",
     heroAlt: "Architecture colorée de Barcelone sous un ciel d'été lumineux en Espagne",
+    motCle: "quand partir en espagne",
+    datePublication: "2025-06-01",
   },
   {
     slug: "quand-partir-portugal",
@@ -143,6 +170,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "De l'Algarve ensoleillé aux Açores verdoyantes : nos repères pour choisir la meilleure période selon la région que vous visez.",
     heroImg: "/generated/blog-quand-partir-portugal-hero.jpg",
     heroAlt: "Tramway jaune et façades d'azulejos dans les rues de Lisbonne",
+    motCle: "quand partir au portugal",
+    datePublication: "2025-07-01",
   },
   {
     slug: "quand-partir-vietnam",
@@ -153,6 +182,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Le Vietnam s'étire sur plus de 1 600 km et cumule trois climats : voici comment choisir la bonne période selon votre itinéraire.",
     heroImg: "/generated/blog-quand-partir-vietnam-hero.jpg",
     heroAlt: "Jonques traditionnelles naviguant entre les pitons karstiques de la baie d'Halong",
+    motCle: "quand partir au vietnam",
+    datePublication: "2025-08-01",
   },
   {
     slug: "quand-partir-japon",
@@ -163,6 +194,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Sakura au printemps, érables flamboyants à l'automne, neige immaculée en hiver : le Japon se vit différemment à chaque saison.",
     heroImg: "/generated/blog-quand-partir-japon-hero.jpg",
     heroAlt: "Cerisiers en fleurs devant une pagode avec le mont Fuji en arrière-plan au Japon",
+    motCle: "quand partir au japon",
+    datePublication: "2025-09-01",
   },
   {
     slug: "quand-partir-new-york",
@@ -173,6 +206,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Du printemps fleuri à Central Park au New York magique de Noël : nos repères pour choisir le meilleur moment pour visiter la Grosse Pomme.",
     heroImg: "/generated/blog-quand-partir-new-york-hero.jpg",
     heroAlt: "Skyline de Manhattan illuminée au coucher du soleil à New York",
+    motCle: "quand partir à new york",
+    datePublication: "2025-10-01",
   },
   {
     slug: "quand-partir-islande",
@@ -183,6 +218,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Soleil de minuit en été, aurores boréales en hiver : tout ce qu'il faut savoir pour choisir la meilleure période et vivre l'Islande à son apogée.",
     heroImg: "/generated/blog-quand-partir-islande-hero.jpg",
     heroAlt: "Cascade islandaise et aurores boréales vertes dans un ciel nocturne",
+    motCle: "quand partir en islande",
+    datePublication: "2025-11-01",
   },
   {
     slug: "quand-partir-croatie",
@@ -193,6 +230,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Soleil dalmate, eaux limpides, villes médiévales et parcs nationaux : tout pour choisir la meilleure période et profiter de la Croatie sans la foule.",
     heroImg: "/generated/blog-quand-partir-croatie-hero.jpg",
     heroAlt: "Vieille ville de Dubrovnik et toits rouges au bord de l'Adriatique",
+    motCle: "quand partir en croatie",
+    datePublication: "2025-12-01",
   },
   {
     slug: "quand-partir-egypte",
@@ -203,6 +242,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Pyramides, croisière sur le Nil et plongée en mer Rouge : tout ce qu'il faut savoir pour choisir le bon moment et éviter la chaleur écrasante.",
     heroImg: "/generated/blog-quand-partir-egypte-hero.jpg",
     heroAlt: "Pyramides de Gizeh et Sphinx au coucher du soleil en Égypte",
+    motCle: "quand partir en égypte",
+    datePublication: "2026-01-01",
   },
   {
     slug: "quand-partir-sri-lanka",
@@ -213,6 +254,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Deux moussons opposées, plantations de thé, plages de rêve et safaris : tout pour choisir la bonne période selon la région du Sri Lanka.",
     heroImg: "/generated/blog-quand-partir-sri-lanka-hero.jpg",
     heroAlt: "Collines verdoyantes couvertes de plantations de thé au Sri Lanka",
+    motCle: "quand partir au sri lanka",
+    datePublication: "2026-02-01",
   },
   {
     slug: "quand-partir-mexique",
@@ -223,6 +266,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Plages turquoise, cités mayas et culture flamboyante : tout pour choisir la meilleure période entre saison sèche et saison des pluies au Mexique.",
     heroImg: "/generated/blog-quand-partir-mexique-hero.jpg",
     heroAlt: "Ruines mayas de Tulum dominant une plage turquoise au Mexique",
+    motCle: "quand partir au mexique",
+    datePublication: "2026-03-01",
   },
   {
     slug: "quand-partir-cap-vert",
@@ -233,6 +278,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Climat doux, alizés, baignade et randonnée : tout ce qu'il faut savoir pour choisir le meilleur moment et la bonne île de l'archipel cap-verdien.",
     heroImg: "/generated/blog-quand-partir-cap-vert-hero.jpg",
     heroAlt: "Plage de sable blanc et dunes volcaniques bordées d'un océan turquoise au Cap-Vert",
+    motCle: "quand partir au cap-vert",
+    datePublication: "2026-04-01",
   },
   {
     slug: "quand-partir-republique-dominicaine",
@@ -243,6 +290,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, pluies, cyclones et baleines à bosse : tout ce qu'il faut savoir pour choisir le meilleur moment et la bonne région des Caraïbes.",
     heroImg: "/generated/blog-quand-partir-republique-dominicaine-hero.jpg",
     heroAlt: "Plage de cocotiers et mer turquoise sous un ciel bleu en République dominicaine",
+    motCle: "quand partir en république dominicaine",
+    datePublication: "2026-05-01",
   },
   {
     slug: "quand-partir-cuba",
@@ -253,6 +302,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, pluies, cyclones et festivals : tout ce qu'il faut savoir pour choisir le meilleur moment et profiter pleinement de la perle des Caraïbes.",
     heroImg: "/generated/blog-quand-partir-cuba-hero.jpg",
     heroAlt: "Voitures américaines vintage devant des façades colorées de La Havane à Cuba",
+    motCle: "quand partir à cuba",
+    datePublication: "2026-06-01",
   },
   {
     slug: "quand-partir-tanzanie",
@@ -263,6 +314,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, grande migration, ascension du Kilimandjaro et plages de Zanzibar : tout pour choisir le meilleur moment de votre voyage en Tanzanie.",
     heroImg: "/generated/blog-quand-partir-tanzanie-hero.jpg",
     heroAlt: "Éléphants traversant la savane du Serengeti au coucher du soleil en Tanzanie",
+    motCle: "quand partir en tanzanie",
+    datePublication: "2025-01-01",
   },
   {
     slug: "quand-partir-afrique-du-sud",
@@ -273,6 +326,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Safari au Kruger, baleines de Hermanus, Le Cap et Route des Jardins : tout pour choisir le meilleur moment selon les régions d'Afrique du Sud.",
     heroImg: "/generated/blog-quand-partir-afrique-du-sud-hero.jpg",
     heroAlt: "La Montagne de la Table dominant Le Cap sous un ciel dégagé en Afrique du Sud",
+    motCle: "quand partir en afrique du sud",
+    datePublication: "2025-02-01",
   },
   {
     slug: "quand-partir-la-reunion",
@@ -283,6 +338,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, saison des pluies, cyclones et microclimats : tout ce qu'il faut savoir pour choisir le meilleur moment et profiter de l'île intense.",
     heroImg: "/generated/blog-quand-partir-la-reunion-hero.jpg",
     heroAlt: "Volcan et cirque verdoyant de La Réunion sous un ciel dégagé",
+    motCle: "quand partir à la réunion",
+    datePublication: "2025-03-01",
   },
   {
     slug: "quand-partir-ile-maurice",
@@ -293,6 +350,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Saison sèche, été austral, microclimats et meilleures côtes : tout ce qu'il faut savoir pour choisir le bon moment et profiter du lagon mauricien.",
     heroImg: "/generated/blog-quand-partir-ile-maurice-hero.jpg",
     heroAlt: "Lagon turquoise et villas sur pilotis à l'île Maurice",
+    motCle: "quand partir ile maurice",
+    datePublication: "2025-04-01",
   },
   {
     slug: "quand-partir-canada",
@@ -303,6 +362,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Été doux, été indien flamboyant, hiver féerique et aurores boréales : tout ce qu'il faut savoir pour choisir le meilleur moment pour partir au Canada.",
     heroImg: "/generated/blog-quand-partir-canada-hero.jpg",
     heroAlt: "Lac turquoise des Rocheuses canadiennes aux couleurs d'automne",
+    motCle: "quand partir au canada",
+    datePublication: "2025-05-01",
   },
   {
     slug: "quand-partir-jordanie",
@@ -313,6 +374,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Printemps fleuri, automne doux, chaleur estivale et nuits du désert : tout ce qu'il faut savoir pour choisir le meilleur moment pour partir en Jordanie.",
     heroImg: "/generated/blog-quand-partir-jordanie-hero.jpg",
     heroAlt: "Façade du Trésor de Petra en pierre rose au lever du soleil",
+    motCle: "quand partir en jordanie",
+    datePublication: "2025-06-01",
   },
   {
     slug: "ou-partir-en-janvier",
@@ -323,6 +386,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Plages tropicales, sports d'hiver ou escapades culturelles à prix doux : nos meilleures idées de destinations pour bien commencer l'année en janvier.",
     heroImg: "/generated/blog-ou-partir-en-janvier-hero.jpg",
     heroAlt: "Plage tropicale au sable blanc et cocotiers sous le soleil d'hiver",
+    motCle: "où partir en janvier",
+    datePublication: "2025-07-01",
   },
   {
     slug: "ou-partir-en-fevrier",
@@ -333,6 +398,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Entre plages tropicales, montagnes enneigées et carnavals hauts en couleur, février offre un éventail de destinations pour tous les envies de voyage.",
     heroImg: "/generated/blog-ou-partir-en-fevrier-hero.jpg",
     heroAlt: "Plage tropicale ensoleillée et sommet enneigé au loin en février",
+    motCle: "où partir en février",
+    datePublication: "2025-08-01",
   },
   {
     slug: "ou-partir-en-mars",
@@ -343,6 +410,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Le printemps s'éveille, les déserts fleurissent et les plages se réchauffent : mars est un mois charnière idéal pour voyager loin de la foule.",
     heroImg: "/generated/blog-ou-partir-en-mars-hero.jpg",
     heroAlt: "Paysage de printemps avec cerisiers en fleurs au mois de mars",
+    motCle: "où partir en mars",
+    datePublication: "2025-09-01",
   },
   {
     slug: "ou-partir-en-avril",
@@ -353,6 +422,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Nature en fleurs, météo douce et affluence modérée : avril est l'un des plus beaux mois pour voyager, de l'Europe au Japon en passant par les tropiques.",
     heroImg: "/generated/blog-ou-partir-en-avril-hero.jpg",
     heroAlt: "Paysage de printemps verdoyant et ville historique en avril",
+    motCle: "où partir en avril",
+    datePublication: "2025-10-01",
   },
   {
     slug: "ou-partir-en-mai",
@@ -363,6 +434,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Méditerranée fleurie, plages encore tranquilles et nature généreuse : mai est un mois doux et lumineux, parfait pour voyager avant l'affluence estivale.",
     heroImg: "/generated/blog-ou-partir-en-mai-hero.jpg",
     heroAlt: "Côte méditerranéenne fleurie sous le soleil au mois de mai",
+    motCle: "où partir en mai",
+    datePublication: "2025-11-01",
   },
   {
     slug: "ou-partir-en-juin",
@@ -373,6 +446,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Soleil généreux, mer qui se réchauffe et affluence encore modérée : juin est le mois idéal pour profiter de l'été avant la cohue des vacances.",
     heroImg: "/generated/blog-ou-partir-en-juin-hero.jpg",
     heroAlt: "Littoral européen aux eaux turquoise sous le soleil de juin",
+    motCle: "où partir en juin",
+    datePublication: "2025-12-01",
   },
   {
     slug: "ou-partir-en-juillet",
@@ -383,6 +458,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Soleil garanti en Méditerranée, lagons d'Indonésie ou grands parcs d'Amérique : nos idées pour un mois de juillet réussi, au soleil comme au frais.",
     heroImg: "/generated/blog-ou-partir-en-juillet-hero.jpg",
     heroAlt: "Lagon turquoise bordé de palmiers sous un ciel d'été éclatant en juillet",
+    motCle: "où partir en juillet",
+    datePublication: "2026-01-01",
   },
   {
     slug: "ou-partir-en-aout",
@@ -393,6 +470,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Plages d'Europe, lacs alpins, grands espaces nordiques ou hiver austral : nos destinations pour un mois d'août inoubliable, au soleil ou au frais.",
     heroImg: "/generated/blog-ou-partir-en-aout-hero.jpg",
     heroAlt: "Lac alpin turquoise et littoral ensoleillé évoquant les vacances d'août",
+    motCle: "où partir en août",
+    datePublication: "2026-02-01",
   },
   {
     slug: "ou-partir-en-septembre",
@@ -403,6 +482,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Méditerranée apaisée, vendanges, mer encore chaude et moins de monde : nos idées pour savourer l'arrière-saison de septembre, ici comme à l'autre bout du monde.",
     heroImg: "/generated/blog-ou-partir-en-septembre-hero.jpg",
     heroAlt: "Village côtier baigné par la lumière dorée de l'arrière-saison en septembre",
+    motCle: "où partir en septembre",
+    datePublication: "2026-03-01",
   },
   {
     slug: "ou-partir-en-octobre",
@@ -413,6 +494,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Douceur méditerranéenne, feuillages d'automne, déserts et tropiques au beau fixe : nos idées pour un mois d'octobre ensoleillé et dépaysant.",
     heroImg: "/generated/blog-ou-partir-en-octobre-hero.jpg",
     heroAlt: "Forêt aux couleurs d'automne et littoral ensoleillé en octobre",
+    motCle: "où partir en octobre",
+    datePublication: "2026-04-01",
   },
   {
     slug: "ou-partir-en-novembre",
@@ -423,6 +506,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Lagons tropicaux, déserts ensoleillés, océan Indien et grands voyages : nos idées pour fuir la grisaille de novembre et retrouver le soleil.",
     heroImg: "/generated/blog-ou-partir-en-novembre-hero.jpg",
     heroAlt: "Plage tropicale ensoleillée bordée de palmiers pour échapper à la grisaille de novembre",
+    motCle: "où partir en novembre",
+    datePublication: "2026-05-01",
   },
   {
     slug: "ou-partir-en-decembre",
@@ -433,6 +518,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Plages tropicales, marchés de Noël enchantés ou grand froid féérique : nos destinations préférées pour réussir vos vacances de décembre.",
     heroImg: "/generated/blog-ou-partir-en-decembre-hero.jpg",
     heroAlt: "Plage tropicale ensoleillée et marché de Noël illuminé en décembre",
+    motCle: "où partir en décembre",
+    datePublication: "2026-06-01",
   },
   {
     slug: "visiter-rome-3-jours",
@@ -443,6 +530,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Antiquité, Vatican et dolce vita : notre programme jour par jour pour découvrir l'essentiel de Rome en un long week-end de 3 jours.",
     heroImg: "/generated/blog-visiter-rome-3-jours-hero.jpg",
     heroAlt: "Le Colisée de Rome illuminé à l'heure dorée du coucher de soleil",
+    motCle: "visiter rome en 3 jours",
+    datePublication: "2025-01-01",
   },
   {
     slug: "visiter-lisbonne-week-end",
@@ -453,6 +542,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Collines, azulejos, tram jaune et pastéis de nata : notre programme pour découvrir l'essentiel de Lisbonne le temps d'un week-end ensoleillé.",
     heroImg: "/generated/blog-visiter-lisbonne-week-end-hero.jpg",
     heroAlt: "Tramway jaune sur une rue en pente de Lisbonne avec toits orange",
+    motCle: "visiter lisbonne en un week-end",
+    datePublication: "2025-02-01",
   },
   {
     slug: "que-faire-a-marrakech",
@@ -463,6 +554,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Souks animés, palais raffinés, jardins luxuriants et riads cachés : notre sélection des lieux à ne pas manquer pour découvrir la ville rouge.",
     heroImg: "/generated/blog-que-faire-a-marrakech-hero.jpg",
     heroAlt: "Souk coloré de Marrakech avec épices, lanternes et étals animés",
+    motCle: "que faire à marrakech",
+    datePublication: "2025-03-01",
   },
   {
     slug: "que-faire-a-bali",
@@ -473,6 +566,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Temples sacrés, rizières en terrasses, plages de rêve et cascades cachées : notre sélection des plus belles expériences à vivre sur l'île des dieux.",
     heroImg: "/generated/blog-que-faire-a-bali-hero.jpg",
     heroAlt: "Portes d'un temple balinais ouvertes sur la jungle et une cascade",
+    motCle: "que faire à bali",
+    datePublication: "2025-04-01",
   },
   {
     slug: "road-trip-ecosse",
@@ -483,6 +578,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Châteaux hantés, lochs mystérieux et routes désertes des Highlands : voici notre itinéraire jour par jour pour réussir votre road trip en Écosse.",
     heroImg: "/generated/blog-road-trip-ecosse-hero.jpg",
     heroAlt: "Château écossais dominant un loch brumeux au cœur des Highlands",
+    motCle: "road trip écosse",
+    datePublication: "2025-05-01",
   },
   {
     slug: "road-trip-islande",
@@ -493,6 +590,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "La Ring Road fait le tour de l'Islande en reliant ses plus beaux sites : cascades, glaciers et plages noires. Voici notre itinéraire jour par jour.",
     heroImg: "/generated/blog-road-trip-islande-hero.jpg",
     heroAlt: "Cascade puissante au cœur d'un paysage volcanique islandais",
+    motCle: "road trip islande",
+    datePublication: "2025-06-01",
   },
   {
     slug: "road-trip-ouest-americain",
@@ -503,6 +602,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Canyons vertigineux, déserts rouges et parcs nationaux mythiques : voici notre itinéraire jour par jour pour un road trip inoubliable dans l'Ouest américain.",
     heroImg: "/generated/blog-road-trip-ouest-americain-hero.jpg",
     heroAlt: "Route déserte traversant les paysages rouges de l'Ouest américain",
+    motCle: "road trip ouest américain",
+    datePublication: "2025-07-01",
   },
   {
     slug: "visiter-new-york-premiere-fois",
@@ -513,6 +614,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Gratte-ciel, quartiers mythiques et musées de légende : voici notre itinéraire jour par jour pour découvrir l'essentiel de New York lors d'un premier séjour.",
     heroImg: "/generated/blog-visiter-new-york-premiere-fois-hero.jpg",
     heroAlt: "Taxis jaunes et gratte-ciel illuminés de Times Square à New York",
+    motCle: "visiter new york première fois",
+    datePublication: "2025-08-01",
   },
   {
     slug: "itineraire-japon-2-semaines",
@@ -523,6 +626,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Tokyo trépidante, Kyoto millénaire et mont Fuji majestueux : voici notre itinéraire jour par jour pour découvrir l'essentiel du Japon en deux semaines.",
     heroImg: "/generated/blog-itineraire-japon-2-semaines-hero.jpg",
     heroAlt: "Pagode japonaise devant le mont Fuji aux couleurs de l'automne",
+    motCle: "itinéraire japon 2 semaines",
+    datePublication: "2025-09-01",
   },
   {
     slug: "itineraire-vietnam-3-semaines",
@@ -533,6 +638,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Hanoï, la baie d'Halong, les rizières de Sapa, Hué, Hoi An et le delta du Mékong : notre itinéraire complet pour traverser le Vietnam en trois semaines.",
     heroImg: "/generated/blog-itineraire-vietnam-3-semaines-hero.jpg",
     heroAlt: "Rizières en terrasses verdoyantes de Sapa au nord du Vietnam sous la brume",
+    motCle: "itinéraire vietnam 3 semaines",
+    datePublication: "2025-10-01",
   },
   {
     slug: "que-faire-a-dubai",
@@ -543,6 +650,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Gratte-ciel vertigineux, désert doré, souks parfumés et plages de rêve : notre guide des incontournables de Dubaï avec un programme jour par jour.",
     heroImg: "/generated/blog-que-faire-a-dubai-hero.jpg",
     heroAlt: "Skyline de Dubaï dominée par le Burj Khalifa au coucher du soleil",
+    motCle: "que faire a dubai",
+    datePublication: "2025-11-01",
   },
   {
     slug: "visiter-barcelone-3-jours",
@@ -553,6 +662,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Sagrada Familia, Park Güell, quartier gothique, Ramblas et tapas : notre itinéraire détaillé pour découvrir le meilleur de Barcelone en trois jours.",
     heroImg: "/generated/blog-visiter-barcelone-3-jours-hero.jpg",
     heroAlt: "Façade de la Sagrada Familia de Gaudí se découpant dans le ciel de Barcelone",
+    motCle: "visiter barcelone en 3 jours",
+    datePublication: "2025-12-01",
   },
   {
     slug: "que-voir-au-perou",
@@ -563,6 +674,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Du Machu Picchu au lac Titicaca en passant par Cusco, la vallée sacrée et le canyon de Colca : notre itinéraire essentiel pour découvrir le Pérou.",
     heroImg: "/generated/blog-que-voir-au-perou-hero.jpg",
     heroAlt: "Citadelle inca du Machu Picchu sous la brume au cœur des Andes péruviennes",
+    motCle: "que voir au pérou",
+    datePublication: "2026-01-01",
   },
   {
     slug: "itineraire-croatie-1-semaine",
@@ -573,6 +686,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Dubrovnik, Split, l'île de Hvar et les chutes de Krka : notre itinéraire d'une semaine pour découvrir la côte dalmate et les plus belles îles croates.",
     heroImg: "/generated/blog-itineraire-croatie-1-semaine-hero.jpg",
     heroAlt: "Toits orangés et remparts de la vieille ville de Dubrovnik au bord de l'Adriatique",
+    motCle: "itinéraire croatie 1 semaine",
+    datePublication: "2026-02-01",
   },
   {
     slug: "itineraire-sri-lanka-2-semaines",
@@ -583,6 +698,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Temples, cités antiques, plantations de thé, safaris et plages dorées : notre itinéraire jour par jour pour traverser le Sri Lanka en deux semaines.",
     heroImg: "/generated/blog-itineraire-sri-lanka-2-semaines-hero.jpg",
     heroAlt: "Train bleu traversant les plantations de thé des hauts plateaux du Sri Lanka",
+    motCle: "itinéraire sri lanka 2 semaines",
+    datePublication: "2026-03-01",
   },
   {
     slug: "autotour-namibie",
@@ -593,6 +710,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Dunes rouges, canyons vertigineux, côte des Squelettes et safari à Etosha : notre itinéraire et nos conseils pour un road trip inoubliable en Namibie.",
     heroImg: "/generated/blog-autotour-namibie-hero.jpg",
     heroAlt: "Dunes rouges et arbres morts de Deadvlei dans le désert du Namib",
+    motCle: "autotour namibie",
+    datePublication: "2026-04-01",
   },
   {
     slug: "itineraire-thailande-2-semaines",
@@ -603,6 +722,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Temples de Bangkok, jungle de Chiang Mai et plages paradisiaques du sud : notre itinéraire jour par jour pour découvrir la Thaïlande en deux semaines.",
     heroImg: "/generated/blog-itineraire-thailande-2-semaines-hero.jpg",
     heroAlt: "Bateau à longue queue sur une eau turquoise entre des falaises calcaires en Thaïlande",
+    motCle: "itinéraire thaïlande 2 semaines",
+    datePublication: "2026-05-01",
   },
   {
     slug: "que-faire-aux-acores",
@@ -613,6 +734,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Lacs de cratère, sources chaudes, observation des baleines et randonnées volcaniques : tout ce qu'il faut faire et voir aux Açores, le joyau vert de l'Atlantique.",
     heroImg: "/generated/blog-que-faire-aux-acores-hero.jpg",
     heroAlt: "Lacs jumeaux de Sete Cidades dans un cratère verdoyant aux Açores",
+    motCle: "que faire aux açores",
+    datePublication: "2026-06-01",
   },
   {
     slug: "bali-ou-thailande",
@@ -623,6 +746,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Plages, temples, budget et ambiance : notre comparatif équilibré pour trancher entre Bali et la Thaïlande selon vos envies et votre profil de voyageur.",
     heroImg: "/generated/blog-bali-ou-thailande-hero.jpg",
     heroAlt: "Plage tropicale et temple asiatique illustrant le choix entre Bali et la Thaïlande",
+    motCle: "bali ou thaïlande",
+    datePublication: "2025-01-01",
   },
   {
     slug: "maldives-ou-seychelles",
@@ -633,6 +758,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Lagons turquoise contre plages de granit : on compare budget, ambiance, plongée et climat pour vous aider à choisir entre Maldives et Seychelles.",
     heroImg: "/generated/blog-maldives-ou-seychelles-hero.jpg",
     heroAlt: "Lagon turquoise des Maldives et plage de granit des Seychelles côte à côte",
+    motCle: "maldives ou seychelles",
+    datePublication: "2025-02-01",
   },
   {
     slug: "crete-ou-santorin",
@@ -643,6 +770,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Grande île aux mille visages ou carte postale des Cyclades : on compare budget, ambiance, plages et durée idéale entre la Crète et Santorin.",
     heroImg: "/generated/blog-crete-ou-santorin-hero.jpg",
     heroAlt: "Village blanc aux dômes bleus surplombant la mer Égée en Grèce",
+    motCle: "crète ou santorin",
+    datePublication: "2025-03-01",
   },
   {
     slug: "maroc-ou-tunisie",
@@ -653,6 +782,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Médinas envoûtantes, dunes du Sahara et bord de mer : on compare budget, ambiance, culture et plages entre le Maroc et la Tunisie.",
     heroImg: "/generated/blog-maroc-ou-tunisie-hero.jpg",
     heroAlt: "Médina d'Afrique du Nord et dunes de désert sous un ciel doré",
+    motCle: "maroc ou tunisie",
+    datePublication: "2025-04-01",
   },
   {
     slug: "vietnam-ou-cambodge",
@@ -663,6 +794,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Rizières et baies spectaculaires contre temples d'Angkor : on compare paysages, budget, durée et ambiance entre le Vietnam et le Cambodge.",
     heroImg: "/generated/blog-vietnam-ou-cambodge-hero.jpg",
     heroAlt: "Temple khmer et rizières en terrasses d'Asie du Sud-Est",
+    motCle: "vietnam ou cambodge",
+    datePublication: "2025-05-01",
   },
   {
     slug: "cuba-ou-republique-dominicaine",
@@ -673,6 +806,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Charme intemporel et culture vibrante contre plages de carte postale et tout compris : on compare Cuba et la République dominicaine.",
     heroImg: "/generated/blog-cuba-ou-republique-dominicaine-hero.jpg",
     heroAlt: "Plage de palmiers turquoise des Caraïbes au coucher du soleil",
+    motCle: "cuba ou république dominicaine",
+    datePublication: "2025-06-01",
   },
   {
     slug: "islande-ou-norvege",
@@ -683,6 +818,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Terres de feu contre royaume des fjords : paysages, activités, budget et saisons, voici comment trancher entre l'Islande et la Norvège.",
     heroImg: "/generated/blog-islande-ou-norvege-hero.jpg",
     heroAlt: "Fjord nordique avec cascade et montagnes spectaculaires",
+    motCle: "islande ou norvège",
+    datePublication: "2025-07-01",
   },
   {
     slug: "costa-rica-ou-panama",
@@ -693,6 +830,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Deux paradis de biodiversité face à face : nature, plages, budget et ambiance, voici comment départager le Costa Rica et le Panama.",
     heroImg: "/generated/blog-costa-rica-ou-panama-hero.jpg",
     heroAlt: "Jungle tropicale luxuriante et plage des Caraïbes",
+    motCle: "costa rica ou panama",
+    datePublication: "2025-08-01",
   },
   {
     slug: "plus-belles-iles-du-monde",
@@ -703,6 +842,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Lagons turquoise, sable blanc et nature préservée : tour d'horizon des plus belles îles de la planète pour inspirer votre prochaine évasion.",
     heroImg: "/generated/blog-plus-belles-iles-du-monde-hero.jpg",
     heroAlt: "Île tropicale vue du ciel avec lagon turquoise et récif",
+    motCle: "plus belles îles du monde",
+    datePublication: "2025-09-01",
   },
   {
     slug: "plus-beaux-villages-de-france",
@@ -713,6 +854,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Ruelles pavées, maisons de pierre et panoramas à couper le souffle : escapade au cœur des plus beaux villages de France.",
     heroImg: "/generated/blog-plus-beaux-villages-de-france-hero.jpg",
     heroAlt: "Village médiéval perché en pierre dorée au coucher du soleil",
+    motCle: "plus beaux villages de france",
+    datePublication: "2025-10-01",
   },
   {
     slug: "plus-belles-plages-d-europe",
@@ -723,6 +866,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Criques cachées, eaux turquoise et falaises spectaculaires : tour d'horizon des plus belles plages d'Europe pour rêver à vos prochaines vacances.",
     heroImg: "/generated/blog-plus-belles-plages-d-europe-hero.jpg",
     heroAlt: "Crique européenne aux eaux turquoise entourée de falaises",
+    motCle: "plus belles plages d'europe",
+    datePublication: "2025-11-01",
   },
   {
     slug: "plus-beaux-deserts-du-monde",
@@ -733,6 +878,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Des dunes du Sahara aux salars d'Atacama : notre sélection des déserts les plus spectaculaires de la planète et nos conseils pour les découvrir.",
     heroImg: "/generated/blog-plus-beaux-deserts-du-monde-hero.jpg",
     heroAlt: "Vastes dunes de sable doré ondulant sous une lumière de fin de journée",
+    motCle: "plus beaux déserts du monde",
+    datePublication: "2025-12-01",
   },
   {
     slug: "meilleures-destinations-plongee",
@@ -743,6 +890,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "De la Grande Barrière de corail aux Maldives : notre sélection des plus beaux spots de plongée de la planète et nos conseils pour les explorer.",
     heroImg: "/generated/blog-meilleures-destinations-plongee-hero.jpg",
     heroAlt: "Plongeur évoluant au-dessus d'un récif corallien coloré peuplé de poissons tropicaux",
+    motCle: "meilleures destinations plongée",
+    datePublication: "2026-01-01",
   },
   {
     slug: "plus-beaux-road-trips-du-monde",
@@ -753,6 +902,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "De la Route 66 à la Garden Route : notre sélection des plus belles routes de la planète et nos conseils pour vivre le road trip de vos rêves.",
     heroImg: "/generated/blog-plus-beaux-road-trips-du-monde-hero.jpg",
     heroAlt: "Route sinueuse longeant une côte spectaculaire entre océan et montagnes",
+    motCle: "plus beaux road trips du monde",
+    datePublication: "2026-02-01",
   },
   {
     slug: "ou-voir-aurores-boreales",
@@ -763,6 +914,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Laponie, Islande, Norvège ou Canada : notre sélection des meilleurs endroits pour observer les aurores boréales et nos conseils pour ne pas les manquer.",
     heroImg: "/generated/blog-ou-voir-aurores-boreales-hero.jpg",
     heroAlt: "Aurore boréale verte ondulant dans un ciel nocturne au-dessus d'un paysage enneigé",
+    motCle: "où voir des aurores boréales",
+    datePublication: "2026-03-01",
   },
   {
     slug: "plus-belles-iles-grecques",
@@ -773,6 +926,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Des Cyclades au Dodécanèse : notre sélection des plus belles îles grecques et nos conseils pour choisir celle qui vous ressemble.",
     heroImg: "/generated/blog-plus-belles-iles-grecques-hero.jpg",
     heroAlt: "Maisons blanches aux dômes bleus dominant la mer Égée sur une île grecque",
+    motCle: "plus belles îles grecques",
+    datePublication: "2026-04-01",
   },
   {
     slug: "meilleures-destinations-safari",
@@ -783,6 +938,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Du Serengeti au delta de l'Okavango, notre sélection des plus beaux territoires d'Afrique pour vivre un safari inoubliable.",
     heroImg: "/generated/blog-meilleures-destinations-safari-hero.jpg",
     heroAlt: "Éléphants traversant la savane africaine au coucher du soleil sous un acacia",
+    motCle: "meilleures destinations safari",
+    datePublication: "2026-05-01",
   },
   {
     slug: "plus-beaux-sites-unesco",
@@ -793,6 +950,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Merveilles naturelles et chefs-d'œuvre de l'humanité : notre sélection des plus beaux sites du patrimoine mondial à voir au moins une fois.",
     heroImg: "/generated/blog-plus-beaux-sites-unesco-hero.jpg",
     heroAlt: "Monument emblématique inscrit au patrimoine mondial de l'UNESCO au lever du soleil",
+    motCle: "plus beaux sites unesco",
+    datePublication: "2026-06-01",
   },
   {
     slug: "iles-paradisiaques-pas-cher",
@@ -803,6 +962,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Sable blanc, lagons turquoise et budget maîtrisé : notre sélection des plus belles îles paradisiaques accessibles sans se ruiner.",
     heroImg: "/generated/blog-iles-paradisiaques-pas-cher-hero.jpg",
     heroAlt: "Plage de sable blanc bordée de cocotiers et lagon turquoise sur une île tropicale",
+    motCle: "îles paradisiaques pas chères",
+    datePublication: "2025-01-01",
   },
   {
     slug: "plus-belles-cascades-du-monde",
@@ -813,6 +974,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Des chutes d'Iguazú aux cataractes Victoria, notre sélection des plus spectaculaires cascades de la planète et nos conseils pour les admirer.",
     heroImg: "/generated/blog-plus-belles-cascades-du-monde-hero.jpg",
     heroAlt: "Immense cascade tropicale plongeant dans un bassin entouré de jungle luxuriante",
+    motCle: "plus belles cascades du monde",
+    datePublication: "2025-02-01",
   },
   {
     slug: "voyage-solo-femme-destinations",
@@ -823,6 +986,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Destinations sûres, accueillantes et inspirantes : notre sélection pour partir seule en toute sérénité et vivre une aventure en solo réussie.",
     heroImg: "/generated/blog-voyage-solo-femme-destinations-hero.jpg",
     heroAlt: "Voyageuse seule contemplant un paysage panoramique depuis un point de vue",
+    motCle: "voyage solo femme",
+    datePublication: "2025-03-01",
   },
   {
     slug: "partir-en-amoureux-week-end",
@@ -833,6 +998,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Capitales romantiques, retraites cosy ou escapades exotiques : nos meilleures idées pour offrir à votre couple une parenthèse inoubliable le temps d'un week-end.",
     heroImg: "/generated/blog-partir-en-amoureux-week-end-hero.jpg",
     heroAlt: "Couple enlacé admirant le coucher de soleil sur une ville romantique",
+    motCle: "week-end en amoureux",
+    datePublication: "2025-04-01",
   },
   {
     slug: "destinations-voyage-aventure",
@@ -843,6 +1010,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Trek en altitude, déserts immenses, jungles et fjords : nos destinations coup de cœur et nos conseils pour vivre l'aventure à votre rythme.",
     heroImg: "/generated/blog-destinations-voyage-aventure-hero.jpg",
     heroAlt: "Randonneur face à des montagnes spectaculaires lors d'un trek d'aventure",
+    motCle: "destinations voyage aventure",
+    datePublication: "2025-05-01",
   },
   {
     slug: "voyage-gastronomique-destinations",
@@ -853,6 +1022,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Pasta italiennes, sushis japonais, street food thaïe ou tajines marocains : nos destinations gourmandes et nos conseils pour un voyage qui se savoure.",
     heroImg: "/generated/blog-voyage-gastronomique-destinations-hero.jpg",
     heroAlt: "Étal coloré d'un marché gourmand avec plats et produits frais locaux",
+    motCle: "voyage gastronomique",
+    datePublication: "2025-06-01",
   },
   {
     slug: "vacances-au-ski-hors-alpes",
@@ -863,6 +1034,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Pyrénées familiales, Dolomites spectaculaires, poudreuse canadienne ou japonaise : nos idées de stations hors des Alpes pour renouveler vos vacances à la neige.",
     heroImg: "/generated/blog-vacances-au-ski-hors-alpes-hero.jpg",
     heroAlt: "Station de ski enneigée avec village de montagne et pistes ensoleillées",
+    motCle: "ski hors des alpes",
+    datePublication: "2025-07-01",
   },
   {
     slug: "voyage-bien-etre-spa",
@@ -873,6 +1046,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Retraites de yoga à Bali, spas suspendus aux Maldives, hammams marocains ou ayurvéda en Inde : nos destinations pour se ressourcer corps et esprit.",
     heroImg: "/generated/blog-voyage-bien-etre-spa-hero.jpg",
     heroAlt: "Piscine à débordement d'un spa tropical face à une nature luxuriante",
+    motCle: "voyage bien-être spa",
+    datePublication: "2025-08-01",
   },
   {
     slug: "croisiere-premiere-fois-conseils",
@@ -883,6 +1058,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Compagnie, cabine, mal de mer, budget et excursions : tout ce qu'il faut savoir pour bien préparer votre toute première croisière et en profiter pleinement.",
     heroImg: "/generated/blog-croisiere-premiere-fois-conseils-hero.jpg",
     heroAlt: "Grand navire de croisière voguant sur l'océan au coucher du soleil, ponts illuminés",
+    motCle: "première croisière",
+    datePublication: "2025-09-01",
   },
   {
     slug: "voyage-avec-ados-idees",
@@ -893,6 +1070,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Aventure, villes branchées, road trips et plages sportives : nos meilleures idées de destinations pour voyager avec des adolescents sans entendre « je m'ennuie ».",
     heroImg: "/generated/blog-voyage-avec-ados-idees-hero.jpg",
     heroAlt: "Adolescents en randonnée souriants devant un paysage de montagne spectaculaire",
+    motCle: "voyage avec des ados",
+    datePublication: "2025-10-01",
   },
   {
     slug: "slow-travel-guide",
@@ -903,6 +1082,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Prendre son temps, vivre au rythme local et privilégier la rencontre : découvrez la philosophie du slow travel pour des voyages plus profonds et authentiques.",
     heroImg: "/generated/blog-slow-travel-guide-hero.jpg",
     heroAlt: "Voyageur contemplant un paysage de campagne paisible depuis un train panoramique",
+    motCle: "slow travel",
+    datePublication: "2025-11-01",
   },
   {
     slug: "destinations-plongee-debutant",
@@ -913,6 +1094,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Eaux chaudes, faibles profondeurs et fonds spectaculaires : les meilleures destinations pour faire votre baptême de plongée ou débuter le snorkeling en toute confiance.",
     heroImg: "/generated/blog-destinations-plongee-debutant-hero.jpg",
     heroAlt: "Plongeur débutant explorant un récif corallien coloré dans une eau turquoise claire",
+    motCle: "plongée débutant",
+    datePublication: "2025-12-01",
   },
   {
     slug: "voyage-photo-plus-beaux-spots",
@@ -923,6 +1106,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Aurores boréales, déserts, rizières et cités mythiques : notre sélection des plus beaux spots photo de la planète et nos conseils pour des clichés inoubliables.",
     heroImg: "/generated/blog-voyage-photo-plus-beaux-spots-hero.jpg",
     heroAlt: "Photographe au sommet d'une montagne capturant un lever de soleil spectaculaire",
+    motCle: "voyage photo",
+    datePublication: "2026-01-01",
   },
   {
     slug: "vacances-nature-deconnexion",
@@ -933,6 +1118,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Cabanes perchées, lacs sauvages et grands espaces : nos plus belles idées pour couper du quotidien et renouer avec le rythme de la nature.",
     heroImg: "/generated/blog-vacances-nature-deconnexion-hero.jpg",
     heroAlt: "Cabane en bois au bord d'un lac entouré de forêt au lever du soleil",
+    motCle: "vacances nature déconnexion",
+    datePublication: "2026-02-01",
   },
   {
     slug: "partir-hors-saison-avantages",
@@ -943,6 +1130,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Tarifs en baisse, monuments sans la foule et accueil plus chaleureux : voici pourquoi voyager hors saison change tout — et comment bien s'y prendre.",
     heroImg: "/generated/blog-partir-hors-saison-avantages-hero.jpg",
     heroAlt: "Voyageur seul devant un monument célèbre sans aucune foule autour",
+    motCle: "partir hors saison",
+    datePublication: "2026-03-01",
   },
   {
     slug: "preparer-sa-valise-voyage",
@@ -953,6 +1142,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Vêtements, papiers, trousse de secours et astuces de pro : la méthode complète pour boucler sa valise sereinement et voyager léger.",
     heroImg: "/generated/blog-preparer-sa-valise-voyage-hero.jpg",
     heroAlt: "Valise ouverte soigneusement rangée avec vêtements pliés et accessoires de voyage",
+    motCle: "préparer sa valise",
+    datePublication: "2026-04-01",
   },
   {
     slug: "eviter-le-jet-lag",
@@ -963,6 +1154,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Avant, pendant et après le vol : nos conseils concrets pour limiter le décalage horaire et profiter de votre destination dès l'arrivée.",
     heroImg: "/generated/blog-eviter-le-jet-lag-hero.jpg",
     heroAlt: "Vue depuis un hublot d'avion sur les nuages au coucher du soleil",
+    motCle: "éviter le jet lag",
+    datePublication: "2026-05-01",
   },
   {
     slug: "choisir-assurance-voyage",
@@ -973,6 +1166,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Annulation, frais médicaux, rapatriement, bagages : comprenez les garanties essentielles et apprenez à choisir l'assurance voyage adaptée à votre séjour.",
     heroImg: "/generated/blog-choisir-assurance-voyage-hero.jpg",
     heroAlt: "Passeport, carte du monde et documents de voyage posés sur une table",
+    motCle: "choisir son assurance voyage",
+    datePublication: "2026-06-01",
   },
   {
     slug: "voyager-pas-cher-astuces",
@@ -983,6 +1178,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Quinze leviers concrets pour réduire la facture de vos voyages sans sacrifier le plaisir : vols, dates, hébergement et bons réflexes du quotidien.",
     heroImg: "/generated/blog-voyager-pas-cher-astuces-hero.jpg",
     heroAlt: "Voyageur sac au dos contemplant un paysage spectaculaire au coucher du soleil",
+    motCle: "voyager pas cher",
+    datePublication: "2025-01-01",
   },
   {
     slug: "prendre-avion-premiere-fois",
@@ -993,6 +1190,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "De l'arrivée à l'aéroport à l'atterrissage, toutes les étapes expliquées pas à pas pour aborder votre premier vol en toute sérénité.",
     heroImg: "/generated/blog-prendre-avion-premiere-fois-hero.jpg",
     heroAlt: "Vue de l'aile d'un avion à travers un hublot au-dessus des nuages",
+    motCle: "prendre l'avion pour la première fois",
+    datePublication: "2025-02-01",
   },
   {
     slug: "formalites-visa-voyage",
@@ -1003,6 +1202,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Passeport, visa, ESTA, vaccins et assurances : toutes les formalités à anticiper pour franchir les frontières sans accroc.",
     heroImg: "/generated/blog-formalites-visa-voyage-hero.jpg",
     heroAlt: "Passeport ouvert couvert de tampons de douane et de visas",
+    motCle: "formalités visa voyage",
+    datePublication: "2025-03-01",
   },
   {
     slug: "voyager-avec-bebe-conseils",
@@ -1013,6 +1214,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Préparer l'avion, alléger les bagages, gérer le rythme et la santé : tout ce qu'il faut anticiper pour voyager apaisé avec votre tout-petit.",
     heroImg: "/generated/blog-voyager-avec-bebe-conseils-hero.jpg",
     heroAlt: "Parents avec un bébé dans un aéroport, prêts à embarquer",
+    motCle: "voyager avec un bébé",
+    datePublication: "2025-04-01",
   },
   {
     slug: "budget-voyage-bien-calculer",
@@ -1023,6 +1226,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Une méthode claire pour estimer chaque poste de dépense, prévoir une marge et partir sereinement, sans mauvaise surprise au retour.",
     heroImg: "/generated/blog-budget-voyage-bien-calculer-hero.jpg",
     heroAlt: "Carnet de planification de voyage, carte du monde et calculatrice sur une table",
+    motCle: "budget voyage",
+    datePublication: "2025-05-01",
   },
   {
     slug: "voyage-responsable-ecotourisme",
@@ -1033,6 +1238,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Réduire son empreinte, soutenir l'économie locale et préserver la nature : nos conseils concrets pour voyager autrement, sans renoncer au plaisir.",
     heroImg: "/generated/blog-voyage-responsable-ecotourisme-hero.jpg",
     heroAlt: "Sentier de randonnée au cœur d'une nature verdoyante préservée",
+    motCle: "voyage responsable écotourisme",
+    datePublication: "2025-06-01",
   },
   {
     slug: "decouvrir-destination-en-train",
@@ -1043,6 +1250,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Glacier Express, Transsibérien, côtes d'Écosse ou Sri Lanka : nos itinéraires ferroviaires les plus spectaculaires pour voyager autrement.",
     heroImg: "/generated/blog-decouvrir-destination-en-train-hero.jpg",
     heroAlt: "Train panoramique traversant un paysage de montagne spectaculaire",
+    motCle: "voyager en train",
+    datePublication: "2025-07-01",
   },
   {
     slug: "meilleures-applis-voyage",
@@ -1053,6 +1262,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Vols, navigation hors-ligne, traduction, budget et organisation : notre sélection d'applis indispensables pour préparer et vivre vos voyages sereinement.",
     heroImg: "/generated/blog-meilleures-applis-voyage-hero.jpg",
     heroAlt: "Smartphone affichant une carte de navigation lors d'un voyage",
+    motCle: "applis voyage",
+    datePublication: "2025-08-01",
   },
   {
     slug: "ou-partir-au-soleil-en-hiver",
@@ -1063,6 +1274,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Des Canaries aux Maldives en passant par la Thaïlande : nos destinations préférées pour troquer la grisaille hivernale contre du soleil garanti.",
     heroImg: "/generated/blog-ou-partir-au-soleil-en-hiver-hero.jpg",
     heroAlt: "Plage tropicale ensoleillée bordée de palmiers en plein hiver",
+    motCle: "où partir au soleil en hiver",
+    datePublication: "2025-09-01",
   },
   {
     slug: "ou-partir-pas-cher-en-europe",
@@ -1073,6 +1286,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Cracovie, Porto, Budapest, les Balkans ou les Pouilles : nos destinations européennes pleines de charme où votre budget va plus loin.",
     heroImg: "/generated/blog-ou-partir-pas-cher-en-europe-hero.jpg",
     heroAlt: "Vieille ville européenne pittoresque aux façades colorées",
+    motCle: "où partir pas cher en europe",
+    datePublication: "2025-10-01",
   },
   {
     slug: "circuit-canada-rocheuses-quebec",
@@ -1083,6 +1298,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Lacs turquoise de l'Alberta, effervescence de Toronto, charme européen de Montréal et âme française de Québec : un voyage d'ouest en est à travers l'immensité canadienne.",
     heroImg: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Route panoramique serpentant à travers les montagnes enneigées des Rocheuses canadiennes bordées de forêts de conifères",
+    motCle: "circuit canada rocheuses québec",
+    datePublication: "2026-07-01",
   },
   {
     slug: "circuit-costa-rica-volcans-jungle",
@@ -1093,6 +1310,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Un volcan fumant, une forêt de nuages, des canaux peuplés de paresseux et des plages sauvages : le Costa Rica concentre en un circuit toute la richesse de l'Amérique centrale.",
     heroImg: "https://images.unsplash.com/photo-1500049242364-5f500807cdd7?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Plage sauvage de sable doré bordée d'une jungle dense et de palmiers sur la côte Pacifique du Costa Rica",
+    motCle: "circuit costa rica",
+    datePublication: "2026-07-01",
   },
   {
     slug: "circuit-maroc-marrakech-atlas-sahara",
@@ -1103,6 +1322,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Souks colorés, cols vertigineux du Haut Atlas, kasbahs de terre et nuit sous les étoiles dans le désert : notre circuit pour découvrir le meilleur du Maroc.",
     heroImg: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Dunes dorées du Sahara marocain ondulant à perte de vue sous la lumière chaude du coucher du soleil",
+    motCle: "circuit maroc marrakech atlas sahara",
+    datePublication: "2026-07-01",
   },
   {
     slug: "croisiere-mediterranee-rome-barcelone",
@@ -1113,6 +1334,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Des trésors de Rome à la Sagrada Família de Barcelone, en passant par la Toscane et la Côte d'Azur : notre itinéraire pour une croisière inoubliable en Méditerranée.",
     heroImg: "https://images.unsplash.com/photo-1515859005217-8a1f08870f59?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Grand navire de croisière naviguant sur une mer Méditerranée calme baignée par la lumière dorée du coucher du soleil",
+    motCle: "croisière méditerranée",
+    datePublication: "2026-07-01",
   },
   {
     slug: "croisiere-fjords-norvegiens",
@@ -1123,6 +1346,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Parois vertigineuses, cascades, soleil de minuit l'été et aurores boréales l'hiver : embarquez pour la Norvège, l'une des plus belles croisières du monde.",
     heroImg: "https://images.unsplash.com/photo-1520769945061-0a448c463865?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Fjord norvégien spectaculaire avec un navire de croisière au pied de montagnes escarpées plongeant dans une eau sombre",
+    motCle: "croisière fjords norvégiens",
+    datePublication: "2026-07-01",
   },
   {
     slug: "croisiere-caraibes-antilles",
@@ -1133,6 +1358,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Plages de sable blanc, eaux turquoise, fonds marins et îles françaises comme anglophones : embarquez pour une croisière ensoleillée au cœur des Antilles.",
     heroImg: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Plage de sable blanc bordée de cocotiers penchés au-dessus d'une eau turquoise et transparente dans les Caraïbes",
+    motCle: "croisière caraïbes antilles",
+    datePublication: "2026-07-01",
   },
   {
     slug: "croisiere-fluviale-europe",
@@ -1143,6 +1370,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Petits bateaux, escales au cœur des villes et formule tout compris : la croisière fluviale réinvente le voyage. Cap sur le Douro, le Rhin et le Danube.",
     heroImg: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Bateau de croisière fluviale glissant sur un fleuve européen bordé de vignobles en terrasses",
+    motCle: "croisière fluviale europe",
+    datePublication: "2026-07-01",
   },
   {
     slug: "glamping-cabane-canada",
@@ -1153,6 +1382,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Le confort d'un lodge, la magie de la nature boréale : imaginez une cabane en rondins face à un lac canadien, entre jacuzzi, canoë et aurores boréales.",
     heroImg: "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Cabane en rondins au bord d'un lac paisible entouré de forêt au Canada",
+    motCle: "glamping cabane canada",
+    datePublication: "2026-07-01",
   },
   {
     slug: "glamping-eco-lodge-costa-rica",
@@ -1163,6 +1394,8 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Un bungalow perché dans la canopée, le réveil au chant des toucans et la promesse d'un tourisme responsable : découvrez le glamping éco-lodge au cœur de la jungle costaricienne.",
     heroImg: "https://images.unsplash.com/photo-1500049242364-5f500807cdd7?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Éco-lodge en bois niché dans la canopée d'une forêt tropicale luxuriante du Costa Rica",
+    motCle: "éco-lodge costa rica",
+    datePublication: "2026-07-01",
   },
   {
     slug: "glamping-ryokan-japon",
@@ -1173,5 +1406,7 @@ export const BLOG_META: BlogMeta[] = [
     excerpt: "Dormir sur un futon posé à même le tatami, se délasser dans une source thermale face aux montagnes et savourer un repas kaiseki : le ryokan est l'expérience insolite la plus authentique du Japon.",
     heroImg: "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1600&h=900&fit=crop&auto=format",
     heroAlt: "Ryokan japonais traditionnel avec un bain onsen extérieur en pierre entouré de nature",
+    motCle: "ryokan japon",
+    datePublication: "2026-07-01",
   },
 ];

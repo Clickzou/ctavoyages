@@ -5,6 +5,7 @@ const itineraireVietnam3Semaines: BlogArticle = {
   category: "Itinéraire",
   date: "octobre 2025",
   readingTime: "7 min",
+  motCle: "itinéraire vietnam 3 semaines",
   meta: {
     title: "Le Vietnam en 3 semaines : itinéraire",
     description:

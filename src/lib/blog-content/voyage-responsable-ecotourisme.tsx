@@ -5,6 +5,7 @@ const voyageResponsableEcotourisme: BlogArticle = {
   category: "Pratique",
   date: "juin 2025",
   readingTime: "8 min",
+  motCle: "voyage responsable écotourisme",
   meta: {
     title: "Voyage responsable : guide de l'écotourisme",
     description:

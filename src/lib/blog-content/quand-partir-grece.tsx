@@ -5,6 +5,7 @@ const quandPartirGrece: BlogArticle = {
   category: "Conseils",
   date: "avril 2025",
   readingTime: "8 min",
+  motCle: "quand partir en grèce",
   meta: {
     title: "Quand partir en Grèce ? Météo et périodes",
     description:

@@ -5,6 +5,7 @@ const islandeOuNorvege: BlogArticle = {
   category: "Comparatif",
   date: "juillet 2025",
   readingTime: "6 min",
+  motCle: "islande ou norvège",
   meta: {
     title: "Islande ou Norvège : quel voyage nature ?",
     description:

@@ -5,6 +5,7 @@ const queFaireAMarrakech: BlogArticle = {
   category: "Itinéraire",
   date: "mars 2025",
   readingTime: "5 min",
+  motCle: "que faire à marrakech",
   meta: {
     title: "Que faire à Marrakech ? Les incontournables",
     description:

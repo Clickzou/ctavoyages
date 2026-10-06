@@ -5,6 +5,7 @@ const quandPartirMaroc: BlogArticle = {
   category: "Conseils",
   date: "mars 2025",
   readingTime: "5 min",
+  motCle: "quand partir au maroc",
   meta: {
     title: "Quand partir au Maroc ? Climat ville par ville",
     description:

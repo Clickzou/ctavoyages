@@ -5,6 +5,7 @@ const vacancesAuSkiHorsAlpes: BlogArticle = {
   category: "Inspiration",
   date: "juillet 2025",
   readingTime: "5 min",
+  motCle: "ski hors des alpes",
   meta: {
     title: "Vacances au ski hors des Alpes",
     description:

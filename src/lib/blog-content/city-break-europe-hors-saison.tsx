@@ -8,6 +8,7 @@ const cityBreakEuropeHorsSaison: BlogArticle = {
   category: "Inspiration",
   date: "Mai 2026",
   readingTime: "6 min",
+  motCle: "city break europe hors saison",
   meta: {
     title: "City break hors saison : 5 villes d'Europe",
     description:

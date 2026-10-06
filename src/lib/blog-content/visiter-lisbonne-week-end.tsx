@@ -5,6 +5,7 @@ const visiterLisbonneWeekEnd: BlogArticle = {
   category: "Itinéraire",
   date: "février 2025",
   readingTime: "7 min",
+  motCle: "visiter lisbonne en un week-end",
   meta: {
     title: "Visiter Lisbonne en un week-end",
     description:

@@ -5,6 +5,7 @@ const quandPartirCapVert: BlogArticle = {
   category: "Conseils",
   date: "avril 2026",
   readingTime: "8 min",
+  motCle: "quand partir au cap-vert",
   meta: {
     title: "Quand partir au Cap-Vert ? Le guide complet",
     description:

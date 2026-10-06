@@ -5,6 +5,7 @@ const quandPartirTanzanie: BlogArticle = {
   category: "Conseils",
   date: "janvier 2025",
   readingTime: "5 min",
+  motCle: "quand partir en tanzanie",
   meta: {
     title: "Quand partir en Tanzanie ? Safari et migration",
     description:

@@ -5,6 +5,7 @@ const itineraireSriLanka2Semaines: BlogArticle = {
   category: "Itinéraire",
   date: "mars 2026",
   readingTime: "5 min",
+  motCle: "itinéraire sri lanka 2 semaines",
   meta: {
     title: "Le Sri Lanka en 2 semaines : itinéraire",
     description:

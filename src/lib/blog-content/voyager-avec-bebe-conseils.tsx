@@ -5,6 +5,7 @@ const voyagerAvecBebeConseils: BlogArticle = {
   category: "Pratique",
   date: "avril 2025",
   readingTime: "7 min",
+  motCle: "voyager avec un bébé",
   meta: {
     title: "Voyager avec un bébé : nos conseils pratiques",
     description:

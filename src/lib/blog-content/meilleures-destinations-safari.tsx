@@ -5,6 +5,7 @@ const meilleuresDestinationsSafari: BlogArticle = {
   category: "Inspiration",
   date: "mai 2026",
   readingTime: "5 min",
+  motCle: "meilleures destinations safari",
   meta: {
     title: "Les meilleures destinations safari",
     description:

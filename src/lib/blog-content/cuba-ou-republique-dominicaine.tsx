@@ -5,6 +5,7 @@ const cubaOuRepubliqueDominicaine: BlogArticle = {
   category: "Comparatif",
   date: "juin 2025",
   readingTime: "8 min",
+  motCle: "cuba ou république dominicaine",
   meta: {
     title: "Cuba ou République dominicaine ?",
     description:

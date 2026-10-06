@@ -5,6 +5,7 @@ const ouPartirEnOctobre: BlogArticle = {
   category: "Inspiration",
   date: "avril 2026",
   readingTime: "7 min",
+  motCle: "où partir en octobre",
   meta: {
     title: "Où partir en octobre ? Soleil d'automne",
     description:

@@ -5,6 +5,7 @@ const croisiereMediterraneeRomeBarcelone: BlogArticle = {
   category: "Croisière",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "croisière méditerranée",
   meta: {
     title: "Croisière Méditerranée : Rome & Barcelone",
     description:

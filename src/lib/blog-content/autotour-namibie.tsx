@@ -5,6 +5,8 @@ const autotourNamibie: BlogArticle = {
   category: "Itinéraire",
   date: "avril 2026",
   readingTime: "8 min",
+  // Requête réelle relevée dans la Search Console (audit Clickzou du 05/10/2026).
+  motCle: "autotour namibie",
   meta: {
     title: "Autotour en Namibie : itinéraire et conseils",
     description:

@@ -5,6 +5,8 @@ const queFaireADubai: BlogArticle = {
   category: "Itinéraire",
   date: "novembre 2025",
   readingTime: "5 min",
+  // Requête réelle relevée dans la Search Console (audit Clickzou du 05/10/2026).
+  motCle: "que faire a dubai",
   meta: {
     title: "Que faire à Dubaï ? Le guide complet",
     description:

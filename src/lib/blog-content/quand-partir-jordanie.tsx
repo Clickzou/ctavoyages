@@ -5,6 +5,7 @@ const quandPartirJordanie: BlogArticle = {
   category: "Conseils",
   date: "juin 2025",
   readingTime: "8 min",
+  motCle: "quand partir en jordanie",
   meta: {
     title: "Quand partir en Jordanie ? Climat & désert",
     description:

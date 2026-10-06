@@ -5,6 +5,7 @@ const eviterLeJetLag: BlogArticle = {
   category: "Pratique",
   date: "mai 2026",
   readingTime: "6 min",
+  motCle: "éviter le jet lag",
   meta: {
     title: "Éviter le jet lag : nos astuces",
     description:

@@ -5,6 +5,7 @@ const queFaireABali: BlogArticle = {
   category: "Itinéraire",
   date: "avril 2025",
   readingTime: "8 min",
+  motCle: "que faire à bali",
   meta: {
     title: "Que faire à Bali ? Nos coups de cœur",
     description:

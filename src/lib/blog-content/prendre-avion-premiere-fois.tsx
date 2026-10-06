@@ -5,6 +5,7 @@ const prendreAvionPremiereFois: BlogArticle = {
   category: "Pratique",
   date: "février 2025",
   readingTime: "8 min",
+  motCle: "prendre l'avion pour la première fois",
   meta: {
     title: "Prendre l'avion pour la première fois : guide",
     description:

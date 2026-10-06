@@ -5,6 +5,7 @@ const marocOuTunisie: BlogArticle = {
   category: "Comparatif",
   date: "avril 2025",
   readingTime: "7 min",
+  motCle: "maroc ou tunisie",
   meta: {
     title: "Maroc ou Tunisie : quelle destination ?",
     description:

@@ -5,6 +5,7 @@ const decouvrirDestinationEnTrain: BlogArticle = {
   category: "Inspiration",
   date: "juillet 2025",
   readingTime: "6 min",
+  motCle: "voyager en train",
   meta: {
     title: "Voyager en train : nos plus beaux trajets",
     description:

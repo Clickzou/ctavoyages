@@ -5,6 +5,7 @@ const budgetVoyageBienCalculer: BlogArticle = {
   category: "Pratique",
   date: "mai 2025",
   readingTime: "5 min",
+  motCle: "budget voyage",
   meta: {
     title: "Bien calculer son budget voyage : la méthode",
     description:

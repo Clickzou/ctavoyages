@@ -5,6 +5,7 @@ const plusBeauxVillagesDeFrance: BlogArticle = {
   category: "Inspiration",
   date: "octobre 2025",
   readingTime: "8 min",
+  motCle: "plus beaux villages de france",
   meta: {
     title: "Les plus beaux villages de France",
     description:

@@ -5,6 +5,8 @@ const quandPartirCuba: BlogArticle = {
   category: "Conseils",
   date: "juin 2026",
   readingTime: "7 min",
+  // Requête réelle relevée dans la Search Console (audit Clickzou du 05/10/2026).
+  motCle: "quand partir à cuba",
   meta: {
     title: "Quand partir à Cuba ? Climat et meilleurs mois",
     description:

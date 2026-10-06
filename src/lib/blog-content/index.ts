@@ -1,4 +1,5 @@
 import type { BlogArticle } from "./types";
+import { appliquerCorrections } from "./edition-client";
 import A0 from "./quand-partir-maldives";
 import A1 from "./plus-belles-plages-ocean-indien";
 import A2 from "./city-break-europe-hors-saison";
@@ -361,8 +362,17 @@ export const BLOG_LIST: BlogArticle[] = [
 
 export const BLOG_SLUGS = Object.keys(BLOG_ARTICLES);
 
+/**
+ * Un article, avec les corrections du client (relecture depuis l'espace client
+ * Clickzou, `corrections-client.json`) déjà appliquées : la page publique,
+ * l'aperçu et l'API lisent donc tous le texte relu.
+ *
+ * Ne dit rien de la date de publication : une page publique doit aussi
+ * vérifier `estPublie(slug)` (`publication.ts`).
+ */
 export function getArticle(slug: string): BlogArticle | undefined {
-  return BLOG_ARTICLES[slug];
+  const article = BLOG_ARTICLES[slug];
+  return article ? appliquerCorrections(article) : undefined;
 }
 
 export type { BlogArticle } from "./types";

@@ -5,6 +5,7 @@ const voyageAvecAdosIdees: BlogArticle = {
   category: "Inspiration",
   date: "octobre 2025",
   readingTime: "7 min",
+  motCle: "voyage avec des ados",
   meta: {
     title: "Voyage avec des ados : nos idées de destinations",
     description:

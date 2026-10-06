@@ -5,6 +5,7 @@ const roadTripOuestAmericain: BlogArticle = {
   category: "Itinéraire",
   date: "juillet 2025",
   readingTime: "5 min",
+  motCle: "road trip ouest américain",
   meta: {
     title: "Road trip dans l'Ouest américain",
     description:

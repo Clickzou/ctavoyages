@@ -5,6 +5,7 @@ const ouVoirAuroresBoreales: BlogArticle = {
   category: "Inspiration",
   date: "mars 2026",
   readingTime: "6 min",
+  motCle: "où voir des aurores boréales",
   meta: {
     title: "Où voir les aurores boréales ?",
     description:

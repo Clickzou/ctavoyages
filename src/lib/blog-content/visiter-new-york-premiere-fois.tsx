@@ -5,6 +5,7 @@ const visiterNewYorkPremiereFois: BlogArticle = {
   category: "Itinéraire",
   date: "août 2025",
   readingTime: "8 min",
+  motCle: "visiter new york première fois",
   meta: {
     title: "Visiter New York pour la première fois",
     description:

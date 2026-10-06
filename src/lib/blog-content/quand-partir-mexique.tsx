@@ -5,6 +5,7 @@ const quandPartirMexique: BlogArticle = {
   category: "Conseils",
   date: "mars 2026",
   readingTime: "5 min",
+  motCle: "quand partir au mexique",
   meta: {
     title: "Quand partir au Mexique ? Saison sèche et pluies",
     description:

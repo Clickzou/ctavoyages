@@ -47,6 +47,16 @@ cinq destinataires en copie), les inscriptions newsletter alimentent la liste
 côté Vercel : `RESEND_API_KEY`, `BREVO_API_KEY`, `BREVO_LIST_ID`, et
 éventuellement `RESEND_FROM`.
 
+Blog relié à l'espace client Clickzou (onglet « Articles programmés », 06/10/2026) :
+`TABLEAU_DE_BORD_CLE` (Vercel, production, sensible, ≥ 32 caractères ; même
+valeur que `CTAVOYAGES_TABLEAU_DE_BORD_CLE` sur le projet Vercel `clickzou`)
+protège `/api/articles-programmes` et signe les aperçus
+`/blog/apercu/<slug>?sig=…`. Absente : l'API répond 503 et aucun aperçu n'est
+produit ; le blog public n'en dépend pas. Publication à date : un article dont
+`datePublication` (AAAA-MM-JJ, heure de Paris) est future reste invisible
+(404, hors blog, sitemap, plan du site, maillage) puis paraît seul à sa date
+(`revalidate` 3600) : on peut donc pousser à l'avance un article programmé.
+
 ## État des lieux
 
 | | Site actuel | Nouveau site |

@@ -5,6 +5,7 @@ const ouPartirPasCherEnEurope: BlogArticle = {
   category: "Inspiration",
   date: "octobre 2025",
   readingTime: "8 min",
+  motCle: "où partir pas cher en europe",
   meta: {
     title: "Où partir pas cher en Europe ? Nos idées",
     description:

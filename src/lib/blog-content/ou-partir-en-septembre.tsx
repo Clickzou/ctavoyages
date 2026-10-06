@@ -5,6 +5,7 @@ const ouPartirEnSeptembre: BlogArticle = {
   category: "Inspiration",
   date: "mars 2026",
   readingTime: "6 min",
+  motCle: "où partir en septembre",
   meta: {
     title: "Où partir en septembre ? L'arrière-saison",
     description:

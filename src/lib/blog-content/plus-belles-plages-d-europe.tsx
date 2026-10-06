@@ -5,6 +5,7 @@ const plusBellesPlagesDEurope: BlogArticle = {
   category: "Inspiration",
   date: "novembre 2025",
   readingTime: "6 min",
+  motCle: "plus belles plages d'europe",
   meta: {
     title: "Les plus belles plages d'Europe",
     description:

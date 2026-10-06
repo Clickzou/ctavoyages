@@ -5,6 +5,7 @@ const destinationsPlongeeDebutant: BlogArticle = {
   category: "Conseils",
   date: "décembre 2025",
   readingTime: "8 min",
+  motCle: "plongée débutant",
   meta: {
     title: "Plongée débutant : où commencer ?",
     description:

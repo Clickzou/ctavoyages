@@ -8,6 +8,7 @@ const plusBellesPlagesOceanIndien: BlogArticle = {
   category: "Inspiration",
   date: "Juin 2026",
   readingTime: "7 min",
+  motCle: "plus belles plages océan indien",
   meta: {
     title: "Les 10 plus belles plages de l'océan Indien",
     description:

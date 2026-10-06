@@ -5,6 +5,7 @@ const creteOuSantorin: BlogArticle = {
   category: "Comparatif",
   date: "mars 2025",
   readingTime: "6 min",
+  motCle: "crète ou santorin",
   meta: {
     title: "Crète ou Santorin : laquelle choisir ?",
     description:

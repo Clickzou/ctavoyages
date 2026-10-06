@@ -1,19 +1,25 @@
 import NewsletterForm from "@/components/home/NewsletterForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import BlogGrid, { type BlogCard } from "@/components/blog/BlogGrid";
-import { BLOG_META } from "@/lib/blog-content/meta.generated";
-import { BLOG_TOTAL_PAGES } from "@/lib/blog-content/pagination";
+import { blogTotalPages } from "@/lib/blog-content/pagination";
+import { articlesPublies } from "@/lib/blog-content/publication";
 
-/** Cartes de tous les articles, dans l'ordre de la grille. */
-const CARDS: BlogCard[] = BLOG_META.map((a) => ({
-  slug: a.slug,
-  category: a.category,
-  date: a.date,
-  title: a.title,
-  excerpt: a.excerpt,
-  heroImg: a.heroImg,
-  heroAlt: a.heroAlt,
-}));
+/**
+ * Cartes des articles PUBLIÉS, dans l'ordre de la grille. Calculées à chaque
+ * rendu (et non au chargement du module) : un article programmé entre dans la
+ * grille à sa date, à la régénération suivante de la page.
+ */
+function cartes(): BlogCard[] {
+  return articlesPublies().map((a) => ({
+    slug: a.slug,
+    category: a.category,
+    date: a.date,
+    title: a.title,
+    excerpt: a.excerpt,
+    heroImg: a.heroImg,
+    heroAlt: a.heroAlt,
+  }));
+}
 
 /**
  * Corps de la liste du blog, partagé par `/blog` et `/blog/page/<n>` : une
@@ -21,6 +27,7 @@ const CARDS: BlogCard[] = BLOG_META.map((a) => ({
  */
 export default function BlogListing({ page = 1 }: { page?: number }) {
   const first = page > 1;
+  const totalPages = blogTotalPages();
 
   return (
     <>
@@ -45,7 +52,7 @@ export default function BlogListing({ page = 1 }: { page?: number }) {
               Conseils, inspirations & guides de voyage
               {first && (
                 <span className="block text-[20px] sm:text-[24px] mt-2 text-on-surface-variant font-normal">
-                  Page {page} sur {BLOG_TOTAL_PAGES}
+                  Page {page} sur {totalPages}
                 </span>
               )}
             </h1>
@@ -59,7 +66,7 @@ export default function BlogListing({ page = 1 }: { page?: number }) {
         {/* ARTICLES */}
         <section className="bg-white py-section_padding_v">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <BlogGrid articles={CARDS} page={page} basePath="/blog" />
+            <BlogGrid articles={cartes()} page={page} basePath="/blog" />
           </div>
         </section>
       </main>

@@ -5,6 +5,7 @@ const ouPartirEnMai: BlogArticle = {
   category: "Inspiration",
   date: "novembre 2025",
   readingTime: "6 min",
+  motCle: "où partir en mai",
   meta: {
     title: "Où partir en mai ? Climat doux et nature",
     description:

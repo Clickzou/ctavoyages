@@ -5,6 +5,7 @@ const vacancesNatureDeconnexion: BlogArticle = {
   category: "Inspiration",
   date: "février 2026",
   readingTime: "7 min",
+  motCle: "vacances nature déconnexion",
   meta: {
     title: "Vacances nature : se déconnecter vraiment",
     description:

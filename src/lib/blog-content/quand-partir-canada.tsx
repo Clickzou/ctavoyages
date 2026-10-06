@@ -5,6 +5,7 @@ const quandPartirCanada: BlogArticle = {
   category: "Conseils",
   date: "mai 2025",
   readingTime: "5 min",
+  motCle: "quand partir au canada",
   meta: {
     title: "Quand partir au Canada ? Été indien & hiver",
     description:

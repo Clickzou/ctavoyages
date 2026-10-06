@@ -5,6 +5,7 @@ const quandPartirRepubliqueDominicaine: BlogArticle = {
   category: "Conseils",
   date: "mai 2026",
   readingTime: "6 min",
+  motCle: "quand partir en république dominicaine",
   meta: {
     title: "Quand partir en République dominicaine ?",
     description:

@@ -5,6 +5,7 @@ const quandPartirCroatie: BlogArticle = {
   category: "Conseils",
   date: "décembre 2025",
   readingTime: "8 min",
+  motCle: "quand partir en croatie",
   meta: {
     title: "Quand partir en Croatie ? Météo et affluence",
     description:

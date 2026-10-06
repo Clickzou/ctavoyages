@@ -5,6 +5,7 @@ const choisirAssuranceVoyage: BlogArticle = {
   category: "Pratique",
   date: "juin 2026",
   readingTime: "7 min",
+  motCle: "choisir son assurance voyage",
   meta: {
     title: "Bien choisir son assurance voyage",
     description:

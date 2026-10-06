@@ -44,6 +44,33 @@ for (const file of fs.readdirSync(dir)) {
   if (slug) bySlug.set(slug, { file, src });
 }
 
+const MOIS = {
+  janvier: "01", fevrier: "02", mars: "03", avril: "04", mai: "05", juin: "06",
+  juillet: "07", aout: "08", septembre: "09", octobre: "10", novembre: "11", decembre: "12",
+};
+
+/**
+ * Date de mise en ligne AAAA-MM-JJ : le champ `datePublication` s'il existe,
+ * sinon le 1er du mois de la date affichée (« juin 2026 » → 2026-06-01). Les
+ * 116 articles antérieurs au 06/10/2026 n'ont que la date affichée, toutes
+ * passées : ils restent donc en ligne.
+ */
+function datePublication(src, file, dateAffichee) {
+  const explicite = field(src, "datePublication");
+  if (explicite !== null) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(explicite)) {
+      throw new Error(`build-blog-meta : datePublication "${explicite}" invalide dans ${file} (AAAA-MM-JJ attendu)`);
+    }
+    return explicite;
+  }
+  const m = /^(\S+)\s+(\d{4})$/.exec(dateAffichee.trim());
+  const mois = m && MOIS[m[1].toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")];
+  if (!mois) {
+    throw new Error(`build-blog-meta : date "${dateAffichee}" illisible dans ${file} (ajouter datePublication: "AAAA-MM-JJ")`);
+  }
+  return `${m[2]}-${mois}-01`;
+}
+
 const articles = slugs.map((slug) => {
   const entry = bySlug.get(slug);
   if (!entry) {
@@ -59,13 +86,14 @@ const articles = slugs.map((slug) => {
     excerpt: field(src, "excerpt"),
     heroImg: field(src, "heroImg"),
     heroAlt: field(src, "heroAlt"),
+    motCle: field(src, "motCle"),
   };
   for (const [key, value] of Object.entries(meta)) {
     if (value === null) {
       throw new Error(`build-blog-meta : champ "${key}" illisible dans ${file}`);
     }
   }
-  return meta;
+  return { ...meta, datePublication: datePublication(src, file, meta.date) };
 });
 
 const body = articles
@@ -93,6 +121,9 @@ fs.writeFileSync(
     `  excerpt: string;\n` +
     `  heroImg: string;\n` +
     `  heroAlt: string;\n` +
+    `  motCle: string;\n` +
+    `  /** AAAA-MM-JJ : jour de mise en ligne (heure de Paris). */\n` +
+    `  datePublication: string;\n` +
     `};\n\n` +
     `export const BLOG_META: BlogMeta[] = [\n${body}\n];\n`,
   "utf8",

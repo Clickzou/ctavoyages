@@ -5,6 +5,7 @@ const ouPartirEnFevrier: BlogArticle = {
   category: "Inspiration",
   date: "août 2025",
   readingTime: "7 min",
+  motCle: "où partir en février",
   meta: {
     title: "Où partir en février ? Soleil, neige et carnaval",
     description:

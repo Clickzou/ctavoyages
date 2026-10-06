@@ -5,6 +5,7 @@ const voyagePhotoPlusBeauxSpots: BlogArticle = {
   category: "Inspiration",
   date: "janvier 2026",
   readingTime: "6 min",
+  motCle: "voyage photo",
   meta: {
     title: "Voyage photo : les plus beaux spots du monde",
     description:

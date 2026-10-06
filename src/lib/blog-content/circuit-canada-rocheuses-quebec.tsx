@@ -5,6 +5,7 @@ const circuitCanadaRocheusesQuebec: BlogArticle = {
   category: "Circuit",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "circuit canada rocheuses québec",
   meta: {
     title: "Circuit Canada : des Rocheuses à Québec",
     description:

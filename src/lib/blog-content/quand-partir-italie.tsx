@@ -5,6 +5,7 @@ const quandPartirItalie: BlogArticle = {
   category: "Conseils",
   date: "mai 2025",
   readingTime: "6 min",
+  motCle: "quand partir en italie",
   meta: {
     title: "Quand partir en Italie ? Saison par saison",
     description:

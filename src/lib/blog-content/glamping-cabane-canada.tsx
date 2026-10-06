@@ -5,6 +5,7 @@ const glampingCabaneCanada: BlogArticle = {
   category: "Glamping",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "glamping cabane canada",
   meta: {
     title: "Glamping au Canada : cabane en rondins",
     description:

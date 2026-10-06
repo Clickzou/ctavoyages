@@ -5,6 +5,7 @@ const roadTripIslande: BlogArticle = {
   category: "Itinéraire",
   date: "juin 2025",
   readingTime: "7 min",
+  motCle: "road trip islande",
   meta: {
     title: "Road trip en Islande : la route circulaire",
     description:

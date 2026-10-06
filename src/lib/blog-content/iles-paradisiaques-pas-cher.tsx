@@ -5,6 +5,7 @@ const ilesParadisiaquesPasCher: BlogArticle = {
   category: "Inspiration",
   date: "janvier 2025",
   readingTime: "6 min",
+  motCle: "îles paradisiaques pas chères",
   meta: {
     title: "Îles paradisiaques pas chères",
     description:

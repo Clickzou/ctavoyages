@@ -5,6 +5,7 @@ const ouPartirAuSoleilEnHiver: BlogArticle = {
   category: "Inspiration",
   date: "septembre 2025",
   readingTime: "5 min",
+  motCle: "où partir au soleil en hiver",
   meta: {
     title: "Où partir au soleil en hiver ? Nos idées",
     description:

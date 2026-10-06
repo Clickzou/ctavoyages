@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/destinations";
 import { STATIC_RICH_SLUGS } from "@/lib/destination-content";
-import { BLOG_SLUGS } from "@/lib/blog-content";
 import { CIRCUIT_THEME_SLUGS } from "@/lib/theme-content/circuits";
 import { CROISIERE_THEME_SLUGS } from "@/lib/theme-content/croisieres";
 import { GLAMPING_THEME_SLUGS } from "@/lib/theme-content/glamping";
 import { VSM_THEME_SLUGS } from "@/lib/theme-content/voyage-sur-mesure";
-import { BLOG_TOTAL_PAGES } from "@/lib/blog-content/pagination";
+import { blogTotalPages } from "@/lib/blog-content/pagination";
+import { articlesPublies } from "@/lib/blog-content/publication";
 import { SITE_URL as BASE_URL } from "@/lib/site";
 
 /** Sous-pages de /sejours, servies par des routes statiques dédiées. */
@@ -18,6 +18,10 @@ const SEJOUR_THEMES = [
   "nature",
   "romantique",
 ];
+
+// Publication programmée : le sitemap se régénère au plus toutes les heures,
+// pour qu'un article y entre à sa date de parution sans redéploiement.
+export const revalidate = 3600;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -58,11 +62,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...VSM_THEME_SLUGS.map((s) => `/voyage-sur-mesure/${s}`),
   ];
 
-  const blogRoutes = BLOG_SLUGS.map((slug) => `/blog/${slug}`);
+  const blogRoutes = articlesPublies().map((a) => `/blog/${a.slug}`);
 
   // Pages 2+ de la grille : la page 1 est déjà déclarée sous /blog.
   const blogPageRoutes = Array.from(
-    { length: BLOG_TOTAL_PAGES - 1 },
+    { length: blogTotalPages() - 1 },
     (_, i) => `/blog/page/${i + 2}`,
   );
 

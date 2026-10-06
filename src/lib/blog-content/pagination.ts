@@ -1,4 +1,4 @@
-import { BLOG_META } from "./meta.generated";
+import { articlesPublies } from "./publication";
 
 /**
  * Nombre d'articles par page de la grille /blog.
@@ -11,8 +11,12 @@ import { BLOG_META } from "./meta.generated";
  */
 export const ARTICLES_PER_PAGE = 12;
 
-/** Nombre de pages de la grille /blog. */
-export const BLOG_TOTAL_PAGES = Math.max(
-  1,
-  Math.ceil(BLOG_META.length / ARTICLES_PER_PAGE),
-);
+/**
+ * Nombre de pages de la grille /blog, calculé sur les seuls articles publiés
+ * à l'instant de l'appel (publication programmée) : une fonction et non une
+ * constante, pour qu'un article qui paraît à sa date ajoute sa page sans
+ * redéploiement.
+ */
+export function blogTotalPages(): number {
+  return Math.max(1, Math.ceil(articlesPublies().length / ARTICLES_PER_PAGE));
+}

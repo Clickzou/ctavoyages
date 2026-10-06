@@ -5,6 +5,7 @@ const croisiereFjordsNorvegiens: BlogArticle = {
   category: "Croisière",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "croisière fjords norvégiens",
   meta: {
     title: "Croisière des fjords norvégiens : le guide",
     description:

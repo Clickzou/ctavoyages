@@ -24,8 +24,25 @@ export type BlogArticle = {
   category: string;
   /** Date affichée, ex. "Juin 2026". */
   date: string;
+  /**
+   * Date de mise en ligne, AAAA-MM-JJ (heure de Paris). Un article daté dans
+   * le futur reste invisible (404, hors blog, hors sitemap, hors maillage)
+   * jusqu'à ce jour, puis paraît sans redéploiement (voir `publication.ts`).
+   * À renseigner pour tout NOUVEL article. Absente (articles antérieurs au
+   * 06/10/2026) : le 1er du mois de `date` (« juin 2026 » → 2026-06-01).
+   */
+  datePublication?: string;
   /** Temps de lecture estimé, ex. "5 min". */
   readingTime: string;
+  /**
+   * Requête principale visée par l'article (onglet « Articles programmés » de
+   * l'espace client Clickzou, posts LinkedIn / Google Business). Une requête
+   * réelle (Search Console, audit) ou, à défaut, le sujet de l'article : jamais
+   * de volume ni de chiffre inventé ici.
+   */
+  motCle: string;
+  /** Requêtes secondaires réellement visées (facultatif). */
+  motsClesSecondaires?: string[];
   meta: { title: string; description: string };
   title: string;
   /** Chapô / accroche affiché sous le titre. */

@@ -5,6 +5,7 @@ const quandPartirEgypte: BlogArticle = {
   category: "Conseils",
   date: "janvier 2026",
   readingTime: "6 min",
+  motCle: "quand partir en égypte",
   meta: {
     title: "Quand partir en Égypte ? Climat et croisières",
     description:

@@ -5,6 +5,7 @@ const circuitCostaRicaVolcansJungle: BlogArticle = {
   category: "Circuit",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "circuit costa rica",
   meta: {
     title: "Circuit Costa Rica : volcans, jungle et Pacifique",
     description:

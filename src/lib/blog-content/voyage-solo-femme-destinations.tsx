@@ -5,6 +5,7 @@ const voyageSoloFemmeDestinations: BlogArticle = {
   category: "Inspiration",
   date: "mars 2025",
   readingTime: "5 min",
+  motCle: "voyage solo femme",
   meta: {
     title: "Voyage solo au féminin : où partir ?",
     description:

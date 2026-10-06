@@ -3,9 +3,13 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { THEME_GROUPS } from "@/lib/theme-links";
 import { LINKABLE_DESTINATIONS } from "@/lib/internal-links";
-import { BLOG_META } from "@/lib/blog-content/meta.generated";
-import { BLOG_TOTAL_PAGES } from "@/lib/blog-content/pagination";
+import { blogTotalPages } from "@/lib/blog-content/pagination";
+import { articlesPublies } from "@/lib/blog-content/publication";
 import { pagePath } from "@/components/Pagination";
+
+// Publication programmée : la liste des articles se régénère au plus toutes
+// les heures, pour qu'un article y entre à sa date sans redéploiement.
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   alternates: { canonical: "/plan-du-site" },
@@ -76,8 +80,8 @@ const SECTIONS: SiteSection[] = [
 ];
 
 /** Pages de la grille du blog, en plus des articles eux-mêmes. */
-const BLOG_PAGES: SiteLink[] = Array.from(
-  { length: BLOG_TOTAL_PAGES },
+const blogPages = (total: number): SiteLink[] => Array.from(
+  { length: total },
   (_, i) => ({
     label: i === 0 ? "Blog (page 1)" : `Blog (page ${i + 1})`,
     href: pagePath("/blog", i + 1),
@@ -129,6 +133,9 @@ function Block({
 }
 
 export default function Page() {
+  const articles = articlesPublies();
+  const totalPages = blogTotalPages();
+  const pagesBlog = blogPages(totalPages);
   return (
     <main className="pt-[72px]">
       <section className="bg-white py-16 sm:py-20">
@@ -149,7 +156,7 @@ export default function Page() {
           <p className="font-body-md text-[15px] sm:text-[16px] text-on-surface-variant leading-relaxed mb-12 max-w-2xl">
             Retrouvez l&apos;ensemble des pages du site CTA Voyages, regroupées
             par rubrique : {LINKABLE_DESTINATIONS.length} fiches destination,{" "}
-            {BLOG_META.length} articles de blog et toutes nos thématiques de
+            {articles.length} articles de blog et toutes nos thématiques de
             voyage.
           </p>
 
@@ -205,13 +212,13 @@ export default function Page() {
           <h2 className="font-h2 text-[22px] sm:text-[26px] text-on-surface mt-16 mb-8 pb-3 border-b-2 border-outline-variant/40">
             Nos articles de blog
             <span className="ml-2 font-normal text-[15px] text-on-surface-variant">
-              ({BLOG_META.length})
+              ({articles.length})
             </span>
           </h2>
           <div className="mb-8">
-            <Block title="Pages de la grille" count={BLOG_TOTAL_PAGES}>
+            <Block title="Pages de la grille" count={totalPages}>
               <div className="flex flex-wrap gap-x-5 gap-y-2">
-                {BLOG_PAGES.map((p) => (
+                {pagesBlog.map((p) => (
                   <Link
                     key={p.href}
                     href={p.href}
@@ -224,7 +231,7 @@ export default function Page() {
             </Block>
           </div>
           <ul className="columns-1 sm:columns-2 gap-8 sm:gap-10 [&>li]:break-inside-avoid">
-            {BLOG_META.map((a) => (
+            {articles.map((a) => (
               <li key={a.slug} className="mb-3">
                 <Link
                   href={`/blog/${a.slug}`}

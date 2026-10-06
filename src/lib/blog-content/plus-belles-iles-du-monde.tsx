@@ -5,6 +5,7 @@ const plusBellesIlesDuMonde: BlogArticle = {
   category: "Inspiration",
   date: "septembre 2025",
   readingTime: "5 min",
+  motCle: "plus belles îles du monde",
   meta: {
     title: "Les plus belles îles du monde",
     description:

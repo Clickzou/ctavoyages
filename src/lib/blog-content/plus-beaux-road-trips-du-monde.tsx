@@ -5,6 +5,7 @@ const plusBeauxRoadTripsDuMonde: BlogArticle = {
   category: "Inspiration",
   date: "février 2026",
   readingTime: "8 min",
+  motCle: "plus beaux road trips du monde",
   meta: {
     title: "Les plus beaux road trips du monde",
     description:

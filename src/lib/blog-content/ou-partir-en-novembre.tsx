@@ -5,6 +5,7 @@ const ouPartirEnNovembre: BlogArticle = {
   category: "Inspiration",
   date: "mai 2026",
   readingTime: "5 min",
+  motCle: "où partir en novembre",
   meta: {
     title: "Où partir en novembre ? Fuir la grisaille",
     description:

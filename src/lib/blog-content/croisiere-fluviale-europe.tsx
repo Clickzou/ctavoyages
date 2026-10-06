@@ -5,6 +5,7 @@ const croisiereFluvialeEurope: BlogArticle = {
   category: "Croisière",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "croisière fluviale europe",
   meta: {
     title: "Croisière fluviale en Europe : Douro, Rhin & Danube",
     description:

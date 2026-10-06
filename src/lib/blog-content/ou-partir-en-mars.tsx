@@ -5,6 +5,7 @@ const ouPartirEnMars: BlogArticle = {
   category: "Inspiration",
   date: "septembre 2025",
   readingTime: "5 min",
+  motCle: "où partir en mars",
   meta: {
     title: "Où partir en mars ? Nos idées de destinations",
     description:

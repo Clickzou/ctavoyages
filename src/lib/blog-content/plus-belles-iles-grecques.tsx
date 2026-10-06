@@ -5,6 +5,7 @@ const plusBellesIlesGrecques: BlogArticle = {
   category: "Inspiration",
   date: "avril 2026",
   readingTime: "7 min",
+  motCle: "plus belles îles grecques",
   meta: {
     title: "Les plus belles îles grecques",
     description:

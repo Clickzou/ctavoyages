@@ -5,6 +5,7 @@ const vietnamOuCambodge: BlogArticle = {
   category: "Comparatif",
   date: "mai 2025",
   readingTime: "5 min",
+  motCle: "vietnam ou cambodge",
   meta: {
     title: "Vietnam ou Cambodge : que préférer ?",
     description:

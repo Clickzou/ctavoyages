@@ -5,6 +5,7 @@ const quandPartirJapon: BlogArticle = {
   category: "Conseils",
   date: "septembre 2025",
   readingTime: "6 min",
+  motCle: "quand partir au japon",
   meta: {
     title: "Quand partir au Japon ? Saisons et cerisiers",
     description:

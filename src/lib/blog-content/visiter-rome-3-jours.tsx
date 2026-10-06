@@ -5,6 +5,7 @@ const visiterRome3Jours: BlogArticle = {
   category: "Itinéraire",
   date: "janvier 2025",
   readingTime: "6 min",
+  motCle: "visiter rome en 3 jours",
   meta: {
     title: "Visiter Rome en 3 jours : itinéraire idéal",
     description:

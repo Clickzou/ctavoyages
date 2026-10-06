@@ -5,6 +5,7 @@ const circuitMarocMarrakechAtlasSahara: BlogArticle = {
   category: "Circuit",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "circuit maroc marrakech atlas sahara",
   meta: {
     title: "Circuit Maroc : Marrakech, Atlas & Sahara",
     description:

@@ -5,6 +5,7 @@ const glampingEcoLodgeCostaRica: BlogArticle = {
   category: "Glamping",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "éco-lodge costa rica",
   meta: {
     title: "Glamping éco-lodge au Costa Rica en forêt tropicale",
     description:

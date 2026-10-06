@@ -5,6 +5,7 @@ const croisierePremiereFoisConseils: BlogArticle = {
   category: "Conseils",
   date: "septembre 2025",
   readingTime: "6 min",
+  motCle: "première croisière",
   meta: {
     title: "Première croisière : nos conseils essentiels",
     description:

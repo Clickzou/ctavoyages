@@ -5,6 +5,7 @@ const plusBellesCascadesDuMonde: BlogArticle = {
   category: "Inspiration",
   date: "février 2025",
   readingTime: "7 min",
+  motCle: "plus belles cascades du monde",
   meta: {
     title: "Les plus belles cascades du monde",
     description:

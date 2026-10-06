@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import BlogListing from "@/components/blog/BlogListing";
-import { BLOG_TOTAL_PAGES } from "@/lib/blog-content/pagination";
+import { blogTotalPages } from "@/lib/blog-content/pagination";
 
 /**
  * Pages 2 et suivantes de la grille du blog.
  *
  * La page 1 reste servie par `/blog` : la générer aussi ici créerait deux URL
  * pour la même liste. `/blog/page/1` redirige donc vers `/blog`.
+ *
+ * Publication programmée : régénérées au plus toutes les heures, et une page
+ * qui naît d'un article paru après le build est rendue à la demande
+ * (`dynamicParams`, valeur par défaut, explicitée ici).
  */
+export const revalidate = 3600;
+export const dynamicParams = true;
+
 export function generateStaticParams() {
-  return Array.from({ length: BLOG_TOTAL_PAGES - 1 }, (_, i) => ({
+  return Array.from({ length: blogTotalPages() - 1 }, (_, i) => ({
     page: String(i + 2),
   }));
 }
@@ -28,7 +35,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { page } = await params;
   const n = parsePage(page);
-  if (!n || n > BLOG_TOTAL_PAGES) return { title: "Page introuvable" };
+  if (!n || n > blogTotalPages()) return { title: "Page introuvable" };
 
   return {
     title: `Blog voyage : conseils et inspirations (page ${n})`,
@@ -45,7 +52,7 @@ export default async function BlogPaginatedPage({
 }) {
   const { page } = await params;
   const n = parsePage(page);
-  if (!n || n > BLOG_TOTAL_PAGES) notFound();
+  if (!n || n > blogTotalPages()) notFound();
   if (n === 1) redirect("/blog");
 
   return <BlogListing page={n} />;

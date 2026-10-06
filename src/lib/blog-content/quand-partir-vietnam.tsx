@@ -5,6 +5,7 @@ const quandPartirVietnam: BlogArticle = {
   category: "Conseils",
   date: "août 2025",
   readingTime: "8 min",
+  motCle: "quand partir au vietnam",
   meta: {
     title: "Quand partir au Vietnam ? Nord, centre et sud",
     description:

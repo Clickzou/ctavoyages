@@ -5,6 +5,7 @@ const partirHorsSaisonAvantages: BlogArticle = {
   category: "Conseils",
   date: "mars 2026",
   readingTime: "5 min",
+  motCle: "partir hors saison",
   meta: {
     title: "Partir hors saison : tous les avantages",
     description:

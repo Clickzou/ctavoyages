@@ -5,6 +5,7 @@ const baliOuThailande: BlogArticle = {
   category: "Comparatif",
   date: "janvier 2025",
   readingTime: "5 min",
+  motCle: "bali ou thaïlande",
   meta: {
     title: "Bali ou Thaïlande : que choisir ?",
     description:

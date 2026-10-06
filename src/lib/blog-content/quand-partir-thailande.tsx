@@ -5,6 +5,7 @@ const quandPartirThailande: BlogArticle = {
   category: "Conseils",
   date: "janvier 2025",
   readingTime: "6 min",
+  motCle: "quand partir en thaïlande",
   meta: {
     title: "Quand partir en Thaïlande ? Climat et saisons",
     description:

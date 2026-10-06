@@ -5,6 +5,7 @@ const slowTravelGuide: BlogArticle = {
   category: "Conseils",
   date: "novembre 2025",
   readingTime: "5 min",
+  motCle: "slow travel",
   meta: {
     title: "Le slow travel : voyager autrement",
     description:

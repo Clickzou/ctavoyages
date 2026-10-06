@@ -5,6 +5,7 @@ const quandPartirAfriqueDuSud: BlogArticle = {
   category: "Conseils",
   date: "février 2025",
   readingTime: "8 min",
+  motCle: "quand partir en afrique du sud",
   meta: {
     title: "Quand partir en Afrique du Sud ? Le guide",
     description:

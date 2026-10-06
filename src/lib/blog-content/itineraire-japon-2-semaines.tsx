@@ -5,6 +5,7 @@ const itineraireJapon2Semaines: BlogArticle = {
   category: "Itinéraire",
   date: "septembre 2025",
   readingTime: "6 min",
+  motCle: "itinéraire japon 2 semaines",
   meta: {
     title: "Le Japon en 2 semaines : itinéraire parfait",
     description:

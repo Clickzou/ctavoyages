@@ -5,6 +5,8 @@ const quandPartirIleMaurice: BlogArticle = {
   category: "Conseils",
   date: "avril 2025",
   readingTime: "7 min",
+  // Requête réelle relevée dans la Search Console (audit Clickzou du 05/10/2026).
+  motCle: "quand partir ile maurice",
   meta: {
     title: "Quand partir à l'île Maurice ? Météo idéale",
     description:

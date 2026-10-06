@@ -5,6 +5,7 @@ const formalitesVisaVoyage: BlogArticle = {
   category: "Pratique",
   date: "mars 2025",
   readingTime: "6 min",
+  motCle: "formalités visa voyage",
   meta: {
     title: "Visa et formalités de voyage : le guide pratique",
     description:

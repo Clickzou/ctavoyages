@@ -5,6 +5,7 @@ const partirEnAmoureuxWeekEnd: BlogArticle = {
   category: "Inspiration",
   date: "avril 2025",
   readingTime: "8 min",
+  motCle: "week-end en amoureux",
   meta: {
     title: "Partir en amoureux : nos plus beaux week-ends",
     description:

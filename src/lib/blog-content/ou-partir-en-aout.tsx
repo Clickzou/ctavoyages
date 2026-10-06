@@ -5,6 +5,7 @@ const ouPartirEnAout: BlogArticle = {
   category: "Inspiration",
   date: "février 2026",
   readingTime: "8 min",
+  motCle: "où partir en août",
   meta: {
     title: "Où partir en août ? Mer, montagne et ailleurs",
     description:

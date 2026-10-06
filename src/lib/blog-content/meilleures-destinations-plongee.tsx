@@ -5,6 +5,7 @@ const meilleuresDestinationsPlongee: BlogArticle = {
   category: "Inspiration",
   date: "janvier 2026",
   readingTime: "5 min",
+  motCle: "meilleures destinations plongée",
   meta: {
     title: "Les meilleures destinations plongée",
     description:

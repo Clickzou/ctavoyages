@@ -5,6 +5,7 @@ const meilleuresApplisVoyage: BlogArticle = {
   category: "Pratique",
   date: "août 2025",
   readingTime: "7 min",
+  motCle: "applis voyage",
   meta: {
     title: "Les meilleures applis pour voyager",
     description:

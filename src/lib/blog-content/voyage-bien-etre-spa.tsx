@@ -5,6 +5,7 @@ const voyageBienEtreSpa: BlogArticle = {
   category: "Inspiration",
   date: "août 2025",
   readingTime: "8 min",
+  motCle: "voyage bien-être spa",
   meta: {
     title: "Voyage bien-être : nos destinations spa",
     description:

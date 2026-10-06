@@ -8,6 +8,7 @@ const voyageFamilleAstuces: BlogArticle = {
   category: "Conseils",
   date: "Mai 2026",
   readingTime: "7 min",
+  motCle: "voyage en famille",
   meta: {
     title: "Voyage en famille : nos astuces vacances",
     description:

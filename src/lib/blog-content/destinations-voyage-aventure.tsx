@@ -5,6 +5,7 @@ const destinationsVoyageAventure: BlogArticle = {
   category: "Inspiration",
   date: "mai 2025",
   readingTime: "6 min",
+  motCle: "destinations voyage aventure",
   meta: {
     title: "Voyage aventure : les meilleures destinations",
     description:

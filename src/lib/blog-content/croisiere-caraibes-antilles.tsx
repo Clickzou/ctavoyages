@@ -5,6 +5,7 @@ const croisiereCaraibesAntilles: BlogArticle = {
   category: "Croisière",
   date: "juillet 2026",
   readingTime: "6 min",
+  motCle: "croisière caraïbes antilles",
   meta: {
     title: "Croisière dans les Caraïbes et les Antilles",
     description:

@@ -5,6 +5,7 @@ const itineraireThailande2Semaines: BlogArticle = {
   category: "Itinéraire",
   date: "mai 2026",
   readingTime: "6 min",
+  motCle: "itinéraire thaïlande 2 semaines",
   meta: {
     title: "La Thaïlande en 2 semaines : itinéraire",
     description:

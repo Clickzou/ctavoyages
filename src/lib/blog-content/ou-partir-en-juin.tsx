@@ -5,6 +5,7 @@ const ouPartirEnJuin: BlogArticle = {
   category: "Inspiration",
   date: "décembre 2025",
   readingTime: "7 min",
+  motCle: "où partir en juin",
   meta: {
     title: "Où partir en juin ? Avant la haute saison",
     description:

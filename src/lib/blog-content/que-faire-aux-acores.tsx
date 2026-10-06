@@ -5,6 +5,7 @@ const queFaireAuxAcores: BlogArticle = {
   category: "Itinéraire",
   date: "juin 2026",
   readingTime: "7 min",
+  motCle: "que faire aux açores",
   meta: {
     title: "Que faire aux Açores ? L'archipel vert",
     description:

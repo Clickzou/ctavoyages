@@ -5,6 +5,7 @@ const visiterBarcelone3Jours: BlogArticle = {
   category: "Itinéraire",
   date: "décembre 2025",
   readingTime: "8 min",
+  motCle: "visiter barcelone en 3 jours",
   meta: {
     title: "Visiter Barcelone en 3 jours : itinéraire",
     description:

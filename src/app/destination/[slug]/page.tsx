@@ -14,6 +14,10 @@ import {
   STATIC_RICH_SLUGS,
 } from "@/lib/destination-content";
 
+// Publication programmée : les articles proposés sur la fiche se mettent à jour
+// au plus toutes les heures (un article paru à sa date y entre sans redéploiement).
+export const revalidate = 3600;
+
 export function generateStaticParams() {
   // On exclut japon/thailande (servis sur /destination-<slug>).
   return getAllSlugs()

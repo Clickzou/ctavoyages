@@ -5,6 +5,7 @@ const itineraireCroatie1Semaine: BlogArticle = {
   category: "Itinéraire",
   date: "février 2026",
   readingTime: "7 min",
+  motCle: "itinéraire croatie 1 semaine",
   meta: {
     title: "La Croatie en une semaine : itinéraire",
     description:

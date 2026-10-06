@@ -5,6 +5,7 @@ const preparerSaValiseVoyage: BlogArticle = {
   category: "Pratique",
   date: "avril 2026",
   readingTime: "8 min",
+  motCle: "préparer sa valise",
   meta: {
     title: "Préparer sa valise : la check-list",
     description:

@@ -5,6 +5,7 @@ const ouPartirEnAvril: BlogArticle = {
   category: "Inspiration",
   date: "octobre 2025",
   readingTime: "8 min",
+  motCle: "où partir en avril",
   meta: {
     title: "Où partir en avril ? Le top des destinations",
     description:

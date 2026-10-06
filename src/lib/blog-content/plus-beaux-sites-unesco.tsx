@@ -5,6 +5,7 @@ const plusBeauxSitesUnesco: BlogArticle = {
   category: "Inspiration",
   date: "juin 2026",
   readingTime: "8 min",
+  motCle: "plus beaux sites unesco",
   meta: {
     title: "Les plus beaux sites classés UNESCO",
     description:

@@ -5,6 +5,7 @@ const quandPartirNewYork: BlogArticle = {
   category: "Conseils",
   date: "octobre 2025",
   readingTime: "7 min",
+  motCle: "quand partir à new york",
   meta: {
     title: "Quand partir à New York ? La meilleure saison",
     description:

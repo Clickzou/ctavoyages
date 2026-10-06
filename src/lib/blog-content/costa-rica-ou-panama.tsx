@@ -5,6 +5,7 @@ const costaRicaOuPanama: BlogArticle = {
   category: "Comparatif",
   date: "août 2025",
   readingTime: "7 min",
+  motCle: "costa rica ou panama",
   meta: {
     title: "Costa Rica ou Panama : comparatif",
     description:

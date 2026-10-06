@@ -5,6 +5,7 @@ const plusBeauxDesertsDuMonde: BlogArticle = {
   category: "Inspiration",
   date: "décembre 2025",
   readingTime: "7 min",
+  motCle: "plus beaux déserts du monde",
   meta: {
     title: "Les plus beaux déserts du monde",
     description:

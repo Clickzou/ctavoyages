@@ -5,6 +5,7 @@ const maldivesOuSeychelles: BlogArticle = {
   category: "Comparatif",
   date: "février 2025",
   readingTime: "8 min",
+  motCle: "maldives ou seychelles",
   meta: {
     title: "Maldives ou Seychelles : comparatif",
     description:

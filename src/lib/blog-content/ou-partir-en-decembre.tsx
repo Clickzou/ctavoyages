@@ -5,6 +5,7 @@ const ouPartirEnDecembre: BlogArticle = {
   category: "Inspiration",
   date: "juin 2026",
   readingTime: "8 min",
+  motCle: "où partir en décembre",
   meta: {
     title: "Où partir en décembre ? Fêtes et soleil",
     description:

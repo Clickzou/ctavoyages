@@ -5,6 +5,7 @@ const quandPartirIslande: BlogArticle = {
   category: "Conseils",
   date: "novembre 2025",
   readingTime: "5 min",
+  motCle: "quand partir en islande",
   meta: {
     title: "Quand partir en Islande ? Été ou hiver",
     description:

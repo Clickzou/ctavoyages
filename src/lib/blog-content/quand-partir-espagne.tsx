@@ -5,6 +5,7 @@ const quandPartirEspagne: BlogArticle = {
   category: "Conseils",
   date: "juin 2025",
   readingTime: "7 min",
+  motCle: "quand partir en espagne",
   meta: {
     title: "Quand partir en Espagne ? Le guide complet",
     description:

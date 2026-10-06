@@ -5,6 +5,7 @@ const voyagerPasCherAstuces: BlogArticle = {
   category: "Pratique",
   date: "janvier 2025",
   readingTime: "5 min",
+  motCle: "voyager pas cher",
   meta: {
     title: "Voyager pas cher : 15 astuces concrètes",
     description:

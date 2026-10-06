@@ -5,6 +5,7 @@ const quandPartirLaReunion: BlogArticle = {
   category: "Conseils",
   date: "mars 2025",
   readingTime: "6 min",
+  motCle: "quand partir à la réunion",
   meta: {
     title: "Quand partir à La Réunion ? Saisons & cyclones",
     description:

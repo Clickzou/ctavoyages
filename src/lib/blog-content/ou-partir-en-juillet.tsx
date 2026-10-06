@@ -5,6 +5,7 @@ const ouPartirEnJuillet: BlogArticle = {
   category: "Inspiration",
   date: "janvier 2026",
   readingTime: "5 min",
+  motCle: "où partir en juillet",
   meta: {
     title: "Où partir en juillet ? Nos meilleures idées",
     description:

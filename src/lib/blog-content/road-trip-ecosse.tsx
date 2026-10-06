@@ -5,6 +5,7 @@ const roadTripEcosse: BlogArticle = {
   category: "Itinéraire",
   date: "mai 2025",
   readingTime: "6 min",
+  motCle: "road trip écosse",
   meta: {
     title: "Road trip en Écosse : itinéraire et conseils",
     description:

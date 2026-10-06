@@ -8,6 +8,7 @@ const luneDeMielDestination: BlogArticle = {
   category: "Inspiration",
   date: "Avril 2026",
   readingTime: "6 min",
+  motCle: "destination lune de miel",
   meta: {
     title: "Lune de miel : choisir la destination idéale",
     description:

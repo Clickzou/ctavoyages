@@ -5,6 +5,7 @@ const ouPartirEnJanvier: BlogArticle = {
   category: "Inspiration",
   date: "juillet 2025",
   readingTime: "6 min",
+  motCle: "où partir en janvier",
   meta: {
     title: "Où partir en janvier ? Soleil et bons plans",
     description:

@@ -5,6 +5,7 @@ const voyageGastronomiqueDestinations: BlogArticle = {
   category: "Inspiration",
   date: "juin 2025",
   readingTime: "7 min",
+  motCle: "voyage gastronomique",
   meta: {
     title: "Voyage gastronomique : où se régaler ?",
     description:
