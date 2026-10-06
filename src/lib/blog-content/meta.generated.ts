@@ -18,6 +18,18 @@ export type BlogMeta = {
 
 export const BLOG_META: BlogMeta[] = [
   {
+    slug: "choisir-agence-voyage-sur-mesure-toulouse",
+    category: "Conseils",
+    date: "Octobre 2026",
+    readingTime: "7 min",
+    title: "Agence de voyages sur mesure à Toulouse : 6 points à vérifier avant de confier son voyage",
+    excerpt: "Immatriculation, garantie financière, assurance, conseiller dédié, devis et assistance : les six vérifications qui distinguent une agence de voyages sérieuse, à Toulouse comme ailleurs.",
+    heroImg: "/assets/images/iStock-891573112.jpg",
+    heroAlt: "Carte d'Europe, passeport, ordinateur portable et carnet de voyage préparés sur une table en bois",
+    motCle: "agence voyage sur mesure toulouse",
+    datePublication: "2026-10-27",
+  },
+  {
     slug: "tournoi-6-nations-2027-depuis-toulouse",
     category: "Conseils",
     date: "Octobre 2026",

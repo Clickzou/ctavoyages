@@ -117,12 +117,14 @@ import A113 from "./glamping-cabane-canada";
 import A114 from "./glamping-eco-lodge-costa-rica";
 import A115 from "./glamping-ryokan-japon";
 import A116 from "./tournoi-6-nations-2027-depuis-toulouse";
+import A117 from "./choisir-agence-voyage-sur-mesure-toulouse";
 
 /**
  * Registre des articles de blog. Clé = slug → /blog/<slug>.
  * Fichier généré : pour ajouter un article, créer le fichier de contenu puis régénérer.
  */
 export const BLOG_ARTICLES: Record<string, BlogArticle> = {
+  "choisir-agence-voyage-sur-mesure-toulouse": A117,
   "tournoi-6-nations-2027-depuis-toulouse": A116,
   "quand-partir-maldives": A0,
   "plus-belles-plages-ocean-indien": A1,
