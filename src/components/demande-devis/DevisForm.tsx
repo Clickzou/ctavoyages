@@ -633,7 +633,7 @@ export default function DevisForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="font-label text-[11px] sm:text-[12px] text-on-surface-variant uppercase tracking-wider">
-                    Date d&apos;arrivée souhaitée *
+                    Date de départ souhaitée *
                   </label>
                   <input
                     id="f-date-arrivee"
@@ -645,7 +645,7 @@ export default function DevisForm() {
                     className={`${inputClass}${errors["date-arrivee"] ? " field-error" : ""}`}
                   />
                   <p className={`error-msg${errors["date-arrivee"] ? " visible" : ""}`} id="err-date-arrivee">
-                    Veuillez indiquer une date d&apos;arrivée.
+                    Veuillez indiquer une date de départ.
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-2">
                     <span className="font-label text-[10px] text-on-surface-variant mr-1">Flexibilité :</span>
@@ -664,7 +664,7 @@ export default function DevisForm() {
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="font-label text-[11px] sm:text-[12px] text-on-surface-variant uppercase tracking-wider">
-                    Date de départ souhaitée *
+                    Date de retour souhaitée *
                   </label>
                   <input
                     id="f-date-depart"
@@ -676,7 +676,7 @@ export default function DevisForm() {
                     className={`${inputClass}${errors["date-depart"] ? " field-error" : ""}`}
                   />
                   <p className={`error-msg${errors["date-depart"] ? " visible" : ""}`} id="err-date-depart">
-                    Veuillez indiquer une date de départ.
+                    Veuillez indiquer une date de retour.
                   </p>
                   <div className="flex flex-wrap gap-1.5 mt-2">
                     <span className="font-label text-[10px] text-on-surface-variant mr-1">Flexibilité :</span>
