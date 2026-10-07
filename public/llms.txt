@@ -8,7 +8,7 @@
 - CTA Voyages fait partie du Groupe CTA (https://groupe-cta.com/), avec CTA Business Travel (déplacements professionnels, https://ctabusinesstravel.com/) et CTA Meeting & Events (événements d'entreprise). CTA Voyages s'occupe uniquement des voyages des particuliers : les voyages d'affaires et l'événementiel d'entreprise relèvent de ses sociétés sœurs.
 - Opérateur de voyages immatriculé au registre d'Atout France sous le numéro IM031110034. Garantie financière : AXA Assurances. Responsabilité civile professionnelle : Hiscox. Membre du réseau TourCom.
 - Clientèle : Toulouse et sa région (Blagnac, Colomiers, Balma, L'Union, Tournefeuille, Muret, Haute-Garonne, Occitanie). Destinations : le monde entier.
-- Tarifs : chaque voyage fait l'objet d'un devis ; le site n'affiche pas de prix.
+- Tarifs : chaque voyage fait l'objet d'un devis, gratuit et sans engagement ; aucuns frais de dossier ; le site n'affiche pas de prix.
 
 ## Contact
 
@@ -29,9 +29,11 @@
 - [Circuits en petit groupe](https://cta-voyages.com/circuits/petit-groupe)
 - [Croisières](https://cta-voyages.com/croisieres) : Méditerranée, îles grecques, fjords, Caraïbes, océan Indien, croisières fluviales.
 - [Glamping et hébergements insolites](https://cta-voyages.com/glamping)
-- [Catalogue sportif](https://cta-voyages.com/catalogue-sportif) : football européen, rugby, NBA, NFL, Formule 1, MotoGP, Boxing Day.
+- [Catalogue sportif](https://cta-voyages.com/catalogue-sportif) : football européen, rugby, NBA, NFL, Formule 1, MotoGP, Boxing Day, tennis, Tour de France.
 - [Formule 1](https://cta-voyages.com/f1)
-- [Rugby](https://cta-voyages.com/rugby)
+- [Rugby](https://cta-voyages.com/rugby) : Tournoi des 6 Nations 2027 (les cinq matchs du XV de France et Écosse - Irlande), Championnat des Nations, finales européennes, demi-finales du Top 14.
+- [Tennis](https://cta-voyages.com/tennis) : Monte-Carlo, Madrid, Rome, Wimbledon.
+- [Tour de France 2027](https://cta-voyages.com/tour-de-france) : les trois premières étapes, au Royaume-Uni.
 - [Destinations](https://cta-voyages.com/destinations)
 
 ## Conseils de voyage
