@@ -89,14 +89,14 @@
   box-shadow: 0 0 20px rgba(253, 196, 0, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
-/* Quilter — dégradé corail → rose → violet */
-.comp-card[data-color="quilter"]:hover {
+/* Championnat des Nations — dégradé corail → rose → violet */
+.comp-card[data-color="nations"]:hover {
   background: linear-gradient(135deg, #ff7e6c, #ff2fa7, #847af1);
   box-shadow: 0 0 20px rgba(255, 47, 167, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
-/* Matchs amicaux — vert */
-.comp-card[data-color="amicaux"]:hover {
+/* Top 14 — vert */
+.comp-card[data-color="top14"]:hover {
   background: #257748;
   box-shadow: 0 0 20px rgba(37, 119, 72, 0.4), inset 0 0 20px rgba(255, 255, 255, 0.05);
 }

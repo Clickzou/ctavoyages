@@ -47,6 +47,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/nba",
     "/nfl",
     "/rugby",
+    "/tennis",
+    "/tour-de-france",
     "/plan-du-site",
     "/mentions-legales",
     "/confidentialite",

@@ -51,6 +51,8 @@ const SECTIONS: SiteSection[] = [
       { label: "NBA", href: "/nba" },
       { label: "NFL", href: "/nfl" },
       { label: "Boxing Day", href: "/boxing-day" },
+      { label: "Tennis", href: "/tennis" },
+      { label: "Tour de France", href: "/tour-de-france" },
     ],
   },
   {

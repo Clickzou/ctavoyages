@@ -74,8 +74,8 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Icon name="sports_rugby" />
-          <strong>Rugby</strong> : Champions Cup, 6 Nations, Quilter Nations
-          Series
+          <strong>Rugby</strong> : Champions Cup, 6 Nations, Championnat des
+          Nations, Top 14
         </li>
         <li>
           <Icon name="sports_basketball" />
@@ -96,6 +96,14 @@ const LEFT: FaqEntry[] = [
         <li>
           <Icon name="sports_soccer" />
           <strong>Boxing Day</strong> : Premier League pendant les fêtes
+        </li>
+        <li>
+          <Icon name="sports_tennis" />
+          <strong>Tennis</strong> : Monte-Carlo, Madrid, Rome, Wimbledon
+        </li>
+        <li>
+          <Icon name="directions_bike" />
+          <strong>Tour de France</strong> : Grand Départ 2027 au Royaume-Uni
         </li>
       </ul>
     ),
@@ -140,7 +148,8 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <Icon name="sports_rugby" />
-          <strong>Rugby</strong> : Paris, Dublin, Cardiff, Édimbourg, Bilbao
+          <strong>Rugby</strong> : Paris, Londres, Rome, Dublin, Édimbourg, Lyon,
+          Bordeaux
         </li>
         <li>
           <Icon name="sports_basketball" />
@@ -163,6 +172,14 @@ const LEFT: FaqEntry[] = [
           <Icon name="sports_soccer" />
           <strong>Boxing Day</strong> : Londres, Manchester, Liverpool,
           Newcastle
+        </li>
+        <li>
+          <Icon name="sports_tennis" />
+          <strong>Tennis</strong> : Monte-Carlo, Madrid, Rome, Londres
+        </li>
+        <li>
+          <Icon name="directions_bike" />
+          <strong>Tour de France</strong> : Édimbourg, Carlisle, Liverpool, Cardiff
         </li>
       </ul>
     ),

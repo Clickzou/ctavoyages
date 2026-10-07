@@ -1,15 +1,15 @@
 import "./styles.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import FaqList from "@/components/rugby/FaqList";
+import FaqList from "@/components/tour-de-france/FaqList";
 import NewsletterForm from "@/components/home/NewsletterForm";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/rugby" },
-  title: "Séjour Rugby",
+  alternates: { canonical: "/tour-de-france" },
+  title: "Séjour Tour de France 2027",
   description:
-    "Vivez les plus grands événements rugby avec CTA Voyages. Champions Cup, 6 Nations, Championnat des Nations, Top 14 : billets officiels, hôtel et transport inclus.",
+    "Tour de France 2027 : Village Départ à Édimbourg, espaces VIP à l'arrivée à Liverpool et Cardiff. Séjours organisés par CTA Voyages, agence à Toulouse.",
 };
 
 const faqJsonLd = {
@@ -18,40 +18,40 @@ const faqJsonLd = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Quels événements rugby proposez-vous ?",
+      name: "Quelles étapes du Tour de France 2027 proposez-vous ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Les finales de la Champions Cup et de la Challenge Cup (Lyon, mai 2027), les matchs du Tournoi des 6 Nations 2027, les rencontres du XV de France lors du Championnat des Nations (novembre 2026) et les demi-finales du Top 14 (Bordeaux, juin 2027).",
-      },
+        text: "Les trois premières étapes, au Royaume-Uni : Édimbourg - Carlisle le vendredi 2 juillet 2027 au Village Départ, Keswick - Liverpool le samedi 3 juillet et Welshpool - Cardiff le dimanche 4 juillet en espace VIP à l'arrivée."
+      }
     },
     {
       "@type": "Question",
-      name: "Que comprend un pack rugby ?",
+      name: "Que comprend l'accès au Village Départ ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Les billets officiels, l'hébergement en hôtel, les petits-déjeuners, les transferts selon formule et des options festives.",
-      },
+        text: "L'accès au Village pendant 3 heures avant le départ, une vue privilégiée sur la signature des coureurs, la restauration et les boissons dans un espace de réception, l'accès au paddock et la présence d'anciens coureurs professionnels."
+      }
     },
     {
       "@type": "Question",
-      name: "Quand réserver pour assister à un grand match de rugby ?",
+      name: "Que comprend l'espace VIP à l'arrivée ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Le plus tôt possible. Les événements comme le Tournoi des 6 Nations ou les finales affichent complet très vite.",
-      },
+        text: "Un espace invités à quelques mètres de la ligne d'arrivée, ouvert dès 3 heures avant le départ de la course, la restauration et les boissons tout l'après-midi, et la course en direct sur écran géant."
+      }
     },
     {
       "@type": "Question",
-      name: "Puis-je demander un devis gratuit ?",
+      name: "Le devis est-il gratuit ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Bien sûr. Nos attachées clientèle prennent contact avec vous sous 48h, gratuitement et sans engagement.",
-      },
-    },
+        text: "Oui. Le devis est gratuit et sans engagement, et nous ne facturons aucuns frais de dossier. Un conseiller prend contact avec vous sous 48h."
+      }
+    }
   ],
 };
 
-export default function RugbyPage() {
+export default function TourDeFrancePage() {
   return (
     <>
       <script
@@ -68,10 +68,10 @@ export default function RugbyPage() {
           <div className="absolute inset-0 z-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              alt="Match de rugby : CTA Voyages"
+              alt="Peloton cycliste sur une route vallonnée bordée de spectateurs"
               className="w-full h-full object-cover"
-              style={{ objectPosition: "center 40%" }}
-              src="/assets/images/iStock-1417770031.jpg"
+              style={{ objectPosition: "center 35%" }}
+              src="/generated/sport-tour-de-france-hero.jpg"
             />
             <div className="absolute inset-0 hero-overlay" />
           </div>
@@ -83,16 +83,16 @@ export default function RugbyPage() {
                 items={[
                   { label: "Accueil", href: "/" },
                   { label: "Catalogue sportif", href: "/catalogue-sportif" },
-                  { label: "Rugby" },
+                  { label: "Tour de France" },
                 ]}
               />
               <h1 className="font-h1 text-[26px] sm:text-[34px] md:text-[42px] text-white mb-3 sm:mb-4 leading-[1.1]">
-                Vivez les plus grands matchs et tournois de rugby européen
+                Tour de France 2027 : vivez le Grand Départ au Royaume-Uni
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
-                Champions Cup, 6 Nations, Championnat des Nations, Top 14 : des séjours clés en
-                main avec billets officiels, hôtel et options sur mesure pour plonger
-                dans l&apos;univers de l&apos;ovalie.
+                Le Tour part d&apos;Édimbourg le 2 juillet 2027. Village Départ,
+                espaces VIP à l&apos;arrivée à Liverpool et à Cardiff : vivez les
+                trois premières étapes au plus près des coureurs.
               </p>
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-5">
                 <a
@@ -102,32 +102,32 @@ export default function RugbyPage() {
                   Demander un devis gratuit
                 </a>
                 <a
-                  href="#competitions-rugby"
+                  href="#etapes-tour"
                   className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#1A1A1A] active:scale-95 transition-all text-center"
                 >
-                  Les compétitions rugby
+                  Les étapes
                 </a>
               </div>
               <div className="flex flex-col xs:flex-row flex-wrap items-start xs:items-center gap-y-2 gap-x-5 sm:gap-x-7">
-                <div className="flex items-center gap-1.5 text-white/70 text-[11px] sm:text-[13px]">
+                <div className="flex items-center gap-1.5 text-white/80 text-[11px] sm:text-[13px]">
                   <span className="material-symbols-outlined text-[15px] sm:text-[17px]">
                     check_circle
                   </span>
-                  Billets officiels
+                  Accès VIP
                 </div>
-                <div className="flex items-center gap-1.5 text-white/70 text-[11px] sm:text-[13px]">
+                <div className="flex items-center gap-1.5 text-white/80 text-[11px] sm:text-[13px]">
                   <span className="material-symbols-outlined text-[15px] sm:text-[17px]">
                     check_circle
                   </span>
-                  Hôtel inclus
+                  Restauration incluse
                 </div>
-                <div className="flex items-center gap-1.5 text-white/70 text-[11px] sm:text-[13px]">
+                <div className="flex items-center gap-1.5 text-white/80 text-[11px] sm:text-[13px]">
                   <span className="material-symbols-outlined text-[15px] sm:text-[17px]">
                     check_circle
                   </span>
-                  Options festives
+                  Sans frais de dossier
                 </div>
-                <div className="flex items-center gap-1.5 text-white/70 text-[11px] sm:text-[13px]">
+                <div className="flex items-center gap-1.5 text-white/80 text-[11px] sm:text-[13px]">
                   <span className="material-symbols-outlined text-[15px] sm:text-[17px]">
                     check_circle
                   </span>
@@ -143,17 +143,16 @@ export default function RugbyPage() {
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-on-surface mb-4 sm:mb-6">
-                Des séjours rugby clés en main en France et en Europe
+                Le Tour de France comme vous ne l&apos;avez jamais vu
               </h2>
               <p className="font-body-lg text-[15px] sm:text-body-lg text-on-surface-variant leading-relaxed">
-                Plongez dans l&apos;ambiance unique de l&apos;ovalie avec nos séjours
-                rugby en France et en Europe. Que ce soit pour assister aux finales de la
-                Champions Cup et de la Challenge Cup, vibrer pendant le Tournoi des 6
-                Nations, soutenir le XV de France pendant le Championnat des Nations
-                ou suivre les demi-finales du Top 14, nos voyages rugby vous promettent
-                intensité, passion et convivialité. Des stades mythiques de Dublin à
-                Twickenham, en passant par Rome, Paris, Lyon ou Bordeaux, chaque destination offre une expérience sportive et culturelle
-                exceptionnelle.
+                Pour sa 114e édition, le Tour de France s&apos;élance pour la
+                première fois d&apos;Écosse&nbsp;: départ d&apos;Édimbourg le
+                vendredi 2 juillet 2027, puis deux étapes en Angleterre et au pays
+                de Galles, avec des arrivées à Liverpool et à Cardiff. Au Village
+                Départ ou dans un espace VIP à l&apos;arrivée, vous vivez la course
+                aux premières loges, avec la restauration et l&apos;ambiance des
+                coulisses du Tour.
               </p>
             </div>
           </div>
@@ -164,41 +163,62 @@ export default function RugbyPage() {
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
             <div className="text-center mb-10 sm:mb-14">
               <p className="text-primary font-label text-label mb-2 tracking-wider">
-                VOTRE PACK RUGBY
+                VOTRE TOUR DE FRANCE
               </p>
               <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-on-surface">
-                Une offre voyage complète de A à Z
+                Deux façons de vivre une étape
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               <div className="pack-card group relative rounded-xl overflow-hidden h-[280px] sm:h-[300px] cursor-pointer">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  src="/assets/images/iStock-1268222741.jpg"
-                  alt="Match de rugby dans un stade"
+                  src="/generated/sport-tour-de-france-village.jpg"
+                  alt="Terrasse de réception dominant le parcours"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/65 transition-all duration-300" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white">
                   <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
-                    confirmation_number
+                    storefront
                   </span>
                   <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
-                    Billets officiels
+                    Village Départ
                   </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                    Champions Cup, Challenge Cup, 6 Nations, Championnat des Nations, Top 14 —
-                    accès aux plus grands événements rugby.
+                    Trois heures au Village avant le départ, au pied du podium de signature des coureurs.
                   </p>
                 </div>
               </div>
-
+              <div className="pack-card group relative rounded-xl overflow-hidden h-[280px] sm:h-[300px] cursor-pointer">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src="/generated/sport-tour-de-france-hero.jpg"
+                  alt="Peloton dans les collines"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/65 transition-all duration-300" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white">
+                  <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
+                    sports_score
+                  </span>
+                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
+                    VIP Arrivée
+                  </h3>
+                  <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
+                    Un espace invités près de la ligne d&apos;arrivée, avec la course en direct sur écran géant.
+                  </p>
+                </div>
+              </div>
               <div className="pack-card group relative rounded-xl overflow-hidden h-[280px] sm:h-[300px] cursor-pointer">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500&h=400&fit=crop&auto=format"
-                  alt="Hôtel européen"
+                  alt="Hôtel"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/65 transition-all duration-300" />
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white">
@@ -206,55 +226,10 @@ export default function RugbyPage() {
                     hotel
                   </span>
                   <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
-                    Hébergement
+                    Voyage sur demande
                   </h3>
                   <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                    Hôtel 3 ou 4 étoiles avec petits-déjeuners, en centre-ville ou à
-                    proximité du stade.
-                  </p>
-                </div>
-              </div>
-
-              <div className="pack-card group relative rounded-xl overflow-hidden h-[280px] sm:h-[300px] cursor-pointer">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  src="https://images.unsplash.com/photo-1556388158-158ea5ccacbd?w=500&h=400&fit=crop&auto=format"
-                  alt="Avion au décollage"
-                />
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/65 transition-all duration-300" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white">
-                  <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
-                    flight
-                  </span>
-                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
-                    Transferts
-                  </h3>
-                  <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                    Transferts aéroport-hôtel-stade selon la formule choisie. Options vols
-                    disponibles.
-                  </p>
-                </div>
-              </div>
-
-              <div className="pack-card group relative rounded-xl overflow-hidden h-[280px] sm:h-[300px] cursor-pointer">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=500&h=400&fit=crop&auto=format"
-                  alt="Supporters rugby"
-                />
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/65 transition-all duration-300" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white">
-                  <span className="material-symbols-outlined text-[40px] mb-3 transition-colors duration-300 group-hover:text-[#FBBF12]">
-                    celebration
-                  </span>
-                  <h3 className="font-h3 text-[16px] sm:text-[18px] font-bold mb-2">
-                    Options festives
-                  </h3>
-                  <p className="text-[13px] sm:text-[14px] text-white leading-relaxed">
-                    Repas d&apos;avant-match, soirées festives, visites culturelles ou
-                    excursions locales.
+                    Trajet depuis Toulouse et hébergement, composés par votre conseiller autour de l&apos;étape.
                   </p>
                 </div>
               </div>
@@ -262,113 +237,91 @@ export default function RugbyPage() {
           </div>
         </section>
 
-        {/* LES COMPÉTITIONS */}
-        <section className="bg-white py-section_padding_v" id="competitions-rugby">
+        {/* ÉTAPES */}
+        <section className="bg-white py-section_padding_v" id="etapes-tour">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
             <div className="text-center mb-10 sm:mb-14">
               <p className="text-primary font-label text-label mb-2 tracking-wider">
-                LES COMPÉTITIONS
+                LES ÉTAPES
               </p>
               <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-on-surface">
-                Les grands rendez-vous rugby de la saison
+                Les trois premières étapes du Tour 2027
               </h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               <a
                 href="#cta-final"
-                className="comp-card group rounded-xl p-6 sm:p-8 border border-outline-variant/20 transition-all duration-500 cursor-pointer"
-                data-color="champions"
+                className="etape-card group p-5 sm:p-6 cursor-pointer"
+                data-color="ecosse"
               >
-                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-3 flex items-center gap-3 transition-colors duration-300">
+                <div className="flex items-center gap-3 mb-3">
                   <span className="league-icon relative w-8 h-8 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[#3179C4] text-[28px] transition-all duration-300 group-hover:opacity-0 group-hover:translate-x-4">
-                      sports_rugby
+                    <span className="material-symbols-outlined text-[#3179C4] text-[24px] transition-all duration-300 group-hover:opacity-0 group-hover:translate-x-4">
+                      directions_bike
                     </span>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="https://flagcdn.com/w40/fr.png"
-                      alt="France"
+                      src="https://flagcdn.com/w40/gb-sct.png"
+                      alt="Écosse"
                       className="absolute inset-0 w-7 h-5 m-auto object-cover rounded-sm opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
                     />
                   </span>
-                  Champions Cup &amp; Challenge Cup
-                </h3>
-                <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  Les 21 et 22 mai 2027 à Lyon, au Groupama Stadium : les deux finales
-                  européennes réunies le temps d&apos;un week-end de fête.
+                  <h3 className="font-h3 text-[15px] sm:text-[16px] font-bold transition-colors duration-300">
+                    Étape 1 : Édimbourg → Carlisle
+                  </h3>
+                </div>
+                <p className="text-[13px] leading-relaxed transition-colors duration-300">
+                  Vendredi 2 juillet 2027. Le Grand Départ, à vivre au Village Départ d&apos;Édimbourg.
                 </p>
               </a>
-
               <a
                 href="#cta-final"
-                className="comp-card group rounded-xl p-6 sm:p-8 border border-outline-variant/20 transition-all duration-500 cursor-pointer"
-                data-color="sixnations"
+                className="etape-card group p-5 sm:p-6 cursor-pointer"
+                data-color="angleterre"
               >
-                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-3 flex items-center gap-3 transition-colors duration-300">
+                <div className="flex items-center gap-3 mb-3">
                   <span className="league-icon relative w-8 h-8 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[#3179C4] text-[28px] transition-all duration-300 group-hover:opacity-0 group-hover:translate-x-4">
-                      sports_rugby
+                    <span className="material-symbols-outlined text-[#3179C4] text-[24px] transition-all duration-300 group-hover:opacity-0 group-hover:translate-x-4">
+                      directions_bike
                     </span>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="https://flagcdn.com/w40/eu.png"
-                      alt="Europe"
+                      src="https://flagcdn.com/w40/gb-eng.png"
+                      alt="Angleterre"
                       className="absolute inset-0 w-7 h-5 m-auto object-cover rounded-sm opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
                     />
                   </span>
-                  Tournoi des 6 Nations
-                </h3>
-                <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  Soutenez le XV de France à Paris, Londres, Rome ou Dublin : des
-                  stades mythiques et des ambiances hors du commun.
+                  <h3 className="font-h3 text-[15px] sm:text-[16px] font-bold transition-colors duration-300">
+                    Étape 2 : Keswick → Liverpool
+                  </h3>
+                </div>
+                <p className="text-[13px] leading-relaxed transition-colors duration-300">
+                  Samedi 3 juillet 2027. L&apos;arrivée à Liverpool, depuis un espace VIP.
                 </p>
               </a>
-
               <a
                 href="#cta-final"
-                className="comp-card group rounded-xl p-6 sm:p-8 border border-outline-variant/20 transition-all duration-500 cursor-pointer"
-                data-color="nations"
+                className="etape-card group p-5 sm:p-6 cursor-pointer"
+                data-color="galles"
               >
-                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-3 flex items-center gap-3 transition-colors duration-300">
+                <div className="flex items-center gap-3 mb-3">
                   <span className="league-icon relative w-8 h-8 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[#3179C4] text-[28px] transition-all duration-300 group-hover:opacity-0 group-hover:translate-x-4">
-                      sports_rugby
+                    <span className="material-symbols-outlined text-[#3179C4] text-[24px] transition-all duration-300 group-hover:opacity-0 group-hover:translate-x-4">
+                      directions_bike
                     </span>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                      src="https://flagcdn.com/w40/fr.png"
-                      alt="France"
+                      src="https://flagcdn.com/w40/gb-wls.png"
+                      alt="Pays de Galles"
                       className="absolute inset-0 w-7 h-5 m-auto object-cover rounded-sm opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
                     />
                   </span>
-                  Championnat des Nations
-                </h3>
-                <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  Le XV de France reçoit l&apos;Afrique du Sud le 13 novembre et
-                  l&apos;Argentine le 21 novembre 2026 au Stade de France, avant le
-                  week-end des finales à Twickenham, du 27 au 29 novembre.
-                </p>
-              </a>
-
-              <a
-                href="#cta-final"
-                className="comp-card group rounded-xl p-6 sm:p-8 border border-outline-variant/20 transition-all duration-500 cursor-pointer"
-                data-color="top14"
-              >
-                <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-3 flex items-center gap-3 transition-colors duration-300">
-                  <span className="league-icon relative w-8 h-8 flex items-center justify-center">
-                    <span className="material-symbols-outlined text-[#3179C4] text-[28px] transition-all duration-300 group-hover:opacity-0 group-hover:translate-x-4">
-                      sports_rugby
-                    </span>
-                    <span className="material-symbols-outlined text-white text-[26px] absolute inset-0 m-auto opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                      groups
-                    </span>
-                  </span>
-                  Demi-finales du Top 14
-                </h3>
-                <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  Les 18 et 19 juin 2027 à Bordeaux, au Stade Atlantique : les quatre
-                  meilleures équipes du championnat se disputent une place en finale.
+                  <h3 className="font-h3 text-[15px] sm:text-[16px] font-bold transition-colors duration-300">
+                    Étape 3 : Welshpool → Cardiff
+                  </h3>
+                </div>
+                <p className="text-[13px] leading-relaxed transition-colors duration-300">
+                  Dimanche 4 juillet 2027. L&apos;arrivée à Cardiff, depuis un espace VIP.
                 </p>
               </a>
             </div>
@@ -379,9 +332,11 @@ export default function RugbyPage() {
         <section className="section-bg-blue py-section_padding_v human-support-section">
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter text-center">
             <div className="mb-10 sm:mb-16">
-              <p className="text-primary font-label text-label mb-2">NOTRE MÉTHODE</p>
+              <p className="text-primary font-label text-label mb-2">
+                NOTRE MÉTHODE
+              </p>
               <h2 className="font-h2 text-[28px] sm:text-[32px] md:text-h2 text-on-surface">
-                Un séjour rugby pensé de A à Z
+                Votre étape du Tour, de A à Z
               </h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
@@ -393,12 +348,10 @@ export default function RugbyPage() {
                     </span>
                   </div>
                   <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
-                    Choisissez votre match
+                    Choisissez votre étape
                   </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
-                    Dites-nous quelle compétition, quelle destination et quelles dates
-                    vous intéressent. Nos conseillers trouvent le meilleur match pour
-                    vous.
+                    Départ à Édimbourg ou arrivée à Liverpool ou Cardiff : dites-nous ce qui vous fait envie et combien vous êtes.
                   </p>
                 </div>
               </div>
@@ -410,11 +363,10 @@ export default function RugbyPage() {
                     </span>
                   </div>
                   <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
-                    Nous composons votre pack
+                    Nous réservons vos accès
                   </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
-                    Billets officiels, hôtel, transferts et options festives : tout est
-                    organisé pour un week-end rugby sans souci.
+                    Votre conseiller réserve votre accès et, si vous le souhaitez, le trajet et l&apos;hébergement.
                   </p>
                 </div>
               </div>
@@ -422,15 +374,14 @@ export default function RugbyPage() {
                 <div className="card-content w-full">
                   <div className="icon-circle w-[48px] h-[48px] sm:w-[56px] sm:h-[56px] bg-[#3179C4] rounded-full flex items-center justify-center mb-4 sm:mb-6 text-white">
                     <span className="material-symbols-outlined text-xl sm:text-2xl">
-                      sports_score
+                      directions_bike
                     </span>
                   </div>
                   <h3 className="font-h3 text-[18px] sm:text-[20px] font-bold mb-4">
-                    Vibrez dans les tribunes
+                    Vivez le Tour
                   </h3>
                   <p className="font-body-md text-[14px] sm:text-[16px] text-on-surface-variant">
-                    Avant, pendant et après le match, nous assurons une assistance
-                    personnalisée pour que votre expérience soit mémorable.
+                    Vous profitez de la course aux premières loges. Votre conseiller reste joignable avant et pendant le séjour.
                   </p>
                 </div>
               </div>
@@ -439,14 +390,18 @@ export default function RugbyPage() {
         </section>
 
         {/* FAQ */}
-        <section className="bg-white py-section_padding_v">
+        <section
+          className="bg-white py-section_padding_v"
+          role="region"
+          aria-label="Questions fréquentes sur nos séjours Tour de France"
+        >
           <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
             <div className="text-center mb-8 sm:mb-10">
               <span className="text-primary font-label text-label tracking-widest uppercase mb-2 block text-[12px] sm:text-[14px]">
                 Questions fréquentes
               </span>
               <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-on-surface">
-                Questions fréquentes sur nos séjours rugby
+                Questions fréquentes sur nos séjours Tour de France
               </h2>
             </div>
             <FaqList />
@@ -461,11 +416,12 @@ export default function RugbyPage() {
               <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2" />
               <div className="relative z-10">
                 <h2 className="font-h2 text-[24px] sm:text-[30px] md:text-h2 text-white mb-4">
-                  Vibrez au rythme de l&apos;ovalie
+                  Vivez le Grand Départ du Tour 2027
                 </h2>
                 <p className="font-body-lg text-[15px] sm:text-body-lg text-white/85 mb-8 max-w-2xl mx-auto">
-                  Dites-nous quelle compétition vous fait rêver. Nos conseillers prennent
-                  contact avec vous sous 48h pour composer votre séjour rugby sur mesure.
+                  Dites-nous quelle étape vous fait envie. Nos conseillers prennent
+                  contact avec vous sous 48h pour composer votre séjour,
+                  gratuitement et sans engagement.
                 </p>
                 <div className="flex flex-col xs:flex-row flex-wrap justify-center gap-3 sm:gap-4">
                   <Link
@@ -478,24 +434,26 @@ export default function RugbyPage() {
                     href="tel:+33534391391"
                     className="border-2 border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-label text-label text-[13px] sm:text-[14px] hover:bg-white hover:text-[#004191] active:scale-95 transition-all text-center flex items-center justify-center gap-2"
                   >
-                    <span className="material-symbols-outlined text-[18px]">call</span>{" "}
+                    <span className="material-symbols-outlined text-[18px]">
+                      call
+                    </span>{" "}
                     +33 (0)5 34 391 391
                   </a>
                 </div>
                 <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6">
-                  <span className="text-white/60 text-[12px] sm:text-[13px] flex items-center gap-1">
+                  <span className="text-white/75 text-[12px] sm:text-[13px] flex items-center gap-1">
                     <span className="material-symbols-outlined text-[15px]">
                       check_circle
                     </span>{" "}
                     Devis gratuit
                   </span>
-                  <span className="text-white/60 text-[12px] sm:text-[13px] flex items-center gap-1">
+                  <span className="text-white/75 text-[12px] sm:text-[13px] flex items-center gap-1">
                     <span className="material-symbols-outlined text-[15px]">
                       check_circle
                     </span>{" "}
                     Sans engagement
                   </span>
-                  <span className="text-white/60 text-[12px] sm:text-[13px] flex items-center gap-1">
+                  <span className="text-white/75 text-[12px] sm:text-[13px] flex items-center gap-1">
                     <span className="material-symbols-outlined text-[15px]">
                       check_circle
                     </span>{" "}
@@ -506,70 +464,70 @@ export default function RugbyPage() {
             </div>
           </div>
         </section>
+      </main>
 
-        {/* NEWSLETTER */}
-        <section
-          className="w-full py-12 sm:py-16"
-          style={{ backgroundColor: "#004191" }}
-        >
-          <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
-              <div className="text-center lg:text-left max-w-xl">
-                <div className="flex items-center justify-center lg:justify-start gap-2 mb-3">
-                  <span
-                    className="material-symbols-outlined text-[#FBBF12] text-[24px]"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
-                  >
-                    mail
-                  </span>
-                  <p className="font-label text-[12px] sm:text-[14px] text-white/70 tracking-wider uppercase">
-                    Newsletter
-                  </p>
-                </div>
-                <h2 className="font-h2 text-[24px] sm:text-[28px] md:text-[32px] font-bold text-white mb-3">
-                  Ne manquez aucun événement sportif
-                </h2>
-                <p className="font-body-md text-[14px] sm:text-[16px] text-white/80 leading-relaxed">
-                  Recevez en avant-première nos nouveaux packs sportifs, les dates des
-                  grands matchs et nos offres exclusives.
+      {/* NEWSLETTER */}
+      <section
+        className="w-full py-12 sm:py-16"
+        style={{ backgroundColor: "#004191" }}
+      >
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-gutter">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            <div className="text-center lg:text-left max-w-xl">
+              <div className="flex items-center justify-center lg:justify-start gap-2 mb-3">
+                <span
+                  className="material-symbols-outlined text-[#FBBF12] text-[24px]"
+                  style={{ fontVariationSettings: "'FILL' 1" }}
+                >
+                  mail
+                </span>
+                <p className="font-label text-[12px] sm:text-[14px] text-white/80 tracking-wider uppercase">
+                  Newsletter
                 </p>
               </div>
-              <div className="w-full lg:w-auto lg:min-w-[420px]">
-                <NewsletterForm />
-                <div className="flex items-center gap-4 mt-4 justify-center sm:justify-start">
-                  <div className="flex items-center gap-1.5 text-white/60 text-[11px] sm:text-[12px]">
-                    <span
-                      className="material-symbols-outlined text-[14px] text-[#FBBF12]"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
-                    >
-                      check_circle
-                    </span>
-                    Gratuit
-                  </div>
-                  <div className="flex items-center gap-1.5 text-white/60 text-[11px] sm:text-[12px]">
-                    <span
-                      className="material-symbols-outlined text-[14px] text-[#FBBF12]"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
-                    >
-                      check_circle
-                    </span>
-                    Sans spam
-                  </div>
-                  <div className="flex items-center gap-1.5 text-white/60 text-[11px] sm:text-[12px]">
-                    <span
-                      className="material-symbols-outlined text-[14px] text-[#FBBF12]"
-                      style={{ fontVariationSettings: "'FILL' 1" }}
-                    >
-                      check_circle
-                    </span>
-                    Désinscription libre
-                  </div>
+              <h2 className="font-h2 text-[24px] sm:text-[28px] md:text-[32px] font-bold text-white mb-3">
+                Ne manquez aucun événement sportif
+              </h2>
+              <p className="font-body-md text-[14px] sm:text-[16px] text-white/80 leading-relaxed">
+                Recevez en avant-première nos nouveaux packs sportifs, les dates
+                des grands événements et nos offres exclusives.
+              </p>
+            </div>
+            <div className="w-full lg:w-auto lg:min-w-[420px]">
+              <NewsletterForm />
+              <div className="flex items-center gap-4 mt-4 justify-center sm:justify-start">
+                <div className="flex items-center gap-1.5 text-white/75 text-[11px] sm:text-[12px]">
+                  <span
+                    className="material-symbols-outlined text-[14px] text-[#FBBF12]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    check_circle
+                  </span>
+                  Gratuit
+                </div>
+                <div className="flex items-center gap-1.5 text-white/75 text-[11px] sm:text-[12px]">
+                  <span
+                    className="material-symbols-outlined text-[14px] text-[#FBBF12]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    check_circle
+                  </span>
+                  Sans spam
+                </div>
+                <div className="flex items-center gap-1.5 text-white/75 text-[11px] sm:text-[12px]">
+                  <span
+                    className="material-symbols-outlined text-[14px] text-[#FBBF12]"
+                    style={{ fontVariationSettings: "'FILL' 1" }}
+                  >
+                    check_circle
+                  </span>
+                  Désinscription libre
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </>
   );
 }

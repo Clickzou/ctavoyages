@@ -54,7 +54,7 @@ const LEFT: FaqEntry[] = [
       <ul className="font-body-md text-[14px] text-on-surface-variant space-y-1.5 ml-1">
         <li>
           <span className="material-symbols-outlined">check</span>Les finales de la{" "}
-          <strong>Champions Cup</strong>{" "}et de la <strong>Challenge Cup</strong>
+          <strong>Champions Cup</strong>{" "}et de la <strong>Challenge Cup</strong>{" "}(Lyon, mai 2027)
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>Les matchs du{" "}
@@ -62,11 +62,11 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>Les rencontres du XV
-          de France lors de la <strong>Quilter Nations Series</strong>
+          de France lors du <strong>Championnat des Nations</strong>{" "}(novembre 2026)
         </li>
         <li>
-          <span className="material-symbols-outlined">check</span>Des matchs amicaux et
-          événements rugby tout au long de la saison
+          <span className="material-symbols-outlined">check</span>Les demi-finales du{" "}
+          <strong>Top 14</strong>{" "}(Bordeaux, juin 2027)
         </li>
       </ul>
     ),
@@ -121,7 +121,11 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <span className="material-symbols-outlined">location_on</span>
-          <strong>Bilbao</strong> : San Mamés (finales 2026)
+          <strong>Lyon</strong> : Groupama Stadium (finales européennes 2027)
+        </li>
+        <li>
+          <span className="material-symbols-outlined">location_on</span>
+          <strong>Bordeaux</strong> : Stade Atlantique (demi-finales du Top 14)
         </li>
       </ul>
     ),

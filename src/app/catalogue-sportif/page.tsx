@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/catalogue-sportif" },
   title: "Catalogue sportif",
   description:
-    "Vivez les plus grands événements sportifs avec CTA Voyages. Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : des séjours clés en main.",
+    "Vivez les plus grands événements sportifs avec CTA Voyages. Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day, Tennis, Tour de France : des séjours clés en main.",
 };
 
 const faqJsonLd = {
@@ -33,7 +33,7 @@ const faqJsonLd = {
       name: "Quels sports sont concernés par le catalogue sportif ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nous proposons des séjours sportifs autour du football, rugby, basket (NBA), NFL, Formule 1, MotoGP et le Boxing Day.",
+        text: "Nous proposons des séjours sportifs autour du football, rugby, basket (NBA), NFL, Formule 1, MotoGP, le Boxing Day, le tennis et le Tour de France.",
       },
     },
     {
@@ -102,7 +102,8 @@ export default function CatalogueSportifPage() {
                 Le meilleur du sport vous attend !
               </h1>
               <p className="font-body-lg text-[14px] sm:text-[16px] md:text-[18px] text-white/90 mb-4 sm:mb-5 max-w-2xl">
-                Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day : des
+                Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day, Tennis,
+                Tour de France : des
                 séjours clés en main pour transformer chaque déplacement sportif
                 en un moment exceptionnel, original et mémorable.
               </p>
@@ -185,7 +186,8 @@ export default function CatalogueSportifPage() {
                 Choisissez votre aventure sportive
               </h2>
               <p className="font-body-md text-[14px] sm:text-[15px] text-on-surface-variant mt-3 max-w-2xl mx-auto">
-                Football, Rugby, NBA, NFL, Formule 1, Moto GP ou Boxing Day —
+                Football, Rugby, NBA, NFL, Formule 1, Moto GP, Boxing Day, Tennis ou
+                Tour de France —
                 chaque pack est conçu pour vous offrir une immersion totale dans
                 votre passion.
               </p>
