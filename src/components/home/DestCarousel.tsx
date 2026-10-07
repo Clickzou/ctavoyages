@@ -25,7 +25,7 @@ const DESTS: Dest[] = [
     desc: "Entre traditions séculaires et modernité fulgurante.",
   },
   {
-    href: "/destination/thailande",
+    href: "/destination-thailande",
     img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=600&h=400&fit=crop&auto=format",
     alt: "Voyage en Thaïlande",
     badge: "ASIE",
