@@ -55,15 +55,15 @@ const tournoi6Nations2027DepuisToulouse: BlogArticle = {
           <ul>
             <li>
               <strong>Samedi 6 février 2027</strong>{" "}— France - Pays de
-              Galles, en France&nbsp;;
+              Galles, au Stade de France&nbsp;;
             </li>
             <li>
               <strong>Dimanche 14 février 2027</strong>{" "}— Angleterre - France,
               à Londres&nbsp;;
             </li>
             <li>
-              <strong>Dimanche 21 février 2027</strong>{" "}— France - Écosse, en
-              France&nbsp;;
+              <strong>Dimanche 21 février 2027</strong>{" "}— France - Écosse, au
+              Stade de France&nbsp;;
             </li>
             <li>
               <strong>Samedi 6 mars 2027</strong>{" "}— Italie - France, à
@@ -116,14 +116,16 @@ const tournoi6Nations2027DepuisToulouse: BlogArticle = {
             </li>
           </ul>
           <p>
-            Notre page{" "}
+            CTA Voyages propose des séjours pour les cinq matchs du XV de
+            France en 2027&nbsp;: les deux rencontres au Stade de France et les
+            déplacements à Londres, à Rome et à Dublin. Le match Écosse -
+            Irlande, à Édimbourg, est aussi au programme pour ceux qui veulent
+            vivre le Tournoi hors des matchs des Bleus. Retrouvez toutes nos
+            formules sur la page{" "}
             <Link href="/rugby" className={lien}>
               séjours rugby
-            </Link>{" "}
-            cite Paris, Édimbourg, Cardiff et Dublin parmi les destinations du
-            Tournoi. Les matchs réellement proposés pour l&apos;édition 2027
-            dépendent des billets disponibles&nbsp;: demandez-les à votre
-            conseiller dès votre premier échange.
+            </Link>
+            .
           </p>
         </>
       ),
@@ -279,7 +281,7 @@ const tournoi6Nations2027DepuisToulouse: BlogArticle = {
     },
     {
       q: "Quels matchs du 6 Nations 2027 propose CTA Voyages ?",
-      a: "Les matchs proposés dépendent des billets disponibles pour l'édition 2027. Demandez la liste à jour à votre conseiller : il vous répond sous 48 heures, gratuitement et sans engagement.",
+      a: "CTA Voyages propose des séjours pour les cinq matchs du XV de France en 2027 : France - Pays de Galles et France - Écosse au Stade de France, Angleterre - France à Londres, Italie - France à Rome et Irlande - France à Dublin, ainsi que le match Écosse - Irlande à Édimbourg. Votre conseiller vous répond sous 48 heures, gratuitement et sans engagement.",
     },
   ],
 };

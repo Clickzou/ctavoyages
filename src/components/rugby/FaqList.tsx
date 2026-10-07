@@ -109,7 +109,11 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <span className="material-symbols-outlined">location_on</span>
-          <strong>Cardiff</strong> : Principality Stadium
+          <strong>Londres</strong> : Twickenham
+        </li>
+        <li>
+          <span className="material-symbols-outlined">location_on</span>
+          <strong>Rome</strong> : Stadio Olimpico
         </li>
         <li>
           <span className="material-symbols-outlined">location_on</span>
@@ -136,7 +140,7 @@ const LEFT: FaqEntry[] = [
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>Découvrir des villes
-          emblématiques du rugby : Paris, Dublin, Cardiff
+          emblématiques du rugby : Paris, Londres, Dublin
         </li>
         <li>
           <span className="material-symbols-outlined">check</span>Allier sport et culture

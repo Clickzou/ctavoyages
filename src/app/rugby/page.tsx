@@ -151,7 +151,7 @@ export default function RugbyPage() {
                 Champions Cup et de la Challenge Cup, vibrer pendant le Tournoi des 6
                 Nations, ou soutenir le XV de France pendant la Quilter Nations Series,
                 nos voyages rugby vous promettent intensité, passion et convivialité. Des
-                stades mythiques de Dublin à Murrayfield, en passant par Cardiff, Paris ou
+                stades mythiques de Dublin à Murrayfield, en passant par Londres, Rome, Paris ou
                 Bilbao, chaque destination offre une expérience sportive et culturelle
                 exceptionnelle.
               </p>
@@ -319,7 +319,7 @@ export default function RugbyPage() {
                   Tournoi des 6 Nations
                 </h3>
                 <p className="text-[14px] leading-relaxed transition-colors duration-300">
-                  Soutenez le XV de France à Paris, Édimbourg, Cardiff ou Dublin : des
+                  Soutenez le XV de France à Paris, Londres, Rome ou Dublin : des
                   stades mythiques et des ambiances hors du commun.
                 </p>
               </a>
